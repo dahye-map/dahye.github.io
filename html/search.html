@@ -1,0 +1,27 @@
+<!--@js(/awesome/js/header_search.js)-->
+
+<div module="Layout_SearchHeader" id="searchWrap">
+    <!-- <div class="search_bg"></div> -->
+
+    <!--
+        $product_page=/product/detail.html
+        $category_page=/product/list.html
+    -->
+    <div class="search active">
+        <a href="#none" class="btn-search-close"><img src="/web/upload/img/fix_right_close_btn.png" alt=""></a>
+        <p class="title">검색</p>
+        <fieldset>
+            <legend>검색</legend>
+            {$form.keyword}
+            <input type="image" class="btn-search-aside" src="/web/upload/img/ico_search_b.png" alt="검색" onclick="{$action_search_submit}">
+        </fieldset>
+
+        <!-- 인기검색어 -->
+        <div class="popular" module="search_hotkeyword">
+            <p class="title mt-50">인기검색어</p>
+            <a href="{$hot_keyword_url}">{$hot_keyword_name}</a>
+            <a href="{$hot_keyword_url}">{$hot_keyword_name}</a>
+        </div>
+        <!-- 인기검색어 end -->
+    </div>
+</div>

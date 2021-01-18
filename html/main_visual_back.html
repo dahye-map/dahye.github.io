@@ -1,0 +1,53 @@
+<!--@css(/awesome/css/main_visual.css)-->
+
+<!-- s:메인배너 -->
+<div class="main-banner-wrap">
+
+    <div class="main-banner swiper-container">
+        <ul class="swiper-wrapper">
+            <li class="swiper-slide">
+                <img src="/web/upload/img/mainb_01.jpg" alt="">
+
+                <!--상품진열 바꾸고 싶으시면 모듈 넘버를 바꾸세요 ex. product_listmain_2-->
+                <div class="product-list-wrap swiper-container" module="product_listmain_1">
+                    <div class="swiper-wrapper prdList product-list">
+                        <!--
+                            $count = 5
+                            ※ 상품진열갯수를 설정하는 변수입니다. 설정하지 않을 경우, 최대 200개의 상품이 진열 됩니다.
+                            ※ 진열된 상품이 많으면, 쇼핑몰에 부하가 발생할 수 있습니다.
+                            $basket_result = /product/add_basket.html
+                            $basket_option = /product/basket_option.html
+                        -->
+                        <!--@import(/awesome/prd_list_slide.html)-->
+                    </div>
+                </div>
+
+            </li>
+            <li class="swiper-slide">
+                <img src="/web/upload/img/mainb_03.jpg" alt="">
+
+                <!--상품진열 바꾸고 싶으시면 모듈 넘버를 바꾸세요 ex. product_listmain_2-->
+                <div class="product-list-wrap swiper-container" module="product_listmain_6">
+                    <div class="swiper-wrapper prdList product-list">
+                        <!--
+                            $count = 5
+                            ※ 상품진열갯수를 설정하는 변수입니다. 설정하지 않을 경우, 최대 200개의 상품이 진열 됩니다.
+                            ※ 진열된 상품이 많으면, 쇼핑몰에 부하가 발생할 수 있습니다.
+                            $basket_result = /product/add_basket.html
+                            $basket_option = /product/basket_option.html
+                        -->
+                        <!--@import(/awesome/prd_list_slide.html)-->
+                    </div>
+                </div>
+
+            </li>
+            <li class="swiper-slide">
+                <img src="/web/upload/img/mainb_02.jpg" alt="">
+                <span class="main-gif"><img src="/web/upload/img/mainb_gif01.gif" alt=""></span>
+            </li>
+        </ul>
+        <div class="swiper-pagination main-banner-pagination"></div>
+    </div>
+
+</div>
+<!-- //e:메인배너 -->

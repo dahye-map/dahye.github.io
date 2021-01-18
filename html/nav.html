@@ -1,0 +1,70 @@
+<div id="navWrap">
+    <div class="nav">
+
+        <a href="javascript:void(0)" class="btn-nav-close"><img src="/web/upload/img/btn_nav_close.png" alt=""></a>
+
+        <div class="logo">
+            <a href="/"><img src="/web/upload/img/gelato_ci_b.png" alt=""></a>
+        </div>
+
+        <div class="lang-box-wrap">
+            <div class="lang-box">
+                <a href="#">KOR</a>
+                <div class="flag">
+                    <a href="#">KOR</a>
+                    <a href="#">JAP</a>
+                </div>
+            </div>
+        </div>
+
+        <script type="text/javascript">
+            $('.lang-box > a').click(function(){
+                $(this).siblings('.flag').slideToggle();
+            });
+        </script>
+
+        <div class="nav-list-wrap">
+            <div class="">
+                <ul class="nav-list">
+                    <li><a href="#">전체상품</a></li>
+                    <li><a href="#">클리어런스<span class="red"></span></a></li>
+                    <li><a href="#">세트상품</a></li>
+                    <li>
+                        <a href="#">네일</a>
+                        <ul class="depth2">
+                            <li><a href="#">하또하또핏 Pro</a></li>
+                            <li><a href="#">하또하또핏 basic</a></li>
+                            <li><a href="#">띠부띠부팁 네일</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">패디</a>
+                        <ul class="depth2">
+                            <li><a href="#">띠부띠부팁</a></li>
+                            <li><a href="#">하또하또핏</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">네일케어제품</a></li>
+                    <li><a href="#">탑코트&amp;툴</a></li>
+
+                    <li class="commu pt-20"><a href="#">고객만족센터</a></li>
+                    <li class="commu"><a href="#">커뮤니티</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="bottom-member">
+            <ul>
+                <li>
+                    <a href="/member/login.html" module="Layout_statelogoff">로그인</a>
+                    <a href="{$action_logout}" module="Layout_statelogon">로그아웃</a>
+                </li>
+                <li>
+                    <a href="/member/join.html" module="Layout_statelogoff">회원가입</a>
+                    <a href="/member/modify.html" module="Layout_statelogon">마이페이지</a>
+                </li>
+            </ul>
+        </div>
+
+    </div>
+</div>
