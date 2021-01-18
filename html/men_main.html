@@ -1,0 +1,272 @@
+<!--/script_scroll(1)/-->
+<div id="wrap" >
+  <!--/include_header(1)/-->
+
+  <!-- section_top -->
+  <div class="section_top">
+    <!-- 타이틀 영역 -->
+
+    <!-- 메인 슬라이드 -->
+    <div id="visual" class="visual">
+      <div class="swiper-container main-slide">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <a href="">
+              <p class="img"><img src="http://xexymix.jpg3.kr/xexymix/introimg/main_m_1.jpg" alt=""></p>
+              <div class="txt-box">
+                  <p class="tit">가장 포근한 시간을<br>함께할게요</p>
+                  <p class="des">웜바디 피치기모 레깅스</p>
+              </div>
+            </a>
+          </div>
+          <div class="swiper-slide">
+              <a href="">
+                <p class="img"><img src="http://xexymix.jpg3.kr/xexymix/introimg/main_m_2.jpg" alt=""></p>
+                <div class="txt-box">
+                    <p class="tit">가장 포근한 시간을<br>함께할게요</p>
+                    <p class="des">웜바디 피치기모 레깅스</p>
+                </div>
+              </a>
+          </div>
+          <div class="swiper-slide">
+              <a href="">
+                <p class="img"><img src="http://xexymix.jpg3.kr/xexymix/introimg/main_m_3.jpg" alt=""></p>
+                <div class="txt-box">
+                    <p class="tit">가장 포근한 시간을<br>함께할게요</p>
+                    <p class="des">웜바디 피치기모 레깅스</p>
+                </div>
+              </a>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <!-- // 메인 슬라이드 -->
+
+    <!--/category_title_html/-->
+    <h2 class="category_title"><!--/now_cate_name/--></h2>
+    <!-- //타이틀 영역 -->
+
+    <!-- 카테고리 베스트 상품 -->
+    <div class="wrap_inner">
+      <!--/if_recmd_product/-->
+      <div class="best">
+        <div class="item-wrap">
+          <div class="item-cont">
+            <div class="slider">
+              <!--/loop_recmd_product(8)/-->
+              <div>
+                <dl class="item-list">
+                  <dt>
+                    <div class="no">BEST<p>0<!--/idx/--></p></div>
+                    <a href="<!--/recmd_product@link/-->"> <img src="<!--/recmd_product@image_s/-->""<!--/recmd_product@rollover/-->" alt="상품 섬네일" title="상품 섬네일" /> </a>
+                    <div class="quick_view"><a href="<!--/recmd_product@link_preview/-->"></a></div>
+                  </dt>
+                  <dd>
+                    <ul>
+                      <!--/if_recmd_product@icons/-->
+                      <div class="prd-icon"><!--/recmd_product@icons/--></div>
+                      <!--/end_if/-->
+                      <li class="style-code"><!--/recmd_product@style_code/--></li>
+                      <li class="prd-name"><!--/recmd_product@name(500)/--></li>
+                      <li class="prd-name-sub"><!--/recmd_product@subname(200)/--></li>
+                      <div class="priceBox">
+                        <!--/if_recmd_product@is_soldout/-->
+                        <!--/if_recmd_product@is_short_soldout/-->
+                        <li class="prd-price"><!--/number/recmd_product@price_sell/--> <span class="slod-out">일시품절</span></li>
+                        <!--/else/-->
+                        <li class="prd-price"><!--/number/recmd_product@price_sell/--> <span class="slod-out">SOLD OUT</span></li>
+                        <!--/end_if/-->
+                        <!--/else/-->
+                        <!--/if_recmd_product@is_term_discount/-->
+                        <li class="prd-price"><!--/number/recmd_product@price_sell/--></li>
+                        <!--판매가-->
+                        <!--/if_recmd_product@price_consumer(+1)/-->
+                        <li class="prd-price"><strike><!--/number/recmd_product@price_consumer/--></strike></li>
+                        <!--소비자가-->
+                        <!--/end_if/-->
+                        <!--/else/-->
+                        <li class="prd-price"><!--/number/recmd_product@price_sell/--></li>
+                        <!--판매가-->
+                        <!--/if_recmd_product@price_consumer(+1)/-->
+                        <li class="prd-price"><strike><!--/number/recmd_product@price_consumer/--></strike></li>
+                        <!--소비자가-->
+                        <!--/end_if/-->
+                        <!--/end_if/-->
+                        <!--/end_if/-->
+                        <div class="crema-product-reviews-count" data-product-code="<!--/recmd_product@uid/-->" data-format="리뷰 <b>{{{count}}}</b>" data-hide-if-zero="1"></div>
+                      </div>
+                      <!--/if_recmd_product@price_discount/-->
+                      <li class="prd-sale"><!--/number/recmd_product@price_discount/--> <img src="<!--/recmd_product@discount_icon/-->"></li>
+                      <!--할인가-->
+                      <!--/end_if/-->
+                    </ul>
+                  </dd>
+                </dl>
+              </div>
+              <!--/end_loop/-->
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--/end_if/-->
+    </div>
+    <!-- //카테고리 베스트 상품 -->
+  </div>
+  <!-- //section_top -->
+
+  <div id="contentWrapper">
+    <div id="contentWrap">
+      <div id="content">
+        <div id="prdBrand">
+
+          <!-- 카테고리 상품 리스트 -->
+          <div class="item-wrap">
+            <div class="midcate">
+              <!--/if_category_title_html/-->
+              <!--/category_title_html/-->
+              <!--/end_if/-->
+            </div>
+            <div class="item-sort">
+              <p class="ea">총 <strong><!--/number/pager_product::count/--></strong>개의 상품이 있습니다.</p>
+              <div class="sort">
+                <select onchange="location.href=this.value">
+                  <option value="">상품정렬</option>
+                  <option value="<!--/link_sort_regdate/-->">신상품순</option>
+                  <option value="<!--/link_sort_sell_count/-->">인기순</option>
+                  <option value="<!--/link_sort_price_up/-->">낮은가격순</option>
+                  <option value="<!--/link_sort_price_down/-->">높은가격순</option>
+                </select>
+              </div>
+            </div>
+
+            <!-- 상품리스팅 -->
+            <!--/if_product/-->
+            <div class="item-cont">
+              <!--/loop_product(96)/-->
+              <dl class="item-list">
+                <dt> <a href="<!--/product@link/-->"> <img src="<!--/product@image_s/-->" "<!--/product@rollover/-->" alt="상품 섬네일" title="상품 섬네일" /> </a>
+                  <div class="quick_view"><a href="<!--/product@link_preview/-->"></a></div>
+                </dt>
+                <dd>
+                  <ul>
+                    <!--/if_product@icons/-->
+                    <div class="prd-icon"><!--/product@icons/--></div>
+                    <!--/end_if/-->
+                    <li class="style-code"><!--/product@style_code/--></li>
+                    <li class="prd-name"><!--/product@name(500)/--></li>
+                    <li class="prd-name-sub"><!--/product@subname(200)/--></li>
+                    <div class="priceBox">
+                      <!--/if_product@is_soldout/-->
+                      <!--/if_product@is_short_soldout/-->
+                      <li class="prd-price"><!--/number/product@price_sell/--> <span class="slod-out">일시품절</span></li>
+                      <!--/else/-->
+                      <li class="prd-price"><!--/number/product@price_sell/--> <span class="slod-out">SOLD OUT</span></li>
+                      <!--/end_if/-->
+                      <!--/else/-->
+                      <!--/if_product@is_term_discount/-->
+                      <li class="prd-price"><!--/number/product@price_sell/--></li>
+                      <!--판매가-->
+                      <!--/if_product@price_consumer(+1)/-->
+                      <li class="prd-price"><strike><!--/number/product@price_consumer/--></strike></li>
+                      <!--소비자가-->
+                      <!--/end_if/-->
+                      <!--/else/-->
+                      <li class="prd-price"><!--/number/product@price_sell/--></li>
+                      <!--판매가-->
+                      <!--/if_product@price_consumer(+1)/-->
+                      <li class="prd-price"><strike><!--/number/product@price_consumer/--></strike></li>
+                      <!--소비자가-->
+                      <!--/end_if/-->
+                      <!--/end_if/-->
+                      <!--/end_if/-->
+                      <div class="crema-product-reviews-count" data-product-code="<!--/product@uid/-->" data-format="리뷰 <b>{{{count}}}</b>" data-hide-if-zero="1"></div>
+                    </div>
+                    <!--/if_product@price_discount/-->
+                    <li class="prd-sale"><!--/number/product@price_discount/--> <img src="<!--/product@discount_icon/-->"></li>
+                    <!--할인가-->
+                    <!--/end_if/-->
+                  </ul>
+                </dd>
+              </dl>
+              <!--/end_loop/-->
+            </div>
+            <!--/end_if/-->
+            <!-- //상품리스팅 -->
+
+            <!-- 페이지네이션 -->
+            <div class="item-page">
+              <!--/if_pager_product::first@link/--><a class="first" href="<!--/pager_product::first@link/-->">[처음]</a><!--/end_if/-->
+              <!--/if_pager_product::prev@link/--><a class="prev" href="<!--/pager_product::prev@link/-->">[이전]</a><!--/end_if/-->
+              <!--/loop_pager_product::page/-->
+              <!--/if_pager_product::page@current/-->
+              <a class="now" href="<!--/pager_product::current@link/-->"><!--/pager_product::current/--></a>
+              <!--/else/-->
+              <a href="<!--/pager_product::page@link/-->"><!--/pager_product::page/--></a>
+              <!--/end_if/-->
+              <!--/end_loop/-->
+              <!--/if_pager_product::next@link/--><a class="next" href="<!--/pager_product::next@link/-->">[다음]</a><!--/end_if/-->
+              <!--/if_pager_product::last@link/--><a class="last" href="<!--/pager_product::last@link/-->">[끝]</a><!--/end_if/-->
+            </div>
+            <!-- //페이지네이션 -->
+
+          </div>
+          <!-- //카테고리 상품 리스트 -->
+
+        </div>
+        <!-- #prdBrand -->
+
+        <script>
+          (function(z, xcode) {
+            z = new RegExp("[\\?&]xcode=([^&#]*)").exec(location.search), xcode = z ? decodeURIComponent(z[1].replace(/\+/g, " ")) : '';
+            if (xcode == "020") {
+              document.write("<div style='padding-top:70px; font-size:24px; font-weight:500; text-align:center; color:#333;'>BLACK LABEL REVIEW</div><div class='crema-reviews' data-widget-id='32' style='margin-top: 70px;'></div>");
+            } else if (xcode == "005") {
+              document.write("<div style='padding-top:70px; font-size:24px; font-weight:500; text-align:center; color:#333;'>TOPS REVIEW</div><div class='crema-reviews' data-widget-id='33' style='margin-top: 70px;'></div>");
+            } else if (xcode == "006") {
+              document.write("<div style='padding-top:70px; font-size:24px; font-weight:500; text-align:center; color:#333;'>BOTTOMS REVIEW</div><div class='crema-reviews' data-widget-id='34' style='margin-top: 70px;'></div>");
+            } else if (xcode == "008") {
+              document.write("<div style='padding-top:70px; font-size:24px; font-weight:500; text-align:center; color:#333;'>ATHLEISURE REVIEW</div><div class='crema-reviews' data-widget-id='35' style='margin-top: 70px;'></div>");
+            } else if (xcode == "007") {
+              document.write("<div style='padding-top:70px; font-size:24px; font-weight:500; text-align:center; color:#333;'>ACCESSORIES REVIEW</div><div class='crema-reviews' data-widget-id='36' style='margin-top: 70px;'></div>");
+            }
+          })();
+        </script>
+      </div>
+      <!-- #content -->
+      <hr />
+    </div>
+    <!-- #contentWrap -->
+  </div>
+  <!-- #contentWrapper -->
+  <hr />
+  <!--/include_footer(1)/-->
+</div>
+<!-- #wrap -->
+
+<!-- cre.ma / PC 리뷰 초기화 / 스크립트를 수정할 경우 연락주세요 (support@cre.ma) -->
+<script>(function(i,s,o,g,r,a,m){if(s.getElementById(g)){return};a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.id=g;a.async=1;a.src=r;m.parentNode.insertBefore(a,m)})(window,document,'script','crema-jssdk','//widgets.cre.ma/xexymix.com/init.js');</script>
+<script type="text/javascript">
+//베스트 슬라이드
+$('.best .slider').slick({
+  autoplay: true,
+  speed: 300,
+  arrows: true,
+  dots: false,
+  slidesToShow: 4,
+  slidesToScroll: 4,
+  infinite: true,
+});
+
+
+var swiper = new Swiper('.main-slide', {
+  slidesPerView: 'auto',
+  centeredSlides: true,
+  spaceBetween: 12,
+  loop: true,
+  autoplay: {
+      delay: 3000,
+      disableOnInteraction: false,
+ },
+});
+</script>

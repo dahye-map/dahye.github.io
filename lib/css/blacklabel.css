@@ -1,0 +1,170 @@
+.top-banner p { width:100%; max-width:100%; min-width:1280px; }
+.top-banner p img { width:100%; max-width:100%; }
+
+.slide-img-wrap { margin-top:260px !important; margin-left:312px !important; }
+.slide-img-wrap ul:after { content:''; display:block; clear:both; }
+.slide-img-wrap ul li { float:left; width:auto !important; }
+.slide-img-wrap .swiper-wrapper { transition-timing-function:linear; }
+
+.row { width:100%; max-width:1280px; margin:0 auto; }
+.black-tit { color:#3c3b3b; font-weight:bold; font-size:30px; line-height:1.9; padding-top:170px; padding-bottom:80px; }
+.col2 { padding-bottom:260px; }
+.col2:after { content:''; display:block; clear:both; }
+.col2 p:first-child { float:left; width:530px; }
+.col2 p:last-child { float:right; width:530px; }
+.black-des { color:#242424; font-size:17px; line-height:2; }
+
+.bg01 { background:url('//xexymix.jpg3.kr/xexymix/introimg/black/bg01.jpg') center no-repeat; padding-top:230px; padding-bottom:220px; }
+.bg01 .row { max-width:1040px; }
+.merit-list:after { content:''; display:block; clear:both; }
+.merit-list dl { width:450px; float:left; padding-left:156px; }
+.merit-list dl:nth-child(1) { background:url('//xexymix.jpg3.kr/xexymix/introimg/black/ico_black01.png') left top no-repeat; }
+.merit-list dl:nth-child(2) { background:url('//xexymix.jpg3.kr/xexymix/introimg/black/ico_black02.png') left top no-repeat; float:right; }
+.merit-list dl:nth-child(3) { background:url('//xexymix.jpg3.kr/xexymix/introimg/black/ico_black03.png') left top no-repeat; margin-top:150px; }
+.merit-list dl:nth-child(4) { background:url('//xexymix.jpg3.kr/xexymix/introimg/black/ico_black04.png') left top no-repeat; margin-top:150px; float:right; }
+.merit-list .tit { color:#fff; font-size:30px; font-weight:600; padding-bottom:20px; }
+.merit-list dd p { color:#fff; font-size:17px; line-height:1.6; }
+
+
+/* 블랙라벨 리스트 css */
+.flexy-list-wrap, .flexy-list-thumbs { position:relative; width:100%; max-width:1040px; margin:0 auto; }
+.flexy-list-wrap .swiper-slide { padding-bottom:80px; }
+.flexy-list-thumbs { margin-top:125px !important; margin-bottom:160px !important; height:147px; }
+.flexy-list-thumbs .swiper-slide { cursor:pointer; width:196px !important; }
+.cover { position:absolute; z-index:900; top:0; left:0; width:100%; height:100%; background:#000; opacity:0.6; -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=60)"; filter:alpha(opacity=60); -moz-opacity:0.6; -khtml-opacity:0.6; }
+.flexy-list-thumbs .swiper-slide .cover { display:block; }
+.flexy-list-thumbs .swiper-slide-thumb-active .cover { display:none; }
+.flexy-list-thumbs .name { position:absolute; left:16px; top:20px; z-index:999; font-size:16px; color:#fff; line-height:1.5; }
+@keyframes bar-fill {
+   0% { width: 0; }
+}
+@-webkit-keyframes bar-fill {
+   0% { width: 0; }
+}
+@-moz-keyframes bar-fill {
+   0% { width: 0; }
+}
+@-o-keyframes bar-fill {
+   0% { width: 0; }
+}
+.bar-wrap { float:left; background-color:#dcdcdc; width:400px; height:8px; margin-top:8px; }
+.bar-fill { background-color:#fc4347; display:block; height:8px; width:0px; }
+.swiper-slide.swiper-slide-active .bar-fill.w40.active { width:40%; animation:bar-fill 1.5s; -webkit-animation:bar-fill 1.5s; -moz-animation:bar-fill 1.5s; -o-animation:bar-fill 1.5s; }
+.swiper-slide.swiper-slide-active .bar-fill.w50.active { width:50%; animation:bar-fill 1.5s; -webkit-animation:bar-fill 1.5s; -moz-animation:bar-fill 1.5s; -o-animation:bar-fill 1.5s; }
+.swiper-slide.swiper-slide-active .bar-fill.w60.active { width:60%; animation:bar-fill 1.5s; -webkit-animation:bar-fill 1.5s; -moz-animation:bar-fill 1.5s; -o-animation:bar-fill 1.5s; }
+.swiper-slide.swiper-slide-active .bar-fill.w70.active { width:70%; animation:bar-fill 1.5s; -webkit-animation:bar-fill 1.5s; -moz-animation:bar-fill 1.5s; -o-animation:bar-fill 1.5s; }
+.swiper-slide.swiper-slide-active .bar-fill.w80.active { width:80%; animation:bar-fill 1.5s; -webkit-animation:bar-fill 1.5s; -moz-animation:bar-fill 1.5s; -o-animation:bar-fill 1.5s; }
+.swiper-slide.swiper-slide-active .bar-fill.w100.active { width:100%; animation:bar-fill 1.5s; -webkit-animation:bar-fill 1.5s; -moz-animation:bar-fill 1.5s; -o-animation:bar-fill 1.5s; }
+
+.flexy-list-wrap .flexy-list .big-tit { color:#3c3b3b; font-size:46px; font-weight:bold; padding-top:30px; padding-bottom:27px; }
+.flexy-list-wrap > .flexy-list > .swiper-slide > .des { padding-bottom:20px; color:#3c3b3b; font-size:17px; line-height:1.58; }
+.flexy-list-wrap > .flexy-list > .swiper-slide > .des.type02 { padding-bottom:5px; font-size:15px; color:#adacac; }
+.flexy-list-wrap .flexy-list .detail { padding-top:30px; padding-bottom:15px;  }
+.flexy-list-wrap .flexy-list .detail:after { content:''; display:block; clear:both; overflow:hidden; }
+.flexy-list-wrap .flexy-list .detail .des-wrap { float:left; }
+.flexy-list-wrap .flexy-list .detail .des-wrap .bar-wrap { float:none; }
+.flexy-list-wrap .flexy-list .detail .des-wrap .des { float:none; padding-top:20px; }
+.flexy-list-wrap .flexy-list .detail .des { position:relative; z-index:5; width:550px; float:left; color:#3c3b3b; font-size:17px; line-height:1.58; }
+
+.flexy-list-wrap .flexy-list .detail .tit { width:90px; float:left; color:#3c3b3b; font-size:22px; font-weight:bold; }
+.length-tab a { display:inline-block; font-size:13px; color:#7e7e7e; border:1px solid #7e7e7e; padding:7px 10px 6px; text-align:center; border-radius:14px; margin-right:10px; }
+.length-tab a:hover, .length-tab a.active { background-color:#fc4347; border:1px solid #fc4347; color:#fff; }
+
+
+.color-tab { display:none; padding-left:5px; }
+.color-tab.active { display:block; }
+.color-tab span { position:relative; display:inline-block; width:20px; height:20px; border-radius:50%; margin-right:12px; cursor:pointer; }
+.color-tab span.active:after { content:''; display:block; position:absolute; left:-5px; top:-5px; width:30px; height:30px; border-radius:50px; border:1px solid #7e7e7e; }
+/* 하이플렉시 9부 */
+.color-tab span.color-spc { background-color:#f7b2ab; }
+.color-tab span.color-bpk { background-color:#965b5f; }
+.color-tab span.color-slv { background-color:#bab8c5; }
+.color-tab span.color-cbl { background-color:#303d69; }
+.color-tab span.color-rsk { background-color:#b49384; }
+.color-tab span.color-pbl { background-color:#64647e; }
+.color-tab span.color-opk { background-color:#cdb4af; }
+.color-tab span.color-obr { background-color:#442f38; }
+.color-tab span.color-obg { background-color:#1f4049; }
+.color-tab span.color-iv { background-color:#f1f1f1; }
+.color-tab span.color-dnv { background-color:#464555; }
+.color-tab span.color-cgy { background-color:#59585e; }
+.color-tab span.color-bk { background-color:#000000; }
+/* 하이플렉시 8.5부 */
+.color-tab span.color-slm { background-color:#dde39b; }
+.color-tab span.color-ppc { background-color:#f0d1cf; }
+.color-tab span.color-plv { background-color:#c2add6; }
+.color-tab span.color-mbl { background-color:#c2d4d4; }
+.color-tab span.color-lgy { background-color:#727270; }
+.color-tab span.color-fnv { background-color:#2d3349; }
+/* 하이플렉시 5부 */
+.color-tab span.color-pm { background-color:#ba5b87; }
+.color-tab span.color-gor { background-color:#ff7546; }
+.color-tab span.color-gor { background-color:#ff7546; }
+/* 하이플렉시 조깅스 9부 */
+.color-tab span.color-br { background-color:#3c3135; }
+.color-tab span.color-kh { background-color:#857f71; }
+.color-tab span.color-cr { background-color:#e4e0d5; }
+/* 하이플렉시 릴렉스 */
+.color-tab span.color-blm { background-color:#607ab3; }
+.color-tab span.color-agr { background-color:#8c8781; }
+.color-tab span.color-snv { background-color:#334352; }
+.color-tab span.color-rw { background-color:#5a353c; }
+.color-tab span.color-rpk { background-color:#ae707b; }
+.color-tab span.color-ma { background-color:#eca57a; }
+.color-tab span.color-for { background-color:#f2715e; }
+.color-tab span.color-ekh { background-color:#756c5a; }
+.color-tab span.color-cbr { background-color:#736a58; }
+/* 하이플렉시 브이업 */
+.color-tab span.color-cav { background-color:#736a58; }
+.color-tab span.color-bgy { background-color:#6c798a; }
+.color-tab span.color-wol { background-color:#ddcf6e; }
+.color-tab span.color-rd { background-color:#b23229; }
+.color-tab span.color-rb { background-color:#cc8eb3; }
+.color-tab span.color-pu { background-color:#483c46; }
+.color-tab span.color-nv { background-color:#333a40; }
+.color-tab span.color-dro { background-color:#a78b87; }
+/* 하이플렉시 워터 */
+.color-tab span.color-dro { background-color:#a78b87; }
+.color-tab span.color-wh { background-color:#f1f1f1; }
+.color-tab span.color-nye { background-color:#e0eb8d; }
+.color-tab span.color-npk { background-color:#e6669f; }
+.color-tab span.color-npc { background-color:#faa588; }
+.color-tab span.color-mll { background-color:#c9b8e2; }
+.color-tab span.color-mkh { background-color:#5c5a4d; }
+.color-tab span.color-gbl { background-color:#2a3972; }
+.color-tab span.color-crd { background-color:#e73a40; }
+.color-tab span.color-cgy { background-color:#9c9293; }
+
+
+
+
+.leggings-img-wrap { position:absolute; right:-200px; top:80px; }
+.color-img-tab { display:none; }
+.color-img-tab.active { display:block; }
+.color-img-tab span { display:none; }
+.color-img-tab span.active { display:block; }
+.color-img-tab img { width:700px; }
+
+
+#content { padding-top:94px; }
+
+.section_top { position:relative; z-index:5; }
+.section_top .category_title {position:relative; padding:67px 0 44px; color:#333; font-size:24px; font-weight:400; text-align:center;}
+.section_top .category_title .kakao {position:absolute; top:64px; right:0; z-index:5;}
+.section_top .best {position:relative; padding-bottom:90px;}
+.section_top .best .item-wrap .item-cont .item-list {width:98%; margin:0 auto; }
+.section_top .best .slick-prev {position:absolute; top:192px; left:-40px; z-index:5; width:22px; height:44px; background:url('/design/xexymix/image/list_best_prev.png') no-repeat center; color:transparent; text-indent:-9999px;}
+.section_top .best .slick-next {position:absolute; top:192px; right:-40px; z-index:5; width:22px; height:44px; background:url('/design/xexymix/image/list_best_next.png') no-repeat center; color:transparent; text-indent:-9999px;}
+/*#prdBrand .item-wrap {padding-top:50px; }*/
+.section_top .item-wrap .item-cont .item-list dt .no {text-indent:13px; }
+
+.midcate .p_title {font-size:0; text-align:center; border:1px solid #c6c6c6;  }
+.midcate .p_title a {display:inline-block; *zoom:1; *display:inline; height:58px; font-size:15px; font-weight:400; line-height:58px; margin:0 40px; }
+.midcate .p_title a.act {text-decoration:underline; font-weight:600; }
+.midcate img {display:none; }
+.midcate .top_img { display: none; }
+.midcate .blacklabel_top { display: none; }
+
+.midcate .mens_tit { display:none; }
+
+.slick-slide img { display:inherit!important; }
