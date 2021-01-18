@@ -1,0 +1,145 @@
+<!--@layout(/layout/basic/main.html)-->
+<!--@css(/layout/basic/css/main.css)-->
+
+
+<!--팝업-->
+<!-- @import(/_idio/inc/popup.html) -->
+
+<!--메인배너-->
+<!-- @import(/_idio/inc/mainBnr.html) -->
+<div class="main-banner-wrap swiper-container">
+    <div class="main-banner swiper-wrapper">
+        <div class="swiper-slide"><img src="/web/upload/images/img_banner01_mo.jpg" alt=""></div>
+        <div class="swiper-slide"><img src="/web/upload/images/img_banner02_mo.jpg" alt=""></div>
+        <div class="swiper-slide"><img src="/web/upload/images/img_banner03_mo.jpg" alt=""></div>
+    </div>
+    <div class="swiper-pagination main-banner-pagination"></div>
+</div>
+
+<!-- s:section01 -->
+<div class="section01">
+    <div class="tit-wrap">
+        <p class="tit-eng">Our Brand</p>
+        <p class="tit-big"></p>
+    </div>
+
+    <div class="brand-slide-wrap swiper-container">
+        <div class="brand-slide swiper-wrapper">
+            <div class="swiper-slide">
+                <img src="/web/upload/images/img_brand01_mo.jpg" alt="">
+            </div>
+            <div class="swiper-slide">
+                <img src="/web/upload/images/img_brand02_mo.jpg" alt="">
+            </div>
+            <div class="swiper-slide">
+                <img src="/web/upload/images/img_brand03_mo.jpg" alt="">
+            </div>
+        </div>
+        <div class="swiper-pagination"></div>
+    </div>
+</div>
+<!-- //e:section01 -->
+
+<!-- s:salon-wrap -->
+<div class="salon-wrap">
+    <div class="contents">
+        <div class="tit-wrap ta-l">
+            <p class="tit-eng">Product</p>
+            <p class="tit-big">쌀 본연의 힘으로 맑은 피부를 짓다<br>쌀롱드리 에센셜 토너</p>
+            <p class="tit-sub">
+                유기농쌀에서 얻은 쌀 추출물 90% 함유<br>
+                저자극 고보습 토너로 지쳐 <br>
+                무너진 피부를 다시 지어주세요
+            </p>
+            <a href="#" class="btn-more mt-50">더 알아보기</a>
+        </div>
+    </div>
+</div>
+<!-- //e:salon-wrap -->
+
+<!-- s:recipe-wrap -->
+<div class="recipe-wrap">
+    <div class="contents">
+        <div class="tit-wrap ta-l">
+            <p class="tit-eng">Product</p>
+            <p class="tit-big">엄마의 수제팩 레시피를 그대로<br>담은 워시오프 마스크</p>
+            <p class="tit-sub">
+                피부에 좋은 원물이 가득! 꿀과 요구르트 <br>
+                성분으로 피부영양까지 더 이상 만들어 쓰지 마세요
+            </p>
+            <a href="#" class="btn-more black mt-50">더 알아보기</a>
+        </div>
+    </div>
+</div>
+<!-- //e:recipe-wrap -->
+
+<!-- s:editor-wrap -->
+<div class="editor-wrap">
+    <div class="contents">
+        <p><img src="/web/upload/images/img_pick.jpg" alt=""></p>
+        <div class="tit-wrap ta-l">
+            <p class="tit-eng">Editor’s Pick</p>
+            <p class="tit-big">목욕탕에 못가서 답답한 분들을 <br>위한 솔루션 이태리타월로 <br>힘들게 밀던 시절은 안녕</p>
+            <p class="tit-sub">
+                천연 필링 성분이 풍성한 버블을 만나 바디워시, <br>
+                각질제거제를 따로 사용할 필요 없이 단 하나의 패드로 <br>
+                개운한 때밀이가 가능합니다여행 갈 때, <br><br>
+                친구집 갈 때도 간편하게 챙겨가세요
+            </p>
+            <a href="#" class="btn-more black mt-50">더 알아보기</a>
+        </div>
+    </div>
+</div>
+<!-- //e:editor-wrap -->
+
+<div class="story-wrap">
+    <div class="contents">
+        <p class="des01">
+            FOR<br>
+            A BETTER<br>
+            LIFE
+        </p>
+        <p class="des02">
+            100LABS STORY
+        </p>
+        <p class="des03">
+            일공공랩스는 누구나 한 번쯤 생각했던<br>
+            다양한 생각들을 채울 수 있는 제품들로<br>
+            생활의 즐거운 변화를 만들어갑니다.<br><br>
+            우리의 삶과 밀접한 제품에서 꼭 필요한 것만 채운<br>
+            성분과 재료로   고객의 안심과 행복을 함께 하겠습니다.
+        </p>
+    </div>
+</div>
+
+<script>
+    var swiper = new Swiper('.brand-slide-wrap', {
+        slidesPerView: 1,
+        slidesPerView: 'auto',
+        loop:true,
+        spaceBetween: 25,
+        pagination: {
+            el: '.swiper-pagination',
+            type: 'progressbar',
+        },
+        on:{
+            slideChangeTransitionEnd: function(){
+                if(this.realIndex == 0){
+                    $('.section01 .tit-big').html('우리집에서 즐기는 <br>엄마의 목욕탕 스킨케어 비법');
+                } else if( this.realIndex==1 ){
+                    $('.section01 .tit-big').html('유기농 쌀로 지은 <br>피부 맑음 루틴케어');
+                } else {
+                    $('.section01 .tit-big').html('언택트 시대에<br>위생과 스킨케어를 한번에');
+                }
+            }
+        }
+    });
+    var swiper01 = new Swiper('.main-banner-wrap', {
+        slidesPerView: 1,
+        loop:true,
+        pagination: {
+            el: '.main-banner-pagination',
+            type: 'progressbar',
+        }
+    });
+</script>

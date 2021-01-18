@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+        <script src="../lib/js/slick.min.js"></script>
+
+        <script src="../lib/js/TweenMax.min.js"></script>
+        <script src="../lib/js/ScrollMagic.js"></script>
+        <script src="../lib/js/animation.gsap.js"></script>
+        <script src="../lib/js/debug.addIndicators.min.js"></script>
+        <script src="../lib/js/ui.js"></script>
+
+        <!-- <script src="../lib/js/ui.js"></script> -->
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+        <link rel="stylesheet" href="../lib/css/slick.css" />
+        <link type="text/css" rel="stylesheet" href="../lib/css/common.css">
+        <link type="text/css" rel="stylesheet" href="../lib/css/layout.css">
+        <title></title>
+        <style media="screen">
+            h1 { font-size:24px; font-weight:bold; padding-bottom:20px; }
+            #wrap { width:100%; max-width:1280px; padding-top:200px; padding-bottom:100px; margin:0 auto; }
+            table, table tr, table th, table td { padding:20px; border:1px solid #000; font-size:14px; line-height:1.5; }
+            .mont { font-family:'Montserrat',sans-serif; }
+            .batang { font-family:'KoPub Batang', serif; }
+        </style>
+    </head>
+    <body>
+
+        <!-- s:headerWrap -->
+        <div id="headerWrap">
+            <div class="header">
+
+                <a href="#" class="btn-menu"><img src="../images/ico_menu.png" alt="메뉴"></a>
+                <a href="#" class="logo ani5" id="ani_logo"><img src="../images/logo.png" alt="로고"></a>
+                <!-- <a href="#" class="btn-member">
+                    <img src="../images/ico_member.png" alt="회원"> -->
+                    <!-- on될때 클래스 on 추가 -->
+                    <!-- <span class="">OFF</span>
+                </a> -->
+                <ul class="util">
+                    <li><a href="#">로그인</a></li>
+                    <li><a href="#">회원가입</a></li>
+                    <li><a href="#">마이페이지</a></li>
+
+                    <li><a href="#" class="btn-search"><img src="../images/btn_search.png" alt=""></a></li>
+                    <li><a href="#" class="btn-cart"><img src="../images/btn_cart.jpg" alt=""></a></li>
+                </ul>
+            </div>
+        </div>
+        <!-- //e:headerWrap -->
+
+        <!-- s:gnbWrap -->
+        <div id="gnbWrap">
+            <div class="gnb ani5">
+                <a href="#" class="btn-close"><img src="../images/btn_close.jpg" alt=""></a>
+                <input type="text" name="" value="" placeholder="Search" class="search">
+                <ul>
+                    <li>
+                        <a href="#">100LABS</a>
+                    </li>
+                    <li>
+                        <a href="#">Shop</a>
+                        <ul>
+                            <li><a href="main_recipe.html">엄마의 목욕탕레시피</a></li>
+                            <li><a href="main_salon.html">쌀롱드리</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">Community</a>
+                        <ul>
+                            <li><a href="#">공지사항</a></li>
+                            <li><a href="#">제품후기</a></li>
+                            <li><a href="#">언론보도</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">Q&amp;A</a>
+                        <ul>
+                            <li><a href="#">고객센터</a></li>
+                            <li><a href="#">공지사항</a></li>
+                            <li><a href="#">1:1상담문의</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- //e:gnbWrap -->
+
+        <!-- s:wrap -->
+        <div id="wrap">
+            <!-- s:containerWrap -->
+            <div id="containerWrap">
+                <div class="container">
+
+                    <table>
+                        <tr>
+                            <th>구조</th>
+                            <td>
+                                <p>html</p>
+                            </td>
+                            <td>
+                                <!-- s:headerWrap -->
+                                &lt;div id="headerWrap"&gt; <br>
+                                    &lt;div class="header"&gt;<br>
+                                    &lt;/div&gt;<br>
+                                &lt;/div&gt;<br>
+                                <!-- //e:headerWrap -->
+                                <br>
+                                <!-- s:gnbWrap -->
+                                &lt;div id="gnbWrap"&gt;<br>
+                                    &lt;div class="gnb ani5"&gt;<br>
+                                    &lt;/div&gt;<br>
+                                &lt;/div&gt;<br>
+                                <!-- //e:gnbWrap -->
+                                <br>
+                                <!-- s:wrap -->
+                                &lt;div id="wrap"&gt;<br>
+                                    <!-- s:containerWrap -->
+                                    &lt;div id="containerWrap"&gt;<br>
+                                        &lt;div class="container"&gt;<br>
+                                        &lt;/div&gt;<br>
+                                    &lt;/div&gt;<br>
+                                &lt;/div&gt;<br>
+                                <!-- //e:wrap -->
+                                <br>
+                                <!-- s:footerWrap -->
+                                &lt;div id="footerWrap"&gt;<br>
+                                    &lt;div class="footer"&gt;<br>
+                                    &lt;/div&gt;<br>
+                                &lt;/div&gt;<br>
+                                <!-- //e:footerWrap -->
+                                <br>
+                                <br>
+                                <br>
+                                class명은 (클래스명)-wrap 으로 감싸기
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>주의사항</th>
+                            <td>
+                                <p>css</p>
+                                <p>id</p>
+                            </td>
+                            <td>
+                                하이픈 ( ex. txt-wrap, md-pick) <br>
+                                낙타기법 (ex. containerWrap, headerWrap, footerWrap, gnbWrap)
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>폰트</th>
+                            <td>
+                                <p class="nanum">기본 폰트</p>
+                                <p class="mont">hello world!</p>
+                                <p class="batang">포인트 폰트</p>
+                            </td>
+                            <td>
+                                font-family:'NanumBarunGothic',sans-serif; <br>
+                                font-family:'Montserrat',sans-serif; <br>
+                                font-family:'KoPub Batang', serif;
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>기본 타이틀 레이아웃</th>
+                            <td>
+                                <div class="tit-wrap">
+                                    <p class="tit-eng"
+                                        data-aos="fade-up"
+                                        data-aos-duration="500"
+                                        data-aos-once="true">Product</p>
+                                    <p class="tit-big"
+                                        data-aos="fade-up"
+                                        data-aos-duration="1000"
+                                        data-aos-once="true">유기농쌀로 지은 피부맑은<br>쌀롱드리 루틴케어</p>
+                                    <p class="tit-sub"
+                                        data-aos="fade-up"
+                                        data-aos-duration="1500"
+                                        data-aos-once="true">
+                                        오랜 기다림과 고된 수고로움의 결실, “쌀”<br>
+                                        원료 자체의 깨끗한 에너지로 근본적인 피부 고민을<br>
+                                        해결 할 수 있도록 건강한 피부를 짓는것.<br>
+                                        자연과 소비자를 위한 우리의 약속입니다.
+                                    </p>
+                                    <a href="#" class="btn-more mt-50"
+                                        data-aos="fade-up"
+                                        data-aos-duration="2000"
+                                        data-aos-once="true">더 알아보기</a>
+                                </div>
+                            </td>
+                            <td>
+                                &lt;div class="tit-wrap"&gt;<br>
+                                    &lt;p class="tit-eng"<br>
+                                        data-aos="fade-up"<br>
+                                        data-aos-duration="500"<br>
+                                        data-aos-once="true"&gt;Product&lt;/p&gt;<br>
+                                    &lt;p class="tit-big"<br>
+                                        data-aos="fade-up"<br>
+                                        data-aos-duration="1000"<br>
+                                        data-aos-once="true"&gt;유기농쌀로 지은 피부맑은&lt;br&gt;쌀롱드리 루틴케어&lt;/p&gt;<br>
+                                    &lt;p class="tit-sub"<br>
+                                        data-aos="fade-up"<br>
+                                        data-aos-duration="1500"<br>
+                                        data-aos-once="true"&gt;<br>
+                                        오랜 기다림과 고된 수고로움의 결실, “쌀”&lt;br&gt;<br>
+                                        원료 자체의 깨끗한 에너지로 근본적인 피부 고민을&lt;br&gt;<br>
+                                        해결 할 수 있도록 건강한 피부를 짓는것.&lt;br&gt;<br>
+                                        자연과 소비자를 위한 우리의 약속입니다.<br>
+                                    &lt;/p&gt;<br>
+                                    &lt;a href="#" class="btn-more mt-50"<br>
+                                        data-aos="fade-up"<br>
+                                        data-aos-duration="2000"<br>
+                                        data-aos-once="true"&gt;더 알아보기&lt;/a&gt;<br>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>상품리스트</th>
+                            <td>
+                                <div class="all-product-wrap">
+                                    <div class="all-product">
+                                        <p class="tit">All Product</p>
+                                        <ul>
+                                            <li>
+                                                <a href="#">
+                                                    <img src="../images/img_mom_product01.jpg" alt="">
+                                                    <p class="name">인 샤워 마스크 흑임자</p>
+                                                    <p class="desc">각질&amp;모공 집중 케어</p>
+                                                    <p class="price">29,000 <strike>58,000</strike></p>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                &lt;div class="all-product-wrap"&gt;<br>
+                                    &lt;div class="all-product"&gt;<br>
+                                        &lt;p class="tit"&gt;All Product&lt;/p&gt;<br>
+                                        &lt;ul&gt;<br>
+                                            &lt;li&gt;<br>
+                                                &lt;a href="#"&gt;<br>
+                                                    &lt;img src="../images/img_mom_product01.jpg" alt=""&gt;<br>
+                                                    &lt;p class="name"&gt;인 샤워 마스크 흑임자&lt;/p&gt;<br>
+                                                    &lt;p class="desc"&gt;각질&amp;모공 집중 케어&lt;/p&gt;<br>
+                                                    &lt;p class="price"&gt;29,000 &lt;strike&gt;58,000&lt;/strike&gt;&lt;/p&gt;<br>
+                                                &lt;/a&gt;<br>
+                                            &lt;/li&gt;<br>
+                                        &lt;/ul&gt;<br>
+                                    &lt;/div&gt;<br>
+                                &lt;/div&gt;<br>
+                                <br>
+                                *총 3열로 구성되어있고, 상품갯수대로 li로 감싼부분 복사해서 쓰시면 됩니다.
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>버튼</th>
+                            <td>
+                                <a href="#" class="btn-more">더 알아보기</a>
+                            </td>
+                            <td>
+                                &lt;a href="#" class="btn-more"&gt;더 알아보기&lt;/a&gt;
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <!-- //e:containerWrap -->
+        </div>
+        <!-- //e:wrap -->
+
+        <!-- s:footerWrap -->
+        <div id="footerWrap">
+            <div class="footer">
+                <p><img src="../images/logo.png" alt=""></p>
+                <ul class="footer-tab">
+                    <li><a href="#">ABOUT</a></li>
+                    <li><a href="#">GUIDE</a></li>
+                    <li><a href="#">AGREEMENT</a></li>
+                    <li><a href="#">PRIVACY POICY</a></li>
+                </ul>
+                <p class="company-detail">
+                    100LABS 대표 김덕현 전화 1599-3360 팩스 메일 주소 47294 부산광역시 부산진구 전포동 683-7 4층 원디자인 <br>
+                    사업자등록번호 602-07-87684 <a href="#">[사업자정보확인]</a> 통신판매업신고 2015-부산부산진-0437 <br>
+                    개인정보취급관리 김덕현, admin@naver.com <br>
+                    운영시간 평일 AM10-PM06 주말/공휴일 휴무
+                </p>
+                <ul class="sns-list">
+                    <li><a href="#"><img src="../images/ico_insta.jpg" alt=""></a></li>
+                    <li><a href="#"><img src="../images/ico_kakao.jpg" alt=""></a></li>
+                    <li><a href="#"><img src="../images/ico_blog.jpg" alt=""></a></li>
+                    <li><a href="#"><img src="../images/ico_facebook.jpg" alt=""></a></li>
+                    <li><a href="#"><img src="../images/ico_twitter.jpg" alt=""></a></li>
+                </ul>
+            </div>
+        </div>
+        <!-- //e:footerWrap -->
+
+        <div class="quick-menu ani1">
+            <p><a href="main_recipe.html"><img src="../images/btn_quick_mom.png" alt=""></a></p>
+            <p><a href="main_salon.html"><img src="../images/btn_quick_salon.png" alt=""></a></p>
+        </div>
+
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    </body>
+</html>
