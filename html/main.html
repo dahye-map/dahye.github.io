@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="chrome=1">
+		<meta http-equiv="Content-Type" content="text/html; charset = UTF-8" />
+
+        <link rel="stylesheet" href="../lib/css/common.css">
+        <link rel="stylesheet" href="../lib/css/layout.css">
+        <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.4.js"></script>
+
+        <title></title>
+    </head>
+
+    <body>
+
+        <div id="headerWrap">
+            <div class="header">
+                <div class="top-header">
+                    <div class="left-menu">
+                        <a href="#">인테리어 별 추천 상품 <span></span></a>
+                        <a href="#">이벤트</a>
+                    </div>
+                    <h1 class="logo"><a href="/"><img src="../img/logo_whia.png" alt="휘아로고"></a></h1>
+                    <div class="right-menu">
+                        <a href="#">로그인</a>
+                        <a href="#">회원가입</a>
+                        <a href="#">고객센터</a>
+                        <a href="#"><img src="../img/cart_icon.png" alt="장바구니"></a>
+                	</div>
+                </div>
+
+            </div>
+        </div>
+
+        <div id="containerWrap">
+            <div class="container">
+                <div class="banner-wrap">
+                    <img src="../img/main_banner01.jpg" alt="">
+                </div>
+
+                <!-- s:tab-wrap -->
+                <div class="tab-wrap">
+                    <p class="tit">카테고리 별 상품을 찾을 수 있어요.</p>
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <img src="../img/img_tab01.jpg" alt="">
+                                <p>브랜드</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="../img/img_tab02.jpg" alt="">
+                                <p>타임세일</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="../img/img_tab03.jpg" alt="">
+                                <p>전체상품</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="../img/img_tab04.jpg" alt="">
+                                <p>1+1</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="../img/img_tab05.jpg" alt="">
+                                <p>위생가전</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="../img/img_tab06.jpg" alt="">
+                                <p>위생생활</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="../img/img_tab07.jpg" alt="">
+                                <p>욕실위생</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="../img/img_tab08.jpg" alt="">
+                                <p>주방위생</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="../img/img_tab09.jpg" alt="">
+                                <p>이벤트</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="../img/img_tab10.jpg" alt="">
+                                <p>제품후기</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="../img/img_tab11.jpg" alt="">
+                                <p>고객센터</p>
+                            </a>
+                        </li>
+
+                        <div class="category">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+
+                        <div class="search-wrap">
+                            <input type="text" name="" value="">
+                            <a href="#">search</a>
+                        </div>
+                    </ul>
+
+                </div>
+                <!-- //e:tab-wrap -->
+
+                <div class="mid-banner-wrap">
+                    <div class="mid-banner">
+                        <p>Hygiene x Interior</p>
+                        <p>위생이 인테리어가 되는 브랜드</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script type="text/javascript">
+            $(window).scroll(function(){
+
+                var w_st = $(window).scrollTop();
+                if(w_st >= 1000) {
+                    // $('#gnbWrap .gnb').addClass('active');
+                    $('.tab-wrap ul').addClass('active');
+                    $('.tab-wrap ul li').addClass('active');
+                } else {
+                    // $('#gnbWrap .gnb').removeClass('active');
+                    $('.tab-wrap ul').removeClass('active');
+                    $('.tab-wrap ul li').removeClass('active');
+                }
+            });
+        </script>
+
+    </body>
+</html>

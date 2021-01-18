@@ -1,0 +1,1213 @@
+<!--@css(/mosen/main/css/style01.css)-->
+
+<!--[if IE]>
+<script type="text/javascript">
+var console = { log: function() {} };
+</script>
+<![endif]-->
+
+<div id="wrap">
+    <!--s:메인 롤링배너-->
+    <div class="main_banner swiper-container">
+        <div class="swiper-wrapper">
+
+            <!--   김희철 이클리너 -->
+            <div class=" swiper-slide">
+                    <a href="/product/detail.html?product_no=14&cate_no=101&display_group=1"><img src="/web/upload/images/m/main_m1.jpg" alt=""></a>
+
+			</div>
+            <!--에어컵-->
+			<div class=" swiper-slide">
+                  <a href="/product/detail.html?product_no=13&cate_no=93&display_group=1"><img src="/web/upload/images/m/main_m2.jpg" alt=""></a>
+			</div>
+
+            <!--눕기전에시트-->
+			<div class=" swiper-slide">
+                    <a href="/product/detail.html?product_no=72"><img src="/web/upload/images/m/main_m3.jpg" alt=""></a>
+
+			</div>
+
+            <!--   발포세정제 1+1 -->
+            <div class=" swiper-slide">
+                    <a href="/product/detail.html?product_no=88&cate_no=122&display_group=1"><img src="/web/upload/images/m/main_m4.jpg" alt=""></a>
+
+			</div>
+
+
+        </div>
+        <div class="swiper-pagination"></div>
+    </div>
+    <!--//e:메인배너-->
+
+    <!--s:카테고리 상품-->
+    <div class="cate-wrap sec-margin">
+        <p class="cate-tit">카테고리 별 상품을 쉽게 찾아보세요-</p>
+        <ul>
+            <li>
+                <a href="/product/list.html?cate_no=101">
+                    <img src="/web/upload/images/img_tab06_new.png" alt=""><span>위생가전</span>
+                </a>
+            </li>
+            <li>
+                <a href="/product/list.html?cate_no=118">
+                    <img src="/web/upload/images/img_tab07_new.png" alt=""><span>생활위생</span>
+                </a>
+            </li>
+            <li>
+                <a href="/product/list.html?cate_no=121">
+                    <img src="/web/upload/images/img_tab08_new.png" alt=""><span>욕실위생</span>
+                </a>
+            </li>
+            <li>
+                <a href="/product/list.html?cate_no=122">
+                    <img src="/web/upload/images/img_tab09_new.png" alt=""><span>주방위생</span>
+                </a>
+            </li>
+
+        </ul>
+    </div>
+    <!--//e:카테고리 상품-->
+
+    <!--s:베스트아이템-->
+    <div class="best-item-wrap">
+        <div module="product_listmain_2" class="ec-base-product">
+            <!--@css(/css/module/product/listmain_2.css)-->
+            <!--
+            $count = 4
+            ※ 상품진열갯수를 설정하는 변수입니다. 설정하지 않을 경우, 최대 200개의 상품이 진열 됩니다.
+            ※ 진열된 상품이 많으면, 쇼핑몰에 부하가 발생할 수 있습니다.
+            $basket_result = /product/add_basket.html
+            $basket_option = /product/basket_option.html
+        -->
+
+        <p class="cate-tit"> 휘아에서 사랑받는 아이템을 만나보세요- </p>
+
+        <ul class="prdList grid2">
+            <li id="anchorBoxId_{$product_no}">
+                <span class="thumb-num">First best</span>
+                <div class="thumbnail">
+                    <div class="prdImg">
+                        <a href="{$link_product_detail}" name="anchorBoxName_{$product_no}"><img src=" {$image_medium}" id="{$image_medium_id}" alt="{$seo_alt_tag}" /><span module="product_Imagestyle"><span class="prdIcon {$icon_class_name}" style="background-image:url('{$icon_url}');"></span></span></a>
+
+                    </div>
+                    <div class="icon">
+                        <div class="promotion">{$soldout_icon} {$stock_icon} {$recommend_icon} {$new_icon} {$product_icons} {$pickup_icon} {$benefit_icons}</div>
+
+                    </div>
+                </div>
+                <div class="description">
+                    <strong class="name"><a href="{$link_product_detail}" class="{$product_name_display|display}"><span class="title {$product_name_title_display|display}">{$product_name_title} :</span> {$product_name}</a></strong>
+                    <ul module="product_ListItem" class="spec">
+                        <li class="{$item_display|display}"><strong class="title {$item_title_display|display}" >{$item_title} </strong> {$item_content}</li>
+                        <li class="{$item_display|display}"><strong class="title {$item_title_display|display}" >{$item_title} </strong> {$item_content}</li>
+                    </ul>
+
+                    <!-- cre.ma / 리뷰 수 / 스크립트를 수정할 경우 연락주세요 (support@cre.ma) -->
+                    <div class="crema-product-reviews-count" data-product-code="{$product_no}" data-format="리뷰 {{{count}}}"></div>
+
+                </div>
+            </li>
+            <li id="anchorBoxId_{$product_no}">
+                <span class="thumb-num">Second best</span>
+                <div class="thumbnail">
+                    <div class="prdImg">
+                        <a href="{$link_product_detail}" name="anchorBoxName_{$product_no}"><img src="{$image_medium}" id="{$image_medium_id}" alt="{$seo_alt_tag}" /><span module="product_Imagestyle"><span class="prdIcon {$icon_class_name}" style="background-image:url('{$icon_url}');"></span></span></a>
+
+                    </div>
+                    <div class="icon">
+                        <div class="promotion">{$soldout_icon} {$stock_icon} {$recommend_icon} {$new_icon} {$product_icons} {$pickup_icon} {$benefit_icons}</div>
+
+                    </div>
+                </div>
+                <div class="description">
+                    <strong class="name"><a href="{$link_product_detail}" class="{$product_name_display|display}"><span class="title {$product_name_title_display|display}">{$product_name_title} :</span> {$product_name}</a></strong>
+                    <ul module="product_ListItem" class="spec">
+                        <li class="{$item_display|display}"><strong class="title {$item_title_display|display}" >{$item_title} </strong> {$item_content}</li>
+                        <li class="{$item_display|display}"><strong class="title {$item_title_display|display}" >{$item_title} </strong> {$item_content}</li>
+                    </ul>
+
+                    <!-- cre.ma / 리뷰 수 / 스크립트를 수정할 경우 연락주세요 (support@cre.ma) -->
+                    <div class="crema-product-reviews-count" data-product-code="{$product_no}" data-format="리뷰 {{{count}}}"></div>
+
+                </div>
+            </li>
+            <li id="anchorBoxId_{$product_no}">
+                <span class="thumb-num">Third best</span>
+                <div class="thumbnail">
+                    <div class="prdImg">
+                        <a href="{$link_product_detail}" name="anchorBoxName_{$product_no}"><img src="{$image_medium}" id="{$image_medium_id}" alt="{$seo_alt_tag}" /><span module="product_Imagestyle"><span class="prdIcon {$icon_class_name}" style="background-image:url('{$icon_url}');"></span></span></a>
+
+                    </div>
+                    <div class="icon">
+                        <div class="promotion">{$soldout_icon} {$stock_icon} {$recommend_icon} {$new_icon} {$product_icons} {$pickup_icon} {$benefit_icons}</div>
+
+                    </div>
+                </div>
+                <div class="description">
+                    <strong class="name"><a href="{$link_product_detail}" class="{$product_name_display|display}"><span class="title {$product_name_title_display|display}">{$product_name_title} :</span> {$product_name}</a></strong>
+                    <ul module="product_ListItem" class="spec">
+                        <li class="{$item_display|display}"><strong class="title {$item_title_display|display}" >{$item_title} </strong> {$item_content}</li>
+                        <li class="{$item_display|display}"><strong class="title {$item_title_display|display}" >{$item_title} </strong> {$item_content}</li>
+                    </ul>
+
+                    <!-- cre.ma / 리뷰 수 / 스크립트를 수정할 경우 연락주세요 (support@cre.ma) -->
+                    <div class="crema-product-reviews-count" data-product-code="{$product_no}" data-format="리뷰 {{{count}}}"></div>
+
+                </div>
+            </li>
+            <li id="anchorBoxId_{$product_no}">
+                <span class="thumb-num">Fourth best</span>
+                <div class="thumbnail">
+                    <div class="prdImg">
+                        <a href="{$link_product_detail}" name="anchorBoxName_{$product_no}"><img src="{$image_medium}" id="{$image_medium_id}" alt="{$seo_alt_tag}" /><span module="product_Imagestyle"><span class="prdIcon {$icon_class_name}" style="background-image:url('{$icon_url}');"></span></span></a>
+
+                    </div>
+                    <div class="icon">
+                        <div class="promotion">{$soldout_icon} {$stock_icon} {$recommend_icon} {$new_icon} {$product_icons} {$pickup_icon} {$benefit_icons}</div>
+
+                    </div>
+                </div>
+                <div class="description">
+                    <strong class="name"><a href="{$link_product_detail}" class="{$product_name_display|display}"><span class="title {$product_name_title_display|display}">{$product_name_title} :</span> {$product_name}</a></strong>
+                    <ul module="product_ListItem" class="spec">
+                        <li class="{$item_display|display}"><strong class="title {$item_title_display|display}" >{$item_title} </strong> {$item_content}</li>
+                        <li class="{$item_display|display}"><strong class="title {$item_title_display|display}" >{$item_title} </strong> {$item_content}</li>
+                    </ul>
+
+                    <!-- cre.ma / 리뷰 수 / 스크립트를 수정할 경우 연락주세요 (support@cre.ma) -->
+                    <div class="crema-product-reviews-count" data-product-code="{$product_no}" data-format="리뷰 {{{count}}}"></div>
+
+                </div>
+            </li>
+        </ul>
+        <!--<div class="moreBtn"><a href=""><img src="/web/upload/images/m/moreBtn.png"></a></div>-->
+        </div>
+    </div>
+    <!--//e:베스트아이템-->
+
+    <div class="mid-banner"><img src="/web/upload/images/m/mid_banner.jpg" ></div>
+    <!--s:전상품 -->
+    <div class="all-product-wrap">
+        <p class="cate-tit">위생 인테리어 전체상품을 소개할게요-</p>
+        <ul class="all-product-tab">
+            <li class="active"><a href="">전체</a></li>
+            <li><a href="">위생가전</a></li>
+            <li><a href="">생활위생</a></li>
+            <li><a href="">욕실위생</a></li>
+            <li><a href="">주방위생</a></li>
+        </ul>
+        <!--  ALL PRODUCTS -->
+        <div module="product_listmain_1" class="ec-base-product tabContent active allProduct">
+            <!--@css(/css/module/product/listmain_1.css)-->
+            <!--
+                ※ 상품진열갯수를 설정하는 변수입니다. 설정하지 않을 경우, 최대 200개의 상품이 진열 됩니다.
+                ※ 진열된 상품이 많으면, 쇼핑몰에 부하가 발생할 수 있습니다.
+                $basket_result = /product/add_basket.html
+                $basket_option = /product/basket_option.html
+            -->
+            <ul class="prdList grid2">
+                <li id="anchorBoxId_{$product_no}">
+                    <div class="thumbnail">
+                        <div class="prdImg">
+                            <a href="{$link_product_detail}" name="anchorBoxName_{$product_no}"><img src=" {$image_medium}" id="{$image_medium_id}" alt="{$seo_alt_tag}" /><span module="product_Imagestyle"><span class="prdIcon {$icon_class_name}" style="background-image:url('{$icon_url}');"></span></span></a>
+
+                        </div>
+                        <div class="icon">
+                            <div class="promotion">{$soldout_icon} {$stock_icon} {$recommend_icon} {$new_icon} {$product_icons} {$pickup_icon} {$benefit_icons}</div>
+
+                        </div>
+                    </div>
+                    <div class="description">
+                        <strong class="name"><a href="{$link_product_detail}" class="{$product_name_display|display}"><span class="title {$product_name_title_display|display}">{$product_name_title} :</span> {$product_name}</a></strong>
+                        <ul module="product_ListItem" class="spec">
+                            <li class="{$item_display|display}"><strong class="title {$item_title_display|display}" >{$item_title} </strong> {$item_content}</li>
+                            <li class="{$item_display|display}"><strong class="title {$item_title_display|display}" >{$item_title} </strong> {$item_content}</li>
+                        </ul>
+
+                        <!-- cre.ma / 리뷰 수 / 스크립트를 수정할 경우 연락주세요 (support@cre.ma) -->
+                        <div class="crema-product-reviews-count" data-product-code="{$product_no}" data-format="리뷰 {{{count}}}"></div>
+
+                    </div>
+                </li>
+                <li id="anchorBoxId_{$product_no}">
+                    <div class="thumbnail">
+                        <div class="prdImg">
+                            <a href="{$link_product_detail}" name="anchorBoxName_{$product_no}"><img src="{$image_medium}" id="{$image_medium_id}" alt="{$seo_alt_tag}" /><span module="product_Imagestyle"><span class="prdIcon {$icon_class_name}" style="background-image:url('{$icon_url}');"></span></span></a>
+
+                        </div>
+                        <div class="icon">
+                            <div class="promotion">{$soldout_icon} {$stock_icon} {$recommend_icon} {$new_icon} {$product_icons} {$pickup_icon} {$benefit_icons}</div>
+
+                        </div>
+                    </div>
+                    <div class="description">
+                        <strong class="name"><a href="{$link_product_detail}" class="{$product_name_display|display}"><span class="title {$product_name_title_display|display}">{$product_name_title} :</span> {$product_name}</a></strong>
+                        <ul module="product_ListItem" class="spec">
+                            <li class="{$item_display|display}"><strong class="title {$item_title_display|display}" >{$item_title} </strong> {$item_content}</li>
+                            <li class="{$item_display|display}"><strong class="title {$item_title_display|display}" >{$item_title} </strong> {$item_content}</li>
+                        </ul>
+
+                        <!-- cre.ma / 리뷰 수 / 스크립트를 수정할 경우 연락주세요 (support@cre.ma) -->
+                        <div class="crema-product-reviews-count" data-product-code="{$product_no}" data-format="리뷰 {{{count}}}"></div>
+
+                    </div>
+                </li>
+            </ul>
+            <div class="moreBtn"><a href="/product/list.html?cate_no=120"><img src="/web/upload/images/m/moreBtn.png"></a></div>
+        </div>
+        <!-- // ALL PRODUCTS end -->
+        <!--  위생가전  -->
+        <div module="product_listmain_4" class="ec-base-product tabContent hyGiene">
+            <!--@css(/css/module/product/listmain_1.css)-->
+            <!--
+
+                ※ 상품진열갯수를 설정하는 변수입니다. 설정하지 않을 경우, 최대 200개의 상품이 진열 됩니다.
+                ※ 진열된 상품이 많으면, 쇼핑몰에 부하가 발생할 수 있습니다.
+                $basket_result = /product/add_basket.html
+                $basket_option = /product/basket_option.html
+            -->
+            <ul class="prdList grid2">
+                <li id="anchorBoxId_{$product_no}">
+                    <div class="thumbnail">
+                        <div class="prdImg">
+                            <a href="{$link_product_detail}" name="anchorBoxName_{$product_no}"><img src=" {$image_medium}" id="{$image_medium_id}" alt="{$seo_alt_tag}" /><span module="product_Imagestyle"><span class="prdIcon {$icon_class_name}" style="background-image:url('{$icon_url}');"></span></span></a>
+
+                        </div>
+                        <div class="icon">
+                            <div class="promotion">{$soldout_icon} {$stock_icon} {$recommend_icon} {$new_icon} {$product_icons} {$pickup_icon} {$benefit_icons}</div>
+
+                        </div>
+                    </div>
+                    <div class="description">
+                        <strong class="name"><a href="{$link_product_detail}" class="{$product_name_display|display}"><span class="title {$product_name_title_display|display}">{$product_name_title} :</span> {$product_name}</a></strong>
+                        <ul module="product_ListItem" class="spec">
+                            <li class="{$item_display|display}"><strong class="title {$item_title_display|display}" >{$item_title} </strong> {$item_content}</li>
+                            <li class="{$item_display|display}"><strong class="title {$item_title_display|display}" >{$item_title} </strong> {$item_content}</li>
+                        </ul>
+
+                        <!-- cre.ma / 리뷰 수 / 스크립트를 수정할 경우 연락주세요 (support@cre.ma) -->
+                        <div class="crema-product-reviews-count" data-product-code="{$product_no}" data-format="리뷰 {{{count}}}"></div>
+
+                    </div>
+                </li>
+                <li id="anchorBoxId_{$product_no}">
+                    <div class="thumbnail">
+                        <div class="prdImg">
+                            <a href="{$link_product_detail}" name="anchorBoxName_{$product_no}"><img src="{$image_medium}" id="{$image_medium_id}" alt="{$seo_alt_tag}" /><span module="product_Imagestyle"><span class="prdIcon {$icon_class_name}" style="background-image:url('{$icon_url}');"></span></span></a>
+
+                        </div>
+                        <div class="icon">
+                            <div class="promotion">{$soldout_icon} {$stock_icon} {$recommend_icon} {$new_icon} {$product_icons} {$pickup_icon} {$benefit_icons}</div>
+
+                        </div>
+                    </div>
+                    <div class="description">
+                        <strong class="name"><a href="{$link_product_detail}" class="{$product_name_display|display}"><span class="title {$product_name_title_display|display}">{$product_name_title} :</span> {$product_name}</a></strong>
+                        <ul module="product_ListItem" class="spec">
+                            <li class="{$item_display|display}"><strong class="title {$item_title_display|display}" >{$item_title} </strong> {$item_content}</li>
+                            <li class="{$item_display|display}"><strong class="title {$item_title_display|display}" >{$item_title} </strong> {$item_content}</li>
+                        </ul>
+
+                        <!-- cre.ma / 리뷰 수 / 스크립트를 수정할 경우 연락주세요 (support@cre.ma) -->
+                        <div class="crema-product-reviews-count" data-product-code="{$product_no}" data-format="리뷰 {{{count}}}"></div>
+
+                    </div>
+                </li>
+            </ul>
+            <div class="moreBtn"><a href="/product/list.html?cate_no=101"><img src="/web/upload/images/m/moreBtn.png"></a></div>
+        </div>
+        <!-- // 위생가전 end -->
+        <!--  생활위생  -->
+        <div module="product_listmain_5" class="ec-base-product tabContent lifeStyle">
+            <!--@css(/css/module/product/listmain_1.css)-->
+            <!--
+                ※ 상품진열갯수를 설정하는 변수입니다. 설정하지 않을 경우, 최대 200개의 상품이 진열 됩니다.
+                ※ 진열된 상품이 많으면, 쇼핑몰에 부하가 발생할 수 있습니다.
+                $basket_result = /product/add_basket.html
+                $basket_option = /product/basket_option.html
+            -->
+            <ul class="prdList grid2">
+                <li id="anchorBoxId_{$product_no}">
+                    <div class="thumbnail">
+                        <div class="prdImg">
+                            <a href="{$link_product_detail}" name="anchorBoxName_{$product_no}"><img src=" {$image_medium}" id="{$image_medium_id}" alt="{$seo_alt_tag}" /><span module="product_Imagestyle"><span class="prdIcon {$icon_class_name}" style="background-image:url('{$icon_url}');"></span></span></a>
+
+                        </div>
+                        <div class="icon">
+                            <div class="promotion">{$soldout_icon} {$stock_icon} {$recommend_icon} {$new_icon} {$product_icons} {$pickup_icon} {$benefit_icons}</div>
+
+                        </div>
+                    </div>
+                    <div class="description">
+                        <strong class="name"><a href="{$link_product_detail}" class="{$product_name_display|display}"><span class="title {$product_name_title_display|display}">{$product_name_title} :</span> {$product_name}</a></strong>
+                        <ul module="product_ListItem" class="spec">
+                            <li class="{$item_display|display}"><strong class="title {$item_title_display|display}" >{$item_title} </strong> {$item_content}</li>
+                            <li class="{$item_display|display}"><strong class="title {$item_title_display|display}" >{$item_title} </strong> {$item_content}</li>
+                        </ul>
+
+                        <!-- cre.ma / 리뷰 수 / 스크립트를 수정할 경우 연락주세요 (support@cre.ma) -->
+                        <div class="crema-product-reviews-count" data-product-code="{$product_no}" data-format="리뷰 {{{count}}}"></div>
+
+                    </div>
+                </li>
+                <li id="anchorBoxId_{$product_no}">
+                    <div class="thumbnail">
+                        <div class="prdImg">
+                            <a href="{$link_product_detail}" name="anchorBoxName_{$product_no}"><img src="{$image_medium}" id="{$image_medium_id}" alt="{$seo_alt_tag}" /><span module="product_Imagestyle"><span class="prdIcon {$icon_class_name}" style="background-image:url('{$icon_url}');"></span></span></a>
+
+                        </div>
+                        <div class="icon">
+                            <div class="promotion">{$soldout_icon} {$stock_icon} {$recommend_icon} {$new_icon} {$product_icons} {$pickup_icon} {$benefit_icons}</div>
+
+                        </div>
+                    </div>
+                    <div class="description">
+                        <strong class="name"><a href="{$link_product_detail}" class="{$product_name_display|display}"><span class="title {$product_name_title_display|display}">{$product_name_title} :</span> {$product_name}</a></strong>
+                        <ul module="product_ListItem" class="spec">
+                            <li class="{$item_display|display}"><strong class="title {$item_title_display|display}" >{$item_title} </strong> {$item_content}</li>
+                            <li class="{$item_display|display}"><strong class="title {$item_title_display|display}" >{$item_title} </strong> {$item_content}</li>
+                        </ul>
+
+                        <!-- cre.ma / 리뷰 수 / 스크립트를 수정할 경우 연락주세요 (support@cre.ma) -->
+                        <div class="crema-product-reviews-count" data-product-code="{$product_no}" data-format="리뷰 {{{count}}}"></div>
+
+                    </div>
+                </li>
+            </ul>
+            <div class="moreBtn"><a href="/product/list.html?cate_no=118"><img src="/web/upload/images/m/moreBtn.png"></a></div>
+        </div>
+        <!-- // 생활위생 end -->
+        <!--  욕실위생  -->
+        <div module="product_listmain_6" class="ec-base-product tabContent bathRoom">
+            <!--@css(/css/module/product/listmain_1.css)-->
+            <!--
+                ※ 상품진열갯수를 설정하는 변수입니다. 설정하지 않을 경우, 최대 200개의 상품이 진열 됩니다.
+                ※ 진열된 상품이 많으면, 쇼핑몰에 부하가 발생할 수 있습니다.
+                $basket_result = /product/add_basket.html
+                $basket_option = /product/basket_option.html
+            -->
+            <ul class="prdList grid2">
+                <li id="anchorBoxId_{$product_no}">
+                    <div class="thumbnail">
+                        <div class="prdImg">
+                            <a href="{$link_product_detail}" name="anchorBoxName_{$product_no}"><img src=" {$image_medium}" id="{$image_medium_id}" alt="{$seo_alt_tag}" /><span module="product_Imagestyle"><span class="prdIcon {$icon_class_name}" style="background-image:url('{$icon_url}');"></span></span></a>
+
+                        </div>
+                        <div class="icon">
+                            <div class="promotion">{$soldout_icon} {$stock_icon} {$recommend_icon} {$new_icon} {$product_icons} {$pickup_icon} {$benefit_icons}</div>
+
+                        </div>
+                    </div>
+                    <div class="description">
+                        <strong class="name"><a href="{$link_product_detail}" class="{$product_name_display|display}"><span class="title {$product_name_title_display|display}">{$product_name_title} :</span> {$product_name}</a></strong>
+                        <ul module="product_ListItem" class="spec">
+                            <li class="{$item_display|display}"><strong class="title {$item_title_display|display}" >{$item_title} </strong> {$item_content}</li>
+                            <li class="{$item_display|display}"><strong class="title {$item_title_display|display}" >{$item_title} </strong> {$item_content}</li>
+                        </ul>
+
+                        <!-- cre.ma / 리뷰 수 / 스크립트를 수정할 경우 연락주세요 (support@cre.ma) -->
+                        <div class="crema-product-reviews-count" data-product-code="{$product_no}" data-format="리뷰 {{{count}}}"></div>
+
+                    </div>
+                </li>
+                <li id="anchorBoxId_{$product_no}">
+                    <div class="thumbnail">
+                        <div class="prdImg">
+                            <a href="{$link_product_detail}" name="anchorBoxName_{$product_no}"><img src="{$image_medium}" id="{$image_medium_id}" alt="{$seo_alt_tag}" /><span module="product_Imagestyle"><span class="prdIcon {$icon_class_name}" style="background-image:url('{$icon_url}');"></span></span></a>
+
+                        </div>
+                        <div class="icon">
+                            <div class="promotion">{$soldout_icon} {$stock_icon} {$recommend_icon} {$new_icon} {$product_icons} {$pickup_icon} {$benefit_icons}</div>
+
+                        </div>
+                    </div>
+                    <div class="description">
+                        <strong class="name"><a href="{$link_product_detail}" class="{$product_name_display|display}"><span class="title {$product_name_title_display|display}">{$product_name_title} :</span> {$product_name}</a></strong>
+                        <ul module="product_ListItem" class="spec">
+                            <li class="{$item_display|display}"><strong class="title {$item_title_display|display}" >{$item_title} </strong> {$item_content}</li>
+                            <li class="{$item_display|display}"><strong class="title {$item_title_display|display}" >{$item_title} </strong> {$item_content}</li>
+                        </ul>
+
+                        <!-- cre.ma / 리뷰 수 / 스크립트를 수정할 경우 연락주세요 (support@cre.ma) -->
+                        <div class="crema-product-reviews-count" data-product-code="{$product_no}" data-format="리뷰 {{{count}}}"></div>
+
+                    </div>
+                </li>
+            </ul>
+            <div class="moreBtn"><a href="/product/list.html?cate_no=121"><img src="/web/upload/images/m/moreBtn.png"></a></div>
+        </div>
+        <!-- // 욕실위생 end -->
+        <!--  주방위생  -->
+        <div module="product_listmain_7" class="ec-base-product tabContent kitchen">
+            <!--@css(/css/module/product/listmain_1.css)-->
+            <!--
+                ※ 상품진열갯수를 설정하는 변수입니다. 설정하지 않을 경우, 최대 200개의 상품이 진열 됩니다.
+                ※ 진열된 상품이 많으면, 쇼핑몰에 부하가 발생할 수 있습니다.
+                $basket_result = /product/add_basket.html
+                $basket_option = /product/basket_option.html
+            -->
+            <ul class="prdList grid2">
+                <li id="anchorBoxId_{$product_no}">
+                    <div class="thumbnail">
+                        <div class="prdImg">
+                            <a href="{$link_product_detail}" name="anchorBoxName_{$product_no}"><img src=" {$image_medium}" id="{$image_medium_id}" alt="{$seo_alt_tag}" /><span module="product_Imagestyle"><span class="prdIcon {$icon_class_name}" style="background-image:url('{$icon_url}');"></span></span></a>
+
+                        </div>
+                        <div class="icon">
+                            <div class="promotion">{$soldout_icon} {$stock_icon} {$recommend_icon} {$new_icon} {$product_icons} {$pickup_icon} {$benefit_icons}</div>
+
+                        </div>
+                    </div>
+                    <div class="description">
+                        <strong class="name"><a href="{$link_product_detail}" class="{$product_name_display|display}"><span class="title {$product_name_title_display|display}">{$product_name_title} :</span> {$product_name}</a></strong>
+                        <ul module="product_ListItem" class="spec">
+                            <li class="{$item_display|display}"><strong class="title {$item_title_display|display}" >{$item_title} </strong> {$item_content}</li>
+                            <li class="{$item_display|display}"><strong class="title {$item_title_display|display}" >{$item_title} </strong> {$item_content}</li>
+                        </ul>
+
+                        <!-- cre.ma / 리뷰 수 / 스크립트를 수정할 경우 연락주세요 (support@cre.ma) -->
+                        <div class="crema-product-reviews-count" data-product-code="{$product_no}" data-format="리뷰 {{{count}}}"></div>
+
+                    </div>
+                </li>
+                <li id="anchorBoxId_{$product_no}">
+                    <div class="thumbnail">
+                        <div class="prdImg">
+                            <a href="{$link_product_detail}" name="anchorBoxName_{$product_no}"><img src="{$image_medium}" id="{$image_medium_id}" alt="{$seo_alt_tag}" /><span module="product_Imagestyle"><span class="prdIcon {$icon_class_name}" style="background-image:url('{$icon_url}');"></span></span></a>
+
+                        </div>
+                        <div class="icon">
+                            <div class="promotion">{$soldout_icon} {$stock_icon} {$recommend_icon} {$new_icon} {$product_icons} {$pickup_icon} {$benefit_icons}</div>
+
+                        </div>
+                    </div>
+                    <div class="description">
+                        <strong class="name"><a href="{$link_product_detail}" class="{$product_name_display|display}"><span class="title {$product_name_title_display|display}">{$product_name_title} :</span> {$product_name}</a></strong>
+                        <ul module="product_ListItem" class="spec">
+                            <li class="{$item_display|display}"><strong class="title {$item_title_display|display}" >{$item_title} </strong> {$item_content}</li>
+                            <li class="{$item_display|display}"><strong class="title {$item_title_display|display}" >{$item_title} </strong> {$item_content}</li>
+                        </ul>
+
+                        <!-- cre.ma / 리뷰 수 / 스크립트를 수정할 경우 연락주세요 (support@cre.ma) -->
+                        <div class="crema-product-reviews-count" data-product-code="{$product_no}" data-format="리뷰 {{{count}}}"></div>
+
+                    </div>
+                </li>
+            </ul>
+            <div class="moreBtn"><a href="/product/list.html?cate_no=122"><img src="/web/upload/images/m/moreBtn.png"></a></div>
+        </div>
+        <!-- // 주방위생 end -->
+    </div>
+    <!--//e:전상품 -->
+    
+
+    <!--s:신상품 -->
+    <div module="product_listmain_3" class="ec-base-product new-product sec-margin">
+        <!--@css(/css/module/product/listmain_1.css)-->
+        <!--
+        $count = 4
+        ※ 상품진열갯수를 설정하는 변수입니다. 설정하지 않을 경우, 최대 200개의 상품이 진열 됩니다.
+        ※ 진열된 상품이 많으면, 쇼핑몰에 부하가 발생할 수 있습니다.
+        $basket_result = /product/add_basket.html
+        $basket_option = /product/basket_option.html
+    -->
+        <p class="cate-tit"> 설레임을 가져다 줄 휘아 신상품을 소개할게요- </p>
+
+        <ul class="prdList new-slide">
+
+            <li id="anchorBoxId_{$product_no}">
+                <div class="thumbnail">
+                    <div class="prdImg">
+                        <a href="{$link_product_detail}" name="anchorBoxName_{$product_no}"><img src=" {$image_big}" id="{$image_medium_id}" alt="{$seo_alt_tag}" /><span module="product_Imagestyle"><span class="prdIcon {$icon_class_name}" style="background-image:url('{$icon_url}');"></span></span></a>
+
+                    </div>
+                    <div class="icon">
+                        <div class="promotion">{$soldout_icon} {$stock_icon} {$recommend_icon} {$new_icon} {$product_icons} {$pickup_icon} {$benefit_icons}</div>
+
+                    </div>
+                </div>
+                <div class="description">
+                    <strong class="name"><a href="{$link_product_detail}" class="{$product_name_display|display}"><span class="title {$product_name_title_display|display}">{$product_name_title} :</span> {$product_name}</a></strong>
+                    <ul module="product_ListItem" class="spec">
+                        <li class="{$item_display|display}"><strong class="title {$item_title_display|display}">{$item_title} </strong> {$item_content}</li>
+                        <li class="{$item_display|display}"><strong class="title {$item_title_display|display}">{$item_title} </strong> {$item_content}</li>
+                    </ul>
+                </div>
+            </li>
+            <li id="anchorBoxId_{$product_no}">
+                <div class="thumbnail">
+                    <div class="prdImg">
+                        <a href="{$link_product_detail}" name="anchorBoxName_{$product_no}"><img src="{$image_big}" id="{$image_medium_id}" alt="{$seo_alt_tag}" /><span module="product_Imagestyle"><span class="prdIcon {$icon_class_name}" style="background-image:url('{$icon_url}');"></span></span></a>
+
+                    </div>
+                    <div class="icon">
+                        <div class="promotion">{$soldout_icon} {$stock_icon} {$recommend_icon} {$new_icon} {$product_icons} {$pickup_icon} {$benefit_icons}</div>
+
+                    </div>
+                </div>
+                <div class="description">
+                    <strong class="name"><a href="{$link_product_detail}" class="{$product_name_display|display}"><span class="title {$product_name_title_display|display}">{$product_name_title} :</span> {$product_name}</a></strong>
+                    <ul module="product_ListItem" class="spec">
+                        <li class="{$item_display|display}"><strong class="title {$item_title_display|display}">{$item_title} </strong> {$item_content}</li>
+                        <li class="{$item_display|display}"><strong class="title {$item_title_display|display}">{$item_title} </strong> {$item_content}</li>
+                    </ul>
+                </div>
+            </li>
+        </ul>
+        <!--<div class="moreBtn"><a href=""><img src="/web/upload/images/m/moreBtn.png"></a></div>-->
+    </div>
+    <!--//e:신상품-->
+
+
+
+    <!-- s:이벤트배너 -->
+    <div class="event-banner-wrap">
+        <div class="event-banner">
+            <ul>
+                <li class="banner01">
+                    <p class="img"><img src="/web/upload/images/m/img_event01_mo.jpg" alt=""></p>
+                    <div class="event-banner-txt">
+                        <p class="tit">
+                            휘아 사이트 가입하고 혜택받자!<br>
+                            신규 혜택을 확인하세요!
+                        </p>
+                        <p class="sub-tit">
+                            휘아 사이트 신규 가입 시,<br>
+                            적립금 2,000원을 드립니다.
+                        </p>
+                        <div class="moreBtn"><a href="/article/이벤트/8/37185/"><img src="/web/upload/images/m/moreBtn.png"></a></div>
+                    </div>
+                </li>
+                <li class="banner02">
+                    <p class="img"><img src="/web/upload/images/m/img_event02_mo.jpg" alt=""></p>
+                    <div class="event-banner-txt">
+                        <p class="tit">
+                            휘아 앱 다운 받고<br>적립금받자!
+                        </p>
+                        <p class="sub-tit">
+                            휘아 앱 다운 시, <br>적립금 2,000원을 드립니다.
+                        </p>
+                        <div class="moreBtn"><a href="/article/이벤트/8/37185/"><img src="/web/upload/images/m/moreBtn.png"></a></div>
+                    </div>
+                </li>
+                <li class="banner03">
+                    <p class="img"><img src="/web/upload/images/m/img_event03_mo.jpg" alt=""></p>
+                    <div class="event-banner-txt">
+                        <p class="tit">
+                            휘아 카톡 플친 등록하고<br>손세정 미스트 받자!
+                        </p>
+                        <p class="sub-tit">
+                            휘아 카톡 플친 등록 시, <br>
+                            손세정미스트(손닿기전에)를 드립니다.
+                        </p>
+                        <div class="moreBtn"><a href="/member/join.html"><img src="/web/upload/images/m/moreBtn.png"></a></div>
+                    </div>
+                </li>
+            </ul>
+
+        </div>
+    </div>
+    <!-- //e:이벤트배너 -->
+
+    <!-- s:인테리어 -->
+    <div class="interior-wrap sec-margin">
+        <p class="cate-tit">위생과 인테리어를 동시에, <br>휘아가 위생인테리어의 기준이 됩니다-</p>
+
+        <ul class="interior-tab">
+            <li class="active"><a href="">전체</a></li>
+            <li><a href="">침실</a></li>
+            <li><a href="">거실</a></li>
+            <li><a href="">주방</a></li>
+            <li><a href="">욕실</a></li>
+            <li><a href="">사무실</a></li>
+        </ul>
+
+        <!-- s:전체 인테리어 -->
+        <div class="interior-con tabContent2 active">
+            <div class="grid-item">
+                <!-- 사진 -->
+                <p><img src="/web/upload/images/img_interior01.jpg" alt=""></p>
+                <!-- 설명 -->
+                <dl class="">
+                    <dt>깔끔한 오피스 분위기를 빛내줄 사무용품</dt>
+                    <dd>숨쉬는 공간을 책임지는 미니 UV-C살균가습기 무드등과 가습효과를 동시에</dd>
+                </dl>
+                <!-- 연관상품 -->
+                <div class="relation-product">
+                    <a href="/product/detail.html?product_no=39">
+                        <p class="img"><img src="/web/upload/images/img_inte_thumb01.jpg" alt=""></p>
+                        <div class="desc">
+                            <p class="name">위에어</p>
+                            <p class="eng-name">살균제없이 알아서 살균해주는 UV-C 가습기</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="grid-item">
+                <!-- 사진 -->
+                <p><img src="/web/upload/images/img_interior02.jpg" alt=""></p>
+                <!-- 설명 -->
+                <dl class="">
+                    <dt>모던한 작업대, 커피컵 위에 모던한 살균기 컵케어</dt>
+                    <dd>미니멀한 컵, 텀블러 그냥 방치하지 말고 UV-C LED로 각종 세균 제거하세요. 덮개로도 사용 가능합니다</dd>
+                </dl>
+                <!-- 연관상품 -->
+                <div class="relation-product">
+                    <a href="/product/detail.html?product_no=62">
+                        <p class="img"><img src="/web/upload/images/img_inte_thumb02.jpg" alt=""></p>
+                        <div class="desc">
+                            <p class="name">텀블리</p>
+                            <p class="eng-name">친환경 2중 스테인리스 텀블러</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="relation-product">
+                    <a href="/product/detail.html?product_no=63">
+                        <p class="img"><img src="/web/upload/images/img_inte_thumb03.jpg" alt=""></p>
+                        <div class="desc">
+                            <p class="name">컵케어</p>
+                            <p class="eng-name">손 닿지 않는 곳까지 완벽하게 살균해주는 UV-C 살균기</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="grid-item">
+                <!-- 사진 -->
+                <p><img src="/web/upload/images/img_interior03.jpg" alt=""></p>
+                <!-- 설명 -->
+                <dl class="">
+                    <dt>욕실, 칫솔로 모던하게 혹은 컬러로 포인트주기</dt>
+                    <dd>3개월에 1번씩, 1년을 휘아와 함께하세요. 초미세 탄력모와 은재질로 개발 된 칫솔모로 살균을 더했습니다</dd>
+                </dl>
+                <!-- 연관상품 -->
+                <div class="relation-product">
+                    <a href="/product/detail.html?product_no=50">
+                        <p class="img"><img src="/web/upload/images/img_inte_thumb04.jpg" alt=""></p>
+                        <div class="desc">
+                            <p class="name">순수비누</p>
+                            <p class="eng-name">엄마도 아기도 안심하고 사용할 수 있는 약산성 비누</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="relation-product">
+                    <a href="/product/list.html?cate_no=123">
+                        <p class="img"><img src="/web/upload/images/img_inte_thumb05.jpg" alt=""></p>
+                        <div class="desc">
+                            <p class="name">이클리너</p>
+                            <p class="eng-name">대한민국 1위 친환경 UV-C LED 칫솔살균기</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="relation-product">
+                    <a href="/product/detail.html?product_no=32">
+                        <p class="img"><img src="/web/upload/images/img_inte_thumb06.jpg" alt=""></p>
+                        <div class="desc">
+                            <p class="name">4생활칫솔</p>
+                            <p class="eng-name">프리미엄 성능과 사이즈 그리고 디자인가지 모두 갖춘 칫솔</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!-- //e:전체 인테리어 -->
+
+        <!-- s:침실 인테리어 -->
+        <div class="interior-con tabContent2">
+            <div class="grid-item">
+                <!-- 사진 -->
+                <p><img src="/web/upload/images/img_interior08.jpg" alt=""></p>
+                <!-- 설명 -->
+                <dl class="">
+                    <dt>서랍 속 까지 디자인감성 속 심플라이프 </dt>
+                    <dd>계절에 상관없이 4계절 내내 일정한 습도를 유지시켜주는 뽀송한장 인테리어 효과와 제습제 효과 두가지를 한번에 누려보세요</dd>
+                </dl>
+                <!-- 연관상품 -->
+                <div class="relation-product">
+                    <a href="/product/detail.html?product_no=73">
+                        <p class="img"><img src="/web/upload/images/img_inte_thumb14.jpg" alt=""></p>
+                        <div class="desc">
+                            <p class="name">뽀송한장</p>
+                            <p class="eng-name">4계절 내내 일정한 습도를 유지시켜주는 습도조절시트</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="relation-product">
+                    <a href="/product/detail.html?product_no=16">
+                        <p class="img"><img src="/web/upload/images/img_inte_thumb16.jpg" alt=""></p>
+                        <div class="desc">
+                            <p class="name">눕기전에</p>
+                            <p class="eng-name">모든 침구류의 집 먼지 진드기들을 퇴치해줄 침구전용 미스트</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="relation-product">
+                    <a href="/product/detail.html?product_no=72">
+                        <p class="img"><img src="/web/upload/images/img_inte_thumb15.jpg" alt=""></p>
+                        <div class="desc">
+                            <p class="name">눕기전에 시트</p>
+                            <p class="eng-name">우리가족의 완벽한 숙면을 책임질 초강력 진드기 시트</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!-- //e:침실 인테리어 -->
+
+        <!-- s:거실 인테리어 -->
+        <div class="interior-con tabContent2">
+            <div class="grid-item">
+                <!-- 사진 -->
+                <p><img src="/web/upload/images/img_interior06.jpg" alt=""></p>
+                <!-- 설명 -->
+                <dl class="">
+                    <dt>우리집 첫인상을 보여주는 현관 인테리어</dt>
+                    <dd>각종 살균, 탈취 및 향까지 한 번에 사로잡은 4종 특가 패키지, 클린미스트KIT 현관 앞 인테리어 장식은 물론 미니 사이즈로 간편하게 휴대 가능</dd>
+                </dl>
+                <!-- 연관상품 -->
+                <div class="relation-product">
+                    <a href="/product/detail.html?product_no=18">
+                        <p class="img"><img src="/web/upload/images/img_inte_thumb09.jpg" alt=""></p>
+                        <div class="desc">
+                            <p class="name">손 닿기전에</p>
+                            <p class="eng-name">살균, 보습 그리고 향까지 사로잡은 손 소독 미스트</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="relation-product">
+                    <a href="/product/detail.html?product_no=17">
+                        <p class="img"><img src="/web/upload/images/img_inte_thumb10.jpg" alt=""></p>
+                        <div class="desc">
+                            <p class="name">앉기전에</p>
+                            <p class="eng-name">공공화장실의 필수용품 휴대용 변기세정 미스트</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="relation-product">
+                    <a href="/product/detail.html?product_no=44">
+                        <p class="img"><img src="/web/upload/images/img_inte_thumb11.jpg" alt=""></p>
+                        <div class="desc">
+                            <p class="name">딥클린안심티슈</p>
+                            <p class="eng-name">강력한 세정효과와 저자극 프리미엄 살균티슈</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!-- //e:거실 인테리어 -->
+
+        <!-- s:주방 인테리어 -->
+        <div class="interior-con tabContent2">
+            <div class="grid-item">
+                <!-- 사진 -->
+                <p><img src="/web/upload/images/img_interior04.jpg" alt=""></p>
+                <!-- 설명 -->
+                <dl class="">
+                    <dt>주방 설거지도 이제 원목 인테리어 감성</dt>
+                    <dd>환경호르몬 유출 걱정 없는 하루 한 장 삼십일, 간편하게 뽑아 세균 걱정 없이 사용해보세요.</dd>
+                </dl>
+                <!-- 연관상품 -->
+                <div class="relation-product">
+                    <a href="/product/detail.html?product_no=51">
+                        <p class="img"><img src="/web/upload/images/img_inte_thumb07.jpg" alt=""></p>
+                        <div class="desc">
+                            <p class="name">주방비누</p>
+                            <p class="eng-name">자연 유래 성분으로 맨손 설거지가 가능한 천연 설거지바</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="relation-product">
+                    <a href="/product/detail.html?product_no=61">
+                        <p class="img"><img src="/web/upload/images/img_inte_thumb08.jpg" alt=""></p>
+                        <div class="desc">
+                            <p class="name">하루 한 장, 삼십일</p>
+                            <p class="eng-name">세균번식 걱정없이 안심하고 사용가능한 친환경 일회용 수세미</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="grid-item">
+                <!-- 사진 -->
+                    <p><img src="/web/upload/images/img_interior05.jpg" alt=""></p>
+                    <!-- 설명 -->
+                    <dl class="">
+                        <dt>복잡한 주방을 더욱 심플하고 감성적이게</dt>
+                        <dd>한 알로 톡, 패키지부터 기능까지 한 번에 사로잡은 만능발포세정제</dd>
+                    </dl>
+                    <!-- 연관상품 -->
+                    <div class="relation-product">
+                        <a href="/product/detail.html?product_no=88">
+                            <p class="img"><img src="/web/upload/images/img_inte_thumb17.jpg" alt=""></p>
+                            <div class="desc">
+                                <p class="name">하루 한 알, 삼십일</p>
+                                <p class="eng-name">한알로 톡! 뽑아쓰는 간편한 휴대용 발포세정제</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="relation-product">
+                        <a href="/product/detail.html?product_no=62">
+                            <p class="img"><img src="/web/upload/images/img_inte_thumb02.jpg" alt=""></p>
+                            <div class="desc">
+                                <p class="name">텀블리</p>
+                                <p class="eng-name">친환경 2중 스테인리스 텀블러</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="relation-product">
+                        <a href="/product/detail.html?product_no=51">
+                            <p class="img"><img src="/web/upload/images/img_inte_thumb07.jpg" alt=""></p>
+                            <div class="desc">
+                                <p class="name">주방비누</p>
+                                <p class="eng-name">야채, 과일, 아기용품 세척가능한 1종 설거지바</p>
+                            </div>
+                        </a>
+                    </div>
+            </div>
+        </div>
+        <!-- //e:주방 인테리어 -->
+
+        <!-- s:욕실 인테리어 -->
+        <div class="interior-con tabContent2">
+            <div class="grid-item">
+                <!-- 사진 -->
+                <p><img src="/web/upload/images/img_interior03.jpg" alt=""></p>
+                <!-- 설명 -->
+                <dl class="">
+                    <dt>욕실, 칫솔로 모던하게 혹은 컬러로 포인트주기</dt>
+                    <dd>3개월에 1번씩, 1년을 휘아와 함께하세요. 초미세 탄력모와 은재질로 개발 된 칫솔모로 살균을 더했습니다</dd>
+                </dl>
+                <!-- 연관상품 -->
+                <div class="relation-product">
+                    <a href="/product/detail.html?product_no=50">
+                        <p class="img"><img src="/web/upload/images/img_inte_thumb04.jpg" alt=""></p>
+                        <div class="desc">
+                            <p class="name">순수비누</p>
+                            <p class="eng-name">엄마도 아기도 안심하고 사용할 수 있는 약산성 비누</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="relation-product">
+                    <a href="/product/list.html?cate_no=123">
+                        <p class="img"><img src="/web/upload/images/img_inte_thumb05.jpg" alt=""></p>
+                        <div class="desc">
+                            <p class="name">이클리너</p>
+                            <p class="eng-name">대한민국 1위 친환경 UV-C LED 칫솔살균기</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="relation-product">
+                    <a href="/product/detail.html?product_no=32">
+                        <p class="img"><img src="/web/upload/images/img_inte_thumb06.jpg" alt=""></p>
+                        <div class="desc">
+                            <p class="name">4생활칫솔</p>
+                            <p class="eng-name">프리미엄 성능과 사이즈 그리고 디자인가지 모두 갖춘 칫솔</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="grid-item">
+                <!-- 사진 -->
+                <p><img src="/web/upload/images/img_interior07.jpg" alt=""></p>
+                <!-- 설명 -->
+                <dl class="">
+                    <dt>감성적인 형태로 욕실인테리어와 피부 건강까지</dt>
+                    <dd>EWG 그린등급의 천영성분만 담았습니다. 건강한 피부를 위해 조약돌 감성의 순수비누를 선사하세요.</dd>
+                </dl>
+                <!-- 연관상품 -->
+                <div class="relation-product">
+                    <a href="/product/detail.html?product_no=50">
+                        <p class="img"><img src="/web/upload/images/img_inte_thumb04.jpg" alt=""></p>
+                        <div class="desc">
+                            <p class="name">순수비누</p>
+                            <p class="eng-name">엄마도 아기도 안심하고 사용할 수 있는 약산성 비누</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="relation-product">
+                    <a href="/product/detail.html?product_no=49">
+                        <p class="img"><img src="/web/upload/images/img_inte_thumb12.jpg" alt=""></p>
+                        <div class="desc">
+                            <p class="name">세수비누</p>
+                            <p class="eng-name">완벽한 클렌징을 도와줄 저 자극 CP 저온 숙성 비누</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="relation-product">
+                    <a href="/product/detail.html?product_no=48">
+                        <p class="img"><img src="/web/upload/images/img_inte_thumb13.jpg" alt=""></p>
+                        <div class="desc">
+                            <p class="name">쿨한비누</p>
+                            <p class="eng-name">머리부터 발끝까지 상쾌하게 만들어줄 약산성 멘톨 비누</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!-- //e:욕실 인테리어 -->
+
+        <!-- s:사무실 인테리어 -->
+        <div class="interior-con tabContent2">
+            <div class="grid-item">
+                <!-- 사진 -->
+                <p><img src="/web/upload/images/img_interior01.jpg" alt=""></p>
+                <!-- 설명 -->
+                <dl class="">
+                    <dt>깔끔한 오피스 분위기를 빛내줄 사무용품</dt>
+                    <dd>숨쉬는 공간을 책임지는 미니 UV-C살균가습기 무드등과 가습효과를 동시에</dd>
+                </dl>
+                <!-- 연관상품 -->
+                <div class="relation-product">
+                    <a href="/product/detail.html?product_no=39">
+                        <p class="img"><img src="/web/upload/images/img_inte_thumb01.jpg" alt=""></p>
+                        <div class="desc">
+                            <p class="name">위에어</p>
+                            <p class="eng-name">살균제없이 알아서 살균해주는 UV-C 가습기</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="grid-item">
+                <!-- 사진 -->
+                <p><img src="/web/upload/images/img_interior02.jpg" alt=""></p>
+                <!-- 설명 -->
+                <dl class="">
+                    <dt>모던한 작업대, 커피컵 위에 모던한 살균기 컵케어</dt>
+                    <dd>미니멀한 컵, 텀블러 그냥 방치하지 말고 UV-C LED로 각종 세균 제거하세요. 덮개로도 사용 가능합니다</dd>
+                </dl>
+                <!-- 연관상품 -->
+                <div class="relation-product">
+                    <a href="/product/detail.html?product_no=62">
+                        <p class="img"><img src="/web/upload/images/img_inte_thumb02.jpg" alt=""></p>
+                        <div class="desc">
+                            <p class="name">텀블리</p>
+                            <p class="eng-name">친환경 2중 스테인리스 텀블러</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="relation-product">
+                    <a href="/product/detail.html?product_no=63">
+                        <p class="img"><img src="/web/upload/images/img_inte_thumb03.jpg" alt=""></p>
+                        <div class="desc">
+                            <p class="name">컵케어</p>
+                            <p class="eng-name">손 닿지 않는 곳까지 완벽하게 살균해주는 UV-C 살균기</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!-- //e:사무실 인테리어 -->
+
+
+        <!--<div class="moreBtn"><a href=""><img src="/web/upload/images/m/moreBtn.png"></a></div>-->
+    </div>
+    <!-- //e:인테리어 -->
+
+    <!-- s:기능비디오 -->
+    <div class="video-wrap">
+        <p class="cate-tit">휘아만의 특별한 기능을 알려드립니다-</p>
+        <div class="video-slide swiper-container">
+            <div class="swiper-wrapper">
+                <div class="video-con swiper-slide">
+                    <a href="javascript:openModal('modal_baren');" class="video-thumb"><img src="/web/upload/images/img_func_video01.jpg" alt=""></a>
+                    <!-- 연관상품 -->
+                    <div class="relation-product">
+                        <a href="/product/detail.html?product_no=35">
+                            <p class="img"><img src="/web/upload/images/img_func_thumb01.jpg" alt=""></p>
+                            <div class="desc">
+                                <p class="name">휘아 바른샤워</p>
+                                <p class="sub-name">5중 복합필터 샤워기</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="video-con swiper-slide">
+                    <a href="javascript:openModal('modal_cupcair');" class="video-thumb"><img src="/web/upload/images/img_func_video02.jpg" alt=""></a>
+                    <!-- 연관상품 -->
+                    <div class="relation-product">
+                        <a href="/product/detail.html?product_no=63">
+                            <p class="img"><img src="/web/upload/images/img_func_thumb02.jpg" alt=""></p>
+                            <div class="desc">
+                                <p class="name">휘아 컵케어</p>
+                                <p class="sub-name">UV-C 만능살균기</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="video-con swiper-slide">
+                    <a href="javascript:openModal('modal_waver');" class="video-thumb"><img src="/web/upload/images/img_func_video03.jpg" alt=""></a>
+                    <!-- 연관상품 -->
+                    <div class="relation-product">
+                        <a href="/product/detail.html?product_no=40">
+                            <p class="img"><img src="/web/upload/images/img_func_thumb03.jpg" alt=""></p>
+                            <div class="desc">
+                                <p class="name">휘아 웨이버</p>
+                                <p class="sub-name">초음파세척기</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="video-con swiper-slide">
+                    <a href="javascript:openModal('modal_weair');" class="video-thumb"><img src="/web/upload/images/img_func_video04.jpg" alt=""></a>
+                    <!-- 연관상품 -->
+                    <div class="relation-product">
+                        <a href="/product/detail.html?product_no=39">
+                            <p class="img"><img src="/web/upload/images/img_func_thumb04.jpg" alt=""></p>
+                            <div class="desc">
+                                <p class="name">휘아 위에어</p>
+                                <p class="sub-name">UV-C 살균 가습기</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="swiper-pagination"></div>
+
+        <div id="modal"></div>
+        <div class="modal-con modal_baren">
+            <a href="javascript:;" class="close">X</a>
+            <div class="iframe-con"><iframe width="920" height="520" src="https://www.youtube.com/embed/M_5q_WSqMdo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+        </div>
+
+        <div class="modal-con modal_cupcair">
+            <a href="javascript:;" class="close">X</a>
+            <div class="iframe-con"><iframe width="920" height="520" src="https://www.youtube.com/embed/WjcRw6qESx4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+        </div>
+
+        <div class="modal-con modal_waver">
+            <a href="javascript:;" class="close">X</a>
+            <div class="iframe-con"><iframe width="920" height="520" src="https://www.youtube.com/embed/DSRXEFCFZIA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+        </div>
+
+        <div class="modal-con modal_weair">
+            <a href="javascript:;" class="close">X</a>
+            <div class="iframe-con"><iframe width="920" height="520" src="https://www.youtube.com/embed/NhcNgNwm2wE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+        </div>
+    </div>
+    <!-- //e:기능비디오 -->
+
+    <!--s:크리마 리뷰부분  -->
+    <div class="review-wrap">
+        <p class="cate-tit">휘아와 함께하며 달라진 일상생활</p>
+
+        <!-- cre.ma / 스퀘어 위젯 / 스크립트를 수정할 경우 연락주세요 (support@cre.ma) -->
+        <div class="crema-reviews" data-widget-id="30"></div>
+
+        <div class="moreBtn"><a href="/board/free/list.html?board_no=4"><img src="/web/upload/images/m/moreBtn.png"></a></div>
+    </div>
+    <!--//e:크리마 리뷰부분 -->
+
+    <!-- s:tv cf -->
+    <div class="tvcf-wrap">
+        <p class="cate-tit">휘아의 티비 속 광고를 만나보세요-</p>
+        <div class="tvcf tv01">
+            <a href="javascript:openModal('modal1');">
+                <img src="/web/upload/images/img_tvcf01.jpg" alt="" />
+                <h3>김희철 추천템 휘아 노필터 공기청정기 </h3>
+                <p>
+                    대한민국 휴대용 공기청정기 1위
+                    살균, 탈취, 완벽한 공기살균 노필터 공기청정기! (공기중 바이러스 감소인증)
+                </p>
+            </a>
+        </div>
+        <div class="tvcf tv02">
+            <a href="javascript:openModal('modal2');">
+                <img src="/web/upload/images/img_tvcf02.jpg" alt="" />
+                <h3>김희철 추천템 휘아 완벽살균 클린미스트 </h3>
+                <p>
+                    “셀프백신” 뛰어난 살균력으로 바이러스
+                    및 세균 제거에 완벽한 휘아 클린미스트
+                </p>
+            </a>
+        </div>
+        <div id="modal"></div>
+        <div class="modal-con modal1">
+            <a href="javascript:;" class="close">X</a>
+            <div class="iframe-con"><iframe width="920" height="520" src="https://www.youtube.com/embed/wH1o0XZ3T0g" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+        </div>
+
+        <div class="modal-con modal2">
+            <a href="javascript:;" class="close">X</a>
+            <div class="iframe-con"><iframe width="920" height="520" src="https://www.youtube.com/embed/N8UYRaLzx44" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+        </div>
+
+        <div class="moreBtn"><a href="/board/free/list2.html?board_no=1002&category_no=1"><img src="/web/upload/images/m/moreBtn.png"></a></div>
+    </div>
+    <!-- //e:tv cf -->
+
+    <!--@import(/layout/mosen/bottom.html)-->
+
+</div>
+
+
+<script type="text/javascript">
+
+    var swiper = new Swiper('.main_banner', {
+        autoplay: {
+            delay: 3500,
+            disableOnInteraction: false,
+        },
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+        pagination: {
+            el: '.swiper-pagination',
+            type: 'progressbar',
+        },
+    });
+
+    $('.new-slide').slick({
+        infinite: true,
+        slidesToShow: 1.2,
+        cssEase: 'linear',
+        arrows: true,
+        infinite: true,
+    });
+
+    $('.event-banner ul').slick({
+        infinite: true,
+        slidesToShow: 1,
+        cssEase: 'linear',
+        dots: true,
+        arrows: false,
+        infinite: true,
+    });
+
+    var video = new Swiper('.video-slide', {
+        slidesPerView : 1.5,
+        spaceBetween: 13,
+        pagination: {
+            el: '.swiper-pagination',
+            type: 'progressbar',
+        },
+    });
+
+
+    $('.all-product-tab li').click(function(e){
+        e.preventDefault();
+        var idx = $(this).index();
+        $('.all-product-tab li').removeClass('active').eq(idx).addClass('active');
+        $('.tabContent').removeClass('active').eq(idx).addClass('active');
+    });
+
+    $('.interior-tab li').click(function(e){
+        e.preventDefault();
+        var inte_idx = $(this).index();
+        $('.interior-tab li').removeClass('active').eq(inte_idx).addClass('active');
+        $('.tabContent2').removeClass('active').eq(inte_idx).addClass('active');
+    });
+
+
+
+    function openModal(modalname){
+        document.get
+        $("#modal").fadeIn(300);
+        $("."+modalname).fadeIn(300);
+    }
+
+    $("#modal, .close").on('click',function(){
+        $("#modal").fadeOut(300);
+        $(".modal-con").fadeOut(300);
+    });
+
+</script>

@@ -1,0 +1,106 @@
+<!--
+우측전체메뉴(햄버거메뉴클릭시) 소스 부분입니다.
+-->
+
+<!--@css(/mosen/sidebar_tuxedo/dist/tuxedo-menu.css)-->
+<nav id="sidebar" class="tuxedo-menu">
+    <div class="sidemenu-wrap">
+        <div class="sidemenu">
+            <ul>
+                <h2><a href="#">브랜드</a></h2>
+                <li><a href="/company/brandstory.html">스토리</a></li>
+                <li><a href="/board/free/list2.html?board_no=1002&category_no=1">웹진</a></li>
+                <li><a href="/company/market.html">스토어</a></li>
+            </ul>
+            <ul>
+                <h2><a href="#">타임세일</a></h2>
+            </ul>
+            <ul>
+                <h2><a href="/board/gallery/list.html">이벤트</a></h2>
+                <li><a href="#">기획전</a></li>
+            </ul>
+            <ul>
+                <h2><a href="#">1+1</a></h2>
+            </ul>
+            <br>
+            <ul>
+                <h2><a href="/product/list.html?cate_no=101">위생가전</a></h2>
+                <li><a href="/product/list.html?cate_no=123">이클리너</a></li>
+                <li><a href="/product/detail.html?product_no=39&cate_no=118&display_group=1">위에어</a></li>
+                <li><a href="/product/detail.html?product_no=13&cate_no=103&display_group=1">에어컵</a></li>
+                <!--<li><a href="/product/detail.html?product_no=64&cate_no=101&display_group=1">츄케어</a></li>-->
+                <li><a href="/product/detail.html?product_no=63&cate_no=101&display_group=1">컵케어</a></li>
+                <li><a href="/product/detail.html?product_no=40&cate_no=118&display_group=1">웨이버</a></li>
+    		</ul>
+            <ul>
+                <h2><a href="/product/list.html?cate_no=118">생활위생</a></h2>
+                <li><a href="/product/detail.html?product_no=20&cate_no=102&display_group=1">클린미스트</a></li>
+                <li><a href="/product/detail.html?product_no=72">눕기전에시트</a></li>
+                <li><a href="/product/detail.html?product_no=44&cate_no=118&display_group=1">딥클린안심티슈</a></li>
+                <li><a href="/product/detail.html?product_no=58&cate_no=115&display_group=1">쿨매너데오티슈</a></li>
+                <li><a href="/product/detail.html?product_no=42&cate_no=118&display_group=1">KF94마스크</a></li>
+                <li><a href="/product/detail.html?product_no=73">뽀송한장</a></li>
+                <li><a href="/product/detail.html?product_no=38&cate_no=118&display_group=1">지울.때.</a></li>
+                <li><a href="/product/detail.html?product_no=62&cate_no=118&display_group=1">텀블리</a></li>
+                <li><a href="">SET구성</a></li>
+    		</ul>
+            <ul>
+                <h2><a href="/product/list.html?cate_no=121">욕실위생</a></h2>
+                <li><a href="/product/detail.html?product_no=35&cate_no=121&display_group=1">바른샤워</a></li>
+                <li><a href="/product/list.html?cate_no=123">이클리너</a></li>
+                <li><a href="/product/detail.html?product_no=68">푸카치약</a></li>
+                <li><a href="/product/detail.html?product_no=69">푸카가글</a></li>
+                <li><a href="/product/detail.html?product_no=32&cate_no=117&display_group=1">4생활칫솔</a></li>
+                <li><a href="/product/detail.html?product_no=50">순수비누</a></li>
+                <li><a href="/product/detail.html?product_no=49">세수비누</a></li>
+                <li><a href="/product/detail.html?product_no=48">쿨한비누</a></li>
+                <li><a href="">SET구성</a></li>
+    		</ul>
+
+            <ul>
+                <h2><a href="/product/list.html?cate_no=122">주방위생</a></h2>
+                <li><a href="/product/detail.html?product_no=51&cate_no=122&display_group=1">주방비누</a></li>
+                <li><a href="/product/detail.html?product_no=30&cate_no=116&display_group=1">하루한알삼십일</a></li>
+                <li><a href="/product/detail.html?product_no=61&cate_no=122&display_group=1">하루한장삼십일</a></li>
+    		</ul>
+            <ul>
+                <h2><a href="#">커뮤니티</a></h2>
+                <li><a href="">회원등급</a></li>
+                <li><a href="/board/free/list.html?board_no=1">공지사항</a></li>
+                <li><a href="/board/product/list.html?board_no=6">고객문의</a></li>
+                <li><a href="/board/free/list.html?board_no=4">고객후기</a></li>
+                <li><a href="/company/purchase.html">대량구매</a></li>
+                <!--
+                <li><a href="/board/gallery/list.html">이벤트</a></li>
+                <li><a href="/board/free/list2.html?board_no=101">마케팅제휴/수출문의</a></li>
+                -->
+            </ul>
+            <!-- cre.ma / 로그인 회원 정보 / 스크립트를 수정할 경우 연락주세요 (support@cre.ma) -->
+            <div module="Layout_stateLogon" style="display: none;">
+                <i id="crema-login-username" style="display: none;">{$id}</i>
+                <i id="crema-login-name" style="display: none;">{$name}</i>
+            </div>
+
+            <ul>
+                <h2><a href="#">멤버스</a></h2>
+                <li module="Layout_statelogoff"><a href="/member/login.html" class="first">로그인</a></li>
+                <li module="Layout_statelogoff"><a href="/member/join.html">회원가입</a></li>
+                <li module="Layout_stateLogon"><a href="{$action_logout}" class="first">로그아웃</a></li>
+                <li module="Layout_stateLogon"><a href="/member/modify.html">회원정보수정</a></li>
+                <li><a href="/order/basket.html" module="Layout_orderBasketcount">장바구니 <span>{$basket_count}</span></a></li>
+                <li><a href="<!--@import(/layout/mosen/layout_delivery_url.html)-->" target="_blank">우편조회</a></li>
+                <li><a href="/link/bookmark.html" class="first" target="_blank" onclick="winPop(this.href); return false;">즐겨찾기 추가</a></li>
+            </ul>
+            <ul module="myshop_main">
+                <h2><a href="#">나의정보</a></h2>
+                <li class=""><a href="/myshop/order/list.html">주문조회</a></li>
+                <li module="Layout_stateLogon"><a href="/member/modify.html">회원정보</a></li>
+                <li><a href="/myshop/mileage/historyList.html">적립금 <strong>{$avail_mileage}</strong></a></li>
+                <li><a href="/myshop/coupon/coupon.html">쿠폰관리<strong>{$coupon_cnt}</strong></a></li>
+                <li><a href="/myshop/wish_list.html" class="wishList">관심상품<strong>{$wish_count}</strong></a></li>
+                <li><a href="/product/recent_view_product.html" class="recentList">최근본상품<strong>{$recent_count}</strong></a></li>
+            </ul>
+        </div>
+        <div class="close_btn2"><a href="#none"><img src="/web/upload/mosen/btn_close2.png"></a></div>
+    </div>
+</nav>
