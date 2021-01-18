@@ -1,0 +1,24 @@
+#contentWrapper.offline { margin-top:0; padding-top:60px; }
+#contentWrapper.offline #contentWrap { width:100%; }
+#contentWrapper.offline #content { width:100%; padding-left:297px; padding-right:20px; }
+.store-header { margin-top:60px; text-align:left; }
+.store-header:after { content:''; display:block; clear:both; }
+.store-header h1 { float:left; margin-right:48px; color:#000; font-size:25px; font-weight:bold; }
+.store-header ul::after { content:''; display:block; clear:both; }
+.store-header ul { display:inline-block; margin-top:6px; }
+.store-header ul li { display:inline-block; float:left; margin-right:28px; }
+.store-header ul li a { color:#bababa; font-size:15px; font-weight:bold; padding-bottom:5px;  border-bottom:1px solid transparent;}
+.store-header ul li a:hover { color:#000; font-size:15px; font-weight:bold; border-bottom:1px solid #000; }
+.store-header ul li.active a { display:inline-block; color:#000; font-size:15px; font-weight:bold; border-bottom:1px solid #000; }
+
+.store-list-wrap { text-align:left; }
+.list { cursor:pointer; position:relative; border-bottom:1px solid #ededed; -webkit-transition:all .5s; -moz-transition:all .5s; -o-transition:all .5s; transition:all .5s; }
+.list .kor-tit { background:url('http://ftp.xexymix.jpg3.kr/xexymix/introimg/icon_map.png') right center no-repeat; display:inline-block; color:#313131; font-size:23px; font-weight:bold; padding-right:27px; margin-top:50px; margin-bottom:25px; }
+.list .addr { color:#898989; font-size:13px; line-height:1.6; padding-bottom:30px; }
+.list .eng-tit { position:absolute; right:10px; top:60px; color:#898989; font-size:12px; line-height:1.6; }
+.map-view::after { content:''; display:block; clear:both; overflow:hidden; }
+.map-view > * { float:left; }
+.map { display:none; width:1270px; height:320px; }
+
+.foreign-store-wrap { display:none; }
+.foreign-store-wrap p { color:#000; font-size:24px; text-align:center; font-weight:bold; margin-top:60px; line-height:1.6; margin-bottom:700px; }

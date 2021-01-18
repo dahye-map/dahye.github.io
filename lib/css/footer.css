@@ -1,0 +1,90 @@
+/* 젝시타임 */
+.xexytime {position:fixed;left:30px; bottom:30px; z-index:100;}
+.xexytime .float_thumb { background: url(http://xexymix.jpg3.kr/xexymix/img/content/event/xexytime_icon.png) no-repeat; width: 107px; height: 117px; position:relative;opacity:1;filter:alpha(opacity=100);zoom:1;transition:all 0.3s ease;}
+.xexytime .float_thumb span { width: 107px; position:absolute; bottom:10px; color:#fff; text-align:center; font-size:13px; font-weight:500; }
+.xexytime .float_layer {overflow:hidden;position:absolute;bottom:-30px;left:-30px;width:120px;height:145px;opacity:0;filter:alpha(opacity=0);zoom:1;transition:all 0.3s ease;}
+.xexytime:hover .float_thumb {opacity:0;filter:alpha(opacity=0);zoom:1;}
+.xexytime:hover .float_layer {width:655px;height:330px;opacity:1;filter:alpha(opacity=100);zoom:1;} /* width값 1170px,height값을 auto 로 하여 자유롭게 표현할 수 있음 */
+.xexytime .countdown { text-align: center; letter-spacing: -1px; }
+.xexytime .countdown .timeel { display: inline-block; }
+.xexytime .countdown  .hours,
+.xexytime .countdown  .minutes,
+.xexytime .countdown  .seconds { width: 23px; }
+.xexytime .float_thumb .countdown { padding-top: 108px; font-size: 17px; color:#191919; font-weight: 600;}
+/* 젝시타임 */
+
+.instaBox {position:relative;top: 0;z-index:5;padding:0 0 200px;background:#fff;}
+.ft_instagram {margin:0px auto 0; text-align:center; width:1200px;   }
+.ft_instagram .title {padding:51px 0 10px; text-align:left; }
+.ft_instagram .title a { font-weight: 700; font-size: 42px; color: #000; }
+.ft_instagram .title2 {text-align:left; margin-bottom:70px; font-size: 16px; color: #000; font-weight: normal; }
+
+#ftWrap {clear:both; width:100%; position:fixed; background:#000; top:0; left:0; right:0; bottom:0; z-index:3; height:100vh;}
+#footer {width:100%; max-width:1300px;  position:relative; top:10%; font-size:0; }
+#footer .footerLogo {text-align:left; display:inline-block; *display:inline; vertical-align:top; width:220px;   }
+#footer .footerLogo > a {display:block; width:107px; text-align:center; }
+
+#footer .rightBox { width:1080px; text-align:left; display:inline-block; *display:inline; vertical-align:top; }
+#footer .rightBox .topArea {margin-bottom:60px; }
+#footer .rightBox .topArea > div {display:inline-block; *display:inline; vertical-align:top; width:20%; }
+#footer .rightBox .topArea .product, #footer .rightBox .topArea .community, #footer .rightBox .topArea .teacher { width:16.5%; padding-bottom:60px; }
+#footer .rightBox .topArea .about { width:22%; }
+#footer .rightBox .topArea .mypage { width:14%; }
+#footer .rightBox .topArea > div dt {font-size:14px; font-weight:bold; color:#fff; margin-bottom:15px; }
+#footer .rightBox .topArea > div dd {margin-bottom:5px; color:#999; font-size:12px; }
+#footer .rightBox .topArea > div dd a {color:#999; font-size:12px; display:inline-block; }
+#footer .rightBox .topArea > div dd.tel {color:#fff; font-size:15px; margin-bottom:15px; }
+#footer .rightBox .topArea > div p.msg {color:#999; font-size:12px; margin-top:20px; line-height:1.6; }
+#footer .rightBox .topArea > div.lang dd,
+#footer .rightBox .topArea > div.sns dd {display:inline-block; *display:inline; vertical-align:top; margin-right:10px; }
+
+#footer .footerBottom.rightBox .topArea {margin-bottom:0; }
+#footer .rightBox .topArea address span { color:#999; font-size:12px; display: inline-block; *display: inline; *zoom: 1; position: relative; padding-right: 19px; vertical-align: top; line-height:2; }
+#footer .rightBox .topArea address span:after {display: block; content: ''; position: absolute; top: 50%; right: 9px; width: 1px; height: 9px; background: #a5a5a5; -webkit-transform: translate(0,-50%); -ms-transform: translate(0,-50%); transform: translate(0,-50%); }
+#footer .rightBox .topArea address span.last:after {width:0; }
+#footer .rightBox .topArea address .copyright {font-size:12px; color:#999; line-height:2; }
+#footer .rightBox .topArea address .copyright strong {font-weight:normal; }
+#footer .rightBox .topArea address .copyright img {vertical-align:middle; }
+#footer .rightBox .topArea address .copyright a {color:#999; text-decoration:underline; line-height:2; }
+#footer .footerBottom.rightBox .topArea .menu {margin-top:10px; }
+#footer .footerBottom.rightBox .topArea .menu li {display: inline-block; *display: inline; *zoom: 1; }
+#footer .footerBottom.rightBox .topArea .menu li a { color:#999; font-size:12px; display: inline-block; *display: inline; *zoom: 1; position: relative; padding-right: 19px; vertical-align: top; line-height:2; }
+#footer .footerBottom.rightBox .topArea .menu li a:after {display: block; content: ''; position: absolute; top: 50%; right: 9px; width: 1px; height: 9px; background: #a5a5a5; -webkit-transform: translate(0,-50%); -ms-transform: translate(0,-50%); transform: translate(0,-50%); }
+#footer .footerBottom.rightBox .topArea .menu li.last a:after {width:0; }
+
+
+
+#right_q {position:fixed; top:50%; right:0; z-index:30; -webkit-transform:translate(0,-50%); -ms-transform:translate(0,-50%); transform:translate(0,-50%); display:none; }
+#right_q ul {overflow:hidden;  border-bottom:0; background:#fff; border-top:1px solid #c6c6c6;}
+#right_q ul li { border-bottom:1px solid #c6c6c6; border-left:1px solid #c6c6c6;}
+#right_q ul li a {display:block; width:58px; height:48px; background:#fff no-repeat center; color:transparent; text-indent:-9999px; cursor:pointer;}
+#right_q ul li.up a {background-image:url('/design/xexymix/image/q_up.png');}
+#right_q ul li.down a {background-image:url('/design/xexymix/image/q_down.png');}
+#right_q ul li.recent a {background-image:url('/design/xexymix/image/q_recent.png');}
+#right_q ul li.kakao a {background-image:url('/design/xexymix/image/q_kakao.png');}
+
+.rightFixBtn {
+    position: fixed;
+    z-index: 999;
+    right: 0;
+    bottom: 0;
+    text-align: center;
+    padding: 16px;
+    -webkit-transition: all 200ms ease;
+    -moz-transition: all 200ms ease;
+    -ms-transition: all 200ms ease;
+    -o-transition: all 200ms ease;
+    transition: all 200ms ease;
+    width: 60px;
+}
+/* BASIC css end */
+
+.rightFixBtn img {
+    width: 30px;
+    height: auto;
+}
+
+.rightFixBtn > div {
+    margin: 10px 0;
+}
+/* BASIC css end */
