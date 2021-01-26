@@ -213,7 +213,7 @@ background:url('/web/upload/img/btn_option_down.png') left top no-repeat; }
 
 
 
-.main-banner-wrap { position:relative; margin-top:80px;  }
+.main-banner-wrap { position:relative; margin-top:55px;  }
 .main-banner-wrap ul:after { content:''; display:block; clear:both; overflow:hidden; }
 .main-banner-wrap .main-banner { z-index:1; }
 .main-banner-wrap .main-banner > ul > li { position:relative; display:block; height:100%; }

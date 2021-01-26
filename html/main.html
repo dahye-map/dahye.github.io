@@ -1130,26 +1130,26 @@
             }
         });
 
-        // var mySwiper = new Swiper('.product-list-wrap', {
-        //   slidesPerView:'auto',
-        //   spaceBetween: 50,
-        //   loop: true,
-        //   pagination: {
-        //     el: '.product-pagination',
-        //     type: 'fraction',
-        //   },
-        //   autoplay: {
-        //     delay: 4000,
-        //     disableOnInteraction: false,
-        //   },
-        //   // on:{
-        //   //     slideChange:function(){
-        //   //         $(".main-banner ul li").removeClass('active');
-        //   //         $(".main-banner ul li:nth-child("+(this.realIndex+1)+")").addClass('active');
-        //   //     },
-        //   // },
-        // });
-        //
+        var mySwiper = new Swiper('.product-list-wrap', {
+          slidesPerView:'auto',
+          spaceBetween: 50,
+          loop: true,
+          pagination: {
+            el: '.product-pagination',
+            type: 'fraction',
+          },
+          autoplay: {
+            delay: 4000,
+            disableOnInteraction: false,
+          },
+          // on:{
+          //     slideChange:function(){
+          //         $(".main-banner ul li").removeClass('active');
+          //         $(".main-banner ul li:nth-child("+(this.realIndex+1)+")").addClass('active');
+          //     },
+          // },
+        });
+
         // var Swiper = new Swiper('.main-banner', {
         //   slidesPerView:1,
         //   loop: true,
@@ -1195,7 +1195,7 @@
         });
 
         var swiper = new Swiper('.magazine-wrap', {
-          slidesPerView:1,
+          slidesPerView:'auto',
           spaceBetween: 50,
           loop: true,
           navigation: {

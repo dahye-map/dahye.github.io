@@ -301,7 +301,7 @@
             <div class="productSet additional" module="product_addproduct">
                 <div class="title">
                     <h3>추가구성상품 <span>추가로 구매를 원하시면 선택하세요.</span></h3>
-                    <a href="#self" class="toggle"><img src="//img.echosting.cafe24.com/skin/base/product/btn_additional_close.gif" alt="추가구성상품 닫기" /></a>
+                    <a href="#self" class="toggle"><img src="//img.echosting.cafe24.com/skin/base/product/btn_additional_open.gif" alt="추가구성상품 펼치기" /></a>
                 </div>
                 <ul class="product">
                     <li>
@@ -389,8 +389,8 @@
                                     <li module="product_quantity">
                                         <div class="ec-base-qty">
                                             {$form.quantity}
-                                            <a href="#none" class="up"><img src="/web/upload/img/btn_option_up.png" alt="수량증가" class="{$quantity_up_class}" /></a>
-                                            <a href="#none" class="down"><img src="/web/upload/img/btn_option_down.png" alt="수량감소" class="{$quantity_down_class}" /></a>
+                                            <a href="#none" class="up {$quantity_up_class}"><img src="/web/upload/img/btn_option_up.png" alt="수량증가" class="" /></a>
+                                            <a href="#none" class="down {$quantity_down_class}"><img src="/web/upload/img/btn_option_down.png" alt="수량감소" class="" /></a>
                                         </div>
                                     </li>
                                 </ul>
@@ -426,16 +426,14 @@
                             <td>
                                 <span class="quantity">
                                     {$quantity}
-                                    <a href="#none" class="up"><img src="/web/upload/img/btn_option_up.png" alt="수량증가" class="{$quantity_up_class}" /></a>
-                                    <a href="#none" class="down"><img src="/web/upload/img/btn_option_down.png" alt="수량감소" class="{$quantity_down_class}" /></a>
+                                    <a href="#none" class="up {$quantity_up_class}"><img src="/web/upload/img/btn_option_up.png" alt="수량증가" class="" /></a>
+                                    <a href="#none" class="down {$quantity_down_class}"><img src="/web/upload/img/btn_option_down.png" alt="수량감소" class="" /></a>
                                 </span>
                             </td>
                             <td class="right"><span class="{$total.quantity_price}">{$product_price}</span></td>
                         </tr>
                     </tbody>
                     <!-- 참고 : 옵션선택 또는 세트상품 선택시 상품이 추가되는 영역입니다. 쇼핑몰 화면에는 아래와 같은 마크업구조로 표시됩니다. 삭제시 기능이 정상동작 하지 않습니다.-->
-
-                    
                     <tbody>
                         <!-- tr>
                             <td>
@@ -751,6 +749,10 @@
             </ul>
         </div>
         <!-- //회원혜택 -->
+
+        <div class="" style="text-align:center; padding-bottom:80px;">
+              <a href="/article/%EA%B0%A4%EB%9F%AC%EB%A6%AC/8/16174/"><img src="/web/upload/img/welcome_pc.jpg" alt=""></a>
+          </div>
 
 
         <div class="cont detail_con">
