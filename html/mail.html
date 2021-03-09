@@ -1,0 +1,149 @@
+<!--@layout(/layout/basic/layout2.html)-->
+
+<div module="Board_ListPackage_5">
+    <!--@css(/css/module/board/ir.css)-->
+    <div class="scroll">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-3">
+                    <div module="board_title_5">
+                       <div class="title_area">
+                            <h2 class="tit">브랜드엑스코퍼레이션<br>IR자료</h2>
+                            <span class="desc">* 최근 3년기준</span>
+                        </div>
+                    </div>
+                    <ul class="ir_menu">
+                        <!--<li><a href="/board/free/list02.html">재무정보</a></li>-->
+                        <li><a href="/board/free/list.html">공시정보</a></li>
+                        <li><a href="/board/free/list03.html" class="active">IR자료</a></li>
+                        <!--<li><a href="/board/free/list03.html" class="active">공고사항</a></li>-->
+                    </ul>
+                </div>
+                <div class="col-sm-9">
+                    <div class="ec-base-table typeList">
+                        <table border="1" summary="">
+                            <caption>게시판 목록</caption>
+                            <colgroup module="board_listheader_5">
+                                <col style="width:60%;" />
+                                <col style="width:20%;" class="{$config.use_date|display}" />
+                                <col style="width:20%;">
+                            </colgroup>
+                            <thead module="board_listheader_5">
+                                <tr>
+                                    <th scope="col">보고서명</th>
+                                    <th scope="col" class="{$config.use_date|display}">작성일</th>
+                                    <th scope="col">다운로드</th>
+                                </tr>
+                            </thead>
+                            <tbody module="board_notice_5" class="center">
+                                <!--
+            $count = 2
+            $login_page_url = /member/login.html
+            $deny_access_url = /index.html
+            -->
+                                <tr>
+                                    <td class="subject left txtBreak">
+                                        <strong>{$icon_re} {$subject}</strong>
+                                    </td>
+                                    <td class="{$date_display|display}"><span class="txtNum">{$write_date|date:Y-m-d}</span></td>
+                                </tr>
+                                <tr>
+                                    <td class="subject left txtBreak">
+                                        <strong>{$icon_re} {$subject}</strong>
+                                    </td>
+                                    <td class="{$date_display|display}"><span class="txtNum">{$write_date|date:Y-m-d}</span></td>
+                                </tr>
+                            </tbody>
+                            <tbody module="board_fixed_5" class="center">
+                                <!--
+                                    $count = 2
+                                    $login_page_url = /member/login.html
+                                    $deny_access_url = /index.html
+                                    -->
+                                <tr>
+                                    <td class="subject left txtBreak">
+                                        <strong>{$icon_re} {$subject}</strong>
+                                    </td>
+                                    <td class="{$date_display|display}"><span class="txtNum">{$write_date|date:Y-m-d}</span></td>
+                                </tr>
+                                <tr>
+                                    <td class="subject left txtBreak">
+                                        <strong>{$icon_re} {$subject}</strong>
+                                    </td>
+                                    <td class="{$date_display|display}"><span class="txtNum">{$write_date|date:Y-m-d}</span></td>
+                                </tr>
+                                <tr>
+                                    <td class="subject left txtBreak">
+                                        <strong>{$icon_re} {$subject}</strong>
+                                    </td>
+                                    <td class="{$date_display|display}"><span class="txtNum">{$write_date|date:Y-m-d}</span></td>
+                                </tr>
+                                <tr>
+                                    <td class="subject left txtBreak">
+                                        <strong>{$icon_re} <a href="{$link_board_detail}">{$subject}</a></strong>
+                                    </td>
+                                    <td class="{$date_display|display}"><span class="txtNum">{$write_date|date:Y-m-d}</span></td>
+                                </tr>
+                            </tbody>
+                            <tbody module="board_list_5" class="center ar">
+                                <!--
+            $login_page_url = /member/login.html
+            $deny_access_url = /index.html
+            -->
+                                <tr>
+
+                                    <td class="subject  txtBreak">
+                                         {$subject}
+                                    </td>
+                                    <td class="{$date_display|display}"><span class="txtNum">{$write_date|date:Y-m-d}</span></td>
+                                    <td class="subject  downBtn">
+                                        <a href="http://ftp.xexymix.jpg3.kr/brandx_upload/브랜드엑스코퍼레이션_기업소개(2020).pdf" target="_blank"><img src="/web/upload/images/down_btn.png" alt="다운로드 버튼"></a>
+                                    </td>
+                                </tr>
+
+                            </tbody>
+                        </table>
+                        <p class="message {$empty_display|display}" module="board_empty_5">{$empty_message}</p>
+                    </div>
+                    <div module="board_ButtonList_5" class="ec-base-button typeBG {$write_display|display}">
+                        <span class="gRight">
+                            <a href="/board/free/write.html{$param_write}" class="btnSubmitFix sizeS {$write_display|display}">글쓰기</a>
+                        </span>
+                    </div>
+                    <div module="board_paging_5" class="ec-base-paginate">
+                        <a href="{$param_prev}"><img src="/web/upload/images/btn_page_prev.gif" alt="이전 페이지" /></a>
+                        <ol>
+                            <li><a href="{$param_num}" class="{$param_class}">{$page_num}</a></li>
+                            <li><a href="{$param_num}" class="{$param_class}">{$page_num}</a></li>
+                        </ol>
+                        <a href="{$param_next}"><img src="/web/upload/images/btn_page_next.gif" alt="다음 페이지" /></a>
+                    </div>
+
+                    <div module="board_search_5">
+                        <!--@css(/css/module/board/search.css)-->
+                        <fieldset class="boardSearch">
+                            <legend>게시물 검색</legend>
+                            <p>{$form.search} <a href="#none" class="btnEmFix" onclick="{$action_search}">찾기</a></p>
+                        </fieldset>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<script>
+//타이틀 따라다니기
+var secOffset = $('.scroll').offset();
+$(window).scroll(function(){
+    var win_W = $(window).width();
+    if ( $(document).scrollTop() >= secOffset.top - 50  &&  $('.scroll').height() - 50 + secOffset.top > $(document).scrollTop()) {
+        $( '.scroll' ).addClass( 'fixed' );
+    } else {
+        $( '.scroll' ).removeClass( 'fixed' );
+    }
+});
+</script>

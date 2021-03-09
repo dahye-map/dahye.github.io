@@ -1,0 +1,726 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.4.js"></script>
+        <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+        <script src="https://www.xexymix.com/design/xexymix/js/slick.js"></script>
+        <script src="../lib/js/bootstrap.min.js"></script>
+        <script src="../lib/js/jquery.fullPage.js"></script>
+        <script src="../lib/js/ui.js"></script>
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+        <link rel="stylesheet" href="../lib/css/bootstrap.min.css">
+        <link rel="stylesheet" href="../lib/css/swiper.min.css">
+        <link type="text/css" rel="stylesheet" href="../lib/css/common.css">
+        <link type="text/css" rel="stylesheet" href="../lib/css/brand.css">
+        <title></title>
+    </head>
+    <body>
+        <!-- s:headerWrap -->
+        <div id="headerWrap">
+            <div class="header">
+                <a href="/" class="logo"><img src="http://skin-skin2.brandxcorp2.cafe24.comhttp://skin-skin2.brandxcorp2.cafe24.com/web/upload/images/logo_bl.png"></a>
+                <a href="javascript:void(0);" class="all-menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </a>
+                <p class="bxc"> <img src="http://skin-skin2.brandxcorp2.cafe24.comhttp://skin-skin2.brandxcorp2.cafe24.com/web/upload/images/img_bxc.png" alt=""> </p>
+            </div>
+            <div class="gnb-wrap">
+                <div class="lang">
+                    <ul>
+                        <li class="active"><a href="#">KR</a></li>
+                        <li><a href="#">EN</a></li>
+                        <li><a href="#">CN</a></li>
+                    </ul>
+                </div>
+                <div class="gnb">
+                    <ul>
+                        <li class="first">
+                            <a href="#">Brandx</a>
+                            <ul>
+                                <li><a href="#">about</a></li>
+                                <li><a href="#">Identity</a></li>
+                            </ul>
+                        </li>
+                        <li class="second">
+                            <a href="#">Brand</a>
+                            <ul>
+                                <li><a href="#">젝시믹스</a></li>
+                                <li><a href="#">마르시오디에고</a></li>
+                                <li><a href="#">믹스투믹스</a></li>
+                                <li class="next"><a href="#">휘아</a></li>
+                                <li><a href="#">쓰리케어</a></li>
+                                <li><a href="#">포켓도시락</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">News</a></li>
+                        <li>
+                            <a href="#">Ir</a>
+                            <ul>
+                                <li><a href="#">주가정보</a></li>
+                                <li><a href="#">공시정보</a></li>
+                                <li><a href="#">IR자료</a></li>
+                                <li><a href="#">공고사항</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Career</a></li>
+                        <li>
+                            <a href="#">Contact</a>
+                            <ul>
+                                <li><a href="#">찾아오시는 길</a></li>
+                                <li><a href="#">문의하기</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <script type="text/javascript">
+            //gnb
+            $('.all-menu').click(function(e){
+                e.preventDefault();
+                var _Gnb = false;
+                if(!_Gnb){
+                    _Gnb = true;
+                    if(!$('.all-menu').hasClass('active')){
+                        $('.all-menu').addClass('active');
+                        $('.gnb-wrap').addClass('active');
+                        $('#headerWrap.light .header').css('box-shadow', 'none');
+                        $('body').append('<div class="gnb-block">');
+                        $('body, html, #containerWrap').css({'overflow': 'hidden'});
+
+                    } else {
+                        $('.all-menu').removeClass('active');
+                        $('.gnb-wrap').removeClass('active');
+                        $('#headerWrap.light .header').css('box-shadow', '');
+                        $('body, html, #containerWrap').css({'overflow' : ''});
+                        $('.gnb-block').fadeOut(300).empty().remove();
+                    }
+                }
+            });
+        </script>
+        <!-- //e:headerWrap -->
+
+        <div id="wrap">
+            <!-- s:containerWrap -->
+            <div id="containerWrap" class="dark ani5">
+
+                <div class="section section00 ">
+
+			<div class="tit">
+				<h1 data-aos="fade-up" data-aos-duration="1000" data-aos-once="true" >
+					    <span class="tit_desc circle">인재·기술 기반으로<br> 혁신 제품을 만들다.</span>
+						<span class="tit_sub">Brand eXperience Corp.</span>
+
+
+				</h1>
+			</div>
+		</div>
+
+		<div class="section section02 ">
+
+				 <div class="row">
+
+
+							<div class=" txt_wrap" >
+
+
+										<h3 class="txt txtLeft col-md-6 circle" data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">
+											R&D를 기반 제조기술<br>
+											미디어커머스 기업
+										</h3>
+										<p class="txt txtRight col-md-6" data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">
+											브랜드엑스코퍼레이션은 제품 R&D를 기반으로 브랜드를 만드는 제조기술<br>
+											기반의 미디어커머스 기업입니다. 최근 미디어커머스 시장이 커지면서 제품<br>
+											력은 제조사에 위임하거나 단순 OEM을 의뢰하고 마케팅력만으로 매출을<br>
+											올리고 있지만, 이런 기업과 달리 브랜드엑스는 출시하는 모든 제품을 자체<br>
+											샘플실과 R&D센터에서 수백 번의 테스트 과정을 거치며 탄생시키고 있습니다.
+
+										</p>
+
+
+							</div>
+							<div class="brand_list swiper-container">
+								<ul class="swiper-wrapper">
+								    <li class="swiper-slide"><img src="http://skin-skin2.brandxcorp2.cafe24.com/web/upload/images/main_f_b26.jpg" alt=""></li>
+								    <li class="swiper-slide"><img src="http://skin-skin2.brandxcorp2.cafe24.com/web/upload/images/main_f_b7.jpg" alt=""></li>
+								    <li class="swiper-slide"><img src="http://skin-skin2.brandxcorp2.cafe24.com/web/upload/images/main_f_b8.jpg" alt=""></li>
+								    <li class="swiper-slide"><img src="http://skin-skin2.brandxcorp2.cafe24.com/web/upload/images/main_f_b11.jpg" alt=""></li>
+								    <li class="swiper-slide"><img src="http://skin-skin2.brandxcorp2.cafe24.com/web/upload/images/main_f_b12.jpg" alt=""></li>
+								    <li class="swiper-slide"><img src="http://skin-skin2.brandxcorp2.cafe24.com/web/upload/images/main_f_b14.jpg" alt=""></li>
+								    <li class="swiper-slide"><img src="http://skin-skin2.brandxcorp2.cafe24.com/web/upload/images/main_f_b15.jpg" alt=""></li>
+								    <li class="swiper-slide"><img src="http://skin-skin2.brandxcorp2.cafe24.com/web/upload/images/main_f_b16.jpg" alt=""></li>
+								    <li class="swiper-slide"><img src="http://skin-skin2.brandxcorp2.cafe24.com/web/upload/images/main_f_b22.jpg" alt=""></li>
+									<li class="swiper-slide"><img src="http://skin-skin2.brandxcorp2.cafe24.com/web/upload/images/main_f_b23.jpg" alt=""></li>
+									<li class="swiper-slide"><img src="http://skin-skin2.brandxcorp2.cafe24.com/web/upload/images/main_f_b24.jpg" alt=""></li>
+									<li class="swiper-slide"><img src="http://skin-skin2.brandxcorp2.cafe24.com/web/upload/images/main_f_b27.jpg" alt=""></li>
+								</ul>
+							</div>
+				  </div>
+
+
+		</div>
+
+		<div class="section value">
+
+
+
+							<div class="bg"></div>
+							<div class=" txt_wrap" >
+
+
+										<h3 class="txt txtLeft col-md-6 " data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">
+										    <span class="tit_color">MISSON</span>
+											한발 더 앞서가는<br> 미래지향적 기업
+										</h3>
+										<p class="txt txtRight col-md-6" data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">
+											<span class="tit_color">VISION</span>
+											<span class="desc">유통 BIZ와 IT 기반의 헬스케어, e커머스 플랫폼으로 고객에게<br> 이익과 효용을 제공하는 Leading Company</span>
+
+										</p>
+										<p class="txt txtRight col-md-6" data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">
+											<span class="tit_color core">CORE VALUE</span>
+
+											<span class="circle_img"><img src="http://skin-skin2.brandxcorp2.cafe24.com/web/upload/images/brandx2_sq.png" alt=""></span><br>
+												·자체적으로 개발하는 모든 브랜드와 제품, 서비스는 항상 1위를 지향합니다.<br>
+
+												·투자자와 소비자에게 이익과 효용이 돌아가는 것을 목표로 합니다.<br>
+
+												·브랜드엑스가 만든 제품으로 풍요로운 삶을 영위할 수 있도록 공헌하며 <br>
+												환경, 안전, 건강을 위해 노력합니다.
+										</p>
+
+
+
+							</div>
+
+
+
+
+		</div>
+
+
+		<div class="section section04" >
+			<div class="graph_con">
+				<h1 class="tit pc">2017년 이후 매년 2배 성장을 기록 중인 브랜드엑스</h1>
+				<h1 class="tit mob">2017년 이후<br> 매년 2배 성장 기록</h1>
+				<p class="desc">
+					2017년 이후부터 영업이익율 20%를 유지하며,<br>
+					매년 2배씩 성장하고 있는 브랜드엑스코퍼레이션
+				</p>
+
+
+                    <div class="graph_right">
+				    	<h3 class="sales">매출액</h3>
+						<div class="graph_img">
+							<img src="http://skin-skin2.brandxcorp2.cafe24.com/web/upload/images/sales_gif.gif" alt="">
+							<p class="benefit">매출 (단위:억원)</p>
+						</div>
+
+				    </div>
+					<div class="graph_left">
+
+							<h3 class="sales">영업이익</h3>
+							<div class="graph_img">
+								<img src="http://skin-skin2.brandxcorp2.cafe24.com/web/upload/images/benefit_gif.gif" alt="">
+								<p class="benefit">영업이익 (단위:억원)</p>
+						    </div>
+
+				    </div>
+
+
+
+<!--
+						<div class="graph_wrap lazy2">
+
+									<div class="figure f01">
+										<div class="inner">150</div>
+									</div>
+									<div class=" f01_line">
+										<div class="inner"></div>
+									</div>
+									<div class="figure f02">
+										<div class="inner">390</div>
+									</div>
+									<div class=" f02_line delay4">
+										<div class="inner"></div>
+									</div>
+									<div class="figure f03">
+										<div class="inner">674</div>
+									</div>
+									<div class=" f03_line delay5">
+										<div class="inner"></div>
+									</div>
+
+									 <div class=" arrow">
+										<div class="inner"><img src="http://skin-skin2.brandxcorp2.cafe24.com/web/upload/images/arrow.png" alt="증가화살표"></div>
+									</div>
+
+
+									<div class="figure f04">
+										<div class="inner">1,500</div>
+									</div>
+									<div class=" f04_line">
+										<div class="inner"></div>
+									</div>
+
+
+
+							</div>
+-->
+
+			</div>
+		</div>
+        <div class="section brandGroup">
+        	<div class="txt_con">
+        		<h1 class="brand_tit" data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">BRANDX GROUP</h1>
+        		<p class="desc" data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">브랜드엑스그룹은 패션, 온라인마케팅, 식품, 코스메틱 등<br>
+                    각 분야별로 전문화된 기업으로 구성된 총 4개의 그룹사입니다.(해외법인제외)
+				</p>
+       	   		<span class="line"></span>
+       	   		<div class="logo_line">
+       	   			<div><img src="http://skin-skin2.brandxcorp2.cafe24.com/web/upload/images/bx_white.png" alt=""></div>
+       	   			<div><img src="http://skin-skin2.brandxcorp2.cafe24.com/web/upload/images/eruda_white.png" alt=""></div>
+       	   			<div><img src="http://skin-skin2.brandxcorp2.cafe24.com/web/upload/images/3care_sim_white.png" alt=""></div>
+       	   			<div><img src="http://skin-skin2.brandxcorp2.cafe24.com/web/upload/images/dr_white.png" alt=""></div>
+       	   		</div>
+        	</div>
+        </div>
+        <div class="section brandList brandx" >
+        	<div class="txt_con">
+        		<h3 class="txt txtLeft col-md-6 circle" data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">(주)브랜드엑스코퍼레이션</h3>
+        		<p class="txt txtRight col-md-6" data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">
+					브랜드엑스코퍼레이션은 전 그룹의 지주회사로서<br>
+                    의류, 생활용품 등 대한민국 대표 미디어커머스 기업이며,<br>
+					젝시믹스, 휘아, 믹스투믹스, 마르시오디에고 등을 전개합니다. <br>
+       		        </p>
+
+        	</div>
+        	<div class="txtAni" id="textAni" >
+       		 	 <div class="Ani_con" >
+					 <div class="xexyLogo hideLogo" ><img src="http://skin-skin2.brandxcorp2.cafe24.com/web/upload/images/xexy_wh.png" alt="" ></div>
+					 <div class="plusBtn btn01" ><img src="http://skin-skin2.brandxcorp2.cafe24.com/web/upload/images/plusBtn.png" alt=""></div>
+					 <div class="whiaLogo hideLogo"><img src="http://skin-skin2.brandxcorp2.cafe24.com/web/upload/images/whiaLogo02.png" alt=""></div>
+					 <div class="plusBtn btn02" ><img src="http://skin-skin2.brandxcorp2.cafe24.com/web/upload/images/plusBtn.png" alt=""></div>
+					 <div class="mix2Logo hideLogo"><img src="http://skin-skin2.brandxcorp2.cafe24.com/web/upload/images/mix2mix_white.png" alt=""></div>
+					 <div class="plusBtn btn03" ><img src="http://skin-skin2.brandxcorp2.cafe24.com/web/upload/images/plusBtn.png" alt=""></div>
+					 <div class="madiLogo hideLogo"><img src="http://skin-skin2.brandxcorp2.cafe24.com/web/upload/images/madi_white.png" alt=""></div>
+                     <div class="bxgLogo"><img src="http://skin-skin2.brandxcorp2.cafe24.com/web/upload/images/bx_white.png" alt=""></div>
+        		 </div>
+        	</div>
+        </div>
+        <div class="section brandList eruda">
+        	<div class="txt_con">
+        		<h3 class="txt txtLeft col-md-6 circle" data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">(주)이루다마케팅</h3>
+        		<p class="txt txtRight col-md-6" data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">
+        			이루다마케팅은 총 900개 온라인 쇼핑기업과 함께하며,<br>
+					국내 1위 온라인 커머스 전문 마케팅 대행사입니다.<br><br>
+                   	· 대표이사 : 최범석 <br>
+                    · 설립연도 : 2015년 <br>
+                    · 직원수 :  39명 <br>
+       		        <a href="http://e-ruda.net/" target="_blank" class="goWeb">Go Website</a>
+        		</p>
+
+        	</div>
+        	<div class="txtAni" >
+      		 	 <div class="Ani_con" data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">
+      		 	 	<img src="http://skin-skin2.brandxcorp2.cafe24.com/web/upload/images/eruda_big.png" alt="이루다마케팅 로고">
+      		 	 </div>
+
+        	</div>
+        </div>
+        <div class="section brandList thcare">
+        	<div class="txt_con">
+
+        		<h3 class="txt txtLeft col-md-6 circle" data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">(주)쓰리케어코리아</h3>
+        		<p class="txt txtRight col-md-6" data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">
+        			쓰리케어코리아는 건강기능식품/HMR 전문 R&D 기업이며, <br>
+                    쓰리케어, 포켓도시락, 거꾸로당, 글램샵 등 Food 브랜드를 전개합니다.<br><br>
+
+                   	· 대표이사 : 정지열 <br>
+                    · 설립연도 : 2016년 <br>
+                    · 직원수 :  19명 <br>
+       		        <a href="http://3care.co.kr/shop/page.html?id=4" target="_blank" class="goWeb">Go Website</a>
+        		</p>
+
+        	</div>
+        	<div class="txtAni">
+       		 	 <div class="Ani_con" id="textAni2" >
+					 <div class="thcareLogo hideLogo"><img src="http://skin-skin2.brandxcorp2.cafe24.com/web/upload/images/3care_sim_white.png" alt=""></div>
+					 <div class="plusBtn btn01" ><img src="http://skin-skin2.brandxcorp2.cafe24.com/web/upload/images/plusBtn.png" alt=""></div>
+					 <div class="pocketLogo hideLogo"><img src="http://skin-skin2.brandxcorp2.cafe24.com/web/upload/images/pocket_white.png" alt=""></div>
+					 <div class="plusBtn btn02" ><img src="http://skin-skin2.brandxcorp2.cafe24.com/web/upload/images/plusBtn.png" alt=""></div>
+					 <div class="guLogo hideLogo"><img src="http://skin-skin2.brandxcorp2.cafe24.com/web/upload/images/gu_white.png" alt=""></div>
+					 <div class="plusBtn btn03" ><img src="http://skin-skin2.brandxcorp2.cafe24.com/web/upload/images/plusBtn.png" alt=""></div>
+					 <div class="glamLogo hideLogo">Glam.shop</div>
+                     <div class="thcareLogo last"><img src="http://skin-skin2.brandxcorp2.cafe24.com/web/upload/images/3care_sim_white.png" alt=""></div>
+        		 </div>
+        	</div>
+        </div>
+        <div class="section brandList drtsell">
+        	<div class="txt_con">
+        		<h3 class="txt txtLeft col-md-6 circle" data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">(주)닥터셀팜</h3>
+        		<p class="txt txtRight col-md-6" data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">
+        			전문가, 의사, 컨설턴트와 함께하는 기능성 화장품 전문기업이며,<br>
+        			2020년 상반기 내 닥터셀팜 브랜드를 런칭될 예정입니다. <br>
+
+       		        <a href="javascript:alert('Coming Soon');" class="goWeb">Go Website</a>
+        		</p>
+
+        	</div>
+        	<div class="txtAni" >
+      		 	 <div class="Ani_con" data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">
+      		 	 	<img src="http://skin-skin2.brandxcorp2.cafe24.com/web/upload/images/dr_big_white.png" alt="닥터셀팜 로고">
+      		 	 </div>
+
+        	</div>
+        </div>
+
+		<div class="section section05">
+
+			<div class="txt_con business_map">
+					<p class="russia"  data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">Xexymix 러시아</p>
+					<p class="Ukraine"  data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">Xexymix 우크라이나</p>
+					<p class="china"  data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">Xexymix 중국</p>
+					<p class="us"  data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">Xexymix 미국</p>
+					<p class="aust"  data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">Xexymix 호주</p>
+					<p class="thai"  data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">Xexymix 태국</p>
+					<p class="uk"  data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">Brandx 영국법인(예정)</p>
+					<p class="taiwan"  data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">Brandx 대만법인(예정)</p>
+					<p class="sing"  data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">Brandx 싱가폴법인(예정)</p>
+					<p class="hongkong"  data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">Brandx 홍콩Partners</p>
+					<p class="japan"  data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">Brandx 일본법인</p>
+			</div>
+			<div class="group_con">
+				<div class="col-md-6">
+					<h3 class="tit">Global Groups Companies.</h3>
+					<p class="desc">
+						Brand X Korea : 서울 성동구 뚝섬로1길 63 영창디지털타워 6F,12F,16F<br>
+						Brand X Japan : 東京 都新 宿区高田馬場 3-37-1 アルトビル6階
+					</p>
+				</div>
+				<div class="col-md-6">
+					<p class="desc" style="padding-top:32px;">
+						3Care Korea : 서울 성동구 뚝섬로1길 63 영창디지털타워 6F<br>
+						E-ruda Marketing : 서울 성동구 뚝섬로1길 63 영창디지털타워 6F
+					</p>
+				</div>
+				<div class="col-md-12">
+					<p class="desc">
+						<span class="bold">Xexymix Partners.</span><br>
+						Brand X Concept HK / Russia / Singapore  /  China / Thailand / Australia / U.S
+					</p>
+				</div>
+			</div>
+		</div>
+		<div class="section section06">
+			 <div class="container">
+					<div class="row">
+						<div class="col-md-6">
+							<p class="title"
+							   data-aos="fade-up"
+							   data-aos-duration="1000"
+							   data-aos-once="true">
+								브랜드엑스가<br>
+								걸어온 발자취를<br>
+								소개합니다.
+							   </p>
+						</div>
+						<div class="col-md-6">
+							<p class="right_title"
+							   data-aos="fade-up"
+							   data-aos-duration="1000"
+							   data-aos-once="true">Company info.
+							   </p>
+							<p class="desc"
+							   data-aos="fade-up"
+							   data-aos-duration="1000"
+							   data-aos-once="true">
+							   · 회사명  주식회사 브랜드엑스코퍼레이션,  BRANDX CORP.
+							   </p>
+							<p class="desc"
+							   data-aos="fade-up"
+							   data-aos-duration="1000"
+							   data-aos-once="true">
+								 · 대표이사   이수연, 강민준
+							   </p>
+							<p class="desc"
+							   data-aos="fade-up"
+							   data-aos-duration="1000"
+							   data-aos-once="true">
+								· 설립연도   2017년 8월
+							   </p>
+							<p class="desc"
+							   data-aos="fade-up"
+							   data-aos-duration="1000"
+							   data-aos-once="true">
+								· 자본금   84억원
+							   </p>
+							<p class="desc"
+							   data-aos="fade-up"
+							   data-aos-duration="1000"
+							   data-aos-once="true">
+								· 임직원수   112명
+							   </p>
+
+							<p class="right_title mt80"
+							   data-aos="fade-up"
+							   data-aos-duration="1000"
+							   data-aos-once="true">2012
+							   </p>
+
+							<p class="desc "
+							   data-aos="fade-up"
+							   data-aos-duration="1000"
+							   data-aos-once="true">
+								02, 브랜드엑스그룹
+							   </p>
+
+							<p class="right_title year"
+							   data-aos="fade-up"
+							   data-aos-duration="1000"
+							   data-aos-once="true">2015
+							   </p>
+							<p class="desc"
+							   data-aos="fade-up"
+							   data-aos-duration="1000"
+							   data-aos-once="true">
+								05, 젝시믹스 브랜드 런칭
+
+							   </p>
+
+							 <p class="right_title year"
+							   data-aos="fade-up"
+							   data-aos-duration="1000"
+							   data-aos-once="true">2017
+							   </p>
+
+							 <p class="desc"
+							   data-aos="fade-up"
+							   data-aos-duration="1000"
+							   data-aos-once="true">
+							   08, 젝시믹스코리아 설립 (브랜드엑스그룹에서 요가복 전문 기업으로 분사)
+
+
+							   </p>
+
+							 <p class="right_title year"
+							   data-aos="fade-up"
+							   data-aos-duration="1000"
+							   data-aos-once="true">2018
+							   </p>
+
+							  <p class="desc"
+							   data-aos="fade-up"
+							   data-aos-duration="1000"
+							   data-aos-once="true">
+								06, 기업부설 ‘R&D 연구소’ 설립<br>
+								11, 벤처기업 인증
+
+							   </p>
+
+							   <p class="right_title year"
+							   data-aos="fade-up"
+							   data-aos-duration="1000"
+							   data-aos-once="true">2019
+							   </p>
+
+							   <p class="desc"
+							   data-aos="fade-up"
+							   data-aos-duration="1000"
+							   data-aos-once="true">
+								04, 한국투자파트너스, KTB 네트워크 등 250억 투자 유치<br>
+								05, 주식회사 브랜드엑스코퍼레이션으로 회사명 변경<br>
+								<span class="sec">쓰리케어코리아, 이루다마케팅 자회사 편입</span><br>
+								06, 주식회사 ‘브랜드엑스코퍼레이션’으로 회사명 변경<br>
+								<span class="sec">IPO 주관사(삼성,대신) 선정</span><br>
+								10, 위생습관브랜드 ‘휘아’ 런칭<br>
+								10, 젝시믹스 일본 현지 법인 설립<br>
+                                11, 남성 라이프스타일브랜드 ‘마르시오디에고’ 런칭<br>
+								<br>
+								</p>
+
+								<p class="right_title year"
+							   data-aos="fade-up"
+							   data-aos-duration="1000"
+							   data-aos-once="true">2020
+
+							   </p>
+
+							   <p class="desc"
+							   data-aos="fade-up"
+							   data-aos-duration="1000"
+							   data-aos-once="true">
+							   02, SAP S/4HANA 도입
+							   </p>
+
+							   <p class="right_title ceo"
+							   data-aos="fade-up"
+							   data-aos-duration="1000"
+							   data-aos-once="true">CEO.
+							   </p>
+
+								<p class=""
+								   data-aos="fade-up"
+								   data-aos-duration="1000"
+								   data-aos-once="true"><img src="http://skin-skin2.brandxcorp2.cafe24.com/web/upload/images/cp_01.jpg" alt=""></p>
+
+							   <p class="desc"
+							   data-aos="fade-up"
+							   data-aos-duration="1000"
+							   data-aos-once="true">
+
+									<span class="year first">2019</span> ㈜ 브랜드엑스코퍼레이션 경영전략 부문 대표이사<br>
+									<span class="year">2012</span> ㈜ 브랜드엑스그룹 대표이사<br>
+									<span class="year">2009</span> ㈜ SK커뮤니케이션즈 신규사업팀 & 네이트쇼핑팀<br>
+									<span class="year">2009</span> ㈜ 카카오 다음카페기획팀<br>
+									<span class="year">2005</span> ㈜ 판도라TV 서비스기획팀장
+
+							   </p>
+
+								<p class="mt80"
+								   data-aos="fade-up"
+								   data-aos-duration="1000"
+								   data-aos-once="true"><img src="http://skin-skin2.brandxcorp2.cafe24.com/web/upload/images/cp_02.jpg" alt=""></p>
+
+								<p class="desc"
+							   data-aos="fade-up"
+							   data-aos-duration="1000"
+							   data-aos-once="true">
+
+									<span class="year first">2019</span>브랜드엑스코퍼레이션 젝시믹스 부문 대표이사<br>
+									<span class="year">2017</span>젝시믹스코리아 대표 취임<br>
+									<span class="year">2016</span>브랜드엑스그룹 젝시믹스 디자인 팀장
+
+							   </p>
+
+						</div>
+					</div>
+			</div>
+
+
+		</div>
+		<div class="section section07">
+			<div id="map" style="width:100%;height:600px;"></div>
+	    </div>
+
+	<script type="text/javascript" src="http://dapi.kakao.com/v2/maps/sdk.js?appkey=2d6771cad6e08aafef7d58f0dd9d1b8e"></script>
+
+	<script>
+
+
+
+
+
+var swiper = new Swiper('.brand_list', {
+    slidesPerView: 4,
+    loop:true,
+    speed: 45000,
+	 spaceBetween: 30,
+
+});
+function infinite() {
+    swiper.slideTo(swiper.slides.length);
+    swiper.once('transitionEnd', function(){
+        swiper.slideTo(swiper.params.slidesPerView, 0, false);
+        setTimeout(function () {
+            infinite();
+        }, 0);
+    });
+}
+infinite();
+
+
+		var container = document.getElementById('map');
+			var options = {
+				center: new kakao.maps.LatLng(37.546901, 127.047605),
+				level: 4
+			};
+
+			var map = new kakao.maps.Map(container, options);
+			var markerPosition  = new kakao.maps.LatLng(37.546901, 127.047605);
+			var marker = new kakao.maps.Marker({
+				position: markerPosition
+			});
+		marker.setMap(map);
+
+
+
+
+	</script>
+
+                <div class="mode-change">
+                    <span class="change-txt-list">
+                        <span class="change-txt">
+                            <span>Light</span>
+                            <span>Dark</span>
+                        </span>&nbsp;Mode
+                    </span>
+                    <div class="theme-icon"></div>
+                </div>
+            </div>
+            <!-- //e:containerWrap -->
+        </div>
+
+        <div id="footerWrap" class="ani2">
+            <div class="footer container">
+                <div class="row">
+                    <div class="col-md-5">
+                        <p class="logo"><img src="http://skin-skin2.brandxcorp2.cafe24.comhttp://skin-skin2.brandxcorp2.cafe24.com/web/upload/images/footer_logo.png" alt=""></p>
+                    </div>
+
+                    <div class="col-md-4">
+                        <p>
+                            서울시 성동구 뚝섬로1길 63 영창디지털타워 12층<br>
+                            ㈜ 브랜드엑스코퍼레이션
+                        </p>
+                        <p style="margin-top:14px;">
+                            Opening hours. am 9:30 - pm 6:30<br>
+                            Lunch break. pm 12:30 - pm 1:30<br>
+                            Sat, Sun Off
+                        </p>
+                    </div>
+                    <div class="col-md-2">
+                        <ul>
+                            <li><a href="#">회사소개</a></li>
+                            <li><a href="#">브랜드</a></li>
+                            <li><a href="#">뉴스</a></li>
+                            <li><a href="#">주가정보</a></li>
+                            <li><a href="#">채용</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="footerBottom">
+            <div class="txt">
+                <p>함께해요, 우리와.</p>
+                <p>실패를 두려워 하지 않는 도전정신<br>함께 일하고, 함께 성장하는 브랜드엑스코퍼레이션</p>
+            </div>
+            <div class="jump-mask"></div>
+            <figure>
+                <div class="">
+                    <img src="http://skin-skin2.brandxcorp2.cafe24.comhttp://skin-skin2.brandxcorp2.cafe24.com/web/upload/images/img_footer_bottom.jpg" alt="">
+                </div>
+            </figure>
+        </div>
+
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+
+
+        $('#fullpage').fullpage({
+        		navigation: true,
+                scrollingSpeed: 800,
+        		anchors: ['firstPage','secondPage','3rdPage','4thpage','5thpage','6thpage','7thpage','8thpage','9thpage','10thpage','11thpage'],
+        	    autoScrolling:true,
+            	scrollHorizontally: true,
+                scrollOVerflow:true
+        	});
+
+        </script>
+    </body>
+</html>
