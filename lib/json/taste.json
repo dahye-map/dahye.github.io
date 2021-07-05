@@ -1,0 +1,256 @@
+{
+ "name": "Coffee Taste",
+ "children": [
+    {
+        "name": "Aroma &Flavor",
+        "colour": "#5d3734",
+        "children": [
+         {
+          "name": "Floral",
+          "colour": "#d77d74",
+          "children": [
+           { "name": "Jasmine", "colour": "#8774a1", "description": "자스민 꽃에서 느낄 수 있는 향미"},
+           { "name": "Perfume", "colour": "#875b72", "description": "향수 같은 다양하고 화려한 느낌의 향미"},
+           { "name": "Floral", "colour": "#c47b74", "description": "꽃에서 느낄 수 있는 향미"}
+          ]
+        },
+         {
+          "name": "Fruity",
+          "colour": "#e09c77",
+          "children": [
+              { "name": "Lemon", "colour": "#df9534", "description": "레몬의 산뜻하고 상큼한 향미"},
+              { "name": "Orange", "colour": "#cc7347", "description": "오렌지 껍질을 벗겼을 때의 향과 과육의 상큼한 향미"},
+              { "name": "Citrus", "colour": "#b95c4a", "description": "감귤류에서 느낄 수 있는 상큼한 향미"},
+              { "name": "Apple", "colour": "#b44f57", "description": "사과에서 느낄 수 있는 향미"},
+              { "name": "Grape", "colour": "#623e42", "description": "포도의 달콤한 향미"},
+              { "name": "Plum", "colour": "#874350", "description": "자두에서 느낄 수 있는 새콤하고 달콤한 향미"},
+              { "name": "Mango", "colour": "#d98e55", "description": "망고에서 느낄 수 있는 향미와 부드러운 느낌"},
+              { "name": "Peach", "colour": "#e29875", "description": "복숭아의 달콤한 향미"},
+              { "name": "Cherry", "colour": "#8c4855", "description": "체리의 다소 무거운 단맛과 향미"},
+              { "name": "Berry", "colour": "#844a62", "description": "딸기에서 느낄 수 있는 향미"},
+              { "name": "Blueberry", "colour": "#653a4b", "description": "블루베리에서 느낄 수 있는 달콤하고 향긋한 향미"},
+              { "name": "Wine", "colour": "#853c45", "description": "고급 레드 와인 같은 느낌의 향미"},
+              { "name": "Drops", "colour": "#b25253", "description": "과일 사탕같은 향미"},
+              { "name": "Juicy", "colour": "#b45253", "description": "즙이 많고 잘익은 과일에서 느낄 수 있는 향미"},
+              { "name": "Fruity", "colour": "#ce9d7f", "description": "신선한 과일에서 주로 느낄 수 있는 향미" }
+          ]
+        },
+         {
+          "name": "Herb/Earthy",
+          "colour": "#998b66",
+          "children": [
+              { "name": "BlackTea", "colour": "#575641", "description": "홍차에서 느껴지는 향미"},
+              { "name": "Cedar", "colour": "#7e8e71", "description": "삼나무 향미(좋은 목재에서 나는 긍정적인 향미)"},
+              { "name": "Spicy", "colour": "#6a5947", "description": "향신료들에서 느껴지는 향미"},
+              { "name": "Earthy", "colour": "#9a8d6d", "description": "젖은 토양에서 느낄 수 있는 향미"},
+              { "name": "Herb", "colour": "#97866a", "description": "허브류의 좋은 풀향기와 향미" }
+          ]
+        },
+         {
+          "name": "Cereal",
+          "colour": "#95775d",
+          "children": [
+              { "name": "BakeBread", "colour": "#bd966d", "description": "갓 구운 빵같은 고소하고 달콤한 향미"},
+              { "name": "Cereal", "colour": "#b28655", "description": "곡물의 구수한 향미" }
+          ]
+        },
+         {
+          "name": "Nutty",
+          "colour": "#ac8067",
+          "children": [
+              { "name": "Almond", "colour": "#875f3c", "description": "볶은 아몬드의 고소한 향미"},
+              { "name": "Walnut", "colour": "#876b53", "description": "호두에서 느껴지는 다소 거칠지만 고소한 향미"},
+              { "name": "Nut", "colour": "#ac8269", "description": "견과류에서 느낄 수 있는 향미" }
+          ]
+        },
+         {
+          "name": "Chocolate",
+          "colour": "#86695b",
+          "children": [
+              { "name": "MilkChocolate", "colour": "#66534d", "description": "부드러운 밀크 초콜릿에서 느껴지는 특유의 향미"},
+              { "name": "DarkChocolate", "colour": "#514642", "description": "카카오맛이 강하고 쌉싸름한 다크 초콜릿에서 느껴지는 특유의 향미" }
+          ]
+        },
+         {
+          "name": "Roast/Burnt",
+          "colour": "#725c4e",
+          "children": [
+              { "name": "Smoky", "colour": "#766055", "description": "숯을 태울 때 나는 연기와 비슷한 느낌의 향"},
+              { "name": "Ashy", "colour": "#6b5b4b", "description": "강하게 로스팅괸 커피에서 느낄 수 있는 태운 재 같은 향미"},
+              { "name": "Roast", "colour": "#655a58", "description": "구운 음식 특히, 커피에서 느낄 수 있는 탄 향미"},
+              { "name": "Burnt", "colour": "#5e5550", "description": "불에 태운 느낌의 향미" }
+          ]
+         }
+        ]
+    },
+    {
+     "name": "Acidity",
+     "colour": "#794132",
+     "children": [
+      {
+       "name": "Acidity",
+       "colour": "#bc8161",
+       "children": [
+        {"name": "Bright", "colour": "#8c5d41", "description": "화사하고 산뜻한 신맛"},
+        {"name": "Tarataric", "colour": "#644330", "description": "포도, 와인류에서 느껴지는 다소 무거운 신맛"},
+        {"name": "Malic", "colour": "#916e50", "description": "사과류에서 느껴지는 향긋하고 부드러운 신맛"},
+        {"name": "Citric", "colour": "#ad734b", "description": "오렌지, 레몬류에서 느껴지는 상큼하고 강한 신맛"},
+        {"name": "Acidity", "colour": "#b27559", "description": "산성 물질에서 느껴지는 맛"}
+       ]
+      }
+     ]
+     },
+     {
+      "name": "Body",
+      "colour": "#3f322c",
+      "children": [
+       {
+        "name": "Body",
+        "colour": "#9d8772",
+        "children": [
+            {"name": "Silky", "colour": "#a38d78", "description": "실크같은 부드럽고 가벼운 입 안 느낌"},
+            {"name": "LightBody", "colour": "#907a63", "description": "입안 전체에서 느껴지는 커피의 무게, 질량감, 농도 등이 약할 경우"}
+        ]
+        },
+        {
+         "name": "MediumBody",
+         "colour": "#7f6e66",
+         "children": [
+             {"name": "Creamy", "colour": "#8a7c79", "description": "부드러운 크림같은 입 안에서의 느낌과 농후감"},
+             {"name": "MediumBody", "colour": "#736759", "description": "입안 전체에서 느껴지는 커피의 무게, 질량감, 농도 등이 보통일 경우"}
+         ]
+       },
+       {
+        "name": "FullBody",
+        "colour": "#6c5d56",
+        "children": [
+            {"name": "Veleverty", "colour": "#8b8380", "description": "벨벳재질 느낌의 부드럽고 묵직한 느낌"},
+            {"name": "FullBody", "colour": "#60524f", "description": "입안 전체에서 느껴지는 커피의 무게, 질량감, 농도 등이 강한 경우"}
+        ]
+      }
+      ]
+  },
+  {
+   "name": "Sweet",
+   "colour": "#6a3a30",
+   "children": [
+    {
+     "name": "Sweet",
+     "colour": "#c59877",
+     "children": [
+         {"name": "Mellow", "colour": "#c19185", "description": "잘 익은 과일에서 느낄 수 있는 단맛"},
+         {"name": "Honey", "colour": "#9a705a", "description": "벌꿀 같은 향미와 단맛"},
+         {"name": "SugarCane", "colour": "#bf948b", "description": "사탕수수즙 같은 향미와 단맛"},
+         {"name": "Vanilla", "colour": "#c19475", "description": "바닐라 아이스크림 같이 고소하고 부드러운 단맛"},
+         {"name": "Caramel", "colour": "#835349", "description": "카라멜과 같은 향미와 단맛"},
+         {"name": "Sweet", "colour": "#c49f84", "description": "혀의 끝에서 느껴지는 단맛으로 설탕 등에서 느낄 수 있는 맛"}
+     ]
+    }
+   ]
+  },
+  {
+   "name": "Bitter",
+   "colour": "#773f4c",
+   "children": [
+    {
+     "name": "Bitter",
+     "colour": "#a87769",
+     "children": [
+         {"name": "SweetBitter", "colour": "#94685f", "description": "달콤 쌉싸름한, 약간의 단맛이 함께 느껴지는 쓴맛"},
+         {"name": "Bitter", "colour": "#bc8f89", "description": "가루약이나 쓴음식을 먹을 때 느낄 수 있는 맛"}
+     ]
+    }
+   ]
+  },
+  {
+   "name": "Overall",
+   "colour": "#443a30",
+   "children": [
+       {
+        "name": "Aftertaste",
+        "colour": "#937b6f",
+        "children": [
+            {"name": "Clean", "colour": "#806959", "description": "후미가 지저분하지 않고 깨끗한 맛"},
+            {"name": "Astringent", "colour": "#93827a", "description": "덜 익은 감에서 느낄 수 있는 떫고 아린맛"},
+            {"name": "Harsh", "colour": "#736a6b", "description": "부드럽지 않고 거친 느낌을 주는 맛"}
+        ]
+    },
+    {
+     "name": "Balance",
+     "colour": "#978873",
+     "children": [
+         {"name": "WellBalanced", "colour": "#847b74", "description": "향미와 바디감, 단맛 등이 조화롭게 잘 균형잡힌 커피"},
+         {"name": "Balanced", "colour": "#79726c", "description": "향미와 바디감, 단맛 등의 균형이 어느정도 잡힌 커피"},
+         {"name": "UnBalanced", "colour": "#5e5a59", "description": "향미와 맛의 조화도가 떨어지는 커피"}
+     ]
+   },
+    {
+     "name": "Impression",
+     "colour": "#978873",
+     "children": [
+         {"name": "Round", "colour": "#877e79", "description": "후미가 자극적이지 않고 부드러운 맛"},
+         {"name": "Sharp", "colour": "#826a66", "description": "강하고 자극적인 맛"},
+         {"name": "Longfinish", "colour": "#807265", "description": "커피의 좋은 향미가 길게 지속되는 느낌"},
+         {"name": "Rich", "colour": "#766a5c", "description": "풍부하고 강한 커피의 향미"},
+         {"name": "Soft", "colour": "#8a7c6f", "description": "깔끔하고 자극적이지 않으면서 부드러운 맛"},
+         {"name": "Flat", "colour": "#9a8e7e", "description": "향미가 부족하고 밋밋한 느낌"},
+         {"name": "Watery", "colour": "#8a887b", "description": "농도가 낮을 때 느껴지는 물을 마시는 듯한 느낌"}
+     ]
+   }
+   ]
+  },
+  {
+   "name": "Others",
+   "colour": "#474342",
+   "children": [
+        {
+         "name": "Sour",
+         "colour": "#7c777e",
+         "children": [
+             {"name": "Ferment", "colour": "#93827a", "description": "시큼하고 과발효된 향미"},
+             {"name": "Sour", "colour": "#736a6b", "description": "시큼한 식초같은 느낌의 신맛"}
+            ]
+         },
+         {
+         "name": "Phenolic",
+         "colour": "#5d5d5f",
+         "children": [
+             {"name": "Rubbery", "colour": "#888888", "description": "태운 고무 느낌의 향미"},
+             {"name": "Rioy", "colour": "#606062", "description": "페놀같은 화학물질에서 느낄 수 있는 향미"},
+             {"name": "Chemical", "colour": "#5f6156", "description": "약품과 같은 불쾌하고 화학적인 느낌의 향미"},
+             {"name": "Phenolic", "colour": "#666666", "description": "요오드 같은 불쾌한 향미"}
+            ]
+         },
+         {
+         "name": "Grassy /Woody",
+         "colour": "#7d7c7a",
+         "children": [
+             {"name": "Green", "colour": "#666256", "description": "미성숙 원두를 사용하였거나 또는 덜 볶은 커피에서 느껴지는 듯한 풋내"},
+             {"name": "Grassy", "colour": "#615f62", "description": "풀에서 느껴지는 고유의 향과 약간의 비릿한 향미"},
+             {"name": "Strawy", "colour": "#56514e", "description": "오래된 원두를 로스팅했을 때 느껴지는 건초 같은 향미"},
+             {"name": "Oldish", "colour": "#565455", "description": "오래된 원두를 로스팅했을 때 느껴지는 오래된 향미"},
+             {"name": "Papery", "colour": "#5e5c5d", "description": "젖은종이, 오래된 책이나 종이에서 느껴지는 향미"},
+             {"name": "Woody", "colour": "#7f7a64", "description": "마른 나무껍질에서 느껴지는 지저분한 향미"}
+            ]
+        },
+         {
+          "name": "Mouldy",
+          "colour": "#6b625d",
+          "children": [
+              {"name": "Potato", "colour": "#625d5a", "description": "흙이 뭍어있는 생감자와 유사한 향미"},
+              {"name": "Musty", "colour": "#57524f", "description": "습하고 그늘진 장소에서 느낄 수 있는 퀴퀴한 향미"},
+              {"name": "Mouldy", "colour": "#867c7b", "description": "곰팡이가 핀듯한 퀴퀴묵은 불쾌한 향미"}
+          ]
+         },
+         {
+          "name": "Stale",
+          "colour": "#877978",
+          "children": [
+           {"name": "Rancid", "colour": "#65585f", "description": "산패된 원두에서 느껴지는 향미"},
+           {"name": "Stale", "colour": "#726a82", "description": "신선함을 잃어버린 오래 보관된 음식을 맛보는 듯한 느낌"}
+          ]
+        }
+   ]
+  }
+ ]
+}

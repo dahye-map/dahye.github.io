@@ -1,0 +1,53 @@
+@charset "utf-8";
+#contentsWrap.csr {padding-top: 0; padding-bottom:0;}
+#contentsWrap.csr .default-wrap {width:953px;}
+.csr .sub-visual {width:100%; height:840px; background-position:center center; background-repeat:no-repeat; padding-top:190px; color:#fff;}
+.csr .sub-visual.baduk{background-image:url('../../images/page/04_csr/bg_award.jpg');}
+.csr .sub-visual.love{background-image:url('../../images/page/04_csr/bg_love.jpg');}
+.csr .sub-visual.literary{background-image:url('../../images/page/04_csr/bg_literary.jpg');}
+.csr .sub-visual.classic{background-image:url('../../images/page/04_csr/bg_coffee_classic.jpg');}
+.csr .sub-visual.scholarship{background-image:url('../../images/page/04_csr/bg_scholarship.jpg');}
+.csr .sub-visual.library{background-image:url('../../images/page/04_csr/bg_library.jpg');}
+.csr .sub-visual .tit {font-size:48px; letter-spacing:-1.25px; line-height:54px;}
+.csr .sub-visual .sub-tit {font-size:17px; letter-spacing:-1.04px; line-height:54px;}
+.csr-slider{ overflow:hidden; width:460px; height:400px;}
+.csr-slider .bx-wrapper { height:400px; overflow:hidden; }
+.csr-slider .bx-wrapper .bx-pager {bottom:18px; left:-6px;}
+.csr-slider .bx-wrapper .bx-pager.bx-default-pager a:hover,
+.csr-slider .bx-wrapper .bx-pager.bx-default-pager a.active,
+.csr-slider .bx-wrapper .bx-pager.bx-default-pager a:focus {background:#fff;}
+.csr-slider .bx-wrapper .bx-pager.bx-default-pager a {background:#a8a8ac;}
+.csr-slider .bx-viewport { height:400px !important; }
+.csr-slider ul li { width:460px !important;}
+.open-box { display:none; }
+.open-box.active { display:block; }
+.csr-box  { width:493px; height:400px; padding:40px 40px 70px 35px; background:#fff; color:#717171; line-height:1.5;}
+.csr-box .tit {font-size:17px;}
+.csr-box .des { overflow-x:hidden; overflow-y:auto; height:210px; padding-right:10px; }
+.csr-box > ul > li { padding-top:5px; }
+.csr-box .li-tit:before {content:''; position:absolute; left:-10px; top:7px; width:4px; height:4px; background-color:#6b6b6b;}
+.csr-box .li-tit { position:relative; float:left; width:80px; margin-left:10px; letter-spacing:-0.7px; color:#333; line-height:1.5; font-weight:700;}
+.csr-box .li-txt { float:left; width:314px; line-height:1.5; color:#6b6b6b;}
+.csr-box .scroll-box { height:100px; overflow-x:hidden; }
+.csr .nmt35 {margin-top:-35px;}
+.csr .nmt55 {margin-top:-55px;}
+.csr .nmt66 {margin-top:-66px;}
+.csr .nmt70 {margin-top:-70px;}
+.csr .nmt77 {margin-top:-77px;}
+.csr .nmt90 {margin-top:-90px;}
+.csr .nmt118 {margin-top:-118px;}
+.csr .nmt220 {margin-top:-220px;}
+.scholarship-table tr {display:block; border-bottom:2px solid #eeeeee;}
+.scholarship-table th {position:relative; width:215px; padding:19px 46px; font-size:15px; line-height:1.5; vertical-align:top; text-align:left; }
+.scholarship-table td {font-size:15px; padding:19px 46px; line-height:1.5;}
+.scholarship-table th.table-tit:before {content:'';position:absolute; left:35px; top:28px; width:4px; height:4px; background-color:#6b6b6b;}
+.scholarship-table .table-tit { font-size:17px; }
+.btn.direction.literary-go {width:249px; padding-right:62px; }
+.csr .csr-select {min-height:48px;}
+.csr .accodian-wrap {border-top:1px solid #9c9c9c; border-bottom:1px solid #9c9c9c;}
+.csr .accodian-wrap li .accodian-con.question {border-bottom:2px solid #f1f1f1;}
+.csr .accodian-wrap li .accodian-con.answer {border-bottom:2px solid #f1f1f1; background:#f8f8f8;}
+.csr .accodian-con > p{font-size:18px; color:#795128;}
+.map-con { height:140px; }
+.map-con .tit { width:265px; height:140px; padding:30px 0 0 32px; background:#795128; font-size:20px; color:#fff; }
+.map-con .txt { padding-top:30px; padding-left:30px; font-size:16px; color:#333; line-height:1.6; }
