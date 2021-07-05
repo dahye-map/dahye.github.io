@@ -4,4 +4,7 @@
 2. css
 3. javascript / jQuery
 
-<p>dd</p>
+젝시믹스 글로벌 사이트 구축
+-카페24 솔루션 사용
+-ui/ux 모두 커스텀 사용
+
