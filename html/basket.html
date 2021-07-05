@@ -1,0 +1,50 @@
+<div class="orderListArea">
+    <div class="title">
+        <h3>Shopping bag</h3>
+    </div>
+    <div module="Order_NormNormal">
+        <div module="Order_list" class="center">
+            <div class="img-thumb"><a href="/product/detail.html{$param}"><img src="{$img}" onerror="this.src='//img.echosting.cafe24.com/thumb/img_product_small.gif';" alt="{$name_alt}" /></a></div>
+
+            <div class="product-desc">
+                <p class="name">{$product_name_link}</p>
+                <span class="{$eng_name_display|display} engName">(English Name : {$eng_name})</span>
+
+                <div class="option" module="Order_optionAll">
+                    <div>
+                        <p>Option : {$option_str}</p>
+                        <p class="{$qty_display}">Qty : {$qty}</p>
+                    </div>
+                    <div>
+                        <p>Option : {$option_str}</p>
+                        <p class="{$qty_display}">Qty : {$qty}</p>
+                    </div>
+                </div>
+
+                <div class="price">
+                    <strong>{$sum_price_front_head}
+                        <span id="{$sum_price_front_id}">{$sum_price_front}</span>{$sum_price_front_tail}
+                    </strong>
+                </div>
+    
+                <a href="javascript:;" class="btn-delete" onclick="{$action_move_item}">
+                    <img src="/web/upload/images/bag_popup_close.png" alt="">
+                </a>
+            </div>
+        </div>
+        <div class="total-pri-wrap">
+            <span class="total-tit">Total</span>
+            <strong class="total-pri big">{$total_sum_price_front_head}
+                <span id="{$normal_individual_ship_fee_sum_id}">{$total_sum_price_front}</span>
+                {$total_sum_price_front_tail}
+            </strong>
+            <span class="{$total_sum_price_ref_display|display}"> {$total_sum_price_back_head}{$total_sum_price_back}{$total_sum_price_back_tail}</span>
+        </div>
+
+        
+
+        <div module="Order_TotalOrder">
+            <a href="#none" onclick="{$action_order_all}" class="btn-buy {$buy_display|display}" link-order="/order/orderform.html{$param}" link-login="/member/login.html">BUY NOW</a>
+        </div>
+    </div>
+</div>

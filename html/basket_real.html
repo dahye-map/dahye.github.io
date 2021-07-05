@@ -1,0 +1,605 @@
+<!--@layout(/layout/basic/layout_wide.html)-->
+<!--@js(/layout/basic/js/myshop.js)-->
+
+<div id="myshopWrap">
+	<div id="myshopLeft">
+        <div class="myshop-list-wrap">
+            <!--@css(/css/module/myshop/main.css)-->
+            <ul>
+                <li class="list">
+                    <a href="/myshop/index.html">Dashboard</a>
+                </li>
+                <li class="list">
+                    <a href="/myshop/addr/list.html">Profile</a>
+                </li>
+                <li class="list">
+                    <a href="/myshop/order/list.html">Order History</a>
+                </li>
+                <li class="list">
+                    <a href="/myshop/wish_list.html">Wish List</a>
+                </li>
+                <li class="list active">
+                    <a href="/order/basket.html">Shopping Bag</a>
+                </li>
+                <li class="list">
+                    <a href="/cs_center.html">Communication</a>
+                </li>
+                <li class="list">
+                    <a module="Layout_stateLogon" href="{$action_logout}">Sign out</a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="myshop-list-scroll swiper-container">
+            <ul class="swiper-wrapper">
+                <li class="list swiper-slide">
+                    <a href="/myshop/index.html">Dashboard</a>
+                </li>
+                <li class="list swiper-slide">
+                    <a href="/myshop/addr/list.html">Profile</a>
+                </li>
+                <li class="list swiper-slide">
+                    <a href="/myshop/order/list.html">Order History</a>
+                </li>
+                <li class="list swiper-slide">
+                    <a href="/myshop/wish_list.html">Wish List</a>
+                </li>
+                <li class="list swiper-slide active">
+                    <a href="/order/basket.html">Shopping Bag</a>
+                </li>
+                <li class="list swiper-slide">
+                    <a href="/cs_center.html">Communication</a>
+                </li>
+                <li class="list swiper-slide">
+                    <a module="Layout_stateLogon" href="{$action_logout}">Sign out</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div id="myshopRight">
+        <div class="title" module="Order_NormOverseaTitle">
+            <h3>Shopping bag ({$item_total})</h3>
+        </div>
+        
+        <div module="Order_BasketPackage">
+            <!--@css(/layout/basic/css/ec-base-layer.css)-->
+            <!--@css(/css/module/order/basketPackage.css)-->
+        
+            
+        
+            <div id="bagLeft">
+            
+                <div module="Order_Empty" class="empty-wrap">
+                    <div class="face-wrap">
+                        <p class="img"></p>
+                    </div>
+
+                    <p class="desc">Add something you want to have</p>
+
+                    <div class="btn-wrap">
+                        <a href="/category/womens-leggings/24/" class="btn-shop">SHOP WHAT'S NEW</a>
+                        <a href="/category/womens-leggings/24/" class="btn-shop">SHOP WHAT'S BEST</a>
+                    </div>
+                </div>
+            
+                <div class="orderListArea ec-base-table typeList gBorder">
+                    
+                    <div module="Order_NormOversea">
+                        <div module="Order_list" class="center">
+            
+                            <div class="bag-list">
+                                <div class="img-wrap">
+                                    <div class="{$use_basket_multiple_selection|display}"><input type="checkbox" id="{$chk_id}" name="{$chk_name}" /></div>
+                                    <div class="img-thumb"><a href="/product/detail.html{$param}"><img src="{$img}" onerror="this.src='//img.echosting.cafe24.com/thumb/img_product_small.gif';" alt="{$name_alt}" /></a></div>
+                                </div>
+                
+                                <div class="name-wrap">
+                                    <p class="name">{$product_name_link}</p>
+                                    <span class="{$eng_name_display|display} engName">(English Name : {$eng_name})</span>
+                    
+                                    <div class="option" module="Order_optionAll">
+                                        <div>
+                                            <p>{$option_str|replace:Option: ,}</p>
+                                        </div>
+                                        <div>
+                                            <p>{$option_str|replace:Option: ,}</p>
+                                        </div>
+                                    </div>
+                                </div>
+                
+                                <div class="itemprice-wrap">
+                                    <p class="title">Item Price</p>
+                
+                                    <div id="{$product_price_div_id}" class="{$discount}"><strong>{$product_price_front_head}{$product_price_front}{$product_price_front_tail}</strong><p class="{$product_price_display|display}">{$product_price_back_head}{$product_price_back}{$product_price_back_tail}</p></div>
+                                    <div id="{$product_sale_price_div_id}" class="{$product_sale_price_display|display}"><strong>{$product_sale_price_front_head}<span id="{$product_sale_price_front_id}">{$product_sale_price_front}</span>{$product_sale_price_front_tail}</strong><p class="{$product_sale_price_ref_display|display}">{$product_sale_price_back_head}{$product_sale_price_back}{$product_sale_price_back_tail}</p></div>
+                                </div>
+                
+                                <div class="qty-wrap">
+                                    <p class="title">Qty</p>
+                
+                                    <div class="option-edit">
+                                        <span class="{$nplusevent_hide_display|display}">
+                                            <span class="ec-base-qty">{$form.quantity}<a href="javascript:;" class="up" onclick="{$add_shortcut}"><img src="//img.echosting.cafe24.com/skin/base/common/btn_quantity_up.gif" alt="Up" /></a><a href="javascript:;"  class="down" onclick="{$out_shortcut}"><img src="//img.echosting.cafe24.com/skin/base/common/btn_quantity_down.gif" alt="Down" /></a></span>
+                                            <!--<a href="javascript:;" class="btnNormal" onclick="{$action_modify}">Edit</a>-->
+                                        </span>
+                                        <span class="{$nplusevent_show_display|display}">{$quantity}</span>
+                                    </div>
+                                </div>
+                
+                                <div class="totalprice-wrap">
+                                    <p class="title">Total Price</p>
+                
+                                    <div class="price">
+                                        <strong>{$sum_price_front_head}
+                                            <span id="{$sum_price_front_id}">{$sum_price_front}</span>{$sum_price_front_tail}
+                                        </strong>
+                                    </div>
+                                </div>
+                
+                                <div class="btn-wrap">
+                                    <a href="javascript:;" class="btn-delete" onclick="{$action_move_item}"><img src="/web/upload/images/btn_delete_bag.jpg" alt=""></a>
+                                    <a href="javascript:;" class="btn-wish" onclick="{$action_wish_item}"><img src="/web/upload/images/btn_wishlist_bag.jpg" alt=""></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            
+                    <table border="1" summary="" module="Order_NormIndividual">
+                        <caption>Products</caption>
+                        <colgroup>
+                            <col style="width:27px" class="{$use_basket_multiple_selection|display}" />
+                            <col style="width:92px" />
+                            <col style="width:auto" />
+                            <col style="width:98px" />
+                            <col style="width:75px" />
+                            <col style="width:130px" />
+                            <col style="width:98px" />
+                            <col style="width:110px" />
+                        </colgroup>
+                        <thead>
+                            <tr>
+                                <th scope="col" class="{$use_basket_multiple_selection|display}"><input type="checkbox" onclick='{$chk_basketlist}' /></th>
+                                <th scope="col">Image</th>
+                                <th scope="col">Product</th>
+                                <th scope="col">Price</th>
+                                <th scope="col">Qty</th>
+                                <th scope="col" class="mileage">{$mileage_name}</th>
+                                <th scope="col">Subtotal</th>
+                                <th scope="col">Select</th>
+                            </tr>
+                        </thead>
+                        <tbody module="Order_list" class="center">
+                            <tr>
+                                <td class="{$use_basket_multiple_selection|display}"><input type="checkbox" id="{$chk_id}" name="{$chk_name}" /></td>
+                                <td class="thumb gClearLine"><a href="/product/detail.html{$param}"><img src="{$img}" onerror="this.src='//img.echosting.cafe24.com/thumb/img_product_small.gif';" alt="{$name_alt}" /></a></td>
+                                <td class="left gClearLine">
+                                    <strong class="name">{$product_name_link}</strong> {$icon} {$pickup_icon} {$benefit_icons}<span class="{$eng_name_display|display} engName">(English Name : {$eng_name})</span>
+                                    <ul class="option" module="Order_optionAll">
+                                        <li><strong class="{$product_name_display|display}">{$product_name}</strong>{$option_str} <span class="{$qty_display|display}">({$qty} item(s))</span><br />
+                                            <span class="{$nplusevent_hide_display|display}"><a href="#none" onclick="{$action_option_change}" class="btnNormal gBlank5 {$option_change_display|display}">Edit Option</a></span>
+                                        </li>
+                                        <li><strong class="{$product_name_display|display}">{$product_name}</strong>{$option_str} <span class="{$qty_display|display}">({$qty} item(s))</span><br />
+                                            <span class="{$nplusevent_hide_display|display}"><a href="#none" onclick="{$action_option_change}" class="btnNormal gBlank5 {$option_change_display|display}">Edit Option</a></span>
+                                        </li>
+                                    </ul>
+                                </td>
+                                <td class="">
+                                    <div id="{$product_price_div_id}" class="{$discount}"><strong>{$product_price_front_head}{$product_price_front}{$product_price_front_tail}</strong><p class="{$product_price_display|display}">{$product_price_back_head}{$product_price_back}{$product_price_back_tail}</p></div>
+                                    <div id="{$product_sale_price_div_id}" class="{$product_sale_price_display|display}"><strong>{$product_sale_price_front_head}<span id="{$product_sale_price_front_id}">{$product_sale_price_front}</span>{$product_sale_price_front_tail}</strong><p class="{$product_sale_price_ref_display|display}">{$product_sale_price_back_head}{$product_sale_price_back}{$product_sale_price_back_tail}</p></div>
+                                </td>
+                                <td>
+                                    <span class="{$nplusevent_hide_display|display}">
+                                        <span class="ec-base-qty">{$form.quantity}<a href="javascript:;" class="up" onclick="{$add_shortcut}"><img src="//img.echosting.cafe24.com/skin/base/common/btn_quantity_up.gif" alt="Up" /></a><a href="javascript:;"  class="down" onclick="{$out_shortcut}"><img src="//img.echosting.cafe24.com/skin/base/common/btn_quantity_down.gif" alt="Down" /></a></span>
+                                        <a href="javascript:;" class="btnNormal gBlank5" onclick="{$action_modify}">Edit</a>
+                                    </span>
+                                    <span class="{$nplusevent_show_display|display}">{$quantity}</span>
+                                </td>
+                                <td><span id="{$product_mileage_id}" class="txtInfo">{$mileage}</span></td>
+                                <td class=""><strong>{$sum_price_front_head}<span id="{$sum_price_front_id}">{$sum_price_front}</span>{$sum_price_front_tail}</strong><div class="{$sum_price_display|display}">{$sum_price_back_head}{$sum_price_back}{$sum_price_back_tail}</div></td>
+                                <td class="button">
+                                    <a href="javascript:;" class="btnNormalFix sizeS" onclick="{$action_wish_item}">Add to Wish List</a>
+                                    <a href="javascript:;" class="btnNormal" onclick="{$action_move_item}"><i class="icoDelete"></i> Delete</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="{$use_basket_multiple_selection|display}"><input type="checkbox" id="{$chk_id}" name="{$chk_name}" /></td>
+                                <td class="thumb gClearLine"><a href="/product/detail.html{$param}"><img src="{$img}" onerror="this.src='//img.echosting.cafe24.com/thumb/img_product_small.gif';" alt="{$name_alt}" /></a></td>
+                                <td class="left gClearLine">
+                                    <strong class="name">{$product_name_link}</strong> {$icon} {$pickup_icon} {$benefit_icons}<span class="{$eng_name_display|display} engName">(English Name : {$eng_name})</span>
+                                    <ul class="option" module="Order_optionAll">
+                                        <li><strong class="{$product_name_display|display}">{$product_name}</strong>{$option_str} <span class="{$qty_display|display}">({$qty} item(s))</span><br />
+                                            <span class="{$nplusevent_hide_display|display}"><a href="#none" onclick="{$action_option_change}" class="btnNormal gBlank5 {$option_change_display|display}">Edit Option</a></span>
+                                        </li>
+                                        <li><strong class="{$product_name_display|display}">{$product_name}</strong>{$option_str} <span class="{$qty_display|display}">({$qty} item(s))</span><br />
+                                            <span class="{$nplusevent_hide_display|display}"><a href="#none" onclick="{$action_option_change}" class="btnNormal gBlank5 {$option_change_display|display}">Edit Option</a></span>
+                                        </li>
+                                    </ul>
+                                </td>
+                                <td class="">
+                                    <div id="{$product_price_div_id}" class="{$discount}"><strong>{$product_price_front_head}{$product_price_front}{$product_price_front_tail}</strong><p class="{$product_price_display|display}">{$product_price_back_head}{$product_price_back}{$product_price_back_tail}</p></div>
+                                    <div id="{$product_sale_price_div_id}" class="{$product_sale_price_display|display}"><strong>{$product_sale_price_front_head}<span id="{$product_sale_price_front_id}">{$product_sale_price_front}</span>{$product_sale_price_front_tail}</strong><p class="{$product_sale_price_ref_display|display}">{$product_sale_price_back_head}{$product_sale_price_back}{$product_sale_price_back_tail}</p></div>
+                                </td>
+                                <td>
+                                    <span class="{$nplusevent_hide_display|display}">
+                                        <span class="ec-base-qty">{$form.quantity}<a href="javascript:;" class="up" onclick="{$add_shortcut}"><img src="//img.echosting.cafe24.com/skin/base/common/btn_quantity_up.gif" alt="Up" /></a><a href="javascript:;"  class="down" onclick="{$out_shortcut}"><img src="//img.echosting.cafe24.com/skin/base/common/btn_quantity_down.gif" alt="Down" /></a></span>
+                                        <a href="javascript:;" class="btnNormal gBlank5" onclick="{$action_modify}">Edit</a>
+                                    </span>
+                                    <span class="{$nplusevent_show_display|display}">{$quantity}</span>
+                                </td>
+                                <td><span id="{$product_mileage_id}" class="txtInfo">{$mileage}</span></td>
+                                <td class=""><strong>{$sum_price_front_head}<span id="{$sum_price_front_id}">{$sum_price_front}</span>{$sum_price_front_tail}</strong><div class="{$sum_price_display|display}">{$sum_price_back_head}{$sum_price_back}{$sum_price_back_tail}</div></td>
+                                <td class="button">
+                                    <a href="javascript:;" class="btnNormalFix sizeS" onclick="{$action_wish_item}">Add to Wish List</a>
+                                    <a href="javascript:;" class="btnNormal" onclick="{$action_move_item}"><i class="icoDelete"></i> Delete</a>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        
+            <div id="bagRight" module="Order_TotalOversea" class="total {$oversea_delv_info_display|display}" unroll="1">
+                <div >
+        
+                    <p class="title">Order Summary</p>
+                    <table border="1" summary="">
+                        <caption>Total</caption>
+                        <colgroup>
+                            <col style="width:30%;" />
+                            <col style="width:auto" />
+                        </colgroup>
+                        <tbody>
+                            <tr>
+                                <th><span>Subtotal</span></th>
+                                <td>
+                                    {$total_product_price_display_front_head}
+                                    {$total_product_price_display_front}
+                                    {$total_product_price_display_front_tail}
+                                    <span class="txt14 {$total_product_price_ref_display|display}">{$total_product_price_display_back_head}{$total_product_price_display_back}{$total_product_price_display_back_tail}</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>
+                                    <span>Shipping</span>
+                                    <a href="#none" class="btn-info"><img src="/web/upload/images/ico_info.png" alt=""></a>
+        
+                                    <p class="floating-info type01">
+                                        We offer Free Standard Shipping on real total amount over USD 100.
+                                    </p>
+                                </th>
+                                <td>Free</td>
+                            </tr>
+                            <tr>
+                                <th>
+                                    <span>Tax</span>
+                                    <a href="#none" class="btn-info"><img src="/web/upload/images/ico_info.png" alt=""></a>
+        
+                                    <p class="floating-info type02">
+                                        Tax is included all extra fees for local customs clearance. This fee is based on your shipping location’s state and local custom laws. So these are responsible for receiver.
+                                    </p>
+                                </th>
+                                <td>Responsible for receiver</td>
+                            </tr>
+                        </tbody>
+                    </table>
+        
+                    <div module="Order_BasketPriceInfoGuide" class="{$basket_price_info_guide_display|display}">
+                        <p class="{$basket_price_sale_guide_display|display}">Applied discount can be checked at the payment estimation section in the order form.</p>
+                        <p class="{$basket_price_basic_guide_display|display}">The final amount due will be calculated with shipping fee and displayed on the billing page.</p>
+                       <p class="{$basket_nplusevent_guid_display|display}">Changes to product options or order quantities for additional event items may be conducted through the 'product details' page.</p>
+                    </div>
+        
+                    <div class="total-order-wrap">
+                        <p>Estimated Total</p>
+                        <p>{$total_order_price_front_head}{$total_order_price_front}{$total_order_price_front_tail}{$total_order_price_back_head}{$total_order_price_back}{$total_order_price_back_tail}</p>
+                    </div>
+                    
+                    <div id="{$oversea_total_benefit_layer}" class="totalDetail ec-base-layer">
+                        <div class="header">
+                            <h3>Discount Details</h3>
+                        </div>
+                        <div class="content">
+                            <p id="{$oversea_total_benefit_price_layer_id}" class="txtEm txt16"><strong>{$price_unit_head}{$total_benefit_price}{$price_unit_tail}</strong></p>
+                            <ul id="{$oversea_total_benefit_list_id}" class="ec-base-desc typeDot gLarge rightDD">
+                                <li class="{$total_periodsale_price_display|display}"><strong class="term">Limited Time Discount</strong><span id="{$total_periodsale_price_id}" class="desc">{$price_unit_head}{$total_periodsale_price}{$price_unit_tail}</span></li>
+                                <li class="{$total_membersale_price_display|display}"><strong class="term">Membership Discount</strong><span id="{$total_membersale_price_id}" class="desc">{$price_unit_head}{$total_membersale_price}{$price_unit_tail}</span></li>
+                                <li class="{$total_rebuysale_price_display|display}"><strong class="term">{$rebuysale_head}Repurchase Discount</strong><span id="{$total_rebuysale_price_id}" class="desc">{$price_unit_head}{$total_rebuysale_price}{$price_unit_tail}</span></li>
+                                <li class="{$total_bulksale_price_display|display}"><strong class="term">Bulk Order Discount</strong><span id="{$total_bulksale_price_id}" class="desc">{$price_unit_head}{$total_bulksale_price}{$price_unit_tail}</span></li>
+                                <li class="{$total_pbpsale_price_display|display}"><strong class="term">About PBP Discount</strong><span id="{$total_pbpsale_price_id}" class="desc">{$price_unit_head}{$total_pbpsale_price}{$price_unit_tail}</span></li>
+                                <li class="{$total_newproductsale_price_display|display}"><strong class="term">New Product Discount</strong><span id="{$total_newproductsale_price_id}" class="desc">{$price_unit_head}{$total_newproductsale_price}{$price_unit_tail}</span></li>
+                                <li class="{$total_setproductsale_price|display}"><strong class="term">Discounted amount for Set Items</strong><span id="{$total_setproductsale_price_id}" class="desc">{$price_unit_head}{$total_setproductsale_price}{$price_unit_tail}</span></li>
+                                <li class="{$total_paymethodsale_price_display|display}"><strong class="term">Payment Method Discount</strong><span id="{$total_paymethodsale_price_id}" class="desc">{$price_unit_head}{$total_paymethodsale_price}{$price_unit_tail}</span></li>
+                                <li class="{$total_membergroupsale_price_display|display}"><strong class="term">Membership Level Discount</strong><span id="{$oversea_total_membergroupsale_price_id}" class="desc">{$price_unit_head}{$total_membergroupsale_price}{$price_unit_tail}</span></li>
+                            </ul>
+                        </div>
+                        <a href="#none" class="close" onclick="{$total_benefit_layer_off}"><img src="//img.echosting.cafe24.com/skin/base/common/btn_close.gif" alt="Close" /></a>
+                    </div>
+                </div>
+        
+                
+                <div module="Order_TotalOrder" class="">
+                    <a href="#none" onclick="{$action_order_all}" class="btn-checkout" link-order="/order/orderform.html{$param}" link-login="/member/login.html">Checkout</a>
+                </div>
+        
+                <div class="pay-method-wrap">
+                    <p class="title">Payment method</p>
+                    <p><a href="#none" class="pay-more">More <span><img src="/web/upload/images/ico_payment_more.jpg" alt=""></span></a></p>
+                </div>
+                <div class="ico-payment">
+                    <div><img src="/web/upload/images/paypal.jpg" alt=""></div>
+                    <div><img src="/web/upload/images/alipay.jpg" alt=""></div>
+                    <div><img src="/web/upload/images/visa.jpg" alt=""></div>
+                    <div><img src="/web/upload/images/mastercard.jpg" alt=""></div>
+                    <div><img src="/web/upload/images/jcb.jpg" alt=""></div>
+                    <div><img src="/web/upload/images/unionpay.jpg" alt=""></div>
+                </div>
+            </div>
+        </div>
+        
+        <div module="myshop_wishlist" class="ec-base-table typeList {$list_display|display}">
+            <!--@css(/css/module/myshop/wishlist.css)-->
+            <!--
+                $login_page = /member/login.html
+                $count = 5
+                $mode = basket
+            -->
+            <div class="title">
+                <h3>Wish List</h3>
+            </div>
+        
+            <table border="1" summary="">
+                <caption>Wish List</caption>
+                <colgroup>
+                    <col style="width:92px" />
+                    <col style="width:auto" />
+                    <col style="width:105px" />
+                    <col style="width:130px" />
+                    <col style="width:105px" />
+                    <col style="width:110px" />
+                </colgroup>
+                <thead>
+                    <tr>
+                        <th scope="col">Image</th>
+                        <th scope="col">Product Details</th>
+                        <th scope="col">Price</th>
+                        <th scope="col" class="mileage">{$mileage_name}</th>
+                        <th scope="col">Subtotal</th>
+                        <th scope="col">Select</th>
+                    </tr>
+                </thead>
+                <tbody module="myshop_wishlistitem" class="center">
+                    <tr>
+                        <td class="thumb"><a href="/product/detail.html{$param}"><img src="{$image_medium}" alt="" /></a></td>
+                        <td class="left">
+                            <strong class="name">{$product_name_link}</strong>
+                            <ul class="option" module="Myshop_optionAll">
+                                <li><strong class="{$product_name_display|display}">{$product_name}</strong>{$option_str} <span class="{$qty_display|display}">({$qty} item(s))</span><br /><a href="#none" onclick="{$action_option_change}" class="btnNormal gBlank5 {$option_change_display|display}">Edit Option</a>
+        
+                                    <div class="optionModify ec-base-layer" id="{$option_modify_layer_id}">
+                                        <div class="header">
+                                            <h3>Edit Option</h3>
+                                        </div>
+                                        <div class="content">
+                                            <ul class="prdInfo">
+                                                <li>{$product_name}</li>
+                                                <li class="option">{$layer_option_str}</li>
+                                            </ul>
+                                            <div class="prdModify">
+                                                <h4>Product Option</h4>
+                                                <ul module="Myshop_optionList">
+                                                    <li><span>{$option_name}</span> {$form.option_value}</li>
+                                                    <li><span>{$option_name}</span> {$form.option_value}</li>
+                                                </ul>
+                                                <ul module="Myshop_optionAddList">
+                                                    <li><span>{$option_name}</span> {$form.option_value}</li>
+                                                    <li><span>{$option_name}</span> {$form.option_value}</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="ec-base-button">
+                                            <a href="#none" class="btnNormalFix sizeS" onclick="{$action_option_modify}">Edit</a>
+                                        </div>
+                                        <a href="#none" class="close" onclick="$('.optionModify').hide();"><img src="//img.echosting.cafe24.com/skin/base/common/btn_close.gif" alt="Close" /></a>
+                                    </div>
+        
+                                </li>
+                                <li><strong class="{$product_name_display|display}">{$product_name}</strong>{$option_str} <span class="{$qty_display|display}">({$qty} item(s))</span><br /><a href="#none" onclick="{$action_option_change}" class="btnNormal gBlank5 {$option_change_display|display}">Edit Option</a>
+        
+                                    <div class="optionModify ec-base-layer" id="{$option_modify_layer_id}">
+                                        <div class="header">
+                                            <h3>Edit Option</h3>
+                                        </div>
+                                        <div class="content">
+                                            <ul class="prdInfo">
+                                                <li>{$product_name}</li>
+                                                <li class="option">{$layer_option_str}</li>
+                                            </ul>
+                                            <div class="prdModify">
+                                                <h4>Product Option</h4>
+                                                <ul module="Myshop_optionList">
+                                                    <li><span>{$option_name}</span> {$form.option_value}</li>
+                                                    <li><span>{$option_name}</span> {$form.option_value}</li>
+                                                </ul>
+                                                <ul module="Myshop_optionAddList">
+                                                    <li><span>{$option_name}</span> {$form.option_value}</li>
+                                                    <li><span>{$option_name}</span> {$form.option_value}</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="ec-base-button">
+                                            <a href="#none" class="btnNormalFix sizeS" onclick="{$action_option_modify}">Edit</a>
+                                        </div>
+                                        <a href="#none" class="close" onclick="$('.optionModify').hide();"><img src="//img.echosting.cafe24.com/skin/base/common/btn_close.gif" alt="Close" /></a>
+                                    </div>
+        
+                                </li>
+                            </ul>
+                        </td>
+                        <td class="price "><strong>{$product_price}</strong></td>
+                        <td class="center"><span class="txtInfo">{$mileage}</span></td>
+                        <td class="price ">{$sum_price}</td>
+                        <td class="button">
+                            <a href="#none" onclick="{$act_order}" class="btnSubmit {$disp_order|display}">Checkout</a>
+                            <a href="#none" onclick="{$act_basket}" class="btnNormal {$disp_basket|display}">Add to Cart</a>
+                            <a href="#none" class="btnNormal {$class_del}" rel="{$rel_del}"><i class="icoDelete"></i> Delete</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="thumb"><a href="/product/detail.html{$param}"><img src="{$image_medium}" alt="" /></a></td>
+                        <td class="left">
+                            <strong class="name">{$product_name_link}</strong>
+                            <ul class="option" module="Myshop_optionAll">
+                                <li><strong class="{$product_name_display|display}">{$product_name}</strong>{$option_str} <span class="{$qty_display|display}">({$qty} item(s))</span><br /><a href="#none" onclick="{$action_option_change}" class="btnNormal gBlank5 {$option_change_display|display}">Edit Option</a>
+        
+                                    <div class="optionModify ec-base-layer" id="{$option_modify_layer_id}">
+                                        <div class="header">
+                                            <h3>Edit Option</h3>
+                                        </div>
+                                        <div class="content">
+                                            <ul class="prdInfo">
+                                                <li>{$product_name}</li>
+                                                <li class="option">{$layer_option_str}</li>
+                                            </ul>
+                                            <div class="prdModify">
+                                                <h4>Product Option</h4>
+                                                <ul module="Myshop_optionList">
+                                                    <li><span>{$option_name}</span> {$form.option_value}</li>
+                                                    <li><span>{$option_name}</span> {$form.option_value}</li>
+                                                </ul>
+                                                <ul module="Myshop_optionAddList">
+                                                    <li><span>{$option_name}</span> {$form.option_value}</li>
+                                                    <li><span>{$option_name}</span> {$form.option_value}</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="ec-base-button">
+                                            <a href="#none" class="btnNormalFix sizeS" onclick="{$action_option_modify}">Edit</a>
+                                        </div>
+                                        <a href="#none" class="close" onclick="$('.optionModify').hide();"><img src="//img.echosting.cafe24.com/skin/base/common/btn_close.gif" alt="Close" /></a>
+                                    </div>
+        
+                                </li>
+                                <li><strong class="{$product_name_display|display}">{$product_name}</strong>{$option_str} <span class="{$qty_display|display}">({$qty} item(s))</span><br /><a href="#none" onclick="{$action_option_change}" class="btnNormal gBlank5 {$option_change_display|display}">Edit Option</a>
+        
+                                    <div class="optionModify ec-base-layer" id="{$option_modify_layer_id}">
+                                        <div class="header">
+                                            <h3>Edit Option</h3>
+                                        </div>
+                                        <div class="content">
+                                            <ul class="prdInfo">
+                                                <li>{$product_name}</li>
+                                                <li class="option">{$layer_option_str}</li>
+                                            </ul>
+                                            <div class="prdModify">
+                                                <h4>Product Option</h4>
+                                                <ul module="Myshop_optionList">
+                                                    <li><span>{$option_name}</span> {$form.option_value}</li>
+                                                    <li><span>{$option_name}</span> {$form.option_value}</li>
+                                                </ul>
+                                                <ul module="Myshop_optionAddList">
+                                                    <li><span>{$option_name}</span> {$form.option_value}</li>
+                                                    <li><span>{$option_name}</span> {$form.option_value}</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="ec-base-button">
+                                            <a href="#none" class="btnNormalFix sizeS" onclick="{$action_option_modify}">Edit</a>
+                                        </div>
+                                        <a href="#none" class="close" onclick="$('.optionModify').hide();"><img src="//img.echosting.cafe24.com/skin/base/common/btn_close.gif" alt="Close" /></a>
+                                    </div>
+        
+                                </li>
+                            </ul>
+                        </td>
+                        <td class="price right"><strong>{$product_price}</strong></td>
+                        <td class="center"><span class="txtInfo">{$mileage}</span></td>
+                        <td class="price right">{$sum_price}</td>
+                        <td class="button">
+                            <a href="#none" onclick="{$act_order}" class="btnSubmit {$disp_order|display}">Checkout</a>
+                            <a href="#none" onclick="{$act_basket}" class="btnNormal {$disp_basket|display}">Add to Cart</a>
+                            <a href="#none" class="btnNormal {$class_del}" rel="{$rel_del}"><i class="icoDelete"></i> Delete</a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        
+            <p class="message {$empty_display|display}">You have no products in your cart.</p>
+        </div>
+        
+        <div module="myshop_wishlistpaging" class="ec-base-paginate">
+            <!--
+                $mode = basket
+            -->
+            <a href="{$param_first}" class="first"><img src="/web/upload/ddongrim/btn_page_first.gif" alt="First" /></a>
+            <a href="{$param_before}"><img src="/web/upload/ddongrim/btn_page_prev.gif" alt="Prev" /></a>
+            <ol>
+                <li><a href="{$param}" class="{$param_class}">{$no}</a></li>
+                <li><a href="{$param}" class="{$param_class}">{$no}</a></li>
+                <li><a href="{$param}" class="{$param_class}">{$no}</a></li>
+                <li><a href="{$param}" class="{$param_class}">{$no}</a></li>
+                <li><a href="{$param}" class="{$param_class}">{$no}</a></li>
+            </ol>
+            <a href="{$param_next}"><img src="/web/upload/ddongrim/btn_page_next.gif" alt="Next" /></a>
+            <a href="{$param_last}" class="last"><img src="/web/upload/ddongrim/btn_page_last.gif" alt="Last" /></a>
+        </div>
+        
+        
+        <div id="ec-basketOptionModifyLayer" class="optionModify ec-base-layer" style="display:none;">
+            <div class="header">
+                <h3>Edit Option</h3>
+            </div>
+            <div class="content">
+                <ul class="prdInfo">
+                    <li class="ec-basketOptionModifyLayer-productName">{$product_name}</li>
+                    <li class="ec-basketOptionModifyLayer-optionStr" class="option">{$layer_option_str}</li>
+                </ul>
+                <div class="prdModify">
+                    <h4>Product Option</h4>
+                    <ul>
+                        <li class="ec-basketOptionModifyLayer-options" style="display:none;"><span>{$option_name}</span> {$form.option_value}</li>
+                        <li class="ec-basketOptionModifyLayer-addOptions" style="display:none;"><span>{$option_name}</span> {$form.option_value}</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="ec-base-button">
+                <a href="#none" class="btnSubmitFix sizeS ec-basketOptionModifyLayer-add">Add</a>
+                <a href="#none" class="btnNormalFix sizeS ec-basketOptionModifyLayer-modify">Edit</a>
+            </div>
+            <a href="#none" class="close" onclick="$('#ec-basketOptionModifyLayer').hide();"><img src="//img.echosting.cafe24.com/skin/base/common/btn_close.gif" alt="Close" /></a>
+        </div>
+    </div>
+</div>
+
+
+
+
+<script>
+(function($){
+    $('.pay-more').click(function(){
+        $('.ico-payment').toggleClass('active');
+    });
+    
+    $('.btn-info').click(function(){
+        $(this).next().toggleClass('active');
+    });
+
+    let randomNumber = Math.floor(Math.random() * 3) + 1;
+    console.log(randomNumber)
+    $('.face-wrap .img').addClass('bg0' + randomNumber);
+
+    $(window).scroll(function(){
+        var mypageTop = $(window).scrollTop();
+
+        if(mypageTop >= 35) {
+            $('.myshop-list-wrap').removeClass('active');
+            $('.myshop-list-scroll').activeClass('active');
+        } else {
+            $('.myshop-list-wrap').activeClass('active');
+            $('.myshop-list-scroll').removeClass('active');
+        }
+    });
+
+    
+})(jQuery1_9_1); 
+</script>

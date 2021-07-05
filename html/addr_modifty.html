@@ -1,0 +1,118 @@
+<!--@layout(/layout/basic/layout_wide.html)-->
+<div id="myshopWrap">
+    <div id="myshopLeft">
+        <div class="myshop-list-wrap">
+            <!--@css(/css/module/myshop/main.css)-->
+            <ul>
+                <li class="list">
+                    <a href="/myshop/index.html">Dashboard</a>
+                </li>
+                <li class="list active">
+                    <a href="/myshop/addr/list.html">Profile</a>
+                </li>
+                <li class="list">
+                    <a href="/myshop/order/list.html">Order History</a>
+                </li>
+                <li class="list">
+                    <a href="/myshop/wish_list.html">Wish List</a>
+                </li>
+                <li class="list">
+                    <a href="/order/basket.html">Shopping Bag</a>
+                </li>
+                <li class="list">
+                    <a href="/cs_center.html">Communication</a>
+                </li>
+                <li class="list">
+                    <a module="Layout_stateLogon" href="{$action_logout}">Sign out</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div id="myshopRight">
+        <div module="myshop_AddrModify">
+            <!--@css(/css/module/myshop/addrModify.css)-->
+            <!--
+                $return_url = /myshop/addr/list.html
+            -->
+            <p class="title">Address Modify</p>
+            <div class="">
+                <table>
+                    <caption>Add Address</caption>
+                    <colgroup>
+                        <col style="width:140px" />
+                        <col style="width:auto" />
+                    </colgroup>
+                    <tbody>
+                        <tr>
+                            <th scope="row">Address Label <img src="//img.echosting.cafe24.com/skin/base/common/ico_required_blue.gif" alt="Required" /></th>
+                            <td class="ePlaceholder" title="Address Label">{$form.ma_rcv_title}</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Name(Recipient) <img src="//img.echosting.cafe24.com/skin/base/common/ico_required_blue.gif" alt="Required" /></th>
+                            <td>{$form.ma_rcv_name} {$form.ma_rcv_name_last}</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Country <img src="//img.echosting.cafe24.com/skin/base/common/ico_required_blue.gif" alt="Required" /></th>
+                            <td class="ePlaceholder" title="Country">{$form.ma_rcv_contry_code}</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Address Line 1 <img src="//img.echosting.cafe24.com/skin/base/common/ico_required_blue.gif" alt="Required" /></th>
+                            <td class="ePlaceholder" title="Address Line 1">{$form.address_addr1}</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Address Line 2 <span class="{$addr2_display|display}"><img src="//img.echosting.cafe24.com/skin/base/common/ico_required_blue.gif" alt="Required" /></span></th>
+                            <td class="ePlaceholder" title="Address Line 2">{$form.address_addr2}</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">City <img src="//img.echosting.cafe24.com/skin/base/common/ico_required_blue.gif" alt="Required" /></th>
+                            <td class="ePlaceholder" title="City">{$form.city_name}</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">State/Province <img src="//img.echosting.cafe24.com/skin/base/common/ico_required_blue.gif" alt="Required" /></th>
+                            <td>{$form.state_name}</td>
+                        </tr>
+                         <tr>
+                            <th scope="row">Zip/ Postal code <img src="//img.echosting.cafe24.com/skin/base/common/ico_required_blue.gif" alt="Required" /></th>
+                            <td class="ePlaceholder" title="Zip/ Postal code">
+                                {$form.address_zip1} 
+                                <span class="nozip">
+                                    <input type="checkbox" name="nozip" id="nozip" {$no_zip_checked} /><label for="nozip">No zip/postal code</label>
+                                </span>
+                            </td>
+                        </tr>
+                        <tr class="{$use_delivery_tel_display|display}">
+                            <th scope="row">Phone <span class="{$phone1_display|display}"><img src="//img.echosting.cafe24.com/skin/base/common/ico_required_blue.gif" alt="Required" /></span></th>
+                            <td>{$form.ma_rcv_phone}</td>
+                        </tr>
+                        <tr class="{$use_delivery_cell_display|display}">
+                            <th scope="row">Mobile <span class="{$phone2_display|display}"><img src="//img.echosting.cafe24.com/skin/base/common/ico_required_blue.gif" alt="Required" /></span></th>
+                            <td class="ePlaceholder" title="Mobile">{$form.ma_rcv_mobile_no}</td>
+                        </tr>
+                        <tr class="right">
+                            <td colspan="2">{$form.ma_main_flag}</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="addr-btn-wrap">
+                <a href="#none" class="btn-save" onclick="{$action_check}">Save</a>
+                <a href="list.html" class="btn-cancel">Cancel</a>
+
+                <a href="#none" class="btn-info" onclick="openPopup('bookPopup')">About Address Book</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="layerpopup" id="bookPopup">
+    <a href="javascript:void(0)" onclick="closePopup('bookPopup')"><img src="/web/upload/images/btn_popup_close_blue.png" alt=""></a>
+    <div class="pop-con">
+        <p class="title">About Address Book</p>
+        <p class="desc">
+            You can add up to 10 addresses. Your address book
+            will be automatically updated with the shipping
+            address entered in your latest order, unless the
+            addresses are manually added.
+        </p>
+    </div>
+</div>

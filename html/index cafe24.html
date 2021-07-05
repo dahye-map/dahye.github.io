@@ -1,0 +1,390 @@
+<!--@layout(/layout/basic/main.html)-->
+<!--@css(/css/module/index/main.css)-->
+<!--edibot_skin_data:{"width":1014,"mo_width":640}-->
+
+<div class="mo-cate-list swiper-container mo-only">
+    <div class="swiper-wrapper">
+        <div class="swiper-slide">
+            <a href="">
+                <p><img src="/web/upload/images/m_cate01.jpg" alt=""></p>
+                <p class="name">New</p>
+            </a>
+        </div>
+        <div class="swiper-slide">
+            <a href="">
+                <p><img src="/web/upload/images/m_cate02.jpg" alt=""></p>
+                <p class="name">Women</p>
+            </a>
+        </div>
+        <div class="swiper-slide">
+            <a href="">
+                <p><img src="/web/upload/images/m_cate03.jpg" alt=""></p>
+                <p class="name">Men</p>
+            </a>
+        </div>
+        <div class="swiper-slide">
+            <a href="">
+                <p><img src="/web/upload/images/m_cate04.jpg" alt=""></p>
+                <p class="name">Gear</p>
+            </a>
+        </div>
+        <div class="swiper-slide">
+            <a href="">
+                <p><img src="/web/upload/images/m_cate05.jpg" alt=""></p>
+                <p class="name">Beauty</p>
+            </a>
+        </div>
+    </div>
+</div>
+
+
+<div class="mainb-wrap swiper-container">
+    <div class="swiper-wrapper">
+        <div class="swiper-slide">
+            <a href="">
+                <img src="/web/upload/images/img_main_banner01.jpg" data-src-base='/web/upload/images/' data-src='<480:img_main_banner01_mo.jpg, <768:img_main_banner01_mo.jpg, <960:img_main_banner01.jpg, >960:img_main_banner01.jpg'/>
+
+                <div class="top-title">
+                    <p class="title">
+                        XEXYMIX is No.1 Yogawear brand <br>in Asia and Pacific.
+                    </p>
+                    <p class="desc">
+                        We've studied to make daily to professional workout wear.<br>
+                        Feel the different, Daily leggings to Cozy athleisure look.
+                    </p>
+                </div>
+            </a>
+        </div>
+        <div class="swiper-slide">
+            <a href="">
+                <img src="/web/upload/images/img_main_banner01.jpg" data-src-base='/web/upload/images/' data-src='<480:img_main_banner01_mo.jpg, <768:img_main_banner01_mo.jpg, <960:img_main_banner01.jpg, >960:img_main_banner01.jpg'/>
+
+                <div class="top-title">
+                    <p class="title">
+                        XEXYMIX is No.1 Yogawear brand <br>in Asia and Pacific.
+                    </p>
+                    <p class="desc">
+                        We've studied to make daily to professional workout wear.<br>
+                        Feel the different, Daily leggings to Cozy athleisure look.
+                    </p>
+                </div>
+            </a>
+        </div>
+        <div class="swiper-slide">
+            <a href="">
+                <img src="/web/upload/images/img_main_banner01.jpg" data-src-base='/web/upload/images/' data-src='<480:img_main_banner01_mo.jpg, <768:img_main_banner01_mo.jpg, <960:img_main_banner01.jpg, >960:img_main_banner01.jpg'/>
+
+                <div class="top-title">
+                    <p class="title">
+                        XEXYMIX is No.1 Yogawear brand <br>in Asia and Pacific.
+                    </p>
+                    <p class="desc">
+                        We've studied to make daily to professional workout wear.<br>
+                        Feel the different, Daily leggings to Cozy athleisure look.
+                    </p>
+                </div>
+            </a>
+        </div>
+    </div>
+    <div class="mainb-pagination swiper-pagination"></div>
+</div>
+
+
+<div class="cate-wrap">
+    <p class="title">Categories</p>
+    <ul>
+        <li>
+            <a href="">
+                <p><img src="/web/upload/images/img_cate_list01.jpg" alt=""></p>
+                <p class="list-tit">Leggings</p>
+            </a>
+        </li>
+        <li>
+            <a href="">
+                <p><img src="/web/upload/images/img_cate_list02.jpg" alt=""></p>
+                <p class="list-tit">Sports Bra</p>
+            </a>
+        </li>
+        <li>
+            <a href="">
+                <p><img src="/web/upload/images/img_cate_list03.jpg" alt=""></p>
+                <p class="list-tit">Gear</p>
+            </a>
+        </li>
+        <li>
+            <a href="">
+                <p><img src="/web/upload/images/img_cate_list04.jpg" alt=""></p>
+                <p class="list-tit">Athleisure</p>
+            </a>
+        </li>
+    </ul>
+</div>
+
+<!--@import(/product/shoppQ/searchContent.html)-->
+
+<div class="best-pro-wrap">
+    <p class="title">Best Seller</p>
+    <div module="product_listmain_1" class="ec-base-product">
+        <div class="best-list-slide swiper-container">
+            <!--
+            $count = 8
+                ※ 상품진열갯수를 설정하는 변수입니다. 설정하지 않을 경우, 최대 200개의 상품이 진열 됩니다.
+                ※ 진열된 상품이 많으면, 쇼핑몰에 부하가 발생할 수 있습니다.
+            $basket_result = /product/add_basket.html
+            $basket_option = /product/basket_option.html
+        -->
+        <ul class="prdList swiper-wrapper">
+            <li id="anchorBoxId_{$product_no}" class="swiper-slide">
+                <div class="thumbnail">
+                    <div class="prdImg">
+                        <a href="{$link_product_detail}" name="anchorBoxName_{$product_no}"><img src="{$image_medium}" id="{$image_medium_id}" alt="{$seo_alt_tag}" /><span module="product_Imagestyle"><span class="prdIcon {$icon_class_name}" style="background-image:url('{$icon_url}');"></span></span></a>
+                        <!-- <span class="wish">{$list_wish_icon}</span> -->
+                    </div>
+                    <div class="icon">
+                        <div class="promotion">{$soldout_icon} {$stock_icon} {$recommend_icon} {$new_icon} {$product_icons} {$today_arrival_icon} {$pickup_icon} {$benefit_icons}</div>
+                        <!-- <div class="button">
+                            <div class="likeButton {$disp_likeprd_class}">
+                                <button type="button">{$disp_likeprd_icon}
+                                    <strong>{$disp_likeprd_count}</strong>
+                                </button>
+                            </div>
+                            <div class="option">{$option_preview_icon}</div> 
+                            {$basket_icon} {$zoom_icon}
+                        </div> -->
+                    </div>
+                </div>
+                <div class="description">
+                    <strong class="name"><a href="{$link_product_detail}" class="{$product_name_display|display}"><span class="title {$product_name_title_display|display}">{$product_name_title} :</span> {$product_name}</a></strong>
+                    <ul module="product_ListItem" class="spec">
+                        <li class="{$item_display|display}"><strong class="title {$item_title_display|display}">{$item_title} :</strong> {$item_content}</li>
+                        <li class="{$item_display|display}"><strong class="title {$item_title_display|display}">{$item_title} :</strong> {$item_content}</li>
+                    </ul>
+                </div>
+            </li>
+            <li id="anchorBoxId_{$product_no}" class="swiper-slide">
+                <div class="thumbnail">
+                    <div class="prdImg">
+                        <a href="{$link_product_detail}" name="anchorBoxName_{$product_no}"><img src="{$image_medium}" id="{$image_medium_id}" alt="{$seo_alt_tag}" /><span module="product_Imagestyle"><span class="prdIcon {$icon_class_name}" style="background-image:url('{$icon_url}');"></span></span></a>
+                        <!-- <span class="wish">{$list_wish_icon}</span> -->
+                    </div>
+                    <div class="icon">
+                        <div class="promotion">{$soldout_icon} {$stock_icon} {$recommend_icon} {$new_icon} {$product_icons} {$today_arrival_icon} {$pickup_icon} {$benefit_icons}</div>
+                        <!-- <div class="button">
+                            <div class="likeButton {$disp_likeprd_class}">
+                                <button type="button">{$disp_likeprd_icon}
+                                    <strong>{$disp_likeprd_count}</strong>
+                                </button>
+                            </div>
+                            <div class="option">{$option_preview_icon}</div> 
+                            {$basket_icon} {$zoom_icon}
+                        </div> -->
+                    </div>
+                </div>
+                <div class="description">
+                    <strong class="name"><a href="{$link_product_detail}" class="{$product_name_display|display}"><span class="title {$product_name_title_display|display}">{$product_name_title} :</span> {$product_name}</a></strong>
+                    <ul module="product_ListItem" class="spec">
+                        <li class="{$item_display|display}"><strong class="title {$item_title_display|display}">{$item_title} :</strong> {$item_content}</li>
+                        <li class="{$item_display|display}"><strong class="title {$item_title_display|display}">{$item_title} :</strong> {$item_content}</li>
+                    </ul>
+                </div>
+            </li>
+        </ul>
+
+        </div>
+    </div>
+
+</div>
+
+
+<div class="midb-wrap">
+    <ul>
+        <li class="midb">
+            <p><img src="/web/upload/images/mid_banner01.jpg" alt=""></p>
+
+            <div class="desc">
+                <p class="title">Free worldwide <br>Shipping</p>
+                <a href="" class="btn-normal pc-only">
+                    <span class="btn-normal-hover"></span>
+                    <span class="btn-normal-txt">Explore more</span>
+                </a>
+                <a href="" class="btn-normal-mo mo-only"><img src="/web/upload/images/plusBtn.png" alt=""></a>
+            </div>
+        </li>
+        <li class="midb">
+            <p><img src="/web/upload/images/mid_banner02.jpg" alt=""></p>
+
+            <div class="desc">
+                <p class="title">How to choose <br>My leggings </p>
+                <a href="" class="btn-normal pc-only">
+                    <span class="btn-normal-hover"></span>
+                    <span class="btn-normal-txt">Explore more</span>
+                </a>
+                <a href="" class="btn-normal-mo mo-only"><img src="/web/upload/images/plusBtn.png" alt=""></a>
+            </div>
+        </li>
+    </ul>
+</div>
+
+<div class="prob-wrap swiper-container">
+    <div class="swiper-wrapper">
+        <div class="prob swiper-slide">
+            <p>
+                <!-- <img src="/web/upload/images/product_banner.jpg" alt=""> -->
+                <img src="/web/upload/images/product_banner.jpg" data-src-base='/web/upload/images/' data-src='<480:product_banner_mo.jpg, <768:product_banner_mo.jpg, <960:product_banner.jpg, >960:product_banner.jpg'/>
+            </p>
+
+            <div class="box-desc">
+                <p class="title">
+                    Made for Every wear<br>
+                    Everyday Dressing made easy01
+                </p>
+                <a href="" class="btn-normal black pc-only">
+                    <span class="btn-normal-hover"></span>
+                    <span class="btn-normal-txt">Explore more</span>
+                </a>
+            </div>
+        </div>
+        <div class="prob swiper-slide">
+            <p>
+                <!-- <img src="/web/upload/images/product_banner.jpg" alt=""> -->
+                <img src="/web/upload/images/product_banner.jpg" data-src-base='/web/upload/images/' data-src='<480:product_banner_mo.jpg, <768:product_banner_mo.jpg, <960:product_banner.jpg, >960:product_banner.jpg'/>
+            </p>
+
+            <div class="box-desc">
+                <p class="title">
+                    Made for Every wear<br>
+                    Everyday Dressing made easy02
+                </p>
+                <a href="" class="btn-normal black pc-only">
+                    <span class="btn-normal-hover"></span>
+                    <span class="btn-normal-txt">Explore more</span>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="prob-slide-pagination swiper-pagination"></div>
+</div>
+
+<div class="commu-wrap mo-only">
+    <a href="" class="commu">
+        <p><img src="/web/upload/images/b_cate.jpg" alt=""></p>
+
+        <div class="desc">
+            <p>Let’s Grow up <br>Together</p>
+            <span>Go to Community</span>
+        </div>
+    </a>
+</div>
+
+
+<script>
+(function($){
+    var swiper_cate = new Swiper('.mo-cate-list', {
+        slidesPerView: 'auto',
+        spaceBetween: 10,
+    });
+
+    var swiper = new Swiper('.mainb-wrap', {
+        pagination: {
+            el: '.mainb-pagination',
+        },
+    });
+
+    var swiper_pro = new Swiper('.prob-wrap', {
+        loop:true,
+        effect: 'fade',
+        pagination: {
+            el: ".swiper-pagination",
+            type: "progressbar",
+        },
+    });
+    // if(win_W <= 768) {
+    //     swiper_pro.destroy();
+    // } else {
+    //     swiper_pro.init();
+    // }
+
+
+    var secSwiper = undefined;
+     function initSwiper(){ 
+         var screenWidth = $(window).innerWidth();
+         if(screenWidth > 992 && secSwiper == undefined){
+            secSwiper = new Swiper('.best-list-slide',{
+                slidesPerView:'auto',
+                spaceBetween: 22,
+                observer: true,
+                observeParents: true,
+                resistance : true,    
+             });
+         }else if(screenWidth < 991 && secSwiper != undefined){
+            secSwiper.destroy();
+            secSwiper = undefined;
+             $('.best-list-slide .swiper-wrapper').removeAttr('style');
+             $('.best-list-slide .swiper-slide').removeAttr('style');
+         }
+     }
+ 
+     initSwiper();
+ 
+     $(window).on('resize', function(){
+         initSwiper();
+    });
+
+
+    $('.lang-wrap').click(function(){
+        $('#countryWrap').addClass('active');
+        $('#headerWrap').css('margin-top', '691px');
+        // $('html').css('overflow', 'hidden');
+    });
+    $('.btn-close').click(function(){
+        $('#countryWrap').removeClass('active');
+        $('#headerWrap').css('margin-top', '');
+        $('html').css('overflow', '');
+    });
+
+
+
+    // gnb
+    var prevEnterDepthIdx;
+    var _isGnbOpen = false;
+    if (!_isGnbOpen) {
+        _isGnbOpen = true;
+        $('.depth1 > a').on('mouseenter focusin',function(){
+            var idx = $('.depth1 > a').index($(this));
+            if (prevEnterDepthIdx != idx) {
+                $('.depth2-wrap').removeClass('active');
+                $('.depth1 > a').removeClass('active');
+            }
+            $(this).addClass('active').siblings('.depth2-wrap').addClass('active');
+            prevEnterDepthIdx = idx;
+        });
+    }
+    $('#headerWrap').on('mouseleave', function(){
+        $('.depth2-wrap').removeClass('active');
+        $('.depth1 > a').removeClass('active');
+    });
+
+
+    //네비 2depth
+    var _isSlide = false;
+    $('.mo-footer-list > li > a').click(function() {
+        $target = $(this).next('.content');
+        var allPanels = $('.content');
+        if(!_isSlide){
+            _isSlide = true;
+            if(!$target.hasClass('active')){
+                allPanels.slideUp(500).removeClass('active');
+                $target.slideDown(500).addClass('active');
+
+            } else {
+                $target.slideUp(500).removeClass('active');
+            }
+            setTimeout(function(){_isSlide=false;},200);
+        }
+    });
+})(jQuery1_9_1); 
+</script>
+
+<!--@define(cmc_log)-->
+
+
