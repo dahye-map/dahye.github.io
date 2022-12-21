@@ -11,7 +11,40 @@
     <script src="../../js/jquery-3.5.1.min.js"></script>
   </head>
   <body>
+    <div class="page-wrapper">			
+			<!-- header 자동 숨김 사용시 "auto-hide" 또는
+				* 상단 고정시 "sticky" 추가 -->
+			<header class="header auto-hide">
+				<div class="btn-left">
+					<!-- a태그는 페이지가 완전히 이동할 때 사용 -->
+					<a href="javascript:history.back();" title="이전 페이지로" class="btn-ico btn-back" role="button"><span class="blind">뒤로</span></a>
+					<!--button onclick="" type="button" aria-label="이전" class="btn-ico btn-back"><span
+						class="blind">뒤로</span></button 버튼은 레이어 닫기일 때 사용-->
+				</div>
+				<h1 class="title">마이페이지</h1>
+				<div class="btn-right">
+					<button type="button" class="btn-ico btn-menu02" aria-label="전체메뉴 열기"></button>
+				</div>	
+			</header>
 
+			<div class="container" role="main">
+				<div class="content-group">  
+					<div class="inner-20">
+						<div class="content-wrap">
+							
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- footer 자동 숨김 사용시 "auto-hide" 또는
+				* footer 고정시 "sticky" 추가 -->
+			<div class="footer auto-hide">
+				<button type="button" class="btn btn-float btn-primary">다음</button>				
+			</div>
+
+		</div>
+		<script src="../../js/common_ui.js"></script>
 
 
   </body>
