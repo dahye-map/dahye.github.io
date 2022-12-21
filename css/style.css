@@ -207,18 +207,19 @@ hr { background:#f2f2f2; height:10px; border:0; margin:0; padding:0; }
 .star-rating-wrap label { width:32px; height:32px; background:url(../images/sub/icon_star_off.svg) center no-repeat; background-size:100%; }
 .star-rating-wrap :checked ~ label { width:32px; height:32px; background:url(../images/sub/icon_star.svg) center no-repeat; background-size:100%; }
 
+
 /* gnb 메뉴 클릭 시 메뉴  */
 /* .gnb-wrapper.active{left:0 !important; } */
 /* .gnb-wrapper{position:fixed;left:100%;top:0;z-index:100;width:100%;min-width:360px;height:100vh;background-color:#fff;transition:1s;} */
 /* gnb-header */
-/* .gnb-top-wrap{position:relative;padding:0 40px 30px;background-color:#477ebd;} */
+/* .gnb-top-wrap{position:relative;padding:0 40px 30px;background-color:#477ebd;}
 .gnb-icon{height:49px;}
 .gnb-icon .close-btn{position:absolute;top:14.8px;right:16px;padding:0;width:20px;height:20px;border:0;font-size: 0;background: url(../../images/common/close.svg);}
 .gnb-top{padding-bottom:20px;}
 .gnb-top .txt{font-size:18px;color:#fff;line-height:26px;letter-spacing:-0.36px;font-weight:normal;}
-.gnb-top span{font-size:inherit;font-weight:bold;}
+.gnb-top span{font-size:inherit;font-weight:bold;} */
 /* gnb-content */
-/* .gnb-content{padding:21px 40px;} */
+/* .gnb-content{padding:21px 40px;}
 .gnb-content .tit{padding-bottom:20px;font-size:18px;font-weight:500;line-height:34px;}
 .gnb-menu-list{width:100%;}
 .gnb-menu-list::before{display:block;content: '';border-top:1px solid #ddd;}
@@ -226,7 +227,7 @@ hr { background:#f2f2f2; height:10px; border:0; margin:0; padding:0; }
 .gnb-menu-list ul li{position:relative;padding:10px 0;}
 .gnb-menu-list ul li::after{display:inline-block;content: ''; position:absolute;top:50%;right:0px;width:8px;height:15px;background:url(../../images/common/arrw_left01.png) no-repeat right;background-size:contain;transform:rotate(180deg) translate(50%, 50%);}
 .gnb-menu-list ul li a{width:100%;font-size:15px;text-align:left;line-height: 22px;}
-.gnb-banner{padding-top:20px;}
+.gnb-banner{padding-top:20px;} */
 
 /* s : gnb dim 처리 방식 */
 .gnb-wrapper.active40{left:40px !important;}
