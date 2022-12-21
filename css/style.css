@@ -261,6 +261,11 @@ hr { background:#f2f2f2; height:10px; border:0; margin:0; padding:0; }
 .my-page-title span{font-size:inherit;font-weight:bold;}
 .my-page-title .login-info-number{padding-top:10px;font-size:15px;line-height: 34px;color: #222;}
 .my-page-top:nth-of-type(1){padding-top:33px;}
-.my-page-wrap .my-page-top:nth-child(1):after{display: block;content:'';width: 100%;padding:5px 0;background-color: #f2f2f2;}
+.my-page-wrap .my-page-top:nth-child(1):after{display:block;content:'';width: 100%;padding:5px 0;background-color:#f2f2f2;}
 .my-page-wrap .my-page-con{padding:30px 20px 0;}
-.my-page-con .mpc-tit{padding-bottom: 20px;font-size: 18px;line-height:27px;letter-spacing: -0.45px;color: #000;font-weight: 500;}
+.my-page-con .mpc-tit{padding-bottom: 20px;font-size:18px;line-height:27px;letter-spacing: -0.45px;color: #000;font-weight:500;}
+.my-page-con .mpc-card{width:100%;height:fit-content;background:linear-gradient(to bottom, #1f64aa 40%, #fff 40%);border-radius:10px;box-shadow:0 3px 6px 0 rgba(0, 0, 0, 0.16);}
+.my-page-con .mpc-card-top{display:flex;justify-content:space-between;padding:18px 20px;}
+.my-page-con .mpc-card-txt{font-size:16px;line-height:24px;color:#fff;letter-spacing:-0.4px;font-weight:normal;}
+.my-page-con .mpc-card-txt a{font-size:inherit;}
+.my-page-con .mpc-card-txt span{font-size:inherit;font-weight:bold;}
