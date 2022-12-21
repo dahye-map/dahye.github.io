@@ -1,18 +1,17 @@
 <!DOCTYPE html>
 <html lang="ko">
-  <head>
-    <meta charset="UTF-8" />
-    <title>마이페이지 gnb</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, viewport-fit=cover"/>
-    <meta name="mobile-web-app-capable" content="yes" />
-    <meta name="apple-mobile-web-app-capable" content="yes" />
-    <link rel="stylesheet" type="text/css" href="../../css/common.css">
-    <link rel="stylesheet" type="text/css" href="../../css/style.css">
-    <script src="../../js/jquery-3.5.1.min.js"></script>
-  </head>
-  
-  <body>
-    <div class="page-wrapper main-n">
+	<head>
+		<meta charset="utf-8">
+		<title>안심전세 메인</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, viewport-fit=cover">
+		<meta name="mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-capable" content="yes" /> 	
+		<link rel="stylesheet" type="text/css" href="../../css/common.css">
+		<link rel="stylesheet" type="text/css" href="../../css/style.css">
+		<link rel="stylesheet" type="text/css" href="../../css/swiper-bundle.min.css">
+	</head>
+	<body>
+		<div class="page-wrapper main-n">
 
 			<!-- 상단정보 -->
 			<header class="header auto-hide">
@@ -22,7 +21,7 @@
 				<h1 class="title">안심전세 진단∙상담</h1>
 				<div class="btn-right">
 					<!-- <button class="btn-ico btn-home" aria-label="홈"><span class="blind">홈</span></button> -->
-					<a href="javascript:;" aria-label="전체메뉴 열기" class="btn-ico btn-menu"><span class="blind">전체메뉴</span></a>
+					<a href="javascript:;" aria-label="전체메뉴 열기" class="btn-ico btn-menu open-btn"><span class="blind">전체메뉴</span></a>
 				</div>
 			</header>
 			<!-- //상단정보 -->
@@ -51,10 +50,10 @@
 			
 			<!-- 메인 가이드 -->
 			<section class="submn-guide-card">
-				<div class="swiper submn-swiper swiper-initialized swiper-horizontal swiper-pointer-events swiper-backface-hidden">
-					<div class="swiper-wrapper" id="swiper-wrapper-10ab7efa754c85857" aria-live="off" style="transition-duration: 0ms; transform: translate3d(0px, 0px, 0px);">					
+				<div class="swiper submn-swiper">
+					<div class="swiper-wrapper">					
 						<!-- Slides -->
-                        <div class="swiper-slide submn-card type01 swiper-slide-active" title="안심전세 진단" role="group" aria-label="1 / 2" style="margin-right: 10px;">
+                        <div class="swiper-slide submn-card type01" title="안심전세 진단">
 							<a href="" title="안심전세 진단 바로가기">
 								<p class="tit">
 									안심전세 진단
@@ -63,7 +62,7 @@
 								<button type="button" class="btn-linktxt" title="안심전세 진단 바로가기"><span>바로가기</span></button>
 							</a>
 						</div>
-						<div class="swiper-slide submn-card type02 swiper-slide-next" title="1:1 법률상담" role="group" aria-label="2 / 2" style="margin-right: 10px;">
+						<div class="swiper-slide submn-card type02" title="1:1 법률상담">
 							<a href="" title="1:1 법률상담 바로가기">
 								<p class="tit">
 									1:1 법률상담
@@ -74,7 +73,7 @@
 						</div>
 						<!-- // Slides -->
 					</div>
-				<span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span></div>
+				</div>
 
 				<button type="button" class="btn btn-lg btn-type12 mt-30"><span>본인인증</span></button>
 
@@ -142,15 +141,18 @@
 						<span>고객센터 1566-9009</span>
 						<span>평일 9:00~18:00 (토,일,공휴일 휴무)</span>
 					</p>
-					<p class="mn-ft-copy">© Korea Housing &amp; Urban Guarantee Corporation. All rights reserved.</p>
+					<p class="mn-ft-copy">© Korea Housing & Urban Guarantee Corporation. All rights reserved.</p>
 	
-					<a href="#" title="개인정보처리방침 홈페이지로 바로가기, 새창열림" target="_blank" class="btn btn-sm btn-ft-pv"><span>개인정보처리방침</span></a>
+					<a href="#" title="개인정보처리방침 홈페이지로 바로가기, 새창열림" target="_blank"
+						class="btn btn-sm btn-ft-pv"><span>개인정보처리방침</span></a>
 						
 				</div>
 			</div>
 			<!-- //메인 푸터 -->
 
 		</div>
+
+		<!-- s gnb 화면 -->
     <div class="gnb-wrapper">
       <header class="gnb-header">
 
@@ -196,20 +198,37 @@
         </div>
       </div>
     </div>
+		<!-- e gnb 화면 -->
 
-<script>
-// gnb 메뉴 아이콘 클릭시, show
-	$('.btn-menu').on('click', function(){
-		$('.gnb-wrapper').addClass('active');
-	})
+ 
+		<script src="../../js/jquery-3.5.1.min.js"></script>
+		<script src="../../js/common_ui.js"></script>
+		<script src="../../js/swiper-bundle.min.js"></script>
 
-	$('.close-btn').off('click').on('click', function(){
-			reClass();
-	})
-	var reClass = function remove(){
-		$('.gnb-wrapper').removeClass('active');
-	}
-</script>    
+		<script>
+			// gnb 메뉴 아이콘 클릭시, show
+			$('.open-btn').on('click', function(){
+				$('.gnb-wrapper').addClass('active');
+				})
 
-  </body>
+				$('.close-btn').off('click').on('click', function(){
+						reClass();
+				})
+				var reClass = function remove(){
+					$('.gnb-wrapper').removeClass('active');
+				}
+
+				var swiper = new Swiper(".submn-swiper", {
+					slidesPerView: "auto",
+					spaceBetween: 10,
+					autoplay: {
+						delay: 2500,
+						disableOnInteraction: false,
+					}
+			});
+
+	
+		</script>		
+
+	</body>
 </html>

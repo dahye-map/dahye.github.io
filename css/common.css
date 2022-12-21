@@ -2648,26 +2648,7 @@ button.btn-selbox span{font-size:15px}
 .pay-for .rdo-btn01 .kpay span{background:#eee url(../images/common/logo_Kpay.png) no-repeat center/auto 17px;}
 .pay-for .rdo-btn01 .kpay input:checked + span{color:#fff; background-color: #ffeb00; background-image: url(../images/common/logo_Kpay.png);}
 
-/* gnb 메뉴 클릭 시 메뉴  */
-.active{left: 0 !important;}
-.gnb-wrapper{position: fixed;left: 100%; top: 0; z-index: 100;width: 100%;min-width: 360px; height: 100vh; background-color: #fff;}
-/* gnb-header */
-.gnb-header{position: relative;padding:0 40px 30px;background-color: #477ebd;}
-.h-right{height: 49px;}
-.h-right .close-btn{position: absolute;top: 14.8px;right:16px;padding: 0;width: 20px;height: 20px;border: 0;font-size: 0;background: url(../../images/common/close.svg);}
-.h-con{padding-bottom: 20px;}
-.h-con p.txt{font-size: 18px; color: #fff; line-height: 26px; font-weight: normal;}
-.h-con span.bold{font-size: 18px; color: #fff; line-height: 26px;font-weight: 800;}
-.white{border: 1px solid #fff;border-radius:3px;color: #fff; }
-/* gnb-content */
-.gnb-content{padding: 21px 40px;}
-.gnb-menu-list{width: 100%;}
-.gnb-menu-list::before{display: block; content: ''; border-top: 1px solid #ddd;}
-.gnb-menu-list ul{padding-top:10px;}
-.gnb-menu-list ul li{position: relative; padding:10px 0;}
-.gnb-menu-list ul li::after{display: inline-block;content: ''; position: absolute;top: 50%;right:-8px;width: 8px; height:10px ; background: url(../../images/common/arrw_left01.png) no-repeat right; background-size: contain; transform: rotate(180deg) translate(50%, 50%); }
-.gnb-menu-list ul li a{width: 100%; font-size: 15px;text-align: left;line-height: 22px;}
-.gnb-banner{padding-top:20px;}
+
 
 
 @media (max-width:359px) {
