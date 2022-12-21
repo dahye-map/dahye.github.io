@@ -1,4 +1,4 @@
-// // gnb 메뉴 아이콘 클릭시, show
+// gnb 메뉴 아이콘 클릭시, show
 $('.btn-menu02').on('click', function(){
   $('.gnb-wrapper').addClass('active');
   });
