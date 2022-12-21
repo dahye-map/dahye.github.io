@@ -15,13 +15,10 @@
 
 			<!-- 상단정보 -->
 			<header class="header auto-hide">
-				<div class="btn-left">
-					<h1><span class="blind">모바일 HUG 안심전세 로고</span></h1>
-				</div>
+	
 				<h1 class="title">안심전세 진단∙상담</h1>
 				<div class="btn-right">
-					<!-- <button class="btn-ico btn-home" aria-label="홈"><span class="blind">홈</span></button> -->
-					<a href="javascript:;" aria-label="전체메뉴 열기" class="btn-ico btn-menu open-btn"><span class="blind">전체메뉴</span></a>
+					<a href="javascript:;" aria-label="전체메뉴 열기" class="btn-ico btn-menu02"><span class="blind">전체메뉴</span></a>
 				</div>
 			</header>
 			<!-- //상단정보 -->
@@ -154,33 +151,27 @@
 
 		<!-- s gnb 화면 -->
     <div class="gnb-wrapper">
-      <header class="gnb-header">
+      <div class="gnb-top-wrap">
 
-        <div class="h-right">
-          <div class="btn-left">
-            <h1><span class="blind">모바일 HUG 안심전세 본인인증</span></h1>
-          </div>
-          <div class="btn-right">
+        <div class="gnb-icon">
             <a href="javascript:;" aria-label="전체메뉴 닫기" class="btn-ico close-btn"><span class="blind">전체메뉴 닫기</span></a>
-          </div>
-        </div>    
-
-        <div class="h-con">
-          <div class="txt-wrap">
-            <p class="txt"> 안녕하세요.<br>
-              <span class="bold">안심전세 APP</span>입니다.
-            </p>
-          </div>
         </div>   
+
+				<div class="gnb-top">
+					<p class="txt"> 안녕하세요.<br>
+						<span>안심전세 APP</span>입니다.
+					</p>
+				</div>
+				
         <button type="button" class="btn btn-lg white"><span>본인인증하기</span></button><!--MHCP_01000000-->
-      </header>
+      </div>
 
       <div class="gnb-content">
         <div class="txt-wrap">
-          <h3 class="tit">안심전세 진단하기</h3>
+          <p><a class="tit">안심전세 진단하기</a></p>
         </div>
         <div class="txt-wrap">
-          <h3 class="tit">1:1 법률 상담하기</h3>
+					<p><a class="tit">1:1 법률 상담하기</a></p>
         </div>
 
         <div class="gnb-menu-list">
@@ -207,16 +198,14 @@
 
 		<script>
 			// gnb 메뉴 아이콘 클릭시, show
-			$('.open-btn').on('click', function(){
-				$('.gnb-wrapper').addClass('active');
-				})
+				$('.btn-menu02').on('click', function(){
+					$('.gnb-wrapper').addClass('active');
+					});
 
-				$('.close-btn').off('click').on('click', function(){
-						reClass();
-				})
-				var reClass = function remove(){
+				$('.close-btn').on('click', function(){
 					$('.gnb-wrapper').removeClass('active');
-				}
+				});
+				
 
 				var swiper = new Swiper(".submn-swiper", {
 					slidesPerView: "auto",
@@ -225,7 +214,7 @@
 						delay: 2500,
 						disableOnInteraction: false,
 					}
-			});
+				});
 
 	
 		</script>		

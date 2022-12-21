@@ -1884,6 +1884,7 @@ button.btn-selbox span{font-size:15px}
 .header .btn-left a~a{margin-left:8px}
 .header .btn-back{width:43px; height:100%; background:url('../images/common/arrw_left01.png') no-repeat center/auto 19px;}
 .header .btn-menu{width:48px; height:100%; background:url('../images/common/btn_menu.png') no-repeat center/auto 15px}
+.header .btn-menu02{width:48px; height:100%; background:url('../images/common/btn_menu.png') no-repeat center/auto 15px}
 
 .header .btn-home,
 .sidemenu .sm-btn .btn-home{width:42px;height:100%;background:url('../images/common/btn_home_new.png') no-repeat center/24px;}
@@ -2036,10 +2037,12 @@ button.btn-selbox span{font-size:15px}
 .main-head-wrap .mh-btn .btn-mypage, 
 .main-head-wrap .mh-btn .btn-noti, 
 .main-head-wrap .mh-btn .btn-menu { width:31px;height:31px; background-position:center; background-repeat: no-repeat;}
+.main-head-wrap .mh-btn .btn-menu02 { width:31px;height:31px; background-position:center; background-repeat: no-repeat;}
 .main-head-wrap .mh-btn .btn-mypage {background-image:url('../images/main/btn_ico_mypage.png');background-size:14px; }
 .main-head-wrap .mh-btn .btn-noti{position:relative;background-image:url('../images/main/btn_ico_noti.png');background-size:17px;}
 .main-head-wrap .mh-btn .btn-noti .new{position:absolute;top:2px;right:3px;width:10px;height:10px;background:url('../images/main/ico_noti_new.png') no-repeat 50% 50% #ff6a20;background-size:10px auto;border-radius:50%}
 .main-head-wrap .mh-btn .btn-menu{background-image:url('../images/main/btn_ico_menu.png'); background-size: 15px;}
+.main-head-wrap .mh-btn .btn-menu02{background-image:url('../images/main/btn_ico_menu.png'); background-size: 15px;}
 
 /* 타이틀 */
 .main-tit-wrap{margin:40px 0;text-align:center}
@@ -2165,6 +2168,7 @@ button.btn-selbox span{font-size:15px}
 .mn-head-wrap .btn-noti{position:relative; width:37px;height:30px; background:url('../images/main/btn_ico_noti.png') no-repeat center/17px;}
 .mn-head-wrap .btn-noti .new{position:absolute;top:3px;right:7px;width:11px;height:11px;background:url('../images/main/ico_noti_new.png') no-repeat center/10px; border-radius:50%}
 .mn-head-wrap .btn-menu{width:37px;height:30px;background:url('../images/common/btn_ico_menu.png') center/17px no-repeat;}
+.mn-head-wrap .btn-menu02{width:37px;height:30px;background:url('../images/common/btn_ico_menu.png') center/17px no-repeat;}
 
 /* 로그인 - 나의 보증 정보 */
 .mn-my-info{position:relative; display: flex;justify-content: space-between; margin:23px 0 10px; padding: 0 20px;}
