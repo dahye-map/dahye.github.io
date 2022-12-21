@@ -2650,7 +2650,7 @@ button.btn-selbox span{font-size:15px}
 
 /* gnb 메뉴 클릭 시 메뉴  */
 .active{left: 0 !important;}
-.gnb-wrapper{display: none; position: fixed;left: 100%; top: 0; z-index: 100;width: 100%;min-width: 360px; height: 100vh; background-color: #fff;}
+.gnb-wrapper{position: fixed;left: 100%; top: 0; z-index: 100;width: 100%;min-width: 360px; height: 100vh; background-color: #fff;}
 /* gnb-header */
 .gnb-header{position: relative;padding:0 40px 30px;background-color: #477ebd;}
 .h-right{height: 49px;}

@@ -159,7 +159,7 @@
             <h1><span class="blind">모바일 HUG 안심전세 본인인증</span></h1>
           </div>
           <div class="btn-right">
-            <a href="javascript:;" aria-label="전체메뉴 닫기" class="btn-ico close-btn" onclick="gnbMenu.close()"><span class="blind">전체메뉴 닫기</span></a>
+            <a href="javascript:;" aria-label="전체메뉴 닫기" class="btn-ico close-btn"><span class="blind">전체메뉴 닫기</span></a>
           </div>
         </div>    
 
@@ -198,13 +198,14 @@
     </div>
 
 <script>
-  $(document).ready(function(){
-    $('.btn-menu').click(function(){
-      $('.gnb-wrapper').toggleClass('active');
 
-      
-    });
-  })
+	$('.btn-menu').on('click', function(){
+		$('.gnb-wrapper').addClass('active');
+	})
+
+	$('.close-btn').on('click', function(){
+		$('gnb-wrapper').removeClass('active');
+	})
 </script>    
 
   </body>
