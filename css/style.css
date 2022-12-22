@@ -8,6 +8,7 @@
 .txt-wrap .txt.type03 { font-size:15px; line-height:20px; }
 
 .fc-black { font-size:inherit; color:#000; }
+.like-txt { font-size:inherit; color:#009edb; font-weight:bold; }
 hr { background:#f2f2f2; height:10px; border:0; margin:0; padding:0; }
 
 .btn-primary.bg-green { background:#2d827a; border-color:#2d827a; }
