@@ -292,8 +292,8 @@ hr { background:#f2f2f2; height:10px; border:0; margin:0; padding:0; }
 .my-page-wrap .data-wrap .data-list.type04 .data-txt { font-weight:400; }
 .my-page-wrap .data-wrap .data-list .data-txt.highlight { color:#0d6fb8; }
 .my-page-wrap .data-wrap .data-list.type05 { padding-top:20px; border-top:1px solid #ddd; }
-.my-page-wrap .data-wrap .data-list.type05 .data-tit { width:50%; color:#222; }
+.my-page-wrap .data-wrap .data-list.type05 .data-tit { width:60%; color:#222; }
 .my-page-wrap .data-wrap .data-list.type05 .data-tit .fc-red { font-size:13px; }
-.my-page-wrap .data-wrap .data-list.type05 .data-txt { width:50%; vertical-align:top; }
+.my-page-wrap .data-wrap .data-list.type05 .data-txt { width:40%; vertical-align:top; }
 .btn-data { min-width:67px; width:auto; height:28px; padding:4px 0 5px; border:1px solid #666; border-radius:2px; color:#222; font-size:13px; }
 .my-page-wrap .btn-type07 { height:40px; line-height:40px; }
