@@ -66,6 +66,9 @@ iframe[name=google_conversion_frame], iframe[name=txnIdGetterFrame]{display:none
 .mt-50{margin-top:50px !important}
 .mb-30{margin-bottom:30px !important}
 .ml-5 {margin-left: 5px !important;}
+/* s: 안심전세  */
+.mb-0{margin-bottom:0px !important;}
+/* // e: 안심전세  */
 
 .pt-0{padding-top:0px !important}
 .pt-10 {padding-top: 10px !important;}
@@ -1673,6 +1676,15 @@ button.btn-selbox span{font-size:15px}
 .view-wrap .view-cont .common-answer { background:#f8f8f8; border:1px solid #ddd; padding:15px; margin-top:20px; }
 .view-wrap .view-cont .common-answer .answer { font-size:14px; line-height:20px; color:#222; }
 /* //e:안심전세 추가 (2) */
+
+/* s:안심전세 추가 (3) */
+.view-wrap .view-tit.check{border-bottom:1px solid #222;}
+.view-wrap .view-txt-wrap{display:flex;align-items:center;padding-top:20px;}
+.view-wrap .view-txt-wrap .info-txt01{color:#555;padding-right:10px;}
+.view-wrap .view-txt-wrap .info-txt02{color:#222;}
+.view-txt-wrap .info-txt02.active{color:#2d93d0;}
+/* // e:안심전세 추가 (3) */
+
 
 .view-wrap .view-form textarea {min-height:293px;padding:0px 13px 10px;line-height:1.5;font-size:14px;color:#222;border:0}
 .view-wrap .view-file{padding:15px;font-size:0;background:#f8f8f8;border:1px solid #ddd;border-radius:3px}

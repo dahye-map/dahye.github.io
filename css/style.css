@@ -148,6 +148,15 @@ hr { background:#f2f2f2; height:10px; border:0; margin:0; padding:0; }
 .consult .view-wrap .view-cont { margin:10px 0 20px; padding:20px 0 20px 15px; border-top:1px solid #555; border-bottom:1px solid #e3e3e3; }
 .consult .view-wrap .view-cont textarea { height:322px; padding-right:15px; border:0; }
 
+/* s: 20221222 추가 */
+.consult-noti-wrap.type02{margin-top:10px;margin-bottom:0;padding-bottom:0px;background:#f8f8f8;border: 1px solid #ddd;}
+.consult-noti-wrap.type02 ul{height: 60px;margin: 15px;padding:0 10px 0 0;border: none;}
+.consult-noti-wrap.type02 ul li{font-size: 14px;letter-spacing:-0.35px;color:#222;white-space:pre-line;}
+.consult-noti-wrap.type02.bg-white{background: #fff;}
+.consult-noti-wrap.type02.bg-white ul{background: #fff;}
+.consult-noti-wrap.type02.bg-white ul li{color:#555;}
+/*//e: 20221222 추가 */
+
 /* 결제 */
 .pay-wrap ul { display:flex; gap:10px; margin-top:20px; }
 .pay-wrap ul li { width:50%; text-align:center; }
@@ -298,3 +307,7 @@ hr { background:#f2f2f2; height:10px; border:0; margin:0; padding:0; }
 .my-page-wrap .data-wrap .data-list.type05 .data-txt { width:40%; vertical-align:top; }
 .btn-data { min-width:67px; width:auto; height:28px; padding:4px 0 5px; border:1px solid #666; border-radius:2px; color:#222; font-size:13px; }
 .my-page-wrap .btn-type07 { height:40px; line-height:40px; }
+
+/* 1:1 법률상담 신청내역 상세  */
+.btn-type07.bg-green{background:#2d827a; border-color:#2d827a;color: #fff;}
+.btn-type07.bg-green-none{border-color:#2d827a;color: #2d827a;}
