@@ -188,10 +188,10 @@ hr { background:#f2f2f2; height:10px; border:0; margin:0; padding:0; }
 .consult-noti-wrap { margin-top:26px; padding-bottom:20px; }
 .consult-noti-wrap .tit { padding-bottom:10px; text-align:center; font-size:15px; color:#222; }
 .consult-noti-wrap ul { background:#f8f8f8; height:300px; padding:20px; border:1px solid #ddd; overflow:auto; }
-.consult-noti-wrap ul::-webkit-scrollbar {
+.consult-noti-wrap > *::-webkit-scrollbar {
     width:4px;
 }
-.consult-noti-wrap ul::-webkit-scrollbar-thumb {
+.consult-noti-wrap > *::-webkit-scrollbar-thumb {
     background-color:#c2c2c2;
 }
 .consult-noti-wrap ul li { padding-bottom:20px; font-size:15px; line-height:20px; color:#555; }
@@ -199,10 +199,6 @@ hr { background:#f2f2f2; height:10px; border:0; margin:0; padding:0; }
 
 .consult .view-wrap .view-cont { margin:10px 0 20px; padding:20px 0 20px 15px; border-top:1px solid #555; border-bottom:1px solid #e3e3e3; }
 .consult .view-wrap .view-cont textarea { height:322px; padding-right:15px; border:0; }
-
-/* s: 20221222 추가 */
-
-/*//e: 20221222 추가 */
 
 /* 결제 */
 .pay-wrap ul { display:flex; gap:10px; margin-top:20px; }

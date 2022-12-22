@@ -101,6 +101,11 @@ iframe[name=google_conversion_frame], iframe[name=txnIdGetterFrame]{display:none
 .btn-primary.org, a.btn-primary.org{background:#0d6fb8;border-color:#0d6fb8} /*접근성 변경*/
 .btn-secondary.org, a.btn-secondary.org{background:#009edb;border-color:#009edb} /*접근성 변경*/
 .btn-primary, a.btn-primary{background:#004b8f;border-color:#004b8f}
+
+/* 안심전세 disabled 버튼 */
+.btn-primary.disabled, a.btn-primary.disabled {color:#fff;background:#ccc;border-color:#ccc;border-radius:0}
+
+
 .btn-secondary, a.btn-secondary{background:#0d6fb8;border-color:#0d6fb8}
 .btn-cancel.org, a.btn-cancel.org{background:#aaa;border-color:#aaa}
 .btn-cancel {background:#555;border-color:#555}
