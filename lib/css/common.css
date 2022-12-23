@@ -21,6 +21,7 @@
 .section { padding-bottom:40px; }
 .top-title { padding-bottom:40px; color:#222; font-weight:bold; font-size:32px; text-align:center; }
 .sub-title { padding-bottom:10px; font-size:18px; color:#000; font-weight:500; }
+.sub-title-btn{ padding-bottom:10px; font-size:16px; color:#fff; text-align:right; }
 
 /* table */
 .total-num { font-size:14px; padding-bottom:10px; color:#000; font-weight:500; }
@@ -31,6 +32,8 @@
 .table-wrap.type02 td { border-left:1px solid #e1e1e1; border-right:1px solid #e1e1e1; }
 .table-wrap .name { padding-left:20px; text-align:left; }
 .table-wrap .name.on a { text-decoration:underline; }
+.table-wrap.type03 th{font-weight: 500;}
+.table-wrap.type03 td:nth-of-type(1){border-top: 1px solid #222;}
 
 /* 검색 */
 .search-wrap .search { display:flex; background:#f7f8f9; padding:25px 40px; }
@@ -44,6 +47,14 @@
 .btn-wrap { margin-top:20px; }
 .btn { display:inline-block; font-weight:400; }
 .btn.btn-search { background:#009edb; width:120px; height:30px; line-height:30px; color:#fff; font-size:16px; border-radius:4px; }
+.paging-btn-wrap{ margin-top:9px; display:flex; justify-content:center; gap:10px;}
+.paging-btn-wrap .btn{margin-right:7px; width:140px; height:48px; border-radius:24px;}
+.paging-btn-wrap a{font-size: 16px;}
+.btn.btn-consult{ background:#2d827a; width:120px;margin-left:7px; line-height:30px; color:#fff; font-size:16px; border-radius:4px;}
+.btn.btn-consult.btn-disabled{background:#aaaaaa;}
+.btn.cancel{border:1px solid #0d6fb8; background:#fff;color:#0d6fb8;}
+.btn.save{background:#d8d8d8;color:#666666;}
+.btn.complete{background:#0d6fb8;color:#fff;}
 
 /* paging */
 .paging-wrap { display:flex; align-items:center; justify-content:center; margin-top:40px; }

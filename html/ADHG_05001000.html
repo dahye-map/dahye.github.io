@@ -54,82 +54,85 @@
             <div class="container">
                 <h2 class="top-title">상담배정 내역조회</h2>
 
+                <!-- 버튼에 btn-disabled 추가시 disabled 상태가 됩니다.-->
                 <section class="section">
                     <div class="sub-title-btn">
-                      <button class="btn-consult">상담반환</button>
-                      <button class="btn btn-consult">상담반려</button>
-                      <button class="btn btn-consult">법률사례요청</button>
+                      <button class="btn btn-consult"><a href="javascript:;">상담반환</a></button>
+                      <button class="btn btn-consult"><a href="javascript:;">상담반려</a></button>
+                      <button class="btn btn-consult btn-disabled"><a href="javascript:;">법률사례요청</a></button>
                     </div>
-                    <div class="table-wrap type02">
-                      <div class="table-wrap">
+                    <div class="table-wrap type03">
                         
                         <table>
                             <caption>순번, 상담제목, 상담상태, 상담요청일, 답변일자로 구성됨</caption>
                             <colgroup>
-                                <col width="100px">
+                                <col width="280px">
                                 <col width="*">
-                                <col width="180px">
-                                <col width="200px">
-                                <col width="200px">
+                                <col width="280px">
+                                <col width="*">
                             </colgroup>
-                            <thead>
-                                <tr>
-                                    <th>순번</th>
-                                    <th>상담제목</th>
-                                    <th>상담상태</th>
-                                    <th>상담요청일</th>
-                                    <th>답변일자</th>
-                                </tr>
-                            </thead>
+
                             <tbody>
                                 <tr>
-                                    <td>1</td>
-                                    <td class="name">
-                                        <a href="">주택경매 관련 문의가 있어요</a>
+                                    <th class="name">상담제목</th>
+                                    <td colspan="3" class="name">
+                                        <input type="text">
+                                        <label for=""></label>
                                     </td>
-                                    <td>답변완료</td>
-                                    <td>2022.12.01</td>
-                                    <td>2022.12.02</td>
                                 </tr>
                                 <tr>
-                                    <td>2</td>
-                                    <td class="name on">
-                                        <a href="">법률상담이 필요해요</a>
+                                    <th class="name">상담내용</th>
+                                    <td colspan="3" class="name">
+                                        <input type="text">
+                                        <label for=""></label>
                                     </td>
-                                    <td>임시저장</td>
-                                    <td>2022.12.01</td>
-                                    <td>-</td>
                                 </tr>
                                 <tr>
-                                    <td>3</td>
+                                    <th class="name">답변상태</th>
                                     <td class="name">
-                                        <a href="">전세자금사기 당했는데 대처법 알려주세요</a>
+                                        <a href="">답변대기</a>
                                     </td>
-                                    <td>답변대기</td>
-                                    <td>2022.12.01</td>
-                                    <td>-</td>
+                                    <th class="name">상담요청일</th>
+                                    <td class="name">
+                                        <a href="">2022.11.28</a>
+                                    </td>
                                 </tr>
                                 <tr>
-                                    <td>4</td>
-                                    <td class="name">
-                                        <a href="">전세계약 시 법적으로 인지해야 할 부분이 있는지 알고싶습니다</a>
+                                    <th class="name">상담유형</th>
+                                    <td colspan="3" class="select-box name">
+
+                                        <select name="consult-list" id="">
+                                            <option value="1">대분류</option>
+                                            <option value="2">대분류</option>
+                                            <option value="3">대분류</option>
+                                        </select>
+                                        <select name="consult-list" id="">
+                                            <option value="1">대분류</option>
+                                            <option value="2">대분류</option>
+                                            <option value="3">대분류</option>
+                                        </select>
                                     </td>
-                                    <td>게시요청</td>
-                                    <td>2022.12.01</td>
-                                    <td>2022.12.02</td>
                                 </tr>
                                 <tr>
-                                    <td>5</td>
-                                    <td class="name">
-                                        <a href="">법률상담이 필요해요</a>
+                                    <th class="name">답변내용</th>
+                                    <td colspan="3"  class="name">
+                                        <textarea name="" id="" cols="30" rows="10">안녕하세요. 답변관리자입니다.
+                                            현재 선생님께서 취하실 방법은 거주하신 자택의 우선권을 가지고 있는지 확인하셔야합니다.
+                                            가까운 중구 해운대동 주민센터에 방문하셔서..</textarea>
                                     </td>
-                                    <td>임시저장</td>
-                                    <td>2022.12.01</td>
-                                    <td>-</td>
+                                </tr>
+                                <tr>
+                                    <th class="name">변호사</th>
+                                    <td class="name">
+                                        홍길동
+                                    </td>
+                                    <th class="name">답변완료일</th>
+                                    <td class="name">
+                                        2022.12.08
+                                    </td>
                                 </tr>
                             </tbody>
                         </table>
-                    </div>
                     </div>
                 </section>
 
@@ -138,7 +141,9 @@
                 <section class="section">
                     
                   <div class="paging-btn-wrap">
-                    
+                        <button class="btn cancel"><a href="javascript:;">취소</a></button>
+                        <button class="btn save"><a href="javascript:;">임시저장</a></button>
+                        <button class="btn complete"><a href="javascript:;">완료</a></button>
                   </div>
 
                     
