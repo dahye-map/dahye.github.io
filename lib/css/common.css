@@ -45,6 +45,7 @@
 .table-wrap.type02 td { border-left:1px solid #e1e1e1; border-right:1px solid #e1e1e1; }
 .table-wrap .name { padding-left:20px; text-align:left; }
 .table-wrap .name.on a { text-decoration:underline; }
+.table-wrap.type03 td{ padding-right:0;}
 
 /* 검색 */
 .search-wrap .search { display:flex; flex-wrap:wrap; background:#f7f8f9; padding:25px 40px; }
@@ -57,7 +58,8 @@
 
 /* btn */
 
-.btn-wrap { display:flex; justify-content:center; gap:10px; margin-top:20px; }
+.btn-wrap { display:flex; justify-content:center; gap:10px; margin-top:20px; margin-bottom:10px; }
+.btn-wrap.right{justify-content:right;}
 .btn { display:inline-block; font-weight:400; }
 .btn.btn-search { background:#009edb; width:120px; height:30px; line-height:30px; color:#fff; font-size:16px; border-radius:4px; }
 .btn.btn-consult{background:#2d827a; width:120px;margin-left:7px; line-height:30px; color:#fff; font-size:16px; border-radius:4px;}
