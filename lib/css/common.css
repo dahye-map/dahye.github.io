@@ -48,11 +48,12 @@
 .table-wrap .name.on a { text-decoration:underline; }
 
 /* 검색 */
-.search-wrap .search { display:flex; background:#f7f8f9; padding:25px 40px; }
+.search-wrap .search { display:flex; flex-wrap:wrap; background:#f7f8f9; padding:25px 40px; }
 .search-wrap .search .col { display:flex; align-items:center; width:50%; }
 .search-wrap .search .tit { width:118px; font-size:16px; color:#000; font-weight:500; }
 .search-wrap .search .input-wrap { width:calc(100% - 118px); }
 .input-wrap { position:relative; display:flex; align-items:center; }
+.input-wrap input { width:180px; }
 .input-wrap.date .hyphen { display:inline-block; width:14px; height:14px; margin:0 10px; }
 
 /* btn */
