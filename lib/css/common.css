@@ -26,14 +26,13 @@
 /* table */
 .total-num { font-size:14px; padding-bottom:10px; color:#000; font-weight:500; }
 .total-num span { color:#2d93d0; }
-.table-wrap table th { background:#f7f8f9; padding:13px 0 14px; color:#000; font-size:16px; border-top:1px solid #222; border-bottom:1px solid #e1e1e1; }
-.table-wrap table td { padding:13px 0; color:#333; font-size:16px; text-align:center; border-bottom:1px solid #e1e1e1; }
+.table-wrap table { border-top:1px solid #222; }
+.table-wrap table th { background:#f7f8f9; padding:13px 0 14px; color:#000; font-size:16px; border-top:1px solid #222; border-bottom:1px solid #e1e1e1; font-weight:500; }
+.table-wrap table td { padding:13px 20px; color:#333; font-size:16px; text-align:center; border-bottom:1px solid #e1e1e1; }
 .table-wrap.type02 th,
 .table-wrap.type02 td { border-left:1px solid #e1e1e1; border-right:1px solid #e1e1e1; }
 .table-wrap .name { padding-left:20px; text-align:left; }
 .table-wrap .name.on a { text-decoration:underline; }
-.table-wrap.type03 th{font-weight: 500;}
-.table-wrap.type03 td:nth-of-type(1){border-top: 1px solid #222;}
 
 /* 검색 */
 .search-wrap .search { display:flex; background:#f7f8f9; padding:25px 40px; }
