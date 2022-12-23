@@ -57,7 +57,7 @@
 .input-wrap.date .hyphen { display:inline-block; width:14px; height:14px; margin:0 10px; }
 
 /* btn */
-.btn-wrap { display:flex; gap:10px; margin-top:20px; }
+.btn-wrap { display:flex; justify-content:center; gap:10px; margin-top:20px; }
 .btn { display:inline-block; font-weight:400; }
 .btn.btn-search { background:#009edb; width:120px; height:30px; line-height:30px; color:#fff; font-size:16px; border-radius:4px; }
 .paging-btn-wrap{ margin-top:9px; display:flex; justify-content:center; gap:10px;}
@@ -108,3 +108,11 @@ input[type='radio']:checked:disabled{background:url('../../images/input_radio_DS
 .common-radio label input[disabled]{background:#eee;border:1px solid #a5a5a5}
 .common-radio label input[readonly]:checked,
 .common-radio label input[disabled]:checked{background:url('../../images/input_radio_DS.png') no-repeat 50% 50% #eee;background-size:11px 11px}
+
+/* tab */
+.tab-wrap { display:flex; margin-bottom:50px; }
+.tab-wrap .tab { background:#f7f8f9; width:50%; border:1px solid #e1e1e1; }
+.tab-wrap .tab a { display:block; padding:13px 0; font-size:16px; color:#666; text-align:center; }
+.tab-wrap .tab ~ .tab { margin-left:-1px; }
+.tab-wrap .tab.active { background:#fff; border-top:1px solid #0d6fb8; border-bottom:0; }
+.tab-wrap .tab.active a { color:#0d6fb8;  }

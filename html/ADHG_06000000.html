@@ -13,6 +13,7 @@
 <body>
     <div id="wrap">
 
+        <!-- s:header -->
         <header id="headerWrap">
             <div class="header">
                 <h1 class="logo">
@@ -31,7 +32,9 @@
                 </div>
             </div>
         </header>
+        <!-- //e:header -->
 
+        <!-- s:lnb -->
         <nav id="navWrap">
             <div class="nav">
                 <ul>
@@ -46,10 +49,17 @@
                 </ul>
             </div>
         </nav>
+        <!-- //e:lnb -->
 
+        <!-- s:containerWrap -->
         <div id="containerWrap">
             <div class="container">
-                <h2 class="top-title">법률상담 내역조회</h2>
+                <h2 class="top-title">법률상담 내역조회</h2>
+
+                <div class="tab-wrap">
+                    <div class="tab active"><a href="">단건 배정</a></div>
+                    <div class="tab"><a href="">다건 배정</a></div>
+                </div>
 
                 <section class="section">
                     <h3 class="sub-title">상담현황</h3>
@@ -136,23 +146,27 @@
                 <section class="section">
                     <div class="table-wrap">
                         <div class="total-num">
-                            총 <span>25</span>건
+                            총 <span>100</span>건
                         </div>
                         <table>
-                            <caption>순번, 상담제목, 상담상태, 상담요청일, 답변일자로 구성됨</caption>
+                            <caption>순번, 상담제목, 상담상태, 변호사, 상담요청일, 배정일자 답변일자로 구성됨</caption>
                             <colgroup>
                                 <col width="100px">
                                 <col width="*">
-                                <col width="180px">
-                                <col width="200px">
-                                <col width="200px">
+                                <col width="100px">
+                                <col width="100px">
+                                <col width="130px">
+                                <col width="130px">
+                                <col width="130px">
                             </colgroup>
                             <thead>
                                 <tr>
                                     <th>순번</th>
                                     <th>상담제목</th>
                                     <th>상담상태</th>
+                                    <th>변호사</th>
                                     <th>상담요청일</th>
+                                    <th>배정일자</th>
                                     <th>답변일자</th>
                                 </tr>
                             </thead>
@@ -163,6 +177,8 @@
                                         <a href="">주택경매 관련 문의가 있어요</a>
                                     </td>
                                     <td>답변완료</td>
+                                    <td>킹밍재</td>
+                                    <td>2022.12.01</td>
                                     <td>2022.12.01</td>
                                     <td>2022.12.02</td>
                                 </tr>
@@ -172,6 +188,8 @@
                                         <a href="">법률상담이 필요해요</a>
                                     </td>
                                     <td>임시저장</td>
+                                    <td>-</td>
+                                    <td>2022.12.01</td>
                                     <td>2022.12.01</td>
                                     <td>-</td>
                                 </tr>
@@ -181,6 +199,8 @@
                                         <a href="">전세자금사기 당했는데 대처법 알려주세요</a>
                                     </td>
                                     <td>답변대기</td>
+                                    <td>-</td>
+                                    <td>2022.12.01</td>
                                     <td>2022.12.01</td>
                                     <td>-</td>
                                 </tr>
@@ -190,6 +210,8 @@
                                         <a href="">전세계약 시 법적으로 인지해야 할 부분이 있는지 알고싶습니다</a>
                                     </td>
                                     <td>게시요청</td>
+                                    <td>-</td>
+                                    <td>2022.12.01</td>
                                     <td>2022.12.01</td>
                                     <td>2022.12.02</td>
                                 </tr>
@@ -199,6 +221,8 @@
                                         <a href="">법률상담이 필요해요</a>
                                     </td>
                                     <td>임시저장</td>
+                                    <td>-</td>
+                                    <td>2022.12.01</td>
                                     <td>2022.12.01</td>
                                     <td>-</td>
                                 </tr>
@@ -221,6 +245,7 @@
 
             </div>
         </div>
+        <!-- //e:containerWrap -->
 
     </div>
 </body>
