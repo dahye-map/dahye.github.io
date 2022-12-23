@@ -51,9 +51,7 @@
 
 /* =================================== reset =================================== */
 html, body {
-    overflow-x:hidden;
     font:14px 'Noto Sans KR',sans-serif;
-
 }
 html, body, pre,
 h1, h2, h3, h4, h5, h6,
@@ -69,6 +67,7 @@ input, select, textarea, button {
 h1, h2, h3, h4, h5, h6 {
     font-weight: normal;
 }
+
 img, fieldset,button {
     border:0 none;
 }
@@ -85,7 +84,7 @@ hr, caption, legend {
 a {
     text-decoration: none;
     outline:none;
-    color:#000;
+    color:inherit;
 }
 :focus { outline:none; }
 
@@ -94,6 +93,7 @@ a:active,
 a:focus {text-decoration:none;}
 
 button {
+    font-family:'Noto Sans KR',sans-serif;
     overflow: hidden;
     cursor: pointer;
 }
@@ -106,9 +106,18 @@ address, em {
 button, input, select, textarea, a {
     vertical-align: middle;
 }
+
+input, select, textarea, optgroup { margin:0; width:100%; border:1px solid #999; background:#fff; outline:none; box-shadow:none;vertical-align:middle; -webkit-appearance:none; -moz-appearance:none;appearance:none; color:#222; font-family:'Noto Sans KR',sans-serif; padding:0 20px; }
+
+input { 
+    height:30px; 
+    line-height:30px; 
+}
 select {
-    line-height: 18px;
-    height: 18px;
+    position:relative;
+    line-height:30px;
+    height:30px;
+    background:#fff url(../../images/icon_arrow_downward_s@3x.png) 95% center no-repeat; background-size:16px;
 }
 input:focus {
     outline: none;
@@ -121,6 +130,24 @@ table {
     word-wrap: break-word;
     word-break: keep-all;
 }
+::placeholder { color:#8e8e8e; }
+input:-webkit-placeholder { color:#8e8e8e; opacity:1; }
+input:-moz-placeholder { color:#8e8e8e; opacity:1; }
+input:-ms-input-placeholder { color:#8e8e8e; }
+
+
+
+input:disabled, select:disabled, textarea:disabled, optgroup:disabled{ background:#eaeaea; color:#222; }
+input[type="date"] { width:180px; }
+input[type="date"]::-webkit-inner-spin-button,
+input[type="date"]::-webkit-calendar-picker-indicator {
+    width:20px; height:20px; background: url(../../images/icon_calendar@3x.png) right center no-repeat; background-size:20px;
+}
+
+select::-ms-expand{display:none}
+/* select::after { content:''; display:block; position:absolute; right:20px; top:50%; width:16px; height:16px; background:url(../../images/icon_arrow_downward_s@3x.png) right center no-repeat; background-size:16px; transform:translateY(-50%); } */
+textarea{overflow:auto;resize:none}
+
 
 *,
 *:before,
@@ -171,3 +198,5 @@ table {
 .pb-10 { padding-bottom: 10px; }
 .pb-15 { padding-bottom: 15px; }
 .pb-20 { padding-bottom: 20px; }
+
+.blind{position:absolute;width:1px;height:1px; overflow: hidden; clip:rect(0, 0, 0, 0)}
