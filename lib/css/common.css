@@ -134,11 +134,10 @@ input[type='radio']:checked:disabled{background:url('../../images/input_radio_DS
 .layerpop-wrap .pop-header { display:flex; align-items:center; justify-content:space-between; background:#0d6fb8; height:60px; padding:0 40px; }
 .layerpop-wrap .pop-header .tit { font-size:22px; color:#fff; font-weight:500; }
 .layerpop-wrap .pop-header .pop-close { width:22px; height:22px; background:url(../../images/icon_popup_close.svg) center no-repeat; background-size:100%; }
-.layerpop-wrap .pop-con { background:#fff; padding:40px; }
+.layerpop-wrap .pop-con { background:#fff; padding:40px 40px 30px; }
 .layerpop-wrap .pop-con .txt { padding-bottom:40px; font-size:18px; color:#333; }
 .layerpop-wrap .pop-con .txt span { font-size:14px; color:#666; }
 .layerpop-wrap .etc { display:flex; }
-.layerpop-wrap .etc span { width:calc(100% - 420px); }
 .layerpop-wrap .etc input { width:420px; margin-left:20px; }
 .layerpop-wrap .btn-wrap { margin-top:40px; }
 
