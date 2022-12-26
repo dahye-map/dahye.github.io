@@ -47,6 +47,22 @@
 .table-wrap .name.on a { text-decoration:underline; }
 .table-wrap.type03 td{ padding-right:0;}
 
+/* table - textarea */
+.table-wrap .txt-wrap > *::-webkit-scrollbar{width:4px; }
+.table-wrap .txt-wrap > *::-webkit-scrollbar-thumb{background:#c2c2c2;}
+.table-wrap .txt-wrap{padding:20px 10px 20px 0; height:200px; background:#eaeaea; overflow:inherit; border:none;}
+.table-wrap .txt-wrap.white{background:#fff; border:1px solid #999;}
+.table-wrap.type03 textarea{ height:135px; font-size:16px; color:#222; letter-spacing:-0.32px; word-break:break-all; line-height:26px; }
+.table-wrap .line-txt{ background:#eaeaea; overflow:auto; border:none;}
+.table-wrap .line-txt.small{padding:3px 20px; height:30px; overflow:hidden;}
+.table-wrap .line-txt.white{background:#fff;}
+.table-wrap .select-box{display:flex;  gap:20px; align-items:center;}
+.table-wrap .select-box select{width:calc((100% - 86px) / 3); font-size:16px; color:#8e8e8e;}
+
+/*  table - 경고 표시 */
+.red-dot{ display:inline-block; position:absolute; padding-left:4px; font-size:16px; color:#c82a82;}
+.warning-txt{font-size:14px; color:#009edb; text-align:left;}
+
 /* 검색 */
 .search-wrap .search { display:flex; flex-wrap:wrap; background:#f7f8f9; padding:25px 40px; }
 .search-wrap .search .col { display:flex; align-items:center; width:50%; }
@@ -68,7 +84,7 @@
 .btn-lg.btn-cancle { background:#aaa; }
 .btn-lg.btn-login { background:#0d6fb8; }
 .btn-md { width:140px; height:48px; line-height:48px; border-radius:24px; font-size:16px; text-align:center; }
-.btn-md.btn-white { border:1px solid #0d6fb8; color:#0d6fb8; }
+.btn-md.btn-white { border:1px solid #0d6fb8; color:#0d6fb8; background: #fff; }
 .btn-md.btn-gray { background:#d8d8d8; color:#666; }
 .btn-md.btn-blue { background:#0d6fb8; color:#fff; }
 
@@ -114,3 +130,4 @@ input[type='radio']:checked:disabled{background:url('../../images/input_radio_DS
 .tab-wrap .tab ~ .tab { margin-left:-1px; }
 .tab-wrap .tab.active { background:#fff; border-top:1px solid #0d6fb8; border-bottom:0; }
 .tab-wrap .tab.active a { color:#0d6fb8;  }
+
