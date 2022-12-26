@@ -100,6 +100,7 @@
 .btn.add{padding:3px 16px 3px 38px; color:#fff; text-align: right; border-radius:4px; font-size:16px; background:url(../../images/icon_plus.png) no-repeat 16px/16px #666; }
 .btn.add.excel{background:url(../../images/icon_download.svg) no-repeat 16px/16px #666; }
 .btn.add.enroll{background:url(../../images/icon_create.png) no-repeat 16px/16px #666; }
+.btn-wrap.modifying{}
 
 /* paging */
 .paging-wrap { display:flex; align-items:center; justify-content:center; margin-top:40px; }
