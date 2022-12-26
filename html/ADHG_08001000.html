@@ -12,10 +12,8 @@
     <script src="../lib/js/ui.js"></script>
 </head>
 <style>
-  .textarea-wrap.lg{height:392px;}
-  .btn.add{width: 112px;color:#fff; padding-right:16px;text-align: right; font-size:16px;background:url(../../images/icon_plus.png) #666; background-repeat:no-repeat; background-size:16px;}
-.file{display:inline-block; visibility:visible; width:16px; height:16px;}
-.add-wrap input{width:156px;}
+ 
+
 </style>
 <body>
     <div id="wrap">
@@ -78,19 +76,23 @@
 
                             <tbody>
                                 <tr>
-                                    <th>상담제목</th>
+                                    <th>공지제목</th>
                                     <td colspan="3">
-                                        <input type="text" value="부산시 소액임차 최우선 변제금 문의">
+                                      <label>
+                                        <input type="text" value="시스템정비 작업 공지">
+                                        <span class="blind">시스템정비 작업 공지</span>
+                                      </label>
+
                                     </td>
                                 </tr>
                                 <tr>
-                                    <th>상담내용</th>
+                                    <th>공지내용</th>
                                     <td colspan="3">
                                         <div class="textarea-wrap lg">
-                                            <textarea name="inquiry" id="" cols="30" rows="10">시스템 기능 개선작업을 위하여 다음과 같이 안심전세 서비스를 일시적으로 중단합니다. 
+                                            <textarea name="inform" id="" cols="30" rows="10" title="공지내용">시스템 기능 개선작업을 위하여 다음과 같이 안심전세 서비스를 일시적으로 중단합니다. 
 
 □ 작업일시 
-2023년 2월 15일 수요일 18:00 ~ 24:00 (6시간)
+2023년 2월 15일 수요일 18:00 ~ 24:00 (6시간)
                                             </textarea>
                                         </div>
                                     </td>
@@ -99,12 +101,12 @@
                                     <th>게시여부</th>
                                     <td>
                                         <div class="common-radio">
-                                          <label for="">
-                                            <input type="radio" name="" >
+                                          <label>
+                                            <input type="radio" name="click" title="미게시 버튼">
                                             <span>미게시</span>
                                           </label>
-                                          <label for="">
-                                            <input type="radio" name="" checked>
+                                          <label>
+                                            <input type="radio" name="click" title="게시 버튼" checked>
                                             <span>게시</span>
                                           </label>
                                         </div>
@@ -113,7 +115,7 @@
                                     <td>
                                         <div class="btn-wrap add-wrap">
                                           <label for="">
-                                            <input type="text">
+                                            <input type="text" name="file" title="첨부파일등록">
                                           </label>
                                           
                                           <button type="button" class="btn add"> 파일추가</button>
@@ -122,11 +124,11 @@
                                 </tr>
                                 
                                 <tr>
-                                    <th>변호사</th>
+                                    <th>공지작성자</th>
                                     <td>
                                         홍길동
                                     </td>
-                                    <th>답변완료일</th>
+                                    <th>공지작성일</th>
                                     <td>
                                         2022.12.08
                                     </td>
