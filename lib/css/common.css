@@ -53,11 +53,17 @@
 .table-wrap .txt-wrap{padding:20px 10px 20px 0; height:200px; background:#eaeaea; overflow:inherit; border:none;}
 .table-wrap .txt-wrap.white{background:#fff; border:1px solid #999;}
 .table-wrap.type03 textarea{ height:135px; font-size:16px; color:#222; letter-spacing:-0.32px; word-break:break-all; line-height:26px; }
-.table-wrap .line-txt{ background:#eaeaea; overflow:auto; border:none;}
+.table-wrap .line-txt{ background:#eaeaea; overflow:auto; border:none; }
 .table-wrap .line-txt.small{padding:3px 20px; height:30px; overflow:hidden;}
 .table-wrap .line-txt.white{background:#fff;}
 .table-wrap .select-box{display:flex;  gap:20px; align-items:center;}
 .table-wrap .select-box select{width:calc((100% - 86px) / 3); font-size:16px; color:#8e8e8e;}
+
+.table-wrap.type04 thead th,
+.table-wrap.type04 tbody td { border-right:1px solid #e1e1e1; }
+.table-wrap.type04 thead th:last-child { padding-left:180px; text-align:left; border-right:0; }
+.table-wrap.type04 tbody td:last-child { padding-left:40px; padding-right:0; text-align:left; border-right:0; }
+
 
 /*  table - 경고 표시 */
 .red-dot{ display:inline-block; position:absolute; padding-left:4px; font-size:16px; color:#c82a82;}
@@ -130,4 +136,16 @@ input[type='radio']:checked:disabled{background:url('../../images/input_radio_DS
 .tab-wrap .tab ~ .tab { margin-left:-1px; }
 .tab-wrap .tab.active { background:#fff; border-top:1px solid #0d6fb8; border-bottom:0; }
 .tab-wrap .tab.active a { color:#0d6fb8;  }
+
+/* popup */
+.layerpop-wrap { display:none; position:absolute; left:50%; top:50%; transform:translate(-50%, -50%); z-index:30; }
+.layerpop-wrap .pop-header { display:flex; align-items:center; justify-content:space-between; background:#0d6fb8; height:60px; padding:0 40px; }
+.layerpop-wrap .pop-header .tit { font-size:22px; color:#fff; font-weight:500; }
+.layerpop-wrap .pop-header .pop-close { width:22px; height:22px; background:url(../../images/icon_popup_close.svg) center no-repeat; background-size:100%; }
+.layerpop-wrap .pop-con { background:#fff; padding:40px; }
+.layerpop-wrap .pop-con .txt { padding-bottom:40px; font-size:18px; color:#333; }
+.layerpop-wrap .etc { display:flex; }
+.layerpop-wrap .etc span { width:calc(100% - 420px); }
+.layerpop-wrap .etc input { width:420px; margin-left:20px; }
+.layerpop-wrap .btn-wrap { margin-top:40px; }
 
