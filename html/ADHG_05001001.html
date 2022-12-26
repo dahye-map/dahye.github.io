@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>안심전세 관리자</title>
+
+    <link rel="stylesheet" href="../lib/css/reset.css">
+    <link rel="stylesheet" href="../lib/css/common.css">
+    <script src="../lib/js/jquery-3.5.1.min.js"></script>
+    <script src="../lib/js/ui.js"></script>
+</head>
+<body>
+    <div id="wrap">
+
+        <!-- s:header -->
+        <header id="headerWrap">
+            <div class="header">
+                <h1 class="logo">
+                    관리자 홈페이지
+                </h1>
+
+                <div class="util-wrap">
+                    <ul>
+                        <li>
+                            <a href=""><span>홍길동님</span></a>
+                        </li>
+                        <li class="logout">
+                            <a href=""><span>로그아웃</span></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+        <!-- //e:header -->
+
+        <!-- s:nav -->
+        <nav id="navWrap">
+            <div class="nav">
+                <ul>
+                    <li><a href="">관리자 설정</a></li>
+                    <li><a href="">권한 관리</a></li>
+                    <li><a href="" class="active">상담배정 내역조회</a></li>
+                    <li><a href="">법률상담 내역조회</a></li>
+                    <li><a href="">고객관리</a></li>
+                    <li><a href="">공지사항 관리</a></li>
+                    <li><a href="">접속통계 관리</a></li>
+                    <li><a href="">이용통계 관리</a></li>
+                </ul>
+            </div>
+        </nav>
+        <!-- //e:nav -->
+
+        <!-- s:containerWrap -->
+        <div id="containerWrap">
+            <div class="container">
+
+            </div>
+        </div>
+        <!-- //e:containerWrap -->
+
+    </div>
+
+    <!-- s:레이어팝업 - 상담반환 -->
+    <div class="layerpop-wrap" id="pop01" style="width:900px;">
+        <div class="layerpop">
+            <div class="pop-header">
+                <p class="tit">상담반환</p>
+                <a href="" class="pop-close"><span class="팝업닫기"></span></a>
+            </div>
+            <div class="pop-con">
+                <p class="txt">해당 상담건이 상담이 불가한 사유를 선택 및 입력해 주세요.</p>
+
+                <div class="table-wrap type04">
+                    <table>
+                        <caption>선택, 넘버, 반환사유로 구성된 상담반환 내용</caption>
+                        <colgroup>
+                            <col width="100px">
+                            <col width="110px">
+                            <col width="*">
+                        </colgroup>
+                        <thead>
+                            <tr>
+                                <th>선택</th>
+                                <th>No.</th>
+                                <th>반환사유</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <div class="common-radio">
+                                        <label>
+                                            <input type="radio" name="rdo1">
+                                            <span class="blind">반환사유1</span>
+                                        </label>
+                                    </div>
+                                </td>
+                                <td>1</td>
+                                <td>답변관리자 판단상 조건에 미 충족한 질의인 경우</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="common-radio">
+                                        <label>
+                                            <input type="radio" name="rdo1">
+                                            <span class="blind">반환사유2</span>
+                                        </label>
+                                    </div>
+                                </td>
+                                <td>2</td>
+                                <td>장기간 답변이 어려운 상황인 경우</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="common-radio">
+                                        <label>
+                                            <input type="radio" name="rdo1">
+                                            <span class="blind">반환사유3</span>
+                                        </label>
+                                    </div>
+                                </td>
+                                <td>3</td>
+                                <td>해당 질의가 다른 답변관리자에게 이동이 필요한 경우</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="common-radio">
+                                        <label>
+                                            <input type="radio" name="rdo1">
+                                            <span class="blind">반환사유4</span>
+                                        </label>
+                                    </div>
+                                </td>
+                                <td>4</td>
+                                <td>답변관리자가 퇴사하는 경우</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="common-radio">
+                                        <label>
+                                            <input type="radio" name="rdo1">
+                                            <span class="blind">반환사유5</span>
+                                        </label>
+                                    </div>
+                                </td>
+                                <td>5</td>
+                                <td class="etc">
+                                    <span>위 사유 외 기타 작성</span>
+                                    <input type="text" name="" id="" placeholder="50자 내 입력 가능">
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="btn-wrap">
+                    <button type="button" class="btn btn-md btn-gray">닫기</button>
+                    <button type="button" class="btn btn-md btn-blue">확인</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- //e:레이어팝업 - 상담반환 -->
+
+    <script>
+        openPopup('pop01');
+    </script>
+</body>
+</html>
