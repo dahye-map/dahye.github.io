@@ -69,9 +69,9 @@
                             <caption>공지제목, 공지내용, 게시여부, 변호사, 첨부파일, 답변완료일로 구성됨</caption>
                             <colgroup>
                                 <col width="280px">
-                                <col width="*">
+                                <col width="320px">
                                 <col width="280px">
-                                <col width="*">
+                                <col width="298px">
                             </colgroup>
 
                             <tbody>
@@ -91,8 +91,8 @@
                                         <div class="textarea-wrap lg">
                                             <textarea name="inform" id="" cols="30" rows="10" title="공지내용">시스템 기능 개선작업을 위하여 다음과 같이 안심전세 서비스를 일시적으로 중단합니다. 
 
-□ 작업일시 
-2023년 2월 15일 수요일 18:00 ~ 24:00 (6시간)
+                                            □ 작업일시 
+                                            2023년 2월 15일 수요일 18:00 ~ 24:00 (6시간)
                                             </textarea>
                                         </div>
                                     </td>
@@ -113,12 +113,10 @@
                                     </td>
                                     <th>첨부파일</th>
                                     <td>
-                                        <div class="btn-wrap add-wrap">
-                                          <label for="">
-                                            <input type="text" name="file" title="첨부파일등록">
-                                          </label>
-                                          
-                                          <button type="button" class="btn add"> 파일추가</button>
+                                        <div class="add-wrap file-wrap">
+                                            <input type="text" id="fileName" name="file" title="첨부파일등록">
+                                            <button type="button" class="btn add"> 파일추가</button>
+                                            <input type="file" name="attach" id="attach" class="input-file-hidden" onchange="javascript:document.getElementById('fileName').value = this.value">
                                         </div>
                                     </td>
                                 </tr>
