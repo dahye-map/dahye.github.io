@@ -79,7 +79,7 @@
                                     <th>공지제목</th>
                                     <td colspan="3">
                                       <label>
-                                        <input type="text" value="시스템정비 작업 공지">
+                                        <input type="text" value="시스템정비 작업 공지" readonly>
                                         <span class="blind">시스템정비 작업 공지</span>
                                       </label>
 
@@ -88,8 +88,8 @@
                                 <tr>
                                     <th>공지내용</th>
                                     <td colspan="3">
-                                        <div class="textarea-wrap lg">
-                                            <textarea name="inform" id="" cols="30" rows="10" title="공지내용">시스템 기능 개선작업을 위하여 다음과 같이 안심전세 서비스를 일시적으로 중단합니다. 
+                                        <div class="textarea-wrap lg readonly">
+                                            <textarea name="inform" id="" cols="30" rows="10" title="공지내용" readonly>시스템 기능 개선작업을 위하여 다음과 같이 안심전세 서비스를 일시적으로 중단합니다. 
 
                                             □ 작업일시 
                                             2023년 2월 15일 수요일 18:00 ~ 24:00 (6시간)
@@ -102,11 +102,11 @@
                                     <td>
                                         <div class="common-radio">
                                           <label>
-                                            <input type="radio" name="click" title="미게시 버튼">
+                                            <input type="radio" name="click" title="미게시 버튼" readonly>
                                             <span>미게시</span>
                                           </label>
                                           <label>
-                                            <input type="radio" name="click" title="게시 버튼" checked>
+                                            <input type="radio" name="click" title="게시 버튼" checked readonly>
                                             <span>게시</span>
                                           </label>
                                         </div>
@@ -114,7 +114,7 @@
                                     <th>첨부파일</th>
                                     <td>
                                         <div class="add-wrap file-wrap">
-                                            <input type="text" id="fileName" name="file" title="첨부파일등록">
+                                            <input type="text" id="fileName" name="file" title="첨부파일등록" readonly>
                                             <button type="button" class="btn add"> 파일추가</button>
                                             <input type="file" name="attach" id="attach" class="input-file-hidden" onchange="javascript:document.getElementById('fileName').value = this.value">
                                         </div>
@@ -135,19 +135,16 @@
                         </table>
                     </div>
 
-                    <!-- 공지사항 등록 시 노출되는 버튼입니다. -->
-                    <div class="btn-wrap mt-50">
-                        <button type="button" class="btn btn-md btn-white">취소</button>
-                        <button type="button" class="btn btn-md btn-blue">저장</button>
-                    </div>
+                  
 
- 
-                    <!-- 공지사항 수정 시 노출되는 버튼입니다. -->
+                    <!-- 공지사항 열람 시 노출되는 버튼입니다. -->
                     <div class="btn-wrap mt-50 modifying">
                         <button type="button" class="btn btn-md btn-white">취소</button>
-                        <button type="button" class="btn btn-md btn-white">삭제</button>
-                        <button type="button" class="btn btn-md btn-blue">저장</button>
+                        <button type="button" class="btn btn-md btn-gray">삭제</button>
+                        <button type="button" class="btn btn-md btn-blue">수정</button>
                     </div>
+
+                   
                 </section>
 
             </div>
