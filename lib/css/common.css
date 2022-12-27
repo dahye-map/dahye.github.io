@@ -11,7 +11,7 @@
 #headerWrap .header .util-wrap .logout a { padding-left:26px; margin-left:20px; background:url(../../images/icon_lock_w@3x.png) left center no-repeat; background-size:16px; }
 
 /* nav */
-#navWrap .nav { background:#f7f8f9; width:240px; height:100vh; position:fixed; left:0; top:0; padding-top:100px; border-right:1px solid #e1e1e1; }
+#navWrap .nav { background:#f7f8f9; width:240px; height:100vh; position:fixed; left:0; top:0; padding-top:100px; border-right:1px solid #e1e1e1; z-index:5; }
 #navWrap .nav ul li { border-bottom:1px solid #e1e1e1; }
 #navWrap .nav ul li a { display:block; height:60px; padding-left:40px; line-height:60px; color:#222; font-size:18px; }
 #navWrap .nav ul li a.active { background:#0087d5; color:#fff; }
