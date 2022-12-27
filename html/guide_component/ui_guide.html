@@ -11,6 +11,19 @@
     <script src="../../lib/js/jquery-3.5.1.min.js"></script>
     <script src="../../lib/js/ui.js"></script>
 
+    <style>
+        .ui-guide{ margin:50px 0; }
+        .ui-guide h1{ padding-bottom:50px; text-align:left;}
+        .ui-table{ width:100%; border:1px solid #ddd; }
+        .ui-table th, .ui-guide, .ui-table td{ padding:10px;}
+        .ui-table th{ background:#f7f7f7; font-size:20px; }
+        .ui-table p { margin-bottom:10px; }
+        .ui-table .table-txt{ margin-bottom:50px; }
+        .ui-table tr .file-guide{display: flex;}
+        .ui-table tr .file-guide > div{gap:10px;}
+        table ~ table{ margin-top:50px; }
+    </style>
+
 </head>
 <body>
     <div class="ui-guide">
@@ -190,12 +203,21 @@
                 </tr>
                 <tr>
                     <td>
-                        <p>button type (disabled 추가된 버튼)</p>
+                        <p>button type</p>
 
                         <div class="btn-wrap mt-50 modifying">
                             <button type="button" class="btn btn-md btn-white">취소</button>
-                            <button type="button" class="btn btn-md btn-gray">삭제</button>
+                            <button type="button" class="btn btn-md btn-gray" disabled>삭제</button>
                             <button type="button" class="btn btn-md btn-blue">수정</button>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>button type disable</p>
+
+                        <div class="btn-wrap mt-50 modifying">
+                            <button type="button" class="btn btn-md btn-blue" disabled>수정</button>
                         </div>
                     </td>
                 </tr>
@@ -214,9 +236,9 @@
                         <p>button type02 (오른쪽 정렬 버튼)</p>
 
                         <div class="btn-wrap right">
-                            <button type="button" class="btn btn-consult" onclick="openPopup('pop01')">상담반환</button>
+                            <button type="button" class="btn btn-consult">상담반환</button>
                             <button type="button" class="btn btn-consult">상담반려</button>
-                            <button type="button" class="btn btn-consult btn-disabled" onclick="openPopup('pop02')">법률사례요청</button>
+                            <button type="button" class="btn btn-consult btn-disabled" disabled>법률사례요청</button>
                         </div>
                     </td>
                 </tr>
@@ -288,8 +310,8 @@
             </thead>
             <tbody>
                 <tr>
-                    <td class="file-guide">
-                        <div class="add-wrap file-wrap">
+                    <td>
+                        <div class="file-wrap">
                             <input type="text" id="fileName" name="file" title="첨부파일등록" readonly="">
                             <button type="button" class="btn add"> 파일추가</button>
                             <input type="file" name="attach" id="attach" class="input-file-hidden" onchange="javascript:document.getElementById('fileName').value = this.value">
@@ -461,7 +483,7 @@
                                     </tr>
                                     <tr>
                                         <td>2</td>
-                                        <td class="name on">
+                                        <td class="name">
                                             <a href="">법률상담이&nbsp;필요해요</a>
                                         </td>
                                         <td>임시저장</td>
