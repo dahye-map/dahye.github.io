@@ -1,0 +1,8 @@
+.ui-guide{ margin:50px 0; }
+.ui-guide h1{ padding-bottom:50px; text-align:left;}
+.ui-table{ width:100%; border:1px solid #ddd; }
+.ui-table th, .ui-guide, .ui-table td{ padding:10px;}
+.ui-table th{ background:#f7f7f7; font-size:20px; }
+.ui-table p { margin-bottom:10px; }
+.ui-table .table-txt{margin-bottom:50px;}
+table ~ table{ margin-top:50px; }
