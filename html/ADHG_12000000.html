@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>안심전세 관리자</title>
+
+    <link rel="stylesheet" href="../lib/css/reset.css">
+    <link rel="stylesheet" href="../lib/css/common.css">
+    <script src="../lib/js/jquery-3.5.1.min.js"></script>
+</head>
+
+<body>
+    <div id="wrap">
+
+        <!-- s:header -->
+        <header id="headerWrap">
+            <div class="header">
+                <h1 class="logo">
+                    관리자 홈페이지
+                </h1>
+
+                <div class="util-wrap">
+                    <ul>
+                        <li class="name">
+                            <a href=""><span>홍길동님</span></a>
+                        </li>
+                        <li class="logout">
+                            <a href=""><span>로그아웃</span></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+        <!-- //e:header -->
+
+        <!-- s:lnb -->
+        <nav id="navWrap">
+            <div class="nav">
+                <ul>
+                    <li><a href="">관리자 설정</a></li>
+                    <li><a href="">권한 관리</a></li>
+                    <li><a href="">상담배정 내역조회</a></li>
+                    <li><a href="" class="active">법률상담 내역조회</a></li>
+                    <li><a href="">고객관리</a></li>
+                    <li><a href="">공지사항 관리</a></li>
+                    <li><a href="">접속통계 관리</a></li>
+                    <li><a href="">이용통계 관리</a></li>
+                </ul>
+            </div>
+        </nav>
+        <!-- //e:lnb -->
+
+        <!-- s:containerWrap -->
+        <div id="containerWrap">
+            <div class="container">
+                <h2 class="top-title">이용통계 관리</h2>
+
+                <div class="tab-wrap">
+                    <div class="tab active"><a href="">표</a></div>
+                    <div class="tab"><a href="">그래프</a></div>
+                </div>
+
+
+                <section class="section">
+                    
+                    <div class="search-wrap">
+                        <div class="search">
+                            <div class="col">
+                                <p class="tit">조회기간</p>
+                                <div class="input-wrap date">
+                                    <input type="date" id="" name="" title="조회 기간 시작 날짜" required="">
+                                    <img src="../images/icon_hyphen@3x.png" alt="" class="hyphen">
+                                    <input type="date" id="" name="" title="조회 기간 시작 날짜" required="">
+                                </div>
+                            </div>
+
+                            <div class="col">
+                                <p class="tit">서비스구분</p>
+                                <div class="common-radio radio-txt">
+                                  <label>
+                                    <input type="radio" name="click" title="진단건수 버튼" checked>
+                                    <span>진단건수</span> 
+                                  </label>
+                                  <label>
+                                    <input type="radio" name="click" title="상담건수 버튼" >
+                                   <span>상담건수</span>
+                                  </label>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <div class="btn-wrap mt-50">
+                        <button type="button" class="btn btn-md btn-blue">조회</button>
+                    </div>
+                </section>
+
+               <!-- s : 서비스 구분 선택에 따른 조회결과 그래프영역 입니다. -->
+                <section class="section">
+                   
+                  
+                </section>
+               <!-- // e : 서비스 구분 선택에 따른 조회결과 그래프영역 입니다. -->
+
+  
+            </div>
+        </div>
+        <!-- //e:containerWrap -->
+
+    </div>
+</body>
+</html>
