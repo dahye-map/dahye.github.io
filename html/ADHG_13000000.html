@@ -41,8 +41,10 @@
                 <ul>
                     <li><a href="">관리자 설정</a></li>
                     <li><a href="">권한 관리</a></li>
+                    <li><a href="">안심전세 관리</a></li>
                     <li><a href="">상담배정 내역조회</a></li>
-                    <li><a href="" class="active">법률상담 내역조회</a></li>
+                    <li><a href="">법률상담 내역조회</a></li>
+                    <li><a href="" class="active">법률사례 조회</a></li>
                     <li><a href="">고객관리</a></li>
                     <li><a href="">공지사항 관리</a></li>
                     <li><a href="">접속통계 관리</a></li>
@@ -55,12 +57,7 @@
         <!-- s:containerWrap -->
         <div id="containerWrap">
             <div class="container">
-                <h2 class="top-title">법률상담 내역조회</h2>
-
-                <div class="tab-wrap">
-                    <div class="tab"><a href="">상담 현황</a></div>
-                    <div class="tab active"><a href="">상담 배정</a></div>
-                </div>
+                <h2 class="top-title">법률사례 조회</h2>
 
                 <section class="section">
                     <h3 class="sub-title">상담조회</h3>
@@ -76,18 +73,17 @@
                                 </div>
                             </div>
                             <div class="col">
-                                <p class="tit">상담상태</p>
+                                <p class="tit">게시상태</p>
                                 <div class="input-wrap">
                                     <select name="" id="">
                                         <option value="">전체</option>
-                                        <option value="">답변대기</option>
-                                        <option value="">답변작성중</option>
-                                        <option value="">답변완료</option>
+                                        <option value="">게시</option>
+                                        <option value="">미게시</option>
                                     </select>
                                 </div>
                             </div>
                             <div class="col mt-20">
-                                <p class="tit">변호사</p>
+                                <p class="tit">상담제목</p>
                                 <div class="input-wrap">
                                     <input type="text" name="" id="" required="">
                                 </div>
@@ -105,8 +101,9 @@
                             총 <span>100</span>건
                         </div>
                         <div class="btn-wrap right">
-                            <button type="button" class="btn btn-consult">대량배정</button>
-                            <button type="button" class="btn btn-consult">대량반려</button>
+                            <button type="button" class="btn btn-consult">파일생성</button>
+                            <button type="button" class="btn btn-consult">파일업로드</button>
+                            <button type="button" class="btn btn-consult">대량게시</button>
                         </div>
                         <table>
                             <caption>순번, 상담제목, 상담상태, 변호사, 상담요청일, 배정일자 답변일자로 구성됨</caption>
@@ -226,6 +223,9 @@
                                 </tr>
                             </tbody>
                         </table>
+                        <div class="btn-wrap right mt-10">
+                            <button type="button" class="btn add enroll">법률사례 등록</button>
+                        </div>
                     </div>
 
                     <div class="paging-wrap">
@@ -270,6 +270,14 @@
                                 </tr>
                                 <tr>
                                     <th>상담내용</th>
+                                    <td colspan="3">
+                                        <div class="textarea-wrap readonly">
+                                            <textarea name="inquiry" id="" cols="30" rows="10" readonly="">부산시&nbsp;전세계약을 알아보고 있습니다. 부동산 공인중개사 김아무개가 소액임차변제금이 3천만원이라고 하는데, 부산시&nbsp;중구 해운대동을 진행할때….소액임차변제금이 3천만원이라고 하는데, 부산시&nbsp;중구 해운대동을 진행할때….소액임차변제금이 3천만원이라고 하는데, 부산시&nbsp;중구 해운대동을 진행할때….소액임차변제금이 3천만원이라고 하는데, 부산시&nbsp;중구 해운대동을 진행할때….부산시&nbsp;전세계약을 알아보고 있습니다. 부동산 공인중개사 김아무개가 소액임차변제금이 3천만원이라고 하는데, 부산시&nbsp;중구 해운대동을 진행할때….소액임차변제금이 3천만원이라고 하는데, 부산시&nbsp;중구 해운대동을 진행할때….소액임차변제금이 3천만원이라고 하는데, 부산시&nbsp;중구 해운대동을 진행할때….소액임차변제금이 3천만원이라고 하는데, 부산시&nbsp;중구 해운대동을 진행할때….부산시&nbsp;전세계약을 알아보고 있습니다. 부동산 공인중개사 김아무개가 소액임차변제금이 3천만원이라고 하는데, 부산시&nbsp;중구 해운대동을 진행할때….소액임차변제금이 3천만원이라고 하는데, 부산시&nbsp;중구 해운대동을 진행할때….소액임차변제금이 3천만원이라고 하는데, 부산시&nbsp;중구 해운대동을 진행할때….소액임차변제금이 3천만원이라고 하는데, 부산시&nbsp;중구 해운대동을 진행할때….</textarea>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>답변내용</th>
                                     <td colspan="3">
                                         <div class="textarea-wrap readonly">
                                             <textarea name="inquiry" id="" cols="30" rows="10" readonly="">부산시&nbsp;전세계약을 알아보고 있습니다. 부동산 공인중개사 김아무개가 소액임차변제금이 3천만원이라고 하는데, 부산시&nbsp;중구 해운대동을 진행할때….소액임차변제금이 3천만원이라고 하는데, 부산시&nbsp;중구 해운대동을 진행할때….소액임차변제금이 3천만원이라고 하는데, 부산시&nbsp;중구 해운대동을 진행할때….소액임차변제금이 3천만원이라고 하는데, 부산시&nbsp;중구 해운대동을 진행할때….부산시&nbsp;전세계약을 알아보고 있습니다. 부동산 공인중개사 김아무개가 소액임차변제금이 3천만원이라고 하는데, 부산시&nbsp;중구 해운대동을 진행할때….소액임차변제금이 3천만원이라고 하는데, 부산시&nbsp;중구 해운대동을 진행할때….소액임차변제금이 3천만원이라고 하는데, 부산시&nbsp;중구 해운대동을 진행할때….소액임차변제금이 3천만원이라고 하는데, 부산시&nbsp;중구 해운대동을 진행할때….부산시&nbsp;전세계약을 알아보고 있습니다. 부동산 공인중개사 김아무개가 소액임차변제금이 3천만원이라고 하는데, 부산시&nbsp;중구 해운대동을 진행할때….소액임차변제금이 3천만원이라고 하는데, 부산시&nbsp;중구 해운대동을 진행할때….소액임차변제금이 3천만원이라고 하는데, 부산시&nbsp;중구 해운대동을 진행할때….소액임차변제금이 3천만원이라고 하는데, 부산시&nbsp;중구 해운대동을 진행할때….</textarea>

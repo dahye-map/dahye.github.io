@@ -57,12 +57,12 @@
                 <h2 class="top-title">법률상담 내역조회</h2>
 
                 <div class="tab-wrap">
-                    <div class="tab"><a href="">상담 현황</a></div>
-                    <div class="tab active"><a href="">상담 배정</a></div>
+                    <div class="tab active"><a href="">상담 현황</a></div>
+                    <div class="tab"><a href="">상담 배정</a></div>
                 </div>
 
                 <section class="section">
-                    <h3 class="sub-title">상담현황</h3>
+                    <h3 class="sub-title">전체 상담현황</h3>
                     <div class="table-wrap type02">
                         <table>
                             <caption>변호사, 전체, 배정대기, 배정완료, 답변대기, 답변완료, 상담반환, 상담반려로 구성되어 있음</caption>
@@ -83,16 +83,7 @@
                             </thead>
                             <tbody>
                                 <tr>
-                                    <td>
-                                        <div class="input-wrap">
-                                            <select name="" id="">
-                                                <option value="">전체</option>
-                                                <option value="">답변대기</option>
-                                                <option value="">답변작성중</option>
-                                                <option value="">답변완료</option>
-                                            </select>
-                                        </div>
-                                    </td>
+                                    <td>전체</td>
                                     <td>25건</td>
                                     <td>6건</td>
                                     <td>4건</td>
@@ -106,129 +97,70 @@
                     </div>
                 </section>
 
-                <section class="section">
-                    <h3 class="sub-title">상담조회</h3>
-                    
-                    <div class="search-wrap">
-                        <div class="search">
-                            <div class="col">
-                                <p class="tit">조회기간</p>
-                                <div class="input-wrap date">
-                                    <input type="date" id="" name="" title="조회 기간 시작 날짜" required="">
-                                    <img src="../images/icon_hyphen@3x.png" alt="" class="hyphen">
-                                    <input type="date" id="" name="" title="조회 기간 시작 날짜" required="">
-                                </div>
-                            </div>
-                            <div class="col">
-                                <p class="tit">상담상태</p>
-                                <div class="input-wrap">
-                                    <select name="" id="">
-                                        <option value="">전체</option>
-                                        <option value="">답변대기</option>
-                                        <option value="">답변작성중</option>
-                                        <option value="">답변완료</option>
-                                    </select>
-                                </div>
-                            </div>
-                            <div class="col mt-20">
-                                <p class="tit">변호사</p>
-                                <div class="input-wrap">
-                                    <input type="text" name="" id="" required="">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="btn-wrap">
-                        <button type="button" class="btn btn-md btn-blue">조회</button>
-                    </div>
-                </section>
 
                 <section class="section">
+                    <h3 class="sub-title">변호사 별 상담현황</h3>
                     <div class="table-wrap">
-                        <div class="total-num type02">
-                            총 <span>100</span>건
-                        </div>
-                        <div class="btn-wrap right">
-                            <button type="button" class="btn btn-consult">대량배정</button>
-                            <button type="button" class="btn btn-consult">대량반려</button>
-                        </div>
                         <table>
-                            <caption>순번, 상담제목, 상담상태, 변호사, 상담요청일, 배정일자 답변일자로 구성됨</caption>
+                            <caption>변호사, 전체, 답변대기 답변작성중, 답변완료로 구성됨</caption>
                             <colgroup>
-                                <col width="100px">
+                                <col width="20%">
+                                <col width="20%">
+                                <col width="20%">
+                                <col width="20%">
                                 <col width="*">
-                                <col width="100px">
-                                <col width="100px">
-                                <col width="130px">
-                                <col width="130px">
-                                <col width="130px">
                             </colgroup>
                             <thead>
                                 <tr>
-                                    <th>순번</th>
-                                    <th>상담제목</th>
-                                    <th>상담상태</th>
                                     <th>변호사</th>
-                                    <th>상담요청일</th>
-                                    <th>배정일자</th>
-                                    <th>답변일자</th>
+                                    <th>전체</th>
+                                    <th>답변대기</th>
+                                    <th>답변작성중</th>
+                                    <th>답변완료</th>
                                 </tr>
                             </thead>
                             <tbody>
                                 <tr>
-                                    <td>1</td>
-                                    <td class="name">
-                                        <a href="">주택경매 관련 문의가 있어요</a>
-                                    </td>
-                                    <td>답변완료</td>
-                                    <td>킹밍재</td>
-                                    <td>2022.12.01</td>
-                                    <td>2022.12.01</td>
-                                    <td>2022.12.02</td>
+                                    <td>홍길동</td>
+                                    <td>20건</td>
+                                    <td>6건</td>
+                                    <td>4건</td>
+                                    <td>10건</td>
                                 </tr>
                                 <tr>
-                                    <td>2</td>
-                                    <td class="name on">
-                                        <a href="">법률상담이 필요해요</a>
-                                    </td>
-                                    <td>임시저장</td>
-                                    <td>-</td>
-                                    <td>2022.12.01</td>
-                                    <td>2022.12.01</td>
-                                    <td>-</td>
+                                    <td>킹밍제</td>
+                                    <td>20건</td>
+                                    <td>6건</td>
+                                    <td>4건</td>
+                                    <td>10건</td>
                                 </tr>
                                 <tr>
-                                    <td>3</td>
-                                    <td class="name">
-                                        <a href="">전세자금사기 당했는데 대처법 알려주세요</a>
-                                    </td>
-                                    <td>답변대기</td>
-                                    <td>-</td>
-                                    <td>2022.12.01</td>
-                                    <td>2022.12.01</td>
-                                    <td>-</td>
+                                    <td>송흥밍</td>
+                                    <td>20건</td>
+                                    <td>6건</td>
+                                    <td>4건</td>
+                                    <td>10건</td>
                                 </tr>
                                 <tr>
-                                    <td>4</td>
-                                    <td class="name">
-                                        <a href="">전세계약 시 법적으로 인지해야 할 부분이 있는지 알고싶습니다</a>
-                                    </td>
-                                    <td>게시요청</td>
-                                    <td>-</td>
-                                    <td>2022.12.01</td>
-                                    <td>2022.12.01</td>
-                                    <td>2022.12.02</td>
+                                    <td>황효찬</td>
+                                    <td>20건</td>
+                                    <td>6건</td>
+                                    <td>4건</td>
+                                    <td>10건</td>
                                 </tr>
                                 <tr>
-                                    <td>5</td>
-                                    <td class="name">
-                                        <a href="">법률상담이 필요해요</a>
-                                    </td>
-                                    <td>임시저장</td>
-                                    <td>-</td>
-                                    <td>2022.12.01</td>
-                                    <td>2022.12.01</td>
-                                    <td>-</td>
+                                    <td>김허그</td>
+                                    <td>20건</td>
+                                    <td>6건</td>
+                                    <td>4건</td>
+                                    <td>10건</td>
+                                </tr>
+                                <tr>
+                                    <td>이안심</td>
+                                    <td>20건</td>
+                                    <td>6건</td>
+                                    <td>4건</td>
+                                    <td>10건</td>
                                 </tr>
                             </tbody>
                         </table>
