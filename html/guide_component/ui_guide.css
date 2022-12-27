@@ -4,5 +4,7 @@
 .ui-table th, .ui-guide, .ui-table td{ padding:10px;}
 .ui-table th{ background:#f7f7f7; font-size:20px; }
 .ui-table p { margin-bottom:10px; }
-.ui-table .table-txt{margin-bottom:50px;}
+.ui-table .table-txt{ margin-bottom:50px; }
+.ui-table tr .file-guide{display: flex;}
+.ui-table tr .file-guide > div{gap:10px;}
 table ~ table{ margin-top:50px; }

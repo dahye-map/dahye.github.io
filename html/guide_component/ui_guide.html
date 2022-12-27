@@ -43,6 +43,22 @@
             </tbody>
         </table>
 
+        <table class="ui-table">
+            <thead>
+                <tr>
+                    <th class="ta-l">Warning txt</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+
+                        <p class="warning-txt">※&nbsp;답변 작성 시 상담유형을 필히 선택해 주세요.</p>
+                    </td>
+                </tr>
+                
+            </tbody>
+        </table>
        
 
         <!-- search guide -->
@@ -261,6 +277,25 @@
                     </td>
                 </tr>
                
+            </tbody>
+        </table>
+
+        <table class="ui-table">
+            <thead>
+                <tr>
+                    <th class="ta-l">File add</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="file-guide">
+                        <div class="add-wrap file-wrap">
+                            <input type="text" id="fileName" name="file" title="첨부파일등록" readonly="">
+                            <button type="button" class="btn add"> 파일추가</button>
+                            <input type="file" name="attach" id="attach" class="input-file-hidden" onchange="javascript:document.getElementById('fileName').value = this.value">
+                        </div>
+                    </td>
+                </tr>
             </tbody>
         </table>
 
