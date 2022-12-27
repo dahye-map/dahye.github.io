@@ -46,6 +46,9 @@
 .table-wrap .select-box { display:flex; gap:20px; align-items:center;}
 .table-wrap .select-box select { width:calc((100% - 86px) / 3); font-size:16px; color:#8e8e8e; }
 .table-wrap .select-box.type02 select { width:50%; }
+.table-wrap .etc { display:flex; gap:20px; }
+.table-wrap .etc span { width:140px; }
+.table-wrap .etc input { width:calc(100% - 140px); }
 .table-wrap table th { background:#f7f8f9; padding:13px 0 14px; color:#000; font-size:16px; border-top:1px solid #222; border-bottom:1px solid #e1e1e1; font-weight:500; }
 .table-wrap table td { padding:13px 20px; color:#333; font-size:16px; text-align:center; border-bottom:1px solid #e1e1e1; }
 .table-wrap.type02 th,
@@ -161,9 +164,6 @@ input[type='radio']:checked:disabled{background:url('../../images/input_radio_DS
 .layerpop-wrap .pop-con { background:#fff; padding:40px 40px 30px; }
 .layerpop-wrap .pop-con .txt { padding-bottom:40px; font-size:18px; color:#333; }
 .layerpop-wrap .pop-con .txt span { font-size:14px; color:#666; }
-.layerpop-wrap .etc { display:flex; }
-.layerpop-wrap .etc span { width:calc(100% - 420px); }
-.layerpop-wrap .etc input { width:420px; margin-left:20px; }
 .layerpop-wrap .btn-wrap { margin-top:40px; }
 
 /* 하단 상세보기 */
