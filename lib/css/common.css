@@ -115,7 +115,7 @@
 .btn.btn-more { font-size:16px; color:#009edb; text-decoration:underline; }
 
 .btn.btn-disabled,
-.btn:disabled { background:#d8d8d8; }
+.btn:disabled { background:#d8d8d8; color:#666; }
 
 /* paging */
 .paging-wrap { display:flex; align-items:center; justify-content:center; margin-top:40px; }
