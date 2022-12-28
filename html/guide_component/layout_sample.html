@@ -12,10 +12,14 @@
     <script src="../../lib/js/ui.js"></script>
 
     <style>
-        #navWrap .nav ul li:hover > a{ background:#0087d5; color:#fff; }
-        #navWrap .nav ul li ul.depth-menu li{ background:#fff; }
-        #navWrap .nav ul li ul.depth-menu li:last-child{ border-bottom:none; }
-        #navWrap .nav ul li ul.depth-menu li a{ padding-left:76px; font-size:16px; }
+        #navWrap .nav ul li .depth-menu li{ background:#fff; }
+        #navWrap .nav ul li .depth-menu li:last-child{ border-bottom:none; }
+        #navWrap .nav ul li .depth-menu li:nth-of-type(1){ border:none; }
+        #navWrap .nav ul li .depth-menu li:nth-of-type(1)::after{ display:block; content:''; margin:0 40px; border-bottom:1px solid #e1e1e1; }
+        #navWrap .nav ul li .depth-menu li a{ height:56px; padding-left:40px; font-size:16px; color:#666; }
+        #navWrap .nav ul li .depth-menu li a::before{ display:inline-block; content:''; margin-right:6px; width:16px; height:16px; background:url(../../images/icon_dot_img.png) no-repeat center/16px; }
+        #navWrap .nav .depth-menu > li > a.sub-active{ color:#0087d5; }
+        #navWrap .nav .depth-menu > li > a.sub-active::before{ background:url(../../images/icon_dot_bl@2x.png) no-repeat center/16px; }
     </style>
 
 </head>
@@ -50,24 +54,24 @@
                     <li><a href="">관리자 설정</a></li>
                     <li><a href="">권한 관리</a></li>
                     <li><a href="">안심전세 관리</a></li>
-                    <!-- <li><a href="" class="active">상담배정 관리</a></li> -->
                     <li class="sub-menu"><a href="javascript:void(0)" class="active">법률상담 관리</a>
+
                         <ul class="depth-menu">
-                            
                             <li><a href="">상담배정 내역조회</a></li>
-                            <li><a href="">법률상담 내역상세</a></li>
-                            
+                            <!-- sub-active class 넣으면 css가 추가됩니다. -->
+                            <li><a href="" class="sub-active">법률상담 내역상세</a></li>
                         </ul>
+
                     </li>
                     <li><a href="">고객관리</a></li>
                     <li><a href="">공지사항 관리</a></li>
                     <li class="sub-menu"><a href="javascript:void(0)">통계 관리</a>
-                        <ul class="depth-menu">
 
+                        <ul class="depth-menu">
                             <li><a href="">접속통계 관리</a></li>
                             <li><a href="">이용통계 관리</a></li>
-
                         </ul>
+
                     </li>
  
                 </ul>
