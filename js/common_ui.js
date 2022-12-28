@@ -725,3 +725,8 @@ $('.btn-close').on('click', function(){
 	$(this).parent('.tooltip').removeClass('active');
 	$(this).parent().siblings('.ico-help03').removeClass('active');
 });
+
+
+$('.btn-result').click(function(){
+	$('.total-result').addClass('active');
+});
