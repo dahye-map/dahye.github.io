@@ -18,7 +18,7 @@
         <header id="headerWrap">
             <div class="header">
                 <h1 class="logo">
-                    관리자 홈페이지
+                    <a href="./ADHG_01000000.html">관리자 홈페이지</a>
                 </h1>
 
                 <div class="util-wrap">
@@ -27,7 +27,7 @@
                             <a href=""><span>홍길동님</span></a>
                         </li>
                         <li class="logout">
-                            <a href=""><span>로그아웃</span></a>
+                            <a href="./ADLG_01000000.html"><span>로그아웃</span></a>
                         </li>
                     </ul>
                 </div>
@@ -39,25 +39,25 @@
         <nav id="navWrap">
             <div class="nav">
                 <ul>
-                    <li><a href="">관리자 설정</a></li>
-                    <li><a href="">권한 관리</a></li>
-                    <li><a href="">안심전세 관리</a></li>
+                    <li><a href="./ADHG_02000000.html">관리자 설정</a></li>
+                    <li><a href="./ADHG_03000000.html">권한 관리</a></li>
+                    <li><a href="./ADHG_04000000.html">안심전세 관리</a></li>
                     <li class="sub-menu"><a href="javascript:void(0)" class="active">법률상담 관리</a>
 
                         <ul class="depth-menu">
-                            <li><a href="">상담배정 내역조회</a></li>
+                            <li><a href="./ADHG_05000000.html" class="sub-active">상담배정 내역조회</a></li>
                             <!-- sub-active class 넣으면 css가 추가됩니다. -->
-                            <li><a href="" class="sub-active">법률상담 내역상세</a></li>
+                            <li><a href="./ADHG_06000000.html">법률상담 내역조회</a></li>
                         </ul>
 
                     </li>
-                    <li><a href="">고객관리</a></li>
-                    <li><a href="">공지사항 관리</a></li>
+                    <li><a href="./ADHG_08000000.html">고객관리</a></li>
+                    <li><a href="./ADHG_08000000.html">공지사항 관리</a></li>
                     <li class="sub-menu"><a href="javascript:void(0)">통계 관리</a>
 
                         <ul class="depth-menu">
-                            <li><a href="">접속통계 관리</a></li>
-                            <li><a href="">이용통계 관리</a></li>
+                            <li><a href="./ADHG_09000000.html">접속통계 관리</a></li>
+                            <li><a href="./ADHG_11000000.html">이용통계 관리</a></li>
                         </ul>
 
                     </li>
@@ -73,8 +73,8 @@
                 <h2 class="top-title">법률상담 내역조회</h2>
 
                 <div class="tab-wrap">
-                    <div class="tab"><a href="">상담 현황</a></div>
-                    <div class="tab active"><a href="">상담 배정</a></div>
+                    <div class="tab"><a href="./ADHG_06000000.html">상담 현황</a></div>
+                    <div class="tab active"><a href="./ADHG_07000000.html">상담 배정</a></div>
                 </div>
 
                 <section class="section">
@@ -120,9 +120,10 @@
                             <div class="total-num">
                                 총 <span>100</span>건
                             </div>
+                            <!-- 확인 필요 -->
                             <div class="btn-wrap right">
-                                <button type="button" class="btn btn-consult">대량배정</button>
-                                <button type="button" class="btn btn-consult">대량반려</button>
+                                <button type="button" class="btn btn-consult" onclick="openPopup('pop04')">대량배정</button>
+                                <button type="button" class="btn btn-consult" onclick="openPopup('pop03')">대량반려</button>
                             </div>
                         </div>
                         <!-- 제목 한 줄로(말줄임) 필요 시 name 클래스에 ellipsis 클래스 추가 -->
