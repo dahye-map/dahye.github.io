@@ -12,9 +12,15 @@
 
 /* nav */
 #navWrap .nav { background:#f7f8f9; width:240px; height:100vh; position:fixed; left:0; top:0; padding-top:100px; border-right:1px solid #e1e1e1; z-index:5; }
-#navWrap .nav ul li { border-bottom:1px solid #e1e1e1; }
-#navWrap .nav ul li a { display:block; height:60px; padding-left:40px; line-height:60px; color:#222; font-size:18px; }
-#navWrap .nav ul li a.active { background:#0087d5; color:#fff; }
+#navWrap .nav > ul > li { border-bottom:1px solid #e1e1e1; }
+#navWrap .nav > ul > li > a { display:block; height:60px; padding-left:40px; line-height:60px; color:#222; font-size:18px; }
+#navWrap .nav > ul > li > a.active { background:#0087d5; color:#fff; }
+#navWrap .nav .depth-menu li { background:#fff; padding:0 40px; }
+#navWrap .nav .depth-menu li a { display:block;  height:56px; font-size:16px; color:#666; line-height:56px; }
+#navWrap .nav .depth-menu li:nth-of-type(1) a { border-bottom:1px solid #e1e1e1; }
+#navWrap .nav .depth-menu li a::before{ display:inline-block; content:''; margin-right:6px; width:16px; height:16px; background:url(../../images/icon_dot_img.png) no-repeat center/16px; }
+#navWrap .nav .depth-menu > li > a.sub-active{ color:#0087d5; }
+#navWrap .nav .depth-menu > li > a.sub-active::before{ background:url(../../images/icon_dot_bl@2x.png) no-repeat center/16px; }
 
 /* 로그인 */
 #loginWrap .login { display:flex; flex-direction:column; justify-content:center; align-items:center;  background:#f7f8f9; width:100%; height:100vh; }
