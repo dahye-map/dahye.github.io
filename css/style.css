@@ -225,12 +225,12 @@ hr { border:0; margin:0; padding:0; background:#f2f2f2; width:100%; height:10px;
 .result-top-wrap .price-wrap { padding:20px; border-radius:10px; box-shadow:0 3px 6px 0 rgba(0, 0, 0, 0.16); background-color:#fff; }
 .result-top-wrap .price-wrap ul { display:flex; }
 .result-top-wrap .price-wrap ul li { width:50%; }
-.result-top-wrap .price-wrap ul li:last-child { padding-left:20px; border-left:1px solid #ddd; }
+.result-top-wrap .price-wrap .ico-help03 { margin-top:2px; margin-left:4px; }
 .result-top-wrap .price-wrap .name { display:inline-block; padding:0 6px; color:#fff; font-size:13px; border-radius:2px; font-weight:400; }
 .result-top-wrap .price-wrap .name.red { background:#c54239; }
 .result-top-wrap .price-wrap .name.blue { background:#3465ad; }
-.result-top-wrap .price-wrap .price { font-size:20px; color:#222; font-weight:500; }
-.result-top-wrap .price-wrap .price span { font-size:26px; font-weight:bold; }
+.result-top-wrap .price-wrap .price { padding-top:5px; font-size:20px; color:#222; font-weight:500; }
+.result-top-wrap .price-wrap .price span { font-size:30px; font-weight:bold; }
 .result-top-wrap .tb-result .title { font-size:13px; }
 
 .location-wrap { margin:40px 0; }
