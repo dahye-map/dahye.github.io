@@ -76,7 +76,7 @@
                 <section class="section">
                     <div class="btn-wrap right">
                         <button type="button" class="btn btn-consult" onclick="openPopup('pop01')">상담반환</button>
-                        <button type="button" class="btn btn-consult">상담반려</button>
+                        <button type="button" class="btn btn-consult" onclick="openPopup('pop03')">상담반려</button>
                         <button type="button" class="btn btn-consult" disabled onclick="openPopup('pop02')">법률사례요청</button>
                     </div>
                     <div class="table-wrap type03">
@@ -157,8 +157,8 @@
 
                     <div class="btn-wrap mt-50">
                         <button type="button" class="btn btn-md btn-white">취소</button>
-                        <button type="button" class="btn btn-md btn-gray">임시저장</button>
-                        <button type="button" class="btn btn-md btn-blue">완료</button>
+                        <button type="button" class="btn btn-md btn-gray" onclick="location.href='ADHG_05000000.html'">임시저장</button>
+                        <button type="button" class="btn btn-md btn-blue" onclick="location.href='ADHG_05000000.html'">완료</button>
                     </div>
                 </section>
 
@@ -344,5 +344,167 @@
         </div>
     </div>
     <!-- //e:레이어팝업 - 법률사례요청 -->
+
+    <!-- s:레이어팝업 - 상담반려 -->
+    <div class="layerpop-wrap" id="pop03" style="width:1260px;">
+        <div class="layerpop">
+            <div class="pop-header">
+                <p class="tit">상담반려</p>
+                <a href="" class="pop-close"><span class="팝업닫기"></span></a>
+            </div>
+            <div class="pop-con">
+                <p class="txt">해당 상담건이 상담이 불가한 사유를 선택 및 입력해 주세요.</p>
+
+                <div class="table-wrap type04">
+                    <table>
+                        <caption>선택, 넘버, 반려사유로 구성된 상담반환 내용</caption>
+                        <colgroup>
+                            <col width="100px">
+                            <col width="110px">
+                            <col width="*">
+                        </colgroup>
+                        <thead>
+                            <tr>
+                                <th>선택</th>
+                                <th>No.</th>
+                                <th>반려사유</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <div class="common-radio">
+                                        <label>
+                                            <input type="radio" name="rdo1">
+                                            <span class="blind">반려사유1</span>
+                                        </label>
+                                    </div>
+                                </td>
+                                <td>1</td>
+                                <td>전∙월세 계약 및 임대보증금 미반환 사기와 관련 없는 질의</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="common-radio">
+                                        <label>
+                                            <input type="radio" name="rdo1">
+                                            <span class="blind">반려사유2</span>
+                                        </label>
+                                    </div>
+                                </td>
+                                <td>2</td>
+                                <td>개인이 아닌 각종 단체의 질의(행정기관, 공법인, 대기업∙중소기업, 재건축조합, 노동조합, 입주자대표회의, 아파트∙상가∙집합건문관리소, 종중, 사단법인, 재단법인)</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="common-radio">
+                                        <label>
+                                            <input type="radio" name="rdo1">
+                                            <span class="blind">반려사유3</span>
+                                        </label>
+                                    </div>
+                                </td>
+                                <td>3</td>
+                                <td>행정기관∙법원의 처분 및 판결결과 등에 대한 탄원성 질의</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="common-radio">
+                                        <label>
+                                            <input type="radio" name="rdo1">
+                                            <span class="blind">반려사유4</span>
+                                        </label>
+                                    </div>
+                                </td>
+                                <td>4</td>
+                                <td>단순히 사실관계만 기재하는 등 질문의 취지가 파악되지 않는 질의, 내용이 지나치게 짧아 답변에 필요한 최소한의 분량에 미치지 못하는 질의</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="common-radio">
+                                        <label>
+                                            <input type="radio" name="rdo1">
+                                            <span class="blind">반려사유5</span>
+                                        </label>
+                                    </div>
+                                </td>
+                                <td>5</td>
+                                <td>구체적 법적 문제의 해결을 위한 것이 아닌 단순 학리학 해석을 구하는 질의</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="common-radio">
+                                        <label>
+                                            <input type="radio" name="rdo1">
+                                            <span class="blind">반려사유6</span>
+                                        </label>
+                                    </div>
+                                </td>
+                                <td>6</td>
+                                <td>수사기관의 수사가 진행중인 사안∙행정기관 및 법원에 계속중인 사안에 대하여, 처분 또는 판결내용에 대한 예상 등을 구하거나 일반적인 대응 방안에 대한 질의</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="common-radio">
+                                        <label>
+                                            <input type="radio" name="rdo1">
+                                            <span class="blind">반려사유7</span>
+                                        </label>
+                                    </div>
+                                </td>
+                                <td>7</td>
+                                <td>관할 시 ∙ 군 ∙ 구청, 경찰청, 검찰청, 관할법원 및 기타 주무관청 등에 문의함이 타당한 질의 (단순 실무상 절차∙구비서류등에 대한 질의, 공단의 소관사항이 아닌 시안에 대한 질의 등)</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="common-radio">
+                                        <label>
+                                            <input type="radio" name="rdo1">
+                                            <span class="blind">반려사유8</span>
+                                        </label>
+                                    </div>
+                                </td>
+                                <td>8</td>
+                                <td>강제집행면탈, 조세포탈 등 반사회질서에 해당하는 질의</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="common-radio">
+                                        <label>
+                                            <input type="radio" name="rdo1">
+                                            <span class="blind">반려사유9</span>
+                                        </label>
+                                    </div>
+                                </td>
+                                <td>9</td>
+                                <td>기타 안심전세 법률상담의 운영 취지상 답변이 부적절하다고 판단되는 내용의 질의</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="common-radio">
+                                        <label>
+                                            <input type="radio" name="rdo1">
+                                            <span class="blind">반려사유10</span>
+                                        </label>
+                                    </div>
+                                </td>
+                                <td>10</td>
+                                <td class="etc">
+                                    <span>위 사유 외 기타 작성</span>
+                                    <input type="text" name="" id="" placeholder="50자 내 입력 가능">
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="btn-wrap mt-20">
+                    <button type="button" class="btn btn-md btn-gray">닫기</button>
+                    <button type="button" class="btn btn-md btn-blue">확인</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- //e:레이어팝업 - 상담반려 -->
 </body>
 </html>
