@@ -733,18 +733,18 @@ $('.btn-result').click(function(){
 
 //근저당권 설정액 추가 삭제
 var insert_html = $('.add-list-wrap ul').html();
-var maxAppend = 1;
+var max_append = 1;
 $('.add-list-wrap .btn-add').on('click', function(){
 	// 5번 째부터는 append 막기
-	if (maxAppend >= 5) {
+	if (max_append >= 5) {
 		//최대 5개까지 입력 가능 alert
 		LayerPopup.open('pop02', this);
 		return;
 	} 
 	$(this).next().append(insert_html);
-	maxAppend++;
+	max_append++;
 });
 $('.add-list-wrap').on('click', '.btn-delete', function() {
 	$(this).parent().parent('li').remove()
-	maxAppend--;
+	max_append--;
 });
