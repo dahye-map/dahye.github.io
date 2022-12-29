@@ -51,7 +51,7 @@
                         </ul>
 
                     </li>
-                    <li><a href="ADHG_08000000.html">법률사례 조회</a></li>
+                    <li><a href="ADHG_13000000.html">법률사례 조회</a></li>
                     <li><a href="ADHG_08000000.html">고객관리</a></li>
                     <li><a href="ADHG_08000000.html">공지사항 관리</a></li>
                     <li class="sub-menu"><a href="javascript:void(0)">통계 관리</a>
@@ -72,7 +72,7 @@
             <div class="container">
                 <h2 class="top-title">법률상담 내역상세</h2>
 
-                <!-- btn-consult 버튼에 btn-disabled 추가시 disabled 상태가 됩니다.-->
+                <!-- button에 disabled 추가하시면 disabled 상태가 됩니다.-->
                 <section class="section">
                     <div class="btn-wrap right">
                         <button type="button" class="btn btn-consult" onclick="openPopup('pop04')">상담배정</button>
@@ -117,12 +117,12 @@
                                     <th>상담유형<span class="red-dot">*</span></th>
                                     <td colspan="3">
                                         <div class="select-box">
-                                            <select name="consult-list" id="" title="상담유형선택">
+                                            <select name="consult-list" id="" title="상담유형선택" disabled >
                                                 <option value="1">대분류</option>
                                                 <option value="2">중분류</option>
                                                 <option value="3">소분류</option>
                                             </select>
-                                            <select name="consult-list" id="" title="상담유형선택">
+                                            <select name="consult-list" id="" title="상담유형선택" disabled >
                                                 <option value="1">대분류</option>
                                                 <option value="2">중분류</option>
                                                 <option value="3">소분류</option>
@@ -133,8 +133,8 @@
                                 <tr>
                                     <th>답변내용<span class="red-dot">*</span></th>
                                     <td colspan="3">
-                                        <div class="textarea-wrap">
-                                            <textarea name="answer" id="" cols="30" rows="10">안녕하세요. 답변관리자입니다. 현재 선생님께서 취하실 방법은 거주하신 자택의 우선권을 가지고 있는지 확인하셔야합니다. 가까운 중구 해운대동 주민센터에 방문하셔서..
+                                        <div class="textarea-wrap readonly">
+                                            <textarea name="answer" id="" cols="30" rows="10" disabled>안녕하세요. 답변관리자입니다. 현재 선생님께서 취하실 방법은 거주하신 자택의 우선권을 가지고 있는지 확인하셔야합니다. 가까운 중구 해운대동 주민센터에 방문하셔서..
                                             </textarea>
                                         </div>
                                     </td>
@@ -327,7 +327,7 @@
     </div>
     <!-- //e:레이어팝업 - 상담반려 -->
 
-    <!-- s:레이어팝업 - 상담반환 -->
+    <!-- s:레이어팝업 - 상담배정 -->
     <div class="layerpop-wrap" id="pop04" style="width:900px;">
         <div class="layerpop">
             <div class="pop-header">
@@ -375,11 +375,11 @@
 
                 <div class="btn-wrap mt-20">
                     <button type="button" class="btn btn-md btn-white">닫기</button>
-                    <button type="button" class="btn btn-md btn-blue">확인</button>
+                    <button type="button" class="btn btn-md btn-blue">배정</button>
                 </div>
             </div>
         </div>
     </div>
-    <!-- //e:레이어팝업 - 상담반환 -->
+    <!-- //e:레이어팝업 - 상담배정 -->
 </body>
 </html>
