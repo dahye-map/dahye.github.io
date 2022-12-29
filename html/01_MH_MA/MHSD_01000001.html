@@ -19,7 +19,7 @@
             <div class="btn-left">
                 <a href="javascript:history.go(-1);" class="btn-ico btn-back" role="button" aria-label="이전"><span class="blind">뒤로</span></a>
             </div>
-            <h1 class="title">주택검색 및 조회</h1>
+            <h1 class="title">조회결과</h1>
             <div class="btn-right">
                 <!-- <button class="btn-ico btn-home" aria-label="홈"><span class="blind">홈</span></button> -->
                 <a href="javascript:;" aria-label="전체메뉴 열기" class="btn-ico btn-menu"><span class="blind">전체메뉴</span></a>
@@ -61,7 +61,6 @@
                             <ul class="addr-detail-list">
                                 <li>다세대</li>
                                 <li>2/6층</li>
-                                <li>공급면적 30㎡</li>
                                 <li>전용면적 38㎡</li>
                             </ul>
                         </div>
@@ -69,25 +68,39 @@
                         <div class="price-wrap">
                             <ul>
                                 <li>
-                                    <p class="name red">매매시세</p>
-                                    <p class="price">
-                                        <span>2.5~3</span> 억원
-                                    </p>
-                                </li>
-                                <li>
-                                    <p class="name blue">전세시세</p>
+                                    <div class="tooltip-wrap">
+                                        <p class="name red">매매시세</p>
+                                        <button type="button" class="btn btn-ico ico-help03">
+                                            <span class="blind">도움말 보기</span>
+                                        </button>
+                                        <div class="tooltip left">
+                                            <span class="tooltip-txt">
+                                                민간임대주택법에 따른 등록 임대주택 여부 및 임대보증 가입 여부
+                                            </span>
+                                            <button type="button" class="btn btn-ico btn-close"><span class="blind">툴팁 닫기</span></button>
+                                        </div>
+                                    </div>
                                     <p class="price">
                                         <span>2.5~3</span> 억원
                                     </p>
                                 </li>
                             </ul>
 
-                            <!-- s:보조시세 테이블 -->
-                            <div class="tb-result mt-20">
-                                <h4 class="title">보조시세</span></h4>
+                            <!-- s:보조지표 테이블 -->
+                            <div class="tb-result mt-20 mb-0">
+                                <h4 class="title tooltip-wrap">
+                                    보조지표<button type="button" class="btn btn-ico ico-help03"><span class="blind">도움말 보기</span></button>
+
+                                    <div class="tooltip left">
+                                        <span class="tooltip-txt">
+                                            국토교통부 실거래가 공개시스템에서 제공하는 인근 유사 주택의 실거래가
+                                        </span>
+                                        <button type="button" class="btn btn-ico btn-close"><span class="blind">툴팁 닫기</span></button>
+                                    </div>
+                                </h4>
                                 <div class="table-wrap type02">
                                     <table>
-                                        <caption>계약일, 주소, 층, 실거래가로 구성된 전세 실거래가 내용</caption>
+                                        <caption>경매낙찰가율, 전세가율, 전세보증사고로 구성된 보조지표 내용</caption>
                                         <colgroup>
                                             <col width="33.3333%">
                                             <col width="33.3333%">
@@ -95,22 +108,26 @@
                                         </colgroup>
                                         <thead>
                                             <tr>
-                                                <th scope="col">부동산원</th>
-                                                <th scope="col">KB시세</th>
-                                                <th scope="col">부동산시세</th>
+                                                <th scope="col">경매낙찰가율</th>
+                                                <th scope="col">전세가율</th>
+                                                <th scope="col">전세보증사고</th>
                                             </tr>
                                         </thead>
                                         <tbody>
                                             <tr>
-                                                <td class="ta-c">2억 ~ 3억</td>
-                                                <td class="ta-c">-</td>
-                                                <td class="ta-c">2억 ~ 3억</td>
+                                                <td class="ta-c">70%</td>
+                                                <td class="ta-c">80%</td>
+                                                <td class="ta-c">1건</td>
                                             </tr>
                                         </tbody>
                                     </table>
                                 </div>
                             </div>
-                            <!-- //e:보조시세 테이블 -->
+                            <!-- //e:보조지표 테이블 -->
+
+                            <div class="txt-wrap mt-10">
+                                <p class="txt">수도권 매물에 대해서만 부동산 정보가 제공됩니다.</p>
+                            </div>
                         </div>
 
                         <div class="btn-wrap">
@@ -367,7 +384,7 @@
     
         <div class="footer auto-hide footer-up">
             <button type="button" class="btn btn-float type02 btn-secondary">등기부 결제없이<br>자가진단</button>				
-            <button type="button" class="btn btn-float type02 btn-primary">등기부 결제 후 자가진단</button>				
+            <button type="button" class="btn btn-float type02 btn-primary">등기부 결제 후<br>자가진단</button>				
         </div>
     </div>
 
