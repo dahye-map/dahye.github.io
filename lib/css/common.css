@@ -2,8 +2,10 @@
 
 /* header */
 #headerWrap { position:fixed; left:0; right:0; top:0; background:#0d6fb8; z-index:10; box-shadow:0px 2px 4px 0 rgba(0, 0, 0, 0.2); }
-#headerWrap .header { display:flex; align-items:center; justify-content:space-between; max-width:1500px; height:60px; padding:0 40px; }
+#headerWrap .header { display:flex; align-items:center; justify-content:space-between; max-width:1500px; height:60px; padding:0 40px 0 10px; }
 #headerWrap .header .logo { font-size:18px; color:#fff; }
+#headerWrap .header .logo img{ width:180px; }
+#headerWrap .header .logo a{ position:absolute; top:24px; padding-left:10px; }
 #headerWrap .header .util-wrap ul { display:flex; align-items:center; }
 #headerWrap .header .util-wrap ul li { position:relative; color:#fff; font-size:16px; }
 #headerWrap .header .util-wrap ul li:first-child::after { content:''; display:block; position:absolute; right:0; top:6px; width:1px; height:14px; background:#fff; opacity:.5; }
