@@ -275,14 +275,14 @@ hr { border:0; margin:0; padding:0; background:#f2f2f2; width:100%; height:10px;
 .my-page-con .mpc-card-btm .txt-wrap{ display:flex; justify-content:space-between; width:100%; }
 .my-page-con .mpc-card-btm .txt-wrap:nth-child(1){ padding-right:4%;}
 .my-page-con .mpc-card-btm .txt-wrap:nth-child(1)::after{ display:inline-block;content:''; position:absolute; top:0; right:50%; border-left:1px solid #ddd;width:1px; height:32px; }
-.my-page-con .mpc-card-btm .txt-wrap:nth-child(2){ padding-left:4%; }
+.my-page-con .mpc-card-btm .txt-wrap:nth-child(2){ padding-left:3%; }
 .my-page-con .mpc-card-btm .txt-wrap .txt-con-l{ width:50%; }
-.my-page-con .mpc-card-btm .txt-wrap .txt-con-r{ width:calc(100% - 47px); }
+.my-page-con .mpc-card-btm .txt-wrap .txt-con-r{ width:calc(100% - 44px); }
 .my-page-con .mpc-card-btm .txt{ color:#222222; letter-spacing:-0.33px; line-height:18px; }
 .my-page-con .mpc-card-btm .txt-num{ color:#222222; font-size:18px; text-align:right; letter-spacing:-0.5px;font-weight:500;}
 .my-page-con .mpc-card-btm .txt-num span{ color:inherit; font-size:24px; letter-spacing:-0.75px;}
-.my-page-con .mpc-card-btm .txt-wrap .txt-con-l.sm{ font-size:12px;}
-.my-page-con .mpc-card-btm .txt-wrap .txt-con-l.sm .txt{font-size:inherit;}
+.my-page-con .mpc-card-btm .txt-wrap .txt-con-l.sm{ width:40%; font-size:12px;}
+.my-page-con .mpc-card-btm .txt-wrap .txt-con-l.sm .txt{ font-size:inherit; }
 .my-page-wrap .my-page-con .data-wrap .data-list.type05 { padding-top:0; border:0; }
 
 /* 안심 전세 진단 내역 관리 */
