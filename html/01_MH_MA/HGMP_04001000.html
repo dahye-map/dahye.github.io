@@ -51,7 +51,7 @@
                                 <p class="info-txt02 active">답변완료</p>
                             </div>
 
-                            <div class="consult-noti-wrap type02">
+                            <div class="consult-noti-wrap type02 big">
                                 <p class="consult-q">안녕하세요. 답변관리자입니다.
                                     현재 선생님께서 취하실 방법은 거주하신 자택의 우선권을 가지고 있는지 확인하셔야합니다.
                                     가까운 주민센터에 방문하셔서…
@@ -69,7 +69,7 @@
                             <div class="btn-flex-wrap mt-30">
                                 <button type="button" class="btn btn-lg btn-type07 bg-green" onclick="LayerPopup.open('pop01');"><span>평가하기</span></button>
                                 <button type="button"
-                                    class="btn btn-lg btn-type07 bg-none"><span>내역삭제</span></button>
+                                    class="btn btn-lg btn-type07 bg-none" onclick="LayerPopup.open('pop03');"><span>내역삭제</span></button>
                             </div>
                         </div>
                     </div>
@@ -82,66 +82,100 @@
         </div>
         <!-- //e:본문시작 -->
 
-        <!-- layerpop : 평가하기 -->
-        <section class="layerpop pop01 pop-page addr-pop" role="dialog" aria-hidden="true">
-            <div class="pop-wrap">
-                <div class="pop-content">
-                    <div class="pc-wrap type-page">
-                        <div class="header auto-hide">
-                            <h1 class="title ta-c">1:1 법률상담 평가하기</h1>
-                            
-                            <div class="btn-right">
-                                <button type="button" class="pop-close" onclick="LayerPopup.close('pop01');">닫기</button>
-                            </div>
-                        </div>
-    
-                        <div class="pp-body type-pd0 sc-y mt-50">
-    
-                            <!-- S: 검색 -->
-                            <div class="content-group pb-0">
-                                <div class="inner-20">
+        
+    </div>
 
-                                    <ul>
-                                        <li>
-                                            <div class="txt-wrap">
-                                                <p class="txt type03">
-                                                    1. 상담신청하신 내용에 대한 답변에 대해서 만족하시나요?
-                                                </p>
-                                            </div>
-        
-                                            <div class="star-rating-wrap">
-                                                <input type="radio" id="star05" name="rating" value="5" />
-                                                <label for="star05" class="star"><span class="blind">별 5개</span></label>
-        
-                                                <input type="radio" id="star04" name="rating" value="4" />
-                                                <label for="star04" class="star"><span class="blind">별 4개</span></label>
-        
-                                                <input type="radio" id="star03" name="rating" value="3" />
-                                                <label for="star03" class="star"><span class="blind">별 3개</span></label>
-        
-                                                <input type="radio" id="star02" name="rating" value="2" />
-                                                <label for="star02" class="star"><span class="blind">별 2개</span></label>
-        
-                                                <input type="radio" id="star01" name="rating" value="1" />
-                                                <label for="star01" class="star"><span class="blind">별 1개</span></label>
-                                            </div>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <!-- E: 검색 -->
+    <!-- layerpop : 평가하기 -->
+    <section class="layerpop pop01 pop-page addr-pop" role="dialog" aria-hidden="true">
+        <div class="pop-wrap">
+            <div class="pop-content">
+                <div class="pc-wrap type-page">
+                    <div class="header auto-hide">
+                        <h1 class="title ta-c">1:1 법률상담 평가하기</h1>
+                        
+                        <div class="btn-right">
+                            <button type="button" class="pop-close" onclick="LayerPopup.close('pop01');">닫기</button>
                         </div>
                     </div>
-                    <div class="btn-group">
-                        <button type="button" class="btn btn-float btn-cancel" onclick="LayerPopup.close('pop01');">닫기</button>
-                        <button type="button" class="btn btn-float btn-primary">확인</button>
+
+                    <div class="pp-body type-pd0 sc-y mt-50">
+
+                        <!-- S: 검색 -->
+                        <div class="content-group pb-0">
+                            <div class="inner-20">
+
+                                <ul>
+                                    <li>
+                                        <div class="txt-wrap">
+                                            <p class="txt type03">
+                                                1. 상담신청하신 내용에 대한 답변에 대해서 만족하시나요?
+                                            </p>
+                                        </div>
+    
+                                        <div class="star-rating-wrap">
+                                            <input type="radio" id="star05" name="rating" value="5" />
+                                            <label for="star05" class="star"><span class="blind">별 5개</span></label>
+    
+                                            <input type="radio" id="star04" name="rating" value="4" />
+                                            <label for="star04" class="star"><span class="blind">별 4개</span></label>
+    
+                                            <input type="radio" id="star03" name="rating" value="3" />
+                                            <label for="star03" class="star"><span class="blind">별 3개</span></label>
+    
+                                            <input type="radio" id="star02" name="rating" value="2" />
+                                            <label for="star02" class="star"><span class="blind">별 2개</span></label>
+    
+                                            <input type="radio" id="star01" name="rating" value="1" />
+                                            <label for="star01" class="star"><span class="blind">별 1개</span></label>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- E: 검색 -->
                     </div>
-                    
+                </div>
+                <div class="btn-group">
+                    <button type="button" class="btn btn-float btn-cancel" onclick="LayerPopup.close('pop01');">닫기</button>
+                    <button type="button" class="btn btn-float btn-primary">확인</button>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+    <!-- //layerpop : 평가하기 -->
+
+
+    <!-- 공통팝업 : 내역삭제 -->
+    <section class="layerpop pop03 pop-alert" role="alert" aria-hidden="true">
+        <div class="pop-wrap">			
+            <h3 class="blind">내역삭제 팝업</h3>
+            <div class="pop-content">
+                <div class="pc-wrap">						
+                    <p class="pc-tit">해당 내역을 삭제하시겠어요?</p>
+                </div>
+                <div class="btn-group">
+                    <button type="button" class="btn btn-float btn-cancel" onclick="LayerPopup.close('pop03');">취소</button>	
+                    <button type="button" class="btn btn-float btn-primary" onclick="LayerPopup.close('pop03'); LayerPopup.open('pop05');">확인</button>	
                 </div>
             </div>
         </div>
-        <!-- //layerpop : 평가하기 -->
-    </div>
+    </section>
+
+    <!-- 공통팝업 : 확인버튼 클릭 시 완료(내역삭제) -->
+    <section class="layerpop pop05 pop-alert" role="alert" aria-hidden="true">
+        <div class="pop-wrap">			
+            <h3 class="blind">확인버튼 클릭 시 완료 팝업</h3>
+            <div class="pop-content">
+                <div class="pc-wrap">						
+                    <p class="pc-tit">내역 삭제가 완료되었습니다.</p>
+                </div>
+                <div class="btn-group">	
+                    <button type="button" class="btn btn-float btn-primary" onclick="LayerPopup.close('pop05');">확인</button>	
+                </div>
+            </div>
+        </div>
+    </section>
 
     <script src="../../js/common_ui.js"></script>
 </body>
