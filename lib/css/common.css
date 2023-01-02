@@ -6,8 +6,7 @@
 #headerWrap .header .logo { font-size:18px; color:#fff; }
 #headerWrap .header .logo img{ width:180px; }
 #headerWrap .header .logo a{ position:absolute; top:8px; }
-#headerWrap .header .logo a span{ display:inline-block; padding-left:5px; padding-top:14px;  }
-
+#headerWrap .header .logo a span{ display:inline-block; padding-top:14px; padding-left:5px; }
 
 #headerWrap .header .util-wrap ul { display:flex; align-items:center; }
 #headerWrap .header .util-wrap ul li { position:relative; color:#fff; font-size:16px; }
@@ -29,8 +28,8 @@
 
 /* 로그인 */
 #loginWrap .login { display:flex; flex-direction:column; justify-content:center; align-items:center;  background:#f7f8f9; width:100%; height:100vh; }
-.login-tit { padding:0 86px 40px 33px; font-size:30px;color:#222; }
-.login-tit img {width: 287px; }
+.login-tit { padding:0 86px 40px 33px; font-size:30px; color:#222; }
+.login-tit img { width:287px; }
 .login-tit span { display:inline-block; padding-top:21px; padding-left:5px; letter-spacing:-1.5px; }
 .box-wrap .box { width:580px; padding:60px 100px; background:#fff; box-shadow:7.7px 6.4px 20px 0 rgba(0, 0, 0, 0.1); }
 .box-input { display:flex; align-items:center; padding:10px 20px; border:1px solid #999; border-radius:2px; }
