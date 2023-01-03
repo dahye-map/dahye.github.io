@@ -21,7 +21,8 @@
 
                 <div class="box-wrap">
                     <div class="box">
-                        <div class="box-input">
+                        <!-- ## err인 경우, box-input에 err-msg class 추가하시면 됩니다. -->
+                        <div class="box-input err-msg">
                             <p class="name">ID</p>
                             <input type="text" id="" name="" title="아이디를 입력해주세요" value="" placeholder="아이디를 입력해주세요">
                         </div>
@@ -29,7 +30,12 @@
                             <p class="name">Password</p>
                             <input type="password" id="" name="" title="비밀번호를 입력해주세요" value="" placeholder="비밀번호를 입력해주세요">
                         </div>
-
+                        <!-- s : err인 경우, err-txt 추가하시면 됩니다. -->
+                        <div class="err-txt">
+                            <p>※ 아이디를 찾을 수 없습니다.</p>
+                        </div>
+                        <!-- e : err인 경우, err-txt 추가하시면 됩니다. -->
+                        
                         <div class="btn-wrap">
                             <button type="button" class="btn btn-lg btn-cancle" value="초기화">취소</button>
                             <button type="button" class="btn btn-lg btn-login" onclick="location.href='ADHG_01000000.html'">로그인</button>
