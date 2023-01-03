@@ -109,6 +109,7 @@ hr { border:0; margin:0; padding:0; background:#f2f2f2; width:100%; height:10px;
 .more-info .btn-linktxt span { color:#588acc; font-size:13px; }
 
 .btn-flex-wrap { display:flex; gap:10px; }
+.btn-flex-wrap.bd { padding-top:30px; margin-top:20px; border-top:1px solid #ddd; }
 
 /* 정보제공동의 */
 .agree-wrap ul li { margin-bottom:10px; border:1px solid #ddd; }
