@@ -320,6 +320,8 @@ $(function(){
 		// 체크리스트 전체선택
 		$('.list-chk .chk-all .common-check input[type=checkbox]').fnChkAll();
 
+		//안심전세 체크리스트 전체선택
+		$('.all-chk-wrap .all-chk .common-check input[type=checkbox]').fnChkAll();
 		
 
 		// 토글 영역
@@ -714,13 +716,20 @@ var LayerPopup = {
 	}
 }
 
+// 안심전세 gnb 메뉴
+$('.header .btn-menu02').on('click', function(){
+	$('.gnb-wrapper').addClass('active');
+});
+  
+$('.gnb-wrapper .close-btn').on('click', function(){
+	$('.gnb-wrapper').removeClass('active');
+});
 
 // 안심전세 툴팁 화면
 $('.ico-help03').on('click', function(){
 	$(this).toggleClass('active');
 	$(this).next('.tooltip').toggleClass('active');
 });
-
 $('.btn-close').on('click', function(){
 	$(this).parent('.tooltip').removeClass('active');
 	$(this).parent().siblings('.ico-help03').removeClass('active');

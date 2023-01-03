@@ -46,6 +46,8 @@ input[type='text'], input[type='number'], input[type='password'], input[type='ma
 
 hr { border:0; margin:0; padding:0; background:#f2f2f2; width:100%; height:10px; }
 
+.btn-type07, a.btn-type07 { color:#0d6fb8; border-color:#0d6fb8; }
+.btn-primary, a.btn-primary { background:#0D6FB8; border-color:#0D6FB8; }
 .btn-primary.bg-green { background:#2d827a; border-color:#2d827a; }
 .btn-lg.white { border:1px solid #fff; border-radius:3px; color:#fff;}
 .btn-type07.bg-blue { background:#0c6fb8; border-color:#0c6fb8; color:#fff; }
@@ -53,8 +55,6 @@ hr { border:0; margin:0; padding:0; background:#f2f2f2; width:100%; height:10px;
 .btn-type07.bg-lightgreen{background:#3ea000; border-color:#3ea000; color:#fff;}
 .btn-type07.bg-none { border-color:#222; color:#222; }
 .btn-type07.disabled { border-color:#aaa; background:#aaa; }
-.btn-type07, a.btn-type07 { color:#0d6fb8; border-color:#0d6fb8; }
-.btn-primary, a.btn-primary { background:#0D6FB8; border-color:#0D6FB8; }
 
 .ico-help03, a.ico-help03 { position:relative; width:16px; height:16px; margin-top:3px; background-image:url('../images/sub/icon_help.png'); background-size:100%; }
 .ico-help03:before {
@@ -314,3 +314,25 @@ hr { border:0; margin:0; padding:0; background:#f2f2f2; width:100%; height:10px;
 .board .table-wrap.type02 .date { text-align:center; font-size:13px; color:#888; }
 .board .table-wrap.type02 .name a { font-size:15px; color:#222; }
 .board .view-wrap .view-form .tit { padding-bottom:10px; font-size:15px; color:#000; font-weight:500; }
+
+/* 정보제공 약관동의 */
+.chk-wrap .tit { font-size:18px; color:#000; }
+.chk-wrap .sub-tit { font-size:15px; color:#222; }
+.chk-wrap .txt { font-size:15px; color:#555; }
+.chk-wrap .common-check label { min-height:20px; padding-left:20px; }
+.chk-wrap .all-chk { display:flex; justify-content:space-between; align-items:center; }
+.chk-wrap .chk-form .chk-form-box { margin-top:10px; border:1px solid #ddd; }
+.chk-wrap .chk-form .chk-form-box .box-tit { display:flex; justify-content:space-between; align-items:center; padding:14px 20px; border-bottom:1px solid #ddd; }
+.chk-wrap .chk-form .chk-form-box .box-con { background:#f8f8f8; padding:20px 0 20px 20px; }
+
+.chk-wrap .chk-form .chk-form-box .box-con .con { height:180px; padding-right:20px; font-size:15px; color:#555; line-height:20px; overflow-y:scroll; }
+.chk-wrap .chk-form .chk-form-box .box-con .con em { font-size:15px; color:#222; font-weight:500; }
+.chk-wrap .chk-form .chk-form-box .box-con .con::-webkit-scrollbar {
+    width:4px;
+}
+.chk-wrap .chk-form .chk-form-box .box-con .con::-webkit-scrollbar-thumb {
+    background-color:#c2c2c2;
+}
+.chk-wrap .chk-form .chk-form-box .box-con .con::-webkit-scrollbar-track {
+	background-color:#f8f8f8;
+}
