@@ -298,7 +298,7 @@ hr { border:0; margin:0; padding:0; background:#f2f2f2; width:100%; height:10px;
 .btn-data { min-width:67px; width:auto; height:28px; padding:4px 0 5px; border:1px solid #666; border-radius:2px; color:#222; font-size:13px; }
 .my-page-wrap .btn-type07 { height:40px; line-height:40px; }
 .my-page-wrap .data-wrap .data-list .data-txt.green-txt{color:#3ea000; font-size:13px;}
-.data-wrap .data-list.type04 .sub-tit .data-tit{ font-size:18px; color:#000; font-weight:500; }
+.my-page-wrap .data-wrap .data-tit h4{ padding-bottom:20px; font-size:18px; color:#000; font-weight:500; }
 
 /* 1:1 법률상담 신청내역  */
 .board .list-wrap > ul > li .tit { padding-right:0; }
