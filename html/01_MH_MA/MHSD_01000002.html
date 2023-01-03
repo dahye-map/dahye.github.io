@@ -84,7 +84,7 @@
                         <!-- //e:툴팁 -->
                         <div class="table-wrap type02 pd">
                             <table>
-                                <caption>매매시세, 전세시세, 평균 낙찰가율, 중립보증금으로 구성된 주요 진단 정보 내용</caption>
+                                <caption>매매시세, 전세가율, 평균 낙찰가율로 구성된 주요 진단 정보 내용</caption>
                                 <colgroup>
                                     <col width="40%">
                                     <col>
@@ -95,16 +95,12 @@
                                         <td>2.5 ~ 3 억원</td>
                                     </tr>
                                     <tr>
-                                        <th>전세시세</th>
-                                        <td>2.5 ~ 3 억원</td>
+                                        <th>전세가율</th>
+                                        <td>80%</td>
                                     </tr>
                                     <tr>
                                         <th>평균 낙찰가율</th>
                                         <td>70%</td>
-                                    </tr>
-                                    <tr>
-                                        <th>중립보증금</th>
-                                        <td>3억 ~ 3억 1,000</td>
                                     </tr>
                                 </tbody>
                             </table>
@@ -311,110 +307,110 @@
             <button type="button" class="btn btn-float type02 disabled" disabled>등기부 결제 후<br>자가진단</button>
             <!-- <button type="button" class="btn btn-float type02">등기부 결제 후<br>자가진단</button>				 -->
         </div>
+    </div>
 
-        <!-- layerpop : 안심진단 평가하기 -->
-        <section class="layerpop pop01 pop-page addr-pop" role="dialog" aria-hidden="true">
-            <div class="pop-wrap">
-                <div class="pop-content">
-                    <div class="pc-wrap type-page">
-                        <div class="header auto-hide">
-                            <h1 class="title ta-c">안심진단 평가하기</h1>
-                            
-                            <div class="btn-right">
-                                <button type="button" class="pop-close" onclick="LayerPopup.close('pop01');">닫기</button>
-                            </div>
-                        </div>
-    
-                        <div class="pp-body type-pd0 sc-y mt-50">
-    
-                            <!-- S: 검색 -->
-                            <div class="content-group pb-0">
-                                <div class="inner-20">
-
-                                    <ul>
-                                        <li>
-                                            <div class="txt-wrap">
-                                                <p class="txt type03">
-                                                    1. 조회하신 시세의 정확도에 대해서 만족하시나요?
-                                                </p>
-                                            </div>
-        
-                                            <div class="star-rating-wrap">
-                                                <input type="radio" id="star05" name="rating" value="5" />
-                                                <label for="star05" class="star"><span class="blind">별 5개</span></label>
-        
-                                                <input type="radio" id="star04" name="rating" value="4" />
-                                                <label for="star04" class="star"><span class="blind">별 4개</span></label>
-        
-                                                <input type="radio" id="star03" name="rating" value="3" />
-                                                <label for="star03" class="star"><span class="blind">별 3개</span></label>
-        
-                                                <input type="radio" id="star02" name="rating" value="2" />
-                                                <label for="star02" class="star"><span class="blind">별 2개</span></label>
-        
-                                                <input type="radio" id="star01" name="rating" value="1" />
-                                                <label for="star01" class="star"><span class="blind">별 1개</span></label>
-                                            </div>
-                                        </li>
-
-                                        <li>
-                                            <div class="txt-wrap">
-                                                <p class="txt type03">
-                                                    2. 진단하신 결과에 대해서 만족하시나요?
-                                                </p>
-                                            </div>
-        
-                                            <div class="star-rating-wrap">
-                                                <input type="radio" id="star05_2" name="rating2" value="5" />
-                                                <label for="star05_2" class="star"><span class="blind">별 5개</span></label>
-        
-                                                <input type="radio" id="star04_2" name="rating2" value="4" />
-                                                <label for="star04_2" class="star"><span class="blind">별 4개</span></label>
-        
-                                                <input type="radio" id="star03_2" name="rating2" value="3" />
-                                                <label for="star03_2" class="star"><span class="blind">별 3개</span></label>
-        
-                                                <input type="radio" id="star02_2" name="rating2" value="2" />
-                                                <label for="star02_2" class="star"><span class="blind">별 2개</span></label>
-        
-                                                <input type="radio" id="star01_2" name="rating2" value="1" />
-                                                <label for="star01_2" class="star"><span class="blind">별 1개</span></label>
-                                            </div>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <!-- E: 검색 -->
+    <!-- layerpop : 안심진단 평가하기 -->
+    <section class="layerpop pop01 pop-page addr-pop" role="dialog" aria-hidden="true">
+        <div class="pop-wrap">
+            <div class="pop-content">
+                <div class="pc-wrap type-page">
+                    <div class="header auto-hide">
+                        <h1 class="title ta-c">안심진단 평가하기</h1>
+                        
+                        <div class="btn-right">
+                            <button type="button" class="pop-close" onclick="LayerPopup.close('pop01');">닫기</button>
                         </div>
                     </div>
-                    <div class="btn-group">
-                        <button type="button" class="btn btn-float btn-cancel" onclick="LayerPopup.close('pop01');">닫기</button>
-                        <button type="button" class="btn btn-float btn-primary">확인</button>
+
+                    <div class="pp-body type-pd0 sc-y mt-50">
+
+                        <!-- S: 검색 -->
+                        <div class="content-group pb-0">
+                            <div class="inner-20">
+
+                                <ul>
+                                    <li>
+                                        <div class="txt-wrap">
+                                            <p class="txt type03">
+                                                1. 조회하신 시세의 정확도에 대해서 만족하시나요?
+                                            </p>
+                                        </div>
+    
+                                        <div class="star-rating-wrap">
+                                            <input type="radio" id="star05" name="rating" value="5" />
+                                            <label for="star05" class="star"><span class="blind">별 5개</span></label>
+    
+                                            <input type="radio" id="star04" name="rating" value="4" />
+                                            <label for="star04" class="star"><span class="blind">별 4개</span></label>
+    
+                                            <input type="radio" id="star03" name="rating" value="3" />
+                                            <label for="star03" class="star"><span class="blind">별 3개</span></label>
+    
+                                            <input type="radio" id="star02" name="rating" value="2" />
+                                            <label for="star02" class="star"><span class="blind">별 2개</span></label>
+    
+                                            <input type="radio" id="star01" name="rating" value="1" />
+                                            <label for="star01" class="star"><span class="blind">별 1개</span></label>
+                                        </div>
+                                    </li>
+
+                                    <li>
+                                        <div class="txt-wrap">
+                                            <p class="txt type03">
+                                                2. 진단하신 결과에 대해서 만족하시나요?
+                                            </p>
+                                        </div>
+    
+                                        <div class="star-rating-wrap">
+                                            <input type="radio" id="star05_2" name="rating2" value="5" />
+                                            <label for="star05_2" class="star"><span class="blind">별 5개</span></label>
+    
+                                            <input type="radio" id="star04_2" name="rating2" value="4" />
+                                            <label for="star04_2" class="star"><span class="blind">별 4개</span></label>
+    
+                                            <input type="radio" id="star03_2" name="rating2" value="3" />
+                                            <label for="star03_2" class="star"><span class="blind">별 3개</span></label>
+    
+                                            <input type="radio" id="star02_2" name="rating2" value="2" />
+                                            <label for="star02_2" class="star"><span class="blind">별 2개</span></label>
+    
+                                            <input type="radio" id="star01_2" name="rating2" value="1" />
+                                            <label for="star01_2" class="star"><span class="blind">별 1개</span></label>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- E: 검색 -->
                     </div>
-                    
                 </div>
+                <div class="btn-group">
+                    <button type="button" class="btn btn-float btn-cancel" onclick="LayerPopup.close('pop01');">닫기</button>
+                    <button type="button" class="btn btn-float btn-primary">확인</button>
+                </div>
+                
             </div>
         </div>
-        <!-- //layerpop : 안심진단 평가하기 -->
+    </section>
+    <!-- //layerpop : 안심진단 평가하기 -->
 
-        <!-- layerpop : 근저당권 5개 이상 alert 노출 -->
-        <section class="layerpop pop02 pop-alert" role="alert" aria-hidden="true">
-			<div class="pop-wrap">			
-				<h3 class="blind">근저당권 5개 이상 팝업</h3>
-				<div class="pop-content">
-					<div class="pc-wrap">						
-						<p class="pc-tit">근저당권 입력항목은 최대 5개까지 입력 가능합니다.</p>
-					</div>
-					<div class="btn-group">	
-						<button type="button" class="btn btn-float btn-primary" onclick="LayerPopup.close('pop02');">확인</button>	
-					</div>
+    <!-- layerpop : 근저당권 5개 이상 alert 노출 -->
+    <section class="layerpop pop02 pop-alert" role="alert" aria-hidden="true">
+        <div class="pop-wrap">			
+            <h3 class="blind">근저당권 5개 이상 팝업</h3>
+            <div class="pop-content">
+                <div class="pc-wrap">						
+                    <p class="pc-tit">근저당권 입력항목은 최대 5개까지 입력 가능합니다.</p>
+                </div>
+                <div class="btn-group">	
+                    <button type="button" class="btn btn-float btn-primary" onclick="LayerPopup.close('pop02');">확인</button>	
+                </div>
 
-				</div>
-			</div>
-		</section>
-        <!-- //layerpop : 근저당권 5개 이상 alert 노출 -->
+            </div>
+        </div>
+    </section>
+    <!-- //layerpop : 근저당권 5개 이상 alert 노출 -->
 
-    </div>
 
     <script type="text/javascript">
 		//<![CDATA[ 
