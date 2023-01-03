@@ -19,6 +19,7 @@
 #navWrap .nav > ul > li > a { display:block; height:60px; padding-left:40px; line-height:60px; color:#222; font-size:18px; }
 #navWrap .nav > ul > li > a.active { background:#0087d5; color:#fff; }
 #navWrap .nav .depth-menu{ display:none; }
+#navWrap .nav .depth-menu.active{ display:block; }
 #navWrap .nav .depth-menu li { background:#fff; padding:0 40px; }
 #navWrap .nav .depth-menu li a { display:block;  height:56px; font-size:16px; color:#666; line-height:56px; }
 #navWrap .nav .depth-menu li:nth-of-type(1) a { border-bottom:1px solid #e1e1e1; }
@@ -137,6 +138,7 @@
 
 /* checkbox */
 .bg-color{ background: #e7f5fa; }
+.chk-disabled{ background: #fff !important; }
 .common-check label { position:relative; display:block; min-height:20px;padding-left:20px; text-align:left; }
 .common-check label span { display:inline-block; width:100%; padding-left:10px; font-weight:300;font-size:15px; color:#555; line-height:20px; }
 .common-check label input{ position:absolute; left:0; top:0; width:20px;height:20px; padding:0; background:#fff url('../../images/input_chk02.svg') no-repeat center/12px; border:1px solid #5b5b5b; border-radius:2px; }
