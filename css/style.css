@@ -21,7 +21,6 @@ input[type='text'], input[type='number'], input[type='password'], input[type='ma
 .gnb-content { padding:30px 40px; }
 .gnb-content .gnb-txt { padding-bottom:10px; margin-bottom:20px; border-bottom:1px solid #ddd; }
 .gnb-content .gnb-txt .tit { display:block; margin-bottom:20px; font-size:18px;text-align:left; line-height:34px; color:#000; font-weight:500; }
-.gnb-menu-list { width:100%; }
 .gnb-menu-list ul li { position:relative; padding:10px 0; }
 .gnb-menu-list ul li::after { display:inline-block; content: ''; position:absolute; top:50%; right:0px; width:8px; height:15px; background:url(../images/common/arrw_left01.png) no-repeat right; background-size:contain;transform:rotate(180deg) translate(50%, 50%); }
 .gnb-menu-list ul li a { width:100%; font-size:15px; text-align:left; line-height:22px; color:#000; }
