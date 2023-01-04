@@ -1,3 +1,7 @@
-.table-wrap .etc::placeholder{ color:#222; }
-.table-wrap .etc:placeholder-shown{ color:#222; }
-.table-wrap .etc pl{ color:#222; }
+/* input placeholder color 변경 */
+input::placeholder{ color:#222; }
+input::-webkit-input-placeholder{ color:#222; }
+.btn.add.close-b{ background:url(../../images/icon_close_sky.svg) no-repeat 14px/20px; border:1px solid #0d6fb8; border-radius:4px; color:#0d6fb8;}
+.btn.add.enroll{background:url(../../images/ic_create.png) no-repeat 16px/16px; border:1px solid #0d6fb8; border-radius:4px; color:#0d6fb8;}
+.table-wrap .name.on a,
+.table-wrap .name a:hover { text-decoration:underline; color:#009edb; }
