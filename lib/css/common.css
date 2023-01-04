@@ -71,7 +71,7 @@
 .table-wrap.type02 td { border-left:1px solid #e1e1e1; border-right:1px solid #e1e1e1; }
 .table-wrap.type03 th,
 .table-wrap.type03 td { padding-left:20px; text-align:left; }
-.table-wrap.type03 tbody td:last-child { padding-right:0; }
+.table-wrap.type03 tbody td:last-child { padding-right:0; } 
 .table-wrap.type04 thead th,
 .table-wrap.type04 tbody td { border-right:1px solid #e1e1e1; }
 .table-wrap.type04 thead th:last-child { text-align:center; border-right:0; }
@@ -84,7 +84,7 @@
 .table-wrap .textarea-wrap { padding:20px 10px 20px 0; height:200px; background:#fff; border:1px solid #999; overflow:inherit; }
 .table-wrap .textarea-wrap.readonly { background:#ededed; border:1px solid #ededed; }
 .textarea-wrap.lg { height:392px; }
-
+.textarea-wrap.sm { height:150px; }
 /*  table - 경고 표시 */
 .red-dot{ display:inline-block; position:absolute; padding-left:4px; font-size:16px; color:#c82a82;}
 .warning-txt{font-size:14px; color:#009edb; text-align:left;}
@@ -192,6 +192,7 @@ input[type='radio']:checked:disabled{background:url('../../images/input_radio_DS
 .layerpop-wrap .pop-con .txt { padding-bottom:40px; font-size:18px; color:#333; }
 .layerpop-wrap .pop-con .txt span { font-size:14px; color:#666; }
 .layerpop-wrap .btn-wrap { margin-top:40px; }
+.layerpop-wrap .table-wrap.scroll { height:360px; overflow-y:scroll; }
 
 /* 하단 상세보기 */
 .more-view-wrap { display:none; }

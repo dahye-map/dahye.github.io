@@ -8,6 +8,7 @@
 
     <link rel="stylesheet" href="../lib/css/reset.css">
     <link rel="stylesheet" href="../lib/css/common.css">
+    <link rel="stylesheet" href="../lib/css/style.css">
     <script src="../lib/js/jquery-3.5.1.min.js"></script>
     <script src="../lib/js/ui.js"></script>
 </head>
@@ -114,7 +115,7 @@
                                 </tr>
                                 <tr>
                                     <th>게시여부</th>
-                                    <td>
+                                    <td colspan="3">
                                         <div class="common-radio">
                                           <label>
                                             <input type="radio" name="click" title="미게시 버튼">
@@ -126,12 +127,20 @@
                                           </label>
                                         </div>
                                     </td>
+                                </tr>
+                                <tr>    
                                     <th>첨부파일</th>
-                                    <td>
+                                    <td colspan="3">
                                         <div class="add-wrap file-wrap">
                                             <input type="text" id="fileName" name="file" title="첨부파일등록">
-                                            <button type="button" class="btn add"> 파일추가</button>
+                                            <button type="button" class="btn add "> 파일추가</button>
                                             <input type="file" name="attach" id="attach" class="input-file-hidden" onchange="javascript:document.getElementById('fileName').value = this.value">
+                                        </div>
+                                        <div class="add-file-name">
+                                            <button type="button" title="첨부파일등록취소" class="btn add del-file">File0001.png</button>
+                                            <button type="button" title="첨부파일등록취소" class="btn add del-file">File0001.png</button>
+                                            <button type="button" title="첨부파일등록취소" class="btn add del-file">File0001.png</button>
+                                            <button type="button" title="첨부파일등록취소" class="btn add del-file">File0001.png</button>
                                         </div>
                                     </td>
                                 </tr>
