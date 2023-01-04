@@ -95,10 +95,13 @@
 .file-wrap .input-file-hidden { position:absolute; left:0; top:0; width:100%; height:100%; opacity:0; cursor:pointer; padding:0; }
 
 /* 첨부파일 명 추가 */
-.add-file-name{ display:flex; gap:20px; align-items:center; padding:20px 0 10px; }
-.add-file-name .btn.del-file{padding: 0 26px 0 0; background:url(../../images/icon_delete.png) no-repeat 16px/16px; border:none; background-position:right 50%; color:#555; }
-.add-file-name .btn.del-file:hover{ background:url(../../images/icon_delete_b.png) no-repeat 16px/16px;  color:#009edb;background-position:right 50%; }
+.add-file{ display:flex; padding:20px 0 10px; }
+.add-file-name{ display:flex; gap:10px; align-items:center; margin:0 26px 0 0; color:#555; }
+.add-file-name .btn.del-file { width:16px; height:16px; background:url(../../images/icon_delete.png) no-repeat 16px/16px; border:none; background-position:right 100%; }
+.add-file-name:hover { color: #009edb; }
+.add-file-name:hover .btn.del-file{ background:url(../../images/icon_delete_b.png) no-repeat 16px/16px; background-position:right 100%; }
 .add-file-name .del-file:disabled:hover { background:url(../../images/icon_delete.png) no-repeat 16px/16px; border:none; color:#555; background-position:right 50%;}
+
 /* 검색 */
 .search-wrap .search { display:flex; flex-wrap:wrap; background:#f7f8f9; padding:25px 40px; }
 .search-wrap .search .col { display:flex; align-items:center; width:calc(50% - 38px); }
