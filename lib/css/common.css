@@ -97,6 +97,7 @@
 /* 첨부파일 명 추가 */
 .add-file{ display:flex; padding:20px 0 10px; }
 .add-file-name{ display:flex; gap:10px; align-items:center; margin:0 26px 0 0; color:#555; }
+.add-file-name p { width:96px; overflow:hidden; white-space:nowrap; text-overflow:ellipsis; }
 .add-file-name .btn.del-file { width:16px; height:16px; background:url(../../images/icon_delete.png) no-repeat 16px/16px; border:none; background-position:right 100%; }
 .add-file-name:hover { color: #009edb; }
 .add-file-name:hover .btn.del-file{ background:url(../../images/icon_delete_b.png) no-repeat 16px/16px; background-position:right 100%; }
