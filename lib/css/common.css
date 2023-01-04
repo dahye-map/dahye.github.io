@@ -70,7 +70,7 @@
 .table-wrap.type02 th,
 .table-wrap.type02 td { border-left:1px solid #e1e1e1; border-right:1px solid #e1e1e1; }
 .table-wrap.type03 th,
-.table-wrap.type03 td { padding-left:20px; text-align:left; }
+.table-wrap.type03 td { padding-left:20px; text-align:left; vertical-align:top; }
 .table-wrap.type03 tbody td:last-child { padding-right:0; } 
 .table-wrap.type04 thead th,
 .table-wrap.type04 tbody td { border-right:1px solid #e1e1e1; }
@@ -175,7 +175,7 @@ input[type='radio']:checked:disabled{background:url('../../images/input_radio_DS
 .common-radio label input[disabled]{background:#eee;border:1px solid #a5a5a5}
 .common-radio label input[readonly]:checked,
 .common-radio label input[disabled]:checked{background:url('../../images/input_radio_DS.png') no-repeat 50% 50% #eee;background-size:11px 11px}
-.common-radio label~label{ margin-left:30%;}
+.common-radio label~label{ margin-left:70px;}
 .common-radio.radio-txt{display: flex; align-items: center; width: 50%; }
 .common-radio.radio-txt label span{ padding-left:10px; font-size:16px;color:#555;}
 
