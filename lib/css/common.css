@@ -59,8 +59,7 @@
 .table-wrap .name.on a,
 .table-wrap .name a:hover { text-decoration:underline; color:#009edb; }
 .table-wrap .select-box { display:flex; gap:20px; align-items:center;}
-.table-wrap .select-box select { width:calc((100% - 86px) / 3); font-size:16px; color:#222; }
-.table-wrap .select-box select:disabled{background:#d8d8d8; color:#666;}
+.table-wrap .select-box select { width:calc((100% - 86px) / 3); }
 .table-wrap .select-box.type02 select { width:50%; }
 .table-wrap .etc { display:flex; gap:20px; }
 .table-wrap .etc span { width:140px; }
@@ -77,6 +76,8 @@
 .table-wrap.type04 thead th:last-child { text-align:center; border-right:0; }
 .table-wrap.type04 tbody td:last-child { padding-left:40px; padding-right:0; text-align:left; border-right:0; }
 .table-wrap .common-check label input { left:50%; transform:translateX(-50%); }
+.table-wrap .bg-color { background:#e7f5fa; }
+.more-view-wrap .table-wrap .bg-color { background:#fff !important; }
 
 /* table - textarea */
 .table-wrap .textarea-wrap > *::-webkit-scrollbar{ width:4px; }
@@ -85,6 +86,7 @@
 .table-wrap .textarea-wrap.readonly { background:#ededed; border:1px solid #ededed; }
 .textarea-wrap.lg { height:392px; }
 .textarea-wrap.sm { height:150px; }
+
 /*  table - 경고 표시 */
 .red-dot{ display:inline-block; position:absolute; padding-left:4px; font-size:16px; color:#c82a82;}
 .warning-txt{font-size:14px; color:#009edb; text-align:left;}
@@ -95,12 +97,12 @@
 .file-wrap .input-file-hidden { position:absolute; left:0; top:0; width:100%; height:100%; opacity:0; cursor:pointer; padding:0; }
 
 /* 첨부파일 명 추가 */
-.add-file{ display:flex; padding:20px 0 10px; }
-.add-file-name{ display:flex; gap:10px; align-items:center; margin:0 26px 0 0; color:#555; }
+.add-file { display:flex; padding:20px 0 10px; }
+.add-file-name { display:flex; gap:10px; align-items:center; margin:0 26px 0 0; color:#555; }
 .add-file-name p { width:96px; overflow:hidden; white-space:nowrap; text-overflow:ellipsis; }
 .add-file-name .btn.del-file { width:16px; height:16px; background:url(../../images/icon_delete.png) no-repeat 16px/16px; border:none; background-position:right 100%; }
 .add-file-name:hover { color: #009edb; }
-.add-file-name:hover .btn.del-file{ background:url(../../images/icon_delete_b.png) no-repeat 16px/16px; background-position:right 100%; }
+.add-file-name:hover .btn.del-file { background:url(../../images/icon_delete_b.png) no-repeat 16px/16px; background-position:right 100%; }
 .add-file-name .del-file:disabled:hover { background:url(../../images/icon_delete.png) no-repeat 16px/16px; border:none; color:#555; background-position:right 50%;}
 
 /* 검색 */
@@ -114,10 +116,6 @@
 .input-wrap .w180 { width:180px !important; }
 .input-wrap input[type='date']{width: 180px;}
 .input-wrap.date .hyphen { display:inline-block; width:14px; height:14px; margin:0 10px; }
-
-/* input placeholder color 변경 */
-input::placeholder{ color:#222; }
-input::-webkit-input-placeholder{ color:#222; }
 
 /* btn */
 .btn-wrap { display:flex; justify-content:center; gap:10px; margin-top:20px; margin-bottom:10px; }
@@ -138,7 +136,7 @@ input::-webkit-input-placeholder{ color:#222; }
 .btn.btn-more { font-size:16px; color:#009edb; text-decoration:underline; }
 
 .btn.btn-disabled,
-.btn:disabled{ background:#d8d8d8; color:#666; border:none; }
+.btn:disabled{ background:#d8d8d8; color:#666; border:1px solid #d8d8d8; }
 
 /* paging */
 .paging-wrap { display:flex; align-items:center; justify-content:center; margin-top:40px; }
@@ -151,8 +149,6 @@ input::-webkit-input-placeholder{ color:#222; }
 .paging-wrap .num a.active { color:#0087d5; }
 
 /* checkbox */
-.bg-color{ background: #e7f5fa; }
-.chk-disabled{ background: #fff !important; }
 .common-check label { position:relative; display:block; min-height:20px;padding-left:20px; text-align:left; }
 .common-check label span { display:inline-block; width:100%; padding-left:10px; font-weight:300;font-size:15px; color:#555; line-height:20px; }
 .common-check label input{ position:absolute; left:0; top:0; width:20px;height:20px; padding:0; background:#fff url('../../images/input_chk02.svg') no-repeat center/12px; border:1px solid #5b5b5b; border-radius:2px; }

@@ -118,6 +118,11 @@ select {
     height:30px;
     background:#fff url(../../images/icon_arrow_downward_s@3x.png) 95% center no-repeat; background-size:16px;
 }
+select:disabled {
+    opacity:1;
+    background:#eaeaea url(../../images/icon_arrow_downward_s@3x.png) 95% center no-repeat; background-size:16px;
+    border:1px solid #eaeaea;
+}
 input:focus {
     outline: none;
 }
@@ -134,7 +139,7 @@ input:-webkit-placeholder { color:#8e8e8e; opacity:1; }
 input:-moz-placeholder { color:#8e8e8e; opacity:1; }
 input:-ms-input-placeholder { color:#8e8e8e; }
 
-input:disabled, select:disabled, textarea:disabled, optgroup:disabled, input:read-only, textarea:read-only { background:#eaeaea; color:#222; border:1px solid #eaeaea; }
+input:disabled, textarea:disabled, optgroup:disabled, input:read-only, textarea:read-only { background:#eaeaea; color:#222; border:1px solid #eaeaea; }
 input[type="date"] { width:180px; }
 input[type="date"]::-webkit-inner-spin-button,
 input[type="date"]::-webkit-calendar-picker-indicator {
