@@ -76,6 +76,7 @@ iframe[name=google_conversion_frame], iframe[name=txnIdGetterFrame]{display:none
 .pt-20{padding-top:20px !important}
 .pt-40 {padding-top: 40px !important;}
 .pb-0{padding-bottom:0px !important}
+.pb-10 { padding-bottom:10px !important; }
 .pb-20{padding-bottom:20px !important}
 .pb-30{padding-bottom:30px !important}
 
@@ -90,7 +91,6 @@ iframe[name=google_conversion_frame], iframe[name=txnIdGetterFrame]{display:none
 .btn, a.btn{display:inline-block;font-weight:400;line-height:1.2;width:100%;height:49px;padding:0 15px;text-align:center;letter-spacing:-.01em;border:1px solid;border-radius:0}
 .btn-float.org{line-height:58px;height:58px;font-weight:500;font-size:16px;color:#fff; }
 .btn-float{line-height:58px;height:58px;font-weight:500;font-size:16px;color:#fff; background: #0d6fb8; border-color: #0d6fb8;}
-
 /* s:안심전세 추가 (2)*/
 .btn-float.type02 { line-height:20px; }
 /* //e:안심전세 추가 (2)*/
@@ -102,11 +102,6 @@ iframe[name=google_conversion_frame], iframe[name=txnIdGetterFrame]{display:none
 .btn-primary.org, a.btn-primary.org{background:#0d6fb8;border-color:#0d6fb8} /*접근성 변경*/
 .btn-secondary.org, a.btn-secondary.org{background:#009edb;border-color:#009edb} /*접근성 변경*/
 .btn-primary, a.btn-primary{background:#004b8f;border-color:#004b8f}
-
-/* 안심전세 disabled 버튼 */
-.btn-primary.disabled, a.btn-primary.disabled {color:#fff;background:#ccc;border-color:#ccc;border-radius:0}
-
-
 .btn-secondary, a.btn-secondary{background:#0d6fb8;border-color:#0d6fb8}
 .btn-cancel.org, a.btn-cancel.org{background:#aaa;border-color:#aaa}
 .btn-cancel {background:#555;border-color:#555}
@@ -136,7 +131,6 @@ iframe[name=google_conversion_frame], iframe[name=txnIdGetterFrame]{display:none
 .btn-type09.org, a.btn-type09.org{width:auto;font-weight:500;color:#8da0a7;background:#fff;border-color:#8da0a7;border-radius:3px}
 .btn-type09, a.btn-type09{width:auto;font-weight:500;color:#62777f;background:#fff;border-color:#62777f;border-radius:3px}
 .btn.btn-type09.ico-down span{font-size:13px;color:#62777f}
-
 .btn-type10, a.btn-type10{color:#fff;background:#1c75bc;border-color:#1c75bc;border-radius:6px}
 .btn-type11 {color:#666; font-size: 14px;}
 .btn-type11 + .btn-type11 {border-left: 1px solid #d4d4d4}
@@ -1683,7 +1677,6 @@ button.btn-selbox span{font-size:15px}
 .view-wrap .view-txt-wrap .info-txt02{color:#222;}
 .view-txt-wrap .info-txt02.active{color:#2d93d0;}
 /* // e:안심전세 추가 (3) */
-
 
 .view-wrap .view-form textarea {min-height:293px;padding:0px 13px 10px;line-height:1.5;font-size:14px;color:#222;border:0}
 .view-wrap .view-file{padding:15px;font-size:0;background:#f8f8f8;border:1px solid #ddd;border-radius:3px}

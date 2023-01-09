@@ -2,8 +2,6 @@
 input[type='text'], input[type='number'], input[type='password'], input[type='mail'], input[type='tel'], input[type='email'], input[type='date'], input[type='datetime-local'], input[type='time'] { border:1px solid #d8d8d8; }
 .common-input.type-search input { border:1px solid #d8d8d8; }
 
-.pb-10 { padding-bottom:10px !important; }
-
 /* gnb */
 .container.footer-up { padding-bottom:0; }
 .gnb-wrapper.active { left:0 !important; }
@@ -53,7 +51,11 @@ hr { border:0; margin:0; padding:0; background:#f2f2f2; width:100%; height:10px;
 .btn-type07.bg-green { background:#2d827a; border-color:#2d827a; color:#fff; }
 .btn-type07.bg-lightgreen{background:#3ea000; border-color:#3ea000; color:#fff;}
 .btn-type07.bg-none { border-color:#222; color:#222; }
-.btn.disabled, .btn:disabled { border-color:#aaa; background:#aaa; color:#fff; }
+
+/* disable 시 */
+.btn-secondary.disabled, .btn-secondary:disabled,
+.btn-primary.disabled, a.btn-primary.disabled,
+.btn-type07.disabled, .btn-type07:disabled { border-color:#aaa; background:#aaa; color:#fff; }
 
 /* 툴팁 */
 .ico-help03, a.ico-help03 { position:relative; width:16px; height:16px; margin-top:3px; background-image:url('../images/sub/icon_help.png'); background-size:100%; }

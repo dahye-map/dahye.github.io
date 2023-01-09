@@ -21,19 +21,27 @@
 
 
 - images
-/images/sub/img_submn01.png
-/images/sub/img_submn02.png
+/images/main/main_guide_type03.png
+/images/sub/img_submn01@3x.png
+/images/sub/img_submn02@3x.png
 /images/sub/icon_relax01.png
 /images/sub/icon_relax02.png
 /images/sub/icon_relax03.png
 /images/sub/icon_relax04.png
-/images/main/main_guide_type03.png
 /images/sub/icon_help.png
 /images/sub/icon_warning.png
 /images/sub/icon_star.png
 /images/sub/icon_star.svg
 /images/sub/icon_star_off.png
 /images/sub/icon_star_off.svg
+/images/sub/btn_tooltip_close.png
+/images/sub/btn_tooltip_close.svg
+/images/sub/icon_help.png
+/images/sub/icon_logout.png
+/images/sub/icon_logout.svg
+/images/sub/img_logo_relax.png
+/images/sub/img_logo_relax.svg
+/images/sub/logo_kakap.png
 
 -css
 /css/common.css 기존 소스에 작업하여 주석 안심전세로 검색 후 추가 부탁드립니다.
