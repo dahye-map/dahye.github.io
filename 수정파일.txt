@@ -1,25 +1,3 @@
-1. 각 페이지마다 alert/confirm 팝업 추가
-가이드는 guide_popup.html 확인 부탁드립니다.
-- 결제수단 선택
-- 마이페이지 메인
-- 1:1 법률 상담 내역상세
-- 안심전세 진단 내역관리
-
-2. 검색결과 여부 페이지 추가
-
-3. 법률상담사례 디자인 수정
-
-4. 답변/답변상세 input height 수정
-- 1:1 법률상담 상세보기
-- 1:1 법률 상담 내역 상세 
-
-5. 안심진단상세내역관리 텍스트 수정
-
-6. 자가진단/안심진단 하단 버튼 클래스 변경 및 버튼 텍스트 수정
-우측 버튼 btn btn-float type02
-좌측 버튼 btn btn-float type02 btn-secondary org
-
-
 - images
 /images/main/main_guide_type03.png
 /images/sub/img_submn01@3x.png
@@ -44,9 +22,8 @@
 /images/sub/logo_kakap.png
 
 -css
-/css/common.css 기존 소스에 작업하여 주석 안심전세로 검색 후 추가 부탁드립니다.
+/css/common.css 기존 퍼블 css
 /css/style.css 안심전세에만 적용되는 스타일
-
 
 * 퍼블리싱 리스트는 guide.html 확인 부탁드립니다.
 
