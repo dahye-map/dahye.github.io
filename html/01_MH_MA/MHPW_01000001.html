@@ -19,7 +19,7 @@
             <div class="btn-left">
                 <a href="javascript:history.go(-1);" class="btn-ico btn-back" role="button" aria-label="이전"><span class="blind">뒤로</span></a>
             </div>
-            <h1 class="title">정보제공 및 약관동의</h1>
+            <h1 class="title">보증금지 조회</h1>
             <div class="btn-right">
                 <button type="button" class="btn-ico btn-home" aria-label="홈"></button>
                 <button type="button" class="btn-ico btn-menu02" aria-label="전체메뉴 열기"></button>
@@ -28,7 +28,7 @@
     
         <!-- s:본문시작 -->
         <div class="container">
-            <h2 class="blind">정보제공 및 약관동의</h2>
+            <h2 class="blind">보증금지 조회</h2>
             <div class="content-group pb-30 mb-30">
                 <div class="inner-20">
 
@@ -54,16 +54,26 @@
                                 <label for="frmJNum">주민등록번호</label>
                             </div>
                             <div class="frm-form">
-                                <div class="common-input">
-                                    <input type="tel" id="frmJNum" name="item2" title="주민등록번호 13자리 입력" value=""
-                                        placeholder="주민등록번호 13자리 입력" maxlength="13" />
+                                <div class="common-group type02">
+                                    <div class="common-input">
+                                        <input type="tel" id="juminNum1" name="item2" title="주민번호 앞자리" value="" placeholder="000101" readonly disabled>                                       
+                                    </div>
+
+                                    <span class="hypen">-</span>
+
+                                    <div class="common-input">
+                                        <span class="back-num">3</span>
+                                        <input type="tel" id="juminNum1_2" name="item2" title="주민번호 뒷자리" value="******" placeholder="" pattern="[0-9]*" inputmode="numeric" maxlength="6">
+                                    </div>
                                 </div>
+                                <span class="noti-info09">주민번호 뒷자리를 입력해 주세요.</span>
                             </div>
+                            
                         </div>
                     </div>
                     <!-- //e:조회 대상 임대인 정보 입력 -->
                     
-                    <div class="content-wrap mt-20">
+                    <div class="content-wrap mt-40">
 
                         <div class="chk-wrap">
                             <!-- s:전체동의 -->
@@ -124,12 +134,14 @@
                                     </div>
                                     <div class="box-con">
                                         <p class="con">
-                                            - <em>항목</em> : 성명(국문), 연락처 <br>
-                                            - <em>수집∙이용 목적</em> : 부동산등기부등본 열람 신청∙내역 관리, 법률상담 신청∙관리, 부동산 등기정보 변동 알림<br>
-                                            - <em>보유∙이용 기간</em> : 3년
+                                            <em>제공 받는자</em> :  ㈜리파인<br>
+                                            - <em>제공 목적</em> : 부동산 등기부등본 열람, 부동산 등기정보 변동 알림<br><br>
+                                            <em>제공 받는자</em> : 담당 변호사<br>
+                                            - <em>제공 목적</em> : 법률상담<br><br>
+                                            - <em>공통사항</em><br>
+                                            - <em>제공항목</em> : 성명(국문), 연락처, 주소(지단 주..
                                             <br><br>
-                                            ※ 위 개인정보 수집∙이용에 대한 동의를 거부할 권리가 있습니다.
-                                            그러나 동의를 거부할 경우 부동산등기부등본..
+                                            
                                         </p>
                                     </div>
                                 </div>
@@ -153,18 +165,12 @@
                                     </div>
                                     <div class="box-con">
                                         <p class="con">
-                                            - 항목 : 성명(국문), 연락처 <br>
-                                            - 수집∙이용 목적 : 부동산등기부등본 열람 신청∙내역 관리, 법률상담 신청∙관리, 부동산 등기정보 변동 알림<br>
-                                            - 보유∙이용 기간 : 3년
-                                            <br><br>
-                                            ※ 위 개인정보 수집∙이용에 대한 동의를 거부할 권리가 있습니다.
-                                            그러나 동의를 거부할 경우 부동산등기부등본..
-                                            - 항목 : 성명(국문), 연락처 <br>
-                                            - 수집∙이용 목적 : 부동산등기부등본 열람 신청∙내역 관리, 법률상담 신청∙관리, 부동산 등기정보 변동 알림<br>
-                                            - 보유∙이용 기간 : 3년
-                                            <br><br>
-                                            ※ 위 개인정보 수집∙이용에 대한 동의를 거부할 권리가 있습니다.
-                                            그러나 동의를 거부할 경우 부동산등기부등본..
+                                            <em>제1조 (목적)</em><br>
+                                            이 약관은 ‘주택도시보증공사’ (이하 “공사”라 한다)와 이용자 사이의 전자거래에 관한 기본적인 사항을 정함으로써 거래를 신속하고 효율적으로 처리하며 거래 당사자 상호간의 이해관계를 합리적으로 조정 하는 것을 목적으로 합니다.<br><br>
+                                            <em>제2조 (용어의 정리)</em><br>
+                                            ① 이 약관에서 사용하는 용어의 정의는 다음 ..
+                                            <br>
+                                            ① 이 약관에서 사용하는 용어의 정의는 다음 ..
                                         </p>
                                     </div>
                                 </div>
@@ -197,7 +203,7 @@
         <!-- //e:본문시작 -->
     
         <div class="footer auto-hide footer-up">		
-            <button type="button" class="btn btn-float btn-primary">확인</button>				
+            <button type="button" class="btn btn-float btn-primary">조회하기</button>				
         </div>
     </div>
 
