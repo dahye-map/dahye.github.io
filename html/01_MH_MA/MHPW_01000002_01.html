@@ -29,7 +29,7 @@
         <!-- s:본문시작 -->
         <div class="container">
             <h2 class="blind">보증금지 조회</h2>
-            <div class="content-group pb-30 mb-30">
+            <div class="content-group">
                 <div class="inner-20">
 
                     <!-- s:조회 대상 임대인 정보 입력 -->
@@ -56,14 +56,9 @@
                             <div class="frm-form">
                                 <div class="common-group type02">
                                     <div class="common-input">
-                                        <input type="tel" id="juminNum1" name="item2" title="주민번호 앞자리" value="" placeholder="000101" readonly disabled>                                       
-                                    </div>
-
-                                    <span class="hypen">-</span>
-
-                                    <div class="common-input">
-                                        <!-- <span class="back-num">3</span> -->
-                                        <input type="tel" id="juminNum1_2" name="item2" title="주민번호 뒷자리" value="000101" placeholder="" pattern="[0-9]*" inputmode="numeric" maxlength="6"readonly disabled>
+                                        <input type="tel" id="juminNum1" name="item2" title="주민번호 앞자리" value="" placeholder="000101" readonly disabled>
+                                        <span class="hypen">-</span>     
+                                        <input type="tel" id="juminNum1_2" name="item2" title="주민번호 뒷자리" value="000101" placeholder="" pattern="[0-9]*" inputmode="numeric" maxlength="6"readonly disabled>                             
                                     </div>
                                 </div>
                                 <span class="noti-info09">주민번호 뒷자리를 입력해 주세요.</span>
@@ -174,7 +169,7 @@
         <!-- //e:본문시작 -->
     
         <div class="footer auto-hide footer-up">		
-            <button type="button" class="btn btn-float btn-primary">조회하기</button>				
+            <button type="button" class="btn btn-float">확인</button>				
         </div>
     </div>
 
