@@ -6,6 +6,7 @@
 /images/sub/icon_relax02.png
 /images/sub/icon_relax03.png
 /images/sub/icon_relax04.png
+/images/sub/icon_relax05.png
 /images/sub/icon_help.png
 /images/sub/icon_warning.png
 /images/sub/icon_star.png
@@ -20,6 +21,10 @@
 /images/sub/img_logo_relax.png
 /images/sub/img_logo_relax.svg
 /images/sub/logo_kakap.png
+/images/sub/icon_check_mark.png
+/images/sub/icon_danger_sign.png
+/images/sub/icon_prev.png
+/images/sub/icon_next.png
 
 -css
 /css/common.css 기존 퍼블 css

@@ -42,6 +42,7 @@ input[type='text'], input[type='number'], input[type='password'], input[type='ma
 .txt-wrap .txt.type02 { font-size:15px; line-height:24px; }
 .txt-wrap .txt.type03 { font-size:15px; line-height:20px; }
 .txt-wrap .txt.type04 { color:#000; font-size:20px; line-height:30px; }
+.txt-wrap .txt.fc-red { color:#e5483d; font-size:15px; line-height:26px; }
 .fc-black { font-size:inherit; color:#000; }
 .like-txt { font-size:inherit; color:#009edb; font-weight:bold; }
 hr { border:0; margin:0; padding:0; background:#f2f2f2; width:100%; height:10px; }
@@ -170,14 +171,21 @@ hr { border:0; margin:0; padding:0; background:#f2f2f2; width:100%; height:10px;
 .submn-guide-card .submn-card .btn-linktxt span { font-family:'Noto Sans KR', 'sans-serif';  color:#fff; font-size:12px; }
 .submn-guide-card .info-txt { padding-top:10px; font-size:12px; line-height:18px; color:#666; }
 
-/* 안심전세 하단 버튼 영역 */
-.submn-btn-wrap ul { display:flex; margin-top:20px; }
-.submn-btn-wrap ul li { width:25%; text-align:center; }
+/* 안심전세 하단 버튼 슬라이드 영역 */
+.submn-btn-wrap .inner { padding:30px 20px 20px; }
 .submn-btn-wrap .img { display:block; width:48px; text-align:center; margin:0 auto; }
-.submn-btn-wrap .tit { padding-top:5px; color:#333; font-size:12px; line-height:16px; }
+.submn-btn-wrap .tit { padding-top:5px; color:#555; font-size:13px; line-height:16px; }
+.submn-btn-wrap .submn-btn-swiper { position:relative; }
+.submn-btn-swiper .swiper-slide { text-align:center; }
+.submn-btn-swiper .submn-btn-prev,
+.submn-btn-swiper .submn-btn-next { width:15px; height:100%; margin-top:0; top:0; opacity:1 !important; }
+.submn-btn-swiper .swiper-button-next:after, 
+.submn-btn-swiper .swiper-button-prev:after { display:none; }
+.submn-btn-swiper .submn-btn-prev { background:url('../images/sub/icon_prev.png') left 10px no-repeat; background-size:100%; left:0; }
+.submn-btn-swiper .submn-btn-next { background:url('../images/sub/icon_next.png') left 10px no-repeat; background-size:100%; right:0; }
 
 /* 안심전세 공지사항 버튼 */
-.mn-notice-wrap { background:#f8f8f8; margin-top:20px; }
+.mn-notice-wrap { background:#f8f8f8; }
 .mn-notice-wrap .mn-notice a { display:flex; align-items:center; padding:14px 0; }
 .mn-notice-wrap .mn-notice .tag { display:block; background:#fff; width:40px; height:22px; margin-right:10px; border:1px solid #588acc; border-radius:11px; font-size:12px; color:#588acc; }
 .mn-notice-wrap .mn-notice .title { text-align:left; font-size:14px; color:#333; font-weight:500; }
