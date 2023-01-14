@@ -1,0 +1,267 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+<title>Hollys Coffee</title>
+<link rel="stylesheet" href="http://fontawesome.io/assets/font-awesome/css/font-awesome.min.css">
+<link rel="stylesheet" href="style.css">
+<script src="js/jquery2x.js"></script>
+<script src="js/jquery.bxslider.min.js"></script>
+</head>
+<body>
+
+<header class="header">
+	<div class="wrap">
+		<h1><img src="img/logo.gif"></h1>
+	
+		<button class="tog">
+			<i class="fa fa-bars" aria-hidden="true"></i>
+		</button>
+		
+		<nav class="nav">
+			<h1 class="skip">네비 메뉴</h1>
+			<ul class="gnb">
+				<li>
+					<a href="">
+						Menu
+					</a>
+				</li>
+				<li>
+					<a href="">
+						HOLLYS Mall
+					</a>
+				</li>
+				<li>
+					<a href="">
+						Membership
+					</a>
+				</li>
+				<li>
+					<a href="">
+						HOLLYS News
+					</a>
+				</li>
+				<li>
+					<a href="">
+						Store
+					</a>
+				</li>
+				<li>
+					<a href="">
+						HOLLYS is
+					</a>
+				</li>
+			</ul>
+			<aside class="mLeft">
+				<ul>
+					<li>
+						<a href="">
+							<i class="fa fa-user" aria-hidden="true"></i>가맹문의
+						</a>
+					</li>
+					<li>
+						<a href="">
+							<i class="fa fa-university" aria-hidden="true"></i>아카데미
+						</a>
+					</li>
+				</ul>
+			</aside>
+			<aside class="mRight">
+				<ul>
+					<li><a href="">Login</a></li>
+					<li><a href="">Join</a></li>
+					<li><a href="">고객센터</a></li>
+					<li><a href="">English</a></li>
+					<li><a href="">Chinnise</a></li>
+				</ul>
+			</aside>
+		</nav>
+	</div>
+</header>
+	
+<script>
+function nav(){
+	$('.header .tog').click(function(){
+		$('.gnb, .mLeft, .mRight').slideToggle();
+	});
+}
+nav();
+</script>
+
+<section class="visual">
+	<ul class="slider">
+		<li><a href=""><img src="img/mainBanner_01.jpg" /></a></li>
+		<li><a href=""><img src="img/mainBanner_02.jpg" /></a></li>
+		<li><a href=""><img src="img/mainBanner_03.jpg" /></a></li>
+		<li><a href=""><img src="img/mainBanner_04.jpg" /></a></li>
+	</ul>
+</section>
+
+<script>
+$('.visual .slider').bxSlider({
+	prevText : '',
+	nextText : '',
+	auto : true
+});
+</script>
+
+<div class="mCenter">
+	<div class="wrap">
+		<section class="Fran">
+			<h1><i class="fa fa-user" aria-hidden="true"></i>Franchise</h1>
+			<a href=""><img src="img/menu_img01.gif" alt="가맹문의"></a>
+		</section>
+		<section class="mall">
+			<h1><i class="fa fa-gift" aria-hidden="true"></i>HOLLYS Mall</h1>
+			<p>할리스커피 기프트카드 및 할리스콘 구입</p>
+			<ul>
+				<li>
+					<a href="">
+						<img src="img/mall_img03.gif" alt="커피">
+						<p>Coffee</p>	
+					</a>
+				</li>
+				<li>
+					<a href="">
+						<img src="img/mall_img04.gif" alt="기타">
+						<p>Beverage</p>	
+					</a>
+				</li>
+				<li>
+					<a href="">
+						<img src="img/mall_img05.gif" alt="빵">
+						<p>Bakery</p>	
+					</a>
+				</li>
+			</ul>
+		</section>
+		<section class="store">
+			<h1><i class="fa fa-map-marker" aria-hidden="true"></i>Store</h1>
+			<p>할리스커피 매장 안내</p>
+			<a href=""><img src="img/store_img01.gif" alt="매장안내"></a>
+		</section>
+	</div>
+</div>
+
+<section class="mBanner">
+	<div class="wrap">
+		<h1 class="skip">메인 배너</h1>
+		<a href=""><img src="img/mainBanner_05.jpg" alt=""></a>
+		<a href=""><img src="img/mainBanner_06.gif" alt=""></a>
+		<a href=""><img src="img/mainBanner_07.png" alt=""></a>
+	</div>
+</section>
+
+<div class="mDetail">
+	<div class="wrap">
+		<section class="academy">
+			<h1><i class="fa fa-pencil" aria-hidden="true"></i>Coffee Academy</h1>
+			<p>할리스커피 아카데미와 함께하는 즐거운 커피 여행!</p>
+			<a href="" class="go">바로가기</a>
+		</section>
+		<section class="recruit">
+			<h1><i class="fa fa-handshake-o" aria-hidden="true"></i>Recruit</h1>
+			<p>할리스커피에서 커피를 이해하고, 문화를 만들어 갈 인재를 초대합니다.</p>
+			<a href="" class="go">바로가기</a>
+		</section>
+		<section class="news">
+			<h1><i class="fa fa-bullhorn" aria-hidden="true"></i>News</h1>
+			<ul>
+				<li>
+					<a href="">‘What’s Your Espresso Shot?’ - 에스프레소 추출 방식 선택</a>
+					<time datetime="2016-08-21">08-21</time>
+					
+				</li>
+				<li>
+					<a href="">'Make your Own' - 나만의 라떼를 만드는 작은 차이</a>
+					<time datetime="2016-08-21">08-21</time>
+					
+				</li>
+				<li>
+					<a href="">제 11기 주식회사 할리스에프앤비 결산공고</a>
+					<time datetime="2016-03-29">03-29</time>
+					
+				</li>
+			</ul>
+		</section>
+		<section class="icon_de">
+			<h1 class="skip">아이콘메뉴</h1>
+			<ul>
+				<li>
+					<a href="">
+						<img src="img/img_etc01.gif" alt="">
+						<p>가맹문의</p>
+					</a>
+				</li>
+				<li>
+					<a href="">
+						<img src="img/img_etc02.gif" alt="">
+						<p>아카데미강좌</p>
+					</a>
+				</li>
+				<li>
+					<a href="">
+						<img src="img/img_etc03.gif" alt="">
+						<p>고객문의</p>
+					</a>
+				</li>
+			</ul>
+		</section>
+	</div>
+</div>
+
+<section class="live">
+	<div class="wrap">
+		<h1>HOLLYS Live<i class="fa fa-facebook" aria-hidden="true"></i></h1>
+		<ul>
+			<li>
+				<a href="">
+					<img src="img/live1.jpg" alt="페이스북1">
+					<time datetime="2017-02-16">2017-02-16 01:49</time>
+					<p>졸업을 축하해요. 그 동안 수고한 당신, 딸기를 즐겨라! 졸업을 </p>
+				</a>
+			</li>
+			<li>
+				<a href="">
+					<img src="img/live2.jpg" alt="페이스북2">
+					<time datetime="2017-02-15">2017-02-15 01:13</time>
+					<p>날이 좀 풀린 것 같죠? 오늘, 딸기초코케익으로 같이 봄맞이 할</p>
+				</a>
+			</li>
+			<li>
+				<a href="">
+					<img src="img/live3.jpg" alt="페이스북3">
+					<time datetime="2017-02-14">2017-02-14 00:48</time>
+					<p>♥발렌타인데이엔, 딸기향 가득한 입술을 그대에게! 2월 14일. </p>
+				</a>
+			</li>
+			<li>
+				<a href="">
+					<img src="img/live4.jpg" alt="페이스북4">
+					<time datetime="2017-02-13">2017-02-13 07:11</time>
+					<p>딸기향 나는 입술, 갖고 싶죠? -3- 2월 14일! 할리스 딸기치즈</p>
+				</a>
+			</li>
+		</ul>
+	</div>
+</section>
+
+<footer class="footer">
+	<div class="wrap">
+		<ul>
+			<li><a href="">유통관리시스템 </a></li>
+			<li><a href="">개인정보취급방침</a></li>
+			<li><a href="">서비스이용약관</a></li>
+			<li><a href="">멤버십이용약관</a></li>
+			<li><a href="">고객문의</a></li>
+			<li><a href="">고객설문</a></li>
+			<li><a href="">사이트맵</a></li>
+		</ul>
+	</div>
+</footer>
+
+
+</body>
+</html>
