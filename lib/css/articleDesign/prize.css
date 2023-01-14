@@ -1,0 +1,72 @@
+@charset "utf-8";
+
+.article-wrap { background:#fff url('../../../img/prize/headline_bg.jpg') no-repeat top;}
+.tit { padding:25px 0; font-size:32px; color:#fff; font-weight:700; border-radius:3px; }
+.tit01{background: #822a78;}
+.tit02{background: #c62d2d;}
+.tit03{background: #f7a42e;}
+
+.bg{height: 11px;}
+.bg01{background: url('../../../img/prize/tit_bg01.jpg') no-repeat;background-size: contain;padding: 0;}
+.bg02{background: url('../../../img/prize/tit_bg02.jpg') no-repeat;background-size: contain;padding: 0;}
+.bg03{background: url('../../../img/prize/tit_bg03.jpg') no-repeat;background-size: contain;padding: 0;}
+
+.box01 { background:#fbfafa; width:98%; margin-left:1%; border-radius:20px; }
+/*.box01 .col-md-5 dl { margin-top:37px;}*/
+.box01 .col-md-5 dl dt, .box01 .col-md-5 dl dd { text-align:left; padding-left:164px;}
+.box01 dl dt { font-size:26px; color:#555555; font-weight:300; margin-top:20px;}
+.box01 dl dt:first-child { margin-top:0;}
+.box01 dl dd { font-size:16px; color:#555555; font-weight:300;}
+.box01 .prize-line { border-top:1px solid #eee6e6; margin:50px 0; height:auto;}
+.box01 h3 { font-size:22px; color:#555555; font-weight:300; line-height:1.3;}
+.box01 h3 span { color:#5a4836;padding-bottom:1px;border-bottom: 1px solid #5a4836;}
+.box01 p { font-size:16px; color:#555555;}
+.bg-01 { background: #fff;padding-bottom:80px;}
+.bg-01 p.info { color:#582720; line-height:1.571;}
+.prize-margin{margin-top: 40px;}
+.happy-tit {
+    color: #9b5362 !important;
+    font-size: 24px !important;
+    font-weight: bold !important;
+}
+.pt100-pc { padding-top:100px; }
+
+
+
+
+.nmt30 { margin-top:-30px; }
+
+@media (max-width: 1213px) {
+}
+
+@media (max-width: 1024px) {
+}
+
+
+@media (max-width: 990px) {
+  .box01 { text-align:center;}
+  .box01 .col-md-5 dl { margin-bottom:20px;}
+  .box01 .col-md-5 dl dt, .box01 .col-md-5 dl dd { padding-left:0; text-align:center;}
+  .prize-margin{margin-top: 0 !important; margin-bottom: 40px;}
+  .bg{height: 8px;}
+  .mb990{margin-bottom: 40px;}
+  .pt100-pc { padding-top:0; }
+}
+
+@media (max-width: 767px) {
+	.box01 { padding:0 10px;}
+    .mt797{margin-top: 20px;}
+}
+@media (max-width: 640px) {
+    .bg{height: 7px;}
+}
+@media (max-width: 550px) {
+    .bg{height: 6px;}
+}
+@media (max-width: 480px) {
+    .bg{height: 5px;}
+}
+@media (max-width: 330px) {
+
+
+}

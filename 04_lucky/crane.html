@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>SKEYES</title>
+    <meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0 user-scalable=no">
+	<!-- CSS -->
+	<link rel="stylesheet" href="../lib/css/bootstrap.css">
+	<link rel="stylesheet" href="../lib/css/common.css">
+	<link rel="stylesheet" href="../lib/css/articleDesign/crane.css">
+
+	<!-- favicon and touch icons -->
+	<link rel="apple-touch-icon-precomposed" sizes="144x144" href="../ico/apple-touch-icon-144-precomposed.png">
+	<link rel="apple-touch-icon-precomposed" sizes="114x114" href="../ico/apple-touch-icon-114-precomposed.png">
+	<link rel="apple-touch-icon-precomposed" sizes="72x72" href="../ico/apple-touch-icon-72-precomposed.png">
+	<link rel="apple-touch-icon-precomposed" href="../ico/apple-touch-icon-57-precomposed.png">
+	<link rel="shortcut icon" href="../ico/favicon.png">
+
+	<!-- JS -->
+	<script type="text/javascript" src="../lib/js/jquery-1.9.1.min.js"></script>
+	<script type="text/javascript" src="../lib/js/jquery.easing.1.3.js"></script>
+	<script type="text/javascript" src="../lib/js/jquery.bxslider.js"></script>
+    <script type="text/javascript" src="../lib/js/respond-image.js"></script>
+    <script type="text/javascript" src="../lib/js/jquery.slimscroll.min.js"></script>
+	<script type="text/javascript" src="../lib/js/inspot.js"></script>
+    <script type="text/javascript" src="../lib/js/common.js"></script>
+	<script type="text/javascript" src="../lib/js/main.js"></script>
+
+	<!--[if lt IE 9]>
+	    <script type="text/javascript" src="../lib/js/respond.min.js"></script>
+		<script type="text/javascript" src="../lib/js/html5.js"></script>
+	<![endif]-->
+
+    <script type="text/javascript">
+		$(document).ready(function(e){
+			init_game();
+		});
+		var win_rate = 65;
+
+		function init_game()
+		{
+			var $left = $('.btn-left');
+			var $right = $('.btn-right');
+			var $press = $('.btn-press');
+			var crane_offset;
+			var winW  = $(window).width();
+
+			var hold = false;
+			$(".start").click(function(){
+				$(this).hide();
+
+				$left.click(function(){
+					$(".game .crane").animate({"left" : "-=24%"}, function(){
+						crane_offset = $('.game .crane').position().left;
+						console.log(crane_offset);
+					});
+
+					if(winW >= 768 ) {
+						if(crane_offset <= 266) {
+							$(".game .crane").stop();
+						}
+					} else if (winW <= 768 && winW >=480) {
+						if(crane_offset <= 180) {
+							$(".game .crane").stop();
+						}
+					} else {
+						if(crane_offset <= 100) {
+							$(".game .crane").stop();
+						}
+					}
+
+				});
+				$right.click(function(){
+					$(".game .crane").animate({"left" : "+=24%"}, function(){
+						crane_offset = $('.game .crane').position().left;
+						console.log(crane_offset);
+					});
+					if(winW >= 768 ) {
+						if(crane_offset >= 509) {
+							$(".game .crane").stop();
+						}
+					} else if (winW <= 768 && winW >=480) {
+						if(crane_offset >= 332) {
+							$(".game .crane").stop();
+						}
+					} else {
+						if(crane_offset >= 200) {
+							$(".game .crane").stop();
+						}
+					}
+
+				});
+				$press.click(function(){
+					$(".game .crane .bar").animate({"top" : "0"});
+					$(".game .crane .body").animate({"top" : "0"}, function(){
+						crane_offset = $('.game .crane').position().left;
+
+						hold = true;
+
+						var rnd_rate = get_random_num();
+
+						if(winW >= 768 ) {
+							if(crane_offset >= 173 && crane_offset < 340) {
+								$('.all').hide();
+
+								if (parseInt(rnd_rate, 10) < win_rate) {
+									$('.success01').show();
+								} else {
+									$('.fail01').show();
+								}
+							}
+							if(crane_offset >= 340 && crane_offset < 510) {
+								$('.all').hide();
+								if (parseInt(rnd_rate, 10) < win_rate) {
+									$('.success02').show();
+								} else {
+									$('.fail02').show();
+								}
+							}
+							if(crane_offset >= 510) {
+								$('.all').hide();
+								if (parseInt(rnd_rate, 10) < win_rate) {
+									$('.success03').show();
+								} else {
+									$('.fail03').show();
+								}
+							}
+						} else if (winW <= 768 && winW >=480) {
+							if(crane_offset >= 50 && crane_offset < 230) {
+								$('.all').hide();
+
+								if (parseInt(rnd_rate, 10) < win_rate) {
+									$('.success01').show();
+								} else {
+									$('.fail01').show();
+								}
+							}
+							if(crane_offset >= 230 && crane_offset < 350) {
+								$('.all').hide();
+								if (parseInt(rnd_rate, 10) < win_rate) {
+									$('.success02').show();
+								} else {
+									$('.fail02').show();
+								}
+							}
+							if(crane_offset >= 350) {
+								$('.all').hide();
+								if (parseInt(rnd_rate, 10) < win_rate) {
+									$('.success03').show();
+								} else {
+									$('.fail03').show();
+								}
+							}
+						} else {
+							if(crane_offset >= 50 && crane_offset < 130) {
+								$('.all').hide();
+
+								if (parseInt(rnd_rate, 10) < win_rate) {
+									$('.success01').show();
+								} else {
+									$('.fail01').show();
+								}
+							}
+							if(crane_offset >= 130 && crane_offset < 200) {
+								$('.all').hide();
+								if (parseInt(rnd_rate, 10) < win_rate) {
+									$('.success02').show();
+								} else {
+									$('.fail02').show();
+								}
+							}
+							if(crane_offset >= 200) {
+								$('.all').hide();
+								if (parseInt(rnd_rate, 10) < win_rate) {
+									$('.success03').show();
+								} else {
+									$('.fail03').show();
+								}
+							}
+						}
+					});
+				});
+			});
+			$(".result > *").hide();
+		}
+
+		function check_lottery(obj)
+		{
+			var sa_num = $("#sa_num").val();
+			var user_name = $("#user_name").val();
+
+			if (sa_num == "")
+			{
+				alert("사번을 입력하세요.");
+				$("#sa_num").focus();
+				return false;
+			}
+
+			if (user_name == "")
+			{
+				alert("이름을 입력하세요.");
+				$("#user_name").focus();
+				return false;
+			}
+		}
+
+		function get_random_num()
+		{
+			var random = Math.floor(Math.random() * 100) + 1; //1 ~ 10 랜덤 출력
+		// console.log("random : " + random);
+			return random;
+		}
+	</script>
+</head>
+<body>
+    <div id="header">
+        <div>
+            <div class="month">
+                <p class="big">01</p>
+                <p class="small">2018 <br>JANUARY</p>
+            </div>
+            <div class="logo">
+                <a href="../00_main/main.asp"><img src="../img/common/img_logo.png" alt="SKEYES 스카이즈"></a>
+            </div>
+            <div class="menu">
+                <a href="javascript:void(0);"><img src="../img/common/img_menu.png" alt="menu" class="roll"></a>
+            </div>
+            <div class="select-box">
+                <label for="selected">지난호 보기</label>
+                <select id="selected">
+                    <option value="">지난호 보기</option>
+                    <option value="">2016년 12월</option>
+                    <option value="">2016년 11월</option>
+                    <option value="">2016년 10월</option>
+                </select>
+            </div>
+        </div>
+    </div>
+    <div id="gnb-list">
+        <div>
+            <span class="gnb-close"><a href="#"><img src="../img/common/gnb_close.jpg" alt="close" class="roll"></a></span>
+            <h2><span>January</span>2017년 1월호</h2>
+            <div id="scroll">
+                <ul class="of-hi">
+                    <li class="gnb-menu01">
+                        <h3>혁신스토리</h3>
+                        <ul>
+                            <li class="skarticle">
+                                <a href="../01_story/cover.asp">
+                                    <dl>
+                                        <dt>신년사</dt>
+                                        <dd>우리의 젊음은 지금부터 시작이다, <br>유스컬쳐</dd>
+                                    </dl>
+                                </a>
+                            </li>
+                            <li class="skarticle">
+                                <a href="../01_story/ceo.asp">
+                                    <dl>
+                                        <dt>일혁신 insight</dt>
+                                        <dd>우리의 젊음은 지금부터 시작이다, <br>유스컬쳐</dd>
+                                    </dl>
+                                </a>
+                            </li>
+                            <li class="skarticle">
+                                <a href="../01_story/build.asp">
+                                    <dl>
+                                        <dt>우리회사 슈퍼맨</dt>
+                                        <dd>우리의 젊음은 지금부터 시작이다, <br>유스컬쳐</dd>
+                                    </dl>
+                                </a>
+                            </li>
+                            <li class="skarticle">
+                                <a href="../01_story/news.asp">
+                                    <dl>
+                                        <dt>SK건설 News</dt>
+                                        <dd>우리의 젊음은 지금부터 시작이다, <br>유스컬쳐</dd>
+                                    </dl>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="gnb-menu02 mt40">
+                        <h3>열정 공동체</h3>
+                        <ul>
+                            <li class="skarticle">
+                                <a href="../01_story/cover.asp">
+                                    <dl>
+                                        <dt>우리회사 슈퍼맨</dt>
+                                        <dd>우리의 젊음은 지금부터 시작이다, <br>유스컬쳐</dd>
+                                    </dl>
+                                </a>
+                            </li>
+                            <li class="skarticle">
+                                <a href="../01_story/ceo.asp">
+                                    <dl>
+                                        <dt>우리회사 슈퍼맨</dt>
+                                        <dd>우리의 젊음은 지금부터 시작이다, <br>유스컬쳐</dd>
+                                    </dl>
+                                </a>
+                            </li>
+                            <li class="skarticle">
+                                <a href="../01_story/build.asp">
+                                    <dl>
+                                        <dt>우리회사 슈퍼맨</dt>
+                                        <dd>우리의 젊음은 지금부터 시작이다, <br>유스컬쳐</dd>
+                                    </dl>
+                                </a>
+                            </li>
+                            <li class="skarticle">
+                                <a href="../01_story/news.asp">
+                                    <dl>
+                                        <dt>우리회사 슈퍼맨</dt>
+                                        <dd>우리의 젊음은 지금부터 시작이다, <br>유스컬쳐</dd>
+                                    </dl>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="gnb-menu03 mt40">
+                        <h3>감성 충전</h3>
+                        <ul>
+                            <li class="skarticle">
+                                <a href="../01_story/cover.asp">
+                                    <dl>
+                                        <dt>우리회사 슈퍼맨</dt>
+                                        <dd>우리의 젊음은 지금부터 시작이다, <br>유스컬쳐</dd>
+                                    </dl>
+                                </a>
+                            </li>
+                            <li class="skarticle">
+                                <a href="../01_story/ceo.asp">
+                                    <dl>
+                                        <dt>우리회사 슈퍼맨</dt>
+                                        <dd>우리의 젊음은 지금부터 시작이다, <br>유스컬쳐</dd>
+                                    </dl>
+                                </a>
+                            </li>
+                            <li class="skarticle">
+                                <a href="../01_story/build.asp">
+                                    <dl>
+                                        <dt>우리회사 슈퍼맨</dt>
+                                        <dd>우리의 젊음은 지금부터 시작이다, <br>유스컬쳐</dd>
+                                    </dl>
+                                </a>
+                            </li>
+                            <li class="skarticle">
+                                <a href="../01_story/news.asp">
+                                    <dl>
+                                        <dt>우리회사 슈퍼맨</dt>
+                                        <dd>우리의 젊음은 지금부터 시작이다, <br>유스컬쳐</dd>
+                                    </dl>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="gnb-menu04 mt40">
+                        <h3>행운 특급</h3>
+                        <ul>
+                            <li class="skarticle">
+                                <a href="../01_story/cover.asp">
+                                    <dl>
+                                        <dt>우리회사 슈퍼맨</dt>
+                                        <dd>우리의 젊음은 지금부터 시작이다, <br>유스컬쳐</dd>
+                                    </dl>
+                                </a>
+                            </li>
+                            <li class="skarticle">
+                                <a href="../01_story/ceo.asp">
+                                    <dl>
+                                        <dt>우리회사 슈퍼맨</dt>
+                                        <dd>우리의 젊음은 지금부터 시작이다, <br>유스컬쳐</dd>
+                                    </dl>
+                                </a>
+                            </li>
+                            <li class="skarticle">
+                                <a href="../01_story/build.asp">
+                                    <dl>
+                                        <dt>우리회사 슈퍼맨</dt>
+                                        <dd>우리의 젊음은 지금부터 시작이다, <br>유스컬쳐</dd>
+                                    </dl>
+                                </a>
+                            </li>
+                            <li class="skarticle">
+                                <a href="../01_story/news.asp">
+                                    <dl>
+                                        <dt>우리회사 슈퍼맨</dt>
+                                        <dd>우리의 젊음은 지금부터 시작이다, <br>유스컬쳐</dd>
+                                    </dl>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- s:article-wrap -->
+    <div class="article-wrap" >
+        <!-- s:headline -->
+        <div id="headline">
+            <div class="headline-container">
+                <img src="../img/crane/headline_tit.png" data-src-base='../img/crane/' data-src='<480:headline_mo.jpg, <768:headline_mo.jpg, <960:headline_tit.png, >960:headline_tit.png' />
+            </div>
+        </div>
+        <!-- //e:headline -->
+        <!-- s:lead -->
+        <div id="lead">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 ta-c">
+                        <p>대한민국에 '인형뽑기' 열풍을 일으킨 '크레인 게임기'가 드디어 우리 사보에도 상륙했습니다. 여러분, 그 동안 인형 뽑느라 허무하게 소비한 동전과 시간에 가슴 아프셨죠? 이젠 그럴 필요 없습니다~ 스카이즈의 '럭키 크레인'은 스마트폰과 약간의 인내심만 있으면 인형보다 더 탐나는 기프티콘을 겟할 수 있거든요. 동전도 필요 없어요~ SK건설 구성원이라면 기프티콘을 뽑을 때까지 무한 공짜 도전! 이번 시간에는 무술년, 개의 해를 맞이해 귀여운 강아지 인형들을 준비해보았습니다. 갖고 싶은 강아지 인형을 클릭해보세요~</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- //e:lead -->
+        <!-- s:article-navi -->
+        <div class="article-navi">
+            <div class="prev-article"><a href="#" title="이전 기사 보기"></a></div>
+            <div class="next-article"><a href="#" title="다음 기사 보기"></a></div>
+        </div>
+        <!-- //e:article-navi -->
+        <div class="cl-b"></div>
+        <!-- s:contents -->
+        <div class="bg-01">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 ta-c">
+                        <p><img src="../img/crane/tit01.jpg" alt=""></p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4 ta-c">
+                        <p class="mt40"><img src="../img/crane/img01.jpg" alt=""></p>
+                        <p class="mt40"><img src="../img/crane/step01.jpg" alt=""></p>
+                        <p class="mt20 step">사번과 이름을 입력한 후 게임화면을 클릭하세요. </p>
+                    </div>
+                    <div class="col-md-4 ta-c">
+                        <p class="mt40"><img src="../img/crane/img02.jpg" alt=""></p>
+                        <p class="mt40"><img src="../img/crane/step02.jpg" alt=""></p>
+                        <p class="mt20 step">보라색 버튼을 갖고 싶은 인형 쪽으로 조종한 뒤 빨간색 버튼을 누르면 크레인이 내려갑니다.</p>
+                    </div>
+                    <div class="col-md-4 ta-c">
+                        <p class="mt40"><img src="../img/crane/img03.jpg" alt=""></p>
+                        <p class="mt40"><img src="../img/crane/step03.jpg" alt=""></p>
+                        <p class="mt20 step">인형 뽑기에 성공하면 기프티콘을 받을 수 있습니다.</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="bg-02">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 ta-c mt100 mb40">
+                        <p><img src="../img/crane/tit02.jpg" alt=""></p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="info">
+                            <div class="name">
+                                <img src="../img/crane/name.png"  />
+                                <input type="text" name="user_name" id="user_name" value="">
+                            </div>
+                            <div class="num">
+                                <img src="../img/crane/num.png"  />
+                                <input type="text" name="sa_num" id="sa_num" value="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-12 mt60 mb-game">
+                        <div class="game">
+
+							<div class="grass-wrap">
+								<div class="grass">
+									<div class="all">
+										<p class="shine"><img src="../img/crane/grass_shine.png" alt=""></p>
+										<p class="doll"><img src="../img/crane/bg_doll.png" alt=""></p>
+
+			                            <div class="crane">
+											<p class="bar"><img src="../img/crane/bar.png" alt=""></p>
+			                                <p class="body"><img src="../img/crane/crane.png" alt=""></p>
+			                            </div>
+
+			                            <div class="start ta-c">
+											<p class="icon"><img src="../img/crane/ico_foot.png" alt=""></p>
+			                                <p class="con">화면을 클릭하면 게임이 시작됩니다.</p>
+			                            </div>
+
+			                            <div class="doll01">
+			                                <p><img src="../img/crane/doll01.png" alt=""></p>
+			                            </div>
+			                            <div class="doll02">
+			                                <p><img src="../img/crane/doll02.png" alt=""></p>
+			                            </div>
+			                            <div class="doll03">
+			                                <p><img src="../img/crane/doll03.png" alt=""></p>
+			                            </div>
+									</div>
+									<div class="result">
+										<div class="success01">
+											<p class="ta-c"><img src="../img/crane/img_success01.png" alt=""></p>
+										</div>
+										<div class="success02">
+											<p class="ta-c"><img src="../img/crane/img_success02.png" alt=""></p>
+										</div>
+										<div class="success03">
+											<p class="ta-c"><img src="../img/crane/img_success03.png" alt=""></p>
+										</div>
+
+										<a href="" class="fail01">
+											<p class="ta-c"><img src="../img/crane/img_fail01.png" alt=""></p>
+										</a>
+										<a href="" class="fail02">
+											<p class="ta-c"><img src="../img/crane/img_fail02.png" alt=""></p>
+										</a>
+										<a href="" class="fail03">
+											<p class="ta-c"><img src="../img/crane/img_fail03.png" alt=""></p>
+										</a>
+									</div>
+								</div>
+							</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bg-03">
+            <div class="container">
+                <div class="row mt40 mb60">
+                    <div class="col-md-12 ta-c">
+                        <div class="control">
+							<a href="javascript:void(0);" class="btn-left">
+								<img src="../img/crane/btn_left.jpg" alt="">
+							</a>
+							<a href="javascript:void(0);" class="btn-press">
+								<img src="../img/crane/btn_press.jpg" alt="">
+							</a>
+							<a href="javascript:void(0);" class="btn-right">
+								<img src="../img/crane/btn_right.jpg" alt="">
+							</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- //e:contents -->
+    </div>
+    <!-- //e:article-wrap -->
+	<div class="layer-popup-bg"></div>
+</body>
+</html>
