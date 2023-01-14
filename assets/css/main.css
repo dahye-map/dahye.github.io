@@ -1307,6 +1307,8 @@
 
 		#header a {
 			color: inherit;
+			font-weight:bold;
+			font-size: 16px;
 		}
 
 			#header a:hover {
@@ -1557,21 +1559,18 @@
 		}
 
 
-/*학력 경력사항*/
-.resume{padding:4em; background-color: #ffffff; border-radius: 4px; text-align: center;}
+/*경력사항*/
+.resume { padding:4em; background-color:#fff; border-radius:4px; text-align:left; }
 .resume ul { padding:0; margin:0; }
-.resume:after { content:''; display:block; clear:both; }
-.edu { float:left; width:50%; border-right:1px solid #ccc; }
-.edu li{padding-top:20px; list-style:none; }
-.edu li:after{content:''; display:block; clear:both;}
-.edu p{ text-align:center; font-size:0.9em; margin:0; }
-.edu b{ text-align:center;font-size:0.9em;vertical-align:top;}
+.resume ul li { padding-top:20px; list-style:none; }
+.resume .tit { font-weight:bold; padding-bottom:20px; margin:0; }
 
-.contact{ float:left; width:50%; margin-top:10em; }
-.contact li{padding-top:20px;  list-style:none;}
-.contact i{font-size:2em; width:40px; height:40px; line-height:40px; text-align:center;margin-right:10px;}
+.tab { width:100%; display:flex; justify-content:center; margin-bottom:4em; border-bottom:1px solid #b7b7b7; }
+.tab.active { position:fixed; top:0; left:0; right:0; z-index:10; background:#fff; }
+.tab a { display:block; text-decoration:none; border-bottom:1px solid transparent; padding:20px; font-weight:bold; font-size:20px; }
+.tab a:hover { border-bottom:1px solid #000; color:#000; }
+
 
 @media screen and (max-width: 736px) {
-	.edu, .contact { float:none; width:100%; border:none; }
-	.edu { padding-bottom:2em !important; border-bottom:1px solid #ccc; }
+	.resume { padding:1em; }
 }

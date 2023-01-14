@@ -56,6 +56,17 @@
 
 			});
 
+			var _tab = $('.tab').offset().top;
+			$(window).scroll(function(){
+				var _scrollTop = $(window).scrollTop();
+
+				if( _scrollTop >= _tab) {
+					$('.tab').addClass('active');
+				} else {
+					$('.tab').removeClass('active');
+				}
+			});
+
 	});
 
 })(jQuery);
