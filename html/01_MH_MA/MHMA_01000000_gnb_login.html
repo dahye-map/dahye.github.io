@@ -51,10 +51,11 @@
 
 					<div class="gnb-menu-list">
 						<ul>
-							<li class="list"><a href="javascript:;">금리 알아보기</a></li>
+							<li class="list"><a href="javascript:;">전세보증금지 확인</a></li>
+							<li class="list"><a href="javascript:;">부동산중개업 조회</a></li>
+							<li class="list"><a href="javascript:;">안심전세 셀프테스트</a></li>
+							<li class="list"><a href="javascript:;">전세대출 금리 확인</a></li>
 							<li class="list"><a href="javascript:;">공공임대 알아보기</a></li>
-							<li class="list"><a href="javascript:;">전세계약 주의사항</a></li>
-							<li class="list"><a href="javascript:;">개업 공인중개사 조회</a></li>
 							<li class="list"><a href="javascript:;">공지사항</a></li>
 						</ul>
 					</div>
@@ -118,33 +119,43 @@
 	
 					<!-- 안심전세 메인화면 하단 버튼 -->
 					<section class="submn-btn-wrap">
-						<div class="inner-20">
-							<ul>
-								<li>
-									<a href="" title="금리 알아보기로 이동">
-										<img src="../../images/sub/icon_relax01.png" alt="금리 알아보기 아이콘" class="img">
-										<span class="tit">금리<br>알아보기</span>
-									</a>
-								</li>
-								<li>
-									<a href="" title="공공임대 알아보기로 이동">
-										<img src="../../images/sub/icon_relax02.png" alt="공공임대 알아보기 아이콘" class="img">
-										<span class="tit">공공임대<br>알아보기</span>
-									</a>
-								</li>
-								<li>
-									<a href="" title="전세계약 주의사항으로 이동">
-										<img src="../../images/sub/icon_relax03.png" alt="전세계약 주의사항 아이콘" class="img">
-										<span class="tit">전세계약<br>주의사항</span>
-									</a>
-								</li>
-								<li>
-									<a href="" title="개업공인중개사 조회로 이동">
-										<img src="../../images/sub/icon_relax04.png" alt="개업공인중개사 조회 아이콘" class="img">
-										<span class="tit">개업공인중개사<br>조회</span>
-									</a>
-								</li>
-							</ul>
+						<div class="inner">
+							<div class="swiper-container submn-btn-swiper">
+								<div class="swiper-wrapper">
+									<div class="swiper-slide">
+										<a href="" title="전세보증금지 확인으로 이동">
+											<img src="../../images/sub/icon_relax01.png" alt="전세보증금지 확인 아이콘" class="img">
+											<span class="tit">전세보증금지<br>확인</span>
+										</a>
+									</div>
+									<div class="swiper-slide">
+										<a href="" title="부동산중개업 조회로 이동">
+											<img src="../../images/sub/icon_relax02.png" alt="부동산중개업 조회 아이콘" class="img">
+											<span class="tit">부동산중개업<br>조회</span>
+										</a>
+									</div>
+									<div class="swiper-slide">
+										<a href="" title="안심전세 셀프테스트로 이동">
+											<img src="../../images/sub/icon_relax03.png" alt="안심전세 셀프테스트 아이콘" class="img">
+											<span class="tit">안심전세<br>셀프테스트</span>
+										</a>
+									</div>
+									<div class="swiper-slide">
+										<a href="" title="전세대출 금리확인으로 이동">
+											<img src="../../images/sub/icon_relax04.png" alt="전세대출 금리확인 아이콘" class="img">
+											<span class="tit">전세대출<br>금리확인</span>
+										</a>
+									</div>
+									<div class="swiper-slide">
+										<a href="" title="공공임대 알아보기로 이동">
+											<img src="../../images/sub/icon_relax05.png" alt="공공임대 알아보기 아이콘" class="img">
+											<span class="tit">공공임대<br>알아보기</span>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-button-next submn-btn-next"></div>
+								<div class="swiper-button-prev submn-btn-prev"></div>
+							</div>
 						</div>
 					</section>
 					<!-- //안심전세 메인화면 하단 버튼 -->
@@ -195,16 +206,22 @@
 		<script src="../../js/swiper-bundle.min.js"></script>
 
 		<script>
-				var swiper = new Swiper(".submn-swiper", {
-					slidesPerView: "auto",
-					spaceBetween: 10,
-					autoplay: {
-						delay: 2500,
-						disableOnInteraction: false,
-					}
-				});
+			var swiper = new Swiper(".submn-swiper", {
+				slidesPerView: "auto",
+				spaceBetween: 10,
+				autoplay: {
+					delay: 2500,
+					disableOnInteraction: false,
+				}
+			});
 
-	
-		</script>		
+			var swiper = new Swiper(".submn-btn-swiper", {
+				slidesPerView: 3,
+				navigation: {
+					nextEl: ".submn-btn-next",
+					prevEl: ".submn-btn-prev",
+				}
+			});
+		</script>	
 	</body>
 </html>
