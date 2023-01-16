@@ -320,6 +320,8 @@ $(function(){
 		// 체크리스트 전체선택
 		$('.list-chk .chk-all .common-check input[type=checkbox]').fnChkAll();
 
+		//안심전세 체크리스트 전체선택
+		$('.all-chk-wrap .all-chk .common-check input[type=checkbox]').fnChkAll();
 		
 
 		// 토글 영역
@@ -714,14 +716,44 @@ var LayerPopup = {
 	}
 }
 
+// 안심전세 gnb 메뉴
+$('.header .btn-menu02').on('click', function(){
+	$('.gnb-wrapper').addClass('active');
+});
+  
+$('.gnb-wrapper .close-btn').on('click', function(){
+	$('.gnb-wrapper').removeClass('active');
+});
 
 // 안심전세 툴팁 화면
 $('.ico-help03').on('click', function(){
 	$(this).toggleClass('active');
 	$(this).next('.tooltip').toggleClass('active');
 });
-
 $('.btn-close').on('click', function(){
 	$(this).parent('.tooltip').removeClass('active');
 	$(this).parent().siblings('.ico-help03').removeClass('active');
+});
+
+//결과 화면 조회
+$('.btn-result').click(function(){
+	$('.total-result').addClass('active');
+});
+
+//근저당권 설정액 추가 삭제
+var insert_html = $('.add-list-wrap ul').html();
+var max_append = 1;
+$('.add-list-wrap .btn-add').on('click', function(){
+	// 5번 째부터는 append 막기
+	if (max_append >= 5) {
+		//최대 5개까지 입력 가능 alert
+		LayerPopup.open('pop02', this);
+		return;
+	} 
+	$(this).next().append(insert_html);
+	max_append++;
+});
+$('.add-list-wrap').on('click', '.btn-delete', function() {
+	$(this).parent().parent('li').remove()
+	max_append--;
 });

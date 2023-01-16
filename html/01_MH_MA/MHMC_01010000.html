@@ -21,51 +21,104 @@
             </div>
             <h1 class="title">법률사례</h1>
             <div class="btn-right">
-                <!-- <button class="btn-ico btn-home" aria-label="홈"><span class="blind">홈</span></button> -->
-                <a href="javascript:;" aria-label="전체메뉴 열기" class="btn-ico btn-menu"><span class="blind">전체메뉴</span></a>
+                <button type="button" class="btn-ico btn-home" aria-label="홈"></button>
+                <button type="button" class="btn-ico btn-menu02" aria-label="전체메뉴 열기"></button>
             </div>
         </header>
     
         <!-- s:본문시작 -->
         <div class="container board">
             <h2 class="blind">법률상담 사례 본문</h2>
-            <div class="content-group pb-30 mb-30">
+            <div class="content-group">
                 <div class="inner-20">
                     <div class="content-wrap">
+                        <!-- s:법률사례 검색 -->
                         <div class="txt-wrap">
-                            <h3 class="tit">법률상담 사례</h3>
+                            <h3 class="tit pb-10">법률상담 사례</h3>
                             <p class="txt type03">
                                 상담 하기 전 공개된 답변을 검색해보세요
                             </p>
                         </div>
-    
+                        <div class="common-combo mt-20">
+                            <select title="주거형태 선택">
+                                <option value="">대분류</option>
+                                <option value="">주택임대차보호법</option>
+                                <option value="">민법</option>
+                                <option value="">채무자 회생/파산 법률</option>
+                                <option value="">판례</option>
+                                <option value="">기타</option>
+                            </select>
+                        </div>
+                        <div class="common-combo mt-10">
+                            <select title="주거형태 선택">
+                                <option value="">소분류</option>
+                                <option value="">주택임대차보호법</option>
+                                <option value="">민법</option>
+                                <option value="">채무자 회생/파산 법률</option>
+                                <option value="">판례</option>
+                                <option value="">기타</option>
+                            </select>
+                        </div>
                         <div class="common-input type-search mt-10">
                             <input type="text" name="item2" title="검색어 입력" placeholder="검색어를 입력해주세요">
                             <button type="button" class="btn-ico"><span class="blind">검색</span></button>
                         </div>
-                        <div class="total-wrap ta-r">
+                        <!-- //e:법률사례 검색 -->
+
+                        <!-- s:법률사례 리스트 -->
+                        <div class="total-wrap ta-r mt-30">
                             <p>총 <em>10</em>건</p>
                         </div>
-                        <div class="list-wrap">
-                            <ul>
-                                <li>
-                                    <p class="tit">부산시 소액임차 최우선 변제금 문의</p>
-                                    <p class="info">
-                                        <span class="date">2022.01.04<em class="blind">공지등록일</em></span>
-                                    </p>
-                                    <button type="button" class="btn"><span class="blind">부산시 소액임차 최우선 변제금 문의 상세보기</span></button>
-                                </li>
-                                <li>
-                                    <p class="tit">주택도시보증공사 모바일보증 어플 모바일HUG 출시 안내</p>
-                                    <p class="info">
-                                        <span class="date">2022.11.01<em class="blind">공지등록일</em></span>
-                                    </p>
-                                    <button type="button" class="btn"><span class="blind">주택도시보증공사 모바일보증 어플 모바일HUG 출시 안내 공지
-                                            상세보기</span></button>
-                                </li>
-                            </ul>
+                        <div class="table-wrap type02">
+                            <table>
+                                <caption>제목, 답변일로 구성된 법률상담 사례 내용</caption>
+                                <colgroup>
+                                    <col width="*">
+                                    <col width="90px">
+                                </colgroup>
+                                <thead>
+                                    <tr>
+                                        <th scope="col">제목</th>
+                                        <th scope="col">답변일</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="name">
+                                            <a href="" title="법률사례 상담 제목">부산시 소액임차 최우선 변제금 문의</a>
+                                        </td>
+                                        <td class="date">2023.11.15</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="name">
+                                            <a href="" title="법률사례 상담 제목">부산시 소액임차 최우선 변제금 문의</a>
+                                        </td>
+                                        <td class="date">2023.11.15</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="name">
+                                            <a href="" title="법률사례 상담 제목">부산시 소액임차 최우선 변제금 문의</a>
+                                        </td>
+                                        <td class="date">2023.11.15</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="name">
+                                            <a href="" title="법률사례 상담 제목">부산시 소액임차 최우선 변제금 문의</a>
+                                        </td>
+                                        <td class="date">2023.11.15</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="name">
+                                            <a href="" title="법률사례 상담 제목">부산시 소액임차 최우선 변제금 문의</a>
+                                        </td>
+                                        <td class="date">2023.11.15</td>
+                                    </tr>
+                                </tbody>
+                            </table>
                         </div>
-                        <div class="paging-wrap">
+                        <!-- //e:법률사례 리스트 -->
+
+                        <div class="paging-wrap mt-20">
                             <button type="button" class="btn-ico btn-prev"><span class="blind">5개 이전 페이지</span></button>
                             <div class="num">
                                 <a href="javascript:;" role="button" aria-current="page" class="on">1</a>
@@ -76,15 +129,21 @@
                             </div>
                             <button type="button" class="btn-ico btn-next"><span class="blind">5개 다음 페이지</span></button>
                         </div>
-                        <div class="result-no">
+                        <!-- s:검색결과없음 -->
+                        <!-- <div class="result-no">
                             <p class="txt">검색 결과가 없습니다.</p>
-                        </div>
+                        </div> -->
+                        <!-- //e:검색결과없음 -->
                     </div>
     
                 </div>
             </div>
         </div>
         <!-- //e:본문시작 -->
+
+        <div class="footer auto-hide footer-up">
+            <button type="button" class="btn btn-float btn-primary bg-green">상담 신청하기</button>				
+        </div>
     </div>
 
 

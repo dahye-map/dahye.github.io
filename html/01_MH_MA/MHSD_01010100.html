@@ -3,7 +3,7 @@
 
 <head>
 	<meta charset="utf-8">
-	<title>안심전세 진단</title>
+	<title>안심전세 진단 결과</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, viewport-fit=cover">
 	<meta name="mobile-web-app-capable" content="yes">
 	<meta name="apple-mobile-web-app-capable" content="yes" />
@@ -21,8 +21,8 @@
             </div>
             <h1 class="title">안심전세 진단</h1>
             <div class="btn-right">
-                <!-- <button class="btn-ico btn-home" aria-label="홈"><span class="blind">홈</span></button> -->
-                <a href="javascript:;" aria-label="전체메뉴 열기" class="btn-ico btn-menu"><span class="blind">전체메뉴</span></a>
+                <button type="button" class="btn-ico btn-home" aria-label="홈"></button>
+                <button type="button" class="btn-ico btn-menu02" aria-label="전체메뉴 열기"></button>
             </div>
         </header>
     
@@ -35,7 +35,7 @@
                 <div class="result-top-wrap">
                     <div class="inner">
                         <h3 class="blind">주택 검색 후 시세 결과 본문</h3>
-                        <div class="addr-detail pb-0">
+                        <div class="addr-detail">
                             <div class="tag-wrap">
                                 <div class="tag">등록임대주택</div>
                                 <!-- s:툴팁(tooltip-wrap으로 감싸기) -->
@@ -59,65 +59,343 @@
                                 25 직원숙소 2동 203호
                             </p>
                         </div>
+                        <div class="btn-wrap mt-0">
+                            <button type="button" class="btn btn-lg btn-modify"><span>대상주택 변경하기</span></button>
+                        </div>
                     </div>
                 </div>
                 <!-- //e:상단 결과 -->
 
                 <div class="inner-20">
+                    <!-- s:전세(임대) 입주일 / 보증금액 -->
+                    <div class="relax-result-wrap">
+                        <div class="relax-result">
+                            <h3 class="title">전세(임대) 입주일 / 보증금액</h3>
 
-
-                    <!-- s:진단 입력 -->
-                    <div class="form-wrap mt-30">
-
-                        <div class="form-box">
-                            <div class="frm-tit">
-                                <label for="frmArea1">임대보증금을 입력하세요</label>
-                            </div>
-                            <div class="frm-form">
-                                <!-- s:에러문구 
-                                    ipt-error 클래스 추가
-                                    하단 에러문구 추가 
-                                -->
-                                <div class="common-input ipt-error type-unit">
-                                    <input type="tel" class="ta-r" id="frmArea1" name="item2" title="임대보증금을 입력" value="" pattern="[0-9]*" inputmode="numeric">
-                                    <em>원</em>
-                                </div>
-                                <span class="noti-info03">* 임대보증금을 입력하세요.</span>
-                                <!-- //e:에러문구 -->
-                            </div>
-                        </div>
-
-                        <div class="form-box">
-                            <!-- s:툴팁 -->
-                            <div class="frm-tit tooltip-wrap">
-                                <label for="frmDate">
-                                    입주(예정)일을 입력하세요 <button type="button" class="btn btn-ico ico-help03"><span class="blind">도움말 보기</span></button>
-
-                                    <div class="tooltip left">
-                                        <span class="tooltip-txt">
-                                            입력하신 날짜를 기준으로 대상 주택 저당권 등과 비교하여 순위를 분석합니다.
-                                        </span>
-                                        <button type="button" class="btn btn-ico btn-close"><span class="blind">툴팁 닫기</span></button>
+                            <!-- s:입주일 보증금액 입력 -->
+                            <div class="form-wrap">
+                                <div class="form-box">
+                                    <div class="frm-tit">
+                                        <label for="frmDate">입주일 또는 입주 예정일은?</label>
                                     </div>
-                                </label>
-                            </div>
-                            <!-- //e:툴팁 -->
-                            <div class="frm-form">
-                                <div class="common-input type-date">
-                                    <input type="date" id="frmDate" name="" title="입주(예정)일을 입력하세요" value="" data-placeholder="입주(예정)일을 입력하세요" required="" aria-required="true">
+                                    <div class="frm-form">
+                                        <div class="common-input type-date">
+                                            <input type="date" id="frmDate" name="" title="입주일 또는 입주 예정일을 입력하세요." value="" data-placeholder="입주일 또는 입주 예정일은?" required="" aria-required="true">
+                                        </div>
+                                    </div>
+                                </div>
+        
+                                <div class="form-box">
+                                    <div class="frm-tit">
+                                        <label for="frmArea1">전세(임대)보증금액은?</label>
+                                    </div>
+                                    <div class="frm-form">
+                                        <div class="common-input type-unit">
+                                            <input type="tel" class="ta-r" id="frmArea1" name="item2" title="전세(임대)보증금을 입력" value="" pattern="[0-9]*" inputmode="numeric">
+                                            <em>원</em>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
+                            <!-- //e:입주일 보증금액 입력 -->
+
+                            <button type="button" class="btn btn-lg btn-type10 mt-20 btn-result"><span>진단하기</span></button>
+
+                            <div class="txt-wrap mt-20">
+                                <p class="txt">전세보증금을 바꿔가며 진단해볼 수 있습니다. 마이페이지에는 마지막으로 입력한 전세보증금이 저장됩니다.</p>
+                            </div>
                         </div>
-
-                        <button type="button" class="btn btn-lg btn-type10 mt-20"><span>진단하기</span></button>
-
                     </div>
-                    <!-- //e:진단 입력 -->
+                    <!-- //e:전세(임대) 입주일 / 보증금액 -->
                 </div>
+
+                <!-- s:안심전세 자가 진단 결과 -->
+                <div class="total-result">
+                    <div class="relax-result-wrap">
+                        <div class="relax-result">
+                            <h3 class="title">자가진단 결과</h3>
+    
+                            <div class="warning">
+                                <p class="txt">안전하지 않습니다.</p>
+                            </div>
+
+                            <div class="txt-wrap">
+                                <p class="txt">
+                                    위반건축물입니다. 전세보증가입, 전세대출 등에 제한이 있을 수 있습니다.
+                                    <br><br>
+                                    예상되는 경매 낙찰가(2억 1,0000)를 9,000만원 초과하고 있습니다. 임대인이 돈을 돌려주지 않을 경우 손해 가능성이 있습니다.
+                                </p>
+                            </div>
+
+                            <div class="graph"></div>
+
+                            <!-- s:자가진단 결과 테이블 -->
+                            <div class="tb-result mt-20">
+                                <div class="table-wrap type02">
+                                    <table>
+                                        <caption>구분, 설정(임차)액, 순위, 배당예상액으로 구성된 자가진단 결과 내용</caption>
+                                        <colgroup>
+                                            <col width="60px">
+                                            <col width="30%">
+                                            <col width="*">
+                                        </colgroup>
+                                        <thead>
+                                            <tr>
+                                                <th scope="col" rowspan="2">
+                                                    <div class="list-chk">
+                                                        <ul>
+                                                            <li class="chk-all">
+                                                                <div class="common-check">
+                                                                    <label>
+                                                                        <input type="checkbox" name="item1">
+                                                                        <span class="blind">전체동의</span>
+                                                                    </label>
+                                                                </div>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </th>
+                                                <th scope="col">구분</th>
+                                                <th scope="col">설정(임차)액</th>
+                                            </tr>
+                                            <tr>
+                                                <th scope="col">순위</th>
+                                                <th scope="col">배당 예상액</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td rowspan="2" class="ta-c">
+                                                    <div class="common-check chk-list">           
+                                                        <label>
+                                                            <input type="checkbox" name="item1" aria-checked="true">
+                                                            <span class="blind">
+                                                                체크박스리스트
+                                                            </span>
+                                                        </label>
+                                                    </div>
+                                                </td>
+                                                <td class="ta-c">저당권</td>
+                                                <td class="ta-c">
+                                                    1억원
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="ta-c">1순위</td>
+                                                <td class="ta-c">
+                                                    1억원
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td rowspan="2" class="ta-c">
+                                                    <div class="common-check chk-list">           
+                                                        <label>
+                                                            <input type="checkbox" name="item1" aria-checked="true">
+                                                            <span class="blind">
+                                                                체크박스리스트
+                                                            </span>
+                                                        </label>
+                                                    </div>
+                                                </td>
+                                                <td class="ta-c">저당권</td>
+                                                <td class="ta-c">
+                                                    1억원
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="ta-c">1순위</td>
+                                                <td class="ta-c">
+                                                    1억원
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            <!-- //e:자가진단 결과 테이블 -->
+
+                            <div class="txt-wrap mt-20">
+                                <p class="txt type02 ta-c">
+                                    입주 시 선순위 저당권을 말소하는 <br>계약을 하셨다면
+                                </p>
+                            </div>
+                            <button type="button" class="btn btn-lg btn-type10 mt-20"><span>선순위 제외 진단</span></button>
+                            <div class="txt-wrap mt-20">
+                                <p class="txt type02">
+                                    내 보증금을 안전하게 지키기 위해서 HUG 전세보증금 반환보증에 가입하거나 안전보증금 이내로 계약하길 권해드립니다.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- s:진단내용 상세 테이블 -->
+                    <div class="tb-result">
+                        <h4 class="title">진단내용 상세</h4>
+                        <div class="table-wrap type02">
+                            <table>
+                                <caption>주소, 주택시세, 전세시세, 설정금액, 가압류가등기, 소유자, 주민등록번호, 소유자, 주민등록번호, 위반건축물, 경매낙찰가율, 안전보증금으로 구성된 진단내용</caption>
+                                <colgroup>
+                                    <col width="40%">
+                                    <col>
+                                </colgroup>
+                                <tbody>
+                                    <tr>
+                                        <th scope="row">주소</th>
+                                        <td>[집합건물] 부산광역시 연제구 거제천로 225번길 29 주택보증공사직원숙소 2층 203호</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">주택시세</th>
+                                        <td>3 억원</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">전세시세</th>
+                                        <td>2억 ~ 2억 3,000</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">설정금액</th>
+                                        <td>1 억원</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">가압류∙가등기</th>
+                                        <td>없음</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">소유자</th>
+                                        <td>홍*동</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">주민등록번호</th>
+                                        <td>150701-*******</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">소유자</th>
+                                        <td>HOG</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">주민등록번호</th>
+                                        <td>150701-*******</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">위반건축물</th>
+                                        <td><span class="fc-red">등록</span></td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">경매낙찰가율</th>
+                                        <td>70 %</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">안전보증금</th>
+                                        <td>1억 1,000 만원</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <!-- //e:진단내용 상세 테이블 -->
+
+                    <div class="txt-wrap mt-40">
+                        <p class="txt type02">
+                            부동산등기부 갑구에 압류 가압류 가등기 가처분이 있다면 위험주택으로 분류합니다. 이미 살고계신 경우라면 전문가 상담을 권해드립니다.
+                        </p>
+                    </div>
+
+                    <button type="button" class="btn btn-lg btn-type07 mt-20"><span>1:1법률상담</span></button>
+                    <button type="button" class="btn btn-lg btn-type07 mt-10" onclick="LayerPopup.open('pop01');"><span>평가하기</span></button>
+                </div>
+                <!-- //e:안심전세 자가 진단 결과 -->
             </div>
         </div>
         <!-- //e:본문시작 -->
+        <div class="footer auto-hide footer-up">
+            <button type="button" class="btn btn-float type02 btn-secondary org">다른 주택 <br>조회하기</button>				
+            <button type="button" class="btn btn-float type02">확인</button>				
+        </div>
     </div>
+
+    <!-- layerpop : 안심진단 평가하기 -->
+    <section class="layerpop pop01 pop-page addr-pop" role="dialog" aria-hidden="true">
+        <div class="pop-wrap">
+            <div class="pop-content">
+                <div class="pc-wrap type-page">
+                    <div class="header auto-hide">
+                        <h1 class="title ta-c">안심진단 평가하기</h1>
+                        
+                        <div class="btn-right">
+                            <button type="button" class="pop-close" onclick="LayerPopup.close('pop01');">닫기</button>
+                        </div>
+                    </div>
+
+                    <div class="pp-body type-pd0 sc-y mt-50">
+
+                        <!-- S: 검색 -->
+                        <div class="content-group pb-0">
+                            <div class="inner-20">
+
+                                <ul>
+                                    <li>
+                                        <div class="txt-wrap">
+                                            <p class="txt type03">
+                                                1. 조회하신 시세의 정확도에 대해서 만족하시나요?
+                                            </p>
+                                        </div>
+    
+                                        <div class="star-rating-wrap">
+                                            <input type="radio" id="star05" name="rating" value="5" />
+                                            <label for="star05" class="star"><span class="blind">별 5개</span></label>
+    
+                                            <input type="radio" id="star04" name="rating" value="4" />
+                                            <label for="star04" class="star"><span class="blind">별 4개</span></label>
+    
+                                            <input type="radio" id="star03" name="rating" value="3" />
+                                            <label for="star03" class="star"><span class="blind">별 3개</span></label>
+    
+                                            <input type="radio" id="star02" name="rating" value="2" />
+                                            <label for="star02" class="star"><span class="blind">별 2개</span></label>
+    
+                                            <input type="radio" id="star01" name="rating" value="1" />
+                                            <label for="star01" class="star"><span class="blind">별 1개</span></label>
+                                        </div>
+                                    </li>
+
+                                    <li>
+                                        <div class="txt-wrap">
+                                            <p class="txt type03">
+                                                2. 진단하신 결과에 대해서 만족하시나요?
+                                            </p>
+                                        </div>
+    
+                                        <div class="star-rating-wrap">
+                                            <input type="radio" id="star05_2" name="rating2" value="5" />
+                                            <label for="star05_2" class="star"><span class="blind">별 5개</span></label>
+    
+                                            <input type="radio" id="star04_2" name="rating2" value="4" />
+                                            <label for="star04_2" class="star"><span class="blind">별 4개</span></label>
+    
+                                            <input type="radio" id="star03_2" name="rating2" value="3" />
+                                            <label for="star03_2" class="star"><span class="blind">별 3개</span></label>
+    
+                                            <input type="radio" id="star02_2" name="rating2" value="2" />
+                                            <label for="star02_2" class="star"><span class="blind">별 2개</span></label>
+    
+                                            <input type="radio" id="star01_2" name="rating2" value="1" />
+                                            <label for="star01_2" class="star"><span class="blind">별 1개</span></label>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- E: 검색 -->
+                    </div>
+                </div>
+                <div class="btn-group">
+                    <button type="button" class="btn btn-float btn-cancel" onclick="LayerPopup.close('pop01');">닫기</button>
+                    <button type="button" class="btn btn-float btn-primary">확인</button>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+    <!-- //layerpop : 안심진단 평가하기 -->
 
 
 	<script src="../../js/common_ui.js"></script>

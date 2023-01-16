@@ -21,8 +21,8 @@
             </div>
             <h1 class="title">상담신청</h1>
             <div class="btn-right">
-                <!-- <button class="btn-ico btn-home" aria-label="홈"><span class="blind">홈</span></button> -->
-                <a href="javascript:;" aria-label="전체메뉴 열기" class="btn-ico btn-menu"><span class="blind">전체메뉴</span></a>
+                <button type="button" class="btn-ico btn-home" aria-label="홈"></button>
+                <button type="button" class="btn-ico btn-menu02" aria-label="전체메뉴 열기"></button>
             </div>
         </header>
     
@@ -33,23 +33,25 @@
                 <div class="inner-20">
                     <div class="content-wrap">
 
-                        <div class="common-input">
+                        <!-- 에러 input : class ipt-error 추가 -->
+                        <div class="common-input ipt-error">
                             <label for="frmName" class="blind">제목 입력</label>
                             <input type="text" id="frmName" name="item2" title="제목 입력" value="" placeholder="제목을 입력하세요.">
+                            <span class="noti-info03">특수문자는 안됩니다.</span>
                         </div>
-
+                        
                         <div class="view-wrap">
                             <div class="view-cont">
                                 <textarea name="상담신청 입력" id="frmTA" placeholder="내용을 입력하세요. 예시) 일시, 장소, 관계, 경위 등"></textarea>
                             </div>
+                            <span class="noti-info03">오류메세지 더미데이터가 뿌려집니다.</span>
                         </div>
-
-                        <div class="txt-wrap">
+                        
+                        <div class="txt-wrap mt-20">
                             <p class="txt">
                                 상담 답변은 내용에 따라 공사가 판단하여 개인정보를 삭제한 후 공개할 수 있습니다.
                             </p>
                         </div>
-
                     </div>
                 </div>
             </div>

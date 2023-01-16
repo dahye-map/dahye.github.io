@@ -1,21 +1,34 @@
 - images
-/images/sub/img_submn01.png
-/images/sub/img_submn02.png
+/images/main/main_guide_type03.png
+/images/sub/img_submn01@3x.png
+/images/sub/img_submn02@3x.png
 /images/sub/icon_relax01.png
 /images/sub/icon_relax02.png
 /images/sub/icon_relax03.png
 /images/sub/icon_relax04.png
-/images/main/main_guide_type03.png
+/images/sub/icon_relax05.png
 /images/sub/icon_help.png
 /images/sub/icon_warning.png
 /images/sub/icon_star.png
 /images/sub/icon_star.svg
 /images/sub/icon_star_off.png
 /images/sub/icon_star_off.svg
+/images/sub/btn_tooltip_close.png
+/images/sub/btn_tooltip_close.svg
+/images/sub/icon_help.png
+/images/sub/icon_logout.png
+/images/sub/icon_logout.svg
+/images/sub/img_logo_relax.png
+/images/sub/img_logo_relax.svg
+/images/sub/logo_kakap.png
+/images/sub/icon_check_mark.png
+/images/sub/icon_danger_sign.png
+/images/sub/icon_prev.png
+/images/sub/icon_next.png
 
 -css
-/css/common.css 기존 소스에 작업하여 주석 안심전세로 검색 후 추가 부탁드립니다.
-/css/relax.css 안심전세에만 적용되는 스타일
+/css/common.css 기존 퍼블 css
+/css/style.css 안심전세에만 적용되는 스타일
 
 * 퍼블리싱 리스트는 guide.html 확인 부탁드립니다.
 

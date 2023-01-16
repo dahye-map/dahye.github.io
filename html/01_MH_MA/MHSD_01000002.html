@@ -3,7 +3,7 @@
 
 <head>
 	<meta charset="utf-8">
-	<title>자가진단</title>
+	<title>결제없이 자가진단</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, viewport-fit=cover">
 	<meta name="mobile-web-app-capable" content="yes">
 	<meta name="apple-mobile-web-app-capable" content="yes" />
@@ -19,10 +19,10 @@
             <div class="btn-left">
                 <a href="javascript:history.go(-1);" class="btn-ico btn-back" role="button" aria-label="이전"><span class="blind">뒤로</span></a>
             </div>
-            <h1 class="title">자가진단</h1>
+            <h1 class="title">결제없이 자가진단</h1>
             <div class="btn-right">
-                <!-- <button class="btn-ico btn-home" aria-label="홈"><span class="blind">홈</span></button> -->
-                <a href="javascript:;" aria-label="전체메뉴 열기" class="btn-ico btn-menu"><span class="blind">전체메뉴</span></a>
+                <button type="button" class="btn-ico btn-home" aria-label="홈"></button>
+                <button type="button" class="btn-ico btn-menu02" aria-label="전체메뉴 열기"></button>
             </div>
         </header>
     
@@ -68,10 +68,10 @@
                 <!-- //e:상단 결과 -->
 
                 <div class="inner-20">
-                    <!-- s:전세 실거래가 테이블 -->
+                    <!-- s:주요 진단 정보 테이블 -->
                     <div class="tb-result mt-30">
                         <!-- s:툴팁(tooltip-wrap으로 감싸기) -->
-                        <h4 class="title tooltip-wrap">전세 실거래가 
+                        <h4 class="title tooltip-wrap">주요 진단 정보 
                             <button type="button" class="btn btn-ico ico-help03"><span class="blind">도움말 보기</span></button>
 
                             <div class="tooltip left">
@@ -84,78 +84,33 @@
                         <!-- //e:툴팁 -->
                         <div class="table-wrap type02 pd">
                             <table>
-                                <caption>계약일, 주소, 층, 실거래가로 구성된 전세 실거래가 내용</caption>
+                                <caption>매매시세, 전세가율, 평균 낙찰가율로 구성된 주요 진단 정보 내용</caption>
                                 <colgroup>
-                                    <col width="28%">
-                                    <col width="*">
-                                    <col width="56px">
-                                    <col width="22%">
+                                    <col width="40%">
+                                    <col>
                                 </colgroup>
-                                <thead>
-                                    <tr>
-                                        <th scope="col">계약일</th>
-                                        <th scope="col">주소</th>
-                                        <th scope="col">층<br>(전용면적)</th>
-                                        <th scope="col" class="ta-r" style="padding-right:10px;">실거래가</th>
-                                    </tr>
-                                </thead>
                                 <tbody>
                                     <tr>
-                                        <td>2022-10-12</td>
-                                        <td>거제천로 225번길25</td>
-                                        <td class="ta-c">
-                                            <span>1층</span> <br>
-                                            <span>38㎡</span>
-                                        </td>
-                                        <td class="ta-r">3억</td>
+                                        <th>매매시세</th>
+                                        <td>2.5 ~ 3 억원</td>
                                     </tr>
                                     <tr>
-                                        <td>2022-10-12</td>
-                                        <td>거제천로 225번길25</td>
-                                        <td class="ta-c">2층</td>
-                                        <td class="ta-r">3억</td>
+                                        <th>전세가율</th>
+                                        <td>80%</td>
                                     </tr>
                                     <tr>
-                                        <td>2022-10-12</td>
-                                        <td>거제천로 225번길25</td>
-                                        <td class="ta-c">5층</td>
-                                        <td class="ta-r">2억 5,000</td>
+                                        <th>평균 낙찰가율</th>
+                                        <td>70%</td>
                                     </tr>
-                                    <tr>
-                                        <td>2022-10-12</td>
-                                        <td>거제천로 225번길25</td>
-                                        <td class="ta-c">1층</td>
-                                        <td class="ta-r">2억 6,000</td>
-                                    </tr>
-                                    <!-- s:툴팁(tooltip-wrap으로 감싸기) -->
-                                    <tr class="bottom-avg tooltip-wrap">
-                                        <td colspan="3">평균낙찰가율 
-                                            <button type="button" class="btn btn-ico ico-help03"><span class="blind">도움말 보기</span></button>
-
-                                            <div class="tooltip left">
-                                                <span class="tooltip-txt">
-                                                    인근지역 유사주택의 법원 감정가 대비 낙찰된 금액의 비율
-                                                </span>
-                                                <button type="button" class="btn btn-ico btn-close"><span class="blind">툴팁 닫기</span></button>
-                                            </div>
-                                        </td>
-                                        <td class="ta-r">70%</td>
-                                    </tr>
-                                    <!-- //e:툴팁 -->
                                 </tbody>
                             </table>
                         </div>
                         <div class="more-info">
                             <p class="txt">주택시세 상세 확인</p>
-                            <a href="" title="한국부동산원 부동산테크으로 이동" class="btn-linktxt type08"><span>한국부동산원 부동산테크</span></a>
-                        </div>
-                        <div class="more-info mt-5">
-                            <p class="txt">실거래가 정보</p>
-                            <a href="" title="국토교통부 실거래가 공개시스템으로 이동" class="btn-linktxt type08"><span>국토교통부 실거래가 공개시스템</span></a>
+                            <a href="" title="한국부동산원으로 이동" class="btn-linktxt type04"><span>한국부동산원</span></a>
                         </div>
                     </div>
-                    <!-- //e:전세 실거래가 테이블 -->
-
+                    <!-- //e:주요 진단 정보 테이블 -->
 
                     <!-- s:전세(임대) 입주일 / 보증금액 -->
                     <div class="relax-result-wrap">
@@ -194,10 +149,12 @@
 
                     <!-- s:근저당권 설정액 / 설정일 -->
                     <div class="relax-result-wrap">
-                        <div class="relax-result">
+                        <div class="relax-result mb-20">
                             <h3 class="title">근저당권 설정액 / 설정일</h3>
 
+                            
                             <div class="add-list-wrap">
+                                <button type="button" class="btn btn-lg btn-type07 mt-20 btn-add"><span>추가</span></button>
                                 <ul>
                                     <li>
                                         <!-- s:근저당권 입력 -->
@@ -224,42 +181,7 @@
                                                     </div>
                                                 </div>
                                             </div>
-
-                                            <button type="button" class="btn btn-lg btn-type07 mt-20 btn-add"><span>추가</span></button>
-                                        </div>
-                                        <!-- //e:근저당권 입력 -->
-                                    </li>
-                                    <li>
-                                        <!-- s:근저당권 입력 -->
-                                        <div class="form-wrap mt-0">
-                                            <div class="form-box">
-                                                <div class="frm-tit">
-                                                    <label for="frmArea2">1-1 근저당권 설정액을 입력하세요.</label>
-                                                </div>
-                                                <div class="frm-form">
-                                                    <div class="common-input type-unit">
-                                                        <input type="tel" class="ta-r" id="frmArea2" name="item2" title="근저당권 설정액을 입력" value="" pattern="[0-9]*" inputmode="numeric">
-                                                        <em>원</em>
-                                                    </div>
-                                                </div>
-                                            </div>
-
-                                            <div class="form-box">
-                                                <div class="frm-tit">
-                                                    <label for="frmDate2">1-2 근저당권 설정일을 입력하세요.</label>
-                                                </div>
-                                                <div class="frm-form">
-                                                    <div class="common-input type-date">
-                                                        <input type="date" id="frmDate2" name="" title="근저당권 설정일을 입력하세요." value="" data-placeholder="근저당권 설정일을 입력하세요." required="" aria-required="true">
-                                                    </div>
-                                                </div>
-                                            </div>
-
-                                            <div class="btn-flex-wrap">
-                                                <button type="button" class="btn btn-lg btn-type07 btn-add mt-20"><span>추가</span></button>
-                                                <button type="button" class="btn btn-lg btn-type07 mt-20"><span>삭제</span></button>
-                                            </div>
-                                            
+                                            <button type="button" class="btn btn-lg btn-type07 btn-delete mt-20"><span>삭제</span></button>
                                         </div>
                                         <!-- //e:근저당권 입력 -->
                                     </li>
@@ -269,35 +191,226 @@
                     </div>
                     <!-- //e:근저당권 설정액 / 설정일 -->
 
-                    <button type="button" class="btn btn-lg btn-type10 mt-20"><span>안심전세 자가 진단</span></button>
+                    <button type="button" class="btn btn-lg btn-type10 btn-result"><span>안심전세 자가 진단</span></button>
+                </div>
 
-                    <div class="txt-wrap mt-20">
-                        <p class="txt">
-                            부동산등기부 갑구에 압류〮가압류〮가등기〮가처분이 있다면 위험주택으로 분류합니다. 이미 살고계신 경우라면 전문가 상담을 권해드립니다.
-                        </p>
+                <!-- s:자가 진단 결과 -->
+                <div class="total-result">
+                    <div class="relax-result-wrap">
+                        <div class="relax-result">
+                            <h3 class="title">자가진단 결과</h3>
+    
+                            <div class="warning">
+                                <p class="txt">안전하지 않습니다.</p>
+                            </div>
 
-                        <div class="more-info type02">
-                            <a href="" title="1:1법률상담으로 이동" class="btn-linktxt type08"><span>1:1법률상담</span></a>
+                            <div class="txt-wrap">
+                                <p class="txt">
+                                    위반건축물입니다. 전세보증가입, 전세대출 등에 제한이&nbsp;있을 수 있습니다.
+                                    <br><br>
+                                    예상되는&nbsp;경매 낙찰가(2억 1,0000)를 9,000만원 초과하고&nbsp;있습니다. 임대인이 돈을 돌려주지 않을 경우&nbsp;손해 가능성이 있습니다.
+                                </p>
+                            </div>
                         </div>
                     </div>
 
-                    <div class="txt-wrap mt-40 pb-30">
-                        <p class="txt">
-                            건출물대장에 위반건축물로 등록 된 경우 전세대출, 전세보증 가입에 제한이 있을 수 있습니다. <br>건축물대장은 누구나 무료로 발급할 수 있습니다. 확인을 권해 드립니다.
-                        </p>
-
-                        <div class="more-info type02">
-                            <a href="" title="민원24(건축물대장 발급) APP 으로 이동" class="btn-linktxt type08"><span>민원24(건축물대장 발급) APP 연결</span></a>
+                    <!-- s:진단내용 상세 테이블 -->
+                    <div class="tb-result">
+                        <h4 class="title">진단내용 상세</h4>
+                        <div class="table-wrap type02">
+                            <table>
+                                <caption>주소, 주택시세, 전세시세, 설정금액, 가압류가등기, 소유자, 주민등록번호, 소유자, 주민등록번호, 위반건축물, 경매낙찰가율, 안전보증금으로 구성된 진단내용</caption>
+                                <colgroup>
+                                    <col width="40%">
+                                    <col>
+                                </colgroup>
+                                <tbody>
+                                    <tr>
+                                        <th scope="row">주소</th>
+                                        <td>[집합건물] 부산광역시 연제구 거제천로&nbsp;225번길 29 주택보증공사직원숙소&nbsp;2층 203호</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">주택시세</th>
+                                        <td>3 억원</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">전세시세</th>
+                                        <td>2억 ~ 2억 3,000</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">설정금액</th>
+                                        <td>1 억원</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">가압류∙가등기</th>
+                                        <td>없음</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">소유자</th>
+                                        <td>홍*동</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">주민등록번호</th>
+                                        <td>150701-*******</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">소유자</th>
+                                        <td>HOG</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">주민등록번호</th>
+                                        <td>150701-*******</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">위반건축물</th>
+                                        <td><span class="fc-red">등록</span></td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">경매낙찰가율</th>
+                                        <td>70 %</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">안전보증금</th>
+                                        <td>1억 1,000 만원</td>
+                                    </tr>
+                                </tbody>
+                            </table>
                         </div>
                     </div>
+                    <!-- //e:진단내용 상세 테이블 -->
+                    <div class="txt-wrap mt-40">
+                        <p class="txt type02">
+                            부동산등기부 갑구에 압류〮가압류〮가등기〮가처분이 있다면 위험주택으로 분류합니다. 이미 살고계신 경우라면 전문가 상담을 권해드립니다.
+                        </p>
+                    </div>
 
+                    <button type="button" class="btn btn-lg btn-type07 mt-30"><span>1:1 법률상담</span></button>
+                    <button type="button" class="btn btn-lg btn-type07 mt-10" onclick="LayerPopup.open('pop01');"><span>평가하기</span></button>
+
+                    <div class="txt-wrap mt-30">
+                        <p class="txt type02">
+                            천원 결제 후 부동산 등기사항 조회∙분석을 통한 안심진단을 원하시면 <span class="fc-black">[등기부 결제 후 자가진단]</span>를 눌러주세요.
+                            <br><br>
+                            대상 주택의 매매시세가 없거나 등기사항 조회가 되지 않는 경우 <span class="fc-black">[등기부 결제 후 자가진단]</span>버튼이 비활성화 됩니다.
+                        </p>
+                    </div>
 
                 </div>
+                <!-- //e:자가 진단 결과 -->
             </div>
         </div>
         <!-- //e:본문시작 -->
 
+        <div class="footer auto-hide footer-up">
+            <button type="button" class="btn btn-float type02 btn-secondary org">처음으로 돌아가기</button>
+            <!-- disabled 시 클래스에 disabled 추가	-->
+            <button type="button" class="btn btn-float type02 disabled" disabled>등기부 결제 후<br>자가진단</button>
+            <!-- <button type="button" class="btn btn-float type02">등기부 결제 후<br>자가진단</button>				 -->
+        </div>
     </div>
+
+    <!-- layerpop : 안심진단 평가하기 -->
+    <section class="layerpop pop01 pop-page addr-pop" role="dialog" aria-hidden="true">
+        <div class="pop-wrap">
+            <div class="pop-content">
+                <div class="pc-wrap type-page">
+                    <div class="header auto-hide">
+                        <h1 class="title ta-c">안심진단 평가하기</h1>
+                        
+                        <div class="btn-right">
+                            <button type="button" class="pop-close" onclick="LayerPopup.close('pop01');">닫기</button>
+                        </div>
+                    </div>
+
+                    <div class="pp-body type-pd0 sc-y mt-50">
+
+                        <!-- S: 검색 -->
+                        <div class="content-group pb-0">
+                            <div class="inner-20">
+
+                                <ul>
+                                    <li>
+                                        <div class="txt-wrap">
+                                            <p class="txt type03">
+                                                1. 조회하신 시세의 정확도에 대해서 만족하시나요?
+                                            </p>
+                                        </div>
+    
+                                        <div class="star-rating-wrap">
+                                            <input type="radio" id="star05" name="rating" value="5" />
+                                            <label for="star05" class="star"><span class="blind">별 5개</span></label>
+    
+                                            <input type="radio" id="star04" name="rating" value="4" />
+                                            <label for="star04" class="star"><span class="blind">별 4개</span></label>
+    
+                                            <input type="radio" id="star03" name="rating" value="3" />
+                                            <label for="star03" class="star"><span class="blind">별 3개</span></label>
+    
+                                            <input type="radio" id="star02" name="rating" value="2" />
+                                            <label for="star02" class="star"><span class="blind">별 2개</span></label>
+    
+                                            <input type="radio" id="star01" name="rating" value="1" />
+                                            <label for="star01" class="star"><span class="blind">별 1개</span></label>
+                                        </div>
+                                    </li>
+
+                                    <li>
+                                        <div class="txt-wrap">
+                                            <p class="txt type03">
+                                                2. 진단하신 결과에 대해서 만족하시나요?
+                                            </p>
+                                        </div>
+    
+                                        <div class="star-rating-wrap">
+                                            <input type="radio" id="star05_2" name="rating2" value="5" />
+                                            <label for="star05_2" class="star"><span class="blind">별 5개</span></label>
+    
+                                            <input type="radio" id="star04_2" name="rating2" value="4" />
+                                            <label for="star04_2" class="star"><span class="blind">별 4개</span></label>
+    
+                                            <input type="radio" id="star03_2" name="rating2" value="3" />
+                                            <label for="star03_2" class="star"><span class="blind">별 3개</span></label>
+    
+                                            <input type="radio" id="star02_2" name="rating2" value="2" />
+                                            <label for="star02_2" class="star"><span class="blind">별 2개</span></label>
+    
+                                            <input type="radio" id="star01_2" name="rating2" value="1" />
+                                            <label for="star01_2" class="star"><span class="blind">별 1개</span></label>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- E: 검색 -->
+                    </div>
+                </div>
+                <div class="btn-group">
+                    <button type="button" class="btn btn-float btn-cancel" onclick="LayerPopup.close('pop01');">닫기</button>
+                    <button type="button" class="btn btn-float btn-primary">확인</button>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+    <!-- //layerpop : 안심진단 평가하기 -->
+
+    <!-- layerpop : 근저당권 5개 이상 alert 노출 -->
+    <section class="layerpop pop02 pop-alert" role="alert" aria-hidden="true">
+        <div class="pop-wrap">			
+            <h3 class="blind">근저당권 5개 이상 팝업</h3>
+            <div class="pop-content">
+                <div class="pc-wrap">						
+                    <p class="pc-tit">근저당권 입력항목은 최대 5개까지 입력 가능합니다.</p>
+                </div>
+                <div class="btn-group">	
+                    <button type="button" class="btn btn-float btn-primary" onclick="LayerPopup.close('pop02');">확인</button>	
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- //layerpop : 근저당권 5개 이상 alert 노출 -->
+
 
     <script type="text/javascript">
 		//<![CDATA[ 

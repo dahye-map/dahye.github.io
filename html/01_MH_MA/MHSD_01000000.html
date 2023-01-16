@@ -19,10 +19,10 @@
             <div class="btn-left">
                 <a href="javascript:history.go(-1);" class="btn-ico btn-back" role="button" aria-label="이전"><span class="blind">뒤로</span></a>
             </div>
-            <h1 class="title">주택검색 및 조회</h1>
+            <h1 class="title">조회결과</h1>
             <div class="btn-right">
-                <!-- <button class="btn-ico btn-home" aria-label="홈"><span class="blind">홈</span></button> -->
-                <a href="javascript:;" aria-label="전체메뉴 열기" class="btn-ico btn-menu"><span class="blind">전체메뉴</span></a>
+                <button type="button" class="btn-ico btn-home" aria-label="홈"></button>
+                <button type="button" class="btn-ico btn-menu02" aria-label="전체메뉴 열기"></button>
             </div>
         </header>
     
@@ -61,7 +61,6 @@
                             <ul class="addr-detail-list">
                                 <li>다세대</li>
                                 <li>2/6층</li>
-                                <li>공급면적 30㎡</li>
                                 <li>전용면적 38㎡</li>
                             </ul>
                         </div>
@@ -69,25 +68,39 @@
                         <div class="price-wrap">
                             <ul>
                                 <li>
-                                    <p class="name red">매매시세</p>
-                                    <p class="price">
-                                        <span>2.5~3</span> 억원
-                                    </p>
-                                </li>
-                                <li>
-                                    <p class="name blue">전세시세</p>
+                                    <div class="tooltip-wrap">
+                                        <p class="name red">매매시세</p>
+                                        <button type="button" class="btn btn-ico ico-help03">
+                                            <span class="blind">도움말 보기</span>
+                                        </button>
+                                        <div class="tooltip left">
+                                            <span class="tooltip-txt">
+                                                민간임대주택법에 따른 등록 임대주택 여부 및 임대보증 가입 여부
+                                            </span>
+                                            <button type="button" class="btn btn-ico btn-close"><span class="blind">툴팁 닫기</span></button>
+                                        </div>
+                                    </div>
                                     <p class="price">
                                         <span>2.5~3</span> 억원
                                     </p>
                                 </li>
                             </ul>
 
-                            <!-- s:보조시세 테이블 -->
-                            <div class="tb-result mt-20">
-                                <h4 class="title">보조시세</span></h4>
+                            <!-- s:보조지표 테이블 -->
+                            <div class="tb-result mt-20 mb-0">
+                                <h4 class="title tooltip-wrap">
+                                    보조지표<button type="button" class="btn btn-ico ico-help03"><span class="blind">도움말 보기</span></button>
+
+                                    <div class="tooltip left">
+                                        <span class="tooltip-txt">
+                                            국토교통부 실거래가 공개시스템에서 제공하는 인근 유사 주택의 실거래가
+                                        </span>
+                                        <button type="button" class="btn btn-ico btn-close"><span class="blind">툴팁 닫기</span></button>
+                                    </div>
+                                </h4>
                                 <div class="table-wrap type02">
                                     <table>
-                                        <caption>계약일, 주소, 층, 실거래가로 구성된 전세 실거래가 내용</caption>
+                                        <caption>경매낙찰가율, 전세가율, 전세보증사고로 구성된 보조지표 내용</caption>
                                         <colgroup>
                                             <col width="33.3333%">
                                             <col width="33.3333%">
@@ -95,22 +108,26 @@
                                         </colgroup>
                                         <thead>
                                             <tr>
-                                                <th scope="col">부동산원</th>
-                                                <th scope="col">KB시세</th>
-                                                <th scope="col">부동산시세</th>
+                                                <th scope="col">경매낙찰가율</th>
+                                                <th scope="col">전세가율</th>
+                                                <th scope="col">전세보증사고</th>
                                             </tr>
                                         </thead>
                                         <tbody>
                                             <tr>
-                                                <td class="ta-c">2억 ~ 3억</td>
-                                                <td class="ta-c">-</td>
-                                                <td class="ta-c">2억 ~ 3억</td>
+                                                <td class="ta-c">70%</td>
+                                                <td class="ta-c">80%</td>
+                                                <td class="ta-c">1건</td>
                                             </tr>
                                         </tbody>
                                     </table>
                                 </div>
                             </div>
-                            <!-- //e:보조시세 테이블 -->
+                            <!-- //e:보조지표 테이블 -->
+
+                            <div class="txt-wrap mt-10">
+                                <p class="txt">수도권 매물에 대해서만 부동산 정보가 제공됩니다.</p>
+                            </div>
                         </div>
 
                         <div class="btn-wrap">
@@ -200,11 +217,11 @@
                         </div>
                         <div class="more-info">
                             <p class="txt">주택시세 상세 확인</p>
-                            <a href="" title="한국부동산원 부동산테크으로 이동" class="btn-linktxt type08"><span>한국부동산원 부동산테크</span></a>
+                            <a href="http://www.rtech.or.kr/main/mapSearch.do?popUpYn=&posX=37.48243936583027&posY=127.06183029780048" title="한국부동산원 부동산테크으로 이동" class="btn-linktxt type04" target="_blank"><span>한국부동산원</span></a>
                         </div>
                         <div class="more-info mt-5">
                             <p class="txt">실거래가 정보</p>
-                            <a href="" title="국토교통부 실거래가 공개시스템으로 이동" class="btn-linktxt type08"><span>국토교통부 실거래가 공개시스템</span></a>
+                            <a href="http://www.rtech.or.kr/main/mapSearch.do?popUpYn=&posX=37.48243936583027&posY=127.06183029780048" title="국토교통부 실거래가 공개시스템으로 이동" class="btn-linktxt type04" target="_blank"><span>국토교통부</span></a>
                         </div>
                     </div>
                     <!-- //e:전세 실거래가 테이블 -->
@@ -310,7 +327,7 @@
                         </div>
                         <div class="more-info">
                             <p class="txt">등록 임대주택에 관한 더 자세한 정보</p>
-                            <a href="" title="렌트홈으로 이동" class="btn-linktxt type08"><span>렌트홈 방문</span></a>
+                            <a href="" title="렌트홈으로 이동" class="btn-linktxt type04"><span>렌트홈 방문</span></a>
                         </div>
                     </div>
                     <!-- //e:민간 임대주택 등록 정보 테이블 -->
@@ -423,13 +440,13 @@
                 <hr>
 
                 <div class="inner-20">
-                    <button type="button" class="btn btn-lg btn-type07 mt-40"><span>평가하기</span></button>
+                    <button type="button" class="btn btn-lg btn-type07 mt-40" onclick="LayerPopup.open('pop01');"><span>평가하기</span></button>
 
-                    <div class="txt-wrap mt-30 pb-30 mb-30">
+                    <div class="txt-wrap mt-30">
                         <p class="txt type02">
                             천원 결제 후 부동산 등기사항 조회∙분석을 통한 안심진단을 원하시면 <span class="fc-black">[등기부 결제 후 자가진단]</span>를 눌러주세요.
                             <br><br>
-                            대상 주택의 매매시세가 없거나 등기사항 조회가 되지 않는 경우 <span class="fc-black">[등기부 결제 후 자가진단]</span>버튼이 비활성화 됩니다.
+                            대상 주택이 부동산원 제공 주택시세가 없거나, 등기부등본이 조회되지 않는 경우 진행이 불가합니다.
                         </p>
                     </div>
                 </div>
@@ -437,11 +454,99 @@
         </div>
         <!-- //e:본문시작 -->
     
+
         <div class="footer auto-hide footer-up">
-            <button type="button" class="btn btn-float type02 btn-secondary">등기부 결제없이<br>자가진단</button>				
-            <button type="button" class="btn btn-float type02 btn-primary">등기부 결제 후 자가진단</button>				
+            <button type="button" class="btn btn-float btn-secondary org">결제없이 자가진단</button>
+            <!-- disabled 시 클래스에 disabled 추가	-->
+            <button type="button" class="btn btn-float type02 disabled" disabled>등기부 결제 후<br>자가진단</button>
+            <!-- <button type="button" class="btn btn-float type02">등기부 결제 후 자가진단</button>				 -->
         </div>
     </div>
+
+    <!-- layerpop : 안심진단 평가하기 -->
+    <section class="layerpop pop01 pop-page addr-pop" role="dialog" aria-hidden="true">
+        <div class="pop-wrap">
+            <div class="pop-content">
+                <div class="pc-wrap type-page">
+                    <div class="header auto-hide">
+                        <h1 class="title ta-c">안심진단 평가하기</h1>
+                        
+                        <div class="btn-right">
+                            <button type="button" class="pop-close" onclick="LayerPopup.close('pop01');">닫기</button>
+                        </div>
+                    </div>
+
+                    <div class="pp-body type-pd0 sc-y mt-50">
+
+                        <!-- S: 검색 -->
+                        <div class="content-group pb-0">
+                            <div class="inner-20">
+
+                                <ul>
+                                    <li>
+                                        <div class="txt-wrap">
+                                            <p class="txt type03">
+                                                1. 조회하신 시세의 정확도에 대해서 만족하시나요?
+                                            </p>
+                                        </div>
+    
+                                        <div class="star-rating-wrap">
+                                            <input type="radio" id="star05" name="rating" value="5" />
+                                            <label for="star05" class="star"><span class="blind">별 5개</span></label>
+    
+                                            <input type="radio" id="star04" name="rating" value="4" />
+                                            <label for="star04" class="star"><span class="blind">별 4개</span></label>
+    
+                                            <input type="radio" id="star03" name="rating" value="3" />
+                                            <label for="star03" class="star"><span class="blind">별 3개</span></label>
+    
+                                            <input type="radio" id="star02" name="rating" value="2" />
+                                            <label for="star02" class="star"><span class="blind">별 2개</span></label>
+    
+                                            <input type="radio" id="star01" name="rating" value="1" />
+                                            <label for="star01" class="star"><span class="blind">별 1개</span></label>
+                                        </div>
+                                    </li>
+
+                                    <li>
+                                        <div class="txt-wrap">
+                                            <p class="txt type03">
+                                                2. 진단하신 결과에 대해서 만족하시나요?
+                                            </p>
+                                        </div>
+    
+                                        <div class="star-rating-wrap">
+                                            <input type="radio" id="star05_2" name="rating2" value="5" />
+                                            <label for="star05_2" class="star"><span class="blind">별 5개</span></label>
+    
+                                            <input type="radio" id="star04_2" name="rating2" value="4" />
+                                            <label for="star04_2" class="star"><span class="blind">별 4개</span></label>
+    
+                                            <input type="radio" id="star03_2" name="rating2" value="3" />
+                                            <label for="star03_2" class="star"><span class="blind">별 3개</span></label>
+    
+                                            <input type="radio" id="star02_2" name="rating2" value="2" />
+                                            <label for="star02_2" class="star"><span class="blind">별 2개</span></label>
+    
+                                            <input type="radio" id="star01_2" name="rating2" value="1" />
+                                            <label for="star01_2" class="star"><span class="blind">별 1개</span></label>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- E: 검색 -->
+                    </div>
+                </div>
+                <div class="btn-group">
+                    <button type="button" class="btn btn-float btn-cancel" onclick="LayerPopup.close('pop01');">닫기</button>
+                    <button type="button" class="btn btn-float btn-primary">확인</button>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+    <!-- //layerpop : 안심진단 평가하기 -->
 
 
 	<script src="../../js/common_ui.js"></script>
