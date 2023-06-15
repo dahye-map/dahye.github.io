@@ -1,0 +1,169 @@
+<!--@layout(/layout/basic/layout_wide.html)-->
+<div module="layout_logincheck">
+    <!--
+        $url = /member/login.html
+    -->
+</div>
+
+<div id="myshopWrap">
+
+    <div id="myshopLeft">
+        <div class="myshop-list-wrap">
+            <!--@css(/css/module/myshop/main.css)-->
+            <ul>
+                <li class="list active">
+                    <a href="/myshop/index.html">Dashboard</a>
+                </li>
+                <li class="list">
+                    <a href="/member/modify.html">Profile</a>
+                </li>
+                <li class="list">
+                    <a href="/myshop/order/list.html">Order History</a>
+                </li>
+                <li class="list">
+                    <a href="/myshop/wish_list.html">Wish List</a>
+                </li>
+                <li class="list">
+                    <a href="/order/basket.html">Shopping Bag</a>
+                </li>
+                <li class="list">
+                    <a href="/cs_center.html">Communication</a>
+                </li>
+                <li class="list">
+                    <a module="Layout_stateLogon" href="{$action_logout}">Sign out</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    
+    <div id="myshopRight">
+        <div module="myshop_asyncbenefit">
+            <!--@css(/css/module/myshop/benefit.css)-->
+            <div class="information">
+                <p class="thumbnail"><img src="{$group_image}" alt="" onerror="this.src='//img.echosting.cafe24.com/skin/base/member/img_member_default.gif';" class="{$group_image_tag_class}" /></p>
+                <div class="description">
+                    <span>Thank you for shopping with us. 
+                        <strong>{$member_name}</strong> your membership level is [{$group_name}].
+                    </span>
+                </div>
+            </div>
+        </div>
+        
+        <div module="myshop_asyncbankbook">
+            <!--@css(/css/module/myshop/bankbook.css)-->
+            <ul>
+                <li class="{$display_mileage|display}">
+                    <p class="title">Available {$mileage_name}</p>
+                    <p class="data use">{$avail_mileage}</p>
+                    <!-- <a href="/myshop/mileage/historyList.html" class="btnNormal">Result</a> -->
+                </li>
+        
+                <li class="{$display_coupon|display}">
+                    <p class="title">Coupons</p>
+                    <p class="data"><span class="txt">Qty.</span> {$coupon_cnt}</p>
+                    <!-- <a href="/myshop/coupon/coupon.html" class="btnNormal">Result</a> -->
+                </li>
+            </ul>
+        </div>
+        
+        <div module="myshop_orderstate">
+            <!--@css(/css/module/myshop/orderState.css)-->
+            <div class="title">
+                <p>Order History (Last 3 months)</p>
+            </div>
+            <div class="state">
+                <ul class="order">
+                    <li>
+                        <strong>Order Confirmed</strong>
+                        <a href="{$shppiedBeforeUrl}" class="count">{$shppiedBeforeCount}</a>
+                    </li>
+                    <li>
+                        <strong>Preparing Shipment</strong>
+                        <a href="{$shppiedStandbyUrl}" class="count">{$shppiedStandbyCount}</a>
+                    </li>
+                    <li>
+                        <strong>In Transit</strong>
+                        <a href="{$shppiedBeginUrl}" class="count">{$shppiedBeginCount}</a>
+                    </li>
+                    <li>
+                        <strong>Delivered</strong>
+                        <a href="{$shppiedComplateUrl}" class="count">{$shppiedComplateCount}</a>
+                    </li>
+                    <li>
+                        <strong>ETC.</strong>
+                        <div class="etc-list">
+                            <p class="etc">Cancellations : <a href="{$orderCancelUrl}">{$orderCancelCount}</a></p>
+                            <p class="etc">Exchanges : <a href="{$orderExchangeUrl}">{$orderExchangeCount}</a></p>
+                            <p class="etc">Returns : <a href="{$orderReturnUrl}">{$orderReturnCount}</a></p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        
+        <div module="Myshop_OrderHistoryListitem">
+            <!--@css(/css/module/myshop/orderHistoryListItem.css)-->
+        
+            <div class="title">
+                <p>{$list_title}</p>
+            </div>
+
+            <div class="order-list {$list_display|display}">
+                <div class="order-header">
+                    <p>Date</p>
+                    <p>Order No</p>
+                    <p>Total</p>
+                    <p>Status</p>
+                    <p>&nbsp;</p>
+                </div>
+                <div class="order-body">
+                    <p class="date">{$order_date}</p>
+
+                    <p class="number"><a href="/myshop/order/detail.html{$param_detail}">{$order_id}</a></p>
+
+                    <p class="price">
+                        <strong>{$product_price_front_head}{$product_price_front}{$product_price_front_tail}</strong>
+                    </p>
+                    
+                    <p class="status">{$status}</p>
+
+                    <p class="btn-wrap">
+                        <a href="#none" class="btnNormal {$direct_cancel_display|display}" onclick="{$action_direct_cancel}">Cancel Order</a>
+                        <a href="cancel.html{$param_apply}" class="btnNormal {$apply_cancel_display|display}">Cancel Request</a>
+                        <a href="exchange.html{$param_apply}" class="btnNormal {$apply_exchange_display|display}">Exchange</a>
+                        <a href="return.html{$param_apply}" class="btnNormal {$apply_return_display|display}">Return</a>
+                    </p>
+
+                    <p class="message {$empty_display|display}">You have no order history.</p>
+                </div>
+                <div class="order-body">
+                    <p class="date">{$order_date}</p>
+
+                    <p class="number"><a href="/myshop/order/detail.html{$param_detail}">{$order_id}</a></p>
+
+                    <p class="price">
+                        <strong>{$product_price_front_head}{$product_price_front}{$product_price_front_tail}</strong>
+                    </p>
+                    
+                    <p class="status">{$status}</p>
+
+                    <p class="btn-wrap">
+                        <a href="#none" class="btnNormal {$direct_cancel_display|display}" onclick="{$action_direct_cancel}">Cancel Order</a>
+                        <a href="cancel.html{$param_apply}" class="btnNormal {$apply_cancel_display|display}">Cancel Request</a>
+                        <a href="exchange.html{$param_apply}" class="btnNormal {$apply_exchange_display|display}">Exchange</a>
+                        <a href="return.html{$param_apply}" class="btnNormal {$apply_return_display|display}">Return</a>
+                    </p>
+                </div>
+            </div>
+            <p class="message {$empty_display|display}">You have no order history.</p>
+        </div>
+
+
+    </div>
+</div>
+
+
+
+
+
+

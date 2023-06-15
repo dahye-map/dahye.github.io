@@ -1,0 +1,141 @@
+#containerWrap .container { overflow:hidden; }
+.influ-wrap { position:relative; }
+.influ-wrap:before { content:''; position:absolute; top:0; left:28px; width:1px; height:100%; background:#000; }
+.influ-wrap:after { content:''; position:absolute; top:0; right:28px; width:1px; height:100%; background:#000; }
+
+.top-influ-wrap { position:relative; background:url('../../images/bg_influ_banner.jpg') center no-repeat; padding:150px 0; text-align:center; background-size:cover; }
+.top-influ-wrap:before { content:''; position:absolute; top:28px; left:0; width:100%; height:1px; background:#fff; }
+.top-influ-wrap:after { content:''; position:absolute; bottom:28px; left:0; width:100%; height:1px; background:#fff; }
+.top-influ-wrap .right-txt { display:inline-block; position:absolute; font-size:14px; color:#fff; opacity:.2; right:-100px; top:50px; transform:rotate(90deg); transform-origin:left; }
+.top-influ-wrap .sub-tit { display:inline-block; position:relative; font-size:14px; color:#0095f6; }
+.top-influ-wrap .sub-tit:after { content:''; display:block; position:absolute; right:-12px; top:-3px; background:#0095f6; width:7px; height:7px; border-radius:50%; }
+.top-influ-wrap .title { font-size:124px; color:#fff; font-weight:bold; line-height:1.12; }
+.top-influ-wrap .phone { margin-top:-70px; }
+.top-influ-wrap .desc { color:#fff; font-size:18px; line-height:1.4; font-weight:400; }
+.top-influ-wrap .line01 { position:absolute; top:0; left:28px; width:1px; height:100%; background:#fff; z-index:99; }
+.top-influ-wrap .line02 { position:absolute; top:0; right:28px; width:1px; height:100%; background:#fff; z-index:99; }
+
+.require-wrap { position:relative;  padding:160px 0; text-align:center; }
+.require-wrap .title { position:relative; display:inline-block; color:#000; font-size:35px; font-weight:bold; text-align:center; padding-bottom:84px; }
+.require-wrap .title:after { content:''; display:block; position:absolute; right:-12px; top:-3px; background:#0095f6; width:7px; height:7px; border-radius:50%; }
+.require-wrap .require-list { display:flex; text-align:left; max-width:1055px; margin-left:-11px; margin-right:-11px; margin:0 auto;  }
+.require-wrap .require-list .list { width:50%; margin:0 11px; }
+.require-wrap .require-list .list .desc { color:#000; font-size:16px; padding-bottom:15px; }
+.require-wrap .require-list .list ul li { color:#000; font-size:16px; line-height:1.6; }
+.require-wrap .require-list .list .img { padding-top:50px; }
+
+
+
+.benefit-wrap { position:relative; background:url('../../images/bg_benifit.jpg') center no-repeat; padding:180px 0; text-align:center; background-size:cover; }
+.benefit-wrap:before { content:''; position:absolute; top:28px; left:0; width:100%; height:1px; background:#fff; }
+.benefit-wrap:after { content:''; position:absolute; bottom:28px; left:0; width:100%; height:1px; background:#fff; }
+.benefit-wrap .title { position:relative; display:inline-block; color:#fff; font-size:35px; font-weight:bold; text-align:center; padding-bottom:57px; }
+.benefit-wrap .title:after { content:''; display:block; position:absolute; right:-12px; top:-3px; background:#0095f6; width:7px; height:7px; border-radius:50%; }
+.benefit-wrap .benefit-list { max-width:1055px; display:flex; text-align:left; margin-left:-11px; margin-right:-11px; margin:auto; }
+.benefit-wrap .benefit-list .list { position:relative; background:#fff; width:25%; min-height:332px; padding:50px 35px; margin:0 11px; }
+.benefit-wrap .benefit-list .list .tit { font-size:16px; color:#000; line-height:1.625; }
+.benefit-wrap .benefit-list .list .img { position:absolute; right:15%; bottom:15%; }
+.benefit-wrap .line01 { position:absolute; top:0; left:28px; width:1px; height:100%; background:#fff; z-index:99; }
+.benefit-wrap .line02 { position:absolute; top:0; right:28px; width:1px; height:100%; background:#fff; z-index:99; }
+
+
+.process-wrap { position:relative; padding:220px 0 140px; text-align:center; }
+.process-wrap .title { position:relative; display:inline-block; color:#000; font-size:35px; font-weight:bold; text-align:center; padding-bottom:100px; }
+.process-wrap .title:after { content:''; display:block; position:absolute; right:-12px; top:-3px; background:#0095f6; width:7px; height:7px; border-radius:50%; }
+.process-wrap .process-list { display:flex; max-width:1055px; margin:0 auto; }
+.process-wrap .process-list .list { display:table; width:28%; min-height:287px; border:1px solid #000; border-radius:50%; vertical-align:middle; }
+.process-wrap .process-list .list:not(:first-child) { margin-left:-3%; }
+.process-wrap .process-list .list p { display:table-cell; vertical-align:middle; color:#000; font-size:16px; line-height:1.625; }
+.process-wrap .process-list .list .ico { display:block; padding-top:10px; font-size:30px; }
+.process-wrap .process-list .list.type02 { border-color:#0095f6; }
+.process-wrap .process-list .list.type02 p { color:#0095f6; }
+
+.influ-img-list { position:relative; margin-left:743px; }
+.influ-img-list .swiper-wrapper { transition-timing-function:linear; }
+.influ-img-list .swiper-slide { width:auto !important; }
+
+
+.ani-txt { padding-top:325px; padding-bottom:128px; font-size:124px; font-weight:bold; color:#000; margin-left:30%; white-space: nowrap;}
+
+.email-wrap .desc { font-size:24px; font-weight:600; color:#000; line-height:1.75; text-align:center; }
+.email-wrap .ico { text-align:center; padding-top:70px; padding-bottom:260px; }
+
+
+/* PC Desktop (가로폭 1024 이상) */
+@media all and (min-width:1024px) {
+
+}
+
+/* Tablet (가로폭 768px 이상, 1023px 이하) */
+@media all and (max-width:1024px) {
+    .top-influ-wrap .title { font-size:100px; }
+    .top-influ-wrap .desc { font-size:16px; }
+
+    .require-wrap { padding:150px 5%; }
+    .require-wrap .title { font-size:30px; padding-bottom:50px; }
+    .require-wrap .require-list .list .img { padding-top:30px; }
+
+    .benefit-wrap { padding:150px 5%; }
+    .benefit-wrap .title { font-size:30px; padding-bottom:50px; }
+    .benefit-wrap .benefit-list .list { padding:40px 20px; min-height:300px; }
+
+    .process-wrap { padding:150px 5%; }
+    .process-wrap .title { font-size:30px; padding-bottom:50px; }
+    .process-wrap .process-list .list { min-height:250px; }
+
+    .ani-txt { font-size:100px; padding-top:200px; padding-bottom:100px; }
+    .email-wrap .ico { padding-bottom:150px; }
+    .email-wrap .desc { font-size:18px; }
+}
+
+/* Mobile Device (가로폭 767px 이하) */
+@media all and (max-width:767px) {
+    .influ-wrap:before { content:''; left:15px; }
+    .influ-wrap:after { content:''; right:15px; }
+
+    .top-influ-wrap { padding:150px 5%; }
+
+    .top-influ-wrap .title { font-size:60px; }
+    .top-influ-wrap .desc { font-size:15px; }
+    .top-influ-wrap .phone { margin-top:-40px; }
+    .top-influ-wrap .line01 {left:15px; }
+    .top-influ-wrap .line02 { right:15px; }
+    .top-influ-wrap .right-txt { right:-120px; }
+
+
+    .require-wrap { padding:80px 5% 30px; }
+    .require-wrap .title { font-size:30px; padding-bottom:50px; }
+    .require-wrap .require-list { flex-wrap:wrap; }
+    .require-wrap .require-list .list { width:100%; margin-bottom:50px; }
+    .require-wrap .require-list .list .img { padding-top:30px; }
+
+    .benefit-wrap { padding:80px 5%; }
+    .benefit-wrap .title { font-size:30px; padding-bottom:50px; }
+    .benefit-wrap .benefit-list { flex-wrap:wrap; }
+    .benefit-wrap .benefit-list .list { width:calc(50% - 22px); padding:40px 20px; min-height:300px; margin-bottom:22px; }
+    .benefit-wrap .line01 {left:15px; }
+    .benefit-wrap .line02 { right:15px; }
+
+    .process-wrap { padding:80px 5%; }
+    .process-wrap .title { font-size:30px; padding-bottom:50px; }
+    .process-wrap .process-list { flex-wrap:wrap; }
+    .process-wrap .process-list .list:not(:first-child) { margin-left:0; }
+    .process-wrap .process-list .list { width:50%; min-height:196px; }
+    
+
+    .ani-txt { font-size:40px; padding-top:150px; padding-bottom:150px; }
+    .email-wrap .desc { font-size:18px; }
+    .email-wrap .ico { padding-bottom:100px; }
+
+
+}
+
+/* Mobile Device (가로폭 767px 이하) */
+@media all and (max-width:420px) {
+    .top-influ-wrap .title { font-size:50px; }
+    .top-influ-wrap .desc { font-size:14px; }
+    .top-influ-wrap .phone { margin-top:-30px; }
+
+    .ani-txt { font-size:30px; padding-top:100px; padding-bottom:100px; }
+
+}

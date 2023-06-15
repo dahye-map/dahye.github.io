@@ -1,0 +1,948 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <script src="../lib/js/jquery.js"></script>
+    <script src="../lib/js/script.js"></script>
+    <script src="../lib/js/swiper.min.js"></script>
+    <script src="../lib/js/respond.min.js"></script>
+    <script src="../lib/js/respond-image.js"></script>
+    <script src="../lib/js/ui.js"></script>
+    
+	<link rel="stylesheet"  type="text/css"   href="../lib/css/base.css"/>
+    <link rel="stylesheet"  type="text/css"   href="../lib/css/index.css"/>
+    <link rel="stylesheet"  type="text/css"   href="../lib/css/swiper.min.css"/>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:500,600,700,800,900|Roboto+Mono:500" rel="stylesheet">
+</head>
+<body>
+
+    <div id="wrap">
+        <!-- <div id="countryWrap">
+            <div class="country">
+                <a href="javascript:void(0)" class="btn-close"><img src="../images/btn_close.png" alt=""></a>
+                <ul>
+                    <p>Asia</p>
+                    <li><a href=""><span><img src="../images/Brunei.jpg" alt=""></span>Brunei</a></li>
+                    <li><a href=""><span><img src="../images/China.jpg" alt=""></span>China</a></li>
+                    <li><a href=""><span><img src="../images/Hongkong.jpg" alt=""></span>Hong Kong</a></li>
+                    <li><a href=""><span><img src="../images/Indonesia.jpg" alt=""></span>Indonesia</a></li>
+                    <li><a href=""><span><img src="../images/India.jpg" alt=""></span>India</a></li>
+                    <li><a href=""><span><img src="../images/Japan.jpg" alt=""></span>Japan</a></li>
+                    <li><a href=""><span><img src="../images/Macau.jpg" alt=""></span>Macau</a></li>
+                    <li><a href=""><span><img src="../images/Malaysia.jpg" alt=""></span>Malaysia</a></li>
+                    <li><a href=""><span><img src="../images/Philippines.jpg" alt=""></span>Philippines</a></li>
+                    <li><a href=""><span><img src="../images/Singapore.jpg" alt=""></span>Singapore</a></li>
+                    <li><a href=""><span><img src="../images/Taiwan.jpg" alt=""></span>Taiwan, R.O.C</a></li>
+                    <li><a href=""><span><img src="../images/Thailand.jpg" alt=""></span>Thailand</a></li>
+                    <li><a href=""><span><img src="../images/Vietnam.jpg" alt=""></span>Vietnam</a></li>
+                </ul>
+
+                <ul>
+                    <p>Oceania</p>
+                    <li><a href=""><span><img src="../images/Australia.jpg" alt=""></span>Australia</a></li>
+                    <li><a href=""><span><img src="../images/Newzealand.jpg" alt=""></span>New Zealand</a></li>
+                    <li><a href=""><span><img src="../images/Guam.jpg" alt=""></span>Guam</a></li>
+                </ul>
+
+                <ul>
+                    <p>Europe</p>
+                    <li><a href=""><span><img src="../images/Austria.jpg" alt=""></span>Austria</a></li>
+                    <li><a href=""><span><img src="../images/Belgium.jpg" alt=""></span>Belgium</a></li>
+                    <li><a href=""><span><img src="../images/Czechrepublic.jpg" alt=""></span>Czech Republic</a></li>
+                    <li><a href=""><span><img src="../images/Finland.jpg" alt=""></span>Finland</a></li>
+                    <li><a href=""><span><img src="../images/France.jpg" alt=""></span>France</a></li>
+                    <li><a href=""><span><img src="../images/Germany.jpg" alt=""></span>Germany</a></li>
+                    <li><a href=""><span><img src="../images/Ireland.jpg" alt=""></span>Ireland</a></li>
+                    <li><a href=""><span><img src="../images/Italy.jpg" alt=""></span>Italy</a></li>
+                    <li><a href=""><span><img src="../images/Netherlands.jpg" alt=""></span>Netherlands</a></li>
+                    <li><a href=""><span><img src="../images/Norway.jpg" alt=""></span>Norway</a></li>
+                    <li><a href=""><span><img src="../images/Poland.jpg" alt=""></span>Poland</a></li>
+                    <li><a href=""><span><img src="../images/Russia.jpg" alt=""></span>Russia</a></li>
+                    <li><a href=""><span><img src="../images/Spain.jpg" alt=""></span>Spain</a></li>
+                    <li><a href=""><span><img src="../images/Sweden.jpg" alt=""></span>Sweden</a></li>
+                    <li><a href=""><span><img src="../images/Switzerland.jpg" alt=""></span>Switzerland</a></li>
+                    <li><a href=""><span><img src="../images/Unitedkingdom.jpg" alt=""></span>United Kingdom</a></li>
+                </ul>
+
+                <ul>
+                    <p>North America</p>
+                    <li><a href=""><span><img src="../images/Canada.jpg" alt=""></span>Canada</a></li>
+                    <li><a href=""><span><img src="../images/Mexico.jpg" alt=""></span>Mexico</a></li>
+                    <li><a href=""><span><img src="../images/Unitedstates.jpg" alt=""></span>United States</a></li>
+                </ul>
+
+                <ul>
+                    <p>South America</p>
+                    <li><a href=""><span><img src="../images/Brazil.jpg" alt=""></span>Brazil</a></li>
+                    <li><a href=""><span><img src="../images/Chile.jpg" alt=""></span>Chile</a></li>
+                </ul>
+
+                <ul>
+                    <p>The Middle East</p>
+                    <li><a href=""><span><img src="../images/Israel.jpg" alt=""></span>Israel</a></li>
+                    <li><a href=""><span><img src="../images/Kuwait.jpg" alt=""></span>Kuwait</a></li>
+                    <li><a href=""><span><img src="../images/Unitedarab.jpg" alt=""></span>United Arab Emirates</a></li>
+                    <li><a href=""><span><img src="../images/Saudiarabia.jpg" alt=""></span>Saudi Arabia</a></li>
+                    <li><a href=""><span><img src="../images/Qatar.jpg" alt=""></span>Qatar</a></li>
+                </ul>
+
+            </div>
+        </div> -->
+
+        
+        <!-- s:headerWrap -->
+        <div id="headerWrap">
+            <div class="header pc">
+
+                <div class="logo"><a href="/"><img src="../images/img_logo.png" alt=""></a></div>
+
+                <div class="lang-wrap">
+                    <p class="select">
+                        <span class="ico"><img src="../images/ico_location.jpg" alt=""></span>
+                        Korea, Republic Of / English
+                    </p>
+                    <div class="lang-drop">
+                        <ul>
+                            <li><a href=""><span><img src="../images/Unitedstates.jpg" alt=""></span>United States</a></li>
+                            <li><a href=""><span><img src="../images/Canada.jpg" alt=""></span>Canada</a></li>
+                            <li><a href=""><span><img src="../images/Hongkong.jpg" alt=""></span>Hongkong</a></li>
+                            <li><a href=""><span><img src="../images/Singapore.jpg" alt=""></span>Singapore</a></li>
+                            <li><a href=""><span><img src="../images/Taiwan.jpg" alt=""></span>Taiwan</a></li>
+                            <li><a href=""><span><img src="../images/Macau.jpg" alt=""></span>Macau</a></li>
+                            <li><a href=""><span><img src="../images/Malaysia.jpg" alt=""></span>Malaysia</a></li>
+                            <li><a href=""><span><img src="../images/Australia.jpg" alt=""></span>Australia</a></li>
+                            <li><a href=""><span><img src="../images/Newzealand.jpg" alt=""></span>Newzealand</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="gnb-wrap">
+                    <ul>
+                        <li class="depth1"><a href="">NEW</a></li>
+                        <li class="depth1">
+                            <a href="">Women</a>
+                            <div class="depth2-wrap">
+                                <div class="flex promo-banner">
+                                    <a href="">
+                                        <img src="../images/depth2_women.jpg" alt="">
+
+                                        <div class="desc">
+                                            <p class="tit">Need for your move</p>
+                                            <p class="sub-tit">Black label 360N is the best support ever.</p>
+
+                                            <a href="" class="btn-normal black">
+                                                <span class="btn-normal-hover"></span>
+                                                <span class="btn-normal-txt">Shop now</span>
+                                            </a>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="flex depth-list-wrap">
+                                    <p class="depth-tit">Women</p>
+                                    <div class="depth-list">
+                                        <ul>
+                                            <p>TOPS</p>
+                                            <li><a href="">All</a></li>
+                                            <li><a href="">Bras</a></li>
+                                            <li><a href="">Crops</a></li>
+                                            <li><a href="">Full Length</a></li>
+                                            <li><a href="">Short Sleeves</a></li>
+                                            <li><a href="">Long Sleeves</a></li>
+                                            <li><a href="">Athleisure</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="depth-list">
+                                        <ul>
+                                            <p>BOTTOMS</p>
+                                            <li><a href="">All</a></li>
+                                            <li><a href="">Leggings</a></li>
+                                            <li><a href="">Capris</a></li>
+                                            <li><a href="">Bikers & Shorts</a></li>
+                                            <li><a href="">Athleisure</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="depth-list">
+                                        <ul>
+                                            <p>COVERUPS</p>
+                                            <li><a href="">All</a></li>
+                                            <li><a href="">Short Sleeves</a></li>
+                                            <li><a href="">Long Sleeves</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="depth-list">
+                                        <ul>
+                                            <p>SWIMWEAR</p>
+                                            <li><a href="">All</a></li>
+                                            <li><a href="">Tops</a></li>
+                                            <li><a href="">Bottoms</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="depth-list">
+                                        <ul>
+                                            <p>ACCESSORIES</p>
+                                            <li><a href="">All</a></li>
+                                            <li><a href="">Shoes</a></li>
+                                            <li><a href="">Socks</a></li>
+                                            <li><a href="">Yoga Mats</a></li>
+                                            <li><a href="">Underwear</a></li>
+                                            <li><a href="">Bags</a></li>
+                                            <li><a href="">Etcs</a></li>
+                                        </ul>
+                                    </div>
+
+                                </div>
+                                
+                            </div>
+                        </li>
+                        <li class="depth1">
+                            <a href="">Men</a>
+                            <div class="depth2-wrap">
+                                <div class="flex promo-banner">
+                                    <a href="">
+                                        <img src="../images/depth2_men.jpg" alt="">
+
+                                        <div class="desc">
+                                            <p class="tit">Cheer your back</p>
+                                            <p class="sub-tit">We have high performance mens line.</p>
+
+                                            <a href="" class="btn-normal black">
+                                                <span class="btn-normal-hover"></span>
+                                                <span class="btn-normal-txt">Shop the best</span>
+                                            </a>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="flex depth-list-wrap">
+                                    <p class="depth-tit">Men</p>
+                                    <div class="depth-list">
+                                        <ul>
+                                            <p>TOPS</p>
+                                            <li><a href="">All</a></li>
+                                            <li><a href="">Short Sleeves</a></li>
+                                            <li><a href="">Long Sleeves</a></li>
+                                            <li><a href="">Tanks</a></li>
+                                            <li><a href="">Athleisure</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="depth-list">
+                                        <ul>
+                                            <p>BOTTOMS</p>
+                                            <li><a href="">All</a></li>
+                                            <li><a href="">Leggings</a></li>
+                                            <li><a href="">Shorts</a></li>
+                                            <li><a href="">Pants</a></li>
+                                            <li><a href="">Athleisure</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="depth-list">
+                                        <ul>
+                                            <p>SWIMWEAR</p>
+                                            <li><a href="">All</a></li>
+                                            <li><a href="">Tops</a></li>
+                                            <li><a href="">Bottoms</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="depth-list">
+                                        <ul>
+                                            <p>ACCESSORIES</p>
+                                            <li><a href="">All</a></li>
+                                            <li><a href="">Shoes</a></li>
+                                            <li><a href="">Socks</a></li>
+                                            <li><a href="">Yoga Mats</a></li>
+                                            <li><a href="">Underwear</a></li>
+                                            <li><a href="">Bags</a></li>
+                                            <li><a href="">Etcs</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="depth1"><a href="">Gear</a></li>
+                        <li class="depth1"><a href="">Beauty</a></li>
+                        <li class="depth1"><a href="">Community</a></li>
+                    </ul>
+                </div>
+
+                <div class="util-wrap">
+                    <ul>
+                        <li><a href=""><img src="../images/ico_search.jpg" alt=""></a></li>
+                        <li><a href=""><img src="../images/ico_mypage.jpg" alt=""></a></li>
+                        <li><a href=""><img src="../images/ico_like.jpg" alt=""></a></li>
+                        <li><a href=""><img src="../images/ico_bag.jpg" alt=""></a></li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <div class="header mo">
+                <div class="left-wrap">
+                    <div class="menu">
+                        <a href="#none"><img src="../images/ico_menu_mo.png" alt=""></a>
+                    </div>
+                </div>
+                
+
+                <div class="logo"><a href="/"><img src="../images/img_logo.png" alt=""></a></div>
+
+                <div class="right-wrap">
+                    <div class="mypage">
+                        <a href=""><img src="../images/ico_mypage_mo.png" alt=""></a>
+                    </div>
+                    <div class="bag">
+                        <a href=""><img src="../images/ico_bag_mo.png" alt=""></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mo-cate-list swiper-container mo-only">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <a href="">
+                            <p class="img"><img src="../images/m_cate01.jpg" alt=""></p>
+                            <p class="name">New</p>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="">
+                            <p class="img"><img src="../images/m_cate02.jpg" alt=""></p>
+                            <p class="name">Women</p>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="">
+                            <p class="img"><img src="../images/m_cate03.jpg" alt=""></p>
+                            <p class="name">Men</p>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="">
+                            <p class="img"><img src="../images/m_cate04.jpg" alt=""></p>
+                            <p class="name">Gear</p>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="">
+                            <p class="img"><img src="../images/m_cate05.jpg" alt=""></p>
+                            <p class="name">Beauty</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+
+        </div>
+        <!-- //e:headerWrap -->
+
+
+        <div id="navWrap">
+            <div class="nav">
+
+                <div class="nav-header">
+                    <div class="language">
+                        <div class="multishop">
+                            <div class="nowtit">KOR</div>
+                            <div class="box">
+                                <div class="flag"> 
+                                    <a href="https://en.xexymix.com/Mobile">ENG</a>
+                                    <a href="https://cn.xexymix.com/Mobile">CHN</a>
+                                    <a href="https://www.xexymix.jp/smartphone/">JPN</a>
+                                    <a href="https://www.xexymix.com.tw/">TWN</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="logo"><a href="/"><img src="../images/logo_small.png" alt=""></a></div>
+                    <a href="#none" class="btn-nav-close"><img src="../images/btn_popup_close.png" alt=""></a>
+                </div>
+                
+                <ul class="nav-depth1">
+                    <li class=""><a href="">NEW</a></li>
+                    <li class="depth women"><a href="#none">Women</a></li>
+                    <li class="depth men"><a href="#none">Men</a></li>
+                    <li class=""><a href="">Gear</a></li>
+                    <li class=""><a href="">Beauty</a></li>
+                    <li class=""><a href="">Community</a></li>
+                </ul>
+
+
+                <ul class="nav-depth2 women accordian-list">
+
+                    <div class="depth2-title">
+                        <a href="#none" class="btn-back-nav"><img src="../images/left_arrow.png" alt=""></a>
+                        <p>Women</p>
+                    </div>
+                    
+                    <li class="depth-list">
+                        <a href="#none">TOPS</a>
+                        <ul class="content">
+                            <li><a href="">All</a></li>
+                            <li><a href="">Bras</a></li>
+                            <li><a href="">Crops</a></li>
+                            <li><a href="">Full Length</a></li>
+                            <li><a href="">Short Sleeves</a></li>
+                            <li><a href="">Long Sleeves</a></li>
+                            <li><a href="">Athleisure</a></li>
+                        </ul>
+                    </li>
+                    <li class="depth-list">
+                        <a href="#none">BOTTOMS</a>
+                        <ul class="content">
+                            <li><a href="">All</a></li>
+                            <li><a href="">Leggings</a></li>
+                            <li><a href="">Capris</a></li>
+                            <li><a href="">Bikers & Shorts</a></li>
+                            <li><a href="">Athleisure</a></li>
+                        </ul>
+                    </li>
+                    <li class="depth-list">
+                        <a href="#none">COVERUPS</a>
+                        <ul class="content">
+                            <li><a href="">All</a></li>
+                            <li><a href="">Short Sleeves</a></li>
+                            <li><a href="">Long Sleeves</a></li>
+                        </ul>
+                    </li>
+                    <li class="depth-list">
+                        <a href="#none">SWIMWEAR</a>
+                        <ul class="content">
+                            <li><a href="">All</a></li>
+                            <li><a href="">Tops</a></li>
+                            <li><a href="">Bottoms</a></li>
+                        </ul>
+                    </li>
+                    <li class="depth-list">
+                        <a href="#none">ACCESSORIES</a>
+                        <ul class="content">
+                            <li><a href="">All</a></li>
+                            <li><a href="">Shoes</a></li>
+                            <li><a href="">Socks</a></li>
+                            <li><a href="">Yoga Mats</a></li>
+                            <li><a href="">Underwear</a></li>
+                            <li><a href="">Bags</a></li>
+                            <li><a href="">Etcs</a></li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <ul class="nav-depth2 men accordian-list">
+                    <div class="depth2-title">
+                        <a href="#none" class="btn-back-nav"><img src="../images/left_arrow.png" alt=""></a>
+                        <p>Men</p>
+                    </div>
+                    <li class="depth-list">
+                        <a href="#none">TOPS</a>
+                        <ul class="content">
+                            <li><a href="">All</a></li>
+                            <li><a href="">Short Sleeves</a></li>
+                            <li><a href="">Long Sleeves</a></li>
+                            <li><a href="">Tanks</a></li>
+                            <li><a href="">Athleisure</a></li>
+                        </ul>
+                    </li>
+                    <li class="depth-list">
+                        <a href="#none">BOTTOMS</a>
+                        <ul class="content">
+                            <li><a href="">All</a></li>
+                            <li><a href="">Leggings</a></li>
+                            <li><a href="">Shorts</a></li>
+                            <li><a href="">Pants</a></li>
+                            <li><a href="">Athleisure</a></li>
+                        </ul>
+                    </li>
+                    <li class="depth-list">
+                        <a href="#none">SWIMWEAR</a>
+                        <ul class="content">
+                            <li><a href="">All</a></li>
+                            <li><a href="">Tops</a></li>
+                            <li><a href="">Bottoms</a></li>
+                        </ul>
+                    </li>
+                    <li class="depth-list">
+                        <a href="#none">ACCESSORIES</a>
+                        <ul class="content">
+                            <li><a href="">All</a></li>
+                            <li><a href="">Shoes</a></li>
+                            <li><a href="">Socks</a></li>
+                            <li><a href="">Yoga Mats</a></li>
+                            <li><a href="">Underwear</a></li>
+                            <li><a href="">Bags</a></li>
+                            <li><a href="">Etcs</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- s:containerWrap -->
+        <div id="containerWrap">
+            <div class="container">
+
+                
+
+                <div class="mainb-wrap swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <a href="">
+                                <img src="../images/img_main_banner01.jpg" data-src-base='../images/' data-src='<480:img_main_banner01_mo.jpg, <768:img_main_banner01_mo.jpg, <960:img_main_banner01.jpg, >960:img_main_banner01.jpg'/>
+
+                                <div class="top-title">
+                                    <p class="title">
+                                        XEXYMIX is No.1 Yogawear brand <br>in Asia and Pacific.
+                                    </p>
+                                    <p class="desc">
+                                        We've studied to make daily to professional workout wear.<br>
+                                        Feel the different, Daily leggings to Cozy athleisure look.
+                                    </p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="">
+                                <img src="../images/img_main_banner01.jpg" data-src-base='../images/' data-src='<480:img_main_banner01_mo.jpg, <768:img_main_banner01_mo.jpg, <960:img_main_banner01.jpg, >960:img_main_banner01.jpg'/>
+                                <div class="top-title">
+                                    <p class="title">
+                                        XEXYMIX is No.1 Yogawear brand <br>in Asia and Pacific.
+                                    </p>
+                                    <p class="desc">
+                                        We've studied to make daily to professional workout wear.<br>
+                                        Feel the different, Daily leggings to Cozy athleisure look.
+                                    </p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="">
+                                <img src="../images/img_main_banner01.jpg" data-src-base='../images/' data-src='<480:img_main_banner01_mo.jpg, <768:img_main_banner01_mo.jpg, <960:img_main_banner01.jpg, >960:img_main_banner01.jpg'/>
+                                <div class="top-title">
+                                    <p class="title">
+                                        XEXYMIX is No.1 Yogawear brand <br>in Asia and Pacific.
+                                    </p>
+                                    <p class="desc">
+                                        We've studied to make daily to professional workout wear.<br>
+                                        Feel the different, Daily leggings to Cozy athleisure look.
+                                    </p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="mainb-pagination swiper-pagination"></div>
+                </div>
+
+                
+
+                <div class="cate-wrap">
+                    <p class="title">Categories</p>
+                    <ul>
+                        <li>
+                            <a href="">
+                                <p><img src="../images/img_cate_list01.jpg" alt=""></p>
+                                <p class="list-tit">Leggings</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <p><img src="../images/img_cate_list02.jpg" alt=""></p>
+                                <p class="list-tit">Sports Bra</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <p><img src="../images/img_cate_list03.jpg" alt=""></p>
+                                <p class="list-tit">Gear</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <p><img src="../images/img_cate_list04.jpg" alt=""></p>
+                                <p class="list-tit">Athleisure</p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="midb-wrap">
+                    <ul>
+                        <li class="midb">
+                            <p><img src="../images/mid_banner01.jpg" alt=""></p>
+    
+                            <div class="desc">
+                                <p class="title">Free worldwide <br>Shipping</p>
+                                <a href="" class="btn-normal pc-only">
+                                    <span class="btn-normal-hover"></span>
+                                    <span class="btn-normal-txt">Explore more</span>
+                                </a>
+                                <a href="" class="btn-normal-mo mo-only"><img src="../images/plusBtn.png" alt=""></a>
+                            </div>
+                        </li>
+                        <li class="midb">
+                            <p><img src="../images/mid_banner02.jpg" alt=""></p>
+    
+                            <div class="desc">
+                                <p class="title">How to choose <br>My leggings </p>
+                                <a href="" class="btn-normal pc-only">
+                                    <span class="btn-normal-hover"></span>
+                                    <span class="btn-normal-txt">Explore more</span>
+                                </a>
+                                <a href="" class="btn-normal-mo mo-only"><img src="../images/plusBtn.png" alt=""></a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="prob-wrap swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="prob swiper-slide">
+                            <p>
+                                <!-- <img src="../images/product_banner.jpg" alt=""> -->
+                                <img src="../images/product_banner.jpg" data-src-base='../images/' data-src='<480:product_banner_mo.jpg, <768:product_banner_mo.jpg, <960:product_banner.jpg, >960:product_banner.jpg'/>
+                            </p>
+    
+                            <div class="box-desc">
+                                <p class="title">
+                                    Made for Every wear<br>
+                                    Everyday Dressing made easy01
+                                </p>
+                                <a href="" class="btn-normal black pc-only">
+                                    <span class="btn-normal-hover"></span>
+                                    <span class="btn-normal-txt">Explore more</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="prob swiper-slide">
+                            <p>
+                                <!-- <img src="../images/product_banner.jpg" alt=""> -->
+                                <img src="../images/product_banner.jpg" data-src-base='../images/' data-src='<480:product_banner_mo.jpg, <768:product_banner_mo.jpg, <960:product_banner.jpg, >960:product_banner.jpg'/>
+                            </p>
+    
+                            <div class="box-desc">
+                                <p class="title">
+                                    Made for Every wear<br>
+                                    Everyday Dressing made easy02
+                                </p>
+                                <a href="" class="btn-normal black pc-only">
+                                    <span class="btn-normal-hover"></span>
+                                    <span class="btn-normal-txt">Explore more</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="prob-slide-pagination swiper-pagination"></div>
+                </div>
+
+                <div class="with-wrap">
+                    <p class="title">#Withxexymix</p>
+
+                    <ul>
+                        <li>
+                            <a href=""><img src="../images/withxexy01.jpg" alt=""></a>
+                        </li>
+                        <li>
+                            <a href=""><img src="../images/withxexy02.jpg" alt=""></a>
+                        </li>
+                        <li>
+                            <a href=""><img src="../images/withxexy03.jpg" alt=""></a>
+                        </li>
+                        <li>
+                            <a href=""><img src="../images/withxexy04.png" alt=""></a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="commu-wrap mo-only">
+                    <a href="" class="commu">
+                        <p><img src="../images/b_cate.jpg" alt=""></p>
+
+                        <div class="desc">
+                            <p>Let’s Grow up <br>Together</p>
+                            <span>Go to Community</span>
+                        </div>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+        <!-- //e:containerWrap -->
+
+
+        <!-- s:footerWrap -->
+        <div id="footerWrap">
+            <div class="footer pc-only">
+                <div class="left">
+                    <ul>
+                        <p>CUSTOMER SERVICE</p>
+                        <li><a href="">FAQ / CS center</a></li>
+                        <li><a href="">Shipping info</a></li>
+                        <li><a href="">Returns & Exchanges</a></li>
+                        <li><a href="">Size guide</a></li>
+                    </ul>
+
+                    <ul>
+                        <p>COMMUNITY</p>
+                        <li><a href="">Photo Review</a></li>
+                        <li><a href="">Teacher Member</a></li>
+                        <li><a href="">Wholesale</a></li>
+                        <li><a href="">Influencers</a></li>
+                    </ul>
+                </div>
+
+                <div class="center">
+                    <ul>
+                        <p>INF0RMATION</p>
+                        <li><a href="">ABOUT XEXYMIX</a></li>
+                        <li><a href="">Terms and Condition</a></li>
+                        <li><a href="">Privacy Policy</a></li>
+                    </ul>
+                </div>
+
+                <div class="right">
+                    <p><img src="../images/footer_logo.jpg" alt=""></p>
+                </div>
+
+                <div class="bottom">
+                    <p class="copy">Copyright 2015 Xexymix All Rights Reserved.</p>
+
+                    <div class="sns">
+                        <a href="" class="ico-sns"><img src="../images/ico_facebook.jpg" alt=""></a>
+                        <a href="" class="ico-sns"><img src="../images/ico_insta.jpg" alt=""></a>
+                    </div>
+
+                    <div class="app">
+                        <p>GET THE APP</p>
+                        <a href="" class="ico-app"><img src="../images/ico_google.png" alt=""></a>
+                        <a href="" class="ico-app"><img src="../images/ico_apple.png" alt=""></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer mo-only">
+                <ul class="accordian-list mo-footer-list">
+                    <li>
+                        <a href="#none">Customer Service</a>
+                        <ul class="content">
+                            <li><a href="">FAQ / Cs Center</a></li>
+                            <li><a href="">Shipping Info</a></li>
+                            <li><a href="">Returns & Exchanges</a></li>
+                            <li><a href="">Size Guide</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#none">Community</a>
+                        <ul class="content">
+                            <li><a href="">Photo Review</a></li>
+                            <li><a href="">Teacher Member</a></li>
+                            <li><a href="">Wholesale</a></li>
+                            <li><a href="">Influencers</a></li>	
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#none">Information</a>
+                        <ul class="content">
+                            <li><a href="">About us</a></li>
+                            <li><a href="">Terms and Condition</a></li>
+                            <li><a href="">Privacy Policy</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#none">Sns connection</a>
+                        <ul class="content">
+                            <li><a href="">About us</a></li>
+                            <li><a href="">Terms and Condition</a></li>
+                            <li><a href="">Privacy Policy</a></li>
+                        </ul>
+                    </li>
+                    <li class="select_wrap">
+            			<a href="#none">Korea, Republic Of / English</a>
+                        <div class="footer-lang-flag content">
+                            <ul>
+                                <p>Asia</p>
+                                <li><a href=""><span><img src="../images/Brunei.jpg" alt=""></span>Brunei</a></li>
+                                <li><a href=""><span><img src="../images/China.jpg" alt=""></span>China</a></li>
+                                <li><a href=""><span><img src="../images/Hongkong.jpg" alt=""></span>Hong Kong</a></li>
+                                <li><a href=""><span><img src="../images/Indonesia.jpg" alt=""></span>Indonesia</a></li>
+                                <li><a href=""><span><img src="../images/India.jpg" alt=""></span>India</a></li>
+                                <li><a href=""><span><img src="../images/Japan.jpg" alt=""></span>Japan</a></li>
+                                <li><a href=""><span><img src="../images/Macau.jpg" alt=""></span>Macau</a></li>
+                                <li><a href=""><span><img src="../images/Malaysia.jpg" alt=""></span>Malaysia</a></li>
+                                <li><a href=""><span><img src="../images/Philippines.jpg" alt=""></span>Philippines</a></li>
+                                <li><a href=""><span><img src="../images/Singapore.jpg" alt=""></span>Singapore</a></li>
+                                <li><a href=""><span><img src="../images/Taiwan.jpg" alt=""></span>Taiwan, R.O.C</a></li>
+                                <li><a href=""><span><img src="../images/Thailand.jpg" alt=""></span>Thailand</a></li>
+                                <li><a href=""><span><img src="../images/Vietnam.jpg" alt=""></span>Vietnam</a></li>
+                            </ul>
+            
+                            <ul>
+                                <p>Oceania</p>
+                                <li><a href=""><span><img src="../images/Australia.jpg" alt=""></span>Australia</a></li>
+                                <li><a href=""><span><img src="../images/Newzealand.jpg" alt=""></span>New Zealand</a></li>
+                                <li><a href=""><span><img src="../images/Guam.jpg" alt=""></span>Guam</a></li>
+                            </ul>
+            
+                            <ul>
+                                <p>Europe</p>
+                                <li><a href=""><span><img src="../images/Austria.jpg" alt=""></span>Austria</a></li>
+                                <li><a href=""><span><img src="../images/Belgium.jpg" alt=""></span>Belgium</a></li>
+                                <li><a href=""><span><img src="../images/Czechrepublic.jpg" alt=""></span>Czech Republic</a></li>
+                                <li><a href=""><span><img src="../images/Finland.jpg" alt=""></span>Finland</a></li>
+                                <li><a href=""><span><img src="../images/France.jpg" alt=""></span>France</a></li>
+                                <li><a href=""><span><img src="../images/Germany.jpg" alt=""></span>Germany</a></li>
+                                <li><a href=""><span><img src="../images/Ireland.jpg" alt=""></span>Ireland</a></li>
+                                <li><a href=""><span><img src="../images/Italy.jpg" alt=""></span>Italy</a></li>
+                                <li><a href=""><span><img src="../images/Netherlands.jpg" alt=""></span>Netherlands</a></li>
+                                <li><a href=""><span><img src="../images/Norway.jpg" alt=""></span>Norway</a></li>
+                                <li><a href=""><span><img src="../images/Poland.jpg" alt=""></span>Poland</a></li>
+                                <li><a href=""><span><img src="../images/Russia.jpg" alt=""></span>Russia</a></li>
+                                <li><a href=""><span><img src="../images/Spain.jpg" alt=""></span>Spain</a></li>
+                                <li><a href=""><span><img src="../images/Sweden.jpg" alt=""></span>Sweden</a></li>
+                                <li><a href=""><span><img src="../images/Switzerland.jpg" alt=""></span>Switzerland</a></li>
+                                <li><a href=""><span><img src="../images/Unitedkingdom.jpg" alt=""></span>United Kingdom</a></li>
+                            </ul>
+            
+                            <ul>
+                                <p>North America</p>
+                                <li><a href=""><span><img src="../images/Canada.jpg" alt=""></span>Canada</a></li>
+                                <li><a href=""><span><img src="../images/Mexico.jpg" alt=""></span>Mexico</a></li>
+                                <li><a href=""><span><img src="../images/Unitedstates.jpg" alt=""></span>United States</a></li>
+                            </ul>
+            
+                            <ul>
+                                <p>South America</p>
+                                <li><a href=""><span><img src="../images/Brazil.jpg" alt=""></span>Brazil</a></li>
+                                <li><a href=""><span><img src="../images/Chile.jpg" alt=""></span>Chile</a></li>
+                            </ul>
+            
+                            <ul>
+                                <p>The Middle East</p>
+                                <li><a href=""><span><img src="../images/Israel.jpg" alt=""></span>Israel</a></li>
+                                <li><a href=""><span><img src="../images/Kuwait.jpg" alt=""></span>Kuwait</a></li>
+                                <li><a href=""><span><img src="../images/Unitedarab.jpg" alt=""></span>United Arab Emirates</a></li>
+                                <li><a href=""><span><img src="../images/Saudiarabia.jpg" alt=""></span>Saudi Arabia</a></li>
+                                <li><a href=""><span><img src="../images/Qatar.jpg" alt=""></span>Qatar</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+                <div class="mo-bottom">
+                    <p class="app-title">GET THE APP</p>
+                    <div class="app">
+                        <a href="" class="ico-app"><img src="../images/app_android.png" alt=""></a>
+                        <a href="" class="ico-app"><img src="../images/app_ios.png" alt=""></a>
+                    </div>
+                    
+                    <p class="copy">Copyright 2015 Xexymix All Rights Reserved.</p>
+                </div>
+            </div>
+        </div>
+        <!-- //e:footerWrap -->
+    </div>
+
+
+    <!-- 국가선택 팝업 -->
+    <!-- <div class="layerpopup" id="countryPopup">
+        <a href="javascript:void(0)" onclick="closePopup('countryPopup')"><img src="../images/btn_popup_close.png" alt=""></a>
+        <div class="popup-con">
+            <p class="title">
+                XEXYMIX IS<br>NO LIMIT
+            </p>
+            <p class="sub-title">
+                Free Worldwide Shipping <br>
+                Welcome Gift USD 30 Coupon
+            </p>
+            <div class="lang-selec-wrap">
+                <div class="lang-selec">
+                    <div class="default">
+                        <p class="country"><img src="../images/country_none.jpg" alt=""></p>
+                        <p>Country selection</p>
+                    </div>
+                    <div class="lang-flag">
+                        <ul>
+                            <p>Asia</p>
+                            <li><a href=""><span><img src="../images/Brunei.jpg" alt=""></span>Brunei</a></li>
+                            <li><a href=""><span><img src="../images/China.jpg" alt=""></span>China</a></li>
+                            <li><a href=""><span><img src="../images/Hongkong.jpg" alt=""></span>Hong Kong</a></li>
+                            <li><a href=""><span><img src="../images/Indonesia.jpg" alt=""></span>Indonesia</a></li>
+                            <li><a href=""><span><img src="../images/India.jpg" alt=""></span>India</a></li>
+                            <li><a href=""><span><img src="../images/Japan.jpg" alt=""></span>Japan</a></li>
+                            <li><a href=""><span><img src="../images/Macau.jpg" alt=""></span>Macau</a></li>
+                            <li><a href=""><span><img src="../images/Malaysia.jpg" alt=""></span>Malaysia</a></li>
+                            <li><a href=""><span><img src="../images/Philippines.jpg" alt=""></span>Philippines</a></li>
+                            <li><a href=""><span><img src="../images/Singapore.jpg" alt=""></span>Singapore</a></li>
+                            <li><a href=""><span><img src="../images/Taiwan.jpg" alt=""></span>Taiwan, R.O.C</a></li>
+                            <li><a href=""><span><img src="../images/Thailand.jpg" alt=""></span>Thailand</a></li>
+                            <li><a href=""><span><img src="../images/Vietnam.jpg" alt=""></span>Vietnam</a></li>
+                        </ul>
+        
+                        <ul>
+                            <p>Oceania</p>
+                            <li><a href=""><span><img src="../images/Australia.jpg" alt=""></span>Australia</a></li>
+                            <li><a href=""><span><img src="../images/Newzealand.jpg" alt=""></span>New Zealand</a></li>
+                            <li><a href=""><span><img src="../images/Guam.jpg" alt=""></span>Guam</a></li>
+                        </ul>
+        
+                        <ul>
+                            <p>Europe</p>
+                            <li><a href=""><span><img src="../images/Austria.jpg" alt=""></span>Austria</a></li>
+                            <li><a href=""><span><img src="../images/Belgium.jpg" alt=""></span>Belgium</a></li>
+                            <li><a href=""><span><img src="../images/Czechrepublic.jpg" alt=""></span>Czech Republic</a></li>
+                            <li><a href=""><span><img src="../images/Finland.jpg" alt=""></span>Finland</a></li>
+                            <li><a href=""><span><img src="../images/France.jpg" alt=""></span>France</a></li>
+                            <li><a href=""><span><img src="../images/Germany.jpg" alt=""></span>Germany</a></li>
+                            <li><a href=""><span><img src="../images/Ireland.jpg" alt=""></span>Ireland</a></li>
+                            <li><a href=""><span><img src="../images/Italy.jpg" alt=""></span>Italy</a></li>
+                            <li><a href=""><span><img src="../images/Netherlands.jpg" alt=""></span>Netherlands</a></li>
+                            <li><a href=""><span><img src="../images/Norway.jpg" alt=""></span>Norway</a></li>
+                            <li><a href=""><span><img src="../images/Poland.jpg" alt=""></span>Poland</a></li>
+                            <li><a href=""><span><img src="../images/Russia.jpg" alt=""></span>Russia</a></li>
+                            <li><a href=""><span><img src="../images/Spain.jpg" alt=""></span>Spain</a></li>
+                            <li><a href=""><span><img src="../images/Sweden.jpg" alt=""></span>Sweden</a></li>
+                            <li><a href=""><span><img src="../images/Switzerland.jpg" alt=""></span>Switzerland</a></li>
+                            <li><a href=""><span><img src="../images/Unitedkingdom.jpg" alt=""></span>United Kingdom</a></li>
+                        </ul>
+        
+                        <ul>
+                            <p>North America</p>
+                            <li><a href=""><span><img src="../images/Canada.jpg" alt=""></span>Canada</a></li>
+                            <li><a href=""><span><img src="../images/Mexico.jpg" alt=""></span>Mexico</a></li>
+                            <li><a href=""><span><img src="../images/Unitedstates.jpg" alt=""></span>United States</a></li>
+                        </ul>
+        
+                        <ul>
+                            <p>South America</p>
+                            <li><a href=""><span><img src="../images/Brazil.jpg" alt=""></span>Brazil</a></li>
+                            <li><a href=""><span><img src="../images/Chile.jpg" alt=""></span>Chile</a></li>
+                        </ul>
+        
+                        <ul>
+                            <p>The Middle East</p>
+                            <li><a href=""><span><img src="../images/Israel.jpg" alt=""></span>Israel</a></li>
+                            <li><a href=""><span><img src="../images/Kuwait.jpg" alt=""></span>Kuwait</a></li>
+                            <li><a href=""><span><img src="../images/Unitedarab.jpg" alt=""></span>United Arab Emirates</a></li>
+                            <li><a href=""><span><img src="../images/Saudiarabia.jpg" alt=""></span>Saudi Arabia</a></li>
+                            <li><a href=""><span><img src="../images/Qatar.jpg" alt=""></span>Qatar</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> -->
+    <div class="block"></div>
+
+    <div class="layerpopup" id="mainPopup">
+        <a href="javascript:void(0)" onclick="closePopup('mainPopup')"><img src="../images/btn_close_main_popup.png" alt=""></a>
+        <div class="img"><img src="../images/main_popup_banner.jpg" alt=""></div>
+        <div class="popup-con">
+            <p class="title">
+                Welcome Gift USD $30 off
+            </p>
+            <p class="sub-title">
+                Sign up to get a welcome offer straight to your inbox or <br>
+                to be first to know about latest trends, new collections <br>
+                and exclusive. 
+            </p>
+
+            <a href="/member/join.html" class="btn-sign">Sign me up</a>
+        </div>
+    </div>
+    
+</body>
+</html>

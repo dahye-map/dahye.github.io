@@ -1,0 +1,670 @@
+<!--@layout(/layout/basic/layout_wide.html)-->
+
+<div id="myshopWrap">
+    <div id="myshopLeft">
+        <div class="myshop-list-wrap">
+            <!--@css(/css/module/myshop/main.css)-->
+            <ul>
+                <li class="list">
+                    <a href="/myshop/index.html">Dashboard</a>
+                </li>
+                <li class="list active">
+                    <a href="/myshop/addr/list.html">Profile</a>
+                </li>
+                <li class="list">
+                    <a href="/myshop/order/list.html">Order History</a>
+                </li>
+                <li class="list">
+                    <a href="/myshop/wish_list.html">Wish List</a>
+                </li>
+                <li class="list">
+                    <a href="/order/basket.html">Shopping Bag</a>
+                </li>
+                <li class="list">
+                    <a href="/cs_center.html">Communication</a>
+                </li>
+                <li class="list">
+                    <a module="Layout_stateLogon" href="{$action_logout}">Sign out</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div id="myshopRight">
+        <div module="myshop_asyncbenefit">
+            <!--@css(/css/module/myshop/benefit.css)-->
+            <div class="information">
+                <p class="thumbnail"><img src="{$group_image}" alt="" onerror="this.src='//img.echosting.cafe24.com/skin/base/member/img_member_default.gif';" class="{$group_image_tag_class}" /></p>
+                <div class="description">
+                    <span>Thank you for shopping with us. 
+                        <strong>{$member_name}</strong> your membership level is [{$group_name}].
+                    </span>
+                </div>
+            </div>
+        </div>
+        
+        <div class="profile-wrap">
+            <div module="member_edit">
+                <!--
+                    $login_page = /member/login.html
+                 -->
+                <!--@css(/css/module/member/edit.css)-->
+                <p class="title">Personal Profile</p>
+
+                <div class="">
+                    <table border="1" summary="">
+                    <caption>Billing Information</caption>
+                    <tbody>
+                        <tr>
+                            <th scope="row">ID <img src="//img.echosting.cafe24.com/skin/base/common/ico_required_blue.gif" alt="Required Field" /></th>
+                            <td>
+                                {$form.member_id}
+                                <span id="{$idMsg_id}"></span>
+                                <a href="#none" id="{$use_email_confirm_button}" class="btnNormal {$display_use_email_confirm|display}">Log in with ID or email address</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Password <img src="//img.echosting.cafe24.com/skin/base/common/ico_required_blue.gif" alt="Required Field" /></th>
+                            <td>
+                                <span class="ePlaceholder" title="Password">{$form.passwd}</span>
+                                <div class="eTooltip">
+                                    <!-- <div class="ec-base-tooltip typeUpper">
+                                        <div class="content">
+                                            <strong class="txtWarn">※ {$passwd_terms}</strong>
+                                            <ul class="ec-base-help typeDash gBlank10 txtWarn">
+                                                {$passwd_chk_info}
+                                            </ul>
+                                        </div>
+                                        <a href="#none" class="btnClose"><img src="//img.echosting.cafe24.com/skin/base/common/btn_close_tip.gif" alt="Close" /></a>
+                                        <span class="edge"></span>
+                                    </div> -->
+                                </div>
+                                <!-- {$passwd_type_desc} -->
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Confirm Password <img src="//img.echosting.cafe24.com/skin/base/common/ico_required_blue.gif" alt="Required Field" /></th>
+                            <td>
+                                <span class="ePlaceholder" title="Confirm Password">{$form.user_passwd_confirm} </span>
+                                <span id="{$pwConfirmMsg_id}"></span>
+                            </td>
+                        </tr>
+
+                        <tr class="pw-confirm-wrap">
+                            <td>
+                                <p class="upperlower">Upper and lowercase letters</p>
+                                <p class="number">Numbers</p>
+                                <p class="spe">Special characters</p>
+                                <p class="length">10 to 16 characters</p>
+                            </td>
+                        </tr>
+
+                        <tr class="{$display_is_certification|display}">
+                            <th scope="row">New password</th>
+                            <td>
+                                <div class="eTooltip">
+                                    {$form.new_passwd}
+                                    <div class="ec-base-tooltip typeUpper">
+                                        <div class="content">
+                                            <strong class="txtWarn">※ {$passwd_terms}</strong>
+                                            <ul class="ec-base-help typeDash gBlank10 txtWarn">
+                                                {$passwd_chk_info}
+                                            </ul>
+                                        </div>
+                                        <a href="#none" class="btnClose"><img src="//img.echosting.cafe24.com/skin/base/common/btn_close_tip.gif" alt="Close"></a>
+                                        <span class="edge"></span>
+                                    </div>
+                                </div>
+                                {$passwd_type_desc}
+                            </td>
+                        </tr>
+                        <tr class="{$display_is_certification|display}">
+                            <th scope="row">Confirm <br />new password</th>
+                            <td>{$form.new_passwd_confirm} <span id="{$newPwConfirmMsg_id}"></span></td>
+                        </tr>
+                        
+                        <tr class="{$display_name|display}">
+                            <th scope="row">Name <img src="//img.echosting.cafe24.com/skin/base/common/ico_required_blue.gif" class="{$display_required_name|display}" alt="Required Field" /></th>
+                            <td>{$form.name} {$form.last_name}</td>
+                        </tr>
+                        <tr class="{$display_eng_name|display}">
+                            <th scope="row">English Name <img src="//img.echosting.cafe24.com/skin/base/common/ico_required_blue.gif" class="{$display_required_name_en|display}" alt="Required Field" /></th>
+                            <td>{$form.name_en} {$form.last_name_en}</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Email <img src="//img.echosting.cafe24.com/skin/base/common/ico_required_blue.gif" alt="Required Field" /></th>
+                            <td>{$form.email} <span id="{$emailMsg_id}"></span></td>
+                        </tr>
+                        <tr class="{$display_pron_name|display}">
+                            <th scope="row">Phonetics <img src="//img.echosting.cafe24.com/skin/base/common/ico_required_blue.gif" class="{$display_required_name_phonetic|display}" alt="Required Field" /></th>
+                            <td>{$form.name_phonetic} {$form.last_name_phonetic}</td>
+                        </tr>
+                        <tr class="{$display_addr|display}">
+                            <th scope="row">Country <img src="//img.echosting.cafe24.com/skin/base/common/ico_required_blue.gif" class="{$display_required_address|display}" alt="Required Field" /></th>
+                            <td>{$form.country}</td>
+                        </tr>
+                        <tr class="{$display_addr|display}">
+                            <th scope="row">Address Line 1 <img src="//img.echosting.cafe24.com/skin/base/common/ico_required_blue.gif" class="{$display_required_address|display}" alt="Required Field" /></th>
+                            <td>{$form.addr1}</td>
+                        </tr>
+                        <tr class="{$display_addr|display}">
+                            <th scope="row">Address Line 2 <img src="//img.echosting.cafe24.com/skin/base/common/ico_required_blue.gif" class="{$display_required_is_required_address2|display}" alt="Required Field" /></th>
+                            <td>{$form.addr2}</td>
+                        </tr>
+                        <tr class="{$display_addr|display}">
+                            <th scope="row">City <img src="//img.echosting.cafe24.com/skin/base/common/ico_required_blue.gif" class="{$display_required_address|display}" alt="Required Field" /></th>
+                            <td>{$form.city_name}</td>
+                        </tr>
+                        <tr class="{$display_addr|display}">
+                            <th scope="row">State/Province <img src="//img.echosting.cafe24.com/skin/base/common/ico_required_blue.gif" class="{$display_required_address|display}" alt="Required Field" /></th>
+                            <td>{$form.state_name}</td>
+                        </tr>
+                        <tr class="{$display_addr|display}">
+                            <th scope="row">Zip/ Postal code <img src="//img.echosting.cafe24.com/skin/base/common/ico_required_blue.gif" class="{$display_required_address|display}" alt="Required Field" /></th>
+                            <td>{$form.postcode1} <input type="checkbox" name="nozip" id="nozip" /><label for="nozip">No zip/postal code</label></td>
+                        </tr>
+                        <tr class="{$display_phone|display}">
+                            <th scope="row">Telephone <img src="//img.echosting.cafe24.com/skin/base/common/ico_required_blue.gif" class="{$display_required_phone|display}" alt="Required Field" /></th>
+                            <td>{$form.nation_phone} {$form.phone}</td>
+                        </tr>
+                        <tr class="{$display_mobile|display}">
+                            <th scope="row">Mobile Phone <img src="//img.echosting.cafe24.com/skin/base/common/ico_required_blue.gif" class="{$display_required_cell|display}" alt="Required Field" /></th>
+                            <td>{$form.mobile}</td>
+                        </tr>
+                        <tr class="{$display_is_sms|display}">
+                            <th scope="row">SMS Messaging<br/>Service <img src="//img.echosting.cafe24.com/skin/base/common/ico_required_blue.gif" alt="Required Field" /></th>
+                            <td>{$form.is_sms}<p>Sign-up for SMS alerts to receive the latest updates and special offers.</p></td>
+                        </tr>
+                        <tr class="{$display_is_news_mail|display}">
+                            <th scope="row">Newsletters <img src="//img.echosting.cafe24.com/skin/base/common/ico_required_blue.gif" alt="Required Field" /></th>
+                            <td>{$form.is_news_mail}</td>
+                        </tr>
+                    </tbody>
+                    </table>
+                </div>
+            
+                <h3 class="{$display_add_title|display}">Additional Information</h3>
+                <div class="ec-base-table typeWrite {$display_add_title|display}">
+                    <table border="1" summary="">
+                    <caption>Additional Information</caption>
+                    <colgroup>
+                        <col style="width:150px;" />
+                        <col style="width:auto;" />
+                    </colgroup>
+                    <tbody>
+                        <tr class="{$display_nick|display}">
+                            <th scope="row">Nickname <img src="//img.echosting.cafe24.com/skin/base/common/ico_required_blue.gif" class="{$display_required_nick_name_flag|display}" alt="Required Field" /></th>
+                            <td>{$form.nick_name} <p id="nickMsg"></p></td>
+                        </tr>
+                        <tr class="{$display_is_sex|display}">
+                            <th scope="row">Gender <img src="//img.echosting.cafe24.com/skin/base/common/ico_required_blue.gif" class="{$display_required_sex|display}" alt="Required Field" /></th>
+                            <td>{$form.is_sex}</td>
+                        </tr>
+                        <tr class="{$display_birthday|display}">
+                            <th scope="row">Date of birth <img src="//img.echosting.cafe24.com/skin/base/common/ico_required_blue.gif" class="{$display_required_is_birthday|display}" alt="Required Field" /></th>
+                            <td>{$form.birth_month} / {$form.birth_day} / {$form.birth_year}<span class="gIndent20 {$display_calendar_type|display}">{$form.is_solar_calendar}</span></td>
+                        </tr>
+                        <tr class="{$display_marry|display}">
+                            <th scope="row">Anniversary <img src="//img.echosting.cafe24.com/skin/base/common/ico_required_blue.gif" class="{$display_required_is_wedding_anniversary|display}" alt="Required Field" /></th>
+                            <td>{$form.marry_month} / {$form.marry_day} / {$form.marry_year}</td>
+                        </tr>
+                        <tr class="{$display_add1|display}">
+                            <th scope="row">{$title_add1} <img src="//img.echosting.cafe24.com/skin/base/common/ico_required_blue.gif" class="{$display_required_add1|display}" alt="Required Field" /></th>
+                            <td>{$form.add1}</td>
+                        </tr>
+                        <tr class="{$display_add2|display}">
+                            <th scope="row">{$title_add2} <img src="//img.echosting.cafe24.com/skin/base/common/ico_required_blue.gif" class="{$display_required_add2|display}" alt="Required Field" /></th>
+                            <td>{$form.add2}</td>
+                        </tr>
+                        <tr class="{$display_add3|display}">
+                            <th scope="row">{$title_add3} <img src="//img.echosting.cafe24.com/skin/base/common/ico_required_blue.gif" class="{$display_required_add3|display}" alt="Required Field" /></th>
+                            <td>{$form.add3}</td>
+                        </tr>
+                        <tr class="{$display_add4|display}">
+                            <th scope="row">{$title_add4} <img src="//img.echosting.cafe24.com/skin/base/common/ico_required_blue.gif" class="{$display_required_add4|display}" alt="Required Field" /></th>
+                            <td>{$form.add4}</td>
+                        </tr>
+                        <tr class="{$display_add5|display}">
+                            <th scope="row">{$title_add5} <img src="//img.echosting.cafe24.com/skin/base/common/ico_required_blue.gif" class="{$display_required_add5|display}" alt="Required Field" /></th>
+                            <td>{$form.add5}</td>
+                        </tr>
+                        <tr class="{$display_add6|display}">
+                            <th scope="row">{$title_add6} <img src="//img.echosting.cafe24.com/skin/base/common/ico_required_blue.gif" class="{$display_required_add6|display}" alt="Required Field" /></th>
+                            <td>{$form.add6}</td>
+                        </tr>
+                        <tr class="{$display_add7|display}">
+                            <th scope="row">{$title_add7} <img src="//img.echosting.cafe24.com/skin/base/common/ico_required_blue.gif" class="{$display_required_add7|display}" alt="Required Field" /></th>
+                            <td>{$form.add7}</td>
+                        </tr>
+                        <tr class="{$display_add8|display}">
+                            <th scope="row">{$title_add8} <img src="//img.echosting.cafe24.com/skin/base/common/ico_required_blue.gif" class="{$display_required_add8|display}" alt="Required Field" /></th>
+                            <td>{$form.add8}</td>
+                        </tr>
+                        <tr class="{$display_add9|display}">
+                            <th scope="row">{$title_add9} <img src="//img.echosting.cafe24.com/skin/base/common/ico_required_blue.gif" class="{$display_required_add9|display}" alt="Required Field" /></th>
+                            <td>{$form.add9}</td>
+                        </tr>
+                        <tr class="{$display_add10|display}">
+                            <th scope="row">{$title_add10} <img src="//img.echosting.cafe24.com/skin/base/common/ico_required_blue.gif" class="{$display_required_add10|display}" alt="Required Field" /></th>
+                            <td>{$form.add10}</td>
+                        </tr>
+                        <tr class="{$display_add11|display}">
+                            <th scope="row">{$title_add11} <img src="//img.echosting.cafe24.com/skin/base/common/ico_required_blue.gif" class="{$display_required_add11|display}" alt="Required Field" /></th>
+                            <td>{$form.add11}</td>
+                        </tr>
+                        <tr class="{$display_add12|display}">
+                            <th scope="row">{$title_add12} <img src="//img.echosting.cafe24.com/skin/base/common/ico_required_blue.gif" class="{$display_required_add12|display}" alt="Required Field" /></th>
+                            <td>{$form.add12}</td>
+                        </tr>
+                        <tr class="{$display_add13|display}">
+                            <th scope="row">{$title_add13} <img src="//img.echosting.cafe24.com/skin/base/common/ico_required_blue.gif" class="{$display_required_add13|display}" alt="Required Field" /></th>
+                            <td>{$form.add13}</td>
+                        </tr>
+                        <tr class="{$display_add14|display}">
+                            <th scope="row">{$title_add14} <img src="//img.echosting.cafe24.com/skin/base/common/ico_required_blue.gif" class="{$display_required_add14|display}" alt="Required Field" /></th>
+                            <td>{$form.add14}</td>
+                        </tr>
+                        <tr class="{$display_add15|display}">
+                            <th scope="row">{$title_add15} <img src="//img.echosting.cafe24.com/skin/base/common/ico_required_blue.gif" class="{$display_required_add15|display}" alt="Required Field" /></th>
+                            <td>{$form.add15}</td>
+                        </tr>
+                        <tr class="{$display_reco_id|display}">
+                            <th scope="row">Referrer <img src="//img.echosting.cafe24.com/skin/base/common/ico_required_blue.gif" class="{$display_required_reco_id|display}" alt="Required Field" /></th>
+                            <td>{$form.reco_id}</td>
+                        </tr>
+                    </tbody>
+                    </table>
+                </div>
+            
+                <div module="member_editInformation">
+                    <h3>Consent to Disclose Personal Information to Third Parties</h3>
+                    <div class="ec-base-table typeList">
+                        <table border="1" summary="">
+                            <caption>Consent to Disclose Personal Information to Third Parties</caption>
+                            <colgroup>
+                                <col style="width:auto;" />
+                                <col style="width:15%;" />
+                                <col style="width:25%;" />
+                                <col style="width:15%;" />
+                                <col style="width:12%;" />
+                                <col style="width:12%;" />
+                                <col style="width:12%;" />
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th scope="col">Name of Service</th>
+                                    <th scope="col">Name of Party</th>
+                                    <th scope="col">Purpose of Use of Personal Information</th>
+                                    <th scope="col">Type of Personal Information Disclosed</th>
+                                    <th scope="col">Disclosure Period</th>
+                                    <th scope="col">Consent</th>
+                                    <th scope="col">Agree/Withdraw</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>{$app_name}<br /><span class="line">({$sa_av_version})</span></td>
+                                    <td>{$perinfo_offer}</td>
+                                    <td>{$perinfo_purpose}</td>
+                                    <td>{$perinfo_item}</td>
+                                    <td class="center">{$perinfo_retain}</td>
+                                    <td class="center">{$perinfo_status}</td>
+                                    <td class="center">{$perinfo_button}</td>
+                                </tr>
+                                <tr>
+                                    <td>{$app_name}<br /><span class="line">({$sa_av_version})</span></td>
+                                    <td>{$perinfo_offer}</td>
+                                    <td>{$perinfo_purpose}</td>
+                                    <td>{$perinfo_item}</td>
+                                    <td class="center">{$perinfo_retain}</td>
+                                    <td class="center">{$perinfo_status}</td>
+                                    <td class="center">{$perinfo_button}</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <p class="info">- You may change or withdraw your consent to our use of your information at any time. However, withdrawing your consent may limit the services we are able to provide to you.</p>
+                </div>
+            
+                <div module="member_editConsignment">
+                    <h3>Handling of Personal Information Personal Information</h3>
+                    <div class="ec-base-table typeList">
+                        <table border="1" summary="">
+                            <caption>Handling of Personal Information Personal Information</caption>
+                            <colgroup>
+                                <col style="width:auto;" />
+                                <col style="width:20%;" />
+                                <col style="width:30%;" />
+                                <col style="width:12%;" />
+                                <col style="width:12%;" />
+                                <col style="width:12%;" />
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th scope="col">Name of Service</th>
+                                    <th scope="col">Trustee</th>
+                                    <th scope="col">Entrusted substance</th>
+                                    <th scope="col">Period of possession</th>
+                                    <th scope="col">Consent</th>
+                                    <th scope="col">Agree/Withdraw</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>{$app_name}<br /><span class="line">({$sa_av_version})</span></td>
+                                    <td>{$trust_target}</td>
+                                    <td>{$trust_work}</td>
+                                    <td class="center">{$trust_retain}</td>
+                                    <td class="center">{$trust_status}</td>
+                                    <td class="center">{$trust_button}</td>
+                                </tr>
+                                <tr>
+                                    <td>{$app_name}<br /><span class="line">({$sa_av_version})</span></td>
+                                    <td>{$trust_target}</td>
+                                    <td>{$trust_work}</td>
+                                    <td class="center">{$trust_retain}</td>
+                                    <td class="center">{$trust_status}</td>
+                                    <td class="center">{$trust_button}</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <p class="info">- You can choose whether or not to consent to our privacy policy to entrust handling of personal information. However, disagreeing or withdrawing your consent may limit the services we are able to provide to you.</p>
+                </div>
+            
+                <div class="{$display_information|display}">
+                    <h3>Sharing Information with Third Parties(optional)</h3>
+                    <div class="ec-base-box typeThinBg agreeArea">
+                        <div class="content">
+                            {$information_desc}
+                        </div>
+                        <p class="check"><span>Do you agree to share your personal information with third parties?</span> {$form.agree_information_check}</p>
+                    </div>
+                </div>
+            
+                <div class="{$display_consignment|display}">
+                    <h3>Entrusting Personal Information (optional)</h3>
+                    <div class="ec-base-box typeThinBg agreeArea">
+                        <div class="content">
+                            {$consignment_desc}
+                        </div>
+                        <p class="check"><span>Do you agree to the policies on entrusting your personal information?</span> {$form.agree_consignment_check}</p>
+                    </div>
+                </div>
+            
+                <div class="profile-btn-wrap">
+                    <a href="#none" class="btn-edit" onclick="{$action_func_join}">Edit</a>
+                    <a href="#none" class="btn-out" onclick="{$action_func_del}">Withdrawal</a>
+                </div>
+            
+                <div class="layerLeave ec-base-layer" id="{$leave_layer_id}">
+                   <!--@css(/layout/basic/css/ec-base-layer.css)-->
+                    <div class="header">
+                        <h3>Cancel membership</h3>
+                    </div>
+                    <div class="content">
+                        <div class="ec-base-box typeMember">
+                            <div class="information">
+                                <strong class="title">Benefit History</strong>
+                                <div class="description">
+                                    <ul>
+                                        <li id="{$leave_layer_text_id}">All unused reward points will be lost upon cancellation of membership</li>
+                                        <li>Current reward points : <strong id="{$leave_layer_mileage}" class="txtEm">0</strong></li>
+                                        <li id="{$leave_layer_deposit_id}">Store Credit Balance : <strong id="{$leave_layer_deposit}" class="txtEm">0</strong></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <h4>Reason for canceling membership</h4>
+                        <div class="ec-base-table typeWrite">
+                            <table border="1" summary="">
+                                <caption>Reason for canceling membership</caption>
+                                <colgroup>
+                                    <col style="width:140px;" />
+                                    <col style="width:auto;" />
+                                </colgroup>
+                                <tbody>
+                                    <tr>
+                                        <th scope="row">Select</th>
+                                        <td>{$form.leave_reason}</td>
+                                    </tr>
+                                    <tr id="{$leave_layer_etc_reason_id}">
+                                        <th scope="row">Other</th>
+                                        <td>{$form.subjective_leave_reason}</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="ec-base-button">
+                        <a href="#none" class="btnSubmit sizeS" id="{$leave_layer_submit_btn_id}">Cancel membership</a>
+                        <a href="#none" class="btnNormalFix sizeS" onclick="$('#{$leave_layer_id}').hide();">Cancel</a>
+                    </div>
+                    <a href="#none" class="close" onclick="$('#{$leave_layer_id}').hide();"><img src="//img.echosting.cafe24.com/skin/base/common/btn_close.gif" alt="Close" /></a>
+                </div>
+            
+            </div>
+            
+            <div module="myshop_AddrList">
+                <!--
+                    $return_url = /myshop/addr/list.html
+                -->
+                <p class="title">Shipping addresses</p>
+                <div class="">
+                    <table>
+                        <caption>Address List</caption>
+                        <colgroup>
+                            <col style="width:27px;" />
+                            <col style="width:auto;" />
+                            <col style="width:30px;" />
+                        </colgroup>
+                        <tbody class="{$list_display|display} center">
+                            <tr>
+                                <td>{$checkbox}</td>
+                                <td>
+                                    <img src="//img.echosting.cafe24.com/skin/base_en_US/myshop/ico_addr_default.gif" class="{$default_img_display|display}" alt="Default"/> {$ma_rcv_title}
+                                </td>
+                                <!-- <td class="left">
+                                    <ul>
+                                        <li>{$ma_rcv_addr1}</li>
+                                        <li>{$ma_rcv_addr2}</li>
+                                        <li>{$receiver_city_en} {$receiver_state_en} {$ma_rcv_zipcode} {$country_name_en}</li>
+                                    </ul>
+                                </td> -->
+                                <td>
+                                    <a href="modify.html?ma_idx={$ma_idx}" class="btn-edit">Edit</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>{$checkbox}</td>
+                                <td>
+                                    <img src="//img.echosting.cafe24.com/skin/base_en_US/myshop/ico_addr_default.gif" class="{$default_img_display|display}" alt="Default"/> {$ma_rcv_title}
+                                </td>
+                                <!-- <td class="left">
+                                    <ul>
+                                        <li>{$ma_rcv_addr1}</li>
+                                        <li>{$ma_rcv_addr2}</li>
+                                        <li>{$receiver_city_en} {$receiver_state_en} {$ma_rcv_zipcode} {$country_name_en}</li>
+                                    </ul>
+                                </td> -->
+                                <td>
+                                    <a href="modify.html?ma_idx={$ma_idx}" class="btn-edit">Edit</a>
+                                </td>
+                            </tr>
+                        </tbody>
+                        <tbody class="{$nodata_display|display}">
+                            <tr>
+                                <td colspan="3" class="message">NONE</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            
+                <div class="addr-btn-wrap">
+                    <p class="">
+                        <a href="#none" class="btn-add" onclick="openPopup('addrPopup')">
+                            <img src="/web/upload/images/btn_mypage_plus.png" alt="">
+                            Add a shipping Address
+                        </a>
+                    </p>
+                    <p class="{$delete_display|display}" >
+                        <a href="#none" class="btn-remove" onclick="{$action_delete}; return false;">
+                            <img src="/web/upload/images/btn_mypage_minus.png" alt="">
+                            Remove Selected Address
+                        </a>
+                    </p>
+                </div>
+            </div>
+
+        </div>
+        
+    </div>
+</div>
+
+
+
+<div class="layerpopup" id="addrPopup">
+    <a href="javascript:void(0)" onclick="closePopup('addrPopup')"><img src="/web/upload/images/btn_popup_close.png" alt=""></a>
+    <div module="myshop_AddrRegister"  class="ec-base-layer">
+        <!--@css(/css/module/myshop/addrRegister.css)-->
+        <!--
+            $return_url = /myshop/addr/list.html
+        -->
+        <p class="title">Address Book</p>
+        <div class="addr-table-wrap">
+            <div>
+                <table>
+                    <caption>Add Address</caption>
+                    <colgroup>
+                        <col style="width:140px" />
+                        <col style="width:auto" />
+                    </colgroup>
+                    <tbody>
+                        <tr>
+                            <th scope="row">Address Label <img src="//img.echosting.cafe24.com/skin/base/common/ico_required_blue.gif" alt="Required" /></th>
+                            <td class="ePlaceholder" title="Address Label">{$form.ma_rcv_title}</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Name(Recipient) <img src="//img.echosting.cafe24.com/skin/base/common/ico_required_blue.gif" alt="Required" /></th>
+                            <td>
+                                <span class="ePlaceholder" title="First Name">{$form.ma_rcv_name}</span>
+                                <span class="ePlaceholder" title="Last Name">{$form.ma_rcv_name_last}</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Country <img src="//img.echosting.cafe24.com/skin/base/common/ico_required_blue.gif" alt="Required" /></th>
+                            <td>{$form.ma_rcv_contry_code}</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Address Line 1 <img src="//img.echosting.cafe24.com/skin/base/common/ico_required_blue.gif" alt="Required" /></th>
+                            <td class="ePlaceholder" title="Address Line 1">{$form.address_addr1}</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Address Line 2 <span class="{$addr2_display|display}"><img src="//img.echosting.cafe24.com/skin/base/common/ico_required_blue.gif" alt="Required" /></span></th>
+                            <td class="ePlaceholder" title="Address Line 2">{$form.address_addr2}</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">City <img src="//img.echosting.cafe24.com/skin/base/common/ico_required_blue.gif" alt="Required" /></th>
+                            <td class="ePlaceholder" title="City">{$form.city_name}</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            
+            <div>
+                <table>
+                    <caption>Add Address</caption>
+                    <colgroup>
+                        <col style="width:140px" />
+                        <col style="width:auto" />
+                    </colgroup>
+                    <tbody>
+                        <tr>
+                            <th scope="row">State/Province <img src="//img.echosting.cafe24.com/skin/base/common/ico_required_blue.gif" alt="Required" /></th>
+                            <td class="ePlaceholder" title="State/Province">{$form.state_name}</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Zip/ Postal code <img src="//img.echosting.cafe24.com/skin/base/common/ico_required_blue.gif" alt="Required" /></th>
+                            <td>
+                                <span class="ePlaceholder" title="Zip/ Postal code">{$form.address_zip1}</span>
+                                <span class="nozip">
+                                    <input type="checkbox" name="nozip" id="nozip" {$no_zip_checked} /><label for="nozip">No zip/postal code</label>
+                                </span>
+                            </td>
+                        </tr>
+                        <tr class="{$use_delivery_tel_display|display}">
+                            <th scope="row">Phone <span class="{$phone1_display|display}"><img src="//img.echosting.cafe24.com/skin/base/common/ico_required_blue.gif" alt="Required" /></span></th>
+                            <td>{$form.ma_rcv_phone}</td>
+                        </tr>
+                        <tr class="{$use_delivery_cell_display|display}">
+                            <th scope="row">Mobile 
+                                <span class="{$phone2_display|display}"><img src="//img.echosting.cafe24.com/skin/base/common/ico_required_blue.gif" alt="Required" /></span>
+                            </th>
+                            <td class="ePlaceholder" title="Your number" style="color:#fff;">{$form.ma_rcv_mobile_no}</td>
+                        </tr>
+                        <tr class="right">
+                            <td colspan="2">{$form.ma_main_flag}</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <div class="addr-btn-wrap">
+                    <a href="#none" class="btn-save" onclick="{$action_check}">Save</a>
+                    <a href="list.html" class="btn-cancel">Cancel</a>
+
+                    <a href="#none" class="btn-info">About Address Book</a>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</div>
+
+
+<div class="layerpopup" id="bookPopup">
+    <a href="javascript:void(0)" onclick="closePopup('bookPopup')"><img src="../images/btn_popup_close_blue.png" alt=""></a>
+    <div class="pop-con">
+        <p class="title">About Address Book</p>
+        <p class="desc">
+            You can add up to 10 addresses. Your address book
+            will be automatically updated with the shipping
+            address entered in your latest order, unless the
+            addresses are manually added.
+        </p>
+    </div>
+</div>
+
+
+
+
+<script>
+(function($){
+
+    $('body').on('keyup', '#passwd', function () {
+
+        if ($(this).val().length >= 10 && $(this).val().length <= 16 ) {
+            $('.pw-confirm-wrap .length').addClass('active');
+        } else {
+            $('.pw-confirm-wrap .length').removeClass('active');
+        }
+
+        if ($(this).val().search(/[0-9]/g) >= 0 ) {
+            $('.pw-confirm-wrap .number').addClass('active');
+        } else {
+            $('.pw-confirm-wrap .number').removeClass('active');
+        }
+
+        if (/[A-Z]/.test($(this).val()) && /[a-z]/.test($(this).val())) {
+            $('.pw-confirm-wrap .upperlower').addClass('active');
+        } else {
+            $('.pw-confirm-wrap .upperlower').removeClass('active');
+        }
+
+        if ( /[`~!@@#$%^&*|₩₩₩'₩";:₩/?.,]/gi.test($(this).val()) ) {
+            $('.pw-confirm-wrap .spe').addClass('active');
+        } else {
+            $('.pw-confirm-wrap .spe').removeClass('active');
+        }
+    });
+})(jQuery1_9_1); 
+</script>
+

@@ -1,0 +1,865 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <script src="../lib/js/jquery.js"></script>
+    <script src="../lib/js/script.js"></script>
+    <script src="../lib/js/swiper.min.js"></script>
+    <script src="../lib/js/respond.min.js"></script>
+    <script src="../lib/js/respond-image.js"></script>
+    <script src="../lib/js/ui.js"></script>
+    
+	<link rel="stylesheet"  type="text/css"   href="../lib/css/base.css"/>
+    <link rel="stylesheet"  type="text/css"   href="../lib/css/index.css"/>
+    <link rel="stylesheet"  type="text/css"   href="../lib/css/community.css"/>
+    <link rel="stylesheet"  type="text/css"   href="../lib/css/swiper.min.css"/>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900|Roboto+Mono:500" rel="stylesheet">
+</head>
+<body>
+
+    <div id="wrap">
+        <div id="countryWrap">
+            <div class="country">
+                <a href="javascript:void(0)" class="btn-close"><img src="../images/btn_close.png" alt=""></a>
+                <ul>
+                    <p>Asia</p>
+                    <li><a href=""><span><img src="../images/Brunei.jpg" alt=""></span>Brunei</a></li>
+                    <li><a href=""><span><img src="../images/China.jpg" alt=""></span>China</a></li>
+                    <li><a href=""><span><img src="../images/Hongkong.jpg" alt=""></span>Hong Kong</a></li>
+                    <li><a href=""><span><img src="../images/Indonesia.jpg" alt=""></span>Indonesia</a></li>
+                    <li><a href=""><span><img src="../images/India.jpg" alt=""></span>India</a></li>
+                    <li><a href=""><span><img src="../images/Japan.jpg" alt=""></span>Japan</a></li>
+                    <li><a href=""><span><img src="../images/Macau.jpg" alt=""></span>Macau</a></li>
+                    <li><a href=""><span><img src="../images/Malaysia.jpg" alt=""></span>Malaysia</a></li>
+                    <li><a href=""><span><img src="../images/Philippines.jpg" alt=""></span>Philippines</a></li>
+                    <li><a href=""><span><img src="../images/Singapore.jpg" alt=""></span>Singapore</a></li>
+                    <li><a href=""><span><img src="../images/Taiwan.jpg" alt=""></span>Taiwan, R.O.C</a></li>
+                    <li><a href=""><span><img src="../images/Thailand.jpg" alt=""></span>Thailand</a></li>
+                    <li><a href=""><span><img src="../images/Vietnam.jpg" alt=""></span>Vietnam</a></li>
+                </ul>
+
+                <ul>
+                    <p>Oceania</p>
+                    <li><a href=""><span><img src="../images/Australia.jpg" alt=""></span>Australia</a></li>
+                    <li><a href=""><span><img src="../images/Newzealand.jpg" alt=""></span>New Zealand</a></li>
+                    <li><a href=""><span><img src="../images/Guam.jpg" alt=""></span>Guam</a></li>
+                </ul>
+
+                <ul>
+                    <p>Europe</p>
+                    <li><a href=""><span><img src="../images/Austria.jpg" alt=""></span>Austria</a></li>
+                    <li><a href=""><span><img src="../images/Belgium.jpg" alt=""></span>Belgium</a></li>
+                    <li><a href=""><span><img src="../images/Czechrepublic.jpg" alt=""></span>Czech Republic</a></li>
+                    <li><a href=""><span><img src="../images/Finland.jpg" alt=""></span>Finland</a></li>
+                    <li><a href=""><span><img src="../images/France.jpg" alt=""></span>France</a></li>
+                    <li><a href=""><span><img src="../images/Germany.jpg" alt=""></span>Germany</a></li>
+                    <li><a href=""><span><img src="../images/Ireland.jpg" alt=""></span>Ireland</a></li>
+                    <li><a href=""><span><img src="../images/Italy.jpg" alt=""></span>Italy</a></li>
+                    <li><a href=""><span><img src="../images/Netherlands.jpg" alt=""></span>Netherlands</a></li>
+                    <li><a href=""><span><img src="../images/Norway.jpg" alt=""></span>Norway</a></li>
+                    <li><a href=""><span><img src="../images/Poland.jpg" alt=""></span>Poland</a></li>
+                    <li><a href=""><span><img src="../images/Russia.jpg" alt=""></span>Russia</a></li>
+                    <li><a href=""><span><img src="../images/Spain.jpg" alt=""></span>Spain</a></li>
+                    <li><a href=""><span><img src="../images/Sweden.jpg" alt=""></span>Sweden</a></li>
+                    <li><a href=""><span><img src="../images/Switzerland.jpg" alt=""></span>Switzerland</a></li>
+                    <li><a href=""><span><img src="../images/Unitedkingdom.jpg" alt=""></span>United Kingdom</a></li>
+                </ul>
+
+                <ul>
+                    <p>North America</p>
+                    <li><a href=""><span><img src="../images/Canada.jpg" alt=""></span>Canada</a></li>
+                    <li><a href=""><span><img src="../images/Mexico.jpg" alt=""></span>Mexico</a></li>
+                    <li><a href=""><span><img src="../images/Unitedstates.jpg" alt=""></span>United States</a></li>
+                </ul>
+
+                <ul>
+                    <p>South America</p>
+                    <li><a href=""><span><img src="../images/Brazil.jpg" alt=""></span>Brazil</a></li>
+                    <li><a href=""><span><img src="../images/Chile.jpg" alt=""></span>Chile</a></li>
+                </ul>
+
+                <ul>
+                    <p>The Middle East</p>
+                    <li><a href=""><span><img src="../images/Israel.jpg" alt=""></span>Israel</a></li>
+                    <li><a href=""><span><img src="../images/Kuwait.jpg" alt=""></span>Kuwait</a></li>
+                    <li><a href=""><span><img src="../images/Unitedarab.jpg" alt=""></span>United Arab Emirates</a></li>
+                    <li><a href=""><span><img src="../images/Saudiarabia.jpg" alt=""></span>Saudi Arabia</a></li>
+                    <li><a href=""><span><img src="../images/Qatar.jpg" alt=""></span>Qatar</a></li>
+                </ul>
+
+            </div>
+        </div>
+
+        
+        <!-- s:headerWrap -->
+        <div id="headerWrap">
+            <div class="header pc">
+
+                <div class="logo"><a href="/"><img src="../images/img_logo.png" alt=""></a></div>
+
+                <div class="lang-wrap">
+                    <p>
+                        <span class="ico"><img src="../images/ico_location.jpg" alt=""></span>
+                        Korea, Republic Of / English
+                    </p>
+                </div>
+
+                <div class="gnb-wrap">
+                    <ul>
+                        <li class="depth1"><a href="">NEW</a></li>
+                        <li class="depth1">
+                            <a href="">Women</a>
+                            <div class="depth2-wrap">
+                                <div class="flex promo-banner">
+                                    <a href="">
+                                        <img src="../images/depth2_women.jpg" alt="">
+
+                                        <div class="desc">
+                                            <p class="tit">Need for your move</p>
+                                            <p class="sub-tit">Black label 360N is the best support ever.</p>
+
+                                            <a href="" class="btn-normal black">
+                                                <span class="btn-normal-hover"></span>
+                                                <span class="btn-normal-txt">Shop now</span>
+                                            </a>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="flex depth-list-wrap">
+                                    <p class="depth-tit">Women</p>
+                                    <div class="depth-list">
+                                        <ul>
+                                            <p>TOPS</p>
+                                            <li><a href="">All</a></li>
+                                            <li><a href="">Bras</a></li>
+                                            <li><a href="">Crops</a></li>
+                                            <li><a href="">Full Length</a></li>
+                                            <li><a href="">Short Sleeves</a></li>
+                                            <li><a href="">Long Sleeves</a></li>
+                                            <li><a href="">Athleisure</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="depth-list">
+                                        <ul>
+                                            <p>BOTTOMS</p>
+                                            <li><a href="">All</a></li>
+                                            <li><a href="">Leggings</a></li>
+                                            <li><a href="">Capris</a></li>
+                                            <li><a href="">Bikers & Shorts</a></li>
+                                            <li><a href="">Athleisure</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="depth-list">
+                                        <ul>
+                                            <p>COVERUPS</p>
+                                            <li><a href="">All</a></li>
+                                            <li><a href="">Short Sleeves</a></li>
+                                            <li><a href="">Long Sleeves</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="depth-list">
+                                        <ul>
+                                            <p>SWIMWEAR</p>
+                                            <li><a href="">All</a></li>
+                                            <li><a href="">Tops</a></li>
+                                            <li><a href="">Bottoms</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="depth-list">
+                                        <ul>
+                                            <p>ACCESSORIES</p>
+                                            <li><a href="">All</a></li>
+                                            <li><a href="">Shoes</a></li>
+                                            <li><a href="">Socks</a></li>
+                                            <li><a href="">Yoga Mats</a></li>
+                                            <li><a href="">Underwear</a></li>
+                                            <li><a href="">Bags</a></li>
+                                            <li><a href="">Etcs</a></li>
+                                        </ul>
+                                    </div>
+
+                                </div>
+                                
+                            </div>
+                        </li>
+                        <li class="depth1">
+                            <a href="">Men</a>
+                            <div class="depth2-wrap">
+                                <div class="flex promo-banner">
+                                    <a href="">
+                                        <img src="../images/depth2_men.jpg" alt="">
+
+                                        <div class="desc">
+                                            <p class="tit">Cheer your back</p>
+                                            <p class="sub-tit">We have high performance mens line.</p>
+
+                                            <a href="" class="btn-normal black">
+                                                <span class="btn-normal-hover"></span>
+                                                <span class="btn-normal-txt">Shop the best</span>
+                                            </a>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="flex depth-list-wrap">
+                                    <p class="depth-tit">Men</p>
+                                    <div class="depth-list">
+                                        <ul>
+                                            <p>TOPS</p>
+                                            <li><a href="">All</a></li>
+                                            <li><a href="">Short Sleeves</a></li>
+                                            <li><a href="">Long Sleeves</a></li>
+                                            <li><a href="">Tanks</a></li>
+                                            <li><a href="">Athleisure</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="depth-list">
+                                        <ul>
+                                            <p>BOTTOMS</p>
+                                            <li><a href="">All</a></li>
+                                            <li><a href="">Leggings</a></li>
+                                            <li><a href="">Shorts</a></li>
+                                            <li><a href="">Pants</a></li>
+                                            <li><a href="">Athleisure</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="depth-list">
+                                        <ul>
+                                            <p>SWIMWEAR</p>
+                                            <li><a href="">All</a></li>
+                                            <li><a href="">Tops</a></li>
+                                            <li><a href="">Bottoms</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="depth-list">
+                                        <ul>
+                                            <p>ACCESSORIES</p>
+                                            <li><a href="">All</a></li>
+                                            <li><a href="">Shoes</a></li>
+                                            <li><a href="">Socks</a></li>
+                                            <li><a href="">Yoga Mats</a></li>
+                                            <li><a href="">Underwear</a></li>
+                                            <li><a href="">Bags</a></li>
+                                            <li><a href="">Etcs</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="depth1"><a href="">Gear</a></li>
+                        <li class="depth1"><a href="">Beauty</a></li>
+                        <li class="depth1"><a href="">Community</a></li>
+                    </ul>
+                </div>
+
+                <div class="util-wrap">
+                    <ul>
+                        <li><a href=""><img src="../images/ico_search.jpg" alt=""></a></li>
+                        <li><a href=""><img src="../images/ico_mypage.jpg" alt=""></a></li>
+                        <li><a href=""><img src="../images/ico_like.jpg" alt=""></a></li>
+                        <li><a href=""><img src="../images/ico_bag.jpg" alt=""></a></li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <div class="header mo">
+                <div class="left-wrap">
+                    <div class="menu">
+                        <a href="#none"><img src="../images/ico_menu_mo.png" alt=""></a>
+                    </div>
+                </div>
+                
+
+                <div class="logo"><a href="/"><img src="../images/img_logo.png" alt=""></a></div>
+
+                <div class="right-wrap">
+                    <div class="mypage">
+                        <a href=""><img src="../images/ico_mypage_mo.png" alt=""></a>
+                    </div>
+                    <div class="bag">
+                        <a href=""><img src="../images/ico_bag_mo.png" alt=""></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mo-cate-list swiper-container mo-only">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <a href="">
+                            <p class="img"><img src="../images/m_cate01.jpg" alt=""></p>
+                            <p class="name">New</p>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="">
+                            <p class="img"><img src="../images/m_cate02.jpg" alt=""></p>
+                            <p class="name">Women</p>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="">
+                            <p class="img"><img src="../images/m_cate03.jpg" alt=""></p>
+                            <p class="name">Men</p>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="">
+                            <p class="img"><img src="../images/m_cate04.jpg" alt=""></p>
+                            <p class="name">Gear</p>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="">
+                            <p class="img"><img src="../images/m_cate05.jpg" alt=""></p>
+                            <p class="name">Beauty</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+
+        </div>
+        <!-- //e:headerWrap -->
+
+
+        <div id="navWrap">
+            <div class="nav">
+
+                <div class="nav-header">
+                    <div class="language">
+                        <div class="multishop">
+                            <div class="nowtit">KOR</div>
+                            <div class="box">
+                                <div class="flag"> 
+                                    <a href="https://en.xexymix.com/Mobile">ENG</a>
+                                    <a href="https://cn.xexymix.com/Mobile">CHN</a>
+                                    <a href="https://www.xexymix.jp/smartphone/">JPN</a>
+                                    <a href="https://www.xexymix.com.tw/">TWN</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="logo"><a href="/"><img src="../images/logo_small.png" alt=""></a></div>
+                    <a href="#none" class="btn-nav-close"><img src="../images/btn_popup_close.png" alt=""></a>
+                </div>
+                
+                <ul class="nav-depth1">
+                    <li class=""><a href="">NEW</a></li>
+                    <li class="depth women"><a href="#none">Women</a></li>
+                    <li class="depth men"><a href="#none">Men</a></li>
+                    <li class=""><a href="">Gear</a></li>
+                    <li class=""><a href="">Beauty</a></li>
+                    <li class=""><a href="">Community</a></li>
+                </ul>
+
+
+                <ul class="nav-depth2 women accordian-list">
+
+                    <div class="depth2-title">
+                        <a href="#none" class="btn-back-nav"><img src="../images/left_arrow.png" alt=""></a>
+                        <p>Women</p>
+                    </div>
+                    
+                    <li class="depth-list">
+                        <a href="#none">TOPS</a>
+                        <ul class="content">
+                            <li><a href="">All</a></li>
+                            <li><a href="">Bras</a></li>
+                            <li><a href="">Crops</a></li>
+                            <li><a href="">Full Length</a></li>
+                            <li><a href="">Short Sleeves</a></li>
+                            <li><a href="">Long Sleeves</a></li>
+                            <li><a href="">Athleisure</a></li>
+                        </ul>
+                    </li>
+                    <li class="depth-list">
+                        <a href="#none">BOTTOMS</a>
+                        <ul class="content">
+                            <li><a href="">All</a></li>
+                            <li><a href="">Leggings</a></li>
+                            <li><a href="">Capris</a></li>
+                            <li><a href="">Bikers & Shorts</a></li>
+                            <li><a href="">Athleisure</a></li>
+                        </ul>
+                    </li>
+                    <li class="depth-list">
+                        <a href="#none">COVERUPS</a>
+                        <ul class="content">
+                            <li><a href="">All</a></li>
+                            <li><a href="">Short Sleeves</a></li>
+                            <li><a href="">Long Sleeves</a></li>
+                        </ul>
+                    </li>
+                    <li class="depth-list">
+                        <a href="#none">SWIMWEAR</a>
+                        <ul class="content">
+                            <li><a href="">All</a></li>
+                            <li><a href="">Tops</a></li>
+                            <li><a href="">Bottoms</a></li>
+                        </ul>
+                    </li>
+                    <li class="depth-list">
+                        <a href="#none">ACCESSORIES</a>
+                        <ul class="content">
+                            <li><a href="">All</a></li>
+                            <li><a href="">Shoes</a></li>
+                            <li><a href="">Socks</a></li>
+                            <li><a href="">Yoga Mats</a></li>
+                            <li><a href="">Underwear</a></li>
+                            <li><a href="">Bags</a></li>
+                            <li><a href="">Etcs</a></li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <ul class="nav-depth2 men accordian-list">
+                    <div class="depth2-title">
+                        <a href="#none" class="btn-back-nav"><img src="../images/left_arrow.png" alt=""></a>
+                        <p>Men</p>
+                    </div>
+                    <li class="depth-list">
+                        <a href="#none">TOPS</a>
+                        <ul class="content">
+                            <li><a href="">All</a></li>
+                            <li><a href="">Short Sleeves</a></li>
+                            <li><a href="">Long Sleeves</a></li>
+                            <li><a href="">Tanks</a></li>
+                            <li><a href="">Athleisure</a></li>
+                        </ul>
+                    </li>
+                    <li class="depth-list">
+                        <a href="#none">BOTTOMS</a>
+                        <ul class="content">
+                            <li><a href="">All</a></li>
+                            <li><a href="">Leggings</a></li>
+                            <li><a href="">Shorts</a></li>
+                            <li><a href="">Pants</a></li>
+                            <li><a href="">Athleisure</a></li>
+                        </ul>
+                    </li>
+                    <li class="depth-list">
+                        <a href="#none">SWIMWEAR</a>
+                        <ul class="content">
+                            <li><a href="">All</a></li>
+                            <li><a href="">Tops</a></li>
+                            <li><a href="">Bottoms</a></li>
+                        </ul>
+                    </li>
+                    <li class="depth-list">
+                        <a href="#none">ACCESSORIES</a>
+                        <ul class="content">
+                            <li><a href="">All</a></li>
+                            <li><a href="">Shoes</a></li>
+                            <li><a href="">Socks</a></li>
+                            <li><a href="">Yoga Mats</a></li>
+                            <li><a href="">Underwear</a></li>
+                            <li><a href="">Bags</a></li>
+                            <li><a href="">Etcs</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- s:containerWrap -->
+        <div id="containerWrap">
+            <div class="container">
+                <div class="sizetip">
+                    <h1>SIZE TIP</h1>
+                    <p class="desc">
+                        Sizing can be tricky
+                        We're informing size fitting shot of BEST SELLER.
+                        It helps you find the perfect fit.
+                    </p>
+                    
+                    <div class="model_size">
+                        <h2>Fitting Model Size</h2>
+                        <div class="size_img"><img src="//xexymix.jpg3.kr/xexymix/glob/sizetip/model_size_img.jpg"></div>
+                        <div class="size_table">
+                            <ul class="width_6">
+                                <li class="bg_gray"><span><b>SIZE / cm</b></span><span class="b700">S</span><span class="b700">M</span><span class="b700">L</span><span class="b700">XL</span><span class="b700">2XL</span><span class="b700">3XL</span></li>
+                                <li><span>Height</span><span>164</span><span>165</span><span>162</span><span>161</span><span>164</span><span>163</span></li>
+                                <li><span>Weight(kg)</span><span>49</span><span>56</span><span>60</span><span>64</span><span>76</span><span>94</span></li>
+                                <li><span>Upper Bust</span><span>79</span><span>86</span><span>86</span><span>88</span><span>105</span><span>110</span></li>
+                                <li><span>Under Bust</span><span>66</span><span>76</span><span>72</span><span>77</span><span>95</span><span>97</span></li>
+                                <li><span>Waist</span><span>64</span><span>75</span><span>71</span><span>77</span><span>97</span><span>96</span></li>
+                                <li><span>Hip</span><span>89</span><span>91</span><span>93</span><span>100</span><span>113</span><span>116</span></li>
+                                <li><span>Thigh</span><span>50.5</span><span>54</span><span>56</span><span>61</span><span>69</span><span>65</span></li>
+                                <li><span>Inseam</span><span>66.5</span><span>70</span><span>64</span><span>71</span><span>70</span><span>65</span></li>
+                            </ul>
+                            <p>※ This measure is based in cm.<br>
+                                ※ Upper Bust / Under Bust / Waist / Hip / Thigh are measured in circumference.</p>
+                        </div>
+                    </div>
+                    <a name="size_again">&nbsp;</a>
+
+                    <h2>Fitting Shots</h2>
+                    <p class="sec-desc">You can check detail shots via click thumbnail on each as below</p>
+                    <div class="bratop">
+                        <h3>BRA TOP</h3>
+                        <div class="swiper-container bratop-thumbs">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">XT4141N</div>
+                                <div class="swiper-slide">XT4151N</div>
+                                <div class="swiper-slide">XT0203T</div>
+                                <div class="swiper-slide">XT0201T</div>
+                            </div>
+                        </div>
+                        <!-- Swiper -->
+                        <div class="swiper-container bratop-top">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="cont_list">
+                                        <ul>
+                                            <li><p>S</p><a href="/Board/view/board_name/sizetip/idx/15822/category/101"><img src="//xexymix.jpg3.kr/xexymix/glob/sizetip/xt4141_s_1.jpg"></a></li>
+                                            <li><p>M</p><a href="/Board/view/board_name/sizetip/idx/15839/category/101"><img src="//xexymix.jpg3.kr/xexymix/glob/sizetip/xt4141_m_1.jpg"></a></li>
+                                            <li><p>L</p><a href="/Board/view/board_name/sizetip/idx/15840/category/101"><img src="//xexymix.jpg3.kr/xexymix/glob/sizetip/xt4141_l_1.jpg"></a></li>
+                                            <li><p>XL</p><a href="/Board/view/board_name/sizetip/idx/15841/category/101"><img src="//xexymix.jpg3.kr/xexymix/glob/sizetip/xt4141_xl_1.jpg"></a></li>
+                                            <li><p>2XL</p><a href="/Board/view/board_name/sizetip/idx/15842/category/101"><img src="//xexymix.jpg3.kr/xexymix/glob/sizetip/xt4141_2xl_1.jpg"></a></li>
+                                            <li><p>3XL</p><a href="/Board/view/board_name/sizetip/idx/15843/category/101"><img src="//xexymix.jpg3.kr/xexymix/glob/sizetip/xt4141_3xl_1.jpg"></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="cont_list">
+                                        <ul>
+                                            <li><p>S</p><a href="/Board/view/board_name/sizetip/idx/15873/category/101"><img src="//xexymix.jpg3.kr/xexymix/glob/sizetip/xt4151_s_1.jpg"></a></li>
+                                            <li><p>M</p><a href="/Board/view/board_name/sizetip/idx/15874/category/101"><img src="//xexymix.jpg3.kr/xexymix/glob/sizetip/xt4151_m_1.jpg"></a></li>
+                                            <li><p>L</p><a href="/Board/view/board_name/sizetip/idx/15875/category/101"><img src="//xexymix.jpg3.kr/xexymix/glob/sizetip/xt4151_l_1.jpg"></a></li>
+                                            <li><p>XL</p><a href="/Board/view/board_name/sizetip/idx/15876/category/101"><img src="//xexymix.jpg3.kr/xexymix/glob/sizetip/xt4151_xl_1.jpg"></a></li>
+                                            <li><p>2XL</p><a href="/Board/view/board_name/sizetip/idx/15877/category/101"><img src="//xexymix.jpg3.kr/xexymix/glob/sizetip/xt4151_2xl_1.jpg"></a></li>
+                                            <li><p>3XL</p><a href="/Board/view/board_name/sizetip/idx/15878/category/101"><img src="//xexymix.jpg3.kr/xexymix/glob/sizetip/xt4151_3xl_1.jpg"></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="cont_list">
+                                        <ul>
+                                            <li><p>S</p><a href="/Board/view/board_name/sizetip/idx/15879/category/101"><img src="//xexymix.jpg3.kr/xexymix/glob/sizetip/xt0203_s_1.jpg"></a></li>
+                                            <li><p>M</p><a href="/Board/view/board_name/sizetip/idx/15880/category/101"><img src="//xexymix.jpg3.kr/xexymix/glob/sizetip/xt0203_m_1.jpg"></a></li>
+                                            <li><p>L</p><a href="/Board/view/board_name/sizetip/idx/15881/category/101"><img src="//xexymix.jpg3.kr/xexymix/glob/sizetip/xt0203_l_1.jpg"></a></li>
+                                            <li><p>XL</p><a href="/Board/view/board_name/sizetip/idx/15882/category/101"><img src="//xexymix.jpg3.kr/xexymix/glob/sizetip/xt0203_xl_1.jpg"></a></li>
+                                            <li><p>2XL</p><a href="/Board/view/board_name/sizetip/idx/15883/category/101"><img src="//xexymix.jpg3.kr/xexymix/glob/sizetip/xt0203_2xl_1.jpg"></a></li>
+                                            <li><p>3XL</p><a href="/Board/view/board_name/sizetip/idx/15884/category/101"><img src="//xexymix.jpg3.kr/xexymix/glob/sizetip/xt0203_3xl_1.jpg"></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="cont_list">
+                                        <ul>
+                                            <li><p>S</p><a href="/Board/view/board_name/sizetip/idx/15885/category/101"><img src="//xexymix.jpg3.kr/xexymix/glob/sizetip/xt0201_s_1.jpg"></a></li>
+                                            <li><p>M</p><a href="/Board/view/board_name/sizetip/idx/15886/category/101"><img src="//xexymix.jpg3.kr/xexymix/glob/sizetip/xt0201_m_1.jpg"></a></li>
+                                            <li><p>L</p><a href="/Board/view/board_name/sizetip/idx/15887/category/101"><img src="//xexymix.jpg3.kr/xexymix/glob/sizetip/xt0201_l_1.jpg"></a></li>
+                                            <li><p>XL</p><a href="/Board/view/board_name/sizetip/idx/15888/category/101"><img src="//xexymix.jpg3.kr/xexymix/glob/sizetip/xt0201_xl_1.jpg"></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="leggings">
+                        <h3>
+                            LEGGINGS
+                            <p class="l_stage">
+                                <span class="high">Flexability High support<br>(Can feel tight)</span>
+                                <span><img src="//xexymix.jpg3.kr/xexymix/glob/sizetip/arrow_img.png" alt=""></span>
+                                <span class="light">Light<br>For beginner</span>
+                            </p>
+                        </h3>
+                        <div class="swiper-container leggings-thumbs">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">XP9133N</div>
+                                <div class="swiper-slide">XP9138N</div>
+                                <div class="swiper-slide">XP9143N</div>
+                                <div class="swiper-slide">XP9145N</div>
+                                <div class="swiper-slide"">XP9137N</div>
+                            </div>
+                        </div>
+                        <!-- Swiper -->
+                        <div class="swiper-container leggings-top">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="cont_list">
+                                        <ul>
+                                            <li><p>S</p><a href="/Board/view/board_name/sizetip/idx/15823/category/103"><img src="//xexymix.jpg3.kr/xexymix/glob/sizetip/xp9133_s_1.jpg"></a></li>
+                                            <li><p>M</p><a href="/Board/view/board_name/sizetip/idx/15844/category/103"><img src="//xexymix.jpg3.kr/xexymix/glob/sizetip/xp9133_m_1.jpg"></a></li>
+                                            <li><p>L</p><a href="/Board/view/board_name/sizetip/idx/15845/category/103"><img src="//xexymix.jpg3.kr/xexymix/glob/sizetip/xp9133_l_1.jpg"></a></li>
+                                            <li><p>XL</p><a href="/Board/view/board_name/sizetip/idx/15846/category/103"><img src="//xexymix.jpg3.kr/xexymix/glob/sizetip/xp9133_xl_1.jpg"></a></li>
+                                            <li><p>2XL</p><a href="/Board/view/board_name/sizetip/idx/15847/category/103"><img src="//xexymix.jpg3.kr/xexymix/glob/sizetip/xp9133_2xl_1.jpg"></a></li>
+                                            <li><p>3XL</p><a href="/Board/view/board_name/sizetip/idx/15848/category/103"><img src="//xexymix.jpg3.kr/xexymix/glob/sizetip/xp9133_3xl_1.jpg"></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="cont_list">
+                                        <ul>
+                                            <li><p>S</p><a href="/Board/view/board_name/sizetip/idx/15849/category/103"><img src="//xexymix.jpg3.kr/xexymix/glob/sizetip/xp9138_s_1.jpg"></a></li>
+                                            <li><p>M</p><a href="/Board/view/board_name/sizetip/idx/15850/category/103"><img src="//xexymix.jpg3.kr/xexymix/glob/sizetip/xp9138_m_1.jpg"></a></li>
+                                            <li><p>L</p><a href="/Board/view/board_name/sizetip/idx/15851/category/103"><img src="//xexymix.jpg3.kr/xexymix/glob/sizetip/xp9138_l_1.jpg"></a></li>
+                                            <li><p>XL</p><a href="/Board/view/board_name/sizetip/idx/15852/category/103"><img src="//xexymix.jpg3.kr/xexymix/glob/sizetip/xp9138_xl_1.jpg"></a></li>
+                                            <li><p>2XL</p><a href="/Board/view/board_name/sizetip/idx/15853/category/103"><img src="//xexymix.jpg3.kr/xexymix/glob/sizetip/xp9138_2xl_1.jpg"></a></li>
+                                            <li><p>3XL</p><a href="/Board/view/board_name/sizetip/idx/15854/category/103"><img src="//xexymix.jpg3.kr/xexymix/glob/sizetip/xp9138_3xl_1.jpg"></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="cont_list">
+                                        <ul>
+                                            <li><p>S</p><a href="/Board/view/board_name/sizetip/idx/15855/category/103"><img src="//xexymix.jpg3.kr/xexymix/glob/sizetip/xp9143_s_1.jpg"></a></li>
+                                            <li><p>M</p><a href="/Board/view/board_name/sizetip/idx/15856/category/103"><img src="//xexymix.jpg3.kr/xexymix/glob/sizetip/xp9143_m_1.jpg"></a></li>
+                                            <li><p>L</p><a href="/Board/view/board_name/sizetip/idx/15857/category/103"><img src="//xexymix.jpg3.kr/xexymix/glob/sizetip/xp9143_l_1.jpg"></a></li>
+                                            <li><p>XL</p><a href="/Board/view/board_name/sizetip/idx/15858/category/103"><img src="//xexymix.jpg3.kr/xexymix/glob/sizetip/xp9143_xl_1.jpg"></a></li>
+                                            <li><p>2XL</p><a href="/Board/view/board_name/sizetip/idx/15859/category/103"><img src="//xexymix.jpg3.kr/xexymix/glob/sizetip/xp9143_2xl_1.jpg"></a></li>
+                                            <li><p>3XL</p><a href="/Board/view/board_name/sizetip/idx/15860/category/103"><img src="//xexymix.jpg3.kr/xexymix/glob/sizetip/xp9143_3xl_1.jpg"></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="cont_list">
+                                        <ul>
+                                            <li><p>S</p><a href="/Board/view/board_name/sizetip/idx/15861/category/103"><img src="//xexymix.jpg3.kr/xexymix/glob/sizetip/xp9145_s_1.jpg"></a></li>
+                                            <li><p>M</p><a href="/Board/view/board_name/sizetip/idx/15862/category/103"><img src="//xexymix.jpg3.kr/xexymix/glob/sizetip/xp9145_m_1.jpg"></a></li>
+                                            <li><p>L</p><a href="/Board/view/board_name/sizetip/idx/15863/category/103"><img src="//xexymix.jpg3.kr/xexymix/glob/sizetip/xp9145_l_1.jpg"></a></li>
+                                            <li><p>XL</p><a href="/Board/view/board_name/sizetip/idx/15864/category/103"><img src="//xexymix.jpg3.kr/xexymix/glob/sizetip/xp9145_xl_1.jpg"></a></li>
+                                            <li><p>2XL</p><a href="/Board/view/board_name/sizetip/idx/15865/category/103"><img src="//xexymix.jpg3.kr/xexymix/glob/sizetip/xp9145_2xl_1.jpg"></a></li>
+                                            <li><p>3XL</p><a href="/Board/view/board_name/sizetip/idx/15866/category/103"><img src="//xexymix.jpg3.kr/xexymix/glob/sizetip/xp9145_3xl_1.jpg"></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="cont_list">
+                                        <ul>
+                                            <li><p>S</p><a href="/Board/view/board_name/sizetip/idx/15867/category/103"><img src="//xexymix.jpg3.kr/xexymix/glob/sizetip/xp9137_s_1.jpg"></a></li>
+                                            <li><p>M</p><a href="/Board/view/board_name/sizetip/idx/15868/category/103"><img src="//xexymix.jpg3.kr/xexymix/glob/sizetip/xp9137_m_1.jpg"></a></li>
+                                            <li><p>L</p><a href="/Board/view/board_name/sizetip/idx/15869/category/103"><img src="//xexymix.jpg3.kr/xexymix/glob/sizetip/xp9137_l_1.jpg"></a></li>
+                                            <li><p>XL</p><a href="/Board/view/board_name/sizetip/idx/15870/category/103"><img src="//xexymix.jpg3.kr/xexymix/glob/sizetip/xp9137_xl_1.jpg"></a></li>
+                                            <li><p>2XL</p><a href="/Board/view/board_name/sizetip/idx/15871/category/103"><img src="//xexymix.jpg3.kr/xexymix/glob/sizetip/xp9137_2xl_1.jpg"></a></li>
+                                            <li><p>3XL</p><a href="/Board/view/board_name/sizetip/idx/15872/category/103"><img src="//xexymix.jpg3.kr/xexymix/glob/sizetip/xp9137_3xl_1.jpg"></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+    
+                <!-- Initialize Swiper --> 
+                <script>
+                    var leggingsThumbs = new Swiper('.leggings-thumbs', {
+                        spaceBetween: 10,
+                        slidesPerView: 4,
+                        freeMode: true,
+                        watchSlidesVisibility: true,
+                        watchSlidesProgress: true,
+                    });
+                    var leggingsTop = new Swiper('.leggings-top', {
+                        spaceBetween: 10,
+                        navigation: {
+                            nextEl: '.swiper-button-next',
+                            prevEl: '.swiper-button-prev',
+                        },
+                        thumbs: {
+                            swiper: leggingsThumbs
+                        },
+                    });
+                    
+                    
+                    var bratopThumbs = new Swiper('.bratop-thumbs', {
+                        spaceBetween: 10,
+                        slidesPerView: 4,
+                        freeMode: true,
+                        watchSlidesVisibility: true,
+                        watchSlidesProgress: true,
+                    });
+                    var bratopTop = new Swiper('.bratop-top', {
+                        spaceBetween: 10,
+                        navigation: {
+                            nextEl: '.swiper-button-next',
+                            prevEl: '.swiper-button-prev',
+                        },
+                        thumbs: {
+                            swiper: bratopThumbs
+                        },
+                    });
+                </script>
+
+            </div>
+        </div>
+        <!-- //e:containerWrap -->
+
+
+        <!-- s:footerWrap -->
+        <div id="footerWrap">
+            <div class="footer pc-only">
+                <div class="left">
+                    <ul>
+                        <p>CUSTOMER SERVICE</p>
+                        <li><a href="">FAQ / CS center</a></li>
+                        <li><a href="">Shipping info</a></li>
+                        <li><a href="">Returns & Exchanges</a></li>
+                        <li><a href="">Size guide</a></li>
+                    </ul>
+
+                    <ul>
+                        <p>COMMUNITY</p>
+                        <li><a href="">Photo Review</a></li>
+                        <li><a href="">Teacher Member</a></li>
+                        <li><a href="">Wholesale</a></li>
+                        <li><a href="">Influencers</a></li>
+                    </ul>
+                </div>
+
+                <div class="center">
+                    <ul>
+                        <p>INF0RMATION</p>
+                        <li><a href="">ABOUT XEXYMIX</a></li>
+                        <li><a href="">Terms and Condition</a></li>
+                        <li><a href="">Privacy Policy</a></li>
+                    </ul>
+                </div>
+
+                <div class="right">
+                    <p><img src="../images/footer_logo.jpg" alt=""></p>
+                </div>
+
+                <div class="bottom">
+                    <p class="copy">Copyright 2015 Xexymix All Rights Reserved.</p>
+
+                    <div class="sns">
+                        <a href="" class="ico-sns"><img src="../images/ico_facebook.jpg" alt=""></a>
+                        <a href="" class="ico-sns"><img src="../images/ico_insta.jpg" alt=""></a>
+                    </div>
+
+                    <div class="app">
+                        <p>GET THE APP</p>
+                        <a href="" class="ico-app"><img src="../images/ico_google.png" alt=""></a>
+                        <a href="" class="ico-app"><img src="../images/ico_apple.png" alt=""></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer mo-only">
+                <ul class="accordian-list mo-footer-list">
+                    <li>
+                        <a href="#none">Customer Service</a>
+                        <ul class="content">
+                            <li><a href="">FAQ / Cs Center</a></li>
+                            <li><a href="">Shipping Info</a></li>
+                            <li><a href="">Returns & Exchanges</a></li>
+                            <li><a href="">Size Guide</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#none">Community</a>
+                        <ul class="content">
+                            <li><a href="">Photo Review</a></li>
+                            <li><a href="">Teacher Member</a></li>
+                            <li><a href="">Wholesale</a></li>
+                            <li><a href="">Influencers</a></li>	
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#none">Information</a>
+                        <ul class="content">
+                            <li><a href="">About us</a></li>
+                            <li><a href="">Terms and Condition</a></li>
+                            <li><a href="">Privacy Policy</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#none">Sns connection</a>
+                        <ul class="content">
+                            <li><a href="">About us</a></li>
+                            <li><a href="">Terms and Condition</a></li>
+                            <li><a href="">Privacy Policy</a></li>
+                        </ul>
+                    </li>
+                    <li class="select_wrap">
+            			<a href="#none">Korea, Republic Of / English</a>
+                        <div class="footer-lang-flag content">
+                            <ul>
+                                <p>Asia</p>
+                                <li><a href=""><span><img src="../images/Brunei.jpg" alt=""></span>Brunei</a></li>
+                                <li><a href=""><span><img src="../images/China.jpg" alt=""></span>China</a></li>
+                                <li><a href=""><span><img src="../images/Hongkong.jpg" alt=""></span>Hong Kong</a></li>
+                                <li><a href=""><span><img src="../images/Indonesia.jpg" alt=""></span>Indonesia</a></li>
+                                <li><a href=""><span><img src="../images/India.jpg" alt=""></span>India</a></li>
+                                <li><a href=""><span><img src="../images/Japan.jpg" alt=""></span>Japan</a></li>
+                                <li><a href=""><span><img src="../images/Macau.jpg" alt=""></span>Macau</a></li>
+                                <li><a href=""><span><img src="../images/Malaysia.jpg" alt=""></span>Malaysia</a></li>
+                                <li><a href=""><span><img src="../images/Philippines.jpg" alt=""></span>Philippines</a></li>
+                                <li><a href=""><span><img src="../images/Singapore.jpg" alt=""></span>Singapore</a></li>
+                                <li><a href=""><span><img src="../images/Taiwan.jpg" alt=""></span>Taiwan, R.O.C</a></li>
+                                <li><a href=""><span><img src="../images/Thailand.jpg" alt=""></span>Thailand</a></li>
+                                <li><a href=""><span><img src="../images/Vietnam.jpg" alt=""></span>Vietnam</a></li>
+                            </ul>
+            
+                            <ul>
+                                <p>Oceania</p>
+                                <li><a href=""><span><img src="../images/Australia.jpg" alt=""></span>Australia</a></li>
+                                <li><a href=""><span><img src="../images/Newzealand.jpg" alt=""></span>New Zealand</a></li>
+                                <li><a href=""><span><img src="../images/Guam.jpg" alt=""></span>Guam</a></li>
+                            </ul>
+            
+                            <ul>
+                                <p>Europe</p>
+                                <li><a href=""><span><img src="../images/Austria.jpg" alt=""></span>Austria</a></li>
+                                <li><a href=""><span><img src="../images/Belgium.jpg" alt=""></span>Belgium</a></li>
+                                <li><a href=""><span><img src="../images/Czechrepublic.jpg" alt=""></span>Czech Republic</a></li>
+                                <li><a href=""><span><img src="../images/Finland.jpg" alt=""></span>Finland</a></li>
+                                <li><a href=""><span><img src="../images/France.jpg" alt=""></span>France</a></li>
+                                <li><a href=""><span><img src="../images/Germany.jpg" alt=""></span>Germany</a></li>
+                                <li><a href=""><span><img src="../images/Ireland.jpg" alt=""></span>Ireland</a></li>
+                                <li><a href=""><span><img src="../images/Italy.jpg" alt=""></span>Italy</a></li>
+                                <li><a href=""><span><img src="../images/Netherlands.jpg" alt=""></span>Netherlands</a></li>
+                                <li><a href=""><span><img src="../images/Norway.jpg" alt=""></span>Norway</a></li>
+                                <li><a href=""><span><img src="../images/Poland.jpg" alt=""></span>Poland</a></li>
+                                <li><a href=""><span><img src="../images/Russia.jpg" alt=""></span>Russia</a></li>
+                                <li><a href=""><span><img src="../images/Spain.jpg" alt=""></span>Spain</a></li>
+                                <li><a href=""><span><img src="../images/Sweden.jpg" alt=""></span>Sweden</a></li>
+                                <li><a href=""><span><img src="../images/Switzerland.jpg" alt=""></span>Switzerland</a></li>
+                                <li><a href=""><span><img src="../images/Unitedkingdom.jpg" alt=""></span>United Kingdom</a></li>
+                            </ul>
+            
+                            <ul>
+                                <p>North America</p>
+                                <li><a href=""><span><img src="../images/Canada.jpg" alt=""></span>Canada</a></li>
+                                <li><a href=""><span><img src="../images/Mexico.jpg" alt=""></span>Mexico</a></li>
+                                <li><a href=""><span><img src="../images/Unitedstates.jpg" alt=""></span>United States</a></li>
+                            </ul>
+            
+                            <ul>
+                                <p>South America</p>
+                                <li><a href=""><span><img src="../images/Brazil.jpg" alt=""></span>Brazil</a></li>
+                                <li><a href=""><span><img src="../images/Chile.jpg" alt=""></span>Chile</a></li>
+                            </ul>
+            
+                            <ul>
+                                <p>The Middle East</p>
+                                <li><a href=""><span><img src="../images/Israel.jpg" alt=""></span>Israel</a></li>
+                                <li><a href=""><span><img src="../images/Kuwait.jpg" alt=""></span>Kuwait</a></li>
+                                <li><a href=""><span><img src="../images/Unitedarab.jpg" alt=""></span>United Arab Emirates</a></li>
+                                <li><a href=""><span><img src="../images/Saudiarabia.jpg" alt=""></span>Saudi Arabia</a></li>
+                                <li><a href=""><span><img src="../images/Qatar.jpg" alt=""></span>Qatar</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+                <div class="mo-bottom">
+                    <p class="app-title">GET THE APP</p>
+                    <div class="app">
+                        <a href="" class="ico-app"><img src="../images/app_android.png" alt=""></a>
+                        <a href="" class="ico-app"><img src="../images/app_ios.png" alt=""></a>
+                    </div>
+                    
+                    <p class="copy">Copyright 2015 Xexymix All Rights Reserved.</p>
+                </div>
+            </div>
+        </div>
+        <!-- //e:footerWrap -->
+    </div>
+    
+</body>
+</html>
