@@ -1,0 +1,139 @@
+<script src="/mosen/menu05/src/jquery.cookie.js"></script>
+
+
+
+<ul id="left_menu" class="nav accordion">
+
+    <!--로그인메뉴-->
+    <li class="login_menu" module="Layout_statelogoff"><a href="/member/login.html">로그인</a> / <a href="/member/agreement.html">회원가입</a></li>
+    <li class="login_menu" module="Layout_stateLogon"><a href="{$action_logout}">로그아웃</a> / <a href="/member/modify.html">나의정보</a></li>
+    <li class="login_menu mypage">
+    	<a href="/myshop/index.html">마이페이지</a> /
+         <a href="/order/basket.html" module="Layout_orderBasketcount">장바구니 <span>({$basket_count})</span></a> /
+        <a href="/myshop/order/list.html">주문조회</a>
+    </li>
+
+    <li>
+        <a href="#">브랜드</a>
+        <ul class="category" >
+    	      <li><a href="/company/brandstory.html">스토리</a></li>
+              <li><a href="/company/market.html">스토어</a></li>
+              <li><a href="/board/free/list2.html?board_no=1002&category_no=1">웹진</a></li>
+		</ul>
+    </li>
+    <li><a href="/board/gallery/list.html">이벤트</a></li>
+    <li><a href="/product/list.html?cate_no=120">전체상품</a></li>
+    <li><a href="#">위생가전</a>
+    	 <ul class="category">
+             <li><a href="/product/list.html?cate_no=123">이클리너(UV칫솔살균기)</a></li>
+
+             <!--<li><a href="/product/detail.html?product_no=64&cate_no=101&display_group=1">츄케어(UV쪽쪽이살균기)</a></li>-->
+             <li><a href="/product/detail.html?product_no=63&cate_no=101&display_group=1">컵케어(UV살균기)</a></li>
+             <li><a href="/product/detail.html?product_no=40&cate_no=118&display_group=1">웨이버(초음파세척기)</a></li>
+             <li><a href="/product/detail.html?product_no=39&cate_no=118&display_group=1">위에어(UV살균가습기)</a></li>
+             <li><a href="/product/detail.html?product_no=13&cate_no=93&display_group=1">에어컵(공기청정기)</a></li>
+		</ul>
+    </li>
+    <li><a href="#">생활위생</a>
+    	 <ul class="category" >
+             <li><a href="/product/detail.html?product_no=62&cate_no=118&display_group=1">텀블리(2중스텐텀블러)</a></li>
+    	     <li><a href="/product/list.html?cate_no=102">클린미스트</a></li>
+             <li><a href="/product/detail.html?product_no=42&cate_no=118&display_group=1">KF94 일회용마스크</a></li>
+             <li><a href="/product/detail.html?product_no=44&cate_no=118&display_group=1">딥클린안심티슈(살균티슈)</a></li>
+             <li><a href="/product/detail.html?product_no=72">눕기전에시트(진드기퇴치)</a></li>
+             <li><a href="/product/detail.html?product_no=73">뽀송한장(제습시트)</a></li>
+             <li><a href="/product/detail.html?product_no=38&cate_no=118&display_group=1">지울.때.(만능얼룩제거제)</a></li>
+             <li><a href="/product/detail.html?product_no=58&cate_no=115&display_group=1">쿨매너데오티슈</a></li>
+
+		</ul>
+    </li>
+    <li><a href="#">욕실위생</a>
+    	 <ul class="category" >
+             <li><a href="/product/detail.html?product_no=35&cate_no=121&display_group=1">바른 샤워(샤워기)</a></li>
+             <li><a href="/product/list.html?cate_no=123">이클리너(UV칫솔살균기)</a></li>
+             <li><a href="/product/detail.html?product_no=32&cate_no=121&display_group=1">4생활칫솔(살균칫솔)</a></li>
+             <li><a href="/product/detail.html?product_no=50">순수비누(약산성 비누)</a></li>
+             <li><a href="/product/detail.html?product_no=49">세수비누(클렌징 비누)</a></li>
+             <li><a href="/product/detail.html?product_no=48">쿨한비누(멘톨 비누)</a></li>
+             <li><a href="/product/detail.html?product_no=68">푸카치약(프로폴리스)</a></li>
+             <li><a href="/product/detail.html?product_no=69">푸카가글(프로폴리스)</a></li>
+		</ul>
+    </li>
+
+
+
+    <li><a href="#">주방위생</a>
+    	 <ul class="category" >
+             <li><a href="/product/detail.html?product_no=30&cate_no=122&display_group=1">1일1알30일(발포세정제)</a></li>
+             <li><a href="/product/detail.html?product_no=61&cate_no=122&display_group=1">1일1장30일(일회용수세미)</a></li>
+             <li><a href="/product/detail.html?product_no=51&cate_no=122&display_group=1">주방비누(설거지바)</a></li>
+		</ul>
+    </li>
+    <li><a href="/board/product/list.html?board_no=6">커뮤니티</a></li>
+
+
+
+    <!--글로벌메뉴 (멀티쇼핑몰적용시 자동 온/오프됨)-->
+    <li module="Layout_multishopListitem" class="openx"><a href="#" class="cs_center"><i class="fa fa-angle-right" aria-hidden="true"></i> by language</a>
+        <ul class="global_btn">
+            <li class="{$selected_class}"><a href="http://{$shop_domain}/"><img src="http://img.cafe24.com/img/common/global/{$language}_32x24.png" alt="" class="ease"  /><span class="name">{$locale_language}</span></a></li>
+            <li class="{$selected_class}"><a href="http://{$shop_domain}/"><img src="http://img.cafe24.com/img/common/global/{$language}_32x24.png" alt="" class="ease"  /><span class="name">{$locale_language}</span></a></li>
+        </ul>
+    </li>
+
+    <!-- PC MODE 버튼-->
+    <li style="display:none;"><a href="#none" onclick="javascript:isPCver();" class="cs_center"><i class="fa fa-angle-right" aria-hidden="true"></i> PC MODE</a></li>
+</ul>
+
+<!-- cre.ma / 로그인 회원 정보 / 스크립트를 수정할 경우 연락주세요 (support@cre.ma) -->
+<div module="Layout_stateLogon" style="display: none;">
+  <i id="crema-login-username" style="display: none;">{$id}</i>
+  <i id="crema-login-name" style="display: none;">{$name}</i>
+</div>
+
+<!--<ul class="cs_menu">
+
+    <li class="cs_center">
+		<span class="title">CUSTOMER CENTER</span>
+		<span class="tel">070-4888-4996 </span>
+		<span>Work : Mon ~ Fri 10am - 5pm </span>
+		<span>LUNCH : 12pm - 2pm </span>
+		<span>SAT . SUN . HOLIDAY OFF  </span>
+    </li>
+
+
+	<li class="bank_info">
+		<span>주식회사 브랜드엑스코퍼레이션</span>
+		<span>우리은행 1005-703-719238 </span>
+	</li>
+
+
+</ul>-->
+<ul class="m_sns">
+	<li><a href="https://www.instagram.com/whia.official/"><img src="/web/upload/images/insta.png" alt="휘아 인스타 바로가기"></a></li>
+	<li><a href="https://www.facebook.com/whia.official/"><img src="/web/upload/images/facebook.png" alt="휘아 페이스북 바로가기"></a></li>
+    <li><a href="https://www.youtube.com/channel/UCjqMYMhUp1gx9l3ojPAQbnA"><img src="/web/upload/images/ytube.png" alt="휘아 유튜브 바로가기"></a></li>
+</ul>
+
+
+<script type="text/javascript">
+
+	// Initialize navgoco with default options
+	$(".nav").navgoco({
+		caretHtml: '',
+		accordion: true,
+		openClass: 'open',
+        save: true,
+		cookie: {
+			name: 'navgoco',
+			expires: false,
+			path: '/'
+		},
+		slide: {
+			duration: 350,
+			easing: 'easeOutBack'
+		}
+
+	});
+
+</script>
