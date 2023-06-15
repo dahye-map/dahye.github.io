@@ -1,0 +1,234 @@
+/* 회사소개 > 동서식품 > 연혁 */
+#contentsWrap.company { padding-top:0px; background:#fff; }
+.company .tit-sub { font-size:34px; line-height:1.2; color:#fff; }
+.company .des-h2 { letter-spacing:-1.5px; margin-top:18px; color:#fff; }
+.company .visual-wrap { width:100%; height:360px; background-position:center center; background-repeat:no-repeat; padding-top:100px; }
+.company.fixed .contents { padding-top:49px; }
+.company .cont-wrap { width:951px; margin:0 auto; }
+.company .ex-cont { font-size:16px; letter-spacing:-1px; line-height:1.5; word-break:keep-all; }
+.visual-wrap.n1 { background-image:url('/2017/images/page/01_company/img_visual1.jpg'); }
+.visual-wrap.n2 { background-image:url('/2017/images/page/01_company/img_visual2.jpg'); }
+.visual-wrap.n3 { background-image:url('/2017/images/page/01_company/img_visual3.png'); }
+.history-wrap { position:relative; }
+.history-group { overflow:hidden; padding:80px 0px; }
+.company.fixed .history-group:first-child { padding-top:475px; }
+.big-year { position:absolute; left:0px; top:0px; width:100%; text-align:center; font-size:180px; color:#f4f4f4; letter-spacing:-2.31px; font-weight:bold; line-height:110px; }
+.history-wrap .hc { position:relative; overflow:hidden; margin-top:140px; min-height:215px; }
+.history-wrap .hc:first-child { margin-top:0px; }
+.history-wrap .hc .img-wrap { position:relative; width:50%; }
+.history-wrap .hc .txt-wrap { position:relative; padding:0px 15px; width:50%; }
+.history-wrap .hc .big-year { top:50%; margin-top:-80px; }
+/*.history-wrap .hc .big-year { padding-top:80px; }
+.history-wrap .hc.y2015 .big-year { padding-top:220px; }
+.history-wrap .hc.y2014 .big-year { padding-top:60px; }
+.history-wrap .hc.y2012 .big-year { padding-top:610px; }
+.history-wrap .hc.y2011 .big-year { padding-top:560px; }
+.history-wrap .hc.y2009 .big-year { padding-top:135px; }
+.history-wrap .hc.y2008 .big-year { padding-top:190px; }
+.history-wrap .hc.y2007 .big-year { padding-top:250px; }
+.history-wrap .hc.y2005 .big-year { padding-top:130px; }
+.history-wrap .hc.y2001 .big-year { padding-top:57px; }
+.history-wrap .hc.y1970 .big-year { padding-top:110px; }
+.history-wrap .hc.y1960 .big-year { padding-top:100px; }*/
+.year-wrap { position:relative; background:#fff; padding-top:80px; }
+.company.fixed .year-wrap { position:fixed; left:0px; right:0px; margin:auto; margin-top:49px; top:0px; width:1147px; z-index:10; }
+.year-wrap .year-visual { font-size:45px; text-align:center; letter-spacing:-1.27px; color:#fff; height:290px; padding-top:120px; background:url(/2017/images/page/01_company/bg_history1.png) no-repeat; }
+.history-wrap .hc .txt-wrap .his-year { font-size:22px; letter-spacing:-1.27px; margin-bottom:15px; margin-top:45px; }
+.history-wrap .hc .txt-wrap .his-year:first-child { margin-top:0px; }
+.his-desc { font-size:16px; letter-spacing:0.7px; line-height:1.625; margin-bottom:5px; }
+.year-nav { position:absolute; left:0px;  right:0px; margin:auto; bottom:30px; width:543px; }
+.year-nav .circle-year { position:relative; color:#fff; font-size:11px; float:left; margin-left:80px; cursor:pointer; }
+.year-nav .circle-year:first-of-type { margin-left:0px; }
+.year-nav  .year-num { opacity:0; position:absolute; width:60px; left:50%; margin-left:-30px; top:-26px; text-align:center; }
+.year-nav .circle-year:hover .year-num, .year-nav .circle-year.active .year-num { display:block; opacity:1; }
+.year-nav .circle { display:inline-block; width:9px; height:9px; border-radius:5px; background:#fff;  }
+.year-nav .bar { position:absolute; top:5px; left:0px; width:100%; height:1px; display:inline-block; background:#fff; z-index:0; }
+.year-nav .over { position:absolute; width:15px; height:15px; border:1px solid #fff; left:-3px; top:-2px; border-radius:8px; }
+.year-nav .circle-year .over { position:absolute; width:15px; height:15px; border:1px solid #fff; left:-3px; top:-2px; border-radius:8px; transform:scale(0);   }
+.year-nav .circle-year:hover .over, .year-nav .circle-year.active .over { transform:scale(1); }
+/* 회사소개 > 동서식품 > 동서식품소개 */
+.nmt50{margin-top:-50px; }
+.nmt80{margin-top:-80px; }
+.default-wrap.introduce { width:100%; font-size:15px; }
+.introduce .section.explan { padding-top:30px; padding-left:63px; }
+.introduce .cont-wrap .tit { font-size:23px; line-height:1.47; }
+.introduce .cont-wrap .half { width:50%; }
+.introduce .cont-wrap .half.pr { padding-right:60px; }
+.introduce .cont-wrap .half.pl { padding-left:10px; }
+.list-wrap { overflow:hidden; display:block; margin:0 auto; }
+.introduce .cont-wrap .list-wrap.value { width:795px; margin-top:26px; }
+.introduce .cont-wrap .list-wrap.value li { width:225px; float:left; margin-left:60px; position:relative; }
+.introduce .cont-wrap .list-wrap.value li:before { content:""; position:absolute; width:105px; height:2px; background:#dfdcd7; top:88px; left:-82px; }
+.introduce .cont-wrap .list-wrap.value li:first-child:before{ display:none; }
+.introduce .cont-wrap .list-wrap.value li:first-child { margin-left:0; }
+.introduce .cont-wrap .list-wrap.value li .con { width:180px; height:180px; border-radius:100%; margin:0 auto; padding-top:110px; }
+.introduce .cont-wrap .list-wrap.value li .con.one { background:#795128 url('/2017/images/page/01_company/ico_introduce1.png') no-repeat center 43px; }
+.introduce .cont-wrap .list-wrap.value li .con.two { background:#db3832 url('/2017/images/page/01_company/ico_introduce2.png') no-repeat center 35px; }
+.introduce .cont-wrap .list-wrap.value li .con.three { background:#3c3535 url('/2017/images/page/01_company/ico_introduce3.png') no-repeat center 35px; }
+.introduce .cont-wrap .list-wrap.value li .con .keyword { font-size:24px; padding-top:5px; }
+.introduce .cont-wrap .list-wrap.value li .explan { line-height:1.73; margin-top:33px; }
+.list-wrap.type { margin-top:50px; width:944px; }
+.list-wrap.type .con { float:left; border:1px solid #c9c9c9; width:308px; padding-top:67px; margin-left:10px; min-height:476px; }
+.list-wrap.type .con:first-child { margin-left:0; }
+.list-wrap.type .con .keyword { line-height:1.62; font-weight:bold; font-size:17px; margin-top:65px; padding:0 29px; }
+.list-wrap.type .con .type-list { padding:0 29px; margin-top:16px; margin-bottom:45px; }
+.list-wrap.type .con .type-list li{ position:relative; padding-left:17px; line-height:1.62; }
+.list-wrap.type .con .type-list li:before { position:absolute; content:""; width:4px; height:4px; background:#6b6b6b; top:9px; left:0; }
+.introduce .ceo .cont-wrap { padding-top:150px; }
+.introduce .ceo .explan { padding:0 32px 0 0; vertical-align:top; }
+.introduce .ceo .tit { font-size:36px; line-height:1.16; }
+.introduce .ceo .des { font-size:16px; line-height:1.625; }
+/*회사소개 > 동서식품 > 사업현황*/
+.default-wrap.business { width:952px; }
+.money-tit { font-size:21px; color:#333; }
+.money-sub { font-size:16px; color:#7d7d7d; }
+.business-graph { position:relative; width:952px; height:554px; background:url('/2017/images/page/01_company/img_business01.png') no-repeat; }
+.business-y-wrap { text-align:center; }
+.business-graph .dot { position:absolute; display:inline-block; width:14px; height:14px; text-align:center; border:1px solid transparent; border-radius:14px; cursor:pointer; }
+.business-graph .dot:before { content:''; position:absolute; top:3px; left:3px; width:6px; height:6px; border-radius:6px; background:#EAA5A7; }
+.business-graph .price { position:absolute; display:none; min-width:118px; margin:0 auto 10px; text-align:center; border:2px solid #f5787d; padding:16px 32px; background:#fff; border-radius:3px; z-index:3; }
+.business-graph .price:before { content:''; position:absolute; left:50%; bottom:-9px; width:10px; height:9px; margin-left:-5px; background:url('/2017/images/page/01_company/img_moneybox.png') no-repeat; }
+.business-graph .dot:hover { border-color:#ED1C24; }
+.business-graph .dot:hover:before { background:#ED1C24; }
+.business-graph .dot:hover + p { display:block; }
+.business-graph .dot.y0 { left:79px; top:329px; }
+.business-graph .dot.y1 { left:133px; top:326px; }
+.business-graph .dot.y2 { left:184px; top:306px; }
+.business-graph .dot.y3 { left:237px; top:304px; }
+.business-graph .dot.y4 { left:290px; top:288px; }
+.business-graph .dot.y5 { left:343px; top:264px; }
+.business-graph .dot.y6 { left:396px; top:245px; }
+.business-graph .dot.y7 { left:450px; top:202px; }
+.business-graph .dot.y8 { left:502px; top:173px; }
+.business-graph .dot.y9 { left:556px; top:112px; }
+.business-graph .dot.y10 { left:608px; top:82px; }
+.business-graph .dot.y11 { left:662px; top:59px; }
+.business-graph .dot.y12 { left:713px; top:48px; }
+.business-graph .dot.y13 { left:767px; top:50px; }
+.business-graph .dot.y14 { left:820px; top:59px; }
+.business-graph .dot.y15 { left:875px; top:57px; }
+.business-graph .dot.y16 { left:928px; top:54px; }
+
+.business-graph .price.y0 { left:27px; top:268px; }
+.business-graph .price.y1 { left:82px; top:266px; }
+.business-graph .price.y2 { left:132px; top:242px; }
+.business-graph .price.y3 { left:186px; top:240px; }
+.business-graph .price.y4 { left:238px; top:227px; }
+.business-graph .price.y5 { left:291px; top:202px; }
+.business-graph .price.y6 { left:345px; top:182px; }
+.business-graph .price.y7 { left:395px; top:140px; }
+.business-graph .price.y8 { left:443px; top:108px; }
+.business-graph .price.y9 { left:496px; top:47px; }
+.business-graph .price.y10 { left:548px; top:17px; }
+.business-graph .price.y11 { left:602px; top:-6px; }
+.business-graph .price.y12 { left:654px; top:-10px; }
+.business-graph .price.y13 { left:708px; top:-7px; }
+.business-graph .price.y14 { left:760px; top:-1px; }
+.business-graph .price.y15 { left:814px; top:-5px; }
+.business-graph .price.y16 { left:865px; top:-1px; width:145px; }
+/* 회사소개 > 동서식품 > 부문역량 */
+.default-wrap.capacity { font-size:15px; }
+.capacity .section.explan { padding-top:30px; padding-left:63px; }
+.capacity .cont-wrap .section .tit { font-size:26px; letter-spacing:-2.5px; font-family:'Spoqa Han Sans'; }
+/* 회사소개 > 동서식품 > 관계사 */
+.default-wrap.subcompany { font-size:15px; }
+.subcompany .cont-wrap .section.explan { padding-left:63px; }
+.subcompany .cont-wrap .section.explan .addr { padding-left:30px; font-weight:bold; color:#3b3b3b; }
+.subcompany .cont-wrap .section .tit { font-size:26px; letter-spacing:-1.5px; font-family:'Spoqa Han Sans'; }
+/* 회사소개 > 동서식품 > CI */
+.ci .cont-wrap { margin-top:80px; }
+.default-wrap.ci { font-size:15px; }
+.ci .cont-wrap .tit { font-size:22px; letter-spacing:-1.12px; width:253px; }
+.ci .cont-wrap .subtit { display:inline-block; padding:4px 0; color:#484848; }
+.ci .cont-wrap .ex-list li { position:relative; overflow:hidden; padding-left:17px; }
+.ci .cont-wrap .ex-list li:before { position:absolute; content:""; width:4px; height:4px; background:#6b6b6b; top:4px; left:0; }
+.ci .cont-wrap .box { margin-top:30px; border:1px solid #e3e3e3; }
+.ci .cont-wrap .box .tit { width:auto; font-size:32px; font-family:'Spoqa Han Sans'; letter-spacing:-2.5px; }
+.ci .cont-wrap .box .content { padding:50px; width:100%; }
+.ci .cont-wrap .box .content .section.logo { width:147px; }
+.ci .cont-wrap .box .content .section.explan { padding-left:100px; }
+.ci .cont-wrap .box .content .section.explan span { float:left; width:460px; letter-spacing:-0.7px; font-size:16px; font-weight:400; }
+.ci .cont-wrap .box .content .section.explan .name { width:123px; }
+.ci .cont-wrap .box .down-wrap {border-top:2px solid #f2f2f2; margin:0 30px; padding:10px 0; text-align:right; }
+.ci .cont-wrap .box .down-wrap .btn.download { margin-left:10px; }
+/* 회사소개 > 동서식품 > 오시는길 */
+.location .cont-wrap .tit { font-size:22px; letter-spacing:-1.12px; font-weight:400; }
+.location .cont-wrap .sub-tit { font-size:17px; }
+.location .accodian-wrap { font-size:17px; border-top:1px solid #a0a0a0; border-bottom:1px solid #a0a0a0; }
+.location .accodian-wrap li { border-bottom:2px solid #f5f5f5; }
+.location .accodian-wrap li:last-child { border-bottom:none; }
+.location .accodian-wrap .accodian-con.arrow { border-bottom:none; }
+.location .accodian-wrap .accodian-con.arrow .cmpny { width:196px; font-weight:400; padding-left:20px; }
+.location .accodian-wrap .accodian-con.arrow .addr { font-weight:300; }
+.location .accodian-wrap .accodian-con.answer { border-bottom:none; }
+.location .accodian-wrap .accodian-con.answer p { padding:30px; font-weight:400; line-height:1.7; }
+.location .accodian-wrap .accodian-con.answer .cmpny { width:263px; height:140px; background:#795128; color:#fff; }
+
+/*회사소개 > 동서인포그래픽 > 동서식품 Story */
+.card-slider .bx-wrapper { margin-left:auto; margin-right:auto; }
+.card-slider ul { left:50%; margin-left:-378px; }
+.card-slider ul li { background:#000; }
+.card-slider ul li img { opacity:0.6; -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=60)"; filter:alpha(opacity=60); -moz-opacity:0.6; -khtml-opacity:0.6; }
+.card-slider ul li:first-child img { opacity:1; -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=100)"; filter:alpha(opacity=100); -moz-opacity:1; -khtml-opacity:1; }
+.card-slider .bx-wrapper .bx-pager.bx-default-pager a:hover, .card-slider .bx-wrapper .bx-pager.bx-default-pager a.active, .card-slider .bx-wrapper .bx-pager.bx-default-pager a:focus { background: #D0021B; }
+.card-slider-wrap { position:relative; }
+.card-slider .control { position:absolute; top:50%; margin-top:-29px; }
+.card-slider .control.prev {left:50%; margin-left:-358px;}
+.card-slider .control.next {right:50%; margin-right:-358px;}
+.card-slider .bx-wrapper .bx-pager.bx-default-pager a { background:#D8D8D8; margin:0 10px; width:9px; height:9px; }
+.card-slider .bx-wrapper .bx-controls-direction a { width:29px; height:54px; }
+/*회사소개 > 식품안전센터 > 안전한 식품 이야기*/
+#contentsWrap.safety { padding-bottom:0; }
+.company.safety.fixed .contents { padding-top:0; }
+.pt160 { padding-top:160px; }
+.pt140 { padding-top:140px; }
+.safety .default-wrap { width:952px; line-height:1.6; font-size:16px; word-break:keep-all; }
+.safety .default-wrap.system { width:1140px; padding-left:90px; }
+.default-wrap.system .common-detail-con .txt.exp { width:560px; }
+.safety p.issue { color:#64523c; }
+.safety .box.notice { border:none; }
+.safety .box.notice .tit { border:none; font-size:15px; }
+.safety .box.notice .con { font-size:12px; line-height:1.83; }
+.safety .tit { font-size:21px; color:#333; }
+.haccp { display:inline-block; width:210px; float:left; }
+.haccp .tit { font-size:17px; letter-spacing:-0.7px; color:#333; line-height:1; }
+.haccp .con { font-size:16px; letter-spacing:-0.7px; padding-top:13px; padding-bottom:12px; }
+.haccp.arrow { width:160px; }
+.haccp-box { width:756px; padding:50px 109px 38px 115px; border-radius:15px; background:#fff; margin:0 auto; }
+.haccp-box .tit { font-size:17px; }
+.safety-popup a { position:relative; display:inline-block; margin-right:7px; float:left; width:230px; height:295px; background-size:100%;  overflow:hidden; }
+.safety-popup a:hover { background-size:110%; }
+.food img:first-child { -webkit-transition: all 0.5s ease-out;
+    -o-transition: all 0.5s ease-out;
+    -moz-transition: all 0.5s ease-out;
+    -ms-transition: all 0.5s ease-out;
+    transition: all 0.5s ease-out;
+    transform:scale(1); }
+.food:hover img:first-child { transform:scale(1.1); }
+.safety-popup a:last-child { margin-right:0; }
+.safety-popup .popup-tit { font-size:20px; font-family:'Spoqa Han Sans'; }
+.safety-popup .tit-pos { position:absolute; left:24px; bottom:26px; }
+.safety-popup .popup-arrow { position:absolute; right:15px; bottom:20px; width:43px; height:43px; }
+.zero-popup a { float:left; width:310px; height:420px; color:#fefefe; line-height:1.714; }
+.zero-popup .tit-pos { position:absolute; left:112px; top:76px; }
+.zero-popup .popup-con { position:absolute; left:28px; top:128px; width:252px; font-size:14px; }
+.layerpopup.popup { display:none; width:776px; padding:65px 40px 75px; background:#fff; position:fixed; left:50%; top:50%; margin-left:-378px; line-height:1.625; font-size:16px; letter-spacing:-0.7px; z-index:30; word-break:keep-all; overflow-X:hidden; }
+.popup.type01{ max-height:650px; margin-top:-325px; }
+.popup.type02{ max-height:500px; margin-top:-250px; }
+.popup .tit { font-family:'Spoqa Han Sans'; font-size:22px; letter-spacing:-1.43px; }
+.popup-img img:first-child { margin-right:32px; }
+.safety .pop-con { height:397px; padding: 7px 20px !important; }
+.safety .complain { border:1px solid #acacac; margin-top:30px;}
+.safety .complain th { text-align:center; padding:15px 0; border-right:1px solid #acacac; }
+.safety .complain tr { border-bottom:1px solid #acacac; }
+.safety .complain td { padding:15px !important; border-right:1px solid #acacac; font-size:12px; }
+.type01 .pop-close { position:absolute; right:15px; top:20px; }
+.type02 .pop-close { position:absolute; right:20px; top:20px; }
+.safety .common-detail-con .pledge { padding:48px 59px; }
+.safety .common-detail-con .txt { line-height:1.6 !important; }
+.safety .list-wrap.type { width:954px; }
+.safety .list-wrap.type .con { background:#fff; width:310px; min-height:370px; border:none; }
+.safety .list-wrap.type .con .type-list { margin-top:11px; margin-bottom:0; }
+.safety .list-wrap.type .con .keyword { margin-top:11px; }
+.safety .list-box .listbox-tit:before{ top:10px; }
+.btn.zero-go { display:block; width:210px; margin-top:80px; }

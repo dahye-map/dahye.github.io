@@ -1,0 +1,70 @@
+@charset "utf-8";
+/*** 02 PRODUCTS ***/
+/* 01_brand*/
+.card-list.brand {margin-top:2px;}
+.card-list.brand li {overflow:hidden; float:left; width:373px; height:262px; margin-left:14px; margin-bottom:17px; border:1px solid #f4f4f4;}
+#contentsWrap.brand-view {padding-top:0;}
+.sub-visual {height:883px; margin-bottom:60px; text-align:center;}
+.sub-visual .des {padding-top:242px; font-size:42px; letter-spacing:-2.42px; font-family:'Spoqa Han Sans', sans-serif; font-weight:300; color:#fff;}
+#maxim.sub-visual {background:url('../../images/page/02_products/bg_prd_maxim.jpg') no-repeat top center;}
+#maxwell.sub-visual {background:url('../../images/page/02_products/bg_prd_maxwell.jpg') no-repeat top center;}
+#kanu.sub-visual {background:url('../../images/page/02_products/bg_prd_kanu.jpg') no-repeat top center;}
+#top.sub-visual {background:url('../../images/page/02_products/bg_prd_top.jpg') no-repeat top center;}
+#bean.sub-visual {background:url('../../images/page/02_products/bg_prd_bean.jpg') no-repeat top center;}
+#tassimo.sub-visual {background:url('../../images/page/02_products/bg_prd_tassimo.jpg') no-repeat top center;}
+#starbucks.sub-visual {background:url('../../images/page/02_products/bg_prd_starbucks.jpg') no-repeat top center;}
+#frima.sub-visual {background:url('../../images/page/02_products/bg_prd_frima.jpg') no-repeat top center;}
+#post.sub-visual {background:url('../../images/page/02_products/bg_prd_post.jpg') no-repeat top center;}
+#oreo.sub-visual {background:url('../../images/page/02_products/bg_prd_oreo.jpg') no-repeat top center;}
+#philadelphia.sub-visual {background:url('../../images/page/02_products/bg_prd_philadelphia.jpg') no-repeat top center;}
+#tarra.sub-visual {background:url('../../images/page/02_products/bg_prd_tarra.jpg') no-repeat top center;}
+#green.sub-visual {background:url('../../images/page/02_products/bg_prd_green.jpg') no-repeat top center;}
+#mitte.sub-visual {background:url('../../images/page/02_products/bg_prd_mitte.jpg') no-repeat top center;}
+#jeti.sub-visual {background:url('../../images/page/02_products/bg_prd_jeti.jpg') no-repeat top center;}
+#tio.sub-visual {background:url('../../images/page/02_products/bg_prd_tio.jpg') no-repeat top center;}
+#honey.sub-visual {background:url('../../images/page/02_products/bg_prd_honey.jpg') no-repeat top center;}
+#maximBtn.btn.common-chanel {background:#fff url('../../images/common/ico_maxim.jpg') no-repeat 41px center;}
+#maxwellBtn.btn.common-chanel {background:#fff url('../../images/common/ico_maxwell.jpg') no-repeat 41px center;}
+#kanuBtn.btn.common-chanel {background:#fff url('../../images/common/ico_kanu.jpg') no-repeat 41px center;}
+#topBtn.btn.common-chanel {background:#fff url('../../images/common/ico_top.jpg') no-repeat 41px center;}
+#beanBtn.btn.common-chanel {background:#fff url('../../images/common/ico_coffee.jpg') no-repeat 41px center;}
+#tassimoBtn.btn.common-chanel {background:#fff url('../../images/common/ico_tassimo.jpg') no-repeat 41px center;}
+#starbucksBtn.btn.common-chanel {background:#fff url('../../images/common/ico_starbucks.jpg') no-repeat 41px center;}
+#frimaBtn.btn.common-chanel {background:#fff url('../../images/common/ico_frima.jpg') no-repeat 41px center;}
+#postBtn.btn.common-chanel {background:#fff url('../../images/common/ico_post.jpg') no-repeat 41px center;}
+#oreoBtn.btn.common-chanel {background:#fff url('../../images/common/ico_oreo.jpg') no-repeat 41px center;}
+#philadelphiaBtn.btn.common-chanel {background:#fff url('../../images/common/ico_philadelphia.jpg') no-repeat 41px center;}
+#tarraBtn.btn.common-chanel {background:#fff url('../../images/common/ico_tarra.jpg') no-repeat 41px center;}
+#greenBtn.btn.common-chanel {background:#fff url('../../images/common/ico_green.jpg') no-repeat 41px center;}
+#mitteBtn.btn.common-chanel {background:#fff url('../../images/common/ico_mitte.jpg') no-repeat 41px center;}
+#jetiBtn.btn.common-chanel {background:#fff url('../../images/common/ico_jeti.jpg') no-repeat 41px center;}
+#tioBtn.btn.common-chanel {background:#fff url('../../images/common/ico_tio.jpg') no-repeat 41px center;}
+#honeyBtn.btn.common-chanel {background:#fff url('../../images/common/ico_honey.jpg') no-repeat 41px center;}
+#honeyBtn.btn.common-chanel {background:#fff url('../../images/common/ico_honey.jpg') no-repeat 41px center;}
+#tnBtn.btn.common-chanel {background:#fff url('../../images/common/ico_TN.jpg') no-repeat 41px center;}
+.view-txt {width:65.73%; margin:0 auto 103px; font-family:'Spoqa Han Sans', sans-serif; font-weight:300; font-size:24px; letter-spacing:-2px; line-height:1.5;}
+.brand-view .card-list li {background:none; margin-bottom:0;}
+/* 02_products */
+#contentsWrap.prd-list {padding-top:72px;}
+.prd-list.bg-half-f4efe6 {background:#fff url('../../images/common/bg_half2.gif') repeat-x top left !important}
+.prd-slider {overflow:hidden; position:relative; height:500px; }
+.prd-slider .control {position:absolute; top:50%; z-index:5;}
+.prd-slider .control.prev {left:0;}
+.prd-slider .control.next {right:0;}
+.prd-slider .bx-wrapper {margin-bottom:0; height:500px; }
+.prd-slider .bx-viewport {height:500px !important;}
+.prd-slider li {height:500px !important;}
+.prd-slider li a {position:relative; display:block; height:100%; line-height:430px;}
+.prd-slider li a img {position:absolute; top:50%; left:50%; margin-top:-140px; margin-left:-161px; display:inline-block; vertical-align:bottom; width:323px !important; max-width:none; transition: all .5s; -webkit-transition: all .5s; -moz-transition: all .5s; -o-transition: all .5s;}
+.prd-slider li.active img {width:500px !important; top:0; margin-top:0; margin-left:-250px;}
+.tit-wrap.prd-list {text-align:center;}
+.tit-wrap.prd-list .category {min-height:16px; margin-bottom:5px; font-size:16px; font-weight:bold; font-family:'Poppins', sans-serif;}
+.tit-wrap.prd-list .name {min-height:41px; margin-bottom:37px; font-size:32px; font-weight:300; letter-spacing:-2px; line-height:1.31; font-family:'Spoqa Han Sans', sans-serif;}
+.selects-wrap {height:100px; padding:24px 0; margin-bottom:22px; border-top:2px solid #f2f2f2; border-bottom:2px solid #f2f2f2; text-align:center;}
+.selects-wrap > div:first-child {margin-right:10px;}
+.selects-wrap .select {top:-10px;}
+.tit-wrap.prd-view {text-align:center;}
+.tit-wrap.prd-view .category {padding-bottom:32px; margin-bottom:42px; font-size:18px; background:url('../../images/common/bg_tit_wave.png') no-repeat bottom center;}
+.tit-wrap.prd-view .name {margin-bottom:37px; font-size:50px; line-height:1.24; font-family:'Spoqa Han Sans', sans-serif; font-weight:300; letter-spacing:-4px;}
+.prd-select {position:absolute; left:0;}
+.prd-select-brand {position:absolute; right:0;}

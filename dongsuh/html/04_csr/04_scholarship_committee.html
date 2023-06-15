@@ -1,0 +1,722 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>동서식품</title>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Script-Type" content="text/javascript">
+    <meta http-equiv="Content-Style-Type" content="text/css">
+    <meta name="keywords" content="동서식품" />
+	<meta name="description" content="회사소개, 제품안내, 홍보센터, 사회공헌, 고객의 소리" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0 user-scalable=no">
+    <meta name="apple-mobile-web-app-status-bar-style" content="white" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="mobile-web-app-capable" content="yes">
+    <link rel="shortcut icon" type="image/x-icon" href="../../favicon.ico" />
+    <link href="../../lib/css/default.css?ver.1.0" rel="stylesheet" />
+    <link href="../../lib/css/jquery.bxslider.css?ver.1.0" rel="stylesheet" />
+    <link href="../../lib/css/layout.css?ver.1.0" rel="stylesheet" />
+    <link href="../../lib/css/contents.css?ver.1.0" rel="stylesheet" />
+    <script src="../../lib/js/jquery-1.11.3.min.js" type="text/javascript"></script>
+    <!--[if lt IE 9]>
+    <script src="../../lib/js/respond.min.js"></script>
+    <script src="../../lib/js/html5.js"></script>
+    <![endif]-->
+    <script src="../../lib/js/jquery.bxslider.min.js?ver.1.0" type="text/javascript"></script>
+    <script src="../../lib/js/default.js?ver.1.0" type="text/javascript"></script>
+    <script src="../../lib/js/ui.js?ver.1.0" type="text/javascript"></script>
+    <!-- s:depth setting -->
+    <script>
+        var depth1 = 3;
+        var depth2 = 3;
+    </script>
+    <!-- //e:depth setting -->
+</head>
+<body>
+    <!-- s:skipnavi -->
+    <ul id="skipnavi">
+        <li><a href="#gnbWrap">메뉴 바로가기</a></li>
+        <li><a href="#contentsWrap">본문 바로가기</a></li>
+        <li><a href="#footerWrap">하단 바로가기</a></li>
+    </ul>
+    <!-- //e:skipnavi -->
+    <!-- s:wrap -->
+    <div id="wrap">
+        <!-- ********** Include ********** -->
+        <!-- s:header -->
+        <div id="headerWrap">
+            <div class="header default-wrap">
+                <h1 class="fl-l"><a href="../../html/00_main/home.html"><img src="../images/common/logo.png" alt="동서식품"/></a></h1>
+                <!-- s:gnbWrap -->
+                <div id="gnbWrap" class="fl-l">
+                    <ul>
+                        <li class="depth1 company">
+                            <a href="#">회사소개</a>
+                            <div class="depth2-wrap">
+                                <div class="default-wrap of-hi">
+                                    <div class="tit-wrap">
+                                        <p class="tit-lnb">Dong Suh<br>Food</p>
+                                    </div>
+                                    <div class="depth2-list">
+                                        <ul>
+                                            <li><a href="#">동서식품</a></li>
+                                            <li><a href="#">동서 인포그래픽</a></li>
+                                            <li><a href="#">동서식품 역사관</a></li>
+                                            <li><a href="#">식품안전센터</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="event-wrap">
+                                        <a href="#"><img src="../images/temp/img_gnb_event.jpg" alt=""></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="depth1 products">
+                            <a href="#">제품안내</a>
+                            <div class="depth2-wrap">
+                                <div class="default-wrap of-hi">
+                                    <div class="tit-wrap">
+                                        <p class="tit-lnb">Products</p>
+                                    </div>
+                                    <div class="depth2-list">
+                                        <ul>
+                                            <li><a href="#">브랜드</a></li>
+                                            <li><a href="#">제품소개</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="event-wrap">
+                                        <a href="#"><img src="../images/temp/img_gnb_event.jpg" alt=""></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="depth1 mediacenter">
+                            <a href="#">홍보센터</a>
+                            <div class="depth2-wrap">
+                                <div class="default-wrap of-hi">
+                                    <div class="tit-wrap">
+                                        <p class="tit-lnb">Media<br>Center</p>
+                                    </div>
+                                    <div class="depth2-list">
+                                        <ul>
+                                            <li><a href="#">뉴스</a></li>
+                                            <li><a href="#">이벤트</a></li>
+                                            <li><a href="#">동서식품 홍보영상</a></li>
+                                            <li><a href="#">TV CF</a></li>
+                                        </ul>
+                                        <ul>
+                                            <li><a href="#">웹진 삶의 향기</a></li>
+                                            <li><a href="#">커피 클래스</a></li>
+                                            <li><a href="#">커피 테이스트</a></li>
+                                            <li><a href="#">소셜미디어</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="event-wrap">
+                                        <a href="#"><img src="../images/temp/img_gnb_event.jpg" alt=""></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="depth1 csr">
+                            <a href="#">사회공헌</a>
+                            <div class="depth2-wrap">
+                                <div class="default-wrap of-hi">
+                                    <div class="tit-wrap">
+                                        <p class="tit-lnb">CSR</p>
+                                    </div>
+                                    <div class="depth2-list">
+                                        <ul>
+                                            <li><a href="#">삶의 향기 동서문학상</a></li>
+                                            <li><a href="#">맥심커피배 입신최강전</a></li>
+                                            <li><a href="#">동서 커피클래식</a></li>
+                                        </ul>
+                                        <ul>
+                                            <li><a href="#">동서식품 장학회</a></li>
+                                            <li><a href="#">맥심 사랑의 향기</a></li>
+                                            <li><a href="#">스타벅스 꿈의 도서관</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="event-wrap">
+                                        <a href="#"><img src="../images/temp/img_gnb_event.jpg" alt=""></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>                        <li class="depth1 cs">
+                            <a href="#">고객의 소리</a>
+                            <div class="depth2-wrap">
+                                <div class="default-wrap of-hi">
+                                    <div class="tit-wrap">
+                                        <p class="tit-lnb">Customer<br>Support</p>
+                                    </div>
+                                    <div class="depth2-list">
+                                        <ul>
+                                            <li><a href="#">FAQ</a></li>
+                                            <li><a href="#">고객문의</a></li>
+                                            <li><a href="#">제품 아이디어</a></li>
+                                            <li><a href="#">제품 불편사항</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="event-wrap">
+                                        <a href="#"><img src="../images/temp/img_gnb_event.jpg" alt=""></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <!-- //e:gnbWrap -->
+                <div class="utility fl-l">
+                    <a href="#">회원가입</a>
+                    <a href="#">로그인</a>
+                    <button type="button" name="button" onclick="openPopup('searchWrap')" class="btn-search"><img src="../images/common/ico_search.gif" alt="검색"></button>
+                </div>
+            </div>
+        </div>
+        <!-- //e:header -->
+        <!-- ********** //Include ********** -->
+
+        <!-- s contentsWrap -->
+        <div id="contentsWrap" class="csr bg-fff">
+            <!-- s:lnbWrap -->
+            <div id="lnbWrap">
+            </div>
+            <!-- //e:lnbWrap -->
+            <!-- s:contents -->
+            <div class="contents">
+                <div class="sub-visual scholarship">
+                    <img src="../images/page/04_csr/img_page4.png" alt="">
+                    <p class="tit mt20">동서식품 장학회</p>
+                    <p class="sub-tit mb25">
+                        인재를 양성하여 국가 발전에 기여하는 동서식품 장학회
+                    </p>
+                    <p><img src="../images/page/04_csr/bg_sq_white.png" alt=""></p>
+                </div>
+                <div class="default-wrap pb80">
+                    <p class="common-s-tit">동서식품 장학회란?</p>
+                    <span class="common-deco"></span>
+
+                    <div class="common-detail-con mt50 clear">
+                        <img src="../images/page/04_csr/img_scholarship01.jpg" alt="" class="fl-l">
+                        <div class="txt txt-pd fl-l">
+                            <p class="pt60">
+                                동서식품장학회는 동서식품㈜가 기업의 이익을 사회에 환원하고 유능한 인재를 양성하여 국가 발전에 기여한다는 취지에서 기금을 출연하여 설립한 장학재단입니다.<br><br>
+                                동서식품장학회는 자라나는 청소년들에게 마음껏 꿈을 펼칠 수 있는 기회를 보다 많이 주기 위해 장학사업을 더욱 활발히 전개하고자 부단히 노력을 경주하고 있습니다.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="common-detail-con clear">
+                        <img src="../images/page/04_csr/img_scholarship02.jpg" alt="" class="fl-r nmt90">
+                        <div class="txt exp fl-l">
+                            <p class="pt80">가정형편이 어려운 가운데도 우수한 재능을 지닌 성실한 학생들이 있으면 학교를 통하여 적극 추천하여 주시기 바랍니다. 아울러 이러한 장학사업의 취지에 많은 호응과 지원을 부탁드립니다. 기쁨은 나누면 배가 되고 슬픔은 나누면 반이 되듯, 나눌 수 있는 행복 그 아름다움을 위해 여러분의 많은 관심과 참여를 기다립니다.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- //e:contents -->
+            <!-- s:contents -->
+            <div class="contents bg-f4efe5">
+                <div class="default-wrap">
+                    <div class="tit-wrap sq pt80">
+                        <p class="bg-sq short"><img src="../images/common/bg_tit_sq.png" alt="" class="bg-f4efe5"></p>
+                        <p class="tit pt20 pb50">장학회 현황</p>
+                    </div>
+                    <div class="pb80 clear">
+                        <div class="csr-slider fl-l">
+                            <ul>
+                                <li>
+                                    <img src="../images/page/04_csr/img_scholarship03.jpg" alt="">
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="csr-box fl-l">
+                            <ul>
+                                <li class="clear">
+                                    <span class="li-tit">재단명</span>
+                                    <span class="li-txt">주소재단법인 동서식품장학회 (東西食品奬學會)</span>
+                                </li>
+                                <li class="clear">
+                                    <span class="li-tit">이사장</span>
+                                    <span class="li-txt">재단법인 동서식품장학회 (東西食品奬學會)</span>
+                                </li>
+                                <li class="clear">
+                                    <span class="li-tit">설립일자</span>
+                                    <span class="li-txt">1993년 12월 17일</span>
+                                </li>
+                                <li class="clear">
+                                    <span class="li-tit">주무관청</span>
+                                    <span class="li-txt">서울특별시 교육청</span>
+                                </li>
+                                <li class="clear">
+                                    <span class="li-tit">설립근거</span>
+                                    <span class="li-txt">민법 제32조 및 공익법인의 설립, 운영에 관한 법률 제4조</span>
+                                </li>
+                                <li class="clear">
+                                    <span class="li-tit">목적사업</span>
+                                    <span class="li-txt">
+                                        학비보조금 및 장학금 지원 <br>
+                                        학술연구비 보조 및 지원 <br>
+                                        교육 및 연구기구자재 기타의 지원
+                                    </span>
+                                </li>
+                                <li class="clear">
+                                    <span class="li-tit">기본재산</span>
+                                    <span class="li-txt">10,150,000,000 (2017년 기준)</span>
+                                </li>
+                                <li class="clear">
+                                    <span class="li-tit">연락처</span>
+                                    <span class="li-txt">
+                                        서울시 마포구 독막로 324(도화동 546번지) 동서빌딩 <br>
+                                        (우 121-730) / 02-3271-0006 <br>
+                                        kilee@dongsuh.co.kr
+                                    </span>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- //e:contens -->
+            <!-- s:contents -->
+            <div class="contents">
+                <div class="default-wrap pt80">
+                    <p class="common-s-tit">장학생 선발</p>
+                    <span class="common-deco"></span>
+
+                    <ul class="mt60 list-box">
+                        <li>
+                            <p class="listbox-tit">선발대상</p>
+                            <div class="clear">
+                                <p class="icon fl-l"><img src="../images/page/04_csr/icon_scholarship01.jpg" alt=""></p>
+                                <p class="fl-l txt mt50">
+                                    성실하고 우수한 재능을 가지고 있으나, 경제적 어려움으로 인하여 <br>학업에 지장을 받는 고등학생, 대학생을 장학생으로 선발합니다.
+                                </p>
+                            </div>
+                        </li>
+                        <li>
+                            <p class="listbox-tit">선발시기 및 방법</p>
+                            <div class="clear">
+                                <p class="icon fl-l"><img src="../images/page/04_csr/icon_scholarship02.jpg" alt=""></p>
+                                <p class="fl-l txt mt50">
+                                    장학생은 매년 초 학교의 추천을 받아 재단에서 심사 후 <br>최종 선발합니다.
+                                </p>
+                            </div>
+                        </li>
+                        <li>
+                            <p class="listbox-tit">장학금의 범위</p>
+                            <div class="clear">
+                                <p class="icon fl-l"><img src="../images/page/04_csr/icon_scholarship03.jpg" alt=""></p>
+                                <p class="fl-l txt mt50">
+                                    입학금, 수업료, 등록금, 기성회비 및 교재대 등을 고려하여 재단이 결정하고 있습니다. <br>현재 등록금 및 공납금 일체를 지급하며, 재단의 장학금 지급규정상 결격사유가 없는 한 <br>졸업시까지 지급하고 있습니다.
+                                </p>
+                            </div>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+            <!-- //e:contents -->
+            <!-- s:contents -->
+            <div class="contents bg-f4efe5">
+                <div class="default-wrap pt80 pb80">
+                    <p class="common-s-tit">사업실적</p>
+                    <span class="common-deco"></span>
+
+                    <ul class="accodian-wrap mt50">
+                        <li>
+                            <a href="#">
+                                 <div class="accodian-con question arrow">
+                                    <p>2010년 이후</p>
+                                </div>
+                            </a>
+                            <div class="accodian-con answer">
+                                <table class="scholarship-table">
+                                    <colgroup>
+                                        <col width="200px">
+                                        <col width="*">
+                                    </colgroup>
+                                    <tbody>
+                                        <tr>
+                                            <th class="table-tit">장학금 지급</th>
+                                        </tr>
+                                        <tr>
+                                            <th>Total</th>
+                                            <td>
+                                                <p>
+                                                    <strong><span class="color-ef2e36">수혜자 2,284명</span> : 대학생 259, 고등학생 1,930, 중학생 95 <br>
+                                                    지급액 : 3,757,972,970 원</strong>
+                                                </p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th>2016</th>
+                                            <td>
+                                                <p>
+                                                    <span class="color-ef2e36"><strong>수혜자 70명 </strong></span> : 대학생 6, 고등학생 64 <br>
+                                                    <strong>지급액 : 125,890,490 원</strong>
+                                                </p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th>2015</th>
+                                            <td>
+                                                <p>
+                                                    <span class="color-ef2e36"><strong>수혜자 80명 </strong></span> : 대학생 7, 고등학생 73 <br>
+                                                    <strong>지급액 : 144,298,080 원</strong>
+                                                </p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th>2014</th>
+                                            <td>
+                                                <p>
+                                                    <span class="color-ef2e36"><strong>수혜자 85명 </strong></span> : 대학생 12, 고등학생 73 <br>
+                                                    <strong>지급액 : 182,572,480 원</strong>
+                                                </p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th>2013</th>
+                                            <td>
+                                                <p>
+                                                    <span class="color-ef2e36"><strong>수혜자 145명 </strong></span> : 대학생 20, 고등학생 125 <br>
+                                                    <strong>지급액 : 307,084,020 원</strong>
+                                                </p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th>2012</th>
+                                            <td>
+                                                <p>
+                                                    <span class="color-ef2e36"><strong>수혜자 144명 </strong></span> : 대학생 19, 고등학생 125 <br>
+                                                    <strong>지급액 : 283,009,720 원</strong>
+                                                </p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th>2011</th>
+                                            <td>
+                                                <p>
+                                                    <span class="color-ef2e36"><strong>수혜자 145명 </strong></span> : 대학생 18, 고등학생 127 <br>
+                                                    <strong>지급액 : 341,784,880 원</strong>
+                                                </p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th>2010</th>
+                                            <td>
+                                                <p>
+                                                    <span class="color-ef2e36"><strong>수혜자 142명 </strong></span> : 대학생 17, 고등학생 125 <br>
+                                                    <strong>지급액 : 324,028,460 원</strong>
+                                                </p>
+                                            </td>
+                                        </tr>
+                                        <!-- 교육기자재 지원 -->
+                                        <tr>
+                                            <th class="table-tit">교육기자재 지원</th>
+                                        </tr>
+                                        <tr>
+                                            <th>Total</th>
+                                            <td><strong>금액 : $ 30,000</strong></td>
+                                        </tr>
+                                        <tr>
+                                            <th>2000</th>
+                                            <td>
+                                                <p>
+                                                    지원대상 : 러시아 블라디보스톡 지역 한글학교 <br>
+                                                    지원내역 : VTP(시청각교육용), 책상, 사전, 칠판 등 <br>
+                                                    <strong>금액 : $15,000</strong>
+                                                </p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th>&nbsp;</th>
+                                            <td>
+                                                <p>
+                                                    지원대상 : 러시아 하바로프스크 지역 한글학교 <br>
+                                                    지원내역 : VTP(시청각교육용), 책상, 사전, 칠판 등 <br>
+                                                    <strong>금액 : $15,000</strong>
+                                                </p>
+                                            </td>
+                                        </tr>
+
+                                    </tbody>
+                                </table>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#">
+                                 <div class="accodian-con question arrow">
+                                    <p>2000년대</p>
+                                </div>
+                            </a>
+                            <div class="accodian-con answer">
+                                <table class="scholarship-table">
+                                    <colgroup>
+                                        <col width="200px">
+                                        <col width="*">
+                                    </colgroup>
+                                    <tbody>
+                                        <tr>
+                                            <th class="table-tit">장학금 지급</th>
+                                        </tr>
+                                        <tr>
+                                            <th>2009</th>
+                                            <td>
+                                                <p>
+                                                    <span class="color-ef2e36"><strong>수혜자 154명 </strong></span> :  대학생 19, 고등학생 126 <br>
+                                                    <strong>지급액 : 236,972,880 원</strong>
+                                                </p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th>2008</th>
+                                            <td>
+                                                <p>
+                                                    <span class="color-ef2e36"><strong>수혜자 131명 </strong></span> : 대학생 13, 고등학생 118 <br>
+                                                    <strong>지급액 : 221,308,500 원</strong>
+                                                </p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th>2007</th>
+                                            <td>
+                                                <p>
+                                                    <span class="color-ef2e36"><strong>수혜자 122명 </strong></span> :대학생 12, 고등학생 100, 중학생 10 <br>
+                                                    <strong>지급액 : 194,219,000 원</strong>
+                                                </p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th>2006</th>
+                                            <td>
+                                                <p>
+                                                    <span class="color-ef2e36"><strong>수혜자 115명 </strong></span> : 대학생 13, 고등학생 92, 중학생 10 <br>
+                                                    <strong>지급액 : 194,720,420 원</strong>
+                                                </p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th>2005</th>
+                                            <td>
+                                                <p>
+                                                    <span class="color-ef2e36"><strong>수혜자 119명 </strong></span> : 대학생 15, 고등학생 94, 중학생 10 <br>
+                                                    <strong>지급액 : 195,337,550 원</strong>
+                                                </p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th>2004</th>
+                                            <td>
+                                                <p>
+                                                    <span class="color-ef2e36"><strong>수혜자 117명 </strong></span> : 대학생 13, 고등학생 94, 중학생 10 <br>
+                                                    <strong>지급액 : 188,421,730 원</strong>
+                                                </p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th>2003</th>
+                                            <td>
+                                                <p>
+                                                    <span class="color-ef2e36"><strong>수혜자 118명 </strong></span> : 대학생 11, 고등학생 97, 중학생 10 <br>
+                                                    <strong>지급액 : 188,421,730 원</strong>
+                                                </p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th>2002</th>
+                                            <td>
+                                                <p>
+                                                    <span class="color-ef2e36"><strong>수혜자 115명 </strong></span> : 대학생 11, 고등학생 94, 중학생 10 <br>
+                                                    <strong>지급액 : 146,201,910 원</strong>
+                                                </p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th>2001</th>
+                                            <td>
+                                                <p>
+                                                    <span class="color-ef2e36"><strong>수혜자 112명 </strong></span> : 대학생 12, 고등학생 90, 중학생 10 <br>
+                                                    <strong>지급액 : 141,132,770 원</strong>
+                                                </p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th>2000</th>
+                                            <td>
+                                                <p>
+                                                    <span class="color-ef2e36"><strong>수혜자 111명 </strong></span> : 대학생 13, 고등학생 88, 중학생 10 <br>
+                                                    <strong>지급액 : 141,812,900 원</strong>
+                                                </p>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#">
+                                 <div class="accodian-con question arrow bdr-none">
+                                    <p>1990년대</p>
+                                </div>
+                            </a>
+                            <div class="accodian-con answer">
+                                <table class="scholarship-table">
+                                    <colgroup>
+                                        <col width="200px">
+                                        <col width="*">
+                                    </colgroup>
+                                    <tbody>
+                                        <tr>
+                                            <th class="table-tit">장학금 지급</th>
+                                        </tr>
+
+                                        <tr>
+                                            <th>1999</th>
+                                            <td>
+                                                <p>
+                                                    <span class="color-ef2e36"><strong>수혜자 79명 </strong></span> : 대학생 10, 고등학생 64, 중학생 5 <br>
+                                                    <strong>지급액 : 89,531,380 원</strong>
+                                                </p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th>1998</th>
+                                            <td>
+                                                <p>
+                                                    <span class="color-ef2e36"><strong>수혜자 104명 </strong></span> : 대학생 8, 고등학생 91, 중학생 5 <br>
+                                                    <strong>지급액 : 70,171,750 원</strong>
+                                                </p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th>1997</th>
+                                            <td>
+                                                <p>
+                                                    <span class="color-ef2e36"><strong>수혜자 84명 </strong></span> : 대학생 8, 고등학생 70, 중학생 5 <br>
+                                                    <strong>지급액 : 61,572,170 원</strong>
+                                                </p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th>1996</th>
+                                            <td>
+                                                <p>
+                                                    <span class="color-ef2e36"><strong>수혜자 1명 </strong></span> : 대학생 1 <br>
+                                                    <strong>지급액 : 2,032,000 원</strong>
+                                                </p>
+                                            </td>
+                                        </tr>
+
+                                    </tbody>
+                                </table>
+                            </div>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+            <!-- //e:contens -->
+            <!-- s:contents -->
+            <div class="contents pt80 bg-fff">
+                <div class="default-wrap ">
+                    <p class="common-s-tit">장학회 오시는 길</p>
+                    <span class="common-deco"></span>
+                    <!-- s:accodian-wrap -->
+                    <ul class="accodian-wrap mt50 mb90">
+                        <li>
+                            <a href="#">
+                                 <div class="accodian-con question arrow bdr-none">
+                                    <p>동서식품 장학회</p>
+                                    <span>서울시 마포구 독막로 324 (도화동 546번지) 동서빌딩 (우 121 - 730)</span>
+                                </div>
+                            </a>
+                            <div class="accodian-con answer">
+                                <img src="../images/page/04_csr/img_map.jpg" alt="">
+                                <div class="map-con">
+                                    <p class="tit">동서식품 장학회</p>
+                                    <p class="txt">
+                                        서울시 마포구 독막로 324(도화동 546번지) 동서빌딩 (우 121-730) <br>
+                                        공덕역 5호선 (도보3분) 또는 마포역 5호선 2번출구 (도보5분)
+                                    </p>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                    <!-- //e:accodian-wrap -->
+                </div>
+            </div>
+            <!-- //e:contents -->
+        </div>
+        <div id="contentsWrap" class="csr bg-f4efe5">
+
+        </div>
+        <!-- //e: contentsWrap -->
+        <!-- s contentsWrap -->
+        <div id="contentsWrap" class="mt80 pt0 csr bg-fff">
+
+        </div>
+        <div id="contentsWrap" class="csr bg-f4efe5">
+
+        </div>
+        <!-- //e: contentsWrap -->
+        <!-- ********** Include ********** -->
+        <!-- s footerWrap -->
+        <div id="footerWrap">
+            <div class="footer default-wrap of-hi">
+                <ul>
+                    <li><a href="#">개인정보취급방침</a></li>
+                    <li><a href="#">이용약관</a></li>
+                    <li><a href="#">영상정보처리기기운영관리방침</a></li>
+                </ul>
+                <!-- s:family-site-wrap -->
+                <div class="family-site-wrap fl-r">
+    				<div class="select-wrap">
+    					<select name="" id="family-site" title="동서식품 브랜드 사이트 선택">
+                            <option selected="selected" value="">브랜드 사이트</option>
+    						<option value="http://"></option>
+    					</select>
+    				</div>
+                    <div class="select-wrap">
+    					<select name="" id="family-site" title="동서식품 패밀리 사이트 선택">
+                            <option selected="selected" value="">패밀리 사이트</option>
+    						<option value="http://"></option>
+    					</select>
+    				</div>
+                    <div class="select-wrap">
+    					<select name="" id="family-site" title="동서식품 커뮤니티 선택">
+                            <option selected="selected" value="">커뮤니티</option>
+    						<option value="http://"></option>
+    					</select>
+    				</div>
+    			</div>
+                <!-- //e:family-site-wrap -->
+            </div>
+            <hr>
+            <div class="copyright default-wrap">
+                <p>
+                    인천시 부평구 새별로 55 (청천동)   [서울사무소] 서울시 마포구 독막로 324 (도화동, 동서빌딩)<br>
+                    대표번호 1588-2233    고객상담실 080-023-9114<br>
+                    Copyright 2017 Dongsuh Food. All rights reserved.
+                </p>
+            </div>
+        </div>
+        <!-- //e:footerWrap -->
+        <!-- ********** //Include ********** -->
+
+        <!-- ********** Include ********** -->
+        <!-- s:searchWrap -->
+        <div class="layerpopup" id="searchWrap">
+            <div class="default-wrap">
+                <form>
+                    <input type="text" name="" value="" placeholder="검색어를 입력해주세요">
+                    <button type="button" class="btn-search" title="검색하기"><img src="../images/common/ico_search.png" alt="검색"></button>
+                </form>
+            </div>
+        </div>
+        <!-- //e:searchWrap -->
+        <!-- ********** //Include ********** -->
+    </div>
+    <!-- //e:wrap -->
+</body>
+</html>
