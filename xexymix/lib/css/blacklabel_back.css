@@ -1,0 +1,22 @@
+#content { padding-top:94px; }
+
+.section_top { position:relative; z-index:5; }
+.section_top .category_title {position:relative; padding:67px 0 44px; color:#333; font-size:24px; font-weight:400; text-align:center;}
+.section_top .category_title .kakao {position:absolute; top:64px; right:0; z-index:5;}
+.section_top .best {position:relative; padding-bottom:90px;}
+.section_top .best .item-wrap .item-cont .item-list {width:98%; margin:0 auto; }
+.section_top .best .slick-prev {position:absolute; top:192px; left:-40px; z-index:5; width:22px; height:44px; background:url('/design/xexymix/image/list_best_prev.png') no-repeat center; color:transparent; text-indent:-9999px;}
+.section_top .best .slick-next {position:absolute; top:192px; right:-40px; z-index:5; width:22px; height:44px; background:url('/design/xexymix/image/list_best_next.png') no-repeat center; color:transparent; text-indent:-9999px;}
+/*#prdBrand .item-wrap {padding-top:50px; }*/
+.section_top .item-wrap .item-cont .item-list dt .no {text-indent:13px; }
+
+.midcate .p_title {font-size:0; text-align:center; border:1px solid #c6c6c6;  }
+.midcate .p_title a {display:inline-block; *zoom:1; *display:inline; height:58px; font-size:15px; font-weight:400; line-height:58px; margin:0 40px; }
+.midcate .p_title a.act {text-decoration:underline; font-weight:600; }
+.midcate img {display:none; }
+.midcate .top_img { display: none; }
+.midcate .blacklabel_top { display: none; }
+
+.midcate .mens_tit { display:none; }
+
+.slick-slide img { display:inherit!important; }

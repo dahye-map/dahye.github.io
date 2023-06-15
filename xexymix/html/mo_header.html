@@ -1,0 +1,431 @@
+<!-- SMARTSKIN. Logout/Header Page API -->
+<script>
+    var SML_DESC_GROBAL = {
+        user:{
+            u_id:'<!--/user_id/-->',
+            u_name:'<!--/user_name/-->',
+            u_reserve:'<!--/user_reserve/-->',
+            u_deposit:'<!--/user_deposit/-->',
+            u_coupon:'<!--/remain_coupon_count/-->'
+        }
+    };
+</script>
+<!-- SMARTSKIN. Layout/Header Page API: end -->
+
+<script src="https://cdn1-aka.makeshop.co.kr/design/xexymix/renewal/mobile/js/jquery-1.9.1.min.js"></script>
+<script src="https://code.jquery.com/jquery-migrate-1.4.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.js" type="text/javascript" charset="utf-8"></script>
+
+<!--상단배너-->
+<script>
+    function appgo() {
+        if(/iPhone|iPad|iPod/i.test(navigator.userAgent)) {
+            // 안드로이드
+            location.href="https://itunes.apple.com/app/id1099729775";
+        } else {
+            location.href="market://details?id=com.makeshop.powerapp.xexymix";
+        }
+    }
+</script>
+<!--상단배너//-->
+
+<!-- 스마트스킨 공통 CSS -->
+
+<aside id="aside">
+
+    <div class="asideBox">
+        <div class="topArea">
+            <div class="language">
+                <div class="multiShop">
+
+                    <div class="nowTit">KOR</div>
+                    <div class="box">
+                        <div class="flag">
+                            <a href="http://en.xexymix.com/Mobile">ENG</a>
+                            <a href="http://cn.xexymix.com/Mobile">CHN</a>
+                            <a href="https://www.xexymix.jp/smartphone/">JP</a>
+                        </div>
+                    </div>
+
+                    <!--div class="nowTit"><img src="https://xexymix.jpg3.kr/xexymix/mobile/img/header/flag_ko.jpg" alt="korean"></div>
+                    <div class="box">
+                    <div class="flag">
+                    <a href="http://en.xexymix.com/Mobile"><img src="https://xexymix.jpg3.kr/xexymix/mobile/img/header/flag_usa.jpg" alt="English"></a>
+                    <a href="http://cn.xexymix.com/Mobile"><img src="https://xexymix.jpg3.kr/xexymix/mobile/img/header/flag_cn.jpg" alt="Chinese"></a>
+                    <a href="https://www.xexymix.jp/smartphone/"><img src="https://xexymix.jpg3.kr/xexymix/mobile/img/header/flag_jp.jpg" alt="Japanese"></a>
+                </div>
+            </div-->
+
+        </div>
+    </div>
+    <div class="logo"><img src="https://xexymix.jpg3.kr/xexymix/2020/main/footer_logo2.png"></div>
+    <div class="asideClose"><a href="#none"><img src="https://xexymix.jpg3.kr/xexymix/2020/main/aside_close_btn.png"></a></div>
+</div>
+<div class="loginBtn">
+    <ul>
+        <!--/if_login/-->
+        <!-- cre.ma / 로그인 회원 정보 / 스크립트를 수정할 경우 연락주세요 (support@cre.ma) -->
+        <i id="crema-login-name" style="display:none;"><!--/user_name/--></i> <i id="crema-login-username" style="display:none;"><!--/user_id/--></i>
+        <li><a href="<!--/link_logout/-->">로그아웃</a></li>
+        <li><a href="<!--/link_mypage/-->">마이페이지</a></li>
+        <!--/else/-->
+        <li><a href="<!--/link_login/-->">로그인</a></li>
+        <li><a href="/m/join_contract.html">회원가입</a></li>
+        <!--/end_if/-->
+        <li><a href="/m/page.html?id=7">About XEXY</a></li>
+    </ul>
+</div>
+
+<div class="cateMenu" id="accordion">
+    <ul class="topMenu">
+        <li>
+            <div class="list_icon"><img src="https://xexymix.jpg3.kr/xexymix/2020m/main/cate_mens_logo_m.png" width="15"> 맨즈</div>
+            <ul>
+                <li><a href="/m/product_list.html?xcode=011&type=X">전체보기</a></li>
+                <li><a href="/m/product_list.html?xcode=011&type=X&mcode=001">상의</a></li>
+                <li><a href="/m/product_list.html?xcode=011&type=X&mcode=002">하의</a></li>
+                <li><a href="/m/product_list.html?xcode=011&type=X&mcode=003">아우터</a></li>
+            </ul>
+        </li>
+        <li>
+            <div class="list_icon"><img src="https://xexymix.jpg3.kr/xexymix/main/m/cate_bl_logo.png" width="15"> 블랙라벨</div>
+            <ul>
+                <!--li><a href="/m/page.html?id=22">블랙라벨이란?</a></li-->
+                <li><a href="/m/product_list.html?xcode=024&type=Y">전체보기</a></li>
+                <li><a href="/m/product_list.html?xcode=024&mcode=002&type=Y">상의</a></li>
+                <li><a href="/m/product_list.html?xcode=024&mcode=003&type=Y">하의</a></li>
+                <li><a href="/m/product_list.html?xcode=024&mcode=004&type=Y">세트</a></li>
+                <li><a href="/m/product_list.html?xcode=024&mcode=005&type=Y">썸머</a></li>
+            </ul>
+        </li>
+        <li><a class="cate_b" href="/m/product_list.html?xcode=012&type=Y">1+1 세트<span class="on"></span></a></li>
+        <li><a class="cate_b" href="/m/product_list.html?xcode=002&type=P">신상품<span class="on"></span></a></li>
+        <li><a class="cate_b" href="/m/product_list.html?xcode=001&type=P">베스트 50<span class="on"></span></a></li>
+
+        <li>
+            <div class="list_icon">상의</div>
+            <ul>
+                <li><a href="/m/product_list.html?xcode=005&type=X">전체보기</a></li>
+                <li><a href="/m/product_list.html?xcode=005&type=X&mcode=002">탑</a></li>
+                <li><a href="/m/product_list.html?xcode=005&type=X&mcode=003">탑브라</a></li>
+                <li><a href="/m/product_list.html?xcode=005&type=X&mcode=001">아우터</a></li>
+            </ul>
+        </li>
+        <li>
+            <div class="list_icon">하의</div>
+            <ul>
+                <li><a href="/m/product_list.html?xcode=006&type=X">전체보기</a></li>
+                <li><a href="/m/product_list.html?xcode=006&type=X&mcode=002">레깅스</a></li>
+                <li><a href="/m/product_list.html?xcode=006&type=X&mcode=003">크롭레깅스</a></li>
+                <li><a href="/m/product_list.html?xcode=006&type=X&mcode=001">쇼츠</a></li>
+                <li><a href="/m/product_list.html?xcode=006&type=X&mcode=004">팬츠</a></li>
+            </ul>
+        </li>
+        <li>
+            <div class="list_icon">애슬레져</div>
+            <ul>
+                <li><a href="/m/product_list.html?xcode=008&type=X">전체보기</a></li>
+                <li><a href="/m/product_list.html?xcode=008&type=X&mcode=001">아우터</a></li>
+                <li><a href="/m/product_list.html?xcode=008&type=X&mcode=002">상의</a></li>
+                <li><a href="/m/product_list.html?xcode=008&type=X&mcode=003">하의</a></li>
+            </ul>
+        </li>
+        <li>
+            <div class="list_icon">악세사리</div>
+            <ul>
+                <li><a href="/m/product_list.html?xcode=007&type=X">전체보기</a></li>
+                <li><a href="/m/product_list.html?xcode=007&type=X&mcode=004">이너웨어</a></li>
+                <li><a href="/m/product_list.html?xcode=007&type=X&mcode=002">양말</a></li>
+                <li><a href="/m/product_list.html?xcode=007&type=X&mcode=001">요가매트</a></li>
+                <li><a href="/m/product_list.html?xcode=007&type=X&mcode=003">기타</a></li>
+            </ul>
+        </li>
+        <li>
+            <div class="list_icon">스윔웨어</div>
+            <ul>
+                <li><a href="/m/product_list.html?xcode=021&type=Y">전체보기</a></li>
+                <li><a href="/m/product_list.html?xcode=021&type=Y&mcode=001">상의</a></li>
+                <li><a href="/m/product_list.html?xcode=021&type=Y&mcode=002">하의</a></li>
+                <li><a href="/m/product_list.html?xcode=021&type=Y&mcode=003">코디아이템</a></li>
+            </ul>
+        </li>
+        <li><a class="cate_b" href="/m/product_list.html?xcode=017&type=Y">플러스사이즈</a></li>
+        <li><a class="cate_b" href="/m/product_list.html?xcode=003&type=Y">시즌오프</a></li>
+
+        <li class="line"></li>
+
+        <li><a class="cate_b" href="/m/board.html?code=xexymix_image3">이벤트</a></li>
+        <li>
+            <div class="list_icon">커뮤니티</div>
+            <ul>
+                <li><a href="/m/board.html?code=xexymix_board3">공지사항</a></li>
+                <li><a href="/m/board.html?code=xexymix_board2" style="color: #ee131a;">실시간포토리뷰</a></li>
+                <li><a href="/m/board.html?code=xexymix_board1">고객만족센터</a></li>
+                <li><a href="/m/board.html?code=xexymix_board22">뮤즈크루</a></li>
+                <li><a href="/m/board.html?code=xexymix_image2">웹진</a></li>
+                <li><a href="/m/page.html?id=8">젝시무비</a></li>
+            </ul>
+        </li>
+        <li>
+            <div class="list_icon">강사회원</div>
+            <ul>
+                <li><a href="/m/board.html?code=xexymix_board6">강사회원신청</a></li>
+                <li><a href="/m/board.html?code=xexymix_board23">멤버십카드신청</a></li>
+                <li><a href="/m/board.html?code=xexymix_board21">강사모델모집</a></li>
+                <li><a href="/m/board.html?code=xexymix_image4">강사모델스토리</a></li>
+                <li><a href="/m/board.html?code=xexymix_board9">강사전용게시판</a></li>
+            </ul>
+        </li>
+        <li><a class="cate_b" href="/m/page.html?id=10">전국매장안내</a></li>
+        <li><a class="cate_b" href="/m/board.html?code=xexymix_board11">기업회원</a></li>
+    </ul>
+</div>
+
+<div class="bannerArea">
+    <ul>
+        <li><a href="/m/board.html?code=xexymix_board2">
+            <img src="https://xexymix.jpg3.kr/xexymix/2020/main/cate_banner1.jpg">
+            <span>PHOTO<br>REVIEW</span>
+        </a>
+    </li>
+    <li>
+        <a href="/m/page.html?id=10">
+            <img src="https://xexymix.jpg3.kr/xexymix/2020/main/cate_banner2.jpg">
+            <span>20.05.30<br>FIT STORE OPEN<br><span style="font-weight: 400; padding-top:25px; font-size:12px;">부산 광복점</span></span>
+        </a>
+    </li>
+</ul>
+</div>
+
+<div class="sns_btn">
+    <a href="https://www.facebook.com/xexymix/" target="_blank">
+        <img src="https://xexymix.jpg3.kr/xexymix/2020/main/sns_facebook.png"><br>
+        Facebook
+    </a>
+    <a href="https://www.instagram.com/xexymix/" target="_blank">
+        <img src="https://xexymix.jpg3.kr/xexymix/2020/main/sns_insta.png"><br>
+        Instagram
+    </a>
+    <a href="https://www.youtube.com/channel/UC1oWjNJHLCJn8UXWaIbqYjg" target="_blank">
+        <img src="https://xexymix.jpg3.kr/xexymix/2020/main/sns_youtube.png"><br>
+        Youtube
+    </a>
+</div>
+</div>
+<div class="asideBack"></div>
+
+<span class="required-desc">만 14세 미만의 아동은 회원가입 시 법적대리인의 동의가 필요합니다. <br>회원가입이 필요할 시 당사 고객센터로 연락해주세요.</span>
+</aside>
+<div id="Hamburger">
+    <!-- 메인 접속시 전체 팝업 -->
+    <!-- img 이미지경로 / href='#'" 터치 시 링크 변경 -->
+    <div id="smartskinMain_popup" class="main_popup_box">
+        <div class="main_popup_DisplayContainer">
+            <div class="main_popup_container">
+                <div class="main_popup_body">
+                    <a href="/m/board.html?code=xexymix_image3&page=1&type=v&board_cate=&num1=999927&num2=00000&number=66&lock=N"><img src="https://xexymix.jpg3.kr/xexymix/popup/200526_popup.jpg"></a>
+                </div>
+                <div class="main_popup_btn">
+                    <span class="btn_todayClose">
+                        <input type="checkbox" id="smartskinTodayClose" name="smartskinTodayClose" >
+                        오늘하루 열지않기
+                    </span>
+                    <span class="btn_close">닫기</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 메인 접속시 전체 팝업 -->
+
+        <script>
+            //메인팝업 사용시 true;
+            //메인팝업 미사용시 false;
+            var smartskinMain_popup=true;
+
+
+            if(smartskinMain_popup){
+                if($("#smartskinMain_popup").length){
+                    var smsFullurl=document.location.href;
+                    smsUrl=smsFullurl.split("?");
+                    smsUrl=smsUrl[0].split("/m/");
+
+                    if(!smsUrl[1] || smsUrl[1]=="main.html" || smsUrl[1] =="index.html"){
+
+                        var smsPopupData=sessionStorage.getItem("smsPopupData");
+                        if(smsPopupData!="open"){
+                            //오늘 하루 열지 않기
+                            var smsDatedata = localStorage.getItem("smsPopupStorage");
+                            if(smsDatedata){
+                                var smsDate=new Date();
+                                var nowTime=smsDate.getTime();
+                                var smsDay=nowTime-smsDatedata;
+                                smsDay=Math.floor(smsDay/(1000*60*60*24));
+                                if(smsDay>=1){
+                                    sessionStorage.setItem("smsPopupData", "open");
+                                    $("#smartskinMain_popup").show();
+                                }
+                            }else{
+                                sessionStorage.setItem("smsPopupData", "open");
+                                $("#smartskinMain_popup").show();
+                            }
+
+                        }else{
+                            var smsPopupCloseData=sessionStorage.getItem("smsPopupCloseData");
+                            if($("#smartskinMain_popup_floating").length && smsPopupCloseData !="open"){
+                                $("#smartskinMain_popup_floating").css("display","block");
+                            }
+                        }
+                    }else if(smsFullurl.search("product_list.html")!=-1){
+                        var smsPopupCloseData=sessionStorage.getItem("smsPopupCloseData");
+                        if($("#smartskinMain_popup_floating").length && smsPopupCloseData !="open"){
+                            $("#smartskinMain_popup_floating").css("display","block");
+                        }
+                    }
+
+
+                    $("#smartskinMain_popup .btn_close").click(function(){
+                        var checkBox=$("input:checkbox[id='smartskinTodayClose']").is(":checked");
+                        if(checkBox){
+                            var smsDate=new Date();
+                            var nowTime=smsDate.getTime();
+                            localStorage.setItem("smsPopupStorage", nowTime);
+                        }
+                        $("#smartskinMain_popup").fadeOut(700);
+                    });
+
+                }
+
+                $(".smartskinMain_popup_floating_close").click(function(){
+                    $("#smartskinMain_popup_floating").fadeOut(700);
+
+                    $(this).fadeOut(700);
+
+                    sessionStorage.setItem("smsPopupCloseData", "open");
+                    $("#SMS_Topmodule_01").animate({ 'bottom':'0px'});
+                });
+
+            }
+        </script>
+        <div id="header-container" style="<!--/head_bg_color/--><!--/head_bg_image/-->">
+
+            <!-- 플로팅배너 -->
+            <!--
+            <div class="xexytime">
+            <a href="/m/product_list.html?xcode=016&mcode=014&type=Y">
+            <div class="float_thumb">
+        </div>
+    </a>
+</div>
+-->
+<!-- // 플로팅배너 -->
+
+
+    <div class="topCateSwipe">
+        <div class="logo-header">
+            <a href="#none" class="drawer-btn02"><img src="https://xexymix.jpg3.kr/xexymix/PL/m/m_menu.png" alt="메뉴 열기"></a>
+            <p><a href="/"><img src="http://xexymix.jpg3.kr/xexymix/introimg/header_logo_fix.jpg" alt=""></a></p>
+            <a href="#"  class="search-btn"><img src="https://xexymix.jpg3.kr/xexymix/PL/m/search_ico.png" alt="검색" /></a>
+            <a href="/m/basket.html"  class="cart-btn"><img src="https://xexymix.jpg3.kr/xexymix/PL/m/cart_ico.png" alt="장바구니" />
+                <p class="count"><!--/user_basket_quantity/--></p></a>
+        </div>
+        <div class="cateSwipe swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <a href="/m/product_list.html?xcode=024&type=Y" class="first bltxt">B.L</a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="/shop/shopbrand.html?xcode=011&type=X">맨즈</a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="/m/product_list.html?xcode=002&type=P" >신상품</a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="/m/product_list.html?xcode=005&type=X" >상의</a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="/m/product_list.html?xcode=006&type=X" >하의</a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="/m/product_list.html?xcode=008&type=X" >애슬레저룩</a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="/m/product_list.html?xcode=007&type=X" >악세서리</a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="/m/product_list.html?xcode=021&type=Y"  style="color:#2366d3; font-weight: 700;">스윔웨어</a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="/m/product_list.html?xcode=003&type=Y" >시즌오프</a>
+                </div>
+            </div>
+        </div>
+        <!--
+        <div class="swiper-button-next catePagingNext"></div>
+        <div class="swiper-button-prev catePagingPrev"></div>
+    -->
+</div>
+<div class="bottomCate">
+    <div class="bottomCate_inner">
+        <div class="logo">
+            <a href="<!--/link_home/-->" class="logo">
+                <img src="https://xexymix.jpg3.kr/xexymix/main/xexymix_logo.png" alt="젝시믹스 로고">
+            </a>
+        </div>
+        <!-- <a href="#" class="drawer-btn"><img src="https://xexymix.jpg3.kr/xexymix/PL/m/m_menu_bk.png" alt="메뉴 열기" /></a> -->
+        <a href="#"  class="search-btn"><img src="https://xexymix.jpg3.kr/xexymix/main/search_ico.png" alt="검색" /></a>
+        <a href="/m/mypage.html?mypage_type=mycoupon" class="coupon-btn"> <img src="https://xexymix.jpg3.kr/xexymix/PL/m/m_coupon.jpg" alt="내쿠폰" />
+            <!--/if_remain_coupon_count(+1)/-->
+            <span class="count"><!--/remain_coupon_count/--></span>
+            <!--/else/-->
+            <span class="count">0</span>
+            <!--/end_if/-->
+        </a>
+        <a href="/m/basket.html"  class="cart-btn"><img src="https://xexymix.jpg3.kr/xexymix/main/cart_ico.png" alt="장바구니" />
+            <p class="count"><!--/user_basket_quantity/--></p>
+        </a>
+
+        <!--/if_login/-->
+        <!-- cre.ma / 로그인 회원 정보 / 스크립트를 수정할 경우 연락주세요 (support@cre.ma) -->
+        <i id="crema-login-name" style="display:none;"><!--/user_name/--></i> <i id="crema-login-username" style="display:none;"><!--/user_id/--></i> <a href="<!--/link_mypage/-->" class="loginBtn"><img src="https://xexymix.jpg3.kr/xexymix/PL/m/mypage_ico.jpg"></a>
+        <!--/else/-->
+        <a href="<!--/link_login/-->" class="loginBtn"><img src="https://xexymix.jpg3.kr/xexymix/PL/m/mypage_ico.jpg"></a>
+        <!--/end_if/-->
+
+        <!--/if_login/-->
+        <!--/else/-->
+        <!-- <span class="icon_join"><img src="https://xexymix.jpg3.kr/xexymix/mobile/img/main/icon_join.gif"></span> -->
+        <!--/end_if/-->
+    </div>
+</div>
+</div>
+<div class="fixed-top-area"></div>
+<div class="search-layer">
+    <div class="search-box"> <a href="#" class="search-close-btn"><img src="https://xexymix.jpg3.kr/xexymix/PL/m/m_close_btn_black.png"></a>
+        <h1>Search</h1>
+        <div class="input-box">
+            <!--/form_search/-->
+            <span class="search-icon"></span>
+            <input type="search" id="keyword" placeholder="검색어를 입력해주세요!" onkeydown=" Enter_Check();" name="s" value="" class="MS_search_word search-input">
+            <a href="<!--/link_search_button/-->" class="submit-btn">Go !</a>
+            <!--/end_form/-->
+        </div>
+    </div>
+    <div class="keyword-tab"> <span>인기검색어</span> </div>
+    <div class="keyword-list">
+        <ul>
+            <li><a href="/m/search.html?search=&prize1=부츠컷">부츠컷</a></li>
+            <li><a href="/m/search.html?search=&prize1=셀라업텐션">셀라업텐션</a></li>
+            <li><a href="/m/search.html?search=&prize1=힙커버업">힙커버업</a></li>
+            <li><a href="/m/search.html?search=&prize1=하이플렉시">하이플렉시</a></li>
+            <li><a href="/m/search.html?search=&prize1=아이스페더">아이스페더</a></li>
+            <li><a href="/m/search.html?search=&prize1=브라탑">브라탑</a></li>
+            <li><a href="/m/search.html?search=&prize1=투인원">투인원</a></li>
+            <li><a href="/m/search.html?search=&prize1=아사나링">아사나링</a></li>
+            <li><a href="/m/search.html?search=&prize1=1%2B1">1+1</a></li>
+            <li><a href="/m/search.html?search=&prize1=네오플렉시">네오플렉시</a></li>
+            <li><a href="/m/search.html?search=&prize1=삭스">삭스</a></li>
+            <li><a href="/m/search.html?search=&prize1=조거팬츠">조거팬츠</a></li>
+        </ul>
+    </div>
+</div>
+</div>

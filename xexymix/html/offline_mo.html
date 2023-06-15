@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <script type="text/javascript" src="../lib/js/ui.js"></script>
+        <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jQuery-rwdImageMaps/1.6/jquery.rwdImageMaps.js"></script>
+        <link type="text/css" rel="stylesheet" href="../lib/css/common.css">
+        <link type="text/css" rel="stylesheet" href="../lib/css/store_style_mo.css">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:300,400,500">
+        <script type="text/javascript" src="http://xexymix.jpg3.kr/xexymix/PL/js/jquery.slimscroll.min.js"></script>
+        <script type="text/javascript" src="http://dapi.kakao.com/v2/maps/sdk.js?appkey=a4c99ec3d620480e8b0d60910dd922cc"></script>
+    </head>
+    <body>
+        <div id="wrap">
+        <!--/include_header(1)/-->
+            <!-- s:contentsWrap -->
+            <div id="contentWrapper" class="offline">
+                <div id="contentWrap">
+                    <div id="content">
+                        <!-- offline-header -->
+                        <div class="store-header">
+                            <h1>오프라인 스토어</h1>
+                            <ul>
+                                <li class="active">
+                                    <a href="#">국내매장</a>
+                                </li>
+                                <li>
+                                    <a href="#">해외매장</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- offline-header -->
+
+                        <!-- store-list-wrap -->
+                        <div class="store-list-wrap">
+                            <div class="store-list">
+                                <div class="list">
+                                    <p class="kor-tit">홍대 젝시믹스핏스토어 (플래그쉽스토어)</p>
+                                    <p class="eng-tit">Hongdae Head Shop</p>
+                                    <p class="addr">
+                                        서울시 마포구 와우산로 80 1층 (서교동 361-20) <br>
+                                        070-8755-0087 / 10:30 ~ 22:30
+                                    </p>
+                                    <div id="map" class="map" name="37.551615:126.923567"></div>
+                                </div>
+                                <div class="list">
+                                    <p class="kor-tit">가로수길 젝시믹스핏스토어(플래그쉽스토어)</p>
+                                    <p class="eng-tit">Garosu Gil xexymix fit store</p>
+                                    <p class="addr">
+                                        서울시 강남구 논현로159길 65 1층 (신사동 545-1)<br>
+                                        070-7619-8586 / 10:30 ~ 22:00
+                                    </p>
+                                    <div id="map02" class="map" name="37.521392:127.023151"></div>
+                                </div>
+                                <div class="list">
+                                    <p class="kor-tit">롯데몰 수원점</p>
+                                    <p class="eng-tit">Suwon Lotte Mall</p>
+                                    <p class="addr">
+                                        경기도 수원시 권선구 세화로134 2층 (서둔동 296-77) <br>
+                                        031-8066-1753 / 10:00 ~ 22:00
+                                    </p>
+                                    <div id="map03" class="map" name="37.264395:126.996856"></div>
+                                </div>
+                                <div class="list">
+                                    <p class="kor-tit">신세계백화점 충청점</p>
+                                    <p class="eng-tit">Chungcheong Shinsegae Department Store</p>
+                                    <p class="addr">
+                                        충청남도 천안시 동남구 만남로 43 B관 3층 (신부동 363-2) <br>
+                                        043-640-5384 / 11:00 ~ 20:00 (월~목), 11:00 ~ 20:30 (금~일)
+                                    </p>
+                                    <div id="map04" class="map" name="36.819684:127.156171"></div>
+                                </div>
+                                <div class="list">
+                                    <p class="kor-tit">신세계백화점 강남점</p>
+                                    <p class="eng-tit">Gangnam Shinsegae Department Store</p>
+                                    <p class="addr">
+                                        서울 서초구 신반포로 176 신관 5층 (반포동 19-3) <br>
+                                        02-3479-1409 / 10:30 ~ 20:00 (월~목), 10:30 ~ 20:30 (금~일)
+                                    </p>
+                                    <div id="map05" class="map" name="37.504312:127.003139"></div>
+                                </div>
+                                <div class="list">
+                                    <p class="kor-tit">롯데월드몰점</p>
+                                    <p class="eng-tit">Lotte World Mall</p>
+                                    <p class="addr">
+                                        서울특별시 송파구 올림픽로300 롯데월드몰점 2층 (신천동 29) <br>
+                                        02-3213-4218 / 10:30 ~ 22:00
+                                    </p>
+                                    <div id="map06" class="map" name="37.513861:127.104326"></div>
+                                </div>
+                                <div class="list">
+                                    <p class="kor-tit">롯데백화점 본점</p>
+                                    <p class="eng-tit">Lotte Department Store Main branch</p>
+                                    <p class="addr">
+                                        서울 중구 남대문로 81 롯데백화점 본점 6층 (소공동 1) <br>
+                                        02-772-3663 / 10:30 ~ 20:00 (월~목), 10:30 ~ 20:30 (금~일)
+                                    </p>
+                                    <div id="map07" class="map" name="37.564877:126.981928"></div>
+                                </div>
+                                <div class="list">
+                                    <p class="kor-tit">신세계면세점 인천공항점</p>
+                                    <p class="eng-tit">Airport Shinsegae Duty Free Shop</p>
+                                    <p class="addr">
+                                        인천광역시 중구 공항로 272 인천국제공항 제1터미널 신세계면세점 121Gate (운서동 2840) <br>
+                                        032-743-5608 / 06:30 ~ 21:30 (연중무휴)
+                                    </p>
+                                    <div id="map08" class="map" name="37.448513:126.448577"></div>
+                                </div>
+                                <div class="list">
+                                    <p class="kor-tit">롯데백화점 전주점</p>
+                                    <p class="eng-tit">Jeonju Lotte Department Store</p>
+                                    <p class="addr">
+                                        전북 전주시 완산구 온고을로 2 5층 (서신동 971) <br>
+                                        063-289-3591 / 10:30 ~ 20:00 (월~목), 10:30 ~ 20:30 (금~일)
+                                    </p>
+                                    <div id="map09" class="map" name="35.180376:128.139797"></div>
+                                </div>
+                                <div class="list">
+                                    <p class="kor-tit">현대백화점 울산점</p>
+                                    <p class="eng-tit">Ulsan Hyundai Department Store</p>
+                                    <p class="addr">
+                                        울산 남구 삼산로 261 7층 (삼산동 1521-1) <br>
+                                        052-228-0728 / 10:30 ~ 21:00
+                                    </p>
+                                    <div id="map10" class="map" name="35.539508:129.335672"></div>
+                                </div>
+                                <div class="list">
+                                    <p class="kor-tit">신세계 센텀시티 부산점</p>
+                                    <p class="eng-tit">Shinsegae Department Store Centum City</p>
+                                    <p class="addr">
+                                        부산광역시 해운대구 센텀남대로 35 3층 (우동 1495) <br>
+                                        051-745-1510 / 11:00 ~ 20:00 (월~목) , 11:00 ~ 20:30 (금~일)
+                                    </p>
+                                    <div id="map11" class="map" name="35.168896:129.129768"></div>
+                                </div>
+                                <div class="list">
+                                    <p class="kor-tit">롯데몰 수지점</p>
+                                    <p class="eng-tit">Suji Lotte Mall</p>
+                                    <p class="addr">
+                                        경기 용인시 수지구 성복동 61-7 롯데몰 수지점 1층 <br>
+                                        031-5174-4127 / 10:30 ~ 22:00
+                                    </p>
+                                    <div id="map12" class="map" name="37.313368, 127.081119"></div>
+                                </div>
+                                <div class="list">
+                                    <p class="kor-tit">현대백화점 판교점</p>
+                                    <p class="eng-tit">Pangyo Hyundai Department Store</p>
+                                    <p class="addr">
+                                        경기도 성남시 분당구 판교역로146번길 20 5층 (백현동 541) <br>
+                                        031-5170-1565 / 10:30 ~ 20:00 (월~목) , 10:30 ~ 20:30 (금~일)
+                                    </p>
+                                    <div id="map13" class="map" name="37.392843:127.112039"></div>
+                                </div>
+                                <div class="list">
+                                    <p class="kor-tit">현대백화점 킨텍스점</p>
+                                    <p class="eng-tit">KINTEX Hyundai Department Store</p>
+                                    <p class="addr">
+                                        경기도 고양시 일산서구 호수로 817 현대백화점킨텍스점 5층 (대화동 2602) <br>
+                                        031-822-3550 / 10:30 ~ 20:00 (월~목) , 10:30 ~ 20:30 (금~일)
+                                    </p>
+                                    <div id="map14" class="map" name="37.668153:126.751872"></div>
+                                </div>
+                                <div class="list">
+                                    <p class="kor-tit">현대백화점 유플렉스 충청점</p>
+                                    <p class="eng-tit">Chungcheong Hyundai Department Store U-PLEX</p>
+                                    <p class="addr">
+                                        충북 청주시 흥덕구 직지대로 308 현대백화점유플렉스충청점 B1 (복대동 3380) <br>
+                                        043-909-4870 / 11:00 ~ 21:00 (월~목), 11:00 ~ 21:30 (금~일)
+                                    </p>
+                                    <div id="map15" class="map" name="36.644974:127.426491"></div>
+                                </div>
+                                <div class="list">
+                                    <p class="kor-tit">현대백화점 유플렉스 중동점</p>
+                                    <p class="eng-tit">Jungdong Hyundai Department Store U-PLEX</p>
+                                    <p class="addr">
+                                        경기도 부천시 길주로 180 현대백화점중동점 유플렉스 B1층 (중동 1164) <br>
+                                        032-623-1486 / 10:30 ~ 22:00
+                                    </p>
+                                    <div id="map16" class="map" name="37.504702:126.760920"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- store-list-wrap -->
+
+                        <div class="foreign-store-wrap">
+                            <p>
+                                Comming soon <br>
+                                준비중입니다.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- //e:contentsWrap -->
+            <!--/include_footer(1)/-->
+        </div>
+
+
+        <script>
+        var store_list = $('.store-list .list');
+        var _isSlide = false;
+        $('.store-list .list p').click(function(e) {
+            e.preventDefault();
+            // $('.map').css("visibility","hidden");
+            $this = $(this).parent('.list');
+            $target = $(this).parent('.list').children('.map');
+            var allPanels = $this.parent('.store-list').find('.list .map');
+            if(!_isSlide){
+                _isSlide = true;
+                if(!$target.hasClass('active')){
+                    allPanels.slideUp(400).removeClass('active');
+                    $target.slideDown(400).addClass('active');
+
+
+                } else {
+                    $target.slideUp(400).removeClass('active');
+                }
+                setTimeout(function(){_isSlide=false;},200);
+            }
+
+        });
+        </script>
+        <script type="text/javascript" src="../lib/js/ui.js"></script>
+    </body>
+</html>
