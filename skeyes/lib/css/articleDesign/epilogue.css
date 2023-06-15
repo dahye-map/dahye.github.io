@@ -1,0 +1,68 @@
+@charset "utf-8";
+
+#headline { background:url('../../../img/epilogue/headline_bg.jpg') no-repeat center top; }
+#headline img { position:relative; z-index:3; }
+#lead p { color:#333333; line-height:1.55; padding:45px 0; text-align:center; }
+#lead { background:#fff; padding:0; position:relative; z-index:2; margin-top:-15px; }
+
+.epilogue p { color:#333; line-height:1.5; }
+
+.bg-01 { background:#9fc4ea; }
+.bg-02 { background:#e34d4d; color:#fff; }
+.bg-02 p { color:#fff; }
+.bg-02 .sub-tit { font-size:28px; color:#ffd62f; }
+.bg-02 .exp { color:#333; }
+.bg-02 .l-man { position:relative; z-index:2; }
+.bg-02 .rch-box .tit { margin-top:-26px; font-size:23px; color:#000; padding:35px 63px 20px 63px; background:#ffd62f; font-weight:bold; }
+.wave { margin-top:-5px; }
+.wave img { width:100%; }
+.bg-03 { background:#213142; }
+.bg-03 p { color:#fff; }
+.bg-03 .sub-tit { font-size:22px; }
+
+.rch-box .con-box { background:#ffffff; color:#434343; padding:35px 55px; }
+.rch-box .con-box label { float:none; position:relative; margin-bottom: 6px; width:auto; height: 32px; line-height: 1.5; margin-right:32px; margin-left:0; padding-left:25px; cursor:pointer; background: url('../../../img/epilogue/radio_off.jpg') no-repeat left top;}
+.rch-box .con-box label.r_on {background:url('../../../img/epilogue/radio_on.jpg') no-repeat left top;}
+.rch-box .con-box label.exp1 {margin-right:79px;}
+.rch-box .con-box label input {position:absolute; top:0; left:0; width:auto; margin:0; z-index:-1}
+.rch-box .con-box textarea{ width:100%; min-height:256px; border:1px solid #000; padding:25px;}
+
+.epilogue .ip-tit{font-size:18px;}
+.epilogue .txt2{line-height:1.76; font-weight:bold;}
+.epilogue .txt2 u{font-size:18px;}
+.epilogue label { float:left; width:20%;height:52px;line-height:1;font-size: 14px;font-weight:bold; }
+.epilogue label.ip-tit{padding:15px 0; text-align:left;}
+.epilogue input[type="text"]{float:left; width:79.5%; height:48px; line-height:52px; border:2px solid #eeb655; background:#fff;}
+
+@media \0screen {
+/* /IE8 only */
+}
+@media (max-width: 1200px) {
+}
+
+@media (max-width: 1091px) {
+}
+
+@media (max-width: 1199px) {
+    .bg-03 .coner { min-height:72px; }
+    .bg-02 .col-md-7 { width:100%; }
+    .bg-02 .col-md-5 { width:100%; }
+    .fl-r { float:none; }
+}
+
+@media (max-width: 991px) {
+    .bg-03 .coner { min-height:auto; }
+}
+
+@media (max-width: 767px) {
+}
+
+@media (max-width: 640px) {
+
+}
+
+@media (max-width: 550px) {
+}
+
+@media (max-width: 320px){
+}

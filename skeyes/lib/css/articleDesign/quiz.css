@@ -1,0 +1,63 @@
+@charset "utf-8";
+
+#headline { background:#4aa02f url('../../../img/quiz/headline_bg.jpg') no-repeat center; background-size:cover;}
+.bg-01 { background:#272745; }
+.bg-01 .row { position:relative; }
+.bg-01 p { color:#fff; font-size:22px; }
+.personal p { font-size:40px; color:#ffffff; text-align:right; margin:8px 0; font-weight:bold;}
+.personal input[type="text"] { font-size:40px; width:85%; height:53px; background:#272745; padding:6px; margin:0; border:6px solid #f6f6f6; border-radius:25px; color:#fff; }
+.question { overflow:hidden; }
+.question p { font-size:26px; color:#ffffff; margin:0; margin-bottom:25px; line-height:1.846; }
+.question p.alone { margin-top:-7px;}
+.question .q { background-position:left 10px; background-repeat:no-repeat; padding-left:90px; }
+.question .q01 { background-image:url('../../../img/quiz/q01.jpg') }
+.question .q02 { background-image:url('../../../img/quiz/q02.jpg') }
+.question .q03 { background-image:url('../../../img/quiz/q03.jpg') }
+.question .q04 { background-image:url('../../../img/quiz/q04.jpg') }
+.question .q05 { background-image:url('../../../img/quiz/q05.jpg') }
+.question input[type="text"] { background:#fff; border-radius:10px; font-size:26px; height:40px; width:40px; text-align:center; }
+
+.question .init { position:relative; display:inline-block; }
+.question .initial { position:absolute; left:0; top:4px; cursor:pointer; }
+
+
+.hint { display:inline-block; margin-left:10px;}
+.deco01 { position:absolute; left:-110px; top:-31px; }
+.deco02 { position:absolute; right:-186px; top:-152px; }
+.deco03 { position:absolute; left:-264px; top:-105px; }
+
+
+
+@media \0screen {
+/* /IE8 only */
+}
+@media (max-width: 1213px) {
+}
+
+@media (max-width: 1024px) {
+}
+
+
+@media (max-width: 991px) {
+    .personal p,.personal input[type="text"] { font-size:30px;}
+}
+
+@media (max-width: 768px) {
+    #headline { background-size:contain; }
+    #lead { margin-top:35px; }
+    .question .initial { top:0; }
+    .personal p,.personal input[type="text"] { font-size:28px;}
+    .question p,.question input[type="text"] { font-size:18px;}
+}
+@media (max-width: 640px) {
+
+}
+@media (max-width: 578px) {
+
+}
+@media (max-width: 480px) {
+
+}
+@media (max-width: 360px) {
+
+}

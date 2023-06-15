@@ -1,0 +1,49 @@
+@charset "utf-8";
+
+#headline { background:url('../../../img/architecture/headline_bg.jpg') no-repeat center bottom; }
+#lead p { color:#505050; line-height:1.55; word-break:keep-all; }
+
+.architecture p {color:#505050; line-height:1.5; }
+.bg p{color: #fff;line-height: 1.5; }
+
+.bg01{ background:url('../../../img/architecture/bg01.png') no-repeat left bottom; }
+.bg02 { background-color:#9d74ae; }
+.bg03 { background:url('../../../img/architecture/bg02.png') no-repeat right bottom; }
+.bg04 { background-color:#f18753; }
+
+.highlight { color:#747474; border-bottom:1px solid #747474; padding-bottom:1px; }
+
+.bd { border-top:1px solid #ebebeb; }
+.img05-mt { margin-top:-18px; }
+.txt-pd { padding-left:40px; }
+@media \0screen {
+/* /IE8 only */
+}
+@media (max-width: 1219px) {
+}
+@media (max-width: 1199px) {
+}
+
+@media (max-width: 991px) {
+    .fl-r { float: none;}
+    .mt-991 { margin-top:30px; }
+    .txt-pd { padding-left:0; }
+    .img05-mt { margin-top:30px; }
+}
+@media (max-width: 767px) {
+}
+
+@media (max-width: 640px) {
+}
+
+@media (max-width: 550px) {
+
+}
+
+@media (max-width: 480px) {
+
+}
+
+@media (max-width: 320px){
+
+}
