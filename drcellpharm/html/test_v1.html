@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+
+    <link rel="stylesheet" href="../lib/css/common.css">
+    <link rel="stylesheet" href="../lib/css/test_v1.css">
+
+    <title></title>
+</head>
+
+<body id="main">
+    <div id="wrap">
+
+        <div id="container">
+            <div id="contents">
+
+                <div id="curationWrap">
+                    <div class="step-wrap">
+                        <div id="progress-bar">
+                            <p id="progress-status"></p>
+                            <div id="progress" style="width:7%;"></div>
+                        </div>
+    
+                        <div class="curation-step curation-step-1">
+                            <p class="curation-title">다이어트를 해 본 경험이 있습니까?</p>
+                            <div class="curation-choice-div">
+                                <ul>
+                                    <li class="item-step1-1" onclick="select_one('step1-1')">네</li>
+                                    <li class="item-step1-2" onclick="select_one('step1-2')">아니오</li>
+                                </ul>
+                            </div>
+                        </div>
+    
+                        <div class="curation-step curation-step-2">
+                            <p class="curation-title">다이어트를 결심하게 된 특별한 이유나 이벤트가 있으신가요?</p>
+                            <div class="curation-choice-div">
+                                <ul>
+                                    <li class="item-step2-1" onclick="select_multi('step2-1')">자신감을 회복하고 싶어요</li>
+                                    <li class="item-step2-2" onclick="select_multi('step2-2')">스트레스를 안받고 싶어요</li>
+                                    <li class="item-step2-3" onclick="select_multi('step2-3')">조금 더 건강해지고 싶어요</li>
+                                    <li class="item-step2-4" onclick="select_multi('step2-4')">중요한 행사가 있어요 (결혼, 데이트)</li>
+                                    <li class="item-step2-5" onclick="select_multi('step2-5')">기타 <input type="text"></li>
+                                </ul>
+    
+                                <p class="desc">* 해당되는 부분에 모두 체크해주시기 바랍니다.(중복 체크 가능)</p>
+                            </div>
+                        </div>
+    
+                        <div class="curation-step curation-step-3">
+                            <p class="curation-title">당신의 닉네임을 설정해주세요!</p>
+                            <div class="curation-choice-div">
+                                <input :value="name" @change="changeName($event)" class="info-input">
+                            </div>
+                        </div>
+    
+                        <div class="curation-step curation-step-4">
+                            <p class="curation-title">{{name}}님의 현재 몸무게와 목표 몸무게를 알려주세요!</p>
+                            <div class="curation-choice-div">
+                                <p>현재 몸무게</p>
+                                <input type="number" class="info-input" style="width:100%"><br><br>
+                                <p>목표 몸무게</p>
+                                <input type="number" class="info-input" style="width:100%">
+    
+                                <p class="desc">* 솔루션 처방을 위한 측정 데이터로만 사용되며, <br>유출 가능성은 없으니 안심하고 작성해주시기 바랍니다</p>
+                            </div>
+                        </div>
+    
+                        <div class="curation-step curation-step-5">
+                            <p class="curation-title type1">{{name}}님을 살 찌우는 안좋은 식습관은 무엇인가요?</p>
+                            <p class="curation-title type2">평소 {{name}}님의 안좋은 식습관은 무엇인가요?</p>
+                            <div class="curation-choice-div">
+                                <ul>
+                                    <li class="item-step5-1" onclick="select_multi('step5-1')">하루에 한 끼만 먹어요</li>
+                                    <li class="item-step5-2" onclick="select_multi('step5-2')">주로 폭식을 해요</li>
+                                    <li class="item-step5-3" onclick="select_multi('step5-3')">식사 시간이 불규칙해요</li>
+                                    <li class="item-step5-4" onclick="select_multi('step5-4')">군것질을 자주 먹어요</li>
+                                    <li class="item-step5-5" onclick="select_multi('step5-5')">야식을 주 3회 이상 먹어요</li>
+                                    <li class="item-step5-6" onclick="select_multi('step5-6')">기타 <input type="text"></li>
+                                </ul>
+    
+                                <p class="desc">* 해당되는 부분에 모두 체크해주시기 바랍니다.(중복 체크 가능)</p>
+                            </div>
+                        </div>
+    
+                        <div class="curation-step curation-step-6">
+                            <p class="curation-title type1">다이어트 시 가장 힘들었던 부분은 무엇인가요?</p>
+                            <p class="curation-title type2">{{name}}님이 가장 이상적으로 생각하는 다이어트는 어떤건가요?</p>
+                            <div class="curation-choice-div">
+                                <ul class="type1">
+                                    <li class="item-step6-1" onclick="select_multi('step6-1')">참을 수 없는 식욕</li>
+                                    <li class="item-step6-2" onclick="select_multi('step6-2')">변비</li>
+                                    <li class="item-step6-3" onclick="select_multi('step6-3')">체내 수분 손실</li>
+                                    <li class="item-step6-4" onclick="select_multi('step6-4')">피부 건강 악화</li>
+                                </ul>
+    
+                                <ul class="type2">
+                                    <li class="item-step6-1" onclick="select_multi('step6-1')">굶지 않아도 되는 다이어트</li>
+                                    <li class="item-step6-2" onclick="select_multi('step6-2')">체내 수분이 먼저 빠지는 다이어트</li>
+                                    <li class="item-step6-3" onclick="select_multi('step6-3')">장 운동이 활발한 변비 없는 다이어트</li>
+                                    <li class="item-step6-4" onclick="select_multi('step6-4')">피부로 인한 고민이 동반되지 않는 다이어트</li>
+                                </ul>
+    
+                                <p class="desc">* 해당되는 부분에 모두 체크해주시기 바랍니다.(중복 체크 가능)</p>
+                            </div>
+                        </div>
+    
+                        <div class="curation-step curation-step-7">
+                            <p class="curation-title">평소 {{name}}님의 부종 상태는 어떤가요?</p>
+                            <div class="curation-choice-div">
+                                <ul>
+                                    <li class="item-step7-1" onclick="select_multi('step7-1')">아침에 온몸이 무거워요</li>
+                                    <li class="item-step7-2" onclick="select_multi('step7-2')">저녁에 다리가 부어요</li>
+                                    <li class="item-step7-3" onclick="select_multi('step7-3')">손과 다리가 주로 부어요</li>
+                                    <li class="item-step7-4" onclick="select_multi('step7-4')">발등, 종아리가 주로 부어요</li>
+                                    <li class="item-step7-5" onclick="select_multi('step7-5')">손과 발이 저려요</li>
+                                    <li class="item-step7-6" onclick="select_multi('step7-6')">기타 <input type="text"></li>
+                                </ul>
+    
+                                <p class="desc">* 해당되는 부분에 모두 체크해주시기 바랍니다.(중복 체크 가능)</p>
+                            </div>
+                        </div>
+    
+                        <div class="curation-step curation-step-8">
+                            <p class="curation-title">평소 {{name}}님의 소화 상태는 어떤가요?</p>
+                            <div class="curation-choice-div">
+                                <ul>
+                                    <li class="item-step8-1" onclick="select_multi('step8-1')">자주 더부룩해져요</li>
+                                    <li class="item-step8-2" onclick="select_multi('step8-2')">속이 쓰려요</li>
+                                    <li class="item-step8-3" onclick="select_multi('step8-3')">잘 체해요</li>
+                                    <li class="item-step8-4" onclick="select_multi('step8-4')">가끔 신물이 올라와요</li>
+                                    <li class="item-step8-5" onclick="select_multi('step8-5')">소화가 잘 되는 편이에요</li>
+                                    <li class="item-step8-6" onclick="select_multi('step8-6')">기타 <input type="text"></li>
+                                </ul>
+    
+                                <p class="desc">* 해당되는 부분에 모두 체크해주시기 바랍니다.(중복 체크 가능)</p>
+                            </div>
+                        </div>
+    
+                        <div class="curation-step curation-step-9">
+                            <p class="curation-title">평소 {{name}}님의 배변활동은 어떤가요?</p>
+                            <div class="curation-choice-div">
+                                <ul>
+                                    <li class="item-step9-1" onclick="select_multi('step9-1')">변비가 있어요</li>
+                                    <li class="item-step9-2" onclick="select_multi('step9-2')">설사가 잦아요</li>
+                                    <li class="item-step9-3" onclick="select_multi('step9-3')">매일 대변을 못 보면 속이 더부룩하고 불편해요</li>
+                                    <li class="item-step9-4" onclick="select_multi('step9-4')">크게 문제 없이 잘 봐요</li>
+                                    <li class="item-step9-5" onclick="select_multi('step9-5')">기타 <input type="text"></li>
+                                </ul>
+    
+                                <p class="desc">* 해당되는 부분에 모두 체크해주시기 바랍니다.(중복 체크 가능)</p>
+                            </div>
+                        </div>
+    
+                        <div class="curation-step curation-step-10">
+                            <p class="curation-title">일주일에 30분 이상의 운동은 얼마나 자주 하시나요?</p>
+                            <div class="curation-choice-div">
+                                <ul>
+                                    <li class="item-step10-1" onclick="select_one('step10-1')">주 5회 이상 해요</li>
+                                    <li class="item-step10-2" onclick="select_one('step10-2')">주 3~5회 해요</li>
+                                    <li class="item-step10-3" onclick="select_one('step10-3')">주 1~2회 해요</li>
+                                    <li class="item-step10-4" onclick="select_one('step10-4')">전혀 하지 않아요</li>
+                                    <li class="item-step10-5" onclick="select_one('step10-5')">기타 <input type="text"></li>
+                                </ul>
+                            </div>
+                        </div>
+    
+                        <div class="curation-step curation-step-11">
+                            <p class="curation-title">평소 {{name}}님의 수면 패턴은 어떤가요?</p>
+                            <div class="curation-choice-div">
+                                <ul>
+                                    <li class="item-step11-1" onclick="select_multi('step11-1')">잠에 쉽게 들지 못해요</li>
+                                    <li class="item-step11-2" onclick="select_multi('step11-2')">잠이 들어도 자주 깨요</li>
+                                    <li class="item-step11-3" onclick="select_multi('step11-3')">커피 등 카페인 음료를 마시면 두근거리거나 밤에 잠을 설쳐요</li>
+                                    <li class="item-step11-4" onclick="select_multi('step11-4')">아침에 잘 일어나지 못해요</li>
+                                    <li class="item-step11-5" onclick="select_multi('step11-5')">대체적으로 잠을 잘 자요</li>
+                                    <li class="item-step11-6" onclick="select_multi('step11-6')">기타 <input type="text"></li>
+                                </ul>
+    
+                                <p class="desc">* 해당되는 부분에 모두 체크해주시기 바랍니다.(중복 체크 가능)</p>
+                            </div>
+                        </div>
+    
+                        <div class="curation-step curation-step-12">
+                            <p class="curation-title">{{name}}님의 하루 순수 물 섭취량은 얼마나 되나요?</p>
+                            <div class="curation-choice-div">
+                                <ul>
+                                    <li class="item-step12-1" onclick="select_one('step12-1')">8~10잔 혹은 그 이상</li>
+                                    <li class="item-step12-2" onclick="select_one('step12-2')">5~7잔</li>
+                                    <li class="item-step12-3" onclick="select_one('step12-3')">2~4잔</li>
+                                    <li class="item-step12-4" onclick="select_one('step12-4')">1잔 이하</li>
+                                </ul>
+    
+                                <p class="desc">* 1잔 - 200ml 기준</p>
+                            </div>
+                        </div>
+    
+                        <div class="curation-step curation-step-13">
+                            <p class="curation-title type1">다이어트 시 몸의 수분 상태는 어땠나요?</p>
+                            <p class="curation-title type2">평소 {{name}}님의 몸의 수분 상태는 어땠나요?</p>
+                            <div class="curation-choice-div">
+                                <ul>
+                                    <li class="item-step13-1" onclick="select_multi('step13-1')">피부 각질이 일어나요</li>
+                                    <li class="item-step13-2" onclick="select_multi('step13-2')">속건조로 피부가 따가워요</li>
+                                    <li class="item-step13-3" onclick="select_multi('step13-3')">세안 후 아무것도 안 바르면 피부가 당기거나 푸석푸석해져요</li>
+                                    <li class="item-step13-4" onclick="select_multi('step13-4')">눈에 띄게 피부 노화가 진행되고 있는 듯한 느낌이 들어요</li>
+                                    <li class="item-step13-5" onclick="select_multi('step13-5')">눈이 건조해요</li>
+                                    <li class="item-step13-6" onclick="select_multi('step13-6')">기타 <input type="text"></li>
+                                </ul>
+    
+                                <p class="desc">* 해당되는 부분에 모두 체크해주시기 바랍니다.(중복 체크 가능)</p>
+                            </div>
+                        </div>
+    
+                        <!-- 솔루션 결과 -->
+                        <div class="curation-step curation-step-14">
+                            <p class="curation-title type1">다이어트 시 가장 눈에 띄는 피부 변화는 무엇이었나요?</p>
+                            <p class="curation-title type2">최근 {{name}}님의 피부 고민은 무엇인가요?</p>
+                            <div class="curation-choice-div">
+                                <ul class="type1">
+                                    <li class="item-step14-1" onclick="select_one('step14-1'); curation_result('step14-1')">힘을 잃고 축축 처져요</li>
+                                    <li class="item-step14-2" onclick="select_one('step14-2'); curation_result('step14-2')">생기를 잃고 안색이 어두워져요</li>
+                                    <li class="item-step14-3" onclick="select_one('step14-3'); curation_result('step14-3')">예민해져 울긋불긋 해져요</li>
+                                    <li class="item-step14-4" onclick="select_one('step14-4'); curation_result('step14-4')">기타 <input type="text"></li>
+                                </ul>
+    
+                                <ul class="type2">
+                                    <li class="item-step14-1" onclick="select_one('step14-1'); curation_result('step14-1')">피부가 힘 없이 늘어지고 축 처졌어요</li>
+                                    <li class="item-step14-2" onclick="select_one('step14-2'); curation_result('step14-2')">기미, 잡티, 다크서클 등 거뭇거뭇 칙칙해요</li>
+                                    <li class="item-step14-3" onclick="select_one('step14-3'); curation_result('step14-3')">피부가 거칠고 울긋불긋 예민해요</li>
+                                    <li class="item-step14-4" onclick="select_one('step14-4'); curation_result('step14-4')">기타 <input type="text"></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- 솔루션 결과 -->
+    
+                        <div class="curation-step curation-step-15">
+                            <p class="curation-title type1">다이어트 시 가장 듣기 싫은 말은 무엇이었나요?</p>
+                            <p class="curation-title type2">다이어트를 하게 된 후 가장 듣기 싫을 것 같은 말은 무엇인가요?</p>
+                            <div class="curation-choice-div">
+                                <ul class="type1">
+                                    <li class="item-step15-1" onclick="select_one('step15-1')">오늘까진 괜찮아~ 내일부터 해</li>
+                                    <li class="item-step15-2" onclick="select_one('step15-2')">좀 먹어~ 굶으면 건강에 안 좋아</li>
+                                    <li class="item-step15-3" onclick="select_one('step15-3')">어디 아파? 피부가 푸석해, 아파보인다</li>
+                                    <li class="item-step15-4" onclick="select_one('step15-4')">밤에 잠 못 잤어? 다크서클 내려왔어</li>
+                                    <li class="item-step15-5" onclick="select_one('step15-5')">피부 처진 것 좀 봐, 더 나이 들어 보여</li>
+                                    <li class="item-step15-6" onclick="select_one('step15-6')">기타 <input type="text"></li>
+                                </ul>
+                                <ul class="type2">
+                                    <li class="item-step15-1" onclick="select_one('step15-1')">너가? 다이어트를? 불가능할 것 같은데</li>
+                                    <li class="item-step15-2" onclick="select_one('step15-2')">좀 그만 먹어~ 그렇게 먹어서 언제 살 뺄래?</li>
+                                    <li class="item-step15-3" onclick="select_one('step15-3')">건강에 해로운 거 아니야? 피부 다 상할텐데</li>
+                                    <li class="item-step15-4" onclick="select_one('step15-4')">스트레스 많이 받아? 안색이 안 좋네</li>
+                                    <li class="item-step15-5" onclick="select_one('step15-5')">피부 처지는 거 아니야? 나이 들어 보이겠어</li>
+                                    <li class="item-step15-6" onclick="select_one('step15-6')">기타 <input type="text"></li>
+                                </ul>
+                            </div>
+                        </div>
+    
+    
+                        <div id="button-div">
+                            <button id="prev-button" onclick="prev_step()">이전</button>
+                            <button id="next-button" disabled="" onclick="next_step()">다음</button>
+                            <button id="finish" onclick="" disabled="">제출하기</button>
+                        </div>
+                    </div>
+
+                    <div class="result-wrap">
+                        <div class="curation-result-a">{{name}}님의 문진 결과, A솔루션을 처방해드립니다.</div>
+                        <div class="curation-result-d">{{name}}님의 문진 결과, D솔루션을 처방해드립니다.</div>
+                        <div class="curation-result-s">{{name}}님의 문진 결과, S솔루션을 처방해드립니다.</div>
+                    </div>   
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script>
+
+        new Vue({
+            el: '#curationWrap',
+            data: {
+                name: ''
+            },
+            methods: {
+                changeName($event){
+                    this.name = $event.target.value;
+                }
+            }
+        });
+
+        var step = 1;
+        $('#progress-status').text((step).toString() + '/' + $('.curation-step').length);
+
+        //버튼 초기 설정
+        if (step == 1) {
+            $('#prev-button').hide();
+            $('#next-button').css('width', '100%');
+            $('#next-button').show();
+        }
+
+        function change_step() {
+            var step_id = '.curation-step-' + step.toString();
+            $('.curation-step').hide();
+            $(step_id).show();
+            $('#progress-status').text((step).toString() + '/' + $('.curation-step').length);
+            $('#progress').css('width', ((step) * (100 / $('.curation-step').length)).toString() + '%');
+
+            // 다중선택 초기화
+            values.multi.length = 0;
+        }
+
+        function next_step() {
+            var next_step = step + 1;
+
+
+            switch (next_step) {
+                case 1:
+                    $('#prev-button').show();
+                    $('#next-button').css('width', '');
+                    $('#next-button').show();
+
+                case 2:
+                    $('#next-button').attr('disabled', true);
+                    $('#prev-button').show();
+                    $('#next-button').css('width', '');
+                    $('#next-button').show();
+                    break;
+                case 5:
+                    $('#next-button').attr('disabled', true);
+                    break;
+                case 6:
+                    $('#next-button').attr('disabled', true);
+                    break;
+                case 7:
+                    $('#next-button').attr('disabled', true);
+                    break;
+                case 8:
+                    $('#next-button').attr('disabled', true);
+                    break;
+                case 9:
+                    $('#next-button').attr('disabled', true);
+                    break;
+                case 10:
+                    $('#next-button').attr('disabled', true);
+                    break;
+                case 11:
+                    $('#next-button').attr('disabled', true);
+                    break;
+                case 12:
+                    $('#next-button').attr('disabled', true);
+                    break;
+                case 13:
+                    $('#next-button').attr('disabled', true);
+                    break;
+                case 14:
+                    $('#next-button').attr('disabled', true);
+                    break;
+                case 15:
+                    $('#finish').attr('disabled', true);
+                    $('#next-button').hide();
+                    $('#finish').show();
+                    break;
+            }
+            step = next_step;
+            change_step();
+        }
+
+        function prev_step() {
+            var prev_step = step - 1;
+
+            if (prev_step == 1) {
+                $('#prev-button').hide();
+                $('#next-button').css('width', '100%');
+                $('#next-button').show();
+            }
+
+            if($('.curation-choice-div ul li').hasClass('active')) {
+                $('#next-button').attr('disabled', false);
+            }
+            
+            step = prev_step;
+            $('#next-button').show();
+            $('#finish').hide();
+            change_step();
+        }
+
+        function select_one(value) {
+            $('.curation-choice-div ul li').removeClass('active');
+            $('.curation-choice-div ul li' + '.item-' + value).addClass('active');
+
+            if(value) {
+                $('#next-button').attr('disabled', false);
+                $('#finish').attr('disabled', false);
+            }
+            
+        }
+        var values = {
+            multi: []
+        };
+
+        function select_multi(value) {
+            $('.curation-choice-div ul li' + '.item-' + value).toggleClass('active');
+
+            if (values.multi.indexOf(value) > -1) {
+                values.multi.splice(values.multi.indexOf(value), 1);
+
+            } else {
+                values.multi.push(value);
+            }
+
+            if (values.multi.length >= 1) {
+                $('#next-button').attr('disabled', false);
+            } else {
+                $('#next-button').attr('disabled', true);
+            }
+
+            console.log(values.multi.length);
+        }
+
+        function curation_result(value) {
+            $('#finish').attr('onclick', "go_result('"+ value +"')");
+        }
+
+        function go_result(value) {
+            if ( value == 'step14-1') {
+                $('.step-wrap').hide();
+                $('.result-wrap .curation-result-a').addClass('active');
+            }
+            if ( value == 'step14-2') {
+                $('.step-wrap').hide();
+                $('.result-wrap .curation-result-d').addClass('active');
+            }
+            if ( value == 'step14-3') {
+                $('.step-wrap').hide();
+                $('.result-wrap .curation-result-s').addClass('active');
+            }
+            if ( value == 'step14-4') {
+                $('.step-wrap').hide();
+                $('.result-wrap .curation-result-s').addClass('active');
+            }
+        }
+
+
+        $('.item-step1-1').click(function(){
+            $('.curation-title.type1, .curation-choice-div .type1').show();
+            $('.curation-title.type2, .curation-choice-div .type2').hide();
+        });
+        $('.item-step1-2').click(function(){
+            $('.curation-title.type1, .curation-choice-div .type1').hide();
+            $('.curation-title.type2, .curation-choice-div .type2').show();
+        });
+    </script>
+
+
+</body>
+
+</html>
