@@ -1,0 +1,704 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="../lib/js/TweenMax.min.js"></script>
+    <script src="../lib/js/ScrollMagic.js"></script>
+    <script src="../lib/js/animation.gsap.js"></script>
+    <script src="../lib/js/debug.addIndicators.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <link rel="stylesheet" href="../lib/css/common.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="../lib/css/detail_type02.css">
+    
+    
+    
+
+    <title>detail</title>
+</head>
+<body>
+
+    <div id="wrap">
+        <div id="containerWrap">
+            <div class="contianer">
+
+
+                <section class="section section01">
+                    <!-- <div class="bg">
+                        <p><img src="" alt=""></p>
+                    </div> -->
+                    <div class="txt">
+                        <p class="sub-tit">오직 나만을 위한 맞춤형 건강기능식품</p>
+                        <p class="tit">히얼스 데일리필</p>
+                    </div>
+                </section>
+
+                <section class="section section02">
+                    <div id="trigger1"></div>
+                    <div class="parallax-wrap">
+                        <ul class="parallax">
+                            <li id="sec1">몸에 필요한 24가지 영양소를 간편하게 <br>섭취하고 싶은 분.</li><br>
+                            <li id="sec2">아무리 바빠도 에너지 넘치는 일상 원하시는 분.</li><br>
+                            <li id="sec3">스마트폰,PC,태블릿 등 너무 많은 전자 <br>기기를 사용하여 저녁만 되면 눈이 불편하신분.</li><br>
+                            <li id="sec4">평소 화장실이 너무 불편해서 <br>장 건강이 걱정되는 분. </li>
+                            <li id="sec5"><br><br>위와 같은 분들께 <br>( 히얼스 데일리필 )을 추천합니다.</li>
+                        </ul>
+                    </div>
+                    
+                </section>
+
+
+                <section class="section section03">
+                    <div class="img-up">
+                        <p class="img01"
+                            data-aos="fade-up"
+                            data-aos-duration="1000"><img src="../img/img_detail02.jpg" alt="" class="bdrs"></p>
+                        <p class="img02"
+                            data-aos="fade-up"
+                            data-aos-duration="1000"><img src="../img/img_detail02_02.jpg" alt="" class="bdrs"></p>
+                        <p class="img03"
+                            data-aos="fade-up"
+                            data-aos-duration="1000"><img src="../img/img_detail02_03.jpg" alt="" class="bdrs"></p>
+                    </div>
+                </section>
+
+
+                <section class="section section04">
+                    <div class="inner">
+                        <div class="thumb">
+                            <p><img src="../img/img_detail02_04.jpg" alt="" class="bdrs"></p>
+                        </div>
+                        <div class="txt-wrap">
+                            <p class="tit"
+                                data-aos="fade-up"
+                                data-aos-duration="1000">
+                                오직 <br>
+                                나만을 위한<br>
+                                맞춤형<br>
+                                건강기능식품
+                            </p>
+
+                            <div class="health-list"
+                                data-aos="fade-up"
+                                data-aos-duration="1000">
+                                <p class="sub-tit">#에너지 #활력</p>
+                                <p class="desc">필수 비타민 13종 & 미네랄 8종 함유</p>
+                            </div>
+                            <div class="health-list"
+                                data-aos="fade-up"
+                                data-aos-duration="1000">
+                                <p class="sub-tit">#눈건강 #혈행개선</p>
+                                <p class="desc">루테인&오메가3 함유</p>
+                            </div>
+                            <div class="health-list"
+                                data-aos="fade-up"
+                                data-aos-duration="1000">
+                                <p class="sub-tit">#장건강 보장 균수 10억 CFU</p>
+                                <p class="desc">18종 프로바이오틱스 함유</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+
+                <section class="section section04-1">
+                    <div class="inner">
+                        <p class="tit">핵심포인트.</p>
+                        <div class="point-list-wrap">
+                            <div class="point-list"
+                            data-aos="fade-up"
+                            data-aos-duration="1000">
+                                <p class="img"><img src="../img/img_point01.jpg" alt=""></p>
+                                <div class="box">
+                                    <p class="sub-tit">국내 최초</p>
+                                    <p class="desc">국내 최초 Multi-PTP <br>24종 기능성 함유</p>
+                                </div>
+                            </div>
+                            <div class="point-list"
+                            data-aos="fade-up"
+                            data-aos-duration="1000">
+                                <p class="img"><img src="../img/img_point02.jpg" alt=""></p>
+                                <div class="box">
+                                    <p class="sub-tit">없으면 안될.</p>
+                                    <p class="desc">현대인에게 꼭 필요한 <br>영양성분만 엄선</p>
+                                </div>
+                            </div>
+                            <div class="point-list"
+                            data-aos="fade-up"
+                            data-aos-duration="1000">
+                                <p class="img"><img src="../img/img_point03.jpg" alt=""></p>
+                                <div class="box">
+                                    <p class="sub-tit">고집스러움.</p>
+                                    <p class="desc">투명한 히얼스만의 <br>고집스러운 제조 원칙</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </section>
+
+
+                <!-- <section class="section section05">
+                    <div class="inner">
+                        <p class="tit"
+                            data-aos="fade-up"
+                            data-aos-duration="1000">모든 영양제를 <br>한 곳에 담았다</p>
+                    </div>
+                </section> -->
+
+
+                <section class="section section05-1">
+                    <div class="inner">
+                        <!-- <p class="thumb"><img src="../img/img_pack.png" alt=""></p> -->
+
+                        <div class="typo">
+                            <p><img src="../img/img_typo.gif" alt=""></p>
+                        </div>
+                    </div>
+                </section>
+
+
+                <section class="section section06">
+                    <div class="inner">
+                        <p class="tit"
+                            data-aos="fade-up"
+                            data-aos-duration="1000">
+                            국내 최초<br>
+                            Multi-PTP<br>
+                            24종 기능성 함유
+                        </p>
+
+                        <p class="sub-tit"
+                            data-aos="fade-up"
+                            data-aos-duration="1000">
+                            여러 브랜드, 각 각의 약들 챙겨먹느라 고생한 우리.<br>
+                            24종의 영양제를 한큐에 먹을 수 있는 히얼스 데일리필 
+                        </p>
+
+
+
+                        <div class="pill-wrap">
+                            <div class="left-pill">
+                                <p class="pill pill01"><img src="../img/pill_left01.png" alt=""></p>
+                                <p class="pill pill02"><img src="../img/pill_left02.png" alt=""></p>
+                                <p class="pill pill03"><img src="../img/pill_left03.png" alt=""></p>
+                                <p class="pill pill04"><img src="../img/pill_left04.png" alt=""></p>
+                                <p class="pill pill05"><img src="../img/pill_left05.png" alt=""></p>
+                                <p class="pill pill06"><img src="../img/pill_left06.png" alt=""></p>
+                            </div>
+                            <div class="all-pill">
+                                <p><img src="../img/pill_all.png" alt=""></p>
+                            </div>
+                            <div class="right-pill">
+                                <p class="pill pill01"><img src="../img/pill_right01.png" alt=""></p>
+                                <p class="pill pill02"><img src="../img/pill_right02.png" alt=""></p>
+                                <p class="pill pill03"><img src="../img/pill_right03.png" alt=""></p>
+                                <p class="pill pill04"><img src="../img/pill_right04.png" alt=""></p>
+                                <p class="pill pill05"><img src="../img/pill_right05.png" alt=""></p>
+                                <p class="pill pill06"><img src="../img/pill_right06.png" alt=""></p>
+                                <p class="pill pill07"><img src="../img/pill_right07.png" alt=""></p>
+                                <p class="pill pill08"><img src="../img/pill_right08.png" alt=""></p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+
+                <section class="section section07">
+                    <div class="parallax-wrap">
+                        <div class="parallax-bg">
+                            <img src="../img/img_detail03.jpg" alt="">
+                        </div>
+                        <ul class="parallax">
+                            <li class="up" id="sec6">멀티케어 기능성 제품, <br>다 비슷한거 아니냐고?</li>
+                            <li class="up" id="sec7">히얼스는 달라요</li>
+                            <!-- <li class="up" id="sec8">국내 최초 Multi-PTP <br>24종 기능성 함유33</li> -->
+                        </ul>
+                    </div>
+                </section>
+
+
+
+                <section class="section section08">
+                    <div class="inner">
+                        <div class="img-wrap type01">
+                            <p class="img01"><img src="../img/img_detail02_05.jpg" alt=""></p>
+                            <div class="txt-sec flex">
+                                <div class="txt">
+                                    <p class="tit"
+                                    data-aos="fade-up"
+                                    data-aos-duration="1000">
+                                        한포에 같이 <br>
+                                        담겨있는건<br>
+                                        좋지않아요.
+                                    </p>
+                                    <p class="desc"
+                                    data-aos="fade-up"
+                                    data-aos-duration="1000">
+                                        히얼스만의 기술력으로 특수 제작된<br>
+                                        멀티PTP로  각각의 기능성이 서로 영향을<br>
+                                        받지않도록 개별분리했어요.
+                                    </p>
+                                </div>
+                                <div class="img02"><img src="../img/img_detail02_06.jpg" alt=""></div>
+                            </div>
+                        </div>
+                        <div class="img-wrap type02">
+                            <p class="img03"><img src="../img/img_detail02_07.jpg" alt=""></p>
+                            <div class="txt-sec">
+                                <div class="txt">
+                                    <p class="tit"
+                                    data-aos="fade-up"
+                                    data-aos-duration="1000">
+                                        어떻게 다 갖고 다녀요? <br>
+                                        내 주머니는 작은걸요.
+                                    </p>
+                                    <p class="desc"
+                                    data-aos="fade-up"
+                                    data-aos-duration="1000">
+                                        하루 한포만 챙길 수 있을 정도로 미니멀하고, <br>
+                                        개별분리되어 특수제작된 멀티 PTP로<br>
+                                        습기와 산화에 강해 안정성이 최우선시 되도록. 
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+
+
+                <section class="section section09">
+                    <div class="inner">
+                        <div class="tit-wrap"
+                        data-aos="fade-up"
+                            data-aos-duration="1000">
+                            <p class="tit">모두 다 담았는데 <br>다른거 챙겨먹을 필요 있나요.</p>
+                            <p class="sub-tit">현대인 맞춤 필수 영양 성분 24종, 다 담았어요-</p>
+                        </div>
+                        <div class="pill-bene-wrap">
+                            <div class="pill-bene"
+                            data-aos="fade-up"
+                            data-aos-duration="1000">
+                                <p class="thumb"><img src="../img/img_pill_bene01.png" alt=""></p>
+                                <div class="desc-wrap">
+                                    <p class="title">장건강을 위한 균수 10CFU</p>
+                                    <p class="desc">18종 프로바이오틱스</p>
+                                </div>
+                            </div>
+                            <div class="pill-bene"
+                            data-aos="fade-up"
+                            data-aos-duration="1000">
+                                <p class="thumb"><img src="../img/img_pill_bene02.png" alt=""></p>
+                                <div class="desc-wrap">
+                                    <p class="title">한국인 맞춤 비타민, 미네랄 설계</p>
+                                    <p class="desc">비타민 13종 & 미네랄 8종</p>
+                                </div>
+                            </div>
+                            <div class="pill-bene"
+                            data-aos="fade-up"
+                            data-aos-duration="1000">
+                                <p class="thumb"><img src="../img/img_pill_bene03.png" alt=""></p>
+                                <div class="desc-wrap">
+                                    <p class="title">눈건강과 혈행 개선을 동시에.</p>
+                                    <p class="desc">오메가3(EPA 및 DHA 함유유지)</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+
+                <section class="section section10">
+                    <div class="inner">
+                        <div class="indi-pill-wrap vita">
+                            <div class="thumb"><img src="../img/img_indi_pill01.jpg" alt=""></div>
+                            <div class="pill-info">
+                                <p class="tit">비타민 13종 & <br>미네랄 8종</p>
+                                <p class="desc">
+                                    한국인 맞춤 비타민 & 미네랄 함량 설계로 <br>
+                                    1일 영양성분 기준치 최대 200% 이상 함유된<br>
+                                    히얼스 데일리필을 만나보세요.
+                                </p>
+                                <div class="acco-list-wrap">
+                                    <div class="acco-list">
+                                        <a href="#none">
+                                            <span class="ico"><img src="../img/ico_plus.jpg" alt=""></span>
+                                            <span class="txt">지용성비타민 4종</span>
+                                            <span class="view">더보기</span>
+                                        </a>
+                                        <p class="con">비타민A, D, E, K</p>
+                                    </div>
+                                    <div class="acco-list">
+                                        <a href="#none">
+                                            <span class="ico"><img src="../img/ico_plus.jpg" alt=""></span>
+                                            <span class="txt">수용성비타민 9종</span>
+                                            <span class="view">더보기</span>
+                                        </a>
+                                        <p class="con">비타민C, B1, B2, 나이아신, 판토텐산, 비타민B6, 비오틴, 엽산, 비타민B12</p>
+                                    </div>
+                                    <div class="acco-list">
+                                        <a href="#none">
+                                            <span class="ico"><img src="../img/ico_plus.jpg" alt=""></span>
+                                            <span class="txt">미네랄 8종</span>
+                                            <span class="view">더보기</span>
+                                        </a>
+                                        <p class="con">철, 구리, 요오드, 셀렌, 크롬, 아연, 망간, 몰리브덴</p>
+                                    </div>
+                                </div>
+                                <div class="clean-label">
+                                    <a href="#none">
+                                        <span class="ico"><img src="../img/ico_plus.jpg" alt=""></span>
+                                        <span class="txt">히얼스만의 클린라벨</span>
+                                        <span class="view">더보기</span>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="bottom-info">
+                                <p class="sub-tit">원료의 프리미엄 원산지로 <br>안심하고 건강함을 챙기세요.</p>
+                                <p class="desc">
+                                    독일, 영국, 미국, 스위스 등의 프리미엄 원료를 사용하고 <br>중국, 일본의 원료는 배제했으니 안심하세요!
+                                    <span><img src="../img/vita_premium.jpg" alt=""></span>
+                                </p>
+                            </div>
+                        </div>
+
+
+
+                        <div class="indi-pill-wrap lutein">
+                            <div class="thumb"><img src="../img/img_indi_pill02.jpg" alt=""></div>
+                            <div class="pill-info">
+                                <p class="tit">루테인 & <br>오메가3</p>
+                                <p class="desc">
+                                    눈 건강과 혈행 개선을 동시에, 루테인과 오메가3는<br>
+                                    체내에서 스스로 합성 할 수 없어 보충이 꼭 필요하니<br>
+                                    동시에 꼭 챙기세요.<br>
+                                    데일리필의 ‘루테인&오메가3’ 은 소화에 부담없이<br>
+                                    섭취할 수 있도록 소형 식물성 연질 캡슐을 사용.
+                                </p>
+                                <div class="acco-list-wrap">
+                                    <div class="acco-list">
+                                        <a href="#none">
+                                            <span class="ico"><img src="../img/ico_plus02.jpg" alt=""></span>
+                                            <span class="txt">루테인(마리골드꽃추출물)</span>
+                                            <span class="view">더보기</span>
+                                        </a>
+                                        <p class="con">천연 홍국 색소 사용. 황반 색소 밀도 유지를 위한 루테인 10mg 함유</p>
+                                    </div>
+                                    <div class="acco-list">
+                                        <a href="#none">
+                                            <span class="ico"><img src="../img/ico_plus02.jpg" alt=""></span>
+                                            <span class="txt">오메가3 (EPA 및 DHA)</span>
+                                            <span class="view">더보기</span>
+                                        </a>
+                                        <p class="con">청정지역 알레스카 소형어종 오메가3 600mg 함유. 체내 흡수율을 높인 rTG형 오메가</p>
+                                    </div>
+                                </div>
+                                <div class="clean-label">
+                                    <a href="#none">
+                                        <span class="ico"><img src="../img/ico_plus02.jpg" alt=""></span>
+                                        <span class="txt">히얼스만의 클린라벨</span>
+                                        <span class="view">더보기</span>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="bottom-info">
+                                <p class="title">마리골드꽃추출물(루테인) 인체적용시험 결과</p>
+                                <p class="txt-info type02">
+                                    MPOD (황반색소밀도,macular pigment ocular density)측정 결과<br>
+                                    * 기간 : 12개월  /  * 섭취량 : 루테인(마리골드꽃추출물) 10 mg/day 
+                                </p>
+                                <p class="img"><img src="../img/img_lu_test.jpg" alt=""></p>
+                                <p class="txt-info ta-l">*‘황반’이란 눈의 중심 시력을 관장하는 부분으로 황반색소밀도를 유지시킴으로써 시력개선, 백내장 예방, 황반 퇴화 예방에 관여</p>
+                                <p class="txt-info type02 ta-l">
+                                    [출처] Richer, Stuart, et al. "Double-masked, placebo-controlled, randomized trial of lutein and antioxidant supplementation in the
+                                    intervention of atrophic age-related macular degeneration: the Veterans LAST study (Lutein Antioxidant Supplementation Trial)."
+                                    Optometry-Journal of the American Optometric Association 75.4 (2004): 216-246. 식품안전나라, 건강기능식품 기능별 정보, 눈건강 <br><br>
+
+                                    - 상기 내용은 논문 내용을 발췌한 것으로 모든 사람에게 실험결과가 해당 되는 것은 아닙니다.<br>
+                                    - 해당 정보는 구매에 도움을 주기위한 자료일 뿐, 절대적인 지표가 아닌점 참고 부탁드립니다.
+
+                                </p>
+                            </div>
+                            <div class="bottom-info">
+                                <p class="title">오메가3(EPA 및 DHA 함유유지) 인체적용시험 결과</p>
+                                <p class="txt-info type02">
+                                    * 기간 : 30일  /  * 섭취량 : 오메가3 600 mg/day
+                                </p>
+                                <p class="img"><img src="../img/img_lu_test02.jpg" alt=""></p>
+                                <p class="txt-info type02 ta-l">
+                                    [출처] Kangari, Haleh, et al. "Short-term consumption of oral omega-3 and dry eye syndrome." Ophthalmology 120.11 (2013): 2191-2196.<br><br>
+
+                                    - 상기 내용은 논문 내용을 발췌한 것으로 모든 사람에게 실험결과가 해당 되는 것은 아닙니다.<br>
+                                    - 해당 정보는 구매에 도움을 주기위한 자료일 뿐, 절대적인 지표가 아닌점 참고 부탁드립니다.
+
+                                </p>
+                            </div>
+                        </div>
+
+
+
+                        <div class="indi-pill-wrap pro">
+                            <div class="thumb"><img src="../img/img_indi_pill03.jpg" alt=""></div>
+                            <div class="pill-info">
+                                <p class="tit">프로바이오틱스</p>
+                                <p class="desc">
+                                    식약처 기능성 인증 18종 균주 사용.<br>
+                                    안전하게 장까지 도달할 수 있도록<br>
+                                    ‘특허 코팅’ 적용 원료 사용! 
+                                </p>
+                                <div class="acco-list-wrap">
+                                    <div class="acco-list">
+                                        <a href="#none">
+                                            <span class="ico"><img src="../img/ico_plus03.jpg" alt=""></span>
+                                            <span class="txt">보장균수 1,000,000,000 CFU</span>
+                                        </a>
+                                    </div>
+                                    <div class="acco-list">
+                                        <a href="#none">
+                                            <span class="ico"><img src="../img/ico_plus03.jpg" alt=""></span>
+                                            <span class="txt">5속 18종 복합 프로바이오틱스 설계</span>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="clean-label">
+                                    <a href="#none">
+                                        <span class="ico"><img src="../img/ico_plus03.jpg" alt=""></span>
+                                        <span class="txt">히얼스만의 클린라벨</span>
+                                        <span class="view">더보기</span>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="bottom-info">
+                                <p class="title">18종 복합 프로바이오틱스 설계</p>
+                                <p class="img"><img src="../img/img_pro_test01.jpg" alt=""></p>
+                            </div>
+                            <div class="bottom-info">
+                                <p class="title">프로바이오틱스 기능성</p>
+                                <p class="img"><img src="../img/img_pro_test02.jpg" alt=""></p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+
+
+                <section class="section section11">
+                    <div class="inner">
+                        <p class="tit"
+                        data-aos="fade-up"
+                            data-aos-duration="1000">이렇게 먹어요.</p>
+                        <div class="way-list-wrap">
+                            <div class="way-list"
+                            data-aos="fade-up"
+                            data-aos-duration="1000"
+                            data-aos-delay="500">
+                                <p class="desc">1일 1회, 1회 3캡슐+1정을 <br>충분한 물과 함께 섭취.</p>
+                                <p class="img"><img src="../img/img_way01.jpg" alt=""></p>
+                            </div>
+                            <div class="way-list"
+                            data-aos="fade-up"
+                            data-aos-duration="1000"
+                            data-aos-delay="1000">
+                                <p class="desc">한번에 먹기가 힘들다면, <br>시간차를 두고 드시는 것을 추천.</p>
+                                <p class="img"><img src="../img/img_way02.jpg" alt=""></p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+
+                <section class="section section12">
+                    <div class="inner">
+                        <div style="text-align:right;">
+                            <p style="padding-bottom:8px;"
+                            data-aos="fade-up"
+                            data-aos-duration="1000"><img src="../img/img_section12_01.jpg" alt=""></p>
+                            <p
+                            data-aos="fade-up"
+                            data-aos-duration="1000"
+                            data-aos-delay="500"><img src="../img/img_section12_02.jpg" alt=""></p>
+                        </div>
+                        <div>
+                            <p
+                            data-aos="fade-up"
+                            data-aos-duration="1000"
+                            data-aos-delay="1000"><img src="../img/img_section12_03.jpg" alt=""></p>
+                        </div>
+                    </div>
+                </section>
+
+
+                <section class="section section13">
+                    <p><img src="../img/img_section13.jpg" alt="" width="100%"></p>
+                </section>
+
+
+                <section class="section section14">
+                    <div class="inner">
+                        <p class="tit"
+                        data-aos="fade-up"
+                            data-aos-duration="1000">
+                            자신에게 꼭 맞는 <br>
+                            맞춤형 커스텀제품을<br>
+                            받고싶어?
+                        </p>
+                        <p class="sub-tit"
+                        data-aos="fade-up"
+                            data-aos-duration="1000">
+                            문진서비스를 통해 지금 나에게 필요한 제품을 추천해주는<br>
+                            큐레이션 건강기능식품 브랜드 ‘히얼스‘ 
+                        </p>
+
+                    </div>
+                    <div class="img-wrap">
+                        <p
+                        data-aos="fade-up"
+                            data-aos-duration="1000"
+                            data-aos-delay="500"><img src="../img/img_hearth_test01.jpg" alt=""></p>
+                        <p style="margin-left:32px; padding-top:140px;"
+                        data-aos="fade-up"
+                            data-aos-duration="1000"
+                            data-aos-delay="1000"><img src="../img/img_hearth_test02.jpg" alt=""></p>
+                    </div>
+                    
+                </section>
+
+            </div>
+        </div>
+    </div>
+
+
+    <div class="popup">
+        <p>
+            <img src="../img/popup.png" alt="" usemap="#popup_map">
+            <map id="popup_map" name="popup_map">
+                <area shape="rect" alt="" title="" coords="760,12,848,92" href="#none" target="" class="close-pop" />
+            </map>
+        </p>
+    </div>
+
+
+    <script>
+
+    AOS.init();
+
+
+    $(document).ready(function(){
+        var controller = new ScrollMagic.Controller({globalSceneOptions: {duration:100}});
+        var controller2 = new ScrollMagic.Controller({globalSceneOptions: {duration:1000}});
+        var controller3 = new ScrollMagic.Controller({globalSceneOptions: {duration:500}});
+        var controller4 = new ScrollMagic.Controller({globalSceneOptions: {duration:2000}});
+
+
+
+        var controllerText1 = new ScrollMagic.Controller({globalSceneOptions: {duration:250, offset:-150}});
+        
+        // build scenes
+        new ScrollMagic.Scene({triggerElement: "#sec1"})
+                        .setClassToggle("#sec1", "active")
+                        .addTo(controllerText1)
+        new ScrollMagic.Scene({triggerElement: "#sec2"})
+                        .setClassToggle("#sec2", "active")
+                        .addTo(controller)
+        new ScrollMagic.Scene({triggerElement: "#sec3"})
+                        .setClassToggle("#sec3", "active")
+                        .addTo(controller)
+        new ScrollMagic.Scene({triggerElement: "#sec4"})
+                        .setClassToggle("#sec4", "active")
+                        .addTo(controller)
+        new ScrollMagic.Scene({triggerElement: "#sec5"})
+                        .setClassToggle("#sec5", "active")
+                        .addTo(controller)
+
+        
+
+
+
+        // var smaller = new TimelineMax().add([
+        //     TweenMax.to(".img-up [class*='img']", 1, { opacity:"1", y: -300, ease: Linear.easeNone })
+        // ])
+        // new ScrollMagic.Scene({
+        //     triggerElement: "#trigger1",
+        //     triggerHook: 0,
+        //     duration: '100%'
+        // })
+        //     .setTween(smaller)
+        //     .addTo(controller3);
+
+
+
+        var up = new TimelineMax().add([
+            TweenMax.to(".parallax-bg img", 1, { opacity:"0.2", ease: Linear.easeNone }),
+            TweenMax.to(".section07 #sec6", 1, {opacity:"1", delay:1, ease: Linear.easeNone }),
+            TweenMax.to("#sec6", 1, { transform:"translateY(-300px)", opacity:"0", delay:2, ease: Linear.easeNone }),
+            TweenMax.to(".section07 #sec7", 1, {opacity:"1", delay:3, ease: Linear.easeNone }),
+            TweenMax.to("#sec7", 1, { transform:"translateY(-300px)", opacity:"0", delay:4, ease: Linear.easeNone }),
+            // TweenMax.to(".section07 #sec8", 1, {opacity:"1", delay:5, ease: Linear.easeNone }),
+            // TweenMax.to("#sec8", 1, { transform:"translateY(-300px)", opacity:"0", delay:6, ease: Linear.easeNone })
+        ])
+        new ScrollMagic.Scene({
+            triggerElement: ".section07",
+            triggerHook: 0,
+            duration: '100%'
+        })
+            .setTween(up)
+            .setPin(".section07")
+            .addTo(controller4);
+
+
+        var together  = new TimelineMax().add([
+            TweenMax.to(".pill", 1, { left:"47%", top:"250px", ease: Linear.easeNone }),
+            TweenMax.to(".all-pill", 1, { opacity:"1", delay:1, ease: Linear.easeNone })
+        ])
+        new ScrollMagic.Scene({
+            triggerElement: ".pill-wrap"
+        })
+            .setTween(together)
+            .addTo(controller3);
+
+
+
+
+
+        //네비 2depth
+        var _isSlide = false;
+        $('.acco-list-wrap > .acco-list > a').click(function () {
+            $target = $(this).next('.con');
+            var allPanels = $('.con');
+            if (!_isSlide) {
+                _isSlide = true;
+                if (!$target.hasClass('active')) {
+                    allPanels.slideUp(300).removeClass('active');
+                    $target.slideDown(300).addClass('active');
+                    $('.acco-list-wrap > .acco-list > a').removeClass('active');
+                    $(this).addClass('active');
+
+                } else {
+                    $target.slideUp(500).removeClass('active');
+                    $(this).removeClass('active');
+                }
+                setTimeout(function () { _isSlide = false; }, 200);
+            }
+        });
+
+
+        $('.clean-label a').click(function(){
+            $('.popup').addClass('active');
+        });
+        $('.close-pop').click(function(){
+            $('.popup').removeClass('active')
+        });
+    });
+        
+    </script>
+
+    
+    
+</body>
+</html>
