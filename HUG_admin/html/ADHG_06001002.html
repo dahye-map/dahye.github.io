@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>안심전세 관리자</title>
+
+    <link rel="stylesheet" href="../lib/css/reset.css">
+    <link rel="stylesheet" href="../lib/css/common.css">
+    <script src="../lib/js/jquery-3.5.1.min.js"></script>
+    <script src="../lib/js/ui.js"></script>
+</head>
+<body>
+    <div id="wrap">
+
+        <!-- s:header -->
+        <header id="headerWrap">
+            <div class="header">
+                <h1 class="logo">
+                    <a href="ADHG_06000000.html">
+                        <img src="../images/logo@2x.png" alt="HUG안심전세 로고">
+                        <span>관리자 시스템</span>
+                    </a>
+                </h1>
+
+                <div class="util-wrap">
+                    <ul>
+                        <li class="name">
+                            <a href=""><span>홍길동님</span></a>
+                        </li>
+                        <li class="logout">
+                            <a href="ADLG_01000000.html"><span>로그아웃</span></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+        <!-- //e:header -->
+
+        <!-- s:nav -->
+        <nav id="navWrap">
+            <div class="nav">
+                <ul>
+                    <li><a href="ADHG_02000000.html">관리자 설정</a></li>
+                    <li><a href="ADHG_03000000.html">권한 관리</a></li>
+                    <li><a href="ADHG_04000000.html">안심전세 관리</a></li>
+                    <li><a href="javascript:void(0)">법률상담 관리</a>
+                        <ul class="depth-menu">
+                            <li><a href="ADHG_05000000.html">상담배정 내역조회</a></li>
+                            <li><a href="ADHG_06000000.html">법률상담 내역조회</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="ADHG_13000000.html">법률사례 조회</a></li>
+                    <li><a href="ADHG_08000000.html">고객관리</a></li>
+                    <li><a href="ADHG_08000000.html">공지사항 관리</a></li>
+                    <li><a href="javascript:void(0)">통계 관리</a>
+                        <ul class="depth-menu">
+                            <li><a href="ADHG_09000000.html">접속통계 관리</a></li>
+                            <li><a href="ADHG_11000000.html">이용통계 관리</a></li>
+                        </ul>
+
+                    </li>
+ 
+                </ul>
+            </div>
+        </nav>
+        <!-- //e:nav -->
+
+        <!-- s:containerWrap -->
+        <div id="containerWrap">
+            <div class="container">
+
+            </div>
+        </div>
+        <!-- //e:containerWrap -->
+
+    </div>
+
+    <!-- s:레이어팝업 - 상담반환 -->
+    <div class="layerpop-wrap" id="pop04" style="width:900px;">
+        <div class="layerpop">
+            <div class="pop-header">
+                <p class="tit">상담배정</p>
+                <a href="" class="pop-close"><span class="팝업닫기"></span></a>
+            </div>
+            <div class="pop-con">
+                <p class="txt">상담건수가 적당하게 배분되도록 각 답변관리자의 배정현황 확인 후 배정해 주세요.</p>
+
+                <div class="table-wrap type02">
+                    <table>
+                        <caption>변호사, 전체, 배정대기, 배정완료, 답변대기, 답변완료, 상담반환, 상담반려로 구성되어 있음</caption>
+                        <colgroup>
+                            <col width="200px">
+                        </colgroup>
+                        <thead>
+                            <tr>
+                                <th>변호사</th>
+                                <th>전체</th>
+                                <th>답변대기</th>
+                                <th>답변작성중</th>
+                                <th>답변완료</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <div class="input-wrap">
+                                        <select name="" id="">
+                                            <option value="">전체</option>
+                                            <option value="">손흥밍</option>
+                                            <option value="">황휘촨</option>
+                                            <option value="">킹밍재</option>
+                                        </select>
+                                    </div>
+                                </td>
+                                <td>25건</td>
+                                <td>6건</td>
+                                <td>4건</td>
+                                <td>10건</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="btn-wrap mt-20">
+                    <button type="button" class="btn btn-md btn-white">닫기</button>
+                    <button type="button" class="btn btn-md btn-blue">배정</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- //e:레이어팝업 - 상담반환 -->
+
+    <script>
+        var depth1 = 4;
+        var depth2 = 2;
+
+        openPopup('pop04');
+    </script>
+</body>
+</html>
