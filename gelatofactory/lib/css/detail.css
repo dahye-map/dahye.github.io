@@ -1,0 +1,72 @@
+.ad .detailTop{ padding:0; }
+.ad .xans-product-detail .detailArea { padding:0; display:table; }
+.ad .xans-product-detail .detailArea:after { content:''; display:block; clear:both; overflow:hidden; }
+.ad .xans-product-detail .infoArea { display:table-cell; width:29%; padding-left:60px; padding-right:60px; vertical-align:middle; }
+.ad .xans-product-detail .headingArea h2 { font-size:25px; color:#1f1f1f; font-weight:bold; word-break:keep-all; line-height:1.6; }
+.ad .xans-product-detail .infoArea .headingArea + div table tr:first-child { display:none; }
+.ad .xans-product-detail .infoArea .headingArea + div table tr:nth-child(3) { float:left; display:inline-block; margin-right:12px; }
+.ad .xans-product-detail .infoArea .headingArea + div table tr:nth-child(4) { float:left; display:inline-block; }
+.ad .xans-product-detail .infoArea .headingArea + div table tr td { padding:0; line-height:1.7; }
+.ad .xans-product-detail .infoArea .headingArea + div table tr:nth-child(2) td { padding-bottom:40px; }
+.ad .listImg { margin-top:80px; }
+.ad .listImg ul:after { content:''; display:block; clear:both; overflow:hidden; }
+.ad .listImg ul li { float:left; width:18%; margin-right:10px; }
+.ad .listImg ul li:first-child { display:none; }
+
+
+.xans-product-detail .infoArea td { border:none; }
+.ad .xans-product-detail .infoArea td #span_product_price_text { font-weight:bold; }
+
+.ad .xans-product-detail .imgArea { display:table-cell; margin:0; width:100%; }
+.ad .xans-product-detail .imgArea .keyImg .thumbnail { width:100%; }
+.ad .xans-product-detail .imgArea .keyImg { width:100%; }
+.ad .xans-product-detail .imgArea .keyImg img { max-width:100%; width:100%; border:none; }
+
+
+.ad .xans-product-detail .optionArea { display:table-cell; width:29%; vertical-align:middle; }
+.ad .xans-product-detail .optionArea .small-image { text-align:center; margin-top:-100px; }
+.ad #totalProducts table { position:relative; width:357px; margin:0 auto; margin-bottom:28px; }
+.ad .total_tb tbody tr { border-bottom:1px solid #f0f0f0; }
+.ad #totalProducts tbody td .quantity input { font-family:'Montserrat'; position:absolute; left:33px; top:0; width:24px; height:24px !important; border:none; color:#000; opacity:.4; font-size:15px; text-align:center; line-height:1 !important; padding:0; }
+.ad #totalProducts tbody td .quantity .up,
+.ad #totalProducts tbody td .quantity .down { display:inline-block; width:33px; height:24px; }
+.ad #totalProducts tbody td .quantity .up { position:absolute; left:57px; top:0; }
+.ad #totalProducts tbody td .quantity .down { left:0; top:0; }
+.ad #totalProducts tbody td .quantity { width:100%; line-height:1.8; }
+.ad #totalProducts tbody td .quantity:after { content:''; display:block; clear:both; overflow:hidden; }
+.ad #totalProducts tbody td .quantity > * { display:inline-block; }
+.ad #totalProducts tbody td { border:none; padding:13px 0; font-size:14px; color:#000; opacity:.8; }
+.ad #totalProducts tbody td p { padding:0; font-size:14px; font-weight:500; opacity:.8; color:#000; }
+.ad #totalProducts tbody tr:first-child td { border-top:none; }
+.ad #totalProducts thead th { border:none; }
+.ad .quantity_price { font-size:16px; color:#3b3b3b; opacity:1; font-weight:600;}
+
+.ad .xans-product-action .ec-base-button a { display:block; width:357px; height:58px; text-align:center; margin:0 auto; margin-bottom:7px; }
+.ad .xans-product-detail .totalPrice { margin:0; padding:0; border:none; color:#fff; background:none; display:inline-block; }
+.ad .xans-product-action a.btn-kakao-plus { margin-bottom:30px; }
+.ad .xans-product-action a.buy { background-color:#1d1d1d; color:#fff; font-size:14px; font-weight:bold; padding:16px 21px; }
+.ad .xans-product-action a.cart { background-color:#fff; color:#000; font-size:14px; font-weight:bold; border:1px solid #c0c0c0; padding:16px 21px; }
+.ad .xans-product-detail .totalPrice .total,
+.ad .xans-product-detail .totalPrice .total em,
+.ad .xans-product-detail .totalPrice strong { color:#fff !important; font-size:14px !important; font-weight:bold !important; }
+
+.ad .xans-product-option { width:357px; margin:0 auto; }
+.ad .xans-product-option tr { border-bottom:1px solid #e2e2e2; }
+.ad .xans-product-option tr th { width:90px; color:#3b3b3b; font-size:16px; border:none; text-align:left; padding-bottom:10px; }
+.ad .xans-product-option tr td { border:none; padding-bottom:10px; }
+.ad .xans-product-option tr td select { font-family:'NanumBarunGothic'; border:none; width:100%; height:33px; font-size:16px; font-weight:400; opacity:.8; }
+.ad .eProductQuantityUpClass { background:url('/web/upload/img/btn_option_up.png') no-repeat; text-indent:-9999px; }
+.ad .eProductQuantityDownClass { background:url('/web/upload/img/btn_option_down.png') no-repeat; text-indent:-9999px; top:0 !important; }
+.ad #totalProducts tbody tr.option_product td:first-child { padding-left:22px; }
+.ad #totalProducts tbody tr.option_product .delete { width:9px; height:9px; position:absolute; left:0; background:url('/web/upload/img/btn_option_delete.png') no-repeat; text-indent:-9999px; }
+.ad #totalProducts tbody tr.option_product .quantity .up { position:absolute; }
+
+
+.detail-fixed-list { position:fixed; right:-79px; bottom:150px; background:#fff; transition:all .5s; -webkit-transition:all .5s; z-index:10; }
+.detail-fixed-list.active { right:-1px; }
+.detail-fixed-list ul li { border:1px solid #000; margin-top:-1px; }
+.detail-fixed-list ul li a { display:block; width:77px; height:77px; font-size:14px; font-weight:bold; color:#202020; text-align:center; }
+.detail-fixed-list ul li:first-child a { padding-top:27px; }
+
+
+.ad .xans-product-additional .cont { padding:0; text-align:center; }

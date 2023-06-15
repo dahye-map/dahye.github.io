@@ -1,0 +1,30 @@
+<script type="text/javascript" src="/js/jquery-1.11.3.min.js"></script>
+<script type="text/javascript" src="/js/jquery.cookie.js"></script>
+
+
+<div class="top-banner-wrap">
+    <div class="top-banner">
+        <a href="#">지금 가입하면 <em>2000원 할인쿠폰</em> 즉시 발급</a>
+    </div>
+</div>
+
+<script>
+    if ($.cookie('nobanner') !== 'yes' && $('.xans-layout-statelogoff').length) {
+        $('#main').prepend(
+            '<div id="line_banner">' +
+            '<div class="banners">' +
+            '<div><a href="/import/header_banner1_new.html">지금 가입하면 <em>2000원 할인쿠폰</em> 즉시 발급</a></div>' +
+            '</div>' +
+            '<div class="close"><span class="hidden">숨기기</span></div>' +
+            '</div>');
+
+        $('body').addClass('line_bannered');
+    }
+    var lineBanner = $("#line_banner");
+    lineBanner.find(".close").on('click', function () {
+        lineBanner.remove();
+        $('body').removeClass('line_bannered');
+        $.cookie('nobanner', 'yes');
+    })
+$.cookie('test', "");
+</script>

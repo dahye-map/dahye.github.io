@@ -1,0 +1,70 @@
+<!--@css(/awesome/css/header.css)-->
+<!--@js(/awesome/js/header.js)-->
+
+<!-- 검색 창 레이어 -->
+<!--@import(/awesome/header_search.html)-->
+
+<!-- 전체메뉴 -->
+<!--//@import(/awesome/menu_all.html)-->
+<div id="headerWrap">
+    <div class="header">
+
+
+        <a href="javascript:void(0)" class="btn-menu">
+            <p class="all-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </p>
+        </a>
+
+        <h1><a href="/"><img src="/web/upload/img/gelato_ci_b.png" alt=""></a></h1>
+
+        <div class="gnb-wrap">
+            <ul>
+                <li><a href="/brandstory.html">브랜드</a></li>
+                <li><a href="">전체상품</a></li>
+                <li><a href="/product/list.html?cate_no=25">신상품</a></li>
+                <li><a href="/product/list.html?cate_no=26">베스트</a></li>
+                <!--<li><a href="">클리어런스</a></li>-->
+                <li><a href="/product/list.html?cate_no=47">세트</a></li>
+                <li>
+                    <a href="/product/list.html?cate_no=27">네일</a>
+                    <ul class="depth2">
+                        <li><a href="/product/list.html?cate_no=34">하또하또핏 Pro</a></li>
+                        <li><a href="/product/list.html?cate_no=35">하또하또핏 basic</a></li>
+                        <li><a href="/product/list.html?cate_no=42">띠부띠부팁 네일</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="">패디</a>
+                    <ul class="depth2">
+                        <li><a href="/product/list.html?cate_no=43">띠부띠부팁 패디</a></li>
+                        <li><a href="/product/list.html?cate_no=44">하또하또핏 패디</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="">케어</a>
+                    <ul class="depth2">
+                        <li><a href="/product/list.html?cate_no=45">네일 케어</a></li>
+                        <li><a href="/product/list.html?cate_no=46">탑코트&amp;툴</a></li>
+                    </ul>
+                </li>
+                <li><a href="/board/gallery/list.html">이벤트</a></li>
+                <li><a href="">상품후기</a></li>
+
+            </ul>
+        </div>
+
+        <div class="right-menu">
+            <ul>
+                <li class="shop">
+                	<a href="/member/login.html" module="Layout_statelogoff">로그인</a>
+                    <a href="{$action_logout}" module="Layout_statelogon">로그아웃</a>
+                </li>
+                <li class="ico-cart"><a href="/order/basket.html"><img src="/web/upload/img/ico_cart_b.png" alt=""><span module="myshop_main" class="count">{$basket_count}</span></a></li>
+                <li class="ico-search"><a href="javascript:void(0)" class="btn-search"><img src="/web/upload/img/ico_search_b.png" alt=""></a></li>
+            </ul>
+        </div>
+    </div>
+</div>

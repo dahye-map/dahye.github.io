@@ -1,0 +1,71 @@
+<!--@css(/awesome/css/main_visual.css)-->
+
+<!-- s:메인배너 -->
+<div class="main-banner-wrap">
+
+    <div class="main-banner swiper-container">
+        <ul class="swiper-wrapper">
+            <li class="swiper-slide">
+                <video width="1920" height="860" autoplay="true" controls="false">
+                    <source src="/web/upload/img/top_video.mp4" type="video/mp4">
+                </video>
+            </li>
+            <li class="swiper-slide">
+                <img src="/web/upload/img/mainb_01.jpg" alt="">
+                <div class="visual-txt">
+                    <p class="kor">세상의 모든네일,젤라또 팩토리</p>
+                    <p class="eng">All nails in the world, gelato factory</p>
+                    <a href="#" class="btn-shop">Shop now</a>
+                </div>
+            </li>
+
+            <li class="swiper-slide">
+                <img src="/web/upload/img/mainb_03.jpg" alt="">
+                <div class="visual-txt">
+                    <p class="kor">세상의 모든네일,젤라또 팩토리</p>
+                    <p class="eng">All nails in the world, gelato factory</p>
+                    <a href="#" class="btn-shop">Shop now</a>
+                </div>
+            </li>
+            <li class="swiper-slide">
+                <img src="/web/upload/img/mainb_02.jpg" alt="">
+                <span class="main-gif"><img src="/web/upload/img/mainb_gif01.gif" alt=""></span>
+                <div class="visual-txt">
+                    <p class="kor">세상의 모든네일,젤라또 팩토리</p>
+                    <p class="eng">All nails in the world, gelato factory</p>
+                </div>
+            </li>
+
+            <li class="swiper-slide">
+                <img src="/web/upload/img/mainb_04.jpg" alt="">
+                <div class="visual-txt">
+                    <p class="kor">세상의 모든네일,젤라또 팩토리</p>
+                    <p class="eng">All nails in the world, gelato factory</p>
+                    <a href="#" class="btn-shop">Shop now</a>
+                </div>
+            </li>
+
+            <li class="swiper-slide">
+                <img src="/web/upload/img/mainb_05.jpg" alt="">
+                <div class="visual-txt">
+                    <p class="kor">세상의 모든네일,젤라또 팩토리</p>
+                    <p class="eng">All nails in the world, gelato factory</p>
+                    <a href="#" class="btn-shop">Shop now</a>
+                </div>
+            </li>
+        </ul>
+        <div class="swiper-pagination main-banner-pagination"></div>
+    </div>
+
+</div>
+<!-- //e:메인배너 -->
+
+<a href="#none" class="up"><img src="/web/upload/img/btn_option_up.png" alt="수량증가" class="{$quantity_up_class}" /></a>
+
+<a href="#none" class="down"><img src="/web/upload/img/btn_option_down.png" alt="수량감소" class="{$quantity_down_class}" /></a>
+
+<script type="text/javascript">
+    var w_height = $(document).height();
+
+    $('.main-banner-wrap .main-banner > ul > li').css('height', w_height-120);
+</script>
