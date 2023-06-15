@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="//developers.kakao.com/sdk/js/kakao.min.js"></script>
+    <script src="https://unpkg.com/clipboard@2/dist/clipboard.min.js"></script>
+
+    <link rel="stylesheet" href="../lib/css/common.css">
+    <link rel="stylesheet" href="../lib/css/test.css">
+    
+    
+
+    <title>Document</title>
+</head>
+<body>
+
+    <!-- pc 플로팅 -->
+    <!-- <div class="floating-banner-wrap">
+        <div class="floating-banner">
+            <p class="thumb"><img src="../img/test_img/floating_thumb.jpg" alt=""></p>
+
+            <p class="desc">
+                <span class="name">셀팜봇</span>
+                <span class="msg">닥터셀팜이 찾아주는 <br>나만의 맞춤 솔루션 테스트하기&#128521;</span>
+            </p>
+
+            <p class="close"><a href="#none"><img src="../img/test_img/btn_floating_close.jpg" alt=""></a></p>
+        </div>
+    </div> -->
+
+    <!-- mo플로팅 
+    <div class="floating-banner-wrap">
+        <div class="floating-banner">
+            <p class="thumb">
+                <span class="img"><img src="../img/test_img/img_profile_thumb.png" alt=""></span>
+                <span class="name">닥터셀팜봇</span>
+            </p>
+
+            <p class="desc">
+                <span class="msg">닥터셀팜이 찾아주는 나만의 맞춤 솔루션 테스트하기&#128521;</span>
+            </p>
+
+            <p class="float-close"><a href="#none"><img src="../img/test_img/test_close.png" alt=""></a></p>
+
+            <div class="btn-wrap">
+                <a href="" class="btn-no">아니 안할래</a>
+                <a href="" class="btn-yes">응! 해볼래</a>
+            </div>
+        </div>
+    </div>-->
+
+
+    <div id="fitWrap" class="active">
+        <div id="fitstartWrap">
+            <div class="fit-start">
+                <div class="start-header">
+                    <p class="logo"><img src="../img/test_img/test_logo.png" alt=""></p>
+                    <p class="close"><a href="#none"><img src="../img/test_img/start_test_close.png" alt=""></a></p>
+                </div>
+                <div class="start-con">
+                    <p class="tit">
+                        당신에게<br>
+                        딱 맞는 맞춤형<br>
+                        솔루션 제품을<br>
+                        찾아보세요
+                    </p>
+                    <p class="sub-tit">
+                        약 30초 정도 소요됩니다
+                    </p>
+                    <div class="btn-start"><a href="#none">시작하기</a></div>
+                </div>
+            </div>
+        </div>
+    
+        <div id="fittestWrap">
+            <div class="fittest">
+                <div class="inner">
+    
+                    <div class="fit-header">
+                        <p class="title">맞춤 솔루션 찾기</p>
+                        <p class="close"><a href="#none"><img src="../img/test_img/test_close.png" alt=""></a></p>
+                    </div>
+                    <!-- s:fit-content-wrap -->
+                    <div class="fit-content-wrap">
+                        <!-- s:fit-content-inner -->
+                        <div class="fit-content-inner">
+                            <!-- s:fit-content -->
+                            <div class="fit-content">
+        
+                                <div class="fit-question first" step="1">
+                                    <div class="fit-profile">
+                                        <p class="thumb"><img src="../img/test_img/img_profile_thumb.png" alt=""></p>
+                                        <p class="name">닥터셀팜</p>
+                                    </div>
+            
+                                    <div class="fit-msg">
+                                        <div class="fit-msg-item">
+                                            <p>
+                                                안녕하세요 :-) <br>
+                                                닥터셀팜이 고객님을 위해서 <br>
+                                                맞춤솔루션을 제시해드릴게요
+                                            </p>
+                                        </div>
+            
+                                        <div class="fit-msg-item">
+                                            <p>
+                                                다이어트를 해 본 경험이 있나요?
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+            
+                                <div class="fit-choice first" step="1">
+                                    <div class="fit-choice-item">
+                                        <a href="#none">네. 있어요</a>
+                                    </div><br>
+                                    <div class="fit-choice-item">
+                                        <a href="#none">아니요. 없어요</a>
+                                    </div>
+                                </div>
+            
+                                <div class="fit-question" step="2">
+                                    <div class="fit-profile">
+                                        <p class="thumb"><img src="../img/test_img/img_profile_thumb.png" alt=""></p>
+                                        <p class="name">닥터셀팜</p>
+                                    </div>
+            
+                                    <div class="fit-msg">
+                                        <div class="fit-msg-item">
+                                            <p>
+                                                가장 이상적으로 생각하는<br>
+                                                다이어트는 어떤건가요?
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div> 
+            
+                                <div class="fit-choice" step="2">
+                                    <div class="fit-choice-item">
+                                        <a href="#none">굶지 않아도 되는 다이어트</a>
+                                    </div><br>
+                                    <div class="fit-choice-item">
+                                        <a href="#none">체내 수분이 빠지지 않는 다이어트</a>
+                                    </div><br>
+                                    <div class="fit-choice-item">
+                                        <a href="#none">변비 없는 다이어트</a>
+                                    </div><br>
+                                    <div class="fit-choice-item">
+                                        <a href="#none">피부 고민이 동반되지 않는 다이어트</a>
+                                    </div><br>
+                                    <!-- <div class="fit-choice-item first">
+                                        <a href="#none">처음으로</a>
+                                    </div>
+                                    <div class="fit-choice-item prev">
+                                        <a href="#none">이전</a>
+                                    </div> -->
+                                </div>
+            
+                                <div class="fit-question" step="3">
+                                    <div class="fit-profile">
+                                        <p class="thumb"><img src="../img/test_img/img_profile_thumb.png" alt=""></p>
+                                        <p class="name">닥터셀팜</p>
+                                    </div>
+            
+                                    <div class="fit-msg">
+                                        <div class="fit-msg-item">
+                                            <p>
+                                                다이어트 시 가장 힘들었던 부분은 <br>
+                                                무엇인가요?
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div> 
+            
+                                <div class="fit-choice" step="3">
+                                    <div class="fit-choice-item">
+                                        <a href="#none">참을 수 없는 식욕</a>
+                                    </div><br>
+                                    <div class="fit-choice-item">
+                                        <a href="#none">변비</a>
+                                    </div>
+                                    <div class="fit-choice-item">
+                                        <a href="#none">체내 수분 손실</a>
+                                    </div><br>
+                                    <div class="fit-choice-item">
+                                        <a href="#none">피부 건강 악화</a>
+                                    </div><br>
+                                    <!-- <div class="fit-choice-item first">
+                                        <a href="#none">처음으로</a>
+                                    </div>
+                                    <div class="fit-choice-item prev">
+                                        <a href="#none">이전</a>
+                                    </div> -->
+                                </div>
+            
+                                <div class="fit-question" step="4">
+                                    <div class="fit-profile">
+                                        <p class="thumb"><img src="../img/test_img/img_profile_thumb.png" alt=""></p>
+                                        <p class="name">닥터셀팜</p>
+                                    </div>
+            
+                                    <div class="fit-msg">
+                                        <div class="fit-msg-item">
+                                            <p>
+                                                저도 그런 부분 때문에 다이어트 하기<br>
+                                                힘들었어요!&#128557;
+                                            </p>
+                                        </div>
+                                        <div class="fit-msg-item">
+                                            <p>
+                                                그렇다면<br>
+                                                평소의 몸의 수분상태는 어떠셨나요?
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div> 
+            
+                                <div class="fit-choice" step="4">
+                                    <div class="fit-choice-item">
+                                        <a href="#none">피부 각질이 일어나요</a>
+                                    </div><br>
+                                    <div class="fit-choice-item">
+                                        <a href="#none">속건조로 피부가 따가워요</a>
+                                    </div><br>
+                                    <div class="fit-choice-item">
+                                        <a href="#none">피부가 당기거나 푸석푸석해져요</a>
+                                    </div><br>
+                                    <div class="fit-choice-item">
+                                        <a href="#none">피부 노화가 진행되는 느낌이 들어요</a>
+                                    </div><br>
+                                    <div class="fit-choice-item">
+                                        <a href="#none">눈이 건조해요</a>
+                                    </div>
+                                    <div class="fit-choice-item">
+                                        <a href="#none">기타</a>
+                                    </div><br>
+                                    <!-- <div class="fit-choice-item first">
+                                        <a href="#none">처음으로</a>
+                                    </div>
+                                    <div class="fit-choice-item prev">
+                                        <a href="#none">이전</a>
+                                    </div> -->
+                                </div>
+            
+                                <div class="fit-question" step="5">
+                                    <div class="fit-profile">
+                                        <p class="thumb"><img src="../img/test_img/img_profile_thumb.png" alt=""></p>
+                                        <p class="name">닥터셀팜</p>
+                                    </div>
+            
+                                    <div class="fit-msg">
+                                        <div class="fit-msg-item">
+                                            <p>
+                                                최근 피부 고민은 무엇인가요?
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div> 
+            
+                                <!-- 결과 보여주기 답변 -->
+                                <div class="fit-choice" step="5">
+    
+                                    <div class="fit-choice-item type2" onclick="go_result('anti')">
+                                        <a href="#none">
+                                            <img src="../img/test_img/img_answer_skin1.png" alt="">
+                                            <p>안티에이징</p>
+                                        </a>
+                                    </div>
+                                    <div class="fit-choice-item type2" onclick="go_result('light')">
+                                        <a href="#none">
+                                            <img src="../img/test_img/img_answer_skin2.png" alt="">
+                                            <p>다크닝</p>
+                                        </a>
+                                    </div>
+                                    <div class="fit-choice-item type2" onclick="go_result('relax')">
+                                        <a href="#none">
+                                            <img src="../img/test_img/img_answer_skin3.png" alt="">
+                                            <p>트러블</p>
+                                        </a>
+                                    </div>
+                                    <div class="fit-choice-item type2" onclick="go_result('relax')">
+                                        <a href="#none"><p style="padding-top:90px;">기타</p></a>
+                                    </div> <br>
+                                    <!-- <div class="fit-choice-item first">
+                                        <a href="#none">처음으로</a>
+                                    </div>
+                                    <div class="fit-choice-item prev">
+                                        <a href="#none">이전</a>
+                                    </div> -->
+                                </div>
+                                <!-- 결과 보여주기 답변 -->
+            
+                                <div class="fit-loading">
+                                    <p>고객님 선택에 알맞는 <br>솔루션을 분석 중입니다</p>
+                                    <p class="icon"><img src="../img/test_img/ico_test_loading.png" alt=""></p>
+                                </div>
+    
+                                <!-- 결과 시작 -->
+                                <div class="fit-result-wrap">
+                                    <div class="fit-question">
+                                        <div class="fit-profile">
+                                            <p class="thumb"><img src="../img/test_img/img_profile_thumb.png" alt=""></p>
+                                            <p class="name">닥터셀팜</p>
+                                        </div>
+                
+                                        <div class="fit-msg">
+                                            <div class="fit-msg-item">
+                                                <p>
+                                                    짜잔 &#129303;<br>
+                                                    고객님 타입의 딱 맞는 <br>
+                                                    솔루션이 나왔어요!
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div> 
+                
+                                    <div class="fit-choice">
+                                        <div class="fit-choice-item" id="result_view">
+                                            <a href="#none">결과보기</a>
+                                        </div><br>
+                                        <!-- <div class="fit-choice-item first">
+                                            <a href="#none">처음으로</a>
+                                        </div>
+                                        <div class="fit-choice-item prev">
+                                            <a href="#none">이전</a>
+                                        </div> -->
+                                    </div>
+                                </div>
+                                <!-- 결과끝 -->
+    
+                                <div class="result-con-wrap">
+                                    <!-- 안티에이징 결과 -->
+                                    <div class="result-con result-anti">
+                                        <div class="fit-profile">
+                                            <p class="thumb"><img src="../img/test_img/img_profile_thumb.png" alt=""></p>
+                                            <p class="name">닥터셀팜</p>
+                                        </div>
+        
+                                        <div class="fit-msg">
+                                            <div class="fit-msg-item">
+                                                <p>
+                                                    고객님은 안티에이징 다이어트 2주 <br>
+                                                    솔루션이 가장 효과를 보실수있을거에요
+                                                </p>
+                                            </div>
+                                        </div>
+    
+                                        <div class="fit-result-choice">
+                                            <div class="fit-result-choice-item result-replay">
+                                                <a href="#none">추천 결과 다시 보기</a>
+                                            </div><br>
+                                            <div class="fit-result-choice-item">
+                                                <a href="#none" onclick='window.parent.location.href="/product/%EB%B7%B0%ED%8B%B0%EB%8B%A4%EC%9D%B4%EC%96%B4%ED%8A%B8-2%EC%A3%BC%EB%AF%B8%EB%9D%BC%ED%81%B4-%EC%86%94%EB%A3%A8%EC%85%98-%EC%95%88%ED%8B%B0%EC%97%90%EC%9D%B4%EC%A7%95-%EB%8B%A4%EC%9D%B4%EC%96%B4%ED%8A%B8/16/category/1/display/2/"'>제품 보러 가기</a>
+                                            </div>
+                                        </div>
+        
+                                        <div class="pop-con">
+                                            <a href="#none" class="btn-pop-close"><img src="../img/test_img/test_close.png" alt=""></a>
+                                            <p class="tit">고객님을 위한 <br>닥터셀팜 추천 제품</p>
+                                            <p class="sub-tit">
+                                                '2주 미라클 솔루션_안티에이징 다이어트'<br>
+                                                다이어트와 피부 탄력을 동시에 케어하고<br>
+                                                동안 미모로 예뻐지세요 :) 
+                                            </p>
+        
+                                            <div class="box">
+                                                <p class="img"><img src="../img/test_img/img_test_result.jpg" alt=""></p>
+                                                <div class="btn-wrap">
+                                                    <a href="#none" onclick='window.parent.location.href="/product/%EB%B7%B0%ED%8B%B0%EB%8B%A4%EC%9D%B4%EC%96%B4%ED%8A%B8-2%EC%A3%BC%EB%AF%B8%EB%9D%BC%ED%81%B4-%EC%86%94%EB%A3%A8%EC%85%98-%EC%95%88%ED%8B%B0%EC%97%90%EC%9D%B4%EC%A7%95-%EB%8B%A4%EC%9D%B4%EC%96%B4%ED%8A%B8/16/category/1/display/2/"'>자세히보기</a>
+                                                    <a href="#none" class="btn-try">조르기 <img src="../img/test_img/ico_share_test.png" alt=""></a>
+                                                    <div class="prd-share-box">
+                                                        <p><a href="#none" id="kakao-link-btn-anti"><img src="../img/test_img/share_kakao.png" alt=""></a></p>
+                                                        <p><a href="#none" onclick="shareFacebook_anti();"><img src="../img/test_img/share_face.png" alt=""></a></p>
+                                                        <p><a href="#none" class="clip-link-anti" data-clipboard-text="http://www.drcellpharm.com/product/%EB%B7%B0%ED%8B%B0%EB%8B%A4%EC%9D%B4%EC%96%B4%ED%8A%B8-2%EC%A3%BC%EB%AF%B8%EB%9D%BC%ED%81%B4-%EC%86%94%EB%A3%A8%EC%85%98-%EC%95%88%ED%8B%B0%EC%97%90%EC%9D%B4%EC%A7%95-%EB%8B%A4%EC%9D%B4%EC%96%B4%ED%8A%B8/16/category/1/display/2/"><img src="../img/test_img/share_link.png" alt=""></a></p>
+                                                    </div>
+                                                </div>
+                                            </div>
+        
+                                            <a href="#none" class="btn-replay">다시하기</a>
+                                        </div>
+
+                                        <div class="link-success-anti-wrap">
+                                            <p class="link-desc">링크가 복사 되었습니다</p>
+                                            <p class="share-link">http://www.drcellpharm.com/product/%EB%B7%B0%ED%8B%B0%EB%8B%A4%EC%9D%B4%EC%96%B4%ED%8A%B8-2%EC%A3%BC%EB%AF%B8%EB%9D%BC%ED%81%B4-%EC%86%94%EB%A3%A8%EC%85%98-%EC%95%88%ED%8B%B0%EC%97%90%EC%9D%B4%EC%A7%95-%EB%8B%A4%EC%9D%B4%EC%96%B4%ED%8A%B8/16/category/1/display/2/</p>
+                                        </div>
+                                    </div>
+                                    <!-- 안티에이징 결과 -->
+    
+                                    <!-- 화이트닝 결과 -->
+                                    <div class="result-con result-light">
+                                        <div class="fit-profile">
+                                            <p class="thumb"><img src="../img/test_img/img_profile_thumb.png" alt=""></p>
+                                            <p class="name">닥터셀팜</p>
+                                        </div>
+        
+                                        <div class="fit-msg">
+                                            <div class="fit-msg-item">
+                                                <p>
+                                                    고객님은 화이트닝 다이어트 2주 <br>
+                                                    솔루션이 가장 효과를 보실수있을거에요
+                                                </p>
+                                            </div>
+                                        </div>
+    
+                                        <div class="fit-result-choice">
+                                            <div class="fit-result-choice-item result-replay">
+                                                <a href="#none">추천 결과 다시 보기</a>
+                                            </div><br>
+                                            <div class="fit-result-choice-item">
+                                                <a href="#none" onclick='window.parent.location.href="/product/%EB%B7%B0%ED%8B%B0%EB%8B%A4%EC%9D%B4%EC%96%B4%ED%8A%B8-2%EC%A3%BC%EB%AF%B8%EB%9D%BC%ED%81%B4-%EC%86%94%EB%A3%A8%EC%85%98-%ED%99%94%EC%9D%B4%ED%8A%B8%EB%8B%9D-%EB%8B%A4%EC%9D%B4%EC%96%B4%ED%8A%B8/17/category/24/display/1/"'>제품 보러 가기</a>
+                                            </div>
+                                        </div>
+        
+                                        <div class="pop-con">
+                                            <a href="#none" class="btn-pop-close"><img src="../img/test_img/test_close.png" alt=""></a>
+                                            <p class="tit">고객님을 위한 <br>닥터셀팜 추천 제품</p>
+                                            <p class="sub-tit">
+                                                '2주 미라클 솔루션_화이트닝 다이어트'<br>
+                                                다이어트와 피부 미백을 동시에 케어하고<br>
+                                                환한 피부로 예뻐지세요 :) 
+                                            </p>
+        
+                                            <div class="box">
+                                                <p class="img"><img src="../img/test_img/img_test_result.jpg" alt=""></p>
+                                                <div class="btn-wrap">
+                                                    <a href="#none" onclick='window.parent.location.href="/product/%EB%B7%B0%ED%8B%B0%EB%8B%A4%EC%9D%B4%EC%96%B4%ED%8A%B8-2%EC%A3%BC%EB%AF%B8%EB%9D%BC%ED%81%B4-%EC%86%94%EB%A3%A8%EC%85%98-%ED%99%94%EC%9D%B4%ED%8A%B8%EB%8B%9D-%EB%8B%A4%EC%9D%B4%EC%96%B4%ED%8A%B8/17/category/24/display/1/"'>자세히보기</a>
+                                                    <a href="#none" class="btn-try">조르기 <img src="../img/test_img/ico_share_test.png" alt=""></a>
+
+                                                    <div class="prd-share-box">
+                                                        <p><a href="#none" id="kakao-link-btn-light"><img src="../img/test_img/share_kakao.png" alt=""></a></p>
+                                                        <p><a href="#none" onclick="shareFacebook_light();"><img src="../img/test_img/share_face.png" alt=""></a></p>
+                                                        <p><a href="#none" class="clip-link-light" data-clipboard-text="http://www.drcellpharm.com/product/%EB%B7%B0%ED%8B%B0%EB%8B%A4%EC%9D%B4%EC%96%B4%ED%8A%B8-2%EC%A3%BC%EB%AF%B8%EB%9D%BC%ED%81%B4-%EC%86%94%EB%A3%A8%EC%85%98-%ED%99%94%EC%9D%B4%ED%8A%B8%EB%8B%9D-%EB%8B%A4%EC%9D%B4%EC%96%B4%ED%8A%B8/17/category/24/display/1/"><img src="../img/test_img/share_link.png" alt=""></a></p>
+                                                    </div>
+                                                </div>
+                                            </div>
+        
+                                            <a href="#none" class="btn-replay">다시하기</a>
+                                        </div>
+
+                                        <div class="link-success-light-wrap">
+                                            <p class="link-desc">링크가 복사 되었습니다</p>
+                                            <p class="share-link">http://www.drcellpharm.com/product/%EB%B7%B0%ED%8B%B0%EB%8B%A4%EC%9D%B4%EC%96%B4%ED%8A%B8-2%EC%A3%BC%EB%AF%B8%EB%9D%BC%ED%81%B4-%EC%86%94%EB%A3%A8%EC%85%98-%ED%99%94%EC%9D%B4%ED%8A%B8%EB%8B%9D-%EB%8B%A4%EC%9D%B4%EC%96%B4%ED%8A%B8/17/category/24/display/1/</p>
+                                        </div>
+                                    </div>
+                                     <!-- 화이트닝 결과 -->
+    
+                                     <!-- 민감진정 결과 -->
+                                    <div class="result-con result-relax">
+                                        <div class="fit-profile">
+                                            <p class="thumb"><img src="../img/test_img/img_profile_thumb.png" alt=""></p>
+                                            <p class="name">닥터셀팜</p>
+                                        </div>
+        
+                                        <div class="fit-msg">
+                                            <div class="fit-msg-item">
+                                                <p>
+                                                    고객님은 민감진정 다이어트 2주 <br>
+                                                    솔루션이 가장 효과를 보실수있을거에요
+                                                </p>
+                                            </div>
+                                        </div>
+    
+                                        <div class="fit-result-choice">
+                                            <div class="fit-result-choice-item result-replay">
+                                                <a href="#none">추천 결과 다시 보기</a>
+                                            </div><br>
+                                            <div class="fit-result-choice-item">
+                                                <a href="#none" onclick='window.parent.location.href="/product/%EB%B7%B0%ED%8B%B0%EB%8B%A4%EC%9D%B4%EC%96%B4%ED%8A%B8-2%EC%A3%BC%EB%AF%B8%EB%9D%BC%ED%81%B4-%EC%86%94%EB%A3%A8%EC%85%98-%EB%AF%BC%EA%B0%90%EC%A7%84%EC%A0%95-%EB%8B%A4%EC%9D%B4%EC%96%B4%ED%8A%B8/18/category/24/display/1/"'>제품 보러 가기</a>
+                                            </div>
+                                            <!-- <div class="fit-result-choice-item prev">
+                                                <a href="#none">이전</a>
+                                            </div>
+                                            <div class="fit-result-choice-item first">
+                                                <a href="#none">다시하기</a>
+                                            </div> -->
+                                        </div>
+        
+                                        <div class="pop-con">
+                                            <a href="#none" class="btn-pop-close"><img src="../img/test_img/test_close.png" alt=""></a>
+                                            <p class="tit">고객님을 위한 <br>닥터셀팜 추천 제품</p>
+                                            <p class="sub-tit">
+                                                '2주 미라클 솔루션_민감진정 다이어트'<br>
+                                                다이어트와 피부 진정을 동시에 케어하고<br>
+                                                건강한 피부로 예뻐지세요 :)
+                                            </p>
+        
+                                            <div class="box">
+                                                <p class="img"><img src="../img/test_img/img_test_result.jpg" alt=""></p>
+                                                <div class="btn-wrap">
+                                                    <a href="#none" onclick='window.parent.location.href="/product/%EB%B7%B0%ED%8B%B0%EB%8B%A4%EC%9D%B4%EC%96%B4%ED%8A%B8-2%EC%A3%BC%EB%AF%B8%EB%9D%BC%ED%81%B4-%EC%86%94%EB%A3%A8%EC%85%98-%EB%AF%BC%EA%B0%90%EC%A7%84%EC%A0%95-%EB%8B%A4%EC%9D%B4%EC%96%B4%ED%8A%B8/18/category/24/display/1/"'>자세히보기</a>
+                                                    <a href="#none" class="btn-try">조르기 <img src="../img/test_img/ico_share_test.png" alt=""></a>
+                                                    <div class="prd-share-box">
+                                                        <p><a href="#none" id="kakao-link-btn-relax"><img src="../img/test_img/share_kakao.png" alt=""></a></p>
+                                                        <p><a href="#none" onclick="shareFacebook_relax();"><img src="../img/test_img/share_face.png" alt=""></a></p>
+                                                        <p><a href="#none" class="clip-link-relax" data-clipboard-text="http://www.drcellpharm.com/product/%EB%B7%B0%ED%8B%B0%EB%8B%A4%EC%9D%B4%EC%96%B4%ED%8A%B8-2%EC%A3%BC%EB%AF%B8%EB%9D%BC%ED%81%B4-%EC%86%94%EB%A3%A8%EC%85%98-%EB%AF%BC%EA%B0%90%EC%A7%84%EC%A0%95-%EB%8B%A4%EC%9D%B4%EC%96%B4%ED%8A%B8/18/category/24/display/1/"><img src="../img/test_img/share_link.png" alt=""></a></p>
+                                                    </div>
+                                                </div>
+                                            </div>
+        
+                                            <a href="#none" class="btn-replay">다시하기</a>
+                                        </div>
+                                        <div class="link-success-relax-wrap">
+                                            <p class="link-desc">링크가 복사 되었습니다</p>
+                                            <p class="share-link">http://www.drcellpharm.com/product/%EB%B7%B0%ED%8B%B0%EB%8B%A4%EC%9D%B4%EC%96%B4%ED%8A%B8-2%EC%A3%BC%EB%AF%B8%EB%9D%BC%ED%81%B4-%EC%86%94%EB%A3%A8%EC%85%98-%EB%AF%BC%EA%B0%90%EC%A7%84%EC%A0%95-%EB%8B%A4%EC%9D%B4%EC%96%B4%ED%8A%B8/18/category/24/display/1/</p>
+                                        </div>
+                                    </div>
+                                    <!-- 민감진정 결과 -->
+                                </div>
+                               
+                            </div>
+                            <!-- //e:fit-content -->
+                        </div>
+                        <!-- //e:fit-content-inner -->
+                    </div>
+                    <!-- //e:fit-content-wrap -->
+    
+                    
+                </div>
+            </div>
+        </div>
+
+        <div class="fit-bottom">
+            <p class="title">공유하기</p>
+            <p><a href="#none" id="kakao-link-btn"><img src="../img/test_img/ico_test_kakao.png" alt=""></a></p>
+            <p><a href="#none" onclick="shareFacebook();"><img src="../img/test_img/ico_facebook_test.png" alt=""></a></p>
+            <p><a href="#none" class="clip-link-all" data-clipboard-text="http://www.drcellpharm.com/"><img src="../img/test_img/ico_share_2.png" alt=""></a></p>
+        </div>
+
+        <div class="link-success-wrap">
+            <p class="link-desc">링크가 복사 되었습니다</p>
+            <p class="share-link">http://www.drcellpharm.com/</p>
+        </div>
+    </div>
+
+
+    <script src="../lib/js/ui.js"></script>
+    
+</body>
+</html>
