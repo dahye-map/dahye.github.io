@@ -1,0 +1,216 @@
+/* font */
+@import url('https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800');
+@import url('http://fonts.googleapis.com/earlyaccess/kopubbatang.css');
+
+@font-face {
+  font-family: 'NanumBarunGothic';
+  font-style: normal;
+  font-weight: 100;
+  src: url(/web/upload/fonts/NanumBarunGothicUltraLight.eot);
+  src: url(/web/upload/fonts/NanumBarunGothicUltraLight.eot?#iefix) format('embedded-opentype'),
+       url(/web/upload/fonts/NanumBarunGothicUltraLight.woff2) format('woff2'),
+       url(/web/upload/fonts/NanumBarunGothicUltraLight.woff) format('woff'),
+       url(/web/upload/fonts/NanumBarunGothicUltraLight.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'NanumBarunGothic';
+  font-style: normal;
+  font-weight: 300;
+  src: url(/web/upload/fonts/NanumBarunGothicLight.eot);
+  src: url(/web/upload/fonts/NanumBarunGothicLight.eot?#iefix) format('embedded-opentype'),
+       url(/web/upload/fonts/NanumBarunGothicLight.woff2) format('woff2'),
+       url(/web/upload/fonts/NanumBarunGothicLight.woff) format('woff'),
+       url(/web/upload/fonts/NanumBarunGothicLight.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'NanumBarunGothic';
+  font-style: normal;
+  font-weight: 500;
+  src: url(/web/upload/fonts/NanumBarunGothic.eot);
+  src: url(/web/upload/fonts/NanumBarunGothic.eot?#iefix) format('embedded-opentype'),
+       url(/web/upload/fonts/NanumBarunGothic.woff2) format('woff2'),
+       url(/web/upload/fonts/NanumBarunGothic.woff) format('woff'),
+       url(/web/upload/fonts/NanumBarunGothic.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'NanumBarunGothic';
+  font-style: normal;
+  font-weight: 700;
+  src: url(/web/upload/fonts/NanumBarunGothicBold.eot);
+  src: url(/web/upload/fonts/NanumBarunGothicBold.eot?#iefix) format('embedded-opentype'),
+       url(/web/upload/fonts/NanumBarunGothicBold.woff2) format('woff2'),
+       url(/web/upload/fonts/NanumBarunGothicBold.woff) format('woff'),
+       url(/web/upload/fonts/NanumBarunGothicBold.ttf) format('truetype');
+}
+
+/*
+========================================================================
+RESET
+========================================================================
+*/
+/* global rest */
+
+.md-pick-list .thumbnail { float:left; }
+.md-pick-list .name-wrap { float:left; }
+.md-pick-list .name-wrap span { display:block !important; }
+
+.ani2 {
+    -webkit-transition: all 200ms ease;
+    -moz-transition: all 200ms ease;
+    -ms-transition: all 200ms ease;
+    -o-transition: all 200ms ease;
+    transition: all 200ms ease;
+}
+.ani3 {
+    -webkit-transition: all 300ms ease;
+    -moz-transition: all 300ms ease;
+    -ms-transition: all 300ms ease;
+    -o-transition: all 300ms ease;
+    transition: all 300ms ease;
+}
+.ani5 {
+    -webkit-transition: all 500ms ease;
+    -moz-transition: all 500ms ease;
+    -ms-transition: all 500ms ease;
+    -o-transition: all 500ms ease;
+    transition: all 500ms ease;
+}
+.ani1 {
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    transition: all 1s ease;
+}
+
+
+html, body {
+    height: 100%;
+    font: 0.75em 'NanumBarunGothic',sans-serif;
+
+}
+html, body, pre,
+h1, h2, h3, h4, h5, h6,
+dl, dt, dd, ul, li, ol,
+th, td, p, blockquote,
+form, fieldset, legend,
+menu, nav, section, hgroup, article, header, aside, footer,
+input, select, textarea, button {
+    margin: 0;
+    padding: 0;
+
+}
+h1, h2, h3, h4, h5, h6 {
+    font-weight: normal;
+}
+img, fieldset,button {
+    border:0 none;
+}
+img {
+    vertical-align: top;
+    max-width:100%;
+}
+li {
+    list-style: none;
+}
+hr, caption, legend {
+    display: none;
+}
+a {
+    text-decoration: none;
+    outline:none; select-dummy: expression(this.hideFocus=true);
+}
+:focus { outline:none; }
+
+a:hover,
+a:active,
+a:focus {text-decoration:none;}
+
+button {
+    overflow: hidden;
+    cursor: pointer;
+}
+button span {
+    visibility: hidden;
+}
+address, em {
+    font-style: normal;
+}
+button, input, select, textarea, a {
+    vertical-align: middle;
+}
+select {
+    line-height: 18px;
+    height: 18px;
+}
+input:focus {
+    outline: none;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+    table-layout: fixed;
+    word-wrap: break-word;
+    word-break: keep-all;
+}
+
+*,
+*:before,
+*:after {-webkit-box-sizing:border-box; -moz-box-sizing:border-box; box-sizing:border-box;}
+
+
+
+/* bold */
+.bold { font-weight: bold; }
+.ta-c { text-align:center; }
+.ta-l { text-align:left; }
+.ta-r { text-align:right; }
+/* float clear */
+.clear {zoom: 1;}
+.clear:after {content: ""; display: block; clear: both;}
+/* margin */
+.mr-5 { margin-right: 5px;}
+.mr-10 { margin-right: 10px; }
+.mr-15 { margin-right: 15px; }
+.mr-20 { margin-right: 20px; }
+.ml-5 { margin-left: 5px; }
+.ml-10 { margin-left: 10px; }
+.ml-15 { margin-left: 15px; }
+.ml-20 { margin-left: 20px; }
+.mt-5 { margin-top: 5px; }
+.mt-10 { margin-top: 10px; }
+.mt-15 { margin-top: 15px; }
+.mt-20 { margin-top: 20px; }
+.mt-50 { margin-top: 50px; }
+.mb-5 { margin-bottom: 5px; }
+.mb-10 { margin-bottom: 10px; }
+.mb-15 { margin-bottom: 15px; }
+.mb-20 { margin-bottom: 20px; }
+/* padding */
+.pr-5 { padding-right: 5px; }
+.pr-10 { padding-right: 10px; }
+.pr-15 { padding-right: 15px; }
+.pr-20 { padding-right: 20px; }
+.pl-5 { padding-left: 5px; }
+.pl-10 { padding-left: 10px; }
+.pl-15 { padding-left: 15px; }
+.pl-20 { padding-left: 20px; }
+.pl-30 { padding-left: 30px; }
+.pt-5 { padding-top: 5px; }
+.pt-10 { padding-top: 10px; }
+.pt-15 { padding-top: 15px; }
+.pt-20 { padding-top: 20px; }
+.pb-5 { padding-bottom: 5px; }
+.pb-10 { padding-bottom: 10px; }
+.pb-15 { padding-bottom: 15px; }
+.pb-20 { padding-bottom: 20px; }
+
+
+.micro { background:url('/web/upload/images/m_co_bg.jpg') center no-repeat; width:100%; height:100vh; }
+.micro p { position:fixed; top:0; bottom:0; margin:auto; left:50%; margin-left:-100px; font-family:'Montserrat',sans-serif; font-size:20px; font-weight:bold; }
+
+/* header, gnb */

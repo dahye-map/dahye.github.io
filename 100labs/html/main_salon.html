@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+        <script src="../lib/js/slick.min.js"></script>
+
+        <script src="../lib/js/TweenMax.min.js"></script>
+        <script src="../lib/js/ScrollMagic.js"></script>
+        <script src="../lib/js/animation.gsap.js"></script>
+
+        <script src="../lib/js/debug.addIndicators.min.js"></script>
+        <script src="../lib/js/ui.js"></script>
+
+        <!-- <script src="../lib/js/ui.js"></script> -->
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+        <link rel="stylesheet" href="../lib/css/slick.css" />
+        <link type="text/css" rel="stylesheet" href="../lib/css/common.css">
+        <link type="text/css" rel="stylesheet" href="../lib/css/layout.css">
+        <title></title>
+    </head>
+    <body>
+
+        <!-- s:headerWrap -->
+        <div id="headerWrap">
+            <div class="header">
+
+                <a href="javascript:void(0)" class="btn-menu"><img src="../images/ico_menu.png" alt="메뉴"></a>
+                <a href="#" class="logo salon ani5" id="ani_logo"><img src="../images/logo_salon.png" alt="로고"></a>
+                <!-- <a href="#" class="btn-member">
+                    <img src="../images/ico_member.png" alt="회원"> -->
+                    <!-- on될때 클래스 on 추가 -->
+                    <!-- <span class="">OFF</span>
+                </a> -->
+                <ul class="util">
+                    <li><a href="#">로그인</a></li>
+                    <li><a href="#">회원가입</a></li>
+                    <li><a href="#">마이페이지</a></li>
+
+                    <li><a href="#" class="btn-search"><img src="../images/btn_search.png" alt=""></a></li>
+                    <li><a href="#" class="btn-cart"><img src="../images/btn_cart.jpg" alt=""></a></li>
+                </ul>
+            </div>
+        </div>
+        <!-- //e:headerWrap -->
+
+        <!-- s:gnbWrap -->
+        <div id="gnbWrap">
+            <div class="gnb ani5">
+                <a href="javascript:void(0)" class="btn-close"><img src="../images/btn_close.jpg" alt=""></a>
+                <input type="text" name="" value="" placeholder="Search" class="search">
+                <ul>
+                    <li>
+                        <a href="#">100LABS</a>
+                    </li>
+                    <li>
+                        <a href="#">Shop</a>
+                        <ul>
+                            <li><a href="main_recipe.html">엄마의 목욕탕레시피</a></li>
+                            <li><a href="main_salon.html">쌀롱드리</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">Community</a>
+                        <ul>
+                            <li><a href="#">공지사항</a></li>
+                            <li><a href="#">제품후기</a></li>
+                            <li><a href="#">언론보도</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">Q&amp;A</a>
+                        <ul>
+                            <li><a href="#">고객센터</a></li>
+                            <li><a href="#">공지사항</a></li>
+                            <li><a href="#">1:1상담문의</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- //e:gnbWrap -->
+
+        <script>
+        	// build scene
+        	var scene = new ScrollMagic.Scene({triggerElement: "#trigger1", duration: 300})
+        					.setTween("#ani_logo", {scale:0.5, marginTop: "20px"}) // the tween durtion can be omitted and defaults to 1
+        					//.addIndicators({name: "1 (duration: 300)"}) // add indicators (requires plugin)
+        					.addTo(controller);
+
+        </script>
+
+        <!-- s:wrap -->
+        <div id="wrap">
+            <!-- s:containerWrap -->
+
+            <div id="containerWrap">
+                <div class="container">
+                    <div class="top-banner" style="padding-top:180px;">
+                        <div>
+                            <img src="../images/img_banner_salon01.jpg" alt="">
+                        </div>
+                        <div>
+                            <img src="../images/img_banner_salon02.jpg" alt="">
+                        </div>
+                        <div>
+                            <img src="../images/img_banner_salon03.jpg" alt="">
+                        </div>
+                    </div>
+                    <div id="trigger1" class="spacer s1"></div>
+
+                    <div class="all-product-wrap">
+                        <div class="all-product">
+                            <p class="tit">All Product</p>
+                            <ul>
+                                <li>
+                                    <a href="#">
+                                        <img src="../images/img_salon_product03.jpg" alt="">
+                                        <p class="name">인 샤워 마스크 흑임자</p>
+                                        <p class="desc">각질&amp;모공 집중 케어</p>
+                                        <p class="price">29,000 <strike>58,000</strike></p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="../images/img_salon_product01.jpg" alt="">
+                                        <p class="name">인 샤워 마스크 흑임자</p>
+                                        <p class="desc">각질&amp;모공 집중 케어</p>
+                                        <p class="price">29,000 <strike>58,000</strike></p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="../images/img_salon_product01.jpg" alt="">
+                                        <p class="name">인 샤워 마스크 흑임자</p>
+                                        <p class="desc">각질&amp;모공 집중 케어</p>
+                                        <p class="price">29,000 <strike>58,000</strike></p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="../images/img_salon_product02.jpg" alt="">
+                                        <p class="name">시트 마스크</p>
+                                        <p class="desc">유기농 쌀에서 추출한 쌀수<br>90% 함유 고보습 약산성 토너</p>
+                                        <p class="price">29,000 <strike>58,000</strike></p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="../images/img_salon_product03.jpg" alt="">
+                                        <p class="name">바디 필링 패드</p>
+                                        <p class="desc">유기농 쌀에서 추출한 쌀수<br>70% 함유 윤광 쌀 크림</p>
+                                        <p class="price">29,000 <strike>58,000</strike></p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="../images/img_salon_product02.jpg" alt="">
+                                        <p class="name">워시오프 바디 밀크</p>
+                                        <p class="desc">효소파우더와 유기농 쌀가루가 만나<br>묵은 각질까지 딥클렌징 해주는 파우더 워시</p>
+                                        <p class="price">29,000 <strike>58,000</strike></p>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+
+                    <div class="md-pick-wrap">
+                        <div class="md-pick">
+                            <p class="tit">MD's PICK</p>
+                            <div class="md-pick-list-wrap">
+                                <div class="md-pick-list">
+                                    <a href="#" class="img"><img src="../images/img_salon_md01.jpg" alt=""></a>
+                                    <div class="box">
+                                        <a href="#" class="box-tit">누가 피부를 뒤에서 잡아당기는 느낌이 들 정도로 탱탱해져요</a>
+                                        <a href="#" class="box-des">
+                                            피부가 누가 잡아당기는 것 마냥 탱탱해지는 느낌이 들어서 놀랐어요. 복합성에 좀 예민해서 앰플을
+                                            잘못 쓰면 여드름이 바로 돋는데 아침에 일어났더니 피부가 한결 더 탱탱해진거 같고 여드름도 나지
+                                            않아서 정말 만족했어요! 아직 별로 쓰지도 않았는데 이런 효과를 보다니 앞으로 꾸준히 사용한다면
+                                            효과가 더 클 것 같아서 정말 기대가 되네요. 피부가 예민하신 분들 새로운 화장품 쓰기 걱정되시면 ..
+                                        </a>
+                                    </div>
+                                    <div class="box type02">
+                                        <a href="#">
+                                            <span><img src="../images/img_thumbnail.jpg" alt=""></span>
+                                            <span class="name01">쌀롱드리</span>
+                                            <span class="name02">에센셜 토너 200ml</span>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="md-pick-list">
+                                    <a href="#" class="img"><img src="../images/img_salon_md02.jpg" alt=""></a>
+                                    <div class="box">
+                                        <a href="#" class="box-tit">누가 피부를 뒤에서 잡아당기는 느낌이 들 정도로 탱탱해져요</a>
+                                        <a href="#" class="box-des">
+                                            피부가 누가 잡아당기는 것 마냥 탱탱해지는 느낌이 들어서 놀랐어요. 복합성에 좀 예민해서 앰플을
+                                            잘못 쓰면 여드름이 바로 돋는데 아침에 일어났더니 피부가 한결 더 탱탱해진거 같고 여드름도 나지
+                                            않아서 정말 만족했어요! 아직 별로 쓰지도 않았는데 이런 효과를 보다니 앞으로 꾸준히 사용한다면
+                                            효과가 더 클 것 같아서 정말 기대가 되네요. 피부가 예민하신 분들 새로운 화장품 쓰기 걱정되시면 ..
+                                        </a>
+                                    </div>
+                                    <div class="box type02">
+                                        <a href="#">
+                                            <span><img src="../images/img_thumbnail.jpg" alt=""></span>
+                                            <span class="name01">쌀롱드리</span>
+                                            <span class="name02">에센셜 토너 200ml</span>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="md-pick-list">
+                                    <a href="#" class="img"><img src="../images/img_salon_md01.jpg" alt=""></a>
+                                    <div class="box">
+                                        <a href="#" class="box-tit">누가 피부를 뒤에서 잡아당기는 느낌이 들 정도로 탱탱해져요</a>
+                                        <a href="#" class="box-des">
+                                            피부가 누가 잡아당기는 것 마냥 탱탱해지는 느낌이 들어서 놀랐어요. 복합성에 좀 예민해서 앰플을
+                                            잘못 쓰면 여드름이 바로 돋는데 아침에 일어났더니 피부가 한결 더 탱탱해진거 같고 여드름도 나지
+                                            않아서 정말 만족했어요! 아직 별로 쓰지도 않았는데 이런 효과를 보다니 앞으로 꾸준히 사용한다면
+                                            효과가 더 클 것 같아서 정말 기대가 되네요. 피부가 예민하신 분들 새로운 화장품 쓰기 걱정되시면 ..
+                                        </a>
+                                    </div>
+                                    <div class="box type02">
+                                        <a href="#">
+                                            <span><img src="../images/img_thumbnail.jpg" alt=""></span>
+                                            <span class="name01">쌀롱드리</span>
+                                            <span class="name02">에센셜 토너 200ml</span>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="md-pick-list">
+                                    <a href="#" class="img"><img src="../images/img_salon_md02.jpg" alt=""></a>
+                                    <div class="box">
+                                        <a href="#" class="box-tit">누가 피부를 뒤에서 잡아당기는 느낌이 들 정도로 탱탱해져요</a>
+                                        <a href="#" class="box-des">
+                                            피부가 누가 잡아당기는 것 마냥 탱탱해지는 느낌이 들어서 놀랐어요. 복합성에 좀 예민해서 앰플을
+                                            잘못 쓰면 여드름이 바로 돋는데 아침에 일어났더니 피부가 한결 더 탱탱해진거 같고 여드름도 나지
+                                            않아서 정말 만족했어요! 아직 별로 쓰지도 않았는데 이런 효과를 보다니 앞으로 꾸준히 사용한다면
+                                            효과가 더 클 것 같아서 정말 기대가 되네요. 피부가 예민하신 분들 새로운 화장품 쓰기 걱정되시면 ..
+                                        </a>
+                                    </div>
+                                    <div class="box type02">
+                                        <a href="#">
+                                            <span><img src="../images/img_thumbnail.jpg" alt=""></span>
+                                            <span class="name01">쌀롱드리</span>
+                                            <span class="name02">에센셜 토너 200ml</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="pro-bar type02"><span class="pro-highlight"></span></div>
+                        </div>
+                    </div>
+
+
+                    <!-- s:section03 -->
+                    <div class="section03 salon">
+                        <div class="col2">
+                            <div>
+                                <img src="../images/img_salon_section03.jpg" alt="">
+                            </div>
+                            <div class="bg-mint">
+                                <div class="tit-wrap ta-l">
+                                    <p class="tit-eng"
+                                    data-aos="fade-up"
+                                    data-aos-duration="500"
+                                    data-aos-once="true">Product</p>
+                                    <p class="tit-big"
+                                    data-aos="fade-up"
+                                    data-aos-duration="1000"
+                                    data-aos-once="true">유기농쌀로 지은 피부맑은<br>쌀롱드리 루틴케어</p>
+                                    <p class="tit-sub"
+                                    data-aos="fade-up"
+                                    data-aos-duration="1500"
+                                    data-aos-once="true">
+                                        오랜 기다림과 고된 수고로움의 결실, “쌀”<br>
+                                        원료 자체의 깨끗한 에너지로 근본적인 피부 고민을<br>
+                                        해결 할 수 있도록 건강한 피부를 짓는것.<br>
+                                        자연과 소비자를 위한 우리의 약속입니다.
+                                    </p>
+                                    <a href="#" class="btn-more mt-50"
+                                    data-aos="fade-up"
+                                    data-aos-duration="2000"
+                                    data-aos-once="true">더 알아보기</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- //e:section03 -->
+
+                    <!-- s:section04 -->
+                    <!-- <div class="section04">
+                        <div class="new-slide-wrap">
+                            <p class="desc01">New arrivals</p>
+                            <p class="desc02">salon de riz MD’s pick</p>
+                            <div class="new-slide">
+                                <div class="col2">
+                                    <div>
+                                        <img src="../images/img_new01.jpg" alt="">
+                                    </div>
+                                    <div>
+                                        <p class="product"><img src="../images/img_product01.jpg" alt=""></p>
+                                        <div class="tit-wrap ta-c">
+                                            <p class="tit-big">쌀롱드리 쌀베이스<br>에센셜 토너</p>
+                                            <p class="tit-sub">
+                                                서브카피서브카피 상품에 대한 서브카피<br>
+                                                서브카피서브카피 상품에 대한 서브카피<br>
+                                                서브카피서브카피 상품에 대한 서브카피<br>
+                                                서브카피서브카피 상품에 대한 서브카피<br>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col2">
+                                    <div>
+                                        <img src="../images/img_new01.jpg" alt="">
+                                    </div>
+                                    <div>
+                                        <p class="product"><img src="../images/img_product01.jpg" alt=""></p>
+                                        <div class="tit-wrap ta-c">
+                                            <p class="tit-big">쌀롱드리 쌀베이스<br>에센셜 토너</p>
+                                            <p class="tit-sub">
+                                                서브카피서브카피 상품에 대한 서브카피<br>
+                                                서브카피서브카피 상품에 대한 서브카피<br>
+                                                서브카피서브카피 상품에 대한 서브카피<br>
+                                                서브카피서브카피 상품에 대한 서브카피<br>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col2">
+                                    <div>
+                                        <img src="../images/img_new01.jpg" alt="">
+                                    </div>
+                                    <div>
+                                        <p class="product"><img src="../images/img_product01.jpg" alt=""></p>
+                                        <div class="tit-wrap ta-c">
+                                            <p class="tit-big">쌀롱드리 쌀베이스<br>에센셜 토너</p>
+                                            <p class="tit-sub">
+                                                서브카피서브카피 상품에 대한 서브카피<br>
+                                                서브카피서브카피 상품에 대한 서브카피<br>
+                                                서브카피서브카피 상품에 대한 서브카피<br>
+                                                서브카피서브카피 상품에 대한 서브카피<br>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col2">
+                                    <div>
+                                        <img src="../images/img_new01.jpg" alt="">
+                                    </div>
+                                    <div>
+                                        <p class="product"><img src="../images/img_product01.jpg" alt=""></p>
+                                        <div class="tit-wrap ta-c">
+                                            <p class="tit-big">쌀롱드리 쌀베이스<br>에센셜 토너</p>
+                                            <p class="tit-sub">
+                                                서브카피서브카피 상품에 대한 서브카피<br>
+                                                서브카피서브카피 상품에 대한 서브카피<br>
+                                                서브카피서브카피 상품에 대한 서브카피<br>
+                                                서브카피서브카피 상품에 대한 서브카피<br>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div> -->
+                    <!-- //e:section04 -->
+
+                    <!-- s:section05 -->
+                    <!-- <div class="section05">
+                        <div class="contents">
+                            <div class="product-list-wrap">
+                                <div class="banner"><img src="../images/img_recipe01.jpg" alt=""></div>
+                                <div class="product">
+                                    <div class="tit-wrap">
+                                        <p class="tit-big">언택트의 일상화 '홈루덴스'<br>엄마의 목욕탕 레시피</p>
+                                        <p class="tit-sub">멀리 밖으로 나가지 않고<br>주로 집에서 놀고 즐길 줄 아는 사람들</p>
+                                    </div>
+                                    <a href="#" class="btn-go">바로가기</a>
+
+                                    <ul class="product-list">
+                                        <li>
+                                            <a href="#">
+                                                <p class="img"><img src="../images/img_rcp_product01.jpg" alt=""></p>
+                                                <p class="category">[20SUMMER]</p>
+                                                <p class="name">20N summer shirts jacket</p>
+                                                <p class="price">139,000</p>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <p class="img"><img src="../images/img_rcp_product02.jpg" alt=""></p>
+                                                <p class="category">[20SUMMER]</p>
+                                                <p class="name">20N summer shirts jacket</p>
+                                                <p class="price">139,000</p>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <p class="img"><img src="../images/img_rcp_product03.jpg" alt=""></p>
+                                                <p class="category">[20SUMMER]</p>
+                                                <p class="name">20N summer shirts jacket</p>
+                                                <p class="price">139,000</p>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div> -->
+                    <!-- //e:section05 -->
+                </div>
+            </div>
+            <!-- //e:containerWrap -->
+        </div>
+        <!-- //e:wrap -->
+
+        <script>
+        $(document).ready(function(){
+            $('.top-banner').slick({
+                arrows:false,
+                autoplay: true,
+                autoplaySpeed:3000,
+                //fade:true
+            });
+
+            $('.brand-slide').slick({
+                centerMode: true,
+                variableWidth: true,
+                centerPadding: '136px',
+                slidesToShow: 1,
+                dots: true,
+                customPaging: function (slider, i) {
+                    $('.all-idx').html(slider.slideCount)
+                }
+            });
+            $(".brand-slide").on('afterChange',function(){
+                var curIdx = $(".brand-slide .slick-active").attr("data-slick-index");
+                curIdx = parseInt(curIdx);
+                $(".pro-highlight").animate({ "width": (16.666 * (curIdx+1))+"%" },300);
+                $('.cur-idx').html(curIdx + 1);
+            });
+
+            $('.new-slide').slick({
+                arrows:false,
+                fade:true,
+                dots: true,
+            });
+
+            $('.md-pick-list-wrap').slick({
+                arrows:false,
+                slidesToShow: 2,
+                slidesToScroll: 1
+            });
+            $(".md-pick-list-wrap").on('afterChange',function(){
+                var curIdx = $(".md-pick-list-wrap .slick-active").attr("data-slick-index");
+                curIdx = parseInt(curIdx);
+                $(".pro-highlight").animate({ "width": (25 * (curIdx+1))+"%" },300);
+            });
+        });
+        </script>
+
+        <!-- s:footerWrap -->
+        <div id="footerWrap">
+            <div class="footer">
+                <p><img src="../images/logo.png" alt=""></p>
+                <ul class="footer-tab">
+                    <li><a href="#">ABOUT</a></li>
+                    <li><a href="#">GUIDE</a></li>
+                    <li><a href="#">AGREEMENT</a></li>
+                    <li><a href="#">PRIVACY POICY</a></li>
+                </ul>
+                <p class="company-detail">
+                    디에스앤㈜ 대표 최성수 전화 02-2211-6556 팩스 02-2214-6511 메일 주소 	서울특별시 성동구 청계천로 12가길 68 1층 창원빌딩<br>
+                    사업자등록번호 113-81-87618 <a href="#">[사업자정보확인]</a> 통신판매업신고 제2019-서울성동-623호<br>
+                    개인정보취급관리 김태형, admin@naver.com <br>
+                    운영시간 평일 AM10-PM06 주말/공휴일 휴무
+                </p>
+                <ul class="sns-list">
+                    <li><a href="#"><img src="../images/ico_insta.jpg" alt=""></a></li>
+                    <li><a href="#"><img src="../images/ico_kakao.jpg" alt=""></a></li>
+                    <li><a href="#"><img src="../images/ico_blog.jpg" alt=""></a></li>
+                    <li><a href="#"><img src="../images/ico_facebook.jpg" alt=""></a></li>
+                    <li><a href="#"><img src="../images/ico_twitter.jpg" alt=""></a></li>
+                </ul>
+            </div>
+        </div>
+        <!-- //e:footerWrap -->
+
+        <div class="quick-menu ani1">
+            <p><a href="main_recipe.html"><img src="../images/btn_quick_mom.png" alt=""></a></p>
+            <p><a href="main_salon.html"><img src="../images/btn_quick_salon.png" alt=""></a></p>
+        </div>
+
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    </body>
+</html>
