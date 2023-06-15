@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>안심전세 관리자</title>
+
+    <link rel="stylesheet" href="../lib/css/reset.css">
+    <link rel="stylesheet" href="../lib/css/common.css">
+    <script src="../lib/js/jquery-3.5.1.min.js"></script>
+    <script src="../lib/js/ui.js"></script>
+</head>
+<body>
+    <div id="wrap">
+
+        <!-- s:header -->
+        <header id="headerWrap">
+            <div class="header">
+                <h1 class="logo">
+                    <a href="ADHG_06000000.html">
+                        <img src="../images/logo@2x.png" alt="HUG안심전세 로고">
+                        <span>관리자 시스템</span>
+                    </a>
+                </h1>
+
+                <div class="util-wrap">
+                    <ul>
+                        <li class="name">
+                            <a href=""><span>홍길동님</span></a>
+                        </li>
+                        <li class="logout">
+                            <a href="ADLG_01000000.html"><span>로그아웃</span></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+        <!-- //e:header -->
+
+        <!-- s:nav -->
+        <nav id="navWrap">
+            <div class="nav">
+                <ul>
+                    <li><a href="ADHG_02000000.html">관리자 설정</a></li>
+                    <li><a href="ADHG_03000000.html">권한 관리</a></li>
+                    <li><a href="ADHG_04000000.html">안심전세 관리</a></li>
+                    <li><a href="javascript:void(0)">법률상담 관리</a>
+                        <ul class="depth-menu">
+                            <li><a href="ADHG_05000000.html">상담배정 내역조회</a></li>
+                            <li><a href="ADHG_06000000.html">법률상담 내역조회</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="ADHG_13000000.html">법률사례 조회</a></li>
+                    <li><a href="ADHG_08000000.html">고객관리</a></li>
+                    <li><a href="ADHG_08000000.html">공지사항 관리</a></li>
+                    <li><a href="javascript:void(0)">통계 관리</a>
+                        <ul class="depth-menu">
+                            <li><a href="ADHG_09000000.html">접속통계 관리</a></li>
+                            <li><a href="ADHG_11000000.html">이용통계 관리</a></li>
+                        </ul>
+
+                    </li>
+ 
+                </ul>
+            </div>
+        </nav>
+        <!-- //e:nav -->
+        <!-- s:containerWrap -->
+        <div id="containerWrap">
+            <div class="container">
+                <h2 class="top-title">법률상담 내역상세</h2>
+
+                <!-- button에 disabled 추가하시면 disabled 상태가 됩니다.-->
+                <section class="section">
+                    <div class="btn-wrap right">
+                        <button type="button" class="btn btn-consult" onclick="openPopup('pop04')">상담배정</button>
+                        <button type="button" class="btn btn-consult" onclick="openPopup('pop03')">상담반려</button>
+                    </div>
+                    <div class="table-wrap type03">
+                        <table>
+                            <caption>상담제목, 상담내용, 답변상태, 상담유형, 답변내용, 변호사, 상담요청일, 답변완료일로 구성됨</caption>
+                            <colgroup>
+                                <col width="280px">
+                                <col width="*">
+                                <col width="280px">
+                                <col width="*">
+                            </colgroup>
+
+                            <tbody>
+                                <tr>
+                                    <th>상담제목</th>
+                                    <td colspan="3">
+                                        <input type="text" value="부산시 소액임차 최우선 변제금 문의" readonly>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>상담내용</th>
+                                    <td colspan="3">
+                                        <div class="textarea-wrap readonly">
+                                            <textarea name="inquiry" id="" cols="30" rows="10" readonly>부산시 전세계약을 알아보고 있습니다. 부동산 공인중개사 김아무개가 소액임차변제금이 3천만원이라고 하는데, 부산시 중구 해운대동을 진행할때….소액임차변제금이 3천만원이라고 하는데, 부산시 중구 해운대동을 진행할때….소액임차변제금이 3천만원이라고 하는데, 부산시 중구 해운대동을 진행할때….소액임차변제금이 3천만원이라고 하는데, 부산시 중구 해운대동을 진행할때….부산시 전세계약을 알아보고 있습니다. 부동산 공인중개사 김아무개가 소액임차변제금이 3천만원이라고 하는데, 부산시 중구 해운대동을 진행할때….소액임차변제금이 3천만원이라고 하는데, 부산시 중구 해운대동을 진행할때….소액임차변제금이 3천만원이라고 하는데, 부산시 중구 해운대동을 진행할때….소액임차변제금이 3천만원이라고 하는데, 부산시 중구 해운대동을 진행할때….부산시 전세계약을 알아보고 있습니다. 부동산 공인중개사 김아무개가 소액임차변제금이 3천만원이라고 하는데, 부산시 중구 해운대동을 진행할때….소액임차변제금이 3천만원이라고 하는데, 부산시 중구 해운대동을 진행할때….소액임차변제금이 3천만원이라고 하는데, 부산시 중구 해운대동을 진행할때….소액임차변제금이 3천만원이라고 하는데, 부산시 중구 해운대동을 진행할때….</textarea>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>답변상태</th>
+                                    <td>
+                                        답변대기
+                                    </td>
+                                    <th>상담요청일</th>
+                                    <td>
+                                        2022.11.28
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>상담유형<span class="red-dot">*</span></th>
+                                    <td colspan="3">
+                                        <div class="select-box">
+                                            <select name="consult-list" id="" title="상담유형선택" disabled >
+                                                <option value="1">대분류</option>
+                                                <option value="2">중분류</option>
+                                                <option value="3">소분류</option>
+                                            </select>
+                                            <select name="consult-list" id="" title="상담유형선택" disabled >
+                                                <option value="1">대분류</option>
+                                                <option value="2">중분류</option>
+                                                <option value="3">소분류</option>
+                                            </select>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>답변내용<span class="red-dot">*</span></th>
+                                    <td colspan="3">
+                                        <div class="textarea-wrap readonly">
+                                            <textarea name="answer" id="" cols="30" rows="10" disabled>안녕하세요. 답변관리자입니다. 현재 선생님께서 취하실 방법은 거주하신 자택의 우선권을 가지고 있는지 확인하셔야합니다. 가까운 중구 해운대동 주민센터에 방문하셔서..
+                                            </textarea>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>변호사</th>
+                                    <td>
+                                        홍길동
+                                    </td>
+                                    <th>답변완료일</th>
+                                    <td>
+                                        2022.12.08
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div class="btn-wrap mt-50">
+                        <button type="button" class="btn btn-md btn-white">이전</button>
+                        <!-- <button type="button" class="btn btn-md btn-blue">게시진행</button> -->
+                    </div>
+                </section>
+
+            </div>
+        </div>
+        <!-- //e:containerWrap -->
+
+    </div>
+
+    <!-- s:레이어팝업 - 상담반려 -->
+    <div class="layerpop-wrap" id="pop03" style="width:960px;">
+        <div class="layerpop">
+            <div class="pop-header">
+                <p class="tit">상담반려</p>
+                <a href="" class="pop-close"><span class="팝업닫기"></span></a>
+            </div>
+            <div class="pop-con">
+                <p class="txt">해당 상담건이 상담이 불가한 사유를 선택 및 입력해 주세요.</p>
+
+                <div class="table-wrap type04 scroll">
+                    <table>
+                        <caption>선택, 넘버, 반려사유로 구성된 상담반환 내용</caption>
+                        <colgroup>
+                            <col width="100px">
+                            <col width="110px">
+                            <col width="*">
+                        </colgroup>
+                        <thead>
+                            <tr>
+                                <th>선택</th>
+                                <th>No.</th>
+                                <th>반려사유</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <div class="common-radio">
+                                        <label>
+                                            <input type="radio" name="rdo1">
+                                            <span class="blind">반려사유1</span>
+                                        </label>
+                                    </div>
+                                </td>
+                                <td>1</td>
+                                <td>전∙월세 계약 및 임대보증금 미반환 사기와 관련 없는 질의</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="common-radio">
+                                        <label>
+                                            <input type="radio" name="rdo1">
+                                            <span class="blind">반려사유2</span>
+                                        </label>
+                                    </div>
+                                </td>
+                                <td>2</td>
+                                <td>개인이 아닌 각종 단체의 질의(행정기관, 공법인, 대기업∙중소기업, 재건축조합, 노동조합, 입주자대표회의, 아파트∙상가∙집합건문관리소, 종중, 사단법인, 재단법인)</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="common-radio">
+                                        <label>
+                                            <input type="radio" name="rdo1">
+                                            <span class="blind">반려사유3</span>
+                                        </label>
+                                    </div>
+                                </td>
+                                <td>3</td>
+                                <td>행정기관∙법원의 처분 및 판결결과 등에 대한 탄원성 질의</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="common-radio">
+                                        <label>
+                                            <input type="radio" name="rdo1">
+                                            <span class="blind">반려사유4</span>
+                                        </label>
+                                    </div>
+                                </td>
+                                <td>4</td>
+                                <td>단순히 사실관계만 기재하는 등 질문의 취지가 파악되지 않는 질의, 내용이 지나치게 짧아 답변에 필요한 최소한의 분량에 미치지 못하는 질의</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="common-radio">
+                                        <label>
+                                            <input type="radio" name="rdo1">
+                                            <span class="blind">반려사유5</span>
+                                        </label>
+                                    </div>
+                                </td>
+                                <td>5</td>
+                                <td>구체적 법적 문제의 해결을 위한 것이 아닌 단순 학리학 해석을 구하는 질의</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="common-radio">
+                                        <label>
+                                            <input type="radio" name="rdo1">
+                                            <span class="blind">반려사유6</span>
+                                        </label>
+                                    </div>
+                                </td>
+                                <td>6</td>
+                                <td>수사기관의 수사가 진행중인 사안∙행정기관 및 법원에 계속중인 사안에 대하여, 처분 또는 판결내용에 대한 예상 등을 구하거나 일반적인 대응 방안에 대한 질의</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="common-radio">
+                                        <label>
+                                            <input type="radio" name="rdo1">
+                                            <span class="blind">반려사유7</span>
+                                        </label>
+                                    </div>
+                                </td>
+                                <td>7</td>
+                                <td>관할 시 ∙ 군 ∙ 구청, 경찰청, 검찰청, 관할법원 및 기타 주무관청 등에 문의함이 타당한 질의 (단순 실무상 절차∙구비서류등에 대한 질의, 공단의 소관사항이 아닌 시안에 대한 질의 등)</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="common-radio">
+                                        <label>
+                                            <input type="radio" name="rdo1">
+                                            <span class="blind">반려사유8</span>
+                                        </label>
+                                    </div>
+                                </td>
+                                <td>8</td>
+                                <td>강제집행면탈, 조세포탈 등 반사회질서에 해당하는 질의</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="common-radio">
+                                        <label>
+                                            <input type="radio" name="rdo1">
+                                            <span class="blind">반려사유9</span>
+                                        </label>
+                                    </div>
+                                </td>
+                                <td>9</td>
+                                <td>기타 안심전세 법률상담의 운영 취지상 답변이 부적절하다고 판단되는 내용의 질의</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="common-radio">
+                                        <label>
+                                            <input type="radio" name="rdo1">
+                                            <span class="blind">반려사유10</span>
+                                        </label>
+                                    </div>
+                                </td>
+                                <td>10</td>
+                                <td class="etc">
+                                    <span>위 사유 외 기타 작성</span>
+                                    <input type="text" name="" id="" placeholder="50자 내 입력 가능">
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="btn-wrap mt-20">
+                    <button type="button" class="btn btn-md btn-white">닫기</button>
+                    <button type="button" class="btn btn-md btn-blue">확인</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- //e:레이어팝업 - 상담반려 -->
+
+    <!-- s:레이어팝업 - 상담배정 -->
+    <div class="layerpop-wrap" id="pop04" style="width:900px;">
+        <div class="layerpop">
+            <div class="pop-header">
+                <p class="tit">상담배정</p>
+                <a href="" class="pop-close"><span class="팝업닫기"></span></a>
+            </div>
+            <div class="pop-con">
+                <p class="txt">상담건수가 적당하게 배분되도록 각 답변관리자의 배정현황 확인 후 배정해 주세요.</p>
+
+                <div class="table-wrap type02">
+                    <table>
+                        <caption>변호사, 전체, 배정대기, 배정완료, 답변대기, 답변완료, 상담반환, 상담반려로 구성되어 있음</caption>
+                        <colgroup>
+                            <col width="200px">
+                        </colgroup>
+                        <thead>
+                            <tr>
+                                <th>변호사</th>
+                                <th>전체</th>
+                                <th>답변대기</th>
+                                <th>답변작성중</th>
+                                <th>답변완료</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <div class="input-wrap">
+                                        <select name="" id="">
+                                            <option value="">전체</option>
+                                            <option value="">손흥밍</option>
+                                            <option value="">황휘촨</option>
+                                            <option value="">킹밍재</option>
+                                        </select>
+                                    </div>
+                                </td>
+                                <td>25건</td>
+                                <td>6건</td>
+                                <td>4건</td>
+                                <td>10건</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="btn-wrap mt-20">
+                    <button type="button" class="btn btn-md btn-white">닫기</button>
+                    <button type="button" class="btn btn-md btn-blue">배정</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- //e:레이어팝업 - 상담배정 -->
+
+    <script>
+        var depth1 = 4;
+        var depth2 = 2;
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>안심전세 관리자</title>
+
+    <link rel="stylesheet" href="../lib/css/reset.css">
+    <link rel="stylesheet" href="../lib/css/common.css">
+    <script src="../lib/js/jquery-3.5.1.min.js"></script>
+    <script src="../lib/js/ui.js"></script>
+</head>
+
+<body>
+    <div id="wrap">
+
+        <!-- s:header -->
+        <header id="headerWrap">
+            <div class="header">
+                <h1 class="logo">
+                    <a href="ADHG_06000000.html">
+                        <img src="../images/logo@2x.png" alt="HUG안심전세 로고">
+                        <span>관리자 시스템</span>
+                    </a>
+                </h1>
+
+                <div class="util-wrap">
+                    <ul>
+                        <li class="name">
+                            <a href=""><span>홍길동님</span></a>
+                        </li>
+                        <li class="logout">
+                            <a href="ADLG_01000000.html"><span>로그아웃</span></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+        <!-- //e:header -->
+
+        <!-- s:nav -->
+        <nav id="navWrap">
+            <div class="nav">
+                <ul>
+                    <li><a href="ADHG_02000000.html">관리자 설정</a></li>
+                    <li><a href="ADHG_03000000.html">권한 관리</a></li>
+                    <li><a href="ADHG_04000000.html">안심전세 관리</a></li>
+                    <li><a href="javascript:void(0)">법률상담 관리</a>
+                        <ul class="depth-menu">
+                            <li><a href="ADHG_05000000.html">상담배정 내역조회</a></li>
+                            <li><a href="ADHG_06000000.html">법률상담 내역조회</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="ADHG_13000000.html">법률사례 조회</a></li>
+                    <li><a href="ADHG_08000000.html">고객관리</a></li>
+                    <li><a href="ADHG_08000000.html">공지사항 관리</a></li>
+                    <li><a href="javascript:void(0)">통계 관리</a>
+                        <ul class="depth-menu">
+                            <li><a href="ADHG_09000000.html">접속통계 관리</a></li>
+                            <li><a href="ADHG_11000000.html">이용통계 관리</a></li>
+                        </ul>
+
+                    </li>
+ 
+                </ul>
+            </div>
+        </nav>
+        <!-- //e:nav -->
+
+        <!-- s:containerWrap -->
+        <div id="containerWrap">
+            <div class="container">
+                <h2 class="top-title">접속통계 관리</h2>
+
+                <div class="tab-wrap">
+                    <div class="tab active"><a href="ADHG_09000000.html">표</a></div>
+                    <div class="tab"><a href="ADHG_10000000.html">그래프</a></div>
+                </div>
+
+
+                <section class="section">
+                    
+                    <div class="search-wrap">
+                        <div class="search">
+                            <div class="col">
+                                <p class="tit">조회기간</p>
+                                <div class="input-wrap date">
+                                    <input type="date" id="" name="" title="조회 기간 시작 날짜" required="">
+                                    <img src="../images/icon_hyphen@3x.png" alt="" class="hyphen">
+                                    <input type="date" id="" name="" title="조회 기간 시작 날짜" required="">
+                                </div>
+                            </div>
+                            <div class="col">
+                                <p class="tit">조회구분</p>
+                                <div class="input-wrap">
+                                    <select name="" id="" title="조회구분 선택">
+                                        <option value="">전체</option>
+                                        <option value="">안심전세</option>
+                                        <option value="">법률상담</option>
+                                        <option value="">마이페이지</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col mt-20">
+                                <p class="tit">화면코드</p>
+                                <div class="input-wrap">
+                                    <input type="text" name="" id="" required="" title="화면코드 입력">
+                                </div>
+                            </div>
+                            <div class="col mt-20">
+                                <p class="tit">화면명</p>
+                                <div class="input-wrap">
+                                    <input type="text" name="" class="w100" id="" required="" title="화면명 입력">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="btn-wrap mt-50">
+                        <button type="button" class="btn btn-md btn-blue">조회</button>
+                    </div>
+                </section>
+
+                <section class="section">
+                    <div class="table-wrap">
+                        <div class="table-top">
+                            <div class="total-num">
+                                총 <span>12</span>건
+                            </div>
+                        </div>
+                        <table>
+                            <caption>발생일자, 화면코드, 화면명, 오류건수, 정상건수, 총 건수로 구성됨</caption>
+                            <colgroup>
+                                <col width="130px">
+                                <col width="200px">
+                                <col width="*">
+                                <col width="130px">
+                                <col width="130px">
+                                <col width="130px">
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th>발생일자</th>
+                                    <th>화면코드</th>
+                                    <th>화면명</th>
+                                    <th>오류건수</th>
+                                    <th>정상건수</th>
+                                    <th>총 건수</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>2022.12.01</td>
+                                    <td>MHSD_01000000</td>
+                                    <td class="name">주택검색 및 조회</td>
+                                    <td>0건</td>
+                                    <td>1건</td>
+                                    <td>1건</td>
+                                </tr>
+                                <tr>
+                                    <td>2022.12.01</td>
+                                    <td>MHSD_01000001</td>
+                                    <td class="name">주택검색 및 조회</td>
+                                    <td>0건</td>
+                                    <td>1건</td>
+                                    <td>1건</td>
+                                </tr>
+                                <tr>
+                                    <td>2022.12.01</td>
+                                    <td>MHSD_01010000</td>
+                                    <td class="name">주택검색 및 조회</td>
+                                    <td>0건</td>
+                                    <td>1건</td>
+                                    <td>1건</td>
+                                </tr>
+                                <tr>
+                                    <td>2022.12.01</td>
+                                    <td>MHSD_01010002</td>
+                                    <td class="name">주택검색 및 조회</td>
+                                    <td>0건</td>
+                                    <td>1건</td>
+                                    <td>1건</td>
+                                </tr>
+                                <tr>
+                                    <td>2022.12.01</td>
+                                    <td>MHSD_01010003</td>
+                                    <td class="name">주택검색 및 조회</td>
+                                    <td>0건</td>
+                                    <td>1건</td>
+                                    <td>1건</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <div class="btn-wrap right mt-10">
+                          <button type="button" class="btn add excel">엑셀파일로 저장</button>
+                      </div>
+                    </div>
+
+                    <div class="paging-wrap">
+                        <button type="button" class="btn btn-prev02"><span class="blind">5페이지 전으로 가기</span></button>
+                        <button type="button" class="btn btn-prev"><span class="blind">1페이지 전으로 가기</span></button>
+                        <div class="num">
+                            <a href="" class="active">1</a>
+                            <a href="">2</a>
+                            <a href="">3</a>
+                        </div>
+                        <button type="button" class="btn btn-next"><span class="blind">1페이지 후로 가기</span></button>
+                        <button type="button" class="btn btn-next02"><span class="blind">5페이지 후로 가기</span></button>
+                    </div>
+                </section>
+
+            </div>
+        </div>
+        <!-- //e:containerWrap -->
+
+    </div>
+
+    <script>
+        var depth1 = 8;
+        var depth2 = 1;
+    </script>
+</body>
+</html>

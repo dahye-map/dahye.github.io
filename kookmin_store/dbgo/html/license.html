@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>엑스하이퍼</title>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Script-Type" content="text/javascript">
+    <meta http-equiv="Content-Style-Type" content="text/css">
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0 user-scalable=no">
+    <meta name="apple-mobile-web-app-status-bar-style" content="white" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="mobile-web-app-capable" content="yes">
+    <link href="../css/default.css" rel="stylesheet" />
+    <link href="../css/bootstrap.css" rel="stylesheet">
+    <link href="../css/jquery-ui.css" rel="stylesheet">
+    <link href="../css/layout.css" rel="stylesheet">
+    <script src="../js/jquery-1.11.3.min.js" type="text/javascript"></script>
+    <script src="../js/jquery.bxslider.min.js" type="text/javascript"></script>
+    <script src="../js/jquery-ui.js" type="text/javascript"></script>
+    <script src="../js/bootstrap.min.js" type="text/javascript"></script>
+    <script src="../js/respond-image.js" type="text/javascript"></script>
+    <script src="../js/default.js" type="text/javascript"></script>
+	<script src="../js/ui.js" type="text/javascript"></script>
+</head>
+<body>
+    <!-- s:skipnavi -->
+    <ul id="skipnavi" class="fluid-max-1000">
+        <li><a href="#gnbWrap">메뉴 바로가기</a></li>
+        <li><a href="#contentsWrap">본문 바로가기</a></li>
+        <li><a href="#footerWrap">하단 바로가기</a></li>
+    </ul>
+    <!-- //e:skipnavi -->
+
+    <!-- s:wrap -->
+    <div id="wrap">
+        <!-- s:headerWrap -->
+        <div id="headerWrap" class="visible-xs">
+            <div class="header">
+                <div class="logo">
+                    <a href="#">
+                        라이센스구매
+                    </a>
+                </div>
+                <div class="mo-menu">
+                    <a class="menu-trigger" href="#">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!-- //e:headerWrap -->
+        <!-- s:gnbWrap -->
+        <div id="gnbWrap" class="white">
+            <div class="gnb-bg"></div>
+            <div class="fix-gnb-bg"></div>
+            <div class="gnb" style="height:70px;">
+                <ul>
+                    <li class="logo">
+                        <a href="./main.html">디비고</a>
+                    </li>
+                    <li class="home">
+                        <a href="./main.html">홈</a>
+                    </li>
+                    <li>
+                        <a href="./database.html">데이터베이스</a>
+                        <ul>
+                            <li>
+                                <a href="./database.html">기업디비</a>
+                            </li>
+                            <li>
+                                <a href="./database.html">개인디비</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="./service.html">서비스안내</a>
+                        <ul>
+                            <li>
+                                <a href="./service.html">서비스안내</a>
+                            </li>
+                            <li>
+                                <a href="./service.html">이용안내</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="./license.html">라이센스구매</a>
+                        <ul>
+                            <li>
+                                <a href="./license.html">라이센스구매</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="mo-only">
+                        <a href="./basic.html">고객센터</a>
+                        <ul>
+                            <li>
+                                <a href="./basic.html">내정보</a>
+                            </li>
+                            <li>
+                                <a href="./licenseinfo.html">라이센스정보</a>
+                            </li>
+                            <li>
+                                <a href="./inquire.html">문의하기</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="mo-only">
+                        <a href="./login.html">로그인</a>
+                    </li>
+                </ul>
+                <div class="box-login">
+                    <a href="javascript:void(0)" class="btn btn-main-login type02">로그인</a>
+                    <div class="box">
+                        <span class="arrow"><img src="../img/bg_box_arrow.png" alt=""> </span>
+                        <p class="id"><span>dwe123</span> 님 환영합니다.</p>
+                        <table>
+                            <colgroup>
+                                <col width="38%">
+                                <col width="40%">
+                                <col width="*">
+                            </colgroup>
+                            <tbody>
+                                <tr>
+                                    <td>라이센스정보</td>
+                                    <td>2019-03-13</td>
+                                    <td>
+                                        <a href="./license.html">연장하기</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>접속아이피</td>
+                                    <td>120.12.12.13</td>
+                                    <td>
+                                        <a href="./licenseinfo.html">IP변경</a>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <p class="ta-c mt20 mb20"><a href="#" class="btn-logout">로그아웃</a></p>
+                        <ul>
+                            <li>
+                                <a href="./basic.html">내정보</a>
+                            </li>
+                            <li>
+                                <a href="./licenseinfo.html">라이센스정보</a>
+                            </li>
+                            <li>
+                                <a href="./inquire.html">문의하기</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- //e:gnbWrap -->
+
+        <script>
+	        var depth1 = 5;
+	    </script>
+
+
+        <!-- s:contentsWrap -->
+        <div id="contentsWrap">
+            <div class="container license">
+                <h1>라이선스 구매</h1>
+
+                <div class="license-list-wrap">
+                    <div class="license-list">
+                        <ul>
+                            <li>
+                                <a href="#" class="">
+                                    <p class="tit">1일 무제한 사용 라이센스</p>
+                                    <p class="price"><span>55,000</span> 원</p>
+                                </a>
+                            </li>
+                            <li class="active">
+                                <a href="#">
+                                    <p class="tit">30일 무제한 사용 라이센스</p>
+                                    <p class="price"><span>165,000</span> 원</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="">
+                                    <p class="tit">180일 무제한 사용 라이센스</p>
+                                    <p class="price"><span>165,000</span> 원</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="">
+                                    <p class="tit">365일 무제한 사용 라이센스</p>
+                                    <p class="price"><span>165,000</span> 원</p>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <script>
+                    $('.license-list ul li').click(function(){
+                        $('.license-list ul li').removeClass('active');
+                        $(this).addClass('active');
+                    });
+                </script>
+
+                <p class="des01 mt25">라이선스 구매 즉시 모든 업종의 DB를 이용기간동안 무제한 열람하고 다운로드 하실 수 있습니다!</p>
+
+                <div class="ta-c mt30 mb60">
+                    <a href="javascript:void(0)" class="btn btn-basic"  onclick="openPopup('buy')">구매하기</a>
+                </div>
+
+                <hr>
+
+                <h1>이용안내</h1>
+                <div class="notice-wrap">
+                    <ul>
+                        <li>
+                            본 라이선스 구매는 본 서비스 회원가입후 이용이 가능합니다.
+                        </li>
+                        <li>
+                            라이센스 가격은 별도의 공지없이 변동 될 수 있습니다.
+                        </li>
+                        <li>
+                            엑셀파일로 다운로드한 자료는 영구적으로 사용 가능합니다.
+                        </li>
+                        <li>
+                            본 서비스는 국가가 제공하는 서비스 장애로 인해 지연 제공될 수 있으며, 데이터의 오류나 당사의 처리과정의 착오로 인하여 부정확한 정보가 제공될 수 있습니다.
+                        </li>
+                        <li>
+                            본 서비스는 계약을 맺은 고객(1IP)에게 국한하여 마케팅 목적의 참고 또는 보조자료로 제공되며 당사는 이 자료에 기한 행위의 결과에 대해 법적 책임을 지지 않습니다.
+                        </li>
+                        <li>
+                            본 서비스에서 제공하는 자료에 대해 당사의 승인을 서면으로 득하지 않은 무단전제와 재배포, 일체의 재생산 및 지적재산권 침해행위를 금지합니다.
+                        </li>
+                        <li>
+                            본 서비스를 영리성 광고 목적으로 활용하는 경우 정보이용촉진 및 정보보호등에 관한 법률 제50조에 따른 준수사항을 반드시 지켜야 하며 이를 어길 경우 관련법에 따라 처벌받을 수 있습니다.
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- //e:contentsWrap -->
+
+
+        <!-- s:footerWrap -->
+        <div id="footerWrap">
+            <div class="footer">
+                <div class="row pb30">
+                    <div class="col-md-2 col-sm-1">
+                        <!-- 이미지로 변경의 경우 img 넣어주세요 -->
+                        <p class="footer-logo">디비고</p>
+                    </div>
+                    <div class="col-md-7 col-sm-7">
+                        <p class="copy">
+                            디비고  |  사업자등록번호 : 123-12-12345  |  통신판매업신고번호 : 제 2010-용인수지-114호 <br>
+                            개인정보관리책임자 : 김아무개  |  전자우편주소 : dbgo@dbgo.com <br>
+                            서울특별시 구로구 디지털로34길 43, 201호(구로동) <br>
+                            CopyrightⓒAll Rights Reserved
+                        </p>
+                    </div>
+                    <div class="tel">
+                        <p>전화상담<br><span>(24시간)</span></p>
+                        <p>1588-1200</p>
+                    </div>
+                </div>
+                <div class="forward-wrap">
+                    <div class="forward01">
+                        <ul>
+                            <li>
+                                <a href="#"> <img src="../img/ico_footer01.jpg" alt=""> </a>
+                            </li>
+                            <li>
+                                <a href="#"> <img src="../img/ico_footer02.jpg" alt=""> </a>
+                            </li>
+                            <li>
+                                <a href="#"> <img src="../img/ico_footer03.jpg" alt=""> </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="forward02">
+                        <ul>
+                            <li>
+                                <a href="#"> <img src="../img/ico_city01.png" alt=""> </a>
+                            </li>
+                            <li>
+                                <a href="#"> <img src="../img/ico_city02.png" alt=""> </a>
+                            </li>
+                            <li>
+                                <a href="#"> <img src="../img/ico_city03.png" alt=""> </a>
+                            </li>
+                            <li>
+                                <a href="#"> <img src="../img/ico_city04.png" alt=""> </a>
+                            </li>
+                            <li>
+                                <a href="#"> <img src="../img/ico_city05.png" alt=""> </a>
+                            </li>
+                            <li>
+                                <a href="#"> <img src="../img/ico_city06.png" alt=""> </a>
+                            </li>
+                            <li>
+                                <a href="#"> <img src="../img/ico_city07.png" alt=""> </a>
+                            </li>
+                            <li>
+                                <a href="#"> <img src="../img/ico_city08.png" alt=""> </a>
+                            </li>
+                            <li>
+                                <a href="#"> <img src="../img/ico_city09.png" alt=""> </a>
+                            </li>
+                            <li>
+                                <a href="#"> <img src="../img/ico_city10.png" alt=""> </a>
+                            </li>
+                            <li>
+                                <a href="#"> <img src="../img/ico_city11.png" alt=""> </a>
+                            </li>
+                            <li>
+                                <a href="#"> <img src="../img/ico_city12.png" alt=""> </a>
+                            </li>
+                            <li>
+                                <a href="#"> <img src="../img/ico_city13.png" alt=""> </a>
+                            </li>
+                            <li>
+                                <a href="#"> <img src="../img/ico_city14.png" alt=""> </a>
+                            </li>
+                            <li>
+                                <a href="#"> <img src="../img/ico_city15.png" alt=""> </a>
+                            </li>
+                            <li>
+                                <a href="#"> <img src="../img/ico_city16.png" alt=""> </a>
+                            </li>
+                            <li>
+                                <a href="#"> <img src="../img/ico_city17.png" alt=""> </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- //e:footerWrap -->
+
+    </div>
+    <!-- //e:wrap -->
+
+
+    <div class="layerpopup popup" id="buy">
+        <div class="popup-top">
+            <p>라이센스 구매</p>
+            <a href="javascript:void(0)" onClick="closePopup('buy')"><img src="../img/btn_close.png" alt=""></a>
+        </div>
+
+        <div class="popup-con">
+            <p class="des01 mt40 mb30">현재 라이센스 구매는 입금만 가능합니다.</p>
+
+            <div class="popup-tb">
+                <table>
+                    <col width="15%">
+                    <col width="44%">
+
+                    <tr>
+                        <th>입금은행</th>
+                        <td>경북은행</td>
+                    </tr>
+                    <tr>
+                        <th>예금주</th>
+                        <td>김지은</td>
+                    </tr>
+                    <tr>
+                        <th>계좌번호</th>
+                        <td>1002-255-123456</td>
+                    </tr>
+                </table>
+
+                <table class="mt30">
+                    <col width="15%">
+                    <col width="44%">
+
+                    <tr>
+                        <th>구매 상품명</th>
+                        <td>30일 무제한 사용 라이센스</td>
+                    </tr>
+                    <tr>
+                        <th>구매 상품가격</th>
+                        <td>165,000원</td>
+                    </tr>
+                    <tr>
+                        <th>입금자명</th>
+                        <td><input type="text" name="" value="" class="w36"></td>
+                    </tr>
+                    <tr>
+                        <th>남기실말</th>
+                        <td><input type="text" name="" value="" class="w75"></td>
+                    </tr>
+                </table>
+            </div>
+
+            <p class="ta-c mt30 mb40"><a href="#" class="btn btn-basic">신청하기</a></p>
+        </div>
+    </div>
+
+</body>
+</html>
