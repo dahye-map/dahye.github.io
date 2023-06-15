@@ -1,0 +1,192 @@
+<!--@layout(/layout/basic/layout.html)-->
+<div module="Board_ListPackage_8">
+    <!--@css(/css/module/board/listPackage_gallary.css)-->
+    <!--@js(/js/module/boardsort2.js)-->
+
+    <div module="board_title_8">
+        <div class="path">
+            <span>현재 위치</span>
+            <ol>
+                <li><a href="/">홈</a></li>
+                <li><a href="/board/index.html">게시판</a></li>
+                <li title="현재 위치"><strong>{$board_name}</strong></li>
+            </ol>
+        </div>
+        <div class="backgArea"></div>
+        <div class="titlearea">
+            <h2 class="eng">
+			    브랜드엑스코퍼레이션의
+               <span style="display:block;">소식을 확인해보세요.</span>
+            </h2>
+            <ul  id="nav" class="contentNav">
+					<li><a href="/board/gallery/list.html?board_no=8" >전체</a></li>
+					<li><a href="/board/gallery/list.html?board_no=8&category_no=1">언론보도 </a></li>
+					<li><a href="/board/gallery/list.html?board_no=8&category_no=3">브코소식 </a></li>
+					<li><a href="/board/gallery/list.html?board_no=8&category_no=4">인터뷰</a></li>
+			</ul>
+        </div>
+    </div>
+<!--
+    <ul class="contentNav">
+
+				<li><a href="/board/event/8/?board_no=8&category_no=1">언론보도</a></li>
+				<li><a href="/board/event/8/?board_no=8&category_no=2">브코소식</a></li>
+        	    <li><a href="/board/event/8/?board_no=8&category_no=3">인터뷰</a></li>
+    </ul>
+-->
+
+    <div class="boardSort displaynone">
+        <span module="board_category_8">{$form.board_category}</span>
+    </div>
+
+    <ul module="board_listheader_8">
+        <li><a class="btnNormal {$list_type_display|display}" href="/board/gallery/list.html{$param_list}"><img src="//img.echosting.cafe24.com/skin/base/common/btn_icon_type_image.gif" alt="" /> 이미지형</a></li>
+        <li><a class="btnNormal {$list_type_display|display}" href="/board/gallery/list2.html{$param_list}"><img src="//img.echosting.cafe24.com/skin/base/common/btn_icon_type_list.gif" alt="" /> 리스트형</a></li>
+    </ul>
+
+    <div class="notice">
+        <div module="board_notice_8" class="board_rectangle">
+            <!--
+                $login_page_url = /member/login.html
+                $deny_access_url = /index.html
+            -->
+            <ul>
+                <li>
+                    <a href="/board/gallery/read.html{$param_read}" class="imgLink"><img src="{$img_src}" onerror="this.src='//img.echosting.cafe24.com/thumb/198x198.gif'" alt="" class="move" /></a>
+                    {$checkbox}
+                    <a href="/board/gallery/read.html{$param_read}" class="imgLink">{$subject} {$comment_count}</a>
+
+                </li>
+                <li>
+                    <a href="/board/gallery/read.html{$param_read}" class="imgLink"><img src="{$img_src}" onerror="this.src='//img.echosting.cafe24.com/thumb/198x198.gif'" alt="" class="move" /></a>
+                    {$checkbox}
+                    <a href="/board/gallery/read.html{$param_read}" class="imgLink">{$subject} {$comment_count}</a>
+
+                </li>
+            </ul>
+        </div>
+        <div module="board_fixed_8" class="board_rectangle">
+            <!--
+                $count = 2
+                $login_page_url = /member/login.html
+                $deny_access_url = /index.html
+            -->
+            <ul>
+                <li >
+                    <a href="/board/gallery/read.html{$param_read}" class="imgLink"><img src="{$img_src}" onerror="this.src='//img.echosting.cafe24.com/thumb/198x198.gif'" alt="" class="move" /></a>
+                    {$checkbox}
+                    <a href="/board/gallery/read.html{$param_read}" class="imgLink">{$subject} {$comment_count}</a>
+
+                </li>
+                <li>
+                    <a href="/board/gallery/read.html{$param_read}" class="imgLink"><img src="{$img_src}" onerror="this.src='//img.echosting.cafe24.com/thumb/198x198.gif'" alt="" class="move" /></a>
+                    {$checkbox}
+                    <a href="/board/gallery/read.html{$param_read}" class="imgLink">{$subject} {$comment_count}</a>
+
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div module="board_list_8" class="board_rectangle ">
+        <!--
+            $count = 12
+            $login_page_url = /member/login.html
+            $deny_access_url = /index.html
+        -->
+
+
+
+
+        <ul class="grid_con grid" id="grid">
+
+            <li class="grid-item grid-sizer"
+                    data-aos="fade-up"
+                   data-aos-duration="1000"
+                   data-aos-once="true">
+                <a href="/board/gallery/read.html{$param_read}" class="imgLink"><img src="/file_data/brandxcorp2/{$real_filename}" onerror="this.src='//img.echosting.cafe24.com/thumb/198x198.gif'" alt="" class="move" /></a>
+                {$checkbox}
+                <a href="/board/gallery/read.html{$param_read}" class="imgLink">{$subject} {$comment_count}</a>
+				<div class="event_write_date {$date_display|display}">{$write_date|date:Y-m-d}</div>
+            </li>
+            <li class="grid-item grid-sizer" data-aos="fade-up"
+                   data-aos-duration="1000"
+                   data-aos-once="true">
+                <a href="/board/gallery/read.html{$param_read}" class="imgLink"><img src="/file_data/brandxcorp2/{$real_filename}" onerror="this.src='//img.echosting.cafe24.com/thumb/198x198.gif'" alt="" class="move" /></a>
+                {$checkbox}
+                <a href="/board/gallery/read.html{$param_read}" class="imgLink">{$subject} {$comment_count}</a>
+				<div class="event_write_date {$date_display|display}">{$write_date|date:Y-m-d}</div>
+            </li>
+        </ul>
+     </div>
+    <div class="boardListEmpty {$empty_display|display}" module="board_empty_8">
+        <p>{$empty_message}</p>
+    </div>
+
+    <div module="board_ButtonList_8" class="{$write_display|display} ec-base-button typeBG">
+        <span class="gRight">
+            <a href="/board/gallery/write.html{$param_write}" class="btnSubmitFix sizeS {$write_display|display}">글쓰기</a>
+        </span>
+    </div>
+</div>
+
+<div module="board_paging_8" class="ec-base-paginate">
+    <a href="{$param_prev}"><img src="//img.echosting.cafe24.com/skin/base/common/btn_page_prev.gif" alt="이전 페이지" /></a>
+    <ol>
+        <li><a href="{$param_num}" class="{$param_class}">{$page_num}</a></li>
+        <li><a href="{$param_num}" class="{$param_class}">{$page_num}</a></li>
+    </ol>
+    <a href="{$param_next}"><img src="//img.echosting.cafe24.com/skin/base/common/btn_page_next.gif" alt="다음 페이지" /></a>
+</div>
+
+
+
+<!-- 관리자 전용 메뉴 -->
+<div module="board_catemove_8">
+    <!--@css(/css/module/board/catemove.css)-->
+    <p>
+        {$board_catemove_selectbox}
+        <a href="#none" class="btnNormal" onclick="{$action_category_move}"><img src="//img.echosting.cafe24.com/skin/base/common/btn_icon_move.gif" alt="" /> {$category_move}</a>
+    </p>
+</div>
+
+<div module="board_function_8">
+    <!--@css(/css/module/board/function.css)-->
+    <p>
+        {$board_function_selectbox}
+        <a href="#none" class="btnNormal" onclick="{$action_article_move}"><img src="//img.echosting.cafe24.com/skin/base/common/btn_icon_move.gif" alt="" /> {$article_move}</a>
+        <a href="#none" class="btnNormal" onclick="{$action_article_copy}"><img src="//img.echosting.cafe24.com/skin/base/common/btn_icon_copy.gif" alt="" /> {$article_copy}</a>
+        {$board_function_help}
+    </p>
+</div>
+<!-- // 관리자 전용 메뉴 -->
+
+<script>
+    $(document).ready(function(){
+        var iso = new Isotope( '.grid', {
+            itemSelector: '.grid-item',
+            layoutMode: 'masonry'
+        });
+    });
+
+		// var grid = $('#grid');
+        // // init
+        // grid.imagesLoaded( function(){
+        //     console.log('ddd')
+        //     grid.isotope({
+        //          // options
+        //         itemSelector: '.grid-item',
+        //         layoutMode: 'masonry'
+        //     });
+        // });
+//
+//   $('.contentNav li').click(function(e){
+//          e.preventDefault();
+//          var idx = $(this).index();
+//          $('.contentNav li').removeClass('active').eq(idx).addClass('active');
+//          $('.grid_con ').removeClass('active').eq(idx).addClass('active');
+//
+//
+//
+//   });
+</script>

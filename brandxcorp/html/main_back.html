@@ -1,0 +1,650 @@
+<!--@layout(/layout/basic/layout.html)-->
+ <!--@css(/layout/basic/css/main.css)-->
+
+<!-- 메인 배너 -->
+
+<div id="overlay" >
+
+	<div id="popup2" class="poppop" style="    position: absolute; top: 80px; left: 50%; margin-left: -45%; width: 80%; z-index: 99;">
+	<div id="popupimg">
+		<a href="http://dart.fss.or.kr/dsaf001/main.do?rcpNo=20201105900120" target="_blank"><img src="/web/upload/event/popup_1105.jpg"></a>
+	</div>
+	<span style="float:left; padding:5px; display:inline-block;">
+	<form name='notice_form' style="height:15px; margin-bottom:0px;  color:#ffffff;font-size:15px;">
+        <input type='checkbox' id="checkbox2" name='chkbox[]' value='checkbox' onclick="closeWin('overlay',this);" style="display:inline-block; vertical-align:middle; cursor:pointer;">
+        <label for="checkbox2" style="cursor:pointer;">오늘하루 이창을 열지 않기</label>
+	</form>
+	</span>
+</div>
+</div>
+
+<script>
+
+
+		function setCookie( name, value, expirehours ) {
+        var todayDate = new Date();
+        todayDate.setHours( todayDate.getHours() + expirehours );
+        document.cookie = name + "=" + escape( value ) + "; path=/; expires=" + todayDate.toGMTString() + ";"
+        }
+
+        function closeWin(id,checkbox) {
+
+        if ( checkbox.checked ){
+        setCookie( id, "done" , 1 );
+        }
+        document.getElementById(id).style.display = "none";
+        }
+
+
+	    cookiedata = document.cookie;
+
+		if ( cookiedata.indexOf("overlay=done") < 0 ){
+		document.getElementById('overlay').style.display = "block";
+		}
+		else {
+		document.getElementById('overlay').style.display = "none";
+		}
+</script>
+
+<div class="head-list">
+    <ul>
+        <li><a href="/brandx.html" class="btn-1">BRANDX</a></li>
+        <li><a href="/brandList.html" class="btn-1">BRAND</a></li>
+        <li><a href="/board/gallery/list.html" class="btn-1">NEWS</a></li>
+        <li><a href="/board/free/list03.html" class="btn-1">IR</a></li>
+        <li><a href="/career.html" class="btn-1">CAREER</a></li>
+    </ul>
+</div>
+
+<div class="visual"
+     data-aos="fade-up"
+     data-aos-duration="700"
+     data-aos-once="true">
+    <div class="slide-wrap swiper-container">
+        <ul class="swiper-wrapper">
+            <li class="swiper-slide">
+                <p class="slide-area area01">
+                    <!--<video class="mobile" src="#" playsinline="true" autoplay="true" preload="true" muted="true" loop="true"></video>-->
+                    <span class="pc">
+                        <video src="http://ftp.xexymix.jpg3.kr/brandx_upload/main_video.mp4" playsinline="true" autoplay="true" muted="true" loop="true"></video>
+                    </span>
+                </p>
+                <div class="visual-txt">
+                    <h1 class="tit">작은변화가<br>당신을 새로운 삶의<br>시작으로 이끕니다</h1>
+                </div>
+                <div class="visual-cover"></div>
+            </li>
+            <li class="swiper-slide">
+                <p class="slide-area area02"></p>
+                <div class="visual-txt">
+                    <h1 class="tit">브랜드엑스는 무한한<br>상상력으로 제품의<br>가치를 발견합니다</h1>
+                </div>
+            </li>
+            <li class="swiper-slide">
+                <p class="slide-area area03"></p>
+                <div class="visual-txt">
+                    <h1 class="tit">제품 R&D 열정이<br>우리를 새로운 세상<br>밖으로 이끌어 냅니다</h1>
+                </div>
+            </li>
+            <li class="swiper-slide">
+                <p class="slide-area area04"></p>
+                <div class="visual-txt">
+                    <h1 class="tit">브랜드엑스는<br>당신의 일상 속 가치를<br>높여주고자 합니다</h1>
+                </div>
+            </li>
+        </ul>
+        <div class="swiper-pagination"></div>
+    </div>
+</div>
+
+<div class="section01">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-5 col-sm-12">
+                <div class="left-fix">
+                    <p class="txt01"
+                       data-aos="fade-up"
+                       data-aos-duration="700"
+                       data-aos-once="true">Brand eXperience Corporation</p>
+                    <p class="txt02"
+                       data-aos="fade-up"
+                       data-aos-duration="700"
+                       data-aos-once="true">Make a Daily<br>Routine.</p>
+                    <p class="txt03"
+                       data-aos="fade-up"
+                       data-aos-duration="700"
+                       data-aos-once="true">
+                        브랜드엑스는 최고의 브랜드와 제품을 만들어 내는 제품 R&D 전문
+                        기업입니다.  온라인에 최적화된 브랜드를 연구·개발하고, SNS 기반
+                        마케팅 노하우를 보유한 온라인 미디어 커머스 기업입니다. <br><br>
+
+                        일상에 가치를 더해 줄 제품을 개발해 삶을 풍요롭게 만들어 나가려고
+                        합니다. 브랜드엑스는 제품력으로 승부합니다.
+
+                        출시하는 모든 제품을 사무공간 내 R&D센터와 샘플실에서 테스트를
+                        거쳐 세상에서  단하나 뿐인 제품을 만들어 내어 기업의 성장동력을
+                        만들어 내고 있습니다.
+                    </p>
+
+                    <div class="circle">
+                        <p
+                           data-aos="fade-up"
+                           data-aos-duration="700"
+                           data-aos-once="true"> <img src="/web/upload/images/img_circle01.png" alt=""> </p>
+                        <p
+                           data-aos="fade-up"
+                           data-aos-duration="700"
+                           data-aos-once="true"> <img src="/web/upload/images/img_circle02.png" alt=""> </p>
+                        <p
+                           data-aos="fade-up"
+                           data-aos-duration="700"
+                           data-aos-once="true"> <img src="/web/upload/images/img_circle03.png" alt=""> </p>
+                    </div>
+
+                    <a href="/brandx.html" class="btn-go mt80"
+                       data-aos="fade-up"
+                       data-aos-duration="700"
+                       data-aos-once="true">BRAND X 더 알아보기</a>
+                </div>
+            </div>
+            <div class="col-md-7 col-sm-12">
+                <div>
+                    <p data-aos="fade-up"
+                       data-aos-duration="700"
+                       data-aos-once="true"><img src="/web/upload/images/img_main01.jpg" alt=""></p>
+                    <p class="mt80 img02"
+                       data-aos="fade-up"
+                       data-aos-duration="700"
+                       data-aos-once="true"><img src="/web/upload/images/img_main02.jpg" alt=""></p>
+                    <p class="img03 mt80"
+                       data-aos="fade-up"
+                       data-aos-duration="700"
+                       data-aos-once="true"><img src="/web/upload/images/img_main03.jpg" alt=""></p>
+                    <p class="img04"
+                       data-aos="fade-up"
+                       data-aos-duration="700"
+                       data-aos-once="true"><img src="/web/upload/images/img_main04.jpg" alt=""></p>
+                    <p class="mt130"
+                       data-aos="fade-up"
+                       data-aos-duration="700"
+                       data-aos-once="true"><img src="/web/upload/images/img_main05.jpg" alt=""></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="section02">
+    <div class="box-wrap">
+        <div class="box"
+             data-aos="fade-up"
+             data-aos-duration="700"
+             data-aos-once="true">
+            <p class="img">
+                <a href="/board/gallery/list.html?board_no=8"><img src="/web/upload/images/img_main07.jpg" alt=""></a>
+            </p>
+            <p class="tit">Brand X, News</p>
+            <dl>
+                <dt>브랜드엑스, 매출·영업익 <br>'역대 최대' 실적 달성 </dt>
+                <dd>
+                    브랜드엑스코퍼레이션, 3분기 누적 매출 1013억원…역대 최고 D2C 전략 통했다
+
+                </dd>
+            </dl>
+            <a href="/board/gallery/list.html?board_no=8" class="btn-more">더 알아보기</a>
+        </div>
+        <div class="box"
+             data-aos="fade-up"
+             data-aos-duration="700"
+             data-aos-once="true">
+            <p class="img">
+                <a href="/board/free/list.html"><img src="/web/upload/images/img_main08.jpg" alt=""></a>
+            </p>
+            <p class="tit">Brand X, IR</p>
+            <dl>
+                <dt>브랜드엑스코퍼레이션 IR 정보</dt>
+                <dd>
+                    -브랜드엑스코퍼레이션 2020년 3분기 영업(잠정) 실적<br>
+					-브랜드엑스코퍼레이션 제3기 결산공고
+
+                </dd>
+            </dl>
+            <a href="/board/free/list.html" class="btn-more">더 알아보기</a>
+        </div>
+        <div class="box"
+             data-aos="fade-up"
+             data-aos-duration="700"
+             data-aos-once="true">
+            <p class="img">
+                <a href="/career.html"><img src="/web/upload/images/img_main06.jpg" alt=""></a>
+            </p>
+            <p class="tit">Brand X, Career</p>
+            <dl>
+                <dt>브랜드엑스코퍼레이션은<br>이렇게 일해요.</dt>
+                <dd>
+                    브랜드엑스는 수평적인 조직 문화를 만들기 위해 호칭을 ‘프로’로 통일하고 있습니다. 직급에 상관없이 자유롭게 의견을 제시하고 업무 기여도에 따라 파격적인 승급이 가능하도록 하기 위함입니다.
+                </dd>
+            </dl>
+            <a href="/career.html" class="btn-more">더 알아보기</a>
+        </div>
+    </div>
+</div>
+
+<div class="section02 list">
+    <div class="brand-list-wrap pc-only">
+        <!-- s:젝시믹스 -->
+        <div class="brand-list brand01"
+             data-aos="fade-up"
+             data-aos-duration="700"
+             data-aos-once="true">
+            <a href="/brand_xexy.html">
+                <div class="img"><img src="/web/upload/images/thumb_xexy.jpg" alt=""></div>
+                <div class="logo"><img src="http://xexymix.jpg3.kr/xexymix/main/xexymix_logo.png" alt="젝시믹스 로고" style="width:140px;"></div>
+                <div class="line"></div>
+                <div class="brandname">Fashion Brand</div>
+                <div class="roll-over">
+                    <p class="over-img"><img src="/web/upload/images/xexy_wh.png" alt="젝시믹스 로고" style="width:140px;"></p>
+                    <p class="detail-desc eng">
+                        Xexymix is Korea No.1 Yoga Wear and<br>
+                        Athlelesure Brand. This brand is<br>
+                        drawing attention all over the world.
+                    </p>
+                    <p class="detail-view">
+                        자세히 보기
+                    </p>
+                </div>
+            </a>
+        </div>
+        <!-- //e:젝시믹스 -->
+        <!-- s:휘아 -->
+        <div class="brand-list brand04"
+             data-aos="fade-up"
+             data-aos-duration="700"
+             data-aos-once="true">
+            <a href="/brand_whia.html">
+                <div class="img"><img src="/web/upload/images/thumb_whia.jpg" alt=""></div>
+                <div class="logo"><img src="/web/upload/images/whiaLogo01.png" alt="휘아 로고" style="width:96px;"></div>
+                <div class="line"></div>
+                <div class="brandname">Living Brand</div>
+                <div class="roll-over">
+                    <p class="over-img"><img src="/web/upload/images/whiaLogo02.png" alt="휘아 로고" style="width:96px;"></p>
+                    <p class="detail-desc eng">
+                        Whia is meaning 輝雅(Bright/clean).<br>
+                        It is first ‘Clean Living Brand’ in Korea.
+                    </p>
+
+                    <p class="detail-view">
+                        자세히 보기
+                    </p>
+                </div>
+            </a>
+        </div>
+        <!-- //e:휘아 -->
+        <!-- s:젤라또 -->
+        <div class="brand-list"
+             data-aos="fade-up"
+             data-aos-duration="700"
+             data-aos-once="true">
+            <a href="/brand_gelato.html">
+                <div class="img"><img src="/web/upload/images/thumb_gelato.jpg" alt=""></div>
+                <div class="logo" style="font-size:22px; font-weight:bold;">GELATO FACTORY</div>
+                <div class="line"></div>
+                <div class="brandname">Beauty Brand</div>
+                <div class="roll-over">
+                    <p class="over-img" style="font-size:22px; font-weight:bold;">GELATO FACTORY</p>
+                    <p class="detail-desc eng">
+                        Gelato factory is a gel nail brand.<br>
+                        It is a honey nail gelato factory <br>
+                        that makes my house into a nail shop.
+                    </p>
+                    <p class="detail-view">
+                        자세히 보기
+                    </p>
+                </div>
+            </a>
+        </div>
+        <!-- //e:젤라또 -->
+        <!-- s:믹스투믹스 -->
+        <div class="brand-list brand03"
+             data-aos="fade-up"
+             data-aos-duration="700"
+             data-aos-once="true">
+            <a href="/brand_mix.html">
+                <div class="img"><img src="/web/upload/images/thumb_mix.jpg" alt=""></div>
+                <div class="logo"><img src="/web/upload/images/mix2mix_black.png" alt="" style="width:125px;"></div>
+                <div class="line"></div>
+                <div class="brandname">Fashion Brand</div>
+                <div class="roll-over">
+                    <p class="over-img"><img src="/web/upload/images/mix2mix_white.png" alt="" style="width:125px;"></p>
+                    <p class="detail-desc eng">
+                        Mix2mix is the first athleisure<br>
+                        contemporary brand in korea. <br>
+                        This brand is very popular in 1020s.
+                    </p>
+
+                    <p class="detail-view">
+                        자세히 보기
+                    </p>
+                </div>
+            </a>
+        </div>
+        <!-- //e:믹스투믹스 -->
+        <!-- s:마르시오디에고 -->
+        <div class="brand-list brand02"
+             data-aos="fade-up"
+             data-aos-duration="700"
+             data-aos-once="true">
+            <a href="/brand_md.html">
+                <div class="img"><img src="/web/upload/images/thumb_madi.jpg" alt=""></div>
+                <div class="logo"><img src="/web/upload/images/marcioLogo01.png" alt="마르시오디에고 로고" style="width:200px;"></div>
+                <div class="line"></div>
+                <div class="brandname">Fashion Brand</div>
+                <div class="roll-over">
+                    <p class="over-img"><img src="/web/upload/images/marcioLogo02.png" alt="마르시오디에고 로고" style="width:200px;"></p>
+                    <p class="detail-desc eng">
+                        Marico Diego is an Italian-style men's<br> leather,
+                        cosmetic and fashion brand<br> in Korea.
+                        This brand is Fast growing.
+                    </p>
+
+                    <p class="detail-view">
+                        자세히 보기
+                    </p>
+                </div>
+            </a>
+        </div>
+        <!-- //e:마르시오디에고 -->
+        <!-- s:포켓도시락 -->
+        <div class="brand-list brand06"
+             data-aos="fade-up"
+             data-aos-duration="700"
+             data-aos-once="true">
+            <a href="/brand_pocket.html">
+                <div class="img"><img src="/web/upload/images/thumb_pocket.jpg" alt=""></div>
+                <div class="logo"><img src="/web/upload/images/pocket_balck.png" alt="" style="width:110px;"></div>
+                <div class="line"></div>
+                <div class="brandname">HMR Brand</div>
+                <div class="roll-over">
+                    <p class="over-img"><img src="/web/upload/images/pocket_white.png" alt="" style="width:110px;"></p>
+                    <p class="detail-desc eng">
+                        Pocketdosirak is a small frozen lunch<br>
+                        box brand. This brand have been the<br>most
+                        sold in korea at this market.
+                    </p>
+
+                    <p class="detail-view">
+                        자세히 보기
+                    </p>
+                </div>
+            </a>
+        </div>
+        <!-- //e:포켓도시락 -->
+        <!-- s:쓰리케어 -->
+        <div class="brand-list brand05"
+             data-aos="fade-up"
+             data-aos-duration="700"
+             data-aos-once="true">
+            <a href="/brand_3care.html">
+                <div class="img"><img src="/web/upload/images/thumb_care.jpg" alt=""></div>
+                <div class="logo"><img src="/web/upload/images/3care_black.png" alt="" style="width:125px;"></div>
+                <div class="line"></div>
+                <div class="brandname">Diet Brand</div>
+                <div class="roll-over">
+                    <p class="over-img"><img src="/web/upload/images/3care_white.png" alt="" style="width:125px;"></p>
+                    <p class="detail-desc eng">
+                        3Care is a 3-step cleans diet brand.<br>
+                        This is a first diet online brand that<br>
+                        was born in 2012.
+                    </p>
+
+                    <p class="detail-view">
+                        자세히 보기
+                    </p>
+                </div>
+            </a>
+        </div>
+        <!-- //e:쓰리케어 -->
+        <!-- s:국민피티 -->
+        <div class="brand-list"
+             data-aos="fade-up"
+             data-aos-duration="700"
+             data-aos-once="true">
+            <a href="/brand_glam.html">
+                <div class="img"><img src="/web/upload/images/thumb_pt.jpg" alt=""></div>
+                <div class="logo"><img src="/web/upload/images/pt_black.png" alt="" style="width:125px;"></div>
+                <div class="line"></div>
+                <div class="brandname">Health Platform</div>
+                <div class="roll-over">
+                    <p class="over-img"><img src="/web/upload/images/pt_white.png" alt="" style="width:125px;"></p>
+                    <p class="detail-desc eng">
+                        Wannaglam is a health and diet management brand.<br>
+                        It will be launched soon as a community mobile app.
+                    </p>
+
+                    <p class="detail-view">
+                        자세히 보기
+                    </p>
+                </div>
+            </a>
+        </div>
+        <!-- //e:국민피티 -->
+    </div>
+    <div class="brand-list-wrap mo-only">
+        <div class="brand-list list01"
+             data-aos="fade-up"
+             data-aos-duration="700"
+             data-aos-once="true">
+            <a href="/brand_xexy.html"><img src="/web/upload/images/m_brandlist_01.jpg" alt=""></a>
+        </div>
+        <div class="brand-list list02"
+             data-aos="fade-up"
+             data-aos-duration="700"
+             data-aos-once="true">
+            <a href="/brand_whia.html"><img src="/web/upload/images/m_brandlist_02.jpg" alt=""></a>
+        </div>
+        <div class="brand-list"
+             data-aos="fade-up"
+             data-aos-duration="700"
+             data-aos-once="true">
+            <a href="/brand_gelato.html"><img src="/web/upload/images/m_brandlist_08.jpg" alt=""></a>
+        </div>
+        <div class="brand-list list03"
+             data-aos="fade-up"
+             data-aos-duration="700"
+             data-aos-once="true">
+            <a href="/brand_mix.html"><img src="/web/upload/images/m_brandlist_03.jpg" alt=""></a>
+        </div>
+        <div class="brand-list list04"
+             data-aos="fade-up"
+             data-aos-duration="700"
+             data-aos-once="true">
+            <a href="/brand_md.html"><img src="/web/upload/images/m_brandlist_04.jpg" alt=""></a>
+        </div>
+        <div class="brand-list list05"
+             data-aos="fade-up"
+             data-aos-duration="700"
+             data-aos-once="true">
+            <a href="/brand_pocket.html"><img src="/web/upload/images/m_brandlist_05.jpg" alt=""></a>
+        </div>
+        <div class="brand-list list06"
+             data-aos="fade-up"
+             data-aos-duration="700"
+             data-aos-once="true">
+            <a href="/brand_3care.html"><img src="/web/upload/images/m_brandlist_06.jpg" alt=""></a>
+        </div>
+        <div class="brand-list"
+             data-aos="fade-up"
+             data-aos-duration="700"
+             data-aos-once="true">
+            <a href="/brand_glam.html"><img src="/web/upload/images/m_brandlist_07.jpg" alt=""></a>
+        </div>
+
+    </div>
+    <!-- // 브랜드 소개 이미지 -->
+    <p class="btn-wrap" data-aos="fade-up"
+             data-aos-duration="700"
+             data-aos-once="true"><a href="/brandList.html" class="btn-more">더 알아보기</a></p>
+</div>
+
+
+<div class="section03"
+     data-aos="fade-up"
+     data-aos-duration="700"
+     data-aos-once="true">
+    <p class="tit">BRANDX OFFICE</p>
+    <div class="career-list-wrap swiper-container">
+        <div class="career-list swiper-wrapper">
+            <div class="list swiper-slide">
+                <p><img src="/web/upload/images/main_f_b1.jpg" alt=""></p>
+            </div>
+            <div class="list swiper-slide">
+                <p><img src="/web/upload/images/main_f_b2.jpg" alt=""></p>
+            </div>
+            <div class="list swiper-slide">
+                <p><img src="/web/upload/images/main_f_b3.jpg" alt=""></p>
+            </div>
+            <div class="list swiper-slide">
+                <p><img src="/web/upload/images/main_f_b4.jpg" alt=""></p>
+            </div>
+            <div class="list swiper-slide">
+                <p><img src="/web/upload/images/main_f_b5.jpg" alt=""></p>
+            </div>
+            <div class="list swiper-slide">
+                <p><img src="/web/upload/images/main_f_b6.jpg" alt=""></p>
+            </div>
+            <div class="list swiper-slide">
+                <p><img src="/web/upload/images/main_f_b7.jpg" alt=""></p>
+            </div>
+            <div class="list swiper-slide">
+                <p><img src="/web/upload/images/main_f_b8.jpg" alt=""></p>
+            </div>
+            <div class="list swiper-slide">
+                <p><img src="/web/upload/images/main_f_b9.jpg" alt=""></p>
+            </div>
+            <div class="list swiper-slide">
+                <p><img src="/web/upload/images/main_f_b10.jpg" alt=""></p>
+            </div>
+            <div class="list swiper-slide">
+                <p><img src="/web/upload/images/main_f_b11.jpg" alt=""></p>
+            </div>
+            <div class="list swiper-slide">
+                <p><img src="/web/upload/images/main_f_b12.jpg" alt=""></p>
+            </div>
+            <div class="list swiper-slide">
+                <p><img src="/web/upload/images/main_f_b13.jpg" alt=""></p>
+            </div>
+            <div class="list swiper-slide">
+                <p><img src="/web/upload/images/main_f_b14.jpg" alt=""></p>
+            </div>
+            <div class="list swiper-slide">
+                <p><img src="/web/upload/images/main_f_b15.jpg" alt=""></p>
+            </div>
+            <div class="list swiper-slide">
+                <p><img src="/web/upload/images/main_f_b16.jpg" alt=""></p>
+            </div>
+            <div class="list swiper-slide">
+                <p><img src="/web/upload/images/main_f_b17.jpg" alt=""></p>
+            </div>
+            <div class="list swiper-slide">
+                <p><img src="/web/upload/images/main_f_b18.jpg" alt=""></p>
+            </div>
+            <div class="list swiper-slide">
+                <p><img src="/web/upload/images/main_f_b19.jpg" alt=""></p>
+            </div>
+            <div class="list swiper-slide">
+                <p><img src="/web/upload/images/main_f_b20.jpg" alt=""></p>
+            </div>
+            <div class="list swiper-slide">
+                <p><img src="/web/upload/images/main_f_b21.jpg" alt=""></p>
+            </div>
+            <div class="list swiper-slide">
+                <p><img src="/web/upload/images/main_f_b22.jpg" alt=""></p>
+            </div>
+            <div class="list swiper-slide">
+                <p><img src="/web/upload/images/main_f_b23.jpg" alt=""></p>
+            </div>
+            <div class="list swiper-slide">
+                <p><img src="/web/upload/images/main_f_b24.jpg" alt=""></p>
+            </div>
+            <div class="list swiper-slide">
+                <p><img src="/web/upload/images/main_f_b25.jpg" alt=""></p>
+            </div>
+            <div class="list swiper-slide">
+                <p><img src="/web/upload/images/main_f_b26.jpg" alt=""></p>
+            </div>
+            <div class="list swiper-slide">
+                <p><img src="/web/upload/images/main_f_b27.jpg" alt=""></p>
+            </div>
+            <div class="list swiper-slide">
+                <p><img src="/web/upload/images/main_f_b28.jpg" alt=""></p>
+            </div>
+            <div class="list swiper-slide">
+                <p><img src="/web/upload/images/main_f_b29.jpg" alt=""></p>
+            </div>
+            <div class="list swiper-slide">
+                <p><img src="/web/upload/images/main_f_b30.jpg" alt=""></p>
+            </div>
+        </div>
+    </div>
+    <div class="swiper-pagination career-paging"></div>
+</div>
+
+<script>
+    $(document).ready(function(){
+        var win_H = $(window).height();
+        $('.slide-area, .swiper-wrapper').css('height', win_H);
+
+        var swiper = new Swiper('.visual .slide-wrap', {
+            loop:true,
+            slidesPerView:1,
+            autoHeight: true,
+            effect: 'fade',
+            //  autoplay: {
+            //   delay: 5000,
+            //   disableOnInteraction: false,
+            // },
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+                renderBullet: function (index, className) {
+                    var index_name;
+                    if(index == 0){
+                        index_name = 'Change'
+                    }
+                    if(index == 1){
+                        index_name = 'Imagination'
+                    }
+                    if(index == 2){
+                        index_name = 'Passion '
+                    }
+                    if(index == 3){
+                        index_name = 'Daily'
+                    }
+                    return '<span class="ani3 ' + className + '">' + index_name + '</span>';
+                }
+            }
+        });
+
+        var swiper01 = new Swiper('.career-list-wrap', {
+            autoHeight: true,
+            loop:true,
+            slidesPerView:1,
+            spaceBetween: 10,
+            pagination: {
+                el: '.career-paging',
+                type: 'progressbar',
+            },
+            breakpointsInverse: true,
+            breakpoints: {
+                768: {
+                    slidesPerView:1,
+                    spaceBetween: 20
+                },
+                1024: {
+                    slidesPerView:'auto',
+                    spaceBetween: 100
+                }
+            }
+        });
+    });
+</script>

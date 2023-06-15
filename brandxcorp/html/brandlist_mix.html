@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+        <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+        <script src="https://www.xexymix.com/design/xexymix/js/slick.js"></script>
+        <script src="../lib/js/bootstrap.min.js"></script>
+        <script src="../lib/js/responsive-image.js"></script>
+        <script src="../lib/js/ui.js"></script>
+        <link rel="stylesheet" href="../lib/css/swiper.min.css">
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+        <link rel="stylesheet" href="../lib/css/bootstrap.min.css">
+
+        <link type="text/css" rel="stylesheet" href="../lib/css/common.css">
+        <link type="text/css" rel="stylesheet" href="../lib/css/brandlist.css">
+        <title></title>
+    </head>
+    <body>
+        <div id="headerWrap">
+            <div class="header">
+                <a href="/" class="logo hidden-xs"><img src="http://skin-skin2.brandxcorp2.cafe24.com/web/upload/images/logo_bl.png"></a>
+                <a href="/" class="logo visible-xs"><img src="http://skin-skin2.brandxcorp2.cafe24.com/web/upload/images/img_logo01.png"></a>
+
+                <a href="javascript:void(0);" class="all-menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </a>
+                <p class="bxc" class="hidden-xs"> <img src="http://skin-skin2.brandxcorp2.cafe24.com/web/upload/images/img_bxc.png" alt=""> </p>
+            </div>
+            <div class="gnb-wrap">
+                <div class="lang">
+                    <ul>
+                        <li class="active"><a href="#">KR</a></li>
+                        <li><a href="#">EN</a></li>
+                        <li><a href="#">CN</a></li>
+                    </ul>
+                </div>
+                <div class="gnb">
+                    <ul>
+                        <li class="first">
+                            <a href="#">Brandx</a>
+                            <ul>
+                                <li><a href="#">about</a></li>
+                                <li><a href="#">Identity</a></li>
+                            </ul>
+                        </li>
+                        <li class="second">
+                            <a href="#">Brand</a>
+                            <ul>
+                                <li><a href="#">젝시믹스</a></li>
+                                <li><a href="#">마르시오디에고</a></li>
+                                <li><a href="#">믹스투믹스</a></li>
+                                <li class="next"><a href="#">휘아</a></li>
+                                <li><a href="#">쓰리케어</a></li>
+                                <li><a href="#">포켓도시락</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">News</a></li>
+                        <li>
+                            <a href="#">Ir</a>
+                            <ul>
+                                <li><a href="#">주가정보</a></li>
+                                <li><a href="#">공시정보</a></li>
+                                <li><a href="#">IR자료</a></li>
+                                <li><a href="#">공고사항</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Career</a></li>
+                        <li>
+                            <a href="#">Contact</a>
+                            <ul>
+                                <li><a href="#">찾아오시는 길</a></li>
+                                <li><a href="#">문의하기</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <script type="text/javascript">
+            //gnb
+            $('.all-menu').click(function(e){
+                e.preventDefault();
+                var _Gnb = false;
+                if(!_Gnb){
+                    _Gnb = true;
+                    if(!$('.all-menu').hasClass('active')){
+                        $('.all-menu').addClass('active');
+                        $('.gnb-wrap').addClass('active');
+                        $('body').append('<div class="gnb-block">');
+                        $('body, html, #wrap').css({'overflow': 'hidden'});
+
+                    } else {
+                        $('.all-menu').removeClass('active');
+                        $('.gnb-wrap').removeClass('active');
+                        $('body, html, #containerWrap').css({'overflow' : ''});
+                        $('.gnb-block').fadeOut(300).empty().remove();
+                    }
+                }
+            });
+        </script>
+        <div id="wrap">
+            <!-- s:containerWrap -->
+            <div id="containerWrap" class="light ani5">
+
+                <div class="brand-top-wrap mix">
+                    <div class="brand-top swiper-container">
+                        <ul class="swiper-wrapper">
+                            <li class="swiper-slide img01"></li>
+                            <li class="swiper-slide img02"></li>
+                            <li class="swiper-slide img03"></li>
+                            <li class="swiper-slide img04"></li>
+                        </ul>
+                        <div class="swiper-pagination progressbar"></div>
+                        <div class="fraction"></div>
+                    </div>
+                    <p class="phone"
+                    data-aos="fade-up"
+                    data-aos-duration="1000"
+                    data-aos-once="true"><img src="http://skin-skin2.brandxcorp2.cafe24.com/web/upload/images/img_phone_mix.png" alt=""></p>
+                    <p class="des"
+                    data-aos="fade-up"
+                    data-aos-duration="1000"
+                    data-aos-once="true">
+                        As an athlete brand aiming for a <br>
+                        global sense, We offer sportswear<br>
+                        products with a sensual design.<br>
+                        A collection of European Urban<br>
+                        Active Wear moods, combining<br>
+                        athletes, urban activities and casual wear<br>
+                        <br>
+                        Copyright 2019 MIX2MIX
+                    </p>
+                    <p class="side-tit01">About brand</p>
+                    <p class="side-tit02">ATHLETE MIX2MIX</p>
+                </div>
+
+                <div class="section01">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="left-fix"
+                                data-aos="fade-up"
+                                data-aos-duration="1000"
+                                data-aos-once="true">
+                                    <h1>1020 <br>유럽 어반 액티브 웨어<br>믹스투믹스</h1>
+                                    <a href="#" class="btn-web">Go Website</a>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <p class="tit"
+                                data-aos="fade-up"
+                                data-aos-duration="1000"
+                                data-aos-once="true">About Brand</p>
+                                <p class="des"
+                                data-aos="fade-up"
+                                data-aos-duration="1000"
+                                data-aos-once="true">
+                                    글로벌 감각을 지향하는 애슬레저 브랜드로 감각적인 디자인이<br class="hidden-xs">
+                                    접목된 스포츠웨어 제품을 선보입니다.<br>
+                                    <br>
+                                    애슬레저, 어반 액티비티와 캐주얼이 결합된 컬렉션으로<br class="hidden-xs">
+                                    활동적인 퍼포먼스가 가능하도록 색다른 스타일링을 제안합니다.
+                                </p>
+
+                                <p class="tit mt150"
+                                data-aos="fade-up"
+                                data-aos-duration="1000"
+                                data-aos-once="true">About CI</p>
+                                <p class="ci"
+                                data-aos="fade-up"
+                                data-aos-duration="1000"
+                                data-aos-once="true">
+                                    <img src="http://skin-skin2.brandxcorp2.cafe24.com/web/upload/images/img_mixci.jpg" alt="">
+                                </p>
+
+
+                                <p class="mt150"
+                                data-aos="fade-up"
+                                data-aos-duration="1000"
+                                data-aos-once="true"><img src="http://skin-skin2.brandxcorp2.cafe24.com/web/upload/images/img_mix01.jpg" alt=""></p>
+                                <p class="mt30"
+                                data-aos="fade-up"
+                                data-aos-duration="1000"
+                                data-aos-once="true"><img src="http://skin-skin2.brandxcorp2.cafe24.com/web/upload/images/img_mix02.jpg" alt=""></p>
+                                <p class="mt30"
+                                data-aos="fade-up"
+                                data-aos-duration="1000"
+                                data-aos-once="true"><img src="http://skin-skin2.brandxcorp2.cafe24.com/web/upload/images/img_mix03.jpg" alt=""></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="mode-change">
+                    <span class="change-txt-list">
+                        <span class="change-txt">
+                            <span>Light</span>
+                            <span>Dark</span>
+                        </span>&nbsp;Mode
+                    </span>
+                    <div class="theme-icon"></div>
+                </div>
+            </div>
+            <!-- //e:containerWrap -->
+        </div>
+        <div id="footerWrap" class="ani2">
+            <div class="footer container">
+                <div class="row">
+                    <div class="col-md-5">
+                        <p class="logo"><img src="http://skin-skin2.brandxcorp2.cafe24.com/web/upload/images/footer_logo.png" alt=""></p>
+                    </div>
+
+                    <div class="col-md-4">
+                        <p>
+                            서울시 성동구 뚝섬로1길 63 영창디지털타워 12층<br>
+                            ㈜ 브랜드엑스코퍼레이션
+                        </p>
+                        <p style="margin-top:14px;">
+                            Opening hours. am 9:30 - pm 6:30<br>
+                            Lunch break. pm 12:30 - pm 1:30<br>
+                            Sat, Sun Off
+                        </p>
+                    </div>
+                    <div class="col-md-2">
+                        <ul>
+                            <li><a href="#">회사소개</a></li>
+                            <li><a href="#">브랜드</a></li>
+                            <li><a href="#">뉴스</a></li>
+                            <li><a href="#">주가정보</a></li>
+                            <li><a href="#">채용</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="footerBottom">
+            <div class="txt">
+                <p>함께해요, 우리와.</p>
+                <p>실패를 두려워 하지 않는 도전정신<br>함께 일하고, 함께 성장하는 브랜드엑스코퍼레이션</p>
+            </div>
+            <div class="jump-mask"></div>
+            <figure>
+                <div class="">
+                    <img src="http://skin-skin2.brandxcorp2.cafe24.com/web/upload/images/img_footer_bottom.jpg" alt="">
+                </div>
+            </figure>
+        </div>
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    </body>
+</html>

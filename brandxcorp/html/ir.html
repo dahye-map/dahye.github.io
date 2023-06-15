@@ -1,0 +1,928 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+        <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+        <script src="https://www.xexymix.com/design/xexymix/js/slick.js"></script>
+        <script src="../lib/js/bootstrap.min.js"></script>
+        <script src="../lib/js/ui.js"></script>
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+        <link rel="stylesheet" href="../lib/css/bootstrap.min.css">
+        <link rel="stylesheet" href="../lib/css/swiper.min.css">
+        <link type="text/css" rel="stylesheet" href="../lib/css/ir.css">
+        <link type="text/css" rel="stylesheet" href="../lib/css/common.css">
+        <title></title>
+    </head>
+    <body>
+        <!-- s:headerWrap -->
+        <div id="headerWrap" class="light">
+            <div class="header">
+                <a href="/" class="logo"><img src="http://skin-skin2.brandxcorp2.cafe24.com/web/upload/images/logo_bl.png"></a>
+                <a href="javascript:void(0);" class="all-menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </a>
+                <p class="bxc"> <img src="http://skin-skin2.brandxcorp2.cafe24.com/web/upload/images/img_bxc.png" alt=""> </p>
+            </div>
+            <div class="gnb-wrap">
+                <div class="lang">
+                    <ul>
+                        <li class="active"><a href="#">KR</a></li>
+                        <li><a href="#">EN</a></li>
+                        <li><a href="#">CN</a></li>
+                    </ul>
+                </div>
+                <div class="gnb">
+                    <ul>
+                        <li class="first">
+                            <a href="#">Brandx</a>
+                            <ul>
+                                <li><a href="#">about</a></li>
+                                <li><a href="#">Identity</a></li>
+                            </ul>
+                        </li>
+                        <li class="second">
+                            <a href="#">Brand</a>
+                            <ul>
+                                <li><a href="#">젝시믹스</a></li>
+                                <li><a href="#">마르시오디에고</a></li>
+                                <li><a href="#">믹스투믹스</a></li>
+                                <li class="next"><a href="#">휘아</a></li>
+                                <li><a href="#">쓰리케어</a></li>
+                                <li><a href="#">포켓도시락</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">News</a></li>
+                        <li>
+                            <a href="#">Ir</a>
+                            <ul>
+                                <li><a href="#">주가정보</a></li>
+                                <li><a href="#">공시정보</a></li>
+                                <li><a href="#">IR자료</a></li>
+                                <li><a href="#">공고사항</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Career</a></li>
+                        <li>
+                            <a href="#">Contact</a>
+                            <ul>
+                                <li><a href="#">찾아오시는 길</a></li>
+                                <li><a href="#">문의하기</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <script type="text/javascript">
+            //gnb
+            $('.all-menu').click(function(e){
+                e.preventDefault();
+                var _Gnb = false;
+                if(!_Gnb){
+                    _Gnb = true;
+                    if(!$('.all-menu').hasClass('active')){
+                        $('.all-menu').addClass('active');
+                        $('.gnb-wrap').addClass('active');
+                        $('#headerWrap.light .header').css('box-shadow', 'none');
+                        $('body').append('<div class="gnb-block">');
+                        $('body, html, #containerWrap').css({'overflow': 'hidden'});
+
+                    } else {
+                        $('.all-menu').removeClass('active');
+                        $('.gnb-wrap').removeClass('active');
+                        $('#headerWrap.light .header').css('box-shadow', '');
+                        $('body, html, #containerWrap').css({'overflow' : ''});
+                        $('.gnb-block').fadeOut(300).empty().remove();
+                    }
+                }
+            });
+        </script>
+        <!-- //e:headerWrap -->
+
+        <div id="wrap">
+            <!-- s:containerWrap -->
+            <div id="containerWrap" class="light ani5">
+
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-3">
+                            <p class="title">종목코드<br>브랜드엑스코퍼레이션</p>
+                        </div>
+                        <div class="col-sm-9">
+                            <div class="now-stock-wrap">
+                                <div class="now-stock">
+                                    <p class="total">133,500 ▼</p>
+                                </div>
+                                <p class="desc-stock">
+                                    전일대비
+                                    <span class="num">7,500 ▼</span>
+                                    <span class="bar">|</span>
+                                    등락률
+                                    <span class="num">-5.32%</span>
+                                </p>
+
+                                <p class="date">2020-03-19 14:17:24기준</p>
+                            </div>
+                            <!-- s:tb-wrap -->
+                            <div class="tb-wrap type01">
+                                <table class="tbl">
+                                    <caption class="caption_hide">금액별 주가정보 자료</caption>
+                                    <colgroup>
+                                        <col style="width:25%">
+                                        <col style="width:25%">
+                                        <col style="width:25%">
+                                        <col style="width:25%">
+                                    </colgroup>
+                                    <thead>
+                                        <tr>
+                                            <th scope="col" style="width:25%" class="fst">시가(원)</th>
+                                            <th scope="col" style="width:25%">고가(원)</th>
+                                            <th scope="col" style="width:25%">저가(원)</th>
+                                            <th scope="col" style="width:25%">거래량(주)</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td class="fst">
+                                                <div class="inner-cell">
+                                                    145,500</div>
+                                            </td>
+                                            <td>
+                                                <div class="inner-cell">
+                                                    147,000</div>
+                                            </td>
+                                            <td>
+                                                <div class="inner-cell">
+                                                    127,500</div>
+                                            </td>
+                                            <td>
+                                                <div class="inner-cell">
+                                                    1,832,637</div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <!-- //e:tb-wrap -->
+                            <!-- s:kospi -->
+                            <div class="clear">
+                                <div class="tb-wrap type02">
+                                    <table class="tbl">
+                                        <caption class="caption_hide">KOSPI 주가정보 자료</caption>
+                                        <colgroup>
+                                            <col style="width:25%">
+                                            <col style="width:25%">
+                                            <col style="width:25%">
+                                            <col style="width:25%">
+                                        </colgroup>
+                                        <thead>
+                                        <tr>
+                                            <th scope="col" colspan="4" class="fst ta-left">KOSPI</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                        <tr>
+                                            <th scope="row" class="fst">
+                                                <div class="inner-cell">전일가(원)</div>
+                                            </th>
+                                            <td>
+                                                <div class="inner-cell">141,000</div>
+                                            </td>
+                                            <th scope="row">
+                                                <div class="inner-cell">매도호가(원)</div>
+                                            </th>
+                                            <td>
+                                                <div class="inner-cell">132,500</div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row"class="fst">
+                                                <div class="inner-cell">전일거래량(주)</div>
+                                            </th>
+                                            <td>
+                                                <div class="inner-cell">1,107,527</div>
+                                            </td>
+                                            <th scope="row">
+                                                <div class="inner-cell">매수호가(원)</div>
+                                            </th>
+                                            <td>
+                                                <div class="inner-cell">132,000</div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row" class="fst">
+                                                <div class="inner-cell">상한가(원)</div>
+                                            </th>
+                                            <td>
+                                                <div class="inner-cell">183,000</div>
+                                            </td>
+                                            <th scope="row">
+                                                <div class="inner-cell">52주최고(원)</div>
+                                            </th>
+                                            <td>
+                                                <div class="inner-cell">191,500</div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row" class="fst">
+                                                <div class="inner-cell">하한가(원)</div>
+                                            </th>
+                                            <td>
+                                                <div class="inner-cell">99,000</div>
+                                            </td>
+                                            <th scope="row">
+                                                <div class="inner-cell">52주최저(원)</div>
+                                            </th>
+                                            <td>
+                                                <div class="inner-cell">100,000</div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row" class="fst">
+                                                <div class="inner-cell">대용가(원)</div>
+                                            </th>
+                                            <td>
+                                                <div class="inner-cell">109,980</div>
+                                            </td>
+                                            <th scope="row">
+                                                <div class="inner-cell">PER</div>
+                                            </th>
+                                            <td>
+                                                <div class="inner-cell">217.76</div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row" class="fst">
+                                                <div class="inner-cell">외국인비율(%)</div>
+                                            </th>
+                                            <td>
+                                                <div class="inner-cell">31.20</div>
+                                            </td>
+                                            <th scope="row">
+                                                <div class="inner-cell">PBR</div>
+                                            </th>
+                                            <td>
+                                                <div class="inner-cell">2.17</div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row" class="fst">
+                                                <div class="inner-cell">액면가(원)</div>
+                                            </th>
+                                            <td colspan="3">
+                                                <div class="inner-cell">500</div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row" class="fst">
+                                                <div class="inner-cell">자본금(천원)</div>
+                                            </th>
+                                            <td colspan="3">
+                                                <div class="inner-cell">43,419,905</div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row" class="fst">
+                                                <div class="inner-cell">상장주식수(주)</div>
+                                            </th>
+                                            <td colspan="3">
+                                                <div class="inner-cell">86,739,810</div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row" class="fst">
+                                                <div class="inner-cell">시가총액(백만원)</div>
+                                            </th>
+                                            <td colspan="3">
+                                                <div class="inner-cell">11,579,765</div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row" class="fst">
+                                                <div class="inner-cell">상장일</div>
+                                            </th>
+                                            <td colspan="3">
+                                                <div class="inner-cell">1999년 11월 11일 <br> (KOSPI상장일:2017년 7월 10일)</div>
+                                            </td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div class="tb-wrap type03">
+                                    <table class="tbl">
+                                        <caption>매도잔량, 매수잔량, 호가 자료</caption>
+                                        <colgroup>
+                                            <col style="width:33.3333%">
+                                            <col style="width:33.3333%">
+                                            <col style="width:33.3333%">
+                                        </colgroup>
+                                        <thead>
+                                            <tr>
+                                                <th scope="col" class="fst">매도잔량</th>
+                                                <th scope="col">호가</th>
+                                                <th scope="col">매수잔량</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr class="bg-type1">
+                                                <td class="fst ta-color1">
+                                                    <div class="inner-cell">3,206</div>
+                                                </td>
+                                                <td class="ta-color1">
+                                                    <div class="inner-cell">134,500</div>
+                                                </td>
+                                                <td class="lst">
+                                                    <div class="inner-cell">&nbsp;</div>
+                                                </td>
+                                            </tr>
+                                            <tr class="bg-type1">
+                                                <td class="fst ta-color1">
+                                                    <div class="inner-cell">3,312</div>
+                                                </td>
+                                                <td class="ta-color1">
+                                                    <div class="inner-cell">134,000</div>
+                                                </td>
+                                                <td class="lst">
+                                                    <div class="inner-cell">&nbsp;</div>
+                                                </td>
+                                            </tr>
+                                            <tr class="bg-type1">
+                                                <td class="fst ta-color1">
+                                                    <div class="inner-cell">
+                                                        2,648</div>
+                                                </td>
+                                                <td class="ta-color1">
+                                                    <div class="inner-cell">
+                                                        133,500</div>
+                                                </td>
+                                                <td class="lst">
+                                                    <div class="inner-cell">&nbsp;</div>
+                                                </td>
+                                            </tr>
+                                            <tr class="bg-type1">
+                                                <td class="fst ta-color1">
+                                                    <div class="inner-cell">
+                                                        4,317</div>
+                                                </td>
+                                                <td class="ta-color1">
+                                                    <div class="inner-cell">
+                                                        133,000</div>
+                                                </td>
+                                                <td class="lst">
+                                                    <div class="inner-cell">&nbsp;</div>
+                                                </td>
+                                            </tr>
+                                            <tr class="bg-type1">
+                                                <td class="fst ta-color1">
+                                                    <div class="inner-cell">
+                                                        1,154</div>
+                                                </td>
+                                                <td class="ta-color1">
+                                                    <div class="inner-cell">
+                                                        132,500</div>
+                                                </td>
+                                                <td class="lst">
+                                                    <div class="inner-cell">&nbsp;</div>
+                                                </td>
+                                            </tr>
+                                            <tr class="bg-type2">
+                                                <td class="fst">
+                                                    <div class="inner-cell">&nbsp;</div>
+                                                </td>
+                                                <td>
+                                                    <div class="inner-cell">132,000</div>
+                                                </td>
+                                                <td class="ta-color2">
+                                                    <div class="inner-cell">8,791</div>
+                                                </td>
+                                            </tr>
+                                            <tr class="bg-type2">
+                                                <td class="fst">
+                                                    <div class="inner-cell">&nbsp;</div>
+                                                </td>
+                                                <td>
+                                                    <div class="inner-cell">
+                                                        131,500</div>
+                                                </td>
+                                                <td class="ta-color2">
+                                                    <div class="inner-cell">3,400</div>
+                                                </td>
+                                            </tr>
+                                            <tr class="bg-type2">
+                                                <td class="fst">
+                                                    <div class="inner-cell">&nbsp;</div>
+                                                </td>
+                                                <td>
+                                                    <div class="inner-cell">131,000</div>
+                                                </td>
+                                                <td class="ta-color2">
+                                                    <div class="inner-cell">5,586</div>
+                                                </td>
+                                            </tr>
+                                            <tr class="bg-type2">
+                                                <td class="fst">
+                                                    <div class="inner-cell">&nbsp;</div>
+                                                </td>
+                                                <td>
+                                                    <div class="inner-cell">130,500</div>
+                                                </td>
+                                                <td class="ta-color2">
+                                                    <div class="inner-cell">2,588</div>
+                                                </td>
+                                            </tr>
+                                            <tr class="bg-type2">
+                                                <td class="fst">
+                                                    <div class="inner-cell">&nbsp;</div>
+                                                </td>
+                                                <td>
+                                                    <div class="inner-cell">130,000</div>
+                                                </td>
+                                                <td class="ta-color2">
+                                                    <div class="inner-cell">10,117</div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="fst ta-color1">
+                                                    <div class="inner-cell">
+                                                        43,496</div>
+                                                </td>
+                                                <td class="ta_center">
+                                                    <div class="inner-cell">총잔량</div>
+                                                </td>
+                                                <td class="ta-color2">
+                                                    <div class="inner-cell">
+                                                        57,094</div>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            <!-- //e:kospi -->
+
+                            <!-- s:tb-wrap -->
+                            <div class="tb-wrap type04">
+                                <table class="tbl">
+                                    <caption>일별 주가정보 챠트</caption>
+                                    <colgroup>
+                                        <col style="width:10%">
+                                        <col style="width:10%">
+                                        <col style="width:10%">
+                                        <col style="width:10%">
+                                        <col style="width:10%">
+                                        <col style="width:10%">
+                                        <col style="width:10%">
+                                        <col style="width:10%">
+                                        <col style="width:10%">
+                                        <col style="width:10%">
+                                    </colgroup>
+                                    <thead>
+                                        <tr>
+                                            <th scope="col" style="width:10%" class="fst">일자</th>
+                                            <th scope="col" style="width:10%">종가</th>
+                                            <th scope="col" style="width:10%">전일대비</th>
+                                            <th scope="col" style="width:10%">거래량</th>
+                                            <th scope="col" style="width:10%">거래대금<br>(백만)</th>
+                                            <th scope="col" style="width:10%">시가</th>
+                                            <th scope="col" style="width:10%">고가</th>
+                                            <th scope="col" style="width:10%">저가</th>
+                                            <th scope="col" style="width:10%">시가총액<br>(백만)</th>
+                                            <th scope="col" style="width:10%">상장주식수</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td class="fst">
+                                                <div class="inner-cell">20-03-18</div>
+                                            </td>
+                                            <td class="font-bold">
+                                                <div class="inner-cell">141,000</div>
+                                            </td>
+                                            <td class="num-down">
+                                                <!-- 상승일 때 num-up 하락일 때 num-down -->
+                                                <div class="inner-cell">-6,500 ▼</div>
+                                            </td>
+                                            <td>
+                                                <div class="inner-cell">1,101,994</div>
+                                            </td>
+                                            <td>
+                                                <div class="inner-cell">163,023</div>
+                                            </td>
+                                            <td>
+                                                <div class="inner-cell">148,500</div>
+                                            </td>
+                                            <td>
+                                                <div class="inner-cell">152,000</div>
+                                            </td>
+                                            <td>
+                                                <div class="inner-cell">140,500</div>
+                                            </td>
+                                            <td>
+                                                <div class="inner-cell">12,230,313</div>
+                                            </td>
+                                            <td>
+                                                <div class="inner-cell">86739810</div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="fst">
+                                                <div class="inner-cell">20-03-18</div>
+                                            </td>
+                                            <td class="font-bold">
+                                                <div class="inner-cell">141,000</div>
+                                            </td>
+                                            <td class="num-up">
+                                                <div class="inner-cell">5,300 ▲</div>
+                                            </td>
+                                            <td>
+                                                <div class="inner-cell">1,101,994</div>
+                                            </td>
+                                            <td>
+                                                <div class="inner-cell">163,023</div>
+                                            </td>
+                                            <td>
+                                                <div class="inner-cell">148,500</div>
+                                            </td>
+                                            <td>
+                                                <div class="inner-cell">152,000</div>
+                                            </td>
+                                            <td>
+                                                <div class="inner-cell">140,500</div>
+                                            </td>
+                                            <td>
+                                                <div class="inner-cell">12,230,313</div>
+                                            </td>
+                                            <td>
+                                                <div class="inner-cell">86739810</div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="fst">
+                                                <div class="inner-cell">20-03-18</div>
+                                            </td>
+                                            <td class="font-bold">
+                                                <div class="inner-cell">141,000</div>
+                                            </td>
+                                            <td class="num-down">
+                                                <div class="inner-cell">-6,500 ▼</div>
+                                            </td>
+                                            <td>
+                                                <div class="inner-cell">1,101,994</div>
+                                            </td>
+                                            <td>
+                                                <div class="inner-cell">163,023</div>
+                                            </td>
+                                            <td>
+                                                <div class="inner-cell">148,500</div>
+                                            </td>
+                                            <td>
+                                                <div class="inner-cell">152,000</div>
+                                            </td>
+                                            <td>
+                                                <div class="inner-cell">140,500</div>
+                                            </td>
+                                            <td>
+                                                <div class="inner-cell">12,230,313</div>
+                                            </td>
+                                            <td>
+                                                <div class="inner-cell">86739810</div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="fst">
+                                                <div class="inner-cell">20-03-18</div>
+                                            </td>
+                                            <td class="font-bold">
+                                                <div class="inner-cell">141,000</div>
+                                            </td>
+                                            <td class="num-down">
+                                                <div class="inner-cell">-6,500 ▼</div>
+                                            </td>
+                                            <td>
+                                                <div class="inner-cell">1,101,994</div>
+                                            </td>
+                                            <td>
+                                                <div class="inner-cell">163,023</div>
+                                            </td>
+                                            <td>
+                                                <div class="inner-cell">148,500</div>
+                                            </td>
+                                            <td>
+                                                <div class="inner-cell">152,000</div>
+                                            </td>
+                                            <td>
+                                                <div class="inner-cell">140,500</div>
+                                            </td>
+                                            <td>
+                                                <div class="inner-cell">12,230,313</div>
+                                            </td>
+                                            <td>
+                                                <div class="inner-cell">86739810</div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="fst">
+                                                <div class="inner-cell">20-03-18</div>
+                                            </td>
+                                            <td class="font-bold">
+                                                <div class="inner-cell">141,000</div>
+                                            </td>
+                                            <td class="num-down">
+                                                <div class="inner-cell">-6,500 ▼</div>
+                                            </td>
+                                            <td>
+                                                <div class="inner-cell">1,101,994</div>
+                                            </td>
+                                            <td>
+                                                <div class="inner-cell">163,023</div>
+                                            </td>
+                                            <td>
+                                                <div class="inner-cell">148,500</div>
+                                            </td>
+                                            <td>
+                                                <div class="inner-cell">152,000</div>
+                                            </td>
+                                            <td>
+                                                <div class="inner-cell">140,500</div>
+                                            </td>
+                                            <td>
+                                                <div class="inner-cell">12,230,313</div>
+                                            </td>
+                                            <td>
+                                                <div class="inner-cell">86739810</div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="fst">
+                                                <div class="inner-cell">20-03-18</div>
+                                            </td>
+                                            <td class="font-bold">
+                                                <div class="inner-cell">141,000</div>
+                                            </td>
+                                            <td class="num-down">
+                                                <div class="inner-cell">-6,500 ▼</div>
+                                            </td>
+                                            <td>
+                                                <div class="inner-cell">1,101,994</div>
+                                            </td>
+                                            <td>
+                                                <div class="inner-cell">163,023</div>
+                                            </td>
+                                            <td>
+                                                <div class="inner-cell">148,500</div>
+                                            </td>
+                                            <td>
+                                                <div class="inner-cell">152,000</div>
+                                            </td>
+                                            <td>
+                                                <div class="inner-cell">140,500</div>
+                                            </td>
+                                            <td>
+                                                <div class="inner-cell">12,230,313</div>
+                                            </td>
+                                            <td>
+                                                <div class="inner-cell">86739810</div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="fst">
+                                                <div class="inner-cell">20-03-18</div>
+                                            </td>
+                                            <td class="font-bold">
+                                                <div class="inner-cell">141,000</div>
+                                            </td>
+                                            <td class="num-down">
+                                                <div class="inner-cell">-6,500 ▼</div>
+                                            </td>
+                                            <td>
+                                                <div class="inner-cell">1,101,994</div>
+                                            </td>
+                                            <td>
+                                                <div class="inner-cell">163,023</div>
+                                            </td>
+                                            <td>
+                                                <div class="inner-cell">148,500</div>
+                                            </td>
+                                            <td>
+                                                <div class="inner-cell">152,000</div>
+                                            </td>
+                                            <td>
+                                                <div class="inner-cell">140,500</div>
+                                            </td>
+                                            <td>
+                                                <div class="inner-cell">12,230,313</div>
+                                            </td>
+                                            <td>
+                                                <div class="inner-cell">86739810</div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="fst">
+                                                <div class="inner-cell">20-03-18</div>
+                                            </td>
+                                            <td class="font-bold">
+                                                <div class="inner-cell">141,000</div>
+                                            </td>
+                                            <td class="num-down">
+                                                <div class="inner-cell">-6,500 ▼</div>
+                                            </td>
+                                            <td>
+                                                <div class="inner-cell">1,101,994</div>
+                                            </td>
+                                            <td>
+                                                <div class="inner-cell">163,023</div>
+                                            </td>
+                                            <td>
+                                                <div class="inner-cell">148,500</div>
+                                            </td>
+                                            <td>
+                                                <div class="inner-cell">152,000</div>
+                                            </td>
+                                            <td>
+                                                <div class="inner-cell">140,500</div>
+                                            </td>
+                                            <td>
+                                                <div class="inner-cell">12,230,313</div>
+                                            </td>
+                                            <td>
+                                                <div class="inner-cell">86739810</div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="fst">
+                                                <div class="inner-cell">20-03-18</div>
+                                            </td>
+                                            <td class="font-bold">
+                                                <div class="inner-cell">141,000</div>
+                                            </td>
+                                            <td class="num-down">
+                                                <div class="inner-cell">-6,500 ▼</div>
+                                            </td>
+                                            <td>
+                                                <div class="inner-cell">1,101,994</div>
+                                            </td>
+                                            <td>
+                                                <div class="inner-cell">163,023</div>
+                                            </td>
+                                            <td>
+                                                <div class="inner-cell">148,500</div>
+                                            </td>
+                                            <td>
+                                                <div class="inner-cell">152,000</div>
+                                            </td>
+                                            <td>
+                                                <div class="inner-cell">140,500</div>
+                                            </td>
+                                            <td>
+                                                <div class="inner-cell">12,230,313</div>
+                                            </td>
+                                            <td>
+                                                <div class="inner-cell">86739810</div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="fst">
+                                                <div class="inner-cell">20-03-18</div>
+                                            </td>
+                                            <td class="font-bold">
+                                                <div class="inner-cell">141,000</div>
+                                            </td>
+                                            <td class="num-down">
+                                                <div class="inner-cell">-6,500 ▼</div>
+                                            </td>
+                                            <td>
+                                                <div class="inner-cell">1,101,994</div>
+                                            </td>
+                                            <td>
+                                                <div class="inner-cell">163,023</div>
+                                            </td>
+                                            <td>
+                                                <div class="inner-cell">148,500</div>
+                                            </td>
+                                            <td>
+                                                <div class="inner-cell">152,000</div>
+                                            </td>
+                                            <td>
+                                                <div class="inner-cell">140,500</div>
+                                            </td>
+                                            <td>
+                                                <div class="inner-cell">12,230,313</div>
+                                            </td>
+                                            <td>
+                                                <div class="inner-cell">86739810</div>
+                                            </td>
+                                        </tr>
+                                </table>
+                            </div>
+                            <!-- //e:tb-wrap -->
+                        </div>
+                    </div>
+                </div>
+                <div class="mode-change">
+                    <span class="change-txt-list">
+                        <span class="change-txt">
+                            <span>Light</span>
+                            <span>Dark</span>
+                        </span>&nbsp;Mode
+                    </span>
+                    <div class="theme-icon"></div>
+                </div>
+            </div>
+            <!-- //e:containerWrap -->
+        </div>
+
+        <div id="footerWrap" class="light ani2">
+            <div class="footer container">
+                <div class="row">
+                    <div class="col-sm-5">
+                        <p class="logo"><img src="http://skin-skin2.brandxcorp2.cafe24.com/web/upload/images/footer_logo.png" alt=""></p>
+                    </div>
+
+                    <div class="col-sm-4">
+                        <p>
+                            서울시 성동구 뚝섬로1길 63 영창디지털타워 12층<br>
+                            ㈜ 브랜드엑스코퍼레이션
+                        </p>
+                        <p style="margin-top:14px;">
+                            Opening hours. am 9:30 - pm 6:30<br>
+                            Lunch break. pm 12:30 - pm 1:30<br>
+                            Sat, Sun Off
+                        </p>
+                    </div>
+                    <div class="col-sm-2">
+                        <ul>
+                            <li><a href="#">회사소개</a></li>
+                            <li><a href="#">브랜드</a></li>
+                            <li><a href="#">뉴스</a></li>
+                            <li><a href="#">주가정보</a></li>
+                            <li><a href="#">채용</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="footerBottom">
+            <div class="txt">
+                <p>함께해요, 우리와.</p>
+                <p>실패를 두려워 하지 않는 도전정신<br>함께 일하고, 함께 성장하는 브랜드엑스코퍼레이션</p>
+            </div>
+            <div class="jump-mask"></div>
+            <figure>
+                <div class="">
+                    <img src="http://skin-skin2.brandxcorp2.cafe24.com/web/upload/images/img_footer_bottom.jpg" alt="">
+                </div>
+            </figure>
+        </div>
+        <!-- <div id="footerBottom">
+            <div class="footer-bottom-txt">
+                <p>함께해요, 우리와.</p>
+                <p>실패를 두려워 하지 않는 도전정신<br>함께 일하고, 함께 성장하는 브랜드엑스코퍼레이션</p>
+            </div>
+            <div class="jump-mask"></div>
+            <figure>
+                <div class="o-img type-jump">
+                    <img src="http://skin-skin2.brandxcorp2.cafe24.com/web/upload/images/img_footer_bottom.jpg" alt="">
+                </div>
+            </figure>
+        </div> -->
+
+
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+
+            $(document).ready(function(){
+                var win_H = $(window).height();
+                $('.slide-area, .swiper-wrapper').css('height', win_H);
+
+                var swiper = new Swiper('.career-list-wrap', {
+                       autoHeight: true,
+                       loop:true,
+                       slidesPerView:1,
+                       spaceBetween: 10,
+                       pagination: {
+                        el: '.career-paging',
+                        type: 'progressbar',
+                       },
+                       breakpointsInverse: true,
+                       breakpoints: {
+                    	  768: {
+                            slidesPerView:1,
+                            spaceBetween: 20
+                          },
+                          1024: {
+                              slidesPerView:'auto',
+                              spaceBetween: 100
+                          }
+                       }
+                });
+            });
+
+
+
+        </script>
+    </body>
+</html>
