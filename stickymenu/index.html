@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="./jquery-3.5.1.min.js"></script>
+</head>
+
+<body>
+
+  <style>
+    .float-side-menu {
+      position: absolute;
+      left: 50%;
+      top: 370px;
+      margin-left: 368px;
+      z-index: 3;
+      padding-left: 1.6rem;
+      box-sizing: border-box;
+      font-size: 1.3rem;
+      color: #898989;
+      line-height: 2.2rem;
+    }
+
+    .float-side-menu:before {
+      clear: both;
+      content: '';
+      position: absolute;
+      top: 0;
+      left: -3px;
+      width: 3px;
+      height: 100%;
+      border-radius: 10px;
+      background: #e4eaf2;
+    }
+
+    .float-side-menu.fixed {
+      position: fixed;
+      top: 150px;
+    }
+
+    .float-side-menu .bar {
+      position: absolute;
+      width: 3px;
+      height: 22px;
+      background-color: #1490ef;
+      left: -3px;
+      top: 0;
+      transition: top .2s ease-out;
+      border-radius: 10px;
+    }
+
+    .float-side-menu ul {
+      width: 15rem;
+    }
+
+    .float-side-menu li {
+      position: relative;
+      margin-top: 2.4rem;
+      cursor: pointer;
+      word-break: keep-all;
+    }
+
+    .float-side-menu li:after {
+      content: '';
+      display: block;
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0);
+    }
+
+    .float-side-menu li.selected {
+      padding: 0.8rem;
+      background: rgba(20, 144, 239, 0.05);
+      border-radius: 6px;
+    }
+
+    .float-side-menu li.selected a {
+      color: #1490ef;
+    }
+
+    .float-side-menu li a {
+      display: inline-block;
+      color: #848a92;
+      pointer-events: none;
+      font-size: 1.5rem;
+      font-weight: 500;
+      line-height: 2.4rem;
+    }
+
+    .float-side-menu li+li.depth2 {
+      padding-bottom: 0.8rem;
+    }
+
+    .float-side-menu li.depth2 {
+      margin-top: 0.4rem;
+      font-weight: 400;
+      padding-right: 0.8rem;
+    }
+
+    .float-side-menu li.depth2 a {
+      display: inline-block;
+      position: relative;
+      padding-left: 2rem;
+      line-height: 2.2rem;
+      font-size: 1.4rem;
+      font-weight: 400;
+      word-break: keep-all;
+    }
+
+    .float-side-menu li.depth2 a:before {
+      content: '';
+      display: block;
+      position: absolute;
+      left: 0.8rem;
+      top: 1rem;
+      width: 0.4rem;
+      height: 0.4rem;
+      background: #898989;
+      border-radius: 50%;
+    }
+
+    .float-side-menu li.depth2+li:not(.depth2) {
+      margin-top: 1.2rem;
+    }
+
+    .float-side-menu li:first-of-type {
+      margin-top: 0;
+    }
+
+    .float-side-menu li.depth2.selected a:before {
+      background: #357ffa;
+    }
+  </style>
+
+  <div class="float-side-menu">
+    <i class="bar"></i>
+    <ul>
+      <li class="selected"><a href="#section01">section01</a></li>
+      <li><a href="#section02">section02</a></li>
+    </ul>
+  </div>
+
+  <div class="scroll-box-wrap">
+    <div style="width:100%; height:1000px;">
+      <p id="section01">section01</p>
+    </div>
+    <div style="width:100%; height:1000px;">
+      <p id="section02">section02</p>
+    </div>
+  </div>
+
+
+  <script>
+    var floatMenu = $('.float-side-menu'),								// 플로팅 메뉴
+      floatMenuTop = floatMenu.css('top').replace('px', '') + 'px';		// 0708 추가
+    var lessHeight = 102;
+
+    function floatUI() {
+      // 변수 선언 영역
+      var menu = $('.float-side-menu li'),
+        bar = $('.float-side-menu .bar'),
+        barH = [],
+        barPositionH = [],
+        menuMg = [];
+      $(menu).each(function (idx, el) {
+        barH.push($(this).outerHeight(false));				// 메뉴 높이 측정
+        barPositionH.push(Number($(this).position().top));	// 메뉴별 바 위치 측정
+        menuMg.push(Number($(el).css('margin-top').replace(/[^-\d\.]/g, '')));	// 메뉴별 margin-top값
+
+        return barH, barPositionH, menuMg;
+      });
+
+      // 플로팅 메뉴 별 함수
+      menu.each(function (idx) {
+        $(this).off('click').on('click', function () {
+          // 클릭한 영역 위치로 이동
+          var targetID = $(this).find('a').attr('href'),
+            targetScrollTop = $(targetID).offset().top - lessHeight;
+
+          $(window).scrollTop(targetScrollTop);
+
+          // 클릭한 메뉴에 .selected 추가
+          $(menu).removeClass('selected');
+          $(menu).eq(idx).addClass('selected');
+
+
+          if ($(this).hasClass('selected')) {
+            console.log(Number(barPositionH[idx] + menuMg[idx]));
+            bar.css({ // 바 top&height 값 세팅
+              top: barPositionH[idx] + menuMg[idx],// 
+              height: barH[idx],
+            });
+          }
+        });
+        if ($(this).hasClass('selected')) {
+          bar.css({ // 바 top&height 값 세팅
+            top: barPositionH[idx] + menuMg[idx], //
+            height: barH[idx],
+          });
+        }
+      });
+    }
+
+    $(document).ready(function () {
+      floatUI();
+      floatMenu.css({ 'top': floatMenuTop });
+    });
+
+    $(window).scroll(function () {
+      // 스크롤 시 우측 플로팅 메뉴 고정
+      var floatMenuH = floatMenu.outerHeight(true),	// 플로팅 메뉴 높이
+        floatAreaBtm = $('.scroll-box-wrap').outerHeight(true), // 플로팅 메뉴가 움직일 박스 영역 높이
+        floatAreaPdBtm = $('.scroll-box-wrap').css('padding-bottom').replace('px', ''), // 박스 영역 padding-bottom 값
+        pageSt = $(window).scrollTop();
+
+      var floatRangeCalc1 = pageSt + 150 + floatMenuH,
+        floatRangeCalc2 = $('.scroll-box-wrap').offset().top + floatAreaBtm - floatAreaPdBtm;
+
+      var scrT = $(window).scrollTop();
+
+
+      if (floatMenu.length != 0) {
+        if (floatRangeCalc1 >= floatRangeCalc2) {
+          floatMenu.css({
+            top: floatAreaBtm - pageSt - floatMenuH + 52,
+          });
+        } else if (pageSt < 200) {
+          floatMenu.removeClass('fixed');
+          floatMenu.css({
+            top: floatMenuTop,
+          });
+        } else if (pageSt > 200) {
+          floatMenu.addClass('fixed');
+          floatMenu.css({
+            top: 150,
+          });
+        }
+      }
+
+      if (scrT == $(document).height() - $(window).height()) {
+        $('.float-side-menu li').removeClass('selected');
+        $('.float-side-menu li').eq($('.float-side-menu li').length - 1).addClass('selected');
+      }
+
+      // 메뉴별 targetID 감지
+      $('.float-side-menu li').each(function (idx) {
+        var targetID = $(this).find('a').attr('href'),
+          targetScrollTop = $(targetID).offset().top - lessHeight;
+
+        if (pageSt == $(document).height() - $(window).height()) {
+          floatUI();
+        } else if (targetScrollTop - 120 <= pageSt) {
+          $('.float-side-menu li').removeClass('selected');
+          $('.float-side-menu li').eq(idx).addClass('selected');
+          floatUI();
+        }
+      });
+    });
+  </script>
+</body>
+
+</html>
