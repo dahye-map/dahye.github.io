@@ -89,14 +89,12 @@ input, textarea, select {
   border: 0;
   -webkit-border-radius: 0;
   -webkit-appearance: none;
-  -moz-appearance: none;
-       appearance: none;
+  appearance: none;
 }
 
 input[readonly] {
   -webkit-user-select: none;
-  -moz-user-select: none;
-       user-select: none;
+  user-select: none;
 }
 
 textarea {
@@ -116,8 +114,7 @@ button {
   border: 0;
   outline: none;
   -webkit-appearance: none;
-  -moz-appearance: none;
-       appearance: none;
+  appearance: none;
   background-color: transparent;
   color: inherit;
   text-transform: none;
@@ -147,6 +144,7 @@ mark {
 }
 
 .fnStickyTop {
+  position: -webkit-sticky;
   position: sticky;
   z-index: 1;
   transform: translate3d(0, 0, 0);
@@ -457,7 +455,9 @@ mark {
 }
 .chk input + label {
   position: relative;
+  display: -webkit-box;
   display: flex;
+  -webkit-box-align: center;
   align-items: center;
   cursor: pointer;
   -webkit-tap-highlight-color: transparent;
@@ -550,9 +550,7 @@ mark {
   border-radius: 2.6rem;
   background-color: #D5DBE3;
   transition: 0.2s cubic-bezier(0.24, 0, 0.5, 1);
-  -webkit-user-select: none;
-     -moz-user-select: none;
-          user-select: none;
+  user-select: none;
   -webkit-tap-highlight-color: transparent;
 }
 .switch .slider::before {
@@ -689,4 +687,4 @@ mark {
 }
 .option-swiper-wrap .option-swiper .swiper-slide.swiper-slide-active {
   font-weight: 700;
-}/*# sourceMappingURL=common.css.map */
+}
