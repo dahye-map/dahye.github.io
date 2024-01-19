@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- favicon -->
+  <link rel="shortcut icon" href="./assets/images/common/favicon/favicon.ico">
+  <link rel="icon" href="./assets/images/common/favicon/favicon-32x32.png" sizes="32x32">
+  <link rel="icon" href="./assets/images/common/favicon/favicon-48x48.png" sizes="48x48">
+  <link rel="icon" href="./assets/images/common/favicon/favicon-96x96.png" sizes="96x96">
+  <link rel="icon" href="./assets/images/common/favicon/favicon-144x144.png" sizes="144x144">
+
+  <link rel="stylesheet" href="./assets/css/common.css">
+  <link rel="stylesheet" href="./assets/css/swiper.css">
+  <link rel="stylesheet" href="./assets/css/aos.css">
+  <link rel="stylesheet" href="./assets/css/layout.css">
+  <link rel="stylesheet" href="./assets/css/main.css">
+
+  <script src="./assets/js/jquery-3.6.0.min.js"></script>
+  <script src="./assets/js/swiper.min.js"></script>
+  <script src="./assets/js/gsap.min.js"></script>
+  <script src="./assets/js/aos.js"></script>
+
+  <script src="./assets/js/ui.js"></script>
+  <title>GOMPAY</title>
+</head>
+
+<body>
+  <div id="wrap">
+    <!-- s:배경 svg 모음 -->
+    <section class="svg-top__section">
+      <svg id="svg1" viewBox="0 0 1920 974" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <rect x="-1069.66" y="-247.197" width="4262.46" height="1569.56" />
+        <path
+          d="M676.393 1233.56C177.33 1740.62 -695.587 1497.38 -1069.66 1312.38V-378.179H3590.19L3731.16 140.198C3408.14 75.4473 2648.89 107.564 2196 754.037C1629.9 1562.13 1300.22 599.745 676.393 1233.56Z"
+          fill="url(#svg_fill)" />
+        <defs>
+          <linearGradient id="svg_fill" x1="25.9237" y1="1589.88" x2="-1409.33" y2="-2284.08" gradientUnits="userSpaceOnUse">
+            <stop offset="0.0214194" stop-color="#209BFF" />
+            <stop offset="0.88055" stop-color="#20FFBC" stop-opacity="0" />
+          </linearGradient>
+        </defs>
+      </svg>
+      <svg id="svg2" xmlns="http://www.w3.org/2000/svg" width="1465" height="974" viewBox="0 0 1465 974" fill="none">
+        <path opacity="0.5"
+          d="M906.444 334.726C1485.21 28.7966 1503.22 -341.81 1439.88 -488.872C1084.6 -1391.14 -582.336 -650.443 -1458.94 -127.503C-2335.54 395.437 -1184.33 1821.13 -496.972 1074.71C190.381 328.284 182.982 717.137 906.444 334.726Z"
+          fill="url(#svg_fill2)" />
+        <defs>
+          <linearGradient id="svg_fill2" x1="-116.428" y1="1363.42" x2="-822.051" y2="-20.6808"
+            gradientUnits="userSpaceOnUse">
+            <stop stop-color="#209BFF" />
+            <stop offset="1" stop-color="#209BFF" stop-opacity="0" />
+          </linearGradient>
+        </defs>
+      </svg>
+      <svg id="svg3" xmlns="http://www.w3.org/2000/svg" width="319" height="360" viewBox="0 0 319 360" fill="none">
+        <path opacity="0.3"
+          d="M252.031 156.786C333.801 91.5287 322.862 8.16345 307.172 -25.3619C216.278 -230.838 -24.4725 -74.518 -146.095 37.7416C-267.718 150.001 -29.1202 478.404 53.6859 314.61C136.492 150.816 149.819 238.358 252.031 156.786Z"
+          fill="url(#svg_fill3)" />
+        <defs>
+          <linearGradient id="svg_fill3" x1="125.74" y1="382.044" x2="-87.7842" y2="102.684"
+            gradientUnits="userSpaceOnUse">
+            <stop stop-color="#209BFF" />
+            <stop offset="1" stop-color="#209BFF" stop-opacity="0" />
+          </linearGradient>
+        </defs>
+      </svg>
+      <svg id="svg4" viewBox="0 0 1920 886" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path
+          d="M717.961 748.137C481.882 977.597 68.9542 867.522 -108 783.802V-39H2096.31L2163 195.584C2010.2 166.282 1651.04 180.816 1436.81 473.367C1169.01 839.057 1013.06 461.312 717.961 748.137Z"
+          stroke="url(#svg_fill4)" />
+        <circle cx="208" cy="876" r="6" fill="#209BFF" />
+        <circle cx="982" cy="631" r="6" fill="#209BFF" />
+        <circle cx="601.5" cy="829.5" r="4" fill="white" stroke="#209BFF" />
+        <circle cx="189" cy="873" r="8.5" fill="white" stroke="#209BFF" />
+        <circle cx="1832" cy="211" r="6" fill="#209BFF" />
+        <defs>
+          <linearGradient id="svg_fill4" x1="410.261" y1="851.615" x2="-217.508" y2="-919.621"
+            gradientUnits="userSpaceOnUse">
+            <stop stop-color="#209BFF" />
+            <stop offset="1" stop-color="#20FFBC" stop-opacity="0" />
+          </linearGradient>
+        </defs>
+      </svg>
+
+      <div class="svg5" data-aos="fade-down-right" data-aos-duration="800">
+        <img src="./assets/images/main/bg_dot.svg" alt="">
+      </div>
+      <div class="svg6" data-aos="fade-down-left">
+        <img src="./assets/images/main/bg_dot2.svg" alt="">
+      </div>
+    </section>
+    <!-- //e:배경 svg 모음 -->
+    
+    <!-- s:header -->
+    <header class="header-wrap" data-aos="fade-down" data-aos-delay="800">
+      <div class="header-container">
+        <h1 class="header-logo">
+          <a href="#" class="header-logo__link"><span class="blind">GOM PAY</span></a>
+        </h1>
+        <div class="header-button">
+          <button type="button" class="btn btn-menu"><span class="blind">메뉴</span></button>
+        </div>
+        <nav class="header-menu">
+          <div class="header-menu__list">
+            <div class="header-menu__item">
+              <div class="header-menu__main">
+                <a href="#" class="header-menu__link"><span class="header-menu__link-text">국내전자결제</span></a>
+              </div>
+              <div class="header-menu__sub">
+                <div class="header-menu__sub-item">
+                  <!-- 현재 페이지일 때 active class -->
+                  <a href="#" class="header-menu__link">온라인 결제</a>
+                </div>
+                <div class="header-menu__sub-item">
+                  <a href="#" class="header-menu__link">수기 결제</a>
+                </div>
+                <div class="header-menu__sub-item">
+                  <a href="#" class="header-menu__link">단말기 결제</a>
+                </div>
+                <div class="header-menu__sub-item">
+                  <a href="#" class="header-menu__link">오픈페이콜</a>
+                </div>
+                <div class="header-menu__sub-item">
+                  <a href="#" class="header-menu__link">오픈페이렌트</a>
+                </div>
+              </div>
+            </div>
+            <div class="header-menu__item">
+              <div class="header-menu__main">
+                <a href="#" class="header-menu__link"><span class="header-menu__link-text">해외전자결제</span></a>
+              </div>
+              <div class="header-menu__sub">
+                <div class="header-menu__sub-item">
+                  <a href="#" class="header-menu__link">해외 결제</a>
+                </div>
+                <div class="header-menu__sub-item">
+                  <a href="#" class="header-menu__link">WeChat Pay</a>
+                </div>
+                <div class="header-menu__sub-item">
+                  <a href="#" class="header-menu__link">Alipay</a>
+                </div>
+                <div class="header-menu__sub-item">
+                  <a href="#" class="header-menu__link">Union Pay</a>
+                </div>
+                <div class="header-menu__sub-item">
+                  <a href="#" class="header-menu__link">RISK 관리</a>
+                </div>
+              </div>
+            </div>
+            <div class="header-menu__item">
+              <div class="header-menu__main">
+                <a href="#" class="header-menu__link"><span class="header-menu__link-text">서비스 신청하기</span></a>
+              </div>
+              <div class="header-menu__sub">
+                <div class="header-menu__sub-item">
+                  <a href="#" class="header-menu__link">수수료 안내</a>
+                </div>
+                <div class="header-menu__sub-item">
+                  <a href="#" class="header-menu__link">구비서류 안내</a>
+                </div>
+                <div class="header-menu__sub-item">
+                  <a href="#" class="header-menu__link">문의하기</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="header-etc mo-only">
+            <div class="header-etc__list">
+              <div class="header-etc__item">
+                <a href="#" class="header-etc__link active">KOR</a>
+              </div>
+              <div class="header-etc__item">
+                <a href="#" class="header-etc__link">ENG</a>
+              </div>
+            </div>
+          </div>
+        </nav>
+        <div class="header-etc pc-only">
+          <div class="header-etc__list">
+            <div class="header-etc__item">
+              <a href="#" class="header-etc__link active">KOR</a>
+            </div>
+            <div class="header-etc__item">
+              <a href="#" class="header-etc__link">ENG</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- //e:header -->
+
+    <!-- s:container -->
+    <div id="container">
+      <div class="contents">
+        <!-- main-top__banner -->
+        <section class="main-top__banner">
+          <div class="txt-wrap" data-aos="fade-right" data-aos-easing="ease-out-back" data-aos-delay="800">
+            <p class="sub-tit">국내/해외결제 및 ON-LINE/OFF-LINE 결제</p>
+            <p class="title">모두 지오엠페이로 통합니다.</p>
+            <p class="desc">
+              손쉬운 연동작업으로 다양한 결제수단이 한 번에 OK! <br>
+              내 사업에 보탬이 되는 든든한 결제 파트너를 만나보세요.
+            </p>
+          </div>
+          <div class="img-wrap" data-aos="fade-left" data-aos-easing="ease-out-back" data-aos-delay="800">
+            <img src="./assets/images/main/img_main_banner.png" alt="">
+          </div>
+        </section>
+
+        <!-- main-section__type1 -->
+        <section class="main-section__type1">
+          <span class="bg-dot dot1"></span>
+          <span class="bg-dot dot2"></span>
+          <span class="bg-dot dot3"></span>
+          <span class="bg-dot dot4"></span>
+          <div class="inner">
+            <div class="pay-list-wrap">
+              <div class="pay-list">
+                <div data-aos="fade-down">
+                  <p class="sub-tit">소상공인을 위한 결제 솔루션</p>
+                  <p class="title">오픈페이콜</p>
+                </div>
+                <div data-aos="fade-up">
+                  <p class="img"><img src="./assets/images/main/img_paycall.png" alt=""></p>
+                  <p class="desc">
+                    현금으로만 납부했던 배달비를 <br>
+                    간편하게 카드로 결제할 수 있습니다.
+                  </p>
+                </div>
+              </div>
+              <div class="pay-list">
+                <div data-aos="fade-down">
+                  <p class="sub-tit">임대료 및 관리비 결제 솔루션</p>
+                  <p class="title">오픈페이렌트</p>
+                </div>
+                <div data-aos="fade-up">
+                  <p class="img"><img src="./assets/images/main/img_payrent.png" alt=""></p>
+                  <p class="desc">
+                    사무실이나 매장 임대료와 관리비를 <br>
+                    카드로 편리하게 결제할 수 있습니다.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- main-section__type2 -->
+        <section class="main-section__type2">
+          <span class="bg-dot dot1"></span>
+          <span class="bg-dot dot2"></span>
+          <span class="bg-dot dot3"></span>
+          <div class="inner">
+            <div class="txt-wrap" data-aos="fade-down">
+              <p class="sub-tit">GOMPAY SERVICES</p>
+              <p class="title">지오엠페이는 <br class="mo-only">이런 서비스를 제공합니다.</p>
+            </div>
+        
+            <div class="service-box-wrap">
+              <div class="service-box" data-aos="fade-up">
+                <span class="service-icon service-icon__01"></span>
+                <div class="service-box__txt">
+                  <p class="tit">국내 온라인 결제</p>
+                  <p class="desc">
+                    다양한 국내 전자 결제 수단을 완벽하게 지원하는 온라인 통합 결제 서비스
+                  </p>
+                </div>
+                <div class="btn-wrap">
+                  <a href="" class="btn btn-view">
+                    자세히 보기
+                    <i class="icon icon-view"></i>
+                  </a>
+                </div>
+              </div>
+              <div class="service-box" data-aos="fade-up" data-aos-delay="100">
+                <span class="service-icon service-icon__02"></span>
+                <div class="service-box__txt">
+                  <p class="tit">국내 오프라인 결제</p>
+                  <p class="desc">
+                    국내 모든 신용카드사와 계약을 통해 안정적인 오프라인 카드 결제 서비스
+                  </p>
+                </div>
+                <div class="btn-wrap">
+                  <a href="" class="btn btn-view">
+                    자세히 보기
+                    <i class="icon icon-view"></i>
+                  </a>
+                </div>
+              </div>
+              <div class="service-box" data-aos="fade-up" data-aos-delay="200">
+                <span class="service-icon service-icon__03"></span>
+                <div class="service-box__txt">
+                  <p class="tit">해외 결제</p>
+                  <p class="desc">
+                    전 세계 230여 개 국의 모든 통화로 결제와 정산이 가능한 글로벌 신용카드 결제 서비스
+                  </p>
+                </div>
+                <div class="btn-wrap">
+                  <a href="" class="btn btn-view">
+                    자세히 보기
+                    <i class="icon icon-view"></i>
+                  </a>
+                </div>
+              </div>
+              <div class="service-box" data-aos="fade-up" data-aos-delay="300">
+                <span class="service-icon service-icon__04"></span>
+                <div class="service-box__txt">
+                  <p class="tit">중국 결제</p>
+                  <p class="desc">
+                    14억 중국인을 포함, 전 세계에서 사용하는 Ali Pay, WeChat Pay, Union Pay 등의
+                    중국 결제 서비스
+                  </p>
+                </div>
+                <div class="btn-wrap">
+                  <a href="" class="btn btn-view">
+                    자세히 보기
+                    <i class="icon icon-view"></i>
+                  </a>
+                </div>
+              </div>
+              <div class="service-box" data-aos="fade-up" data-aos-delay="400">
+                <span class="service-icon service-icon__05"></span>
+                <div class="service-box__txt">
+                  <p class="tit">오픈페이</p>
+                  <p class="desc">
+                    소상공인을 위한 결제 솔루션 <br>
+                    - 배달비 결제 오픈페이콜<br>
+                    - 월세 및 관리비 결제 오픈페이렌트
+                  </p>
+                </div>
+                <div class="btn-wrap">
+                  <a href="" class="btn btn-view">
+                    자세히 보기
+                    <i class="icon icon-view"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- main-section__type3 -->
+        <section class="main-section__type3">
+          <div class="inner">
+            <div class="txt-wrap" data-aos="fade-down">
+              <p class="sub-tit">안전해서 믿을 수 있는 결제 보안 서비스</p>
+              <p class="title">지오엠페이로 <br class="mo-only">고객의 정보를 지켜주세요!</p>
+            </div>
+
+            <div class="icon-box-wrap">
+              <div class="icon-box" data-aos="fade-up">
+                <p class="icon-box__img"><img src="./assets/images/main/icon_main01.png" alt=""></p>
+                <p class="icon-box__tit">안전한 정보 보호</p>
+                <p class="icon-box__txt">
+                  PCI DSS 취득 및 글로벌 SSL <br>
+                  인증기업 SECTIGO와 제휴하여<br>
+                  카드 정보를 안전하게 보호합니다.
+                </p>
+              </div>
+              <div class="icon-box" data-aos="fade-up" data-aos-delay="100">
+                <p class="icon-box__img"><img src="./assets/images/main/icon_main02.png" alt=""></p>
+                <p class="icon-box__tit">거래전환율 상승효과</p>
+                <p class="icon-box__txt">
+                  다양한 모바일 기기를 지원하고, <br>
+                  Non Active-X 및 Non Pop-up으로<br>
+                  쉽고 간편한 결제가 가능합니다.
+                </p>
+              </div>
+              <div class="icon-box" data-aos="fade-up" data-aos-delay="200">
+                <p class="icon-box__img"><img src="./assets/images/main/icon_main03.png" alt=""></p>
+                <p class="icon-box__tit">실시간 모니터링</p>
+                <p class="icon-box__txt">
+                  보안전문기업 AUSTREME과 제휴하여 <br>
+                  실시간으로 거래를 모니터링하고<br>
+                  불법 및 사기 거래를 방지합니다.
+                </p>
+              </div>
+              <div class="icon-box" data-aos="fade-up" data-aos-delay="300">
+                <p class="icon-box__img"><img src="./assets/images/main/icon_main04.png" alt=""></p>
+                <p class="icon-box__tit">다양한 통화와 언어 지원</p>
+                <p class="icon-box__txt">
+                  전 세계 230개국 발행 신용카드 및 <br>
+                  현지 통화로 결제가 가능하며,<br>
+                  다국어 결제 페이지를 지원합니다.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- main-section__type4 -->
+        <section class="main-section__type4">
+          <!-- s:배경 svg -->
+          <div class="bg-hill" data-aos="fade-up-right">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1061" fill="none">
+              <path
+                d="M403.445 591.398C233.934 355.622 60.0393 609.422 -5.71929 765.794L-14 1061H1968.5L2044 389.235C2029.06 258.682 1982.63 -1.93769 1916.38 0.0108655C1833.57 2.44656 1698.16 386.799 1590.51 409.208C1482.86 431.616 1379.59 177.329 1249.54 124.231C1119.48 71.1332 1025.47 268.912 948.511 439.897C871.549 610.883 615.334 886.117 403.445 591.398Z"
+                fill="url(#paint0_linear_271_3820)" />
+              <defs>
+                <linearGradient id="paint0_linear_271_3820" x1="1134.58" y1="71.1223" x2="1074.17" y2="694.66"
+                  gradientUnits="userSpaceOnUse">
+                  <stop stop-color="white" />
+                  <stop offset="0.13" stop-color="white" stop-opacity="0.921875" />
+                  <stop offset="1" stop-color="white" stop-opacity="0" />
+                </linearGradient>
+              </defs>
+            </svg>
+          </div>
+          <div class="bg-line" data-aos="fade-right">
+            <svg viewBox="0 0 1898 1086" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="1211.5" cy="128.512" r="4" fill="#209BFF" />
+              <circle cx="1834.5" cy="187.512" r="7.5" fill="#5BD8FF" stroke="#209BFF" />
+              <circle cx="1828.5" cy="196.512" r="5.5" fill="#5BD8FF" stroke="white" />
+              <path
+                d="M429.5 608.011C255.5 366.011 77 626.511 9.5 787.011L1 1090.01H2036L2113.5 400.511C2098.17 266.511 2050.5 -0.988848 1982.5 1.01115C1897.5 3.51115 1758.5 398.011 1648 421.011C1537.5 444.011 1431.5 183.011 1298 128.511C1164.5 74.0111 1068 277.011 989 452.511C910 628.011 647 910.511 429.5 608.011Z"
+                stroke="url(#paint0_linear_271_3821)" />
+              <defs>
+                <linearGradient id="paint0_linear_271_3821" x1="1244" y1="116.511" x2="1131.5" y2="795.511"
+                  gradientUnits="userSpaceOnUse">
+                  <stop stop-color="#008CFF" />
+                  <stop offset="1" stop-color="white" stop-opacity="0" />
+                </linearGradient>
+              </defs>
+            </svg>
+          </div>
+          <!-- //e:배경 svg -->
+          <div class="inner">
+            <div class="txt-wrap">
+              <p class="title" data-aos="fade-down">ABOUT US</p>
+              <p class="desc" data-aos="fade-right">
+                지오엠페이는 국내외 여러 매입사와의 업무 제휴로 <br>
+                다양한 결제 서비스를 제공하고 있습니다.
+              </p>
+            </div>
+            <div class="img-building" data-aos="fade-right">
+              <img src="./assets/images/main/img_about_building.png" alt="">
+            </div>
+            <div class="img-rising" data-aos="fade-up-right">
+              <img src="./assets/images/main/img_about_rising.png" alt="">
+            </div>
+          </div>
+          <div class="about-swiper swiper-container">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <p class="year">2023</p>
+                <ul class="month-wrap">
+                  <li>
+                    <p class="month">04</p>
+                    <p class="con">KAKAO PAY(한국)과 온/오프라인 알리페이 대행 계약 체결</p>
+                  </li>
+                </ul>
+              </div>
+              <div class="swiper-slide">
+                <p class="year">2022</p>
+                <ul class="month-wrap">
+                  <li>
+                    <p class="month">06</p>
+                    <p class="con">
+                      BC CARD(한국)과 전자결제대행서비스 매입 계약체결
+                    </p>
+                  </li>
+                  <li>
+                    <p class="month">01</p>
+                    <p class="con">
+                      <span>오픈페이 월세 서비스(https://www.rent.open-pay.co.kr) 개시</span>
+                      <span>갤럭시아머니트리(한국)과 전자결제대행서비스 계약체결 (파트너쉽 및 국내결제 서비스연동)</span>
+                    </p>
+                  </li>
+                </ul>
+              </div>
+              <div class="swiper-slide">
+                <p class="year">2020</p>
+                <ul class="month-wrap">
+                  <li>
+                    <p class="month">07</p>
+                    <p class="con">
+                      KSNET(한국)과 전자결제대행서비스 계약체결 (국내결제 서비스연동)
+                    </p>
+                  </li>
+                  <li>
+                    <p class="month">06</p>
+                    <p class="con">
+                      오픈페이콜 서비스(https://www.call.open-pay.co.kr) 개시
+                    </p>
+                  </li>
+                </ul>
+              </div>
+              <div class="swiper-slide">
+                <p class="year">2019</p>
+                <ul class="month-wrap">
+                  <li>
+                    <p class="month">12</p>
+                    <p class="con">
+                      하나카드 전자결제대행서비스 매입 계약체결
+                    </p>
+                  </li>
+                  <li>
+                    <p class="month">06</p>
+                    <p class="con">
+                      NOVA2PAY 전자결제대행서비스 계약체결
+                    </p>
+                  </li>
+                </ul>
+              </div>
+              <div class="swiper-slide">
+                <p class="year">2018</p>
+                <ul class="month-wrap">
+                  <li>
+                    <p class="month">08</p>
+                    <p class="con">
+                      웰컴페이먼츠 전자결제대행서비스 계약체결
+                    </p>
+                  </li>
+                  <li>
+                    <p class="month">04</p>
+                    <p class="con">
+                      다우데이타 전자결제대행서비스 계약체결
+                    </p>
+                  </li>
+                </ul>
+              </div>
+              <div class="swiper-slide">
+                <p class="year">2017</p>
+                <ul class="month-wrap">
+                  <li>
+                    <p class="month">04</p>
+                    <p class="con">
+                      금융감독원 전자지급결제대행업(PG) 등록
+                    </p>
+                  </li>
+                  <li>
+                    <p class="month">01</p>
+                    <p class="con">
+                      SAFECHARGE 전자결제대행 매입 계약체결
+                    </p>
+                  </li>
+                </ul>
+              </div>
+              <div class="swiper-slide">
+                <p class="year">2016</p>
+                <ul class="month-wrap">
+                  <li>
+                    <p class="month">08</p>
+                    <p class="con">
+                      GOMINC 싱가포르법인 설립
+                    </p>
+                  </li>
+                  <li>
+                    <p class="month">02</p>
+                    <p class="con">
+                      PAYVISION 전자결제대행서비스 매입 계약체결
+                    </p>
+                  </li>
+                  <li>
+                    <p class="month">01</p>
+                    <p class="con">
+                      GOMINC 유럽법인 설립
+                    </p>
+                  </li>
+                </ul>
+              </div>
+              <div class="swiper-slide">
+                <p class="year">2015</p>
+                <ul class="month-wrap">
+                  <li>
+                    <p class="month">07</p>
+                    <p class="con">
+                      <span>TENPAY 전자결제대행서비스 매입 계약체결</span>
+                      <span>PAYPORT 전자결제대행서비스 계약체결</span>
+                      <span>GOMINC 일본법인 설립</span>
+                    </p>
+                  </li>
+                  <li>
+                    <p class="month">06</p>
+                    <p class="con">
+                      스마트로 전자결제대행서비스 계약체결
+                    </p>
+                  </li>
+                </ul>
+              </div>
+              <div class="swiper-slide">
+                <p class="year">2014</p>
+                <ul class="month-wrap">
+                  <li>
+                    <p class="month">06</p>
+                    <p class="con">
+                      PCI-DSS (신용카드거래 보안표준인증) 취득
+                    </p>
+                  </li>
+                  <li>
+                    <p class="month">02</p>
+                    <p class="con">
+                      전자결제브랜드GOMPAY개발 / 웹사이트 오픈
+                    </p>
+                  </li>
+                  <li>
+                    <p class="month">01</p>
+                    <p class="con">
+                      <span>PAYVISION HK 전자결제대행 매입 계약체결</span>
+                      <span>GOMINC 홍콩법인 설립</span>
+                    </p>
+                  </li>
+                </ul>
+              </div>
+              <div class="swiper-slide">
+                <p class="year">2013</p>
+                <ul class="month-wrap">
+                  <li>
+                    <p class="month">09</p>
+                    <p class="con">
+                      주식회사 지오엠아이앤씨 법인 설립
+                    </p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="about-btn-wrap">
+              <div class="about-prev swiper-button-prev"></div>
+              <div class="about-next swiper-button-next"></div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+    <!-- //e:container -->
+
+    <!-- s:footer  -->
+    <footer class="footer-wrap">
+      <div class="footer-container">
+        <div class="footer-section">
+          <p class="logo"><img src="./assets/images/common/footer_logo.png" alt=""></p>
+          <ul class="footer-utils">
+            <li><a href="">찾아오는 길</a></li>
+            <li><a href="">개인정보처리방침</a></li>
+            <li><a href="">이용약관</a></li>
+          </ul>
+        </div>
+        <div class="footer-info">
+          <p>
+            <span>(주)지오엠아이앤씨</span>
+            <span>서울특별시 구로구 디지털로26길 123, 703호 - 704호 (구로동, 지플러스타워)</span>
+          </p>
+          <p>
+            <span>사업자등록번호 : 105-87-91919</span>
+            <span class="pc-only"> / </span>
+            <span>전자금융업 등록번호 : 02-004-00113</span>
+          </p>
+        </div>
+        <div class="footer-copyright">
+          Copyright gompayment. GOMPAY. All rights reserved
+        </div>
+      </div>
+    </footer>
+    <!-- //e:footer  -->
+
+  </div>
+</body>
+
+</html>
