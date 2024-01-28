@@ -36,3 +36,9 @@
 			@content;
 		}
 	}
+
+	@mixin canHover {
+		@at-root .can-hover & {
+			@content;
+		}
+	}

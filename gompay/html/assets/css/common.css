@@ -186,6 +186,11 @@ legend {
 a {
   text-decoration: none;
   color: inherit;
+  -webkit-tap-highlight-color: transparent;
+}
+a:focus {
+  outline: none;
+  background-color: none;
 }
 
 button {
@@ -197,6 +202,7 @@ button {
   color: inherit;
   text-transform: none;
   cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
 }
 
 table {
@@ -232,7 +238,7 @@ mark {
 }
 
 .mo-only {
-  display: none;
+  display: none !important;
 }
 @media (max-width: 768px) {
   .mo-only {

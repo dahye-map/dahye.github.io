@@ -4,13 +4,15 @@ $(function () {
     once: 'true',
     mirror: 'true'
   });
+
   
   $(document).ready(function () {
-
+    //탭 많을 때 스크롤
+    $('.tab-container.full-right').scrollLeft(200);
+  
     // 메인 스와이퍼
     var ww = $(window).width();
     var mySwiper = undefined;
-
     function initSwiper() {
       if (ww > 768 && mySwiper == undefined) {
         mySwiper = new Swiper(".about-swiper", {
@@ -26,9 +28,7 @@ $(function () {
         mySwiper = undefined;
       }
     }
-
     initSwiper();
-
     $(window).on('resize', function () {
       ww = $(window).width();
       initSwiper();
@@ -65,3 +65,4 @@ $(function () {
     }, 1000);
   })
 });
+

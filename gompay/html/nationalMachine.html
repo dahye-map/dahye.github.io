@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- favicon -->
+  <link rel="shortcut icon" href="./assets/images/common/favicon/favicon.ico">
+  <link rel="icon" href="./assets/images/common/favicon/favicon-32x32.png" sizes="32x32">
+  <link rel="icon" href="./assets/images/common/favicon/favicon-48x48.png" sizes="48x48">
+  <link rel="icon" href="./assets/images/common/favicon/favicon-96x96.png" sizes="96x96">
+  <link rel="icon" href="./assets/images/common/favicon/favicon-144x144.png" sizes="144x144">
+
+  <link rel="stylesheet" href="./assets/css/common.css">
+  <link rel="stylesheet" href="./assets/css/swiper.css">
+  <link rel="stylesheet" href="./assets/css/aos.css">
+  <link rel="stylesheet" href="./assets/css/layout.css">
+  <link rel="stylesheet" href="./assets/css/ui.css">
+
+  <script src="./assets/js/jquery-3.6.0.min.js"></script>
+  <script src="./assets/js/swiper.min.js"></script>
+  <script src="./assets/js/gsap.min.js"></script>
+  <script src="./assets/js/aos.js"></script>
+
+  <script src="./assets/js/ui.js"></script>
+  <title>GOMPAY</title>
+</head>
+
+<body>
+  <div id="wrap">
+    <!-- s:header -->
+    <header class="header-wrap">
+      <div class="header-container">
+        <h1 class="header-logo">
+          <a href="index.html" class="header-logo__link"><span class="blind">GOM PAY</span></a>
+        </h1>
+        <div class="header-button">
+          <button type="button" class="btn btn-menu"><span class="blind">메뉴</span></button>
+        </div>
+        <nav class="header-menu">
+          <div class="header-menu__list">
+            <div class="header-menu__item">
+              <div class="header-menu__main">
+                <a href="#none" class="header-menu__link pc-only"><span class="header-menu__link-text">국내전자결제</span></a>
+                <a href="nationalOnline.html" class="header-menu__link mo-only"><span class="header-menu__link-text">국내전자결제</span></a>
+              </div>
+              <div class="header-menu__sub">
+                <div class="header-menu__sub-item">
+                  <!-- 현재 페이지일 때 active class -->
+                  <a href="nationalOnline.html" class="header-menu__link">온라인 결제</a>
+                </div>
+                <div class="header-menu__sub-item">
+                  <a href="nationalKeyin.html" class="header-menu__link">수기 결제</a>
+                </div>
+                <div class="header-menu__sub-item">
+                  <a href="nationalMachine.html" class="header-menu__link active">단말기 결제</a>
+                </div>
+                <div class="header-menu__sub-item">
+                  <a href="nationalPaycall.html" class="header-menu__link">오픈페이콜</a>
+                </div>
+                <div class="header-menu__sub-item">
+                  <a href="nationalPayrent.html" class="header-menu__link">오픈페이렌트</a>
+                </div>
+              </div>
+            </div>
+            <div class="header-menu__item">
+              <div class="header-menu__main">
+                <a href="#none" class="header-menu__link"><span class="header-menu__link-text pc-only">해외전자결제</span></a>
+                <a href="#" class="header-menu__link"><span class="header-menu__link-text mo-only">해외전자결제</span></a>
+              </div>
+              <div class="header-menu__sub">
+                <div class="header-menu__sub-item">
+                  <a href="#" class="header-menu__link">해외 결제</a>
+                </div>
+                <div class="header-menu__sub-item">
+                  <a href="#" class="header-menu__link">WeChat Pay</a>
+                </div>
+                <div class="header-menu__sub-item">
+                  <a href="#" class="header-menu__link">Alipay</a>
+                </div>
+                <div class="header-menu__sub-item">
+                  <a href="#" class="header-menu__link">Union Pay</a>
+                </div>
+                <div class="header-menu__sub-item">
+                  <a href="#" class="header-menu__link">RISK 관리</a>
+                </div>
+              </div>
+            </div>
+            <div class="header-menu__item">
+              <div class="header-menu__main">
+                <a href="#none" class="header-menu__link"><span class="header-menu__link-text pc-only">서비스 신청하기</span></a>
+                <a href="#" class="header-menu__link"><span class="header-menu__link-text mo-only">서비스 신청하기</span></a>
+              </div>
+              <div class="header-menu__sub">
+                <div class="header-menu__sub-item">
+                  <a href="#" class="header-menu__link">수수료 안내</a>
+                </div>
+                <div class="header-menu__sub-item">
+                  <a href="#" class="header-menu__link">구비서류 안내</a>
+                </div>
+                <div class="header-menu__sub-item">
+                  <a href="#" class="header-menu__link">문의하기</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="header-etc mo-only">
+            <div class="header-etc__list">
+              <div class="header-etc__item">
+                <a href="#" class="header-etc__link active">KOR</a>
+              </div>
+              <div class="header-etc__item">
+                <a href="#" class="header-etc__link">ENG</a>
+              </div>
+            </div>
+          </div>
+        </nav>
+        <div class="header-etc pc-only">
+          <div class="header-etc__list">
+            <div class="header-etc__item">
+              <a href="#" class="header-etc__link active">KOR</a>
+            </div>
+            <div class="header-etc__item">
+              <a href="#" class="header-etc__link">ENG</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- //e:header -->
+
+    <!-- s:container -->
+    <div id="container">
+      <div class="contents">
+        <section class="contents-top__wrap">
+          <div class="contents-top__container">
+            <h2 class="tit">국내전자결제</h2>
+          </div>
+        </section>
+
+        <div class="tab-wrap">
+          <div class="tab-container">
+            <div class="tab-item"><a href="nationalOnline.html">온라인 결제</a></div>
+            <div class="tab-item"><a href="nationalKeyin.html">수기 결제</a></div>
+            <div class="tab-item active"><a href="nationalMachine.html">단말기 결제</a></div>
+            <div class="tab-item"><a href="nationalPaycall.html">오픈페이콜</a></div>
+            <div class="tab-item"><a href="nationalPayrent.html">오픈페이렌트</a></div>
+          </div>
+        </div>
+
+        <section class="contents-detail__wrap">
+          <div class="contents-tit__wrap">
+            <p class="sub-tit">What?</p>
+            <p class="title">단말기 결제란?</p>
+          </div>
+          <div class="contents-box__wrap">
+            <div class="contents-box__container">
+              <p>
+                가맹점의 편의에 따라 다양한 유/무선 단말기를 선택할 수 있으며,<br>
+                신용카드 결제 및 각종 페이를 사용한 간편결제가 가능합니다.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section class="contents-feature__wrap">
+          <div class="contents-tit__wrap">
+            <p class="sub-tit">Feature</p>
+            <p class="title">단말기 결제 특징</p>
+          </div>
+          <div class="contents-box__list">
+            <div class="box-con">
+              <p class="tit">다양한 유/무선 단말기</p>
+              <p class="img"><img src="./assets/images/contents/img_machine_feature01.png" alt=""></p>
+              <p class="desc">
+                유/무선 단말기,<br>
+                리더기, 블루투스 단말기 등<br>
+                다양한 형태의 단말기를 지원합니다.
+              </p>
+            </div>
+            <div class="box-con">
+              <p class="tit">합리적인 정산주기와 수수료</p>
+              <p class="img"><img src="./assets/images/contents/img_machine_feature02.png" alt=""></p>
+              <p class="desc">
+                가맹점의 상황에 맞춘 합리적인 <br>
+                정산 주기와 수수료를 제공하여<br>
+                자금 유통을 원활하게 합니다.
+              </p>
+            </div>
+            <div class="box-con">
+              <p class="tit">긴급 개통 서비스</p>
+              <p class="img"><img src="./assets/images/contents/img_machine_feature03.png" alt=""></p>
+              <p class="desc">
+                긴급 개통 서비스를 신청하면 <br>
+                신청 당일에 단말기를 설치하여<br>
+                고객의 결제를 받을 수 있습니다.
+              </p>
+            </div>
+            <div class="box-con">
+              <p class="tit">단 한 번의 계약으로 OK</p>
+              <p class="img"><img src="./assets/images/contents/img_machine_feature04.png" alt=""></p>
+              <p class="desc">
+                지오엠페이와의 계약만으로 <br>
+                국내 모든 카드의 결제가 가능합니다.
+              </p>
+            </div>
+            <div class="box-con">
+              <p class="tit">간결하고 손쉬운 결제 관리</p>
+              <p class="img"><img src="./assets/images/contents/img_machine_feature05.png" alt=""></p>
+              <p class="desc">
+                모든 결제와 정산 내역을 한 눈에 볼 수 있는 <br>
+                관리자 페이지를 제공합니다.
+              </p>
+            </div>
+            <div class="box-con">
+              <p class="tit">상시 무이자 할부 지원</p>
+              <p class="img"><img src="./assets/images/contents/img_machine_feature06.png" alt=""></p>
+              <p class="desc">
+                국내 카드사의 상시 무이자 할부를 지원하며,<br>
+                매월 업데이트 내용을 제공합니다.
+              </p>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+    <!-- //e:container -->
+
+    <!-- s:footer  -->
+    <footer class="footer-wrap">
+      <div class="footer-container">
+        <div class="footer-section">
+          <p class="logo"><img src="./assets/images/common/footer_logo.png" alt=""></p>
+          <ul class="footer-utils">
+            <li><a href="">찾아오는 길</a></li>
+            <li><a href="">개인정보처리방침</a></li>
+            <li><a href="">이용약관</a></li>
+          </ul>
+        </div>
+        <div class="footer-info">
+          <p>
+            <span>(주)지오엠아이앤씨</span>
+            <span>서울특별시 구로구 디지털로26길 123, 703호 - 704호 (구로동, 지플러스타워)</span>
+          </p>
+          <p>
+            <span>사업자등록번호 : 105-87-91919</span>
+            <span class="pc-only"> / </span>
+            <span>전자금융업 등록번호 : 02-004-00113</span>
+          </p>
+        </div>
+        <div class="footer-copyright">
+          Copyright gompayment. GOMPAY. All rights reserved
+        </div>
+      </div>
+    </footer>
+    <!-- //e:footer  -->
+
+  </div>
+</body>
+
+</html>
