@@ -46,7 +46,7 @@
               <div class="header-menu__sub">
                 <div class="header-menu__sub-item">
                   <!-- 현재 페이지일 때 active class -->
-                  <a href="nationalOnline.html" class="header-menu__link active">온라인 결제</a>
+                  <a href="nationalOnline.html" class="header-menu__link">온라인 결제</a>
                 </div>
                 <div class="header-menu__sub-item">
                   <a href="nationalKeyin.html" class="header-menu__link">수기 결제</a>
@@ -96,7 +96,7 @@
                   <a href="docuInfo.html" class="header-menu__link">구비서류 안내</a>
                 </div>
                 <div class="header-menu__sub-item">
-                  <a href="qna.html" class="header-menu__link">서비스 신청</a>
+                  <a href="qna.html" class="header-menu__link active">서비스 신청</a>
                 </div>
               </div>
             </div>
@@ -131,99 +131,114 @@
       <div class="contents">
         <section class="contents-top__wrap">
           <div class="contents-top__container">
-            <h2 class="tit">국내전자결제</h2>
+            <h2 class="tit">서비스 신청하기</h2>
           </div>
         </section>
 
         <div class="tab-wrap">
-          <div class="tab-container">
-            <div class="tab-item active"><a href="nationalOnline.html">온라인 결제</a></div>
-            <div class="tab-item"><a href="nationalKeyin.html">수기 결제</a></div>
-            <div class="tab-item"><a href="nationalMachine.html">단말기 결제</a></div>
-            <div class="tab-item"><a href="nationalPaycall.html">오픈페이콜</a></div>
-            <div class="tab-item"><a href="nationalPayrent.html">오픈페이렌트</a></div>
+          <div class="tab-container no-scroll">
+            <div class="tab-item"><a href="feeInfo.html">수수료 안내</a></div>
+            <div class="tab-item"><a href="docuInfo.html">구비 서류 안내</a></div>
+            <div class="tab-item active"><a href="qna.html">서비스 신청</a></div>
           </div>
         </div>
 
-        <section class="contents-detail__wrap">
+        <section class="contents-service__wrap">
           <div class="contents-tit__wrap">
-            <p class="sub-tit">What?</p>
-            <p class="title">온라인 결제란?</p>
+            <p class="sub-tit">서비스 신청 양식 작성</p>
+            <p class="title">서비스 신청</p>
           </div>
-          <div class="contents-box__wrap">
-            <div class="contents-box__container">
-              <p class="pc-only">
-                쇼핑몰이나 웹사이트에서 고객의 결제를 받으려면 온라인 결제가 필요합니다. <br>
-                지오엠페이를 통해 각종 간편 결제 및 국내 모든 신용카드 결제가 가능하며,<br>
-                모든 결제 정보 및 고객의 정보는 암호화되어 안전하게 처리됩니다.
-              </p>
-              <p class="mo-only">
-                사무실이나 매장 임대료와 관리비를
-                카드로 편리하게 결제할 수 있습니다.
-              </p>
+
+          <div class="contents-qna__wrap">
+            <div class="contents-qna__list">
+              <div class="contents-qna">
+                <label for="name" class="input-label">담당자 이름</label>
+                <!-- error 일 때 class error 추가 -->
+                <div class="input-wrap">
+                  <input type="text" id="name" placeholder="이름을 입력해주세요">
+                  <!-- <p class="error-msg">Feedback Message</p> -->
+                </div>
+              </div>
+              <div class="contents-qna">
+                <label for="tel" class="input-label">담당자 연락처</label>
+                <div class="input-wrap">
+                  <input type="text" id="tel" placeholder="연락처를 입력해주세요">
+                </div>
+              </div>
+              <div class="contents-qna">
+                <label for="email" class="input-label">담당자 이메일</label>
+                <div class="input-wrap">
+                  <input type="email" id="email" placeholder="이메일을 입력해주세요">
+                </div>
+              </div>
+              <div class="contents-qna">
+                <label for="company" class="input-label">상호명</label>
+                <div class="input-wrap">
+                  <input type="text" id="company" placeholder="상호명을 입력해주세요">
+                </div>
+              </div>
+              <div class="contents-qna">
+                <label for="country" class="input-label">사업자 국가</label>
+                <div class="input-wrap">
+                  <input type="text" id="country" placeholder="사업자 국가를 입력해주세요">
+                </div>
+              </div>
+              <div class="contents-qna">
+                <label for="business" class="input-label">업종</label>
+                <div class="input-wrap">
+                  <input type="text" id="business" placeholder="업종을 입력해주세요">
+                </div>
+              </div>
+              <div class="contents-qna">
+                <label for="product" class="input-label">판매 상품(서비스)</label>
+                <div class="input-wrap">
+                  <input type="text" id="product" placeholder="판매 상품을 입력해주세요">
+                </div>
+              </div>
+              <div class="contents-qna">
+                <label for="url" class="input-label">신청 URL</label>
+                <div class="input-wrap">
+                  <input type="text" id="url" placeholder="신청 URL을 입력해주세요">
+                </div>
+              </div>
+              <div class="contents-qna">
+                <label for="solution" class="input-label">사용 중인 쇼핑몰 솔루션</label>
+                <div class="input-wrap">
+                  <input type="text" id="solution" placeholder="쇼핑몰 솔루션을 입력해주세요">
+                </div>
+              </div>
+              <div class="contents-qna">
+                <label for="newCountry" class="input-label">판매 예정 국가</label>
+                <div class="input-wrap">
+                  <input type="text" id="newCountry" placeholder="판매 예정 국가를 입력해주세요">
+                </div>
+              </div>
+              <div class="contents-qna">
+                <label for="sales" class="input-label">월 평균 매출(USD)</label>
+                <div class="input-wrap">
+                  <input type="text" id="sales" placeholder="월 평균 매출을 입력해주세요">
+                </div>
+              </div>
+              <div class="contents-qna">
+                <label for="currency" class="input-label">판매 통화</label>
+                <div class="input-wrap">
+                  <input type="text" id="currency" placeholder="판매 통화를 입력해주세요">
+                </div>
+              </div>
+              <div class="contents-qna">
+                <label for="qna" class="input-label">문의 내용</label>
+                <div class="textarea-wrap">
+                  <textarea id="qna" placeholder="문의 내용을 입력해주세요"></textarea>
+                </div>
+              </div>
+            </div>
+
+            <div class="btn-wrap">
+              <a href="qna.html" class="btn btn-view mid">신청하기</a>
             </div>
           </div>
         </section>
 
-        <section class="contents-feature__wrap">
-          <div class="contents-tit__wrap">
-            <p class="sub-tit">Feature</p>
-            <p class="title">온라인 결제 특징</p>
-          </div>
-          <div class="contents-box__list">
-            <div class="box-con">
-              <p class="tit">단 한 번의 계약으로 OK</p>
-              <p class="img"><img src="./assets/images/contents/img_online_feature01.png" alt=""></p>
-              <p class="desc">
-                가맹점과 지오엠페이와의 계약만으로 <br>
-                국내 모든 카드의 결제가 가능합니다.
-              </p>
-            </div>
-            <div class="box-con">
-              <p class="tit">간결하고 손쉬운 결제 관리</p>
-              <p class="img"><img src="./assets/images/contents/img_online_feature02.png" alt=""></p>
-              <p class="desc">
-                모든 결제와 정산 내역을 한 눈에 볼 수 있는<br>
-                관리자 페이지를 제공합니다.
-              </p>
-            </div>
-            <div class="box-con">
-              <p class="tit">상시 무이자 할부 지원</p>
-              <p class="img"><img src="./assets/images/contents/img_online_feature03.png" alt=""></p>
-              <p class="desc">
-                국내 카드사의 상시 무이자 할부를 지원하며, <br>
-                매월 업데이트 내용을 제공합니다.
-              </p>
-            </div>
-            <div class="box-con">
-              <p class="tit">각종 간편 결제 가능</p>
-              <p class="img"><img src="./assets/images/contents/img_online_feature04.png" alt=""></p>
-              <p class="desc">
-                국내 모든 신용카드는 물론 삼성페이, <br>
-                카카오페이, 네이버페이, 토스,<br>
-                페이코 등의 간편결제가 가능합니다.
-              </p>
-            </div>
-            <div class="box-con">
-              <p class="tit">합리적인 정산주기와 수수료</p>
-              <p class="img"><img src="./assets/images/contents/img_online_feature05.png" alt=""></p>
-              <p class="desc">
-                가맹점의 상황에 맞는 합리적인<br>
-                정산주기와 수수료를 제공하여<br>
-                자금 유통을 원활하게 합니다.
-              </p>
-            </div>
-            <div class="box-con">
-              <p class="tit">결제 UI 선택 가능</p>
-              <p class="img"><img src="./assets/images/contents/img_online_feature06.png" alt=""></p>
-              <p class="desc">
-                다양한 환경의 PC와 모바일에 최적화되고,<br>
-                가맹점 웹사이트에 맞는 결제 UI를<br>
-                선택할 수 있습니다.
-              </p>
-            </div>
-          </div>
-        </section>
       </div>
     </div>
     <!-- //e:container -->

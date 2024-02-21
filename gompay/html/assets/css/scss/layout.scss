@@ -71,7 +71,7 @@
           opacity: 1;
           height: 260px;
           // margin-top: 1px;
-          border-top: 1px solid #eee;
+          // border-top: 1px solid #eee;
           @include mobile {
             display: none;
           }
@@ -132,8 +132,8 @@
     &__sub {
       overflow: hidden;
       opacity: 0;
-      position: relative;
-      z-index: 1;
+      // position: relative;
+      // z-index: 1;
       height: 0;
       text-align: center;
       border-left: 1px solid #EEE;
@@ -214,6 +214,7 @@
 
 .footer {
   &-wrap {
+    position: relative;
     padding-top: 5rem;
     border-top: 1px solid #DCDEDD;
   }
@@ -368,5 +369,75 @@
   background-position: 50%;
   &.active {
     background-image: url(../../assets/images/common/ico_close.svg);
+  }
+}
+
+.error-msg {
+  font-size: 1.2rem;
+  color: #FF2458;
+  font-weight: 500;
+  line-height: 1.89;
+}
+.input-label {
+  font-size: 1.6rem;
+  font-weight: 500;
+  line-height: 1.5;
+  @include mobile {
+    font-size: 1.4rem;
+    color: #6C6D72;
+  }
+}
+.input-wrap {
+  &.error {
+    input {
+      border-color: #FF2458;
+    }
+  }
+  input {
+    background-color: #fff;
+    padding: 1rem 1.6rem;
+    border: 1px solid #DCDEDD;
+    border-radius: 1rem;
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 1.5;
+    @include mobile {
+      font-size: 1.4rem;
+      border-radius: .8rem;
+    }
+    &::placeholder {
+      color: #DCDEDD;
+    }
+    &:focus {
+      border-color: #000;
+    }
+  }
+}
+
+.textarea-wrap {
+  &.error {
+    textarea {
+      border-color: #FF2458;
+    }
+  }
+  textarea {
+    background-color: #fff;
+    min-height: 13.2rem;
+    padding: 1rem 1.6rem;
+    border: 1px solid #DCDEDD;
+    border-radius: 1rem;
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 1.5;
+    @include mobile {
+      font-size: 1.4rem;
+      border-radius: .8rem;
+    }
+    &::placeholder {
+      color: #DCDEDD;
+    }
+    &:focus {
+      border-color: #000;
+    }
   }
 }

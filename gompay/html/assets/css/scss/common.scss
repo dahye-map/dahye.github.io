@@ -108,7 +108,7 @@ input,
 select,
 table,
 textarea {
-  font-family: "NotoSansKR", -apple-system, helvetica, Apple SD Gothic Neo, sans-serif;
+  font-family: "Pretendard", -apple-system, helvetica, Apple SD Gothic Neo, sans-serif;
   // font-size: 10px;
   line-height: normal;
   // letter-spacing: -0.05rem;
@@ -124,8 +124,6 @@ html,
 body {
   font-size: 10px;
   line-height: 1.25;
-  -webkit-user-select: none;
-  -webkit-touch-callout: none;
   overflow-x: hidden;
   scroll-behavior: smooth;
   @include laptop {

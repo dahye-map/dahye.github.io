@@ -78,7 +78,6 @@
 .header-menu__list:hover .header-menu__sub {
   opacity: 1;
   height: 260px;
-  border-top: 1px solid #eee;
 }
 @media (max-width: 768px) {
   .header-menu__list:hover .header-menu__sub {
@@ -137,8 +136,6 @@
 .header-menu__sub {
   overflow: hidden;
   opacity: 0;
-  position: relative;
-  z-index: 1;
   height: 0;
   text-align: center;
   border-left: 1px solid #EEE;
@@ -224,6 +221,7 @@
 }
 
 .footer-wrap {
+  position: relative;
   padding-top: 5rem;
   border-top: 1px solid #DCDEDD;
 }
@@ -398,4 +396,74 @@
 }
 .btn-menu.active {
   background-image: url(../../assets/images/common/ico_close.svg);
+}
+
+.error-msg {
+  font-size: 1.2rem;
+  color: #FF2458;
+  font-weight: 500;
+  line-height: 1.89;
+}
+
+.input-label {
+  font-size: 1.6rem;
+  font-weight: 500;
+  line-height: 1.5;
+}
+@media (max-width: 768px) {
+  .input-label {
+    font-size: 1.4rem;
+    color: #6C6D72;
+  }
+}
+
+.input-wrap.error input {
+  border-color: #FF2458;
+}
+.input-wrap input {
+  background-color: #fff;
+  padding: 1rem 1.6rem;
+  border: 1px solid #DCDEDD;
+  border-radius: 1rem;
+  font-size: 1.6rem;
+  font-weight: 500;
+  line-height: 1.5;
+}
+@media (max-width: 768px) {
+  .input-wrap input {
+    font-size: 1.4rem;
+    border-radius: 0.8rem;
+  }
+}
+.input-wrap input::placeholder {
+  color: #DCDEDD;
+}
+.input-wrap input:focus {
+  border-color: #000;
+}
+
+.textarea-wrap.error textarea {
+  border-color: #FF2458;
+}
+.textarea-wrap textarea {
+  background-color: #fff;
+  min-height: 13.2rem;
+  padding: 1rem 1.6rem;
+  border: 1px solid #DCDEDD;
+  border-radius: 1rem;
+  font-size: 1.6rem;
+  font-weight: 500;
+  line-height: 1.5;
+}
+@media (max-width: 768px) {
+  .textarea-wrap textarea {
+    font-size: 1.4rem;
+    border-radius: 0.8rem;
+  }
+}
+.textarea-wrap textarea::placeholder {
+  color: #DCDEDD;
+}
+.textarea-wrap textarea:focus {
+  border-color: #000;
 }

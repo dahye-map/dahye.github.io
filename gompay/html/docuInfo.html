@@ -46,7 +46,7 @@
               <div class="header-menu__sub">
                 <div class="header-menu__sub-item">
                   <!-- 현재 페이지일 때 active class -->
-                  <a href="nationalOnline.html" class="header-menu__link active">온라인 결제</a>
+                  <a href="nationalOnline.html" class="header-menu__link">온라인 결제</a>
                 </div>
                 <div class="header-menu__sub-item">
                   <a href="nationalKeyin.html" class="header-menu__link">수기 결제</a>
@@ -93,7 +93,7 @@
                   <a href="feeInfo.html" class="header-menu__link">수수료 안내</a>
                 </div>
                 <div class="header-menu__sub-item">
-                  <a href="docuInfo.html" class="header-menu__link">구비서류 안내</a>
+                  <a href="docuInfo.html" class="header-menu__link active">구비서류 안내</a>
                 </div>
                 <div class="header-menu__sub-item">
                   <a href="qna.html" class="header-menu__link">서비스 신청</a>
@@ -131,99 +131,118 @@
       <div class="contents">
         <section class="contents-top__wrap">
           <div class="contents-top__container">
-            <h2 class="tit">국내전자결제</h2>
+            <h2 class="tit">서비스 신청하기</h2>
           </div>
         </section>
 
         <div class="tab-wrap">
-          <div class="tab-container">
-            <div class="tab-item active"><a href="nationalOnline.html">온라인 결제</a></div>
-            <div class="tab-item"><a href="nationalKeyin.html">수기 결제</a></div>
-            <div class="tab-item"><a href="nationalMachine.html">단말기 결제</a></div>
-            <div class="tab-item"><a href="nationalPaycall.html">오픈페이콜</a></div>
-            <div class="tab-item"><a href="nationalPayrent.html">오픈페이렌트</a></div>
+          <div class="tab-container no-scroll">
+            <div class="tab-item"><a href="feeInfo.html">수수료 안내</a></div>
+            <div class="tab-item active"><a href="docuInfo.html">구비 서류 안내</a></div>
+            <div class="tab-item"><a href="qna.html">서비스 신청</a></div>
           </div>
         </div>
 
-        <section class="contents-detail__wrap">
+        <section class="contents-service__wrap">
           <div class="contents-tit__wrap">
-            <p class="sub-tit">What?</p>
-            <p class="title">온라인 결제란?</p>
+            <p class="sub-tit">신청 절차 안내</p>
+            <p class="title">구비 서류 안내</p>
           </div>
-          <div class="contents-box__wrap">
-            <div class="contents-box__container">
-              <p class="pc-only">
-                쇼핑몰이나 웹사이트에서 고객의 결제를 받으려면 온라인 결제가 필요합니다. <br>
-                지오엠페이를 통해 각종 간편 결제 및 국내 모든 신용카드 결제가 가능하며,<br>
-                모든 결제 정보 및 고객의 정보는 암호화되어 안전하게 처리됩니다.
-              </p>
-              <p class="mo-only">
-                사무실이나 매장 임대료와 관리비를
-                카드로 편리하게 결제할 수 있습니다.
-              </p>
+
+          <div class="contents-step__wrap">
+            <div class="contents-step__list">
+              <div class="contents-step">
+                <div class="step-title">
+                  <span class="num">01</span>
+                  <p class="txt">서비스 신청 접수</p>
+                </div>
+                <div class="btn-wrap" style="margin-left: auto;">
+                  <a href="qna.html" class="btn btn-view mid">
+                    바로가기
+                    <i class="icon icon-view"></i>
+                  </a>
+                </div>
+              </div>
+              <div class="contents-step">
+                <div class="step-title">
+                  <span class="num">02</span>
+                  <p class="txt">GOMPAY 1차 심사</p>
+                </div>
+                <div class="step-con">
+                  <p>| 매입사 심사 이전 가능 여부 확인</p>
+                </div>
+              </div>
+              <div class="contents-step">
+                <div class="step-title">
+                  <span class="num">03</span>
+                  <p class="txt">신청 서류 제출 [1차 심사 통과 시]</p>
+                </div>
+                <div class="step-con">
+                  <p>| 글로벌 신용카드 가맹점 신청 시</p>
+                  <ul class="list-type">
+                    <li>GOMPAY 신청서</li>
+                    <li>사업자 등록증 사본 1부</li>
+                    <li>대표자 여권 사본 1부</li>
+                    <li>정산 계좌 사본 1부</li>
+                    <li>최근 6개월 전자상거래 내역서</li>
+                    <li>Billing Address 증빙 문서 1부</li>
+                  </ul>
+                </div>
+                <div class="step-con" style="flex:.7;margin-left: auto;">
+                  <p>| 중국결제 가맹점 신청 시</p>
+                  <ul class="list-type">
+                    <li>GOMPAY 신청서</li>
+                    <li>영문 사업자 등록증명원 원본 1부</li>
+                    <li>정산 계좌 사본 1부</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="contents-step">
+                <div class="step-title">
+                  <span class="num">04</span>
+                  <p class="txt">초기비용 납부</p>
+                </div>
+                <div class="step-con">
+                  <p>| 가입비, 연회비 납부</p>
+                </div>
+              </div>
+              <div class="contents-step">
+                <div class="step-title">
+                  <span class="num">05</span>
+                  <p class="txt">매입사 심사 진행</p>
+                </div>
+                <div class="step-con">
+                  <p>| 심사진행제출 서류 검토 / 웹사이트 심사</p>
+                </div>
+              </div>
+              <div class="contents-step">
+                <div class="step-title">
+                  <span class="num">06</span>
+                  <p class="txt">GOMPAY 계약 진행 [매입사 심사 통과 시]</p>
+                </div>
+                <div class="step-con">
+                  <p>| 수수료 및 정산 주기 등 세부사항 확정</p>
+                </div>
+              </div>
+              <div class="contents-step">
+                <div class="step-title">
+                  <span class="num">07</span>
+                  <p class="txt">시스템 연동 및 테스트 진행</p>
+                </div>
+                <div class="step-con">
+                  <p>| GOMPAY 결제 연동 문서를 참고하여, 가맹점 웹사이트에 결제 시스템 연동 및 테스트 진행</p>
+                </div>
+              </div>
+              <div class="contents-step">
+                <div class="step-title">
+                  <span class="num">08</span>
+                  <p class="txt">실거래 개시</p>
+                </div>
+              </div>
             </div>
           </div>
         </section>
 
-        <section class="contents-feature__wrap">
-          <div class="contents-tit__wrap">
-            <p class="sub-tit">Feature</p>
-            <p class="title">온라인 결제 특징</p>
-          </div>
-          <div class="contents-box__list">
-            <div class="box-con">
-              <p class="tit">단 한 번의 계약으로 OK</p>
-              <p class="img"><img src="./assets/images/contents/img_online_feature01.png" alt=""></p>
-              <p class="desc">
-                가맹점과 지오엠페이와의 계약만으로 <br>
-                국내 모든 카드의 결제가 가능합니다.
-              </p>
-            </div>
-            <div class="box-con">
-              <p class="tit">간결하고 손쉬운 결제 관리</p>
-              <p class="img"><img src="./assets/images/contents/img_online_feature02.png" alt=""></p>
-              <p class="desc">
-                모든 결제와 정산 내역을 한 눈에 볼 수 있는<br>
-                관리자 페이지를 제공합니다.
-              </p>
-            </div>
-            <div class="box-con">
-              <p class="tit">상시 무이자 할부 지원</p>
-              <p class="img"><img src="./assets/images/contents/img_online_feature03.png" alt=""></p>
-              <p class="desc">
-                국내 카드사의 상시 무이자 할부를 지원하며, <br>
-                매월 업데이트 내용을 제공합니다.
-              </p>
-            </div>
-            <div class="box-con">
-              <p class="tit">각종 간편 결제 가능</p>
-              <p class="img"><img src="./assets/images/contents/img_online_feature04.png" alt=""></p>
-              <p class="desc">
-                국내 모든 신용카드는 물론 삼성페이, <br>
-                카카오페이, 네이버페이, 토스,<br>
-                페이코 등의 간편결제가 가능합니다.
-              </p>
-            </div>
-            <div class="box-con">
-              <p class="tit">합리적인 정산주기와 수수료</p>
-              <p class="img"><img src="./assets/images/contents/img_online_feature05.png" alt=""></p>
-              <p class="desc">
-                가맹점의 상황에 맞는 합리적인<br>
-                정산주기와 수수료를 제공하여<br>
-                자금 유통을 원활하게 합니다.
-              </p>
-            </div>
-            <div class="box-con">
-              <p class="tit">결제 UI 선택 가능</p>
-              <p class="img"><img src="./assets/images/contents/img_online_feature06.png" alt=""></p>
-              <p class="desc">
-                다양한 환경의 PC와 모바일에 최적화되고,<br>
-                가맹점 웹사이트에 맞는 결제 UI를<br>
-                선택할 수 있습니다.
-              </p>
-            </div>
-          </div>
-        </section>
       </div>
     </div>
     <!-- //e:container -->
