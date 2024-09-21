@@ -1,0 +1,200 @@
+@charset "UTF-8";
+@font-face {
+  font-family: "NanumNeuRisNeuRisCe";
+  src: url(https://hangeul.pstatic.net/hangeul_static/webfont/clova/NanumNeuRisNeuRisCe.eot);
+  src: url(https://hangeul.pstatic.net/hangeul_static/webfont/clova/NanumNeuRisNeuRisCe.eot?#iefix) format("embedded-opentype"), url(https://hangeul.pstatic.net/hangeul_static/webfont/clova/NanumNeuRisNeuRisCe.woff) format("woff"), url(https://hangeul.pstatic.net/hangeul_static/webfont/clova/NanumNeuRisNeuRisCe.ttf) format("truetype");
+}
+.bgs {
+  position: fixed;
+  top: 0%;
+  left: 50%;
+  width: 100%;
+  max-width: 760px;
+  height: 100%;
+  z-index: 99;
+  background: rgba(0, 0, 0, 0.7);
+  transform: translateX(-50%);
+}
+.bgs .pager {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 30%;
+  transform: translate(-50%, -50%);
+}
+.bgs .pager .hand {
+  position: absolute;
+  top: 4%;
+  left: 26%;
+  width: 20%;
+  animation: Moves 1.5s infinite;
+}
+
+@keyframes Moves {
+  0% {
+    transform: translate(0%, 0%);
+    -webkit-transform: translate(0%, 0%);
+    -moz-transform: translate(0%, 0%);
+    -ms-transform: translate(0%, 0%);
+    -o-transform: translate(0%, 0%);
+  }
+  100% {
+    transform: translate(100%, 0%);
+    -webkit-transform: translate(100%, 0%);
+    -moz-transform: translate(100%, 0%);
+    -ms-transform: translate(100%, 0%);
+    -o-transform: translate(100%, 0%);
+  }
+}
+.adult-wrap {
+  max-width: 760px;
+  height: 100vh;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.swiper-adult {
+  height: 100vh;
+}
+.swiper-adult .swiper-slide:nth-child(1) {
+  background-color: #fff5e6;
+}
+.swiper-adult .swiper-slide:nth-child(1):after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: url(../images/bg_cover.png) center no-repeat;
+  background-size: 100% auto;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  animation: heart 4s infinite linear;
+}
+.swiper-adult .swiper-slide:nth-child(2) {
+  background: #ffe6ec url(../images/bg_line.png) center no-repeat;
+  background-size: 100% 100%;
+}
+.swiper-adult .swiper-slide img {
+  height: 100%;
+  object-fit: contain;
+}
+
+.adult-txt {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  /* 20240516 수정 s */
+  /* 20240516 수정 e */
+}
+.adult-txt span, .adult-txt p {
+  font-family: "NanumNeuRisNeuRisCe";
+  color: inherit;
+  font-weight: inherit;
+}
+.adult-txt .ico-heart {
+  width: calc(68px + 68 * (100vw - 760px) / 760);
+  animation: tossing 1s linear infinite;
+}
+.adult-txt .title {
+  padding-top: calc(60px + 60 * (100vw - 760px) / 760);
+  padding-bottom: calc(100px + 100 * (100vw - 760px) / 760);
+  font-size: calc(68px + 68 * (100vw - 760px) / 760);
+  color: #000;
+  line-height: 1.26;
+  font-family: "NanumNeuRisNeuRisCe";
+  font-weight: 700;
+}
+.adult-txt .desc {
+  font-size: calc(54px + 54 * (100vw - 760px) / 760);
+  line-height: 1.3;
+  font-family: "NanumNeuRisNeuRisCe";
+  font-weight: 600;
+  color: #000;
+}
+.adult-txt .btn-wrap {
+  padding-top: calc(110px + 110 * (100vw - 760px) / 760);
+}
+.adult-txt .btn-wrap a {
+  position: relative;
+  display: block;
+  width: 75%;
+  margin: 0 auto;
+}
+.adult-txt .btn-wrap a + a {
+  margin-top: calc(20px + 20 * (100vw - 760px) / 760);
+}
+.adult-txt .btn-wrap a:nth-child(1):after {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 15%;
+  width: 60px;
+  height: 60px;
+  background: url(../images/img_mouse.png) center no-repeat;
+  background-size: 100% auto;
+  animation: mouse 1s infinite;
+}
+
+@media screen and (min-width: 599px) {
+  .swiper-adult {
+    height: 100%;
+  }
+  .adult-txt .ico-heart {
+    width: 54px;
+  }
+  .adult-txt .title {
+    padding-top: 3%;
+    padding-bottom: 7%;
+    font-size: 52px;
+  }
+  .adult-txt .desc {
+    font-size: 38px;
+  }
+  .adult-txt .btn-wrap {
+    padding-top: 8%;
+  }
+  .adult-txt .btn-wrap a {
+    width: 58%;
+  }
+  .adult-txt .btn-wrap a + a {
+    margin-top: 2%;
+  }
+}
+/* 20240516 수정 s */
+@keyframes mouse {
+  0%, 100% {
+    transform: scale(0.8);
+  }
+  50% {
+    transform: scale(1);
+  }
+}
+/* 20240516 수정 e */
+@keyframes heart {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+    transform: translate(-10px, 10px);
+  }
+  100% {
+    opacity: 0;
+    transform: translate(10px, 20px);
+  }
+}
+@keyframes tossing {
+  0% {
+    transform: rotate(-6deg);
+  }
+  50% {
+    transform: rotate(6deg);
+  }
+  100% {
+    transform: rotate(-6deg);
+  }
+}/*# sourceMappingURL=ui.css.map */

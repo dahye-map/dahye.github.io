@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Script-Type" content="text/javascript">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <meta http-equiv="content-type" content="text/html; charset=kr">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport"
+    content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1, user-scalable=no, viewport-fit=cover">
+  <link rel="shortcut icon" href="https://cdn.gni.kr/assets/static/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="https://cdn.gni.kr/assets/static/favicon.ico" type="image/x-icon">
+  <meta name="naver-site-verification" content="89671d69a6b0067cf343dcb62b038a44300e88f2" />
+  <meta name="google-site-verification" content="GNmiK81VvWWbH2eKxKiVdDhIroVuLunKEzaehC7zWzI" />
+  <meta name="robots" content="index, follow">
+  
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="./lib/images/img_meta.jpg" />
+  <meta property="og:image:width" content="800" />
+  <meta property="og:image:height" content="400" />
+  <meta property="og:title" content="[굿네이버스]빛나는 스무살을 축하해!" />
+  <meta property="og:site_name" content="굿네이버스" />
+  <meta property="og:description" content="성년의 날을 축하합니다." />
+  <meta property="og:keywords" content="굿네이버스, 24년굿네이버스성년의날" />
+  <meta name="description" content="성년의 날을 축하합니다." />
+  <meta name="keywords" content="굿네이버스, 24년굿네이버스성년의날" />
+  <title>[굿네이버스]빛나는 스무살을 축하해!</title>
+
+  <!-- <link rel="stylesheet" type="text/css" href="https://www.goodneighbors.kr/assets/web/css/common.css"> -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" type="text/css" href="https://m.goodneighbors.kr/assets/mobile/css/common.css?v=202204151531">
+
+  <link rel="stylesheet" href="./lib/css/ui.css">
+  <script>
+    (function (w, d, s, l, i) {
+      w[l] = w[l] || []; w[l].push({
+        'gtm.start':
+          new Date().getTime(), event: 'gtm.js'
+      }); var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+          'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-WW44JQM');
+  </script>
+</head>
+
+<body>
+
+  <div class="adult-wrap">
+    <!-- 스와이프 유도  -->
+    <div class="bgs">
+      <div class="pager">
+        <img src="./lib/images/img_guide.png" alt="좌우로 페이지를 넘겨주세요.">
+        <span class="hand">
+          <img src="./lib/images/img_hand.png" alt="스와이프 이미지">
+        </span>
+      </div>
+    </div>
+    <!-- //스와이프 유도  -->
+
+    <div class="swiper-container swiper-adult">
+      <div class="swiper-wrapper">
+        <!-- swiper 1 -->
+        <div class="swiper-slide">
+          <img src="./lib/images/img_cover.jpg" alt="빛나는 회원님의 스무살을 축하합니다!">
+        </div>
+        <!-- //swiper 1 -->
+        <!-- swiper 2 -->
+        <div class="swiper-slide">
+          <div class="adult-txt">
+            <i class="ico ico-heart"><img src="./lib/images/img_heart.png" alt=""></i>
+            <p class="title">
+              <span>#{회원명}</span> 후원회원님의 <br>
+              성년의 날을 축하합니다.
+            </p>
+            <p class="desc">
+              세상 모든 아이들이<br>
+              멋진 성년으로 자랄 수 있도록<br>
+              아이들에게 꿈과 희망을 전하는<br>
+              굿네이버스가 되겠습니다.
+            </p>
+
+            <div class="btn-wrap">
+              <a href="https://www.goodneighbors.kr/story/storycast/2956/view.gn?tabName=domestic&category=%EA%B5%AD%EB%82%B4&sort=&tag=&pageNo=2&totalCount=578&filter=&utm_source=kakao&utm_campaign=sb_circlelife&utm_content=adult_1" title="who am i 자립준비청년들이 그리는 희망스토리" target="_blank"><img src="./lib/images/btn_whoami.png"
+                  alt="who am i 자립준비청년들이 그리는 희망스토리"></a>
+              <a href="https://www.goodneighbors.kr/story/event.gn#이벤트#문화이벤트#1#?utm_source=kakao&utm_campaign=sb_circlelife&utm_content=adult_2" title="event 회원님께 드리는 문화 이벤트 혜택" target="_blank"><img src="./lib/images/btn_event.png" alt="event 회원님께 드리는 문화 이벤트 혜택"></a>
+            </div>
+            
+          </div>
+        </div>
+        <!-- //swiper 2 -->
+      </div>
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script>
+    var swiper1 = new Swiper(".swiper-adult", {
+      swiperPerView:1
+    });
+
+    $(function () {
+      setTimeout(function () {
+        $(".bgs").fadeOut("slow");
+      }, 1000);
+    });
+  </script>
+
+</body>
+
+
+
+</html>

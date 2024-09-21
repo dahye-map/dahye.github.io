@@ -1,0 +1,8 @@
+* PC / Mobile 동일
+- ui.css 
+주석 : 20240610 css 추가 
+로 검색하시어 start부터 end까지 넣어주시면 됩니다.
+
+- index.html
+주석 : 20240611 수정
+로 검색하시어 start부터 end까지 수정해주시면 됩니다.

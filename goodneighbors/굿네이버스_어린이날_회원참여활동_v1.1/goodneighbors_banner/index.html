@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Script-Type" content="text/javascript">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <meta http-equiv="content-type" content="text/html; charset=kr">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1, user-scalable=no, viewport-fit=cover">
+  <!-- <meta name="viewport" content="width=컨텐츠 가로사이즈"> -->
+  <meta name="naver-site-verification" content="89671d69a6b0067cf343dcb62b038a44300e88f2" />
+  <meta name="google-site-verification" content="GNmiK81VvWWbH2eKxKiVdDhIroVuLunKEzaehC7zWzI" />
+  <meta name="robots" content="index, follow">
+  <link rel="shortcut icon" href="https://cdn.gni.kr/assets/static/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="https://cdn.gni.kr/assets/static/favicon.ico" type="image/x-icon">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="./lib/images/img_meta.jpg" />
+  <meta property="og:image:width" content="800" />
+  <meta property="og:image:height" content="400" />
+  <meta property="og:title" content="[굿네이버스 회원참여활동] 회원 참여 이벤트 공유하기" />
+  <meta property="og:site_name" content="굿네이버스" />
+  <meta property="og:description" content="모든 어린이들은 특별해!" />
+  <meta property="og:keywords" content="굿네이버스, 어린이날, 회원참여활동, 이벤트" />
+  <meta name="description" content="모든 어린이들은 특별해!" />
+  <meta name="keywords" content="굿네이버스, 어린이날, 회원참여활동, 이벤트" />
+  <title>[굿네이버스 회원참여활동] 회원 참여 이벤트 공유하기</title>
+
+  <!-- <link rel="stylesheet" type="text/css" href="https://www.goodneighbors.kr/assets/web/css/common.css"> -->
+  <link rel="stylesheet" type="text/css" href="https://m.goodneighbors.kr/assets/mobile/css/common.css?v=202204151531">
+  <style>
+    .children-banner {
+      max-width: 100%;
+      margin: 0 auto;
+    }
+    .children-banner .logo {
+      width: calc(192px + 192 * (100vw - 800px) / 800);
+      position: absolute;
+      right: 20px;
+      top: 30px;
+    }
+    .children-banner .balloon {
+      position:absolute;
+    }
+    .children-banner .balloon.balloon01 {
+      width: calc(163px + 163 * (100vw - 800px) / 800);
+      left: 0;
+      top: 0;
+      animation: ups 4s linear infinite;
+    }
+    .children-banner .balloon.balloon02 {
+      width: calc(47px + 47 * (100vw - 800px) / 800);
+      left: 10%;
+      top: 20%;
+      animation: ups 4s linear infinite;
+      animation-delay: 1s;
+    }
+    .children-banner .balloon.balloon03 {
+      width: calc(167px + 167 * (100vw - 800px) / 800);
+      right: 0;
+      top: 8%;
+      animation: ups2 6s linear infinite;
+    }
+
+    @keyframes ups {
+      0% {
+          opacity: 0;
+      }
+
+      50% {
+          opacity: 1;
+          transform: translate(-20px,-20px);
+      }
+
+      100% {
+          opacity: 0;
+          transform: translate(0px,-40px);
+      }
+    }
+    @keyframes ups2 {
+      0% {
+          opacity: 0;
+      }
+
+      50% {
+          opacity: 1;
+          transform: translate(20px,-20px);
+      }
+
+      100% {
+          opacity: 0;
+          transform: translate(0px,-40px);
+      }
+    }
+  </style>
+  
+  <script>
+    (function (w, d, s, l, i) {
+      w[l] = w[l] || []; w[l].push({
+        'gtm.start':
+          new Date().getTime(), event: 'gtm.js'
+      }); var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+          'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-WW44JQM');
+  </script>
+</head>
+
+<body>
+
+  <div class="children-banner">
+    <span class="balloon balloon01"><img src="./images/img_balloon01.png" alt=""></span>
+    <span class="balloon balloon02"><img src="./images/img_balloon02.png" alt=""></span>
+    <span class="balloon balloon03"><img src="./images/img_balloon03.png" alt=""></span>
+
+    <a href="https://www.goodneighbors.kr/" target="_blank" class="logo"><img src="./images/logo.png" alt="굿네이버스 로고"></a>
+    <div><img src="./images/img_children01.jpg" alt="children's day 어린이날 특별한 너의 날을 축하해 !"></div>
+    <a href="https://www.goodneighbors.kr/app/event/2024/04/life_cycle.gn" target="_blank"><img src="./images/img_children02.jpg" alt="회원참여활동 모든 어린이들은 특별해 이벤트 참여하기"></a>
+    <div><img src="./images/img_children03.jpg" alt=""></div>
+  </div>
+
+</body>
+
+
+
+</html>

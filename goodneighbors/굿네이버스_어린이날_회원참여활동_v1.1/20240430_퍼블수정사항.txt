@@ -1,0 +1,8 @@
+1. goodneighbors_mo/lib/css/ui.css
+/* 20240430 수정 s */ 주석 확인
+
+2. 메타태그 모두 수정
+각 images 폴더에 img_meta.jpg 메타태그 이미지 넣어두었습니다.
+
+3. goodneighbors_banner/index.html
+a 태그 링크 연결

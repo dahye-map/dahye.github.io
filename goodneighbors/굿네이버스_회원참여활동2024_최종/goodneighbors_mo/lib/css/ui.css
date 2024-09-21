@@ -1,0 +1,762 @@
+/* Pretendard */
+@font-face {
+  font-family: "Pretendard";
+  font-weight: 100;
+  font-style: normal;
+  src: url("https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-Thin.eot");
+  src: url("https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-Thin.eot?#iefix") format("embedded-opentype"), url("https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-Thin.woff2") format("woff2"), url("https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-Thin.woff") format("woff"), url("https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-Thin.ttf") format("truetype");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Pretendard";
+  font-weight: 200;
+  font-style: normal;
+  src: url("https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-ExtraLight.eot");
+  src: url("https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-ExtraLight.eot?#iefix") format("embedded-opentype"), url("https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-ExtraLight.woff2") format("woff2"), url("https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-ExtraLight.woff") format("woff"), url("https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-ExtraLight.ttf") format("truetype");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Pretendard";
+  font-weight: 300;
+  font-style: normal;
+  src: url("https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-Light.eot");
+  src: url("https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-Light.eot?#iefix") format("embedded-opentype"), url("https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-Light.woff2") format("woff2"), url("https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-Light.woff") format("woff"), url("https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-Light.ttf") format("truetype");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Pretendard";
+  font-weight: 400;
+  font-style: normal;
+  src: url("https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-Regular.eot");
+  src: url("https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-Regular.eot?#iefix") format("embedded-opentype"), url("https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-Regular.woff2") format("woff2"), url("https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-Regular.woff") format("woff"), url("https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-Regular.ttf") format("truetype");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Pretendard";
+  font-weight: 500;
+  font-style: normal;
+  src: url("https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-Medium.eot");
+  src: url("https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-Medium.eot?#iefix") format("embedded-opentype"), url("https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-Medium.woff2") format("woff2"), url("https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-Medium.woff") format("woff"), url("https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-Medium.ttf") format("truetype");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Pretendard";
+  font-weight: 600;
+  font-style: normal;
+  src: url("https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-SemiBold.eot");
+  src: url("https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-SemiBold.eot?#iefix") format("embedded-opentype"), url("https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-SemiBold.woff2") format("woff2"), url("https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-SemiBold.woff") format("woff"), url("https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-SemiBold.ttf") format("truetype");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Pretendard";
+  font-weight: 700;
+  font-style: normal;
+  src: url("https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-Bold.eot");
+  src: url("https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-Bold.eot?#iefix") format("embedded-opentype"), url("https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-Bold.woff2") format("woff2"), url("https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-Bold.woff") format("woff"), url("https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-Bold.ttf") format("truetype");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Pretendard";
+  font-weight: 800;
+  font-style: normal;
+  src: url("https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-ExtraBold.eot");
+  src: url("https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-ExtraBold.eot?#iefix") format("embedded-opentype"), url("https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-ExtraBold.woff2") format("woff2"), url("https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-ExtraBold.woff") format("woff"), url("https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-ExtraBold.ttf") format("truetype");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Pretendard";
+  font-weight: 900;
+  font-style: normal;
+  src: url("https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-Black.eot");
+  src: url("https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-Black.eot?#iefix") format("embedded-opentype"), url("https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-Black.woff2") format("woff2"), url("https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-Black.woff") format("woff"), url("https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-Black.ttf") format("truetype");
+  font-display: swap;
+}
+@font-face {
+  font-family: "TTHakgyoansimKkokkomaR";
+  src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2402_keris@1.0/TTHakgyoansimKkokkomaR.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+* {
+  font-family: "Pretendard", sans-serif;
+  font-weight: 400;
+  letter-spacing: -0.02em;
+  line-height: 1;
+  color: #000;
+}
+
+.blind {
+  visibility: hidden;
+  display: none;
+  width: 0;
+  height: 0;
+  font-size: 0;
+  line-height: 0;
+  text-indent: -9999px;
+}
+
+p, span, button, em, strong {
+  font-family: inherit;
+  color: inherit;
+}
+
+.member-wrap {
+  max-width: 100%;
+  margin: 0 auto;
+}
+.member-wrap .logo {
+  position: absolute;
+  right: 16px;
+  top: 16px;
+  width: 24%;
+  height: 5%;
+}
+.member-wrap .logo a {
+  display: block;
+}
+
+.sec01 {
+  background: url(../images/bg_sec01.jpg) left top repeat;
+  padding-top: 11%;
+}
+.sec01 .inner {
+  background: url(../images/img_sec01_memo.png) center no-repeat;
+  background-size: 100% 100%;
+  max-width: 100%;
+  margin: 0 auto;
+}
+.sec01 .sub-title {
+  width: 29%;
+  margin: 0 auto;
+  padding-top: 10%;
+  padding-bottom: 4%;
+}
+.sec01 .title {
+  font-family: TTHakgyoansimKkokkomaR;
+  font-size: calc(86px + 86 * (100vw - 720px) / 720);
+  color: #0d0212;
+  text-align: center;
+}
+.sec01 .title span, .sec01 .title strong {
+  color: #1693db;
+}
+.sec01 .title .ani-txt {
+  background: url(../images/img_anitxt.png) left top no-repeat;
+  background-size: 140px 100%;
+  display: inline-block;
+  width: 0;
+  height: 50px;
+  transition: all 0.8s 0.9s ease;
+}
+.sec01 .title.aos-animate .ani-txt {
+  width: 140px;
+}
+.sec01 .img-children {
+  width: 83%;
+  margin: 0 auto;
+  animation: lr 1s infinite;
+}
+
+.sec02 {
+  background: url(../images/bg_sec02.jpg) left top no-repeat;
+  background-size: 100% 100%;
+  padding: 22% 3% 17%;
+}
+.sec02 .title {
+  padding-bottom: 10%;
+  color: #fff;
+  font-size: calc(42px + 42 * (100vw - 720px) / 720);
+  text-align: center;
+  font-weight: 600;
+  line-height: 1.6;
+  letter-spacing: -0.08em;
+}
+.sec02 .title span {
+  color: #fff1a6;
+  font-weight: 600;
+}
+.sec02 .sub-title {
+  font-size: calc(42px + 42 * (100vw - 720px) / 720);
+  color: #fff;
+  font-weight: 600;
+  text-align: center;
+}
+.sec02 .box {
+  width: 50%;
+  text-align: center;
+}
+.sec02 .box-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3%;
+  padding: 0 3%;
+}
+.sec02 .box .img {
+  width: 100%;
+  margin: 0 auto;
+  box-shadow: 0px 10px 30px 0px rgba(0, 0, 0, 0.4);
+  border-radius: 60px;
+}
+.sec02 .box .desc {
+  padding-top: 4%;
+  font-size: calc(28px + 28 * (100vw - 720px) / 720);
+  line-height: 1.28;
+  color: #fff;
+}
+.sec02 .line {
+  background: url(../images/bg_line.png) center repeat-x;
+  height: 1px;
+  margin: 11% 3%;
+}
+.sec02 .txt-info {
+  color: #fff;
+  font-size: calc(20px + 20 * (100vw - 720px) / 720);
+  font-weight: 300;
+  text-align: center;
+}
+.sec02 .reason-list {
+  display: flex;
+  align-items: center;
+  background-color: #e6e6e6;
+  border-radius: 32px;
+  height: 40px;
+  padding: 0 10px;
+}
+.sec02 .reason-list .ico {
+  margin-right: 5px;
+}
+.sec02 .reason-list .ico-heart {
+  width: calc(30px + 30 * (100vw - 720px) / 720);
+  height: calc(22px + 22 * (100vw - 720px) / 720);
+  background: url(../images/ico_heart.png) center no-repeat;
+  background-size: contain;
+}
+.sec02 .reason-list .ico-book {
+  width: calc(24px + 24 * (100vw - 720px) / 720);
+  height: calc(29px + 29 * (100vw - 720px) / 720);
+  background: url(../images/ico_book.png) center no-repeat;
+  background-size: contain;
+}
+.sec02 .reason-list .ico-school {
+  width: calc(26px + 26 * (100vw - 720px) / 720);
+  height: calc(27px + 27 * (100vw - 720px) / 720);
+  background: url(../images/ico_school.png) center no-repeat;
+  background-size: contain;
+}
+.sec02 .reason-list .txt {
+  font-size: calc(20px + 20 * (100vw - 720px) / 720);
+  font-weight: 500;
+}
+.sec02 .reason-list-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: calc(30px + 30 * (100vw - 720px) / 720) calc(11px + 11 * (100vw - 720px) / 720);
+  padding: 8% 0 6%;
+}
+
+.sec03 {
+  background: url(../images/bg_sec03.jpg) center no-repeat;
+  background-size: 100% 100%;
+  padding-top: 22%;
+  padding-bottom: 18%;
+}
+.sec03 .img {
+  padding-top: 7%;
+  padding-bottom: 6%;
+  padding-left: 7%;
+  padding-right: 7%;
+}
+.sec03 .txt {
+  color: #fff;
+  line-height: 1.35;
+  text-align: center;
+}
+.sec03 .txt span {
+  color: #fff04b;
+  font-weight: inherit;
+}
+.sec03 .txt01 {
+  font-size: calc(42px + 42 * (100vw - 720px) / 720);
+  font-weight: 600;
+  line-height: 1.8;
+}
+.sec03 .txt02 {
+  padding: 4% 0 8%;
+  font-size: calc(48px + 48 * (100vw - 720px) / 720);
+  line-height: 16px;
+  font-weight: bold;
+}
+.sec03 .txt03 {
+  font-size: calc(41px + 41 * (100vw - 720px) / 720);
+  font-weight: 300;
+  line-height: 1.8;
+}
+.sec03 .txt03 span {
+  position: relative;
+}
+.sec03 .txt03 span::after {
+  content: "";
+  background: url(../images/bg_highlight.png) left bottom no-repeat;
+  background-size: calc(144px + 144 * (100vw - 720px) / 720) auto;
+  width: 0;
+  height: calc(7px + 7 * (100vw - 720px) / 720);
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  transition: width 0.8s 0.8s ease;
+}
+.sec03 .txt03.aos-animate span::after {
+  width: calc(144px + 144 * (100vw - 720px) / 720);
+}
+.sec03 .txt04 {
+  font-size: calc(54px + 54 * (100vw - 720px) / 720);
+  line-height: 1.6;
+  font-weight: 600;
+}
+.sec03 .txt04 span {
+  position: relative;
+}
+.sec03 .txt04 span::after {
+  content: "";
+  background: url(../images/bg_highlight02.png) left top no-repeat;
+  background-size: calc(415px + 415 * (100vw - 720px) / 720) auto;
+  width: 0;
+  height: calc(75px + 75 * (100vw - 720px) / 720);
+  position: absolute;
+  left: -10px;
+  top: 0;
+  z-index: -1;
+  transition: width 0.8s 0.8s ease;
+}
+.sec03 .txt04.aos-animate span::after {
+  width: calc(415px + 415 * (100vw - 720px) / 720);
+}
+
+.sec04 {
+  position: relative;
+  background: url(../images/bg_sec04.jpg) center no-repeat;
+  background-size: 100% 100%;
+  padding-top: 17%;
+  padding-bottom: 13%;
+}
+.sec04 .title {
+  width: 80%;
+  margin: 0 auto;
+}
+.sec04 .sub-title {
+  width: 61%;
+  margin: 0 auto;
+  padding-top: 6%;
+  padding-bottom: 10%;
+  animation: opacity 1s infinite;
+}
+.sec04 .light-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: calc(16px + 16 * (100vw - 720px) / 720);
+  padding: 0 4%;
+}
+.sec04 .light-default {
+  padding-top: 13%;
+  width: 67%;
+  margin: 0 auto;
+}
+.sec04 .light-bottom .first {
+  position: relative;
+  padding-top: 13%;
+  padding-bottom: 13%;
+}
+.sec04 .light-bottom .first .icon {
+  background: url(../images/img_sec04_bticon01.png) center no-repeat;
+  background-size: contain;
+  width: 96%;
+  height: 100%;
+  position: absolute;
+  left: 2%;
+  top: 20px;
+  animation: balloon 4s ease-in-out infinite;
+}
+.sec04 .light-bottom .first .img {
+  width: 67%;
+  margin: 0 auto;
+}
+.sec04 .light-bottom .second {
+  position: relative;
+  padding-top: 13%;
+  padding-bottom: 13%;
+}
+.sec04 .light-bottom .second .icon {
+  background: url(../images/img_sec04_bticon02.png) center no-repeat;
+  background-size: contain;
+  width: 96%;
+  height: 100%;
+  position: absolute;
+  left: 2%;
+  top: 20px;
+  animation: balloon 4s ease-in-out infinite;
+}
+.sec04 .light-bottom .second .img {
+  width: 67%;
+  margin: 0 auto;
+}
+.sec04 .light-bottom .third {
+  position: relative;
+  padding-top: 13%;
+  padding-bottom: 13%;
+}
+.sec04 .light-bottom .third .icon {
+  background: url(../images/img_sec04_bticon03.png) center no-repeat;
+  background-size: contain;
+  width: 96%;
+  height: 100%;
+  position: absolute;
+  left: 2%;
+  top: 20px;
+  animation: balloon 4s ease-in-out infinite;
+}
+.sec04 .light-bottom .third .img {
+  width: 67%;
+  margin: 0 auto;
+}
+.sec04 .light-img {
+  background-color: #fff;
+  width: 100%;
+  height: 130px;
+  border-radius: 14px;
+  padding: 6px;
+  cursor: pointer;
+}
+.sec04 .light-img.on {
+  background-color: #5fb117;
+}
+.sec04 .light-img .before {
+  background-color: #efeee8;
+  border-radius: 10px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.sec04 .light-img .before img {
+  width: calc(85px + 85 * (100vw - 720px) / 720);
+  animation: lights 1.5s infinite 0.5s;
+}
+.sec04 .light-img .after {
+  background-color: #5fb117;
+  border: 3px solid #388234;
+  border-radius: 14px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.sec04 .light-img .after img {
+  width: calc(145px + 145 * (100vw - 720px) / 720);
+  animation: wing 1s infinite;
+}
+
+.sec05 {
+  background: #ffc300 url(../images/bg_sec05.png) center no-repeat;
+  background-size: contain;
+  padding-top: 22%;
+  padding-bottom: 21%;
+  text-align: center;
+}
+.sec05 .sub-title {
+  font-size: calc(38px + 38 * (100vw - 720px) / 720);
+  color: #000;
+}
+.sec05 .ico-flower {
+  display: block;
+  width: calc(80px + 80 * (100vw - 720px) / 720);
+  height: calc(89px + 89 * (100vw - 720px) / 720);
+  margin: 8% auto 9%;
+  background: url(../images/ico_flower.png) center no-repeat;
+  background-size: contain;
+  animation: wing2 1s infinite;
+}
+.sec05 .title {
+  font-weight: 600;
+  font-size: calc(42px + 42 * (100vw - 720px) / 720);
+  line-height: 1.8;
+  color: #000;
+  padding-bottom: 5%;
+}
+.sec05 .desc {
+  padding-bottom: 16%;
+  font-size: calc(28px + 28 * (100vw - 720px) / 720);
+  font-weight: 300;
+}
+.sec05 .btn-wrap {
+  position: relative;
+  text-align: center;
+}
+.sec05 .btn-wrap .hand {
+  position: absolute;
+  right: 28%;
+  top: 50px;
+  display: block;
+  width: calc(97px + 97 * (100vw - 720px) / 720);
+  height: calc(86px + 86 * (100vw - 720px) / 720);
+  background: url(../images/img_hand.png) center no-repeat;
+  background-size: contain;
+  animation: scopa 1s infinite;
+}
+.sec05 .btn-wrap .click {
+  position: absolute;
+  right: 10%;
+  top: -40px;
+  display: block;
+  width: calc(119px + 119 * (100vw - 720px) / 720);
+  height: calc(117px + 117 * (100vw - 720px) / 720);
+  background: url(../images/img_click.png) center no-repeat;
+  background-size: contain;
+  animation: opacity 1s infinite;
+}
+.sec05 .btn-wrap .btn-submit {
+  display: block;
+  background: url(../images/btn_submit.png) center no-repeat;
+  background-size: contain;
+  width: calc(290px + 290 * (100vw - 720px) / 720);
+  height: calc(150px + 150 * (100vw - 720px) / 720);
+  margin: 0 auto;
+}
+
+.sec06 {
+  background: url(../images/bg_sec06.jpg) center no-repeat;
+  background-size: 100% 100%;
+  padding-top: 22%;
+  padding-bottom: 18%;
+}
+.sec06 .inner {
+  text-align: center;
+}
+.sec06 .title {
+  font-size: calc(42px + 42 * (100vw - 720px) / 720);
+  line-height: 1.76;
+  color: #000;
+  font-weight: 600;
+}
+.sec06 .title span {
+  position: relative;
+  color: #fff;
+  font-weight: 600;
+}
+.sec06 .title span::after {
+  content: "";
+  background: url(../images/bg_highlight03.png) left top no-repeat;
+  background-size: calc(290px + 290 * (100vw - 720px) / 720) auto;
+  width: 0;
+  height: calc(50px + 50 * (100vw - 720px) / 720);
+  position: absolute;
+  left: -5px;
+  top: 0;
+  z-index: -1;
+  transition: all 0.8s 0.8s ease;
+}
+.sec06 .title.aos-animate span::after {
+  width: calc(290px + 290 * (100vw - 720px) / 720);
+}
+.sec06 .list-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: calc(60px + 60 * (100vw - 720px) / 720) calc(30px + 30 * (100vw - 720px) / 720);
+  padding-top: 13%;
+}
+.sec06 .list-wrap .list {
+  width: 40%;
+}
+
+.sec07 {
+  position: relative;
+  background: #f5fee4 url(../images/bg_sec07.png) right bottom no-repeat;
+  background-size: contain;
+  padding-top: 22%;
+  padding-bottom: 18%;
+}
+.sec07 .bg {
+  background: url(../images/img_sec07_bg01.png) left top no-repeat;
+  background-size: 100% 100%;
+  width: 100vw;
+  height: 98%;
+  position: absolute;
+  left: -3px;
+  top: 6px;
+  animation: vibrate-2 1s linear infinite both;
+}
+.sec07 .inner {
+  text-align: center;
+}
+.sec07 .sub-title {
+  font-size: calc(38px + 38 * (100vw - 720px) / 720);
+  color: #000;
+  padding-bottom: 8%;
+}
+.sec07 .title {
+  font-size: calc(42px + 42 * (100vw - 720px) / 720);
+  line-height: 1.76;
+  color: #000;
+  font-weight: 600;
+  padding-bottom: 13%;
+}
+.sec07 .img {
+  padding: 0 4% 0 7%;
+}
+
+.modal-wrap {
+  display: none;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 1000;
+}
+.modal-wrap.active {
+  display: block;
+}
+.modal-wrap .modal-title {
+  font-family: "TTHakgyoansimKkokkomaR";
+  font-size: calc(76px + 76 * (100vw - 720px) / 720);
+  color: #000;
+  text-align: center;
+}
+.modal-wrap .modal-desc {
+  font-size: calc(38px + 38 * (100vw - 720px) / 720);
+  line-height: 2;
+  color: #000;
+  text-align: center;
+}
+.modal-wrap .img {
+  width: calc(210px + 210 * (100vw - 720px) / 720);
+  height: calc(210px + 210 * (100vw - 720px) / 720);
+  margin: 7% auto 10%;
+}
+.modal-wrap .btn-close {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  width: calc(30px + 30 * (100vw - 720px) / 720);
+  height: calc(30px + 30 * (100vw - 720px) / 720);
+  background: url(../images/ico_close.png) center no-repeat;
+  background-size: 100% auto;
+  text-indent: -9999px;
+}
+.modal-inner {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #fff;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  width: 81%;
+  padding: 19% 3% 18%;
+  border: calc(16px + 16 * (100vw - 720px) / 720) solid #388234;
+  border-radius: calc(60px + 60 * (100vw - 720px) / 720);
+}
+.modal-container {
+  width: 100%;
+}
+
+@keyframes lr {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(10px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+@keyframes wing {
+  0% {
+    transform: rotate(0);
+  }
+  50% {
+    transform: rotate(1deg);
+  }
+  100% {
+    transform: rotate(0);
+  }
+}
+@keyframes wing2 {
+  0% {
+    transform: rotate(0);
+  }
+  50% {
+    transform: rotate(5deg);
+  }
+  100% {
+    transform: rotate(0);
+  }
+}
+@keyframes scopa {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(0.9);
+  }
+}
+@keyframes opacity {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes lights {
+  0% {
+    filter: drop-shadow(0 0 0px #f5ae3a);
+  }
+  50% {
+    filter: drop-shadow(0 0 10px #f5ae3a);
+  }
+  100% {
+    filter: drop-shadow(0 0 0px #f5ae3a);
+  }
+}
+@keyframes balloon {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+@keyframes vibrate-2 {
+  0% {
+    -webkit-transform: translate(0);
+    transform: translate(0);
+  }
+  20% {
+    -webkit-transform: translate(2px, -2px);
+    transform: translate(2px, -2px);
+  }
+  40% {
+    -webkit-transform: translate(2px, 2px);
+    transform: translate(2px, 2px);
+  }
+  60% {
+    -webkit-transform: translate(-2px, 2px);
+    transform: translate(-2px, 2px);
+  }
+  80% {
+    -webkit-transform: translate(-2px, -2px);
+    transform: translate(-2px, -2px);
+  }
+  100% {
+    -webkit-transform: translate(0);
+    transform: translate(0);
+  }
+}/*# sourceMappingURL=ui.css.map */

@@ -1,0 +1,814 @@
+/* Pretendard */
+@font-face {
+  font-family: 'Pretendard';
+  font-weight: 100;
+  font-style: normal;
+  src: url('https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-Thin.eot');
+  src: url('https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-Thin.eot?#iefix') format('embedded-opentype'),
+      url('https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-Thin.woff2') format('woff2'),
+      url('https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-Thin.woff') format('woff'),
+      url('https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-Thin.ttf') format("truetype");
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Pretendard';
+  font-weight: 200;
+  font-style: normal;
+  src: url('https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-ExtraLight.eot');
+  src: url('https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-ExtraLight.eot?#iefix') format('embedded-opentype'),
+      url('https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-ExtraLight.woff2') format('woff2'),
+      url('https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-ExtraLight.woff') format('woff'),
+      url('https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-ExtraLight.ttf') format("truetype");
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Pretendard';
+  font-weight: 300;
+  font-style: normal;
+  src: url('https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-Light.eot');
+  src: url('https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-Light.eot?#iefix') format('embedded-opentype'),
+      url('https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-Light.woff2') format('woff2'),
+      url('https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-Light.woff') format('woff'),
+      url('https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-Light.ttf') format("truetype");
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Pretendard';
+  font-weight: 400;
+  font-style: normal;
+  src: url('https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-Regular.eot');
+  src: url('https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-Regular.eot?#iefix') format('embedded-opentype'),
+      url('https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-Regular.woff2') format('woff2'),
+      url('https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-Regular.woff') format('woff'),
+      url('https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-Regular.ttf') format("truetype");
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Pretendard';
+  font-weight: 500;
+  font-style: normal;
+  src: url('https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-Medium.eot');
+  src: url('https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-Medium.eot?#iefix') format('embedded-opentype'),
+      url('https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-Medium.woff2') format('woff2'),
+      url('https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-Medium.woff') format('woff'),
+      url('https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-Medium.ttf') format("truetype");
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Pretendard';
+  font-weight: 600;
+  font-style: normal;
+  src: url('https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-SemiBold.eot');
+  src: url('https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-SemiBold.eot?#iefix') format('embedded-opentype'),
+      url('https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-SemiBold.woff2') format('woff2'),
+      url('https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-SemiBold.woff') format('woff'),
+      url('https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-SemiBold.ttf') format("truetype");
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Pretendard';
+  font-weight: 700;
+  font-style: normal;
+  src: url('https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-Bold.eot');
+  src: url('https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-Bold.eot?#iefix') format('embedded-opentype'),
+      url('https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-Bold.woff2') format('woff2'),
+      url('https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-Bold.woff') format('woff'),
+      url('https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-Bold.ttf') format("truetype");
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Pretendard';
+  font-weight: 800;
+  font-style: normal;
+  src: url('https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-ExtraBold.eot');
+  src: url('https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-ExtraBold.eot?#iefix') format('embedded-opentype'),
+      url('https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-ExtraBold.woff2') format('woff2'),
+      url('https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-ExtraBold.woff') format('woff'),
+      url('https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-ExtraBold.ttf') format("truetype");
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Pretendard';
+  font-weight: 900;
+  font-style: normal;
+  src: url('https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-Black.eot');
+  src: url('https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-Black.eot?#iefix') format('embedded-opentype'),
+      url('https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-Black.woff2') format('woff2'),
+      url('https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-Black.woff') format('woff'),
+      url('https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-Black.ttf') format("truetype");
+  font-display: swap;
+}
+@font-face {
+  font-family: 'TTHakgyoansimKkokkomaR';
+  src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2402_keris@1.0/TTHakgyoansimKkokkomaR.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+* {font-family: 'Pretendard',sans-serif; font-weight:400; letter-spacing:-0.02em; line-height:1; color:#000;}
+.blind {
+  visibility: hidden;
+	display: none;
+	width: 0; 
+	height: 0; 
+	font-size: 0; 
+	line-height: 0;
+  text-indent: -9999px;
+}
+
+p, span, button, em, strong {
+  font-family: inherit;
+  color: inherit;
+}
+
+.member-wrap {
+  position: relative;
+  max-width: 1920px;
+  margin: 0 auto;
+  overflow-x: hidden;
+  .logo {
+    position: absolute;
+    right: 46px;
+    top: 38px;
+    width: 212px;
+    height: 40px;
+    a {
+      display: block;
+    }
+  }
+}
+
+.sec01 {
+  background: url(../images/bg_sec01_banner.gif) 50% 0 no-repeat;
+  height: 1080px;
+  padding-top: 130px;
+  .inner {
+    // background: url(../images/img_sec01_memo.png) center no-repeat;
+    // background-size: 100% 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+  }
+
+  .sub-title {
+    width: 350px;
+    margin: 0 auto;
+    padding-top: 125px;
+    padding-bottom: 58px;
+  }
+  .title {
+    font-family: TTHakgyoansimKkokkomaR;
+    font-size: 144px;
+    color: #0d0212;
+    text-align: center;
+    span, strong {
+      color: #1693db;
+    }
+    .ani-txt {
+      background: url(../images/img_anitxt.png) left top no-repeat;
+      display: inline-block;
+      width: 0;
+      height: 112px;
+      transition: all 0.8s 0.9s ease;
+    }
+    &.aos-animate {
+      .ani-txt {
+        width: 300px;
+      }
+    }
+  }
+}
+
+.sec02 {
+  background: url(../images/bg_sec02.jpg) left top no-repeat;
+  background-size: 100% 100%;
+  padding-top: 210px;
+  padding-bottom: 195px;
+  .inner {
+    max-width: 1400px;
+    margin: 0 auto;
+  }
+
+  .title {
+    padding-bottom: 80px;
+    color: #fff;
+    font-size: 64px;
+    text-align: center;
+    font-weight: 600;
+    line-height: 1.18;
+    span {
+      color: #fff1a6;
+      font-weight: 600;
+    }
+  }
+  .sub-title {
+    font-size: 48px;
+    color: #fff;
+    font-weight: 600;
+    text-align: center;
+  }
+  .box {
+    width: 50%;
+    text-align: center;
+    &-wrap {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .img {
+      width: 362px;
+      margin: 0 auto;
+      box-shadow: 0px 10px 30px 0px rgba(0, 0, 0, 0.4);
+      border-radius: 90px;
+    }
+    .desc {
+      padding-top: 20px;
+      font-size: 34px;
+      line-height: 1.35;
+      color: #fff;
+    }
+  }
+  .line {
+    background: url(../images/bg_line.png) center no-repeat;
+    height: 3px;
+    margin: 70px 0;
+  }
+  .txt-info {
+    color: #fff;
+    font-size: 24px;
+    font-weight: 300;
+    text-align: center;
+  }
+  .reason-list {
+    display: flex;
+    align-items: center;
+    background-color: #e6e6e6;
+    border-radius: 32px;
+    height: 64px;
+    padding: 0 30px;
+    .ico {
+      margin-right: 14px;
+      &-heart {
+        width: 37px;
+        height: 28px;
+        background: url(../images/ico_heart.png) center no-repeat;
+      }
+      &-book {
+        width: 30px;
+        height: 36px;
+        background: url(../images/ico_book.png) center no-repeat;
+      }
+      &-school {
+        width: 32px;
+        height: 34px;
+        background: url(../images/ico_school.png) center no-repeat;
+      }
+    }
+    .txt {
+      font-size: 24px;
+      font-weight: 500;
+    }
+    &-wrap {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 14px;
+      padding: 50px 0 60px;
+      .txt-etc {
+        color: #fff;
+        font-size: 40px;
+        font-weight: 600;
+        padding-bottom: 20px;
+        padding-left: 20px;
+      }
+    }
+  }
+}
+
+.sec03 {
+  background: url(../images/bg_sec03.jpg) center no-repeat;
+  background-size: 100% 100%;
+  .inner {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding-top: 210px;
+    padding-bottom: 254px;
+  }
+  .img {
+    padding-top: 50px;
+    padding-bottom: 150px;
+  }
+  .txt {
+    color: #fff;
+    line-height: 1.35;
+    text-align: center;
+    span {
+      color: #fff04b;
+      font-weight: inherit;
+    }
+    &01 {
+      font-size: 64px;
+      font-weight: 600;
+    }
+    &02 {
+      padding-top: 70px;
+      padding-bottom: 60px;
+      font-size: 48px;
+      line-height: 30px;
+      font-weight: bold;
+    }
+    &03 {
+      font-size: 48px;
+      font-weight: 300;
+      span {
+        position: relative;
+        &::after {
+          content:'';
+          background: url(../images/bg_highlight.png) left bottom no-repeat;
+          width: 0;
+          height: 7px;
+          position: absolute;
+          left: 0;
+          bottom: -5px;
+          transition: all 0.8s .8s ease;
+        }
+      }
+      &.aos-animate {
+        span::after {
+          width: 166px;
+        }
+      }
+    }
+    &04 {
+      font-size: 72px;
+      font-weight: 600;
+      span {
+        position: relative;
+        &::after {
+          content:'';
+          background: url(../images/bg_highlight02.png) left top no-repeat;
+          width: 0;
+          height: 87px;
+          position: absolute;
+          left: -20px;
+          top: 0;
+          z-index: -1;
+          transition: all 0.8s .8s ease;
+        }
+      }
+      &.aos-animate {
+        span::after {
+          width: 552px;
+        }
+      }
+    }
+  }
+}
+
+.sec04 {
+  position: relative;
+  background: url(../images/bg_sec04.jpg) center no-repeat;
+  background-size: 100% 100%;
+  padding-top: 178px;
+  padding-bottom: 138px;
+  .inner {
+    max-width: 1400px;
+    margin: 0 auto;
+  }
+
+  .title {
+    width: 872px;
+    margin: 0 auto;
+  }
+  .sub-title {
+    width: 733px;
+    margin: 0 auto;
+    padding-top: 76px;
+    padding-bottom: 66px;
+    animation: opacity 1s infinite;
+  }
+
+  .light {
+    &-list {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 30px;
+    }
+    &-default {
+      padding-top: 80px;
+      max-width: 1069px;
+      margin: 0 auto;
+    }
+    &-bottom {
+      padding-top: 80px;
+      .first {
+        position: relative;
+        max-width: 1400px;
+        height: 721px;
+        .icon {
+          background: url(../images/img_sec04_bticon01.png) center no-repeat;
+          width: 1517px;
+          height: 684px;
+          position: absolute;
+          left: -80px;
+          top: 20px;
+          animation: balloon 4s ease-in-out infinite;
+        }
+        .img {
+          width: 961px;
+          margin: 0 auto;
+        }
+      }
+      .second {
+        position: relative;
+        max-width: 1400px;
+        height: 721px;
+        // display: none;
+        .icon {
+          background: url(../images/img_sec04_bticon02.png) center no-repeat;
+          width: 1410px;
+          height: 712px;
+          position: absolute;
+          left: -20px;
+          top: 50px;
+          animation: balloon 4s ease-in-out infinite;
+        }
+        .img {
+          width: 961px;
+          margin: 0 auto;
+        }
+      }
+      .third {
+        position: relative;
+        max-width: 1400px;
+        height: 721px;
+        // display: none;
+        .icon {
+          background: url(../images/img_sec04_bticon03.png) center no-repeat;
+          width: 1474px;
+          height: 658px;
+          position: absolute;
+          left: -70px;
+          top: 80px;
+          animation: balloon 4s ease-in-out infinite;
+        }
+        .img {
+          width: 965px;
+          margin: 0 auto;
+        }
+      }
+    }
+    &-img {
+      background-color: #fff;
+      width: 100%;
+      height: 470px;
+      border-radius: 50px;
+      padding: 16px;
+      cursor: pointer;
+      &.on {
+        background-color: #5fb117;
+      }
+      .before {
+        background-color: #efeee8;
+        border-radius: 40px;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        img {
+          width: 191px;
+          animation: lights 1.5s infinite 0.5s;
+        }
+      }
+      .after {
+        background-color: #5fb117;
+        border: 5px solid #388234;
+        border-radius: 40px;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        img {
+          width: 315px;
+          animation: wing 1s infinite;
+        }
+      }
+    }
+  }
+}
+
+.sec05 {
+  background: #ffc300 url(../images/bg_sec05.png) center no-repeat;
+  background-size: contain;
+  padding-top: 150px;
+  padding-bottom: 140px;
+  text-align: center;
+  .sub-title {
+    font-size: 38px;
+    color: #000;
+  }
+  .ico-flower {
+    display: block;
+    width: 80px;
+    height: 89px;
+    margin: 60px auto 50px;
+    background: url(../images/ico_flower.png) center no-repeat;
+    animation: wing2 1s infinite;
+  }
+  .title {
+    font-weight: 600;
+    font-size: 64px;
+    line-height: 1.53;
+    color: #000;
+    padding-bottom: 70px;
+  }
+  .desc {
+    padding-bottom: 120px;
+    font-size: 38px;
+    font-weight: 300;
+  }
+  .btn-wrap {
+    position: relative;
+    text-align: center;
+    .hand {
+      position: absolute;
+      right: calc((100% - 440px) / 2);
+      top: 50px;
+      display: block;
+      width: 97px;
+      height: 86px;
+      background: url(../images/img_hand.png) center no-repeat;
+      animation: scopa 1s infinite;
+    }
+    .click {
+      position: absolute;
+      right: calc((100% - 740px) / 2);
+      top: -70px;
+      display: block;
+      width: 141px;
+      height: 149px;
+      background: url(../images/img_click.png) center no-repeat;
+      animation: opacity 1s infinite;
+    }
+    .btn-submit {
+      display: block;
+      background: url(../images/btn_submit.png) center no-repeat;
+      background-size: contain;
+      width: 342px;
+      height: 177px;
+      margin: 0 auto;
+    }
+  }
+}
+
+.sec06 {
+  background: url(../images/bg_sec06.jpg) center no-repeat;
+  background-size: auto 100%;
+  padding-top: 210px;
+  padding-bottom: 216px;
+  .inner {
+    max-width: 1100px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .title {
+    font-size: 64px;
+    line-height: 1.53;
+    color: #000;
+    font-weight: 600;
+    span {
+      position: relative;
+      color: #fff;
+      font-weight: 600;
+      &::after {
+        content:'';
+        background: url(../images/bg_highlight03.png) left top no-repeat;
+        width: 0;
+        height: 78px;
+        position: absolute;
+        left: -20px;
+        top: 0;
+        z-index: -1;
+        transition: all 0.8s .8s ease;
+      }
+    }
+    &.aos-animate {
+      span::after {
+        width: 432px;
+      }
+    }
+  }
+  .list-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    padding-top: 120px;
+  }
+}
+
+.sec07 {
+  position: relative;
+  background: #f5fee4 url(../images/bg_sec07.png) right bottom no-repeat;
+  padding-top: 184px;
+  padding-bottom: 135px;
+  .bg {
+    background: url(../images/img_sec07_bg01.png) left top no-repeat;
+    width: 1900px;
+    height: 1521px;
+    position: absolute;
+    left: 0;
+    top: 70px;
+    animation: vibrate-2 1s linear infinite both;
+  }
+  .bg01 {
+    background: url(../images/img_sec07_bg02.png) left top no-repeat;
+    width: 1677px;
+    height: 1472px;
+    position: absolute;
+    left: 80px;
+    top: 114px;
+    animation: vibrate-2 1s linear infinite forwards;
+    animation-delay: .5s
+  }
+  .inner {
+    max-width: 1100px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .sub-title {
+    font-size: 38px;
+    color: #000;
+    padding-bottom: 94px;
+  }
+  .title {
+    font-size: 60px;
+    line-height: 1.63;
+    color: #000;
+    font-weight: 600;
+    padding-bottom: 120px;
+  }
+  .img {
+    max-width: 1015px;
+    margin: 0 auto;
+  }
+}
+
+
+.modal {
+  &-wrap {
+    display: none;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: rgb(0, 0, 0, 0.8);
+    z-index: 1000;
+    &.active {
+      display: block;
+    }
+    .modal-title {
+      font-family: 'TTHakgyoansimKkokkomaR';
+      font-size: 84px;
+      color: #000;
+      text-align: center;
+    }
+    .modal-desc {
+      font-size: 42px;
+      line-height: 2;
+      color: #000;
+      text-align: center;
+    }
+    .img {
+      width: 228px;
+      height: 228px;
+      margin: 50px auto 72px;
+    }
+    .btn-close {
+      position: absolute;
+      right: 40px;
+      top: 40px;
+      width: 37px;
+      height: 37px;
+      background: url(../images/ico_close.png) center no-repeat;
+      background-size: 100% auto;
+      text-indent: -9999px;
+    }
+  }
+  &-inner {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #fff;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    width: 640px;
+    padding: 150px 40px 110px;
+    border: 16px solid #388234;
+    border-radius: 60px;
+  }
+  &-container {
+    width: 100%;
+  }
+}
+
+
+@keyframes lr {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(10px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+@keyframes wing {
+  0% {
+    transform: rotate(0);
+  }
+  50% {
+    transform: rotate(1deg);
+  }
+  100% {
+    transform: rotate(0);
+  }
+}
+@keyframes wing2 {
+  0% {
+    transform: rotate(0);
+  }
+  50% {
+    transform: rotate(5deg);
+  }
+  100% {
+    transform: rotate(0);
+  }
+}
+@keyframes scopa {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(0.9);
+  }
+}
+@keyframes opacity {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes lights {
+	0% {filter: drop-shadow(0 0 0px #f5ae3a);}
+  50% {filter: drop-shadow(0 0 10px #f5ae3a);}
+	100% {filter: drop-shadow(0 0 0px #f5ae3a);}
+}
+
+@keyframes balloon {
+  0%, 100% {
+      transform: translateY(0);
+  }
+  50% {
+      transform: translateY(-20px);
+  }
+}
+
+@keyframes vibrate-2 {
+  0% {
+      -webkit-transform: translate(0);
+      transform: translate(0)
+  }
+
+  20% {
+      -webkit-transform: translate(2px,-2px);
+      transform: translate(2px,-2px)
+  }
+
+  40% {
+      -webkit-transform: translate(2px,2px);
+      transform: translate(2px,2px)
+  }
+
+  60% {
+      -webkit-transform: translate(-2px,2px);
+      transform: translate(-2px,2px)
+  }
+
+  80% {
+      -webkit-transform: translate(-2px,-2px);
+      transform: translate(-2px,-2px)
+  }
+
+  100% {
+      -webkit-transform: translate(0);
+      transform: translate(0)
+  }
+}
