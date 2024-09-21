@@ -161,9 +161,8 @@ span, strong, em {
   top: -19px;
   left: 8px;
 }
-/* 20240430 수정 s */
 .children-wrap .section03 .box-deco.deco02 {
-  width: calc(16px + 16 * (100vw - 720px) / 720); 
+  width: calc(16px + 16 * (100vw - 720px) / 720);
   bottom: 10px;
   left: -12px;
 }
@@ -172,7 +171,6 @@ span, strong, em {
   top: 10px;
   right: -11px;
 }
-/* 20240430 수정 e */
 .children-wrap .section03 .box-deco.deco04 {
   width: calc(238px + 238 * (100vw - 720px) / 720);
   bottom: -15px;
@@ -759,4 +757,4 @@ span, strong, em {
   100% {
     transform: scale(0.95);
   }
-}
+}/*# sourceMappingURL=ui.css.map */

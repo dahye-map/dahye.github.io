@@ -4,10 +4,20 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./assets/css/common.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
   <link rel="stylesheet" href="./assets/css/ui.css">
-  <title>Document</title>
+
+  <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="./assets/js/main.js"></script>
+  <title>Dahye portfolio</title>
 </head>
 <body>
+  <div id="loader-wrapper">
+    <div id="loader"></div>
+    <div class="loader-section section-left"></div>
+    <div class="loader-section section-right"></div>
+  </div>
   <div id="wrap">
     <header class="header__wrap">
       <div class="header__inner">
@@ -15,8 +25,8 @@
 
         <div class="header__gnb">
           <ul>
-            <li><a href="/project.html">Project</a></li>
-            <li><a href="#none">About me</a></li>
+            <li><a href="/portfolio/project.html">Project</a></li>
+            <li><a href="#about">About me</a></li>
           </ul>
         </div>
       </div>
@@ -24,24 +34,23 @@
 
     <div class="container__wrap">
       <section class="intro__wrap">
-        <div class="intro__txt">
+        <div class="intro__txt" data-aos="fade-up">
           <p class="title">
             안녕하세요 ! <br>
             퍼블리셔 이다혜입니다
           </p>
           <p class="desc">
             사용하기 쉬운 UX를 고민하고, 개발하는 일을 합니다. <br>
-            컴퓨터공학과 출신 퍼블리셔, 누구보다 개발을 더 잘 이해하고<br>
-            누구보다 퍼블리싱을 좋아합니다.
+            누구보다 개발을 더 잘 이해하고, 누구보다 퍼블리싱을 좋아합니다.
           </p>
         </div>
-        <div class="intro__img">
+        <div class="intro__img" data-aos="fadeIn">
           <img src="./images/img_dahye.png" alt="이력서 이미지">
         </div>
         <div class="intro__circle"><span class="blind">my projects</span></div>
       </section>
       <section class="project-list__wrap">
-        <div class="project-list">
+        <div class="project-list" data-aos="fade-up">
           <div class="project-list__detail">
             <p class="sub-title">MOBILE APP 퍼블리싱</p>
             <p class="title">하나머니 리뉴얼 구축</p>
@@ -59,7 +68,7 @@
             <div><img src="./images/img_hana_phone03.png" alt="하나머니 이미지 3"></div>
           </div>
         </div>
-        <div class="project-list">
+        <div class="project-list" data-aos="fade-up">
           <div class="project-list__detail">
             <p class="sub-title">MOBILE APP 퍼블리싱</p>
             <p class="title">우리WON인증 고도화 구축</p>
@@ -74,7 +83,7 @@
             <div><img src="./images/img_wooricerti02.png" alt="우리은행 본인확인 이미지 2"></div>
           </div>
         </div>
-        <div class="project-list">
+        <div class="project-list" data-aos="fade-up">
           <div class="project-list__detail">
             <p class="sub-title">MOBILE APP 퍼블리싱</p>
             <p class="title">우리페이 리뉴얼 구축</p>
@@ -90,7 +99,7 @@
             <div><img src="./images/img_wooripay03.png" alt="우리페이 이미지 3"></div>
           </div>
         </div>
-        <div class="project-list">
+        <div class="project-list" data-aos="fade-up">
           <div class="project-list__detail">
             <p class="sub-title">MOBILE APP 퍼블리싱</p>
             <p class="title">삼성 더헬스 고도화 구축</p>
@@ -106,14 +115,14 @@
             <div><img src="./images/img_thehealth03.png" alt="삼성 더헬스 이미지 3"></div>
           </div>
         </div>
-        <div class="btn__wrap">
+        <div class="btn__wrap" data-aos="fade-up">
           <a href="/project.html" class="btn btn-11">Browse all projects</a>
         </div>
       </section>
-      <section class="about__wrap">
-        <p class="title">Resume</p>
+      <section class="about__wrap" id="about">
+        <p class="title" data-aos="fade-up">Resume</p>
 
-        <div class="about__left">
+        <div class="about__left" data-aos="fade-up">
           <div class="about__list">
             <p class="sub-title">EDUCATION</p>
             <ul>
@@ -161,7 +170,7 @@
           </div>
         </div>
 
-        <div class="about__right">
+        <div class="about__right" data-aos="fade-up" data-aos-delay="500">
           <div class="about__list">
             <p class="sub-title">SKILLS</p>
             <div class="skill__list">

@@ -1,18 +1,31 @@
+@import 'media';
+
 #wrap {
   width: 100%;
-  max-width: 1440px;
-  margin: 0 auto;
-  padding: 0 10rem;
+  // overflow-x: hidden;
 }
 .header {
   &__wrap {
     height: 8rem;
+    &.active {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: 10;
+      backdrop-filter: blur(6px);
+    }
   }
   &__inner {
     height: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 10rem;
+    @include mobile {
+      padding: 0 4rem;
+    }
     .logo {
       font-size: 3rem;
       font-weight: bold;
@@ -25,6 +38,9 @@
         font-size: 1.6rem;
         line-height: 2.4rem;
         padding: 0 2.4rem;
+        @include mobile {
+          padding: 0 1.2rem;
+        }
       }
     }
   }
@@ -32,6 +48,12 @@
 .container {
   &__wrap {
     padding-top: 3.6rem;
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 10rem;
+    @include mobile {
+      padding: 0 4rem;
+    }
   }
 }
 .intro {
@@ -40,7 +62,11 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding-top: 3.6rem;
     padding-bottom: 8rem;
+    @include mobile {
+      flex-direction: column;
+    }
   }
   &__txt {
     .title {
@@ -57,12 +83,16 @@
   }
   &__img {
     max-width: 48.2rem;
+    @include mobile {
+      padding-top: 4rem;
+    }
   }
   &__circle {
     position: absolute;
     left: 54.3%;
     width: 17rem;
     height: 17rem;
+    z-index: 9;
     &::before {
       content:'';
       position: absolute;
@@ -86,6 +116,12 @@
       width: 1.6rem;
       height: 6rem;
     }
+
+    @include mobile {
+      left: 50%;
+      bottom:0;
+      transform: translateX(-50%);
+    }
   }
 }
 @keyframes rotate_image {
@@ -101,6 +137,11 @@
   margin-bottom: 6.4rem;
   padding: 5.6rem 4.8rem;
   border-radius: 1.6rem;
+  @include mobile {
+    flex-direction: column;
+    align-items: baseline;
+    padding: 4rem 2.4rem;
+  }
   &:nth-child(odd) {
     background-color: #F6FBF0;
     .sub-title {
@@ -142,9 +183,16 @@
     width: 56%;
     display: flex;
     justify-content: center;
+    @include mobile {
+      width: 100%;
+      padding-top: 4rem;
+    }
     & > div {
       max-width: 17.8rem;
       margin: 0 1.8rem;
+      @include mobile {
+        margin: 0 .8rem;
+      }
       &:nth-child(even) {
         margin-top: -2.4rem;
       }
@@ -301,7 +349,7 @@
           content:'';
           height: 95px;
           position: absolute;
-          top: 20px;
+          top: 21px;
           left: .8rem;
           border-left: 1px solid #222;
         }
@@ -316,6 +364,14 @@
       display: flex;
       gap: 2rem;
       padding-bottom: 5rem;
+      @include mobile {
+        flex-wrap: wrap;
+      }
+      & > div {
+        @include mobile {
+          width: 20%;
+        }
+      }
       img {
         height: 3rem;
       }

@@ -4,8 +4,26 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./assets/css/common.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
   <link rel="stylesheet" href="./assets/css/ui.css">
-  <title>Document</title>
+
+  <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="./assets/js/main.js"></script>
+  <title>Dahye portfolio</title>
+
+  <style>
+    @media (max-width: 768px) {
+      .intro__circle {
+        right: 0;
+        left: auto !important;
+        top: 75%;
+        transform: translateX(0);
+        margin-top: 1.2rem;
+      }
+    }
+    
+  </style>
 </head>
 <body>
   <div id="wrap">
@@ -15,8 +33,8 @@
 
         <div class="header__gnb">
           <ul>
-            <li><a href="/project.html">Project</a></li>
-            <li><a href="#none">About me</a></li>
+            <li><a href="/portfolio/project.html">Project</a></li>
+            <li><a href="#about">About me</a></li>
           </ul>
         </div>
       </div>
@@ -30,13 +48,13 @@
           </p>
           <p class="desc">
             현재까지 작업한 프로젝트 리스트입니다. <br>
-            금융, 커머스, 회사 홈페이지까지 많은 경험을 통해 더 나은 코드를 익힙니다.
+            금융, 커머스, 회사 홈페이지까지 많은 경험을 통해 더 나은 코드를 공부하고 있습니다.
           </p>
         </div>
         <div class="intro__circle" style="right: 0;left:auto;"><span class="blind">my projects</span></div>
       </section>
       <section class="project-list__wrap">
-        <div class="project-list">
+        <div class="project-list"  data-aos="fade-up">
           <div class="project-list__detail">
             <p class="sub-title">MOBILE APP 퍼블리싱</p>
             <p class="title">하나머니 리뉴얼 구축</p>
@@ -54,7 +72,7 @@
             <div><img src="./images/img_hana_phone03.png" alt="하나머니 이미지 3"></div>
           </div>
         </div>
-        <div class="project-list">
+        <div class="project-list"  data-aos="fade-up">
           <div class="project-list__detail">
             <p class="sub-title">MOBILE APP 퍼블리싱</p>
             <p class="title">우리WON인증 고도화 구축</p>
@@ -69,7 +87,7 @@
             <div><img src="./images/img_wooricerti02.png" alt="우리은행 본인확인 이미지 2"></div>
           </div>
         </div>
-        <div class="project-list">
+        <div class="project-list"  data-aos="fade-up">
           <div class="project-list__detail">
             <p class="sub-title">MOBILE APP 퍼블리싱</p>
             <p class="title">우리페이 리뉴얼 구축</p>
@@ -85,7 +103,7 @@
             <div><img src="./images/img_wooripay03.png" alt="우리페이 이미지 3"></div>
           </div>
         </div>
-        <div class="project-list">
+        <div class="project-list"  data-aos="fade-up">
           <div class="project-list__detail">
             <p class="sub-title">MOBILE APP 퍼블리싱</p>
             <p class="title">삼성 더헬스 고도화 구축</p>
@@ -101,7 +119,7 @@
             <div><img src="./images/img_thehealth03.png" alt="삼성 더헬스 이미지 3"></div>
           </div>
         </div>
-        <div class="project-list">
+        <div class="project-list"  data-aos="fade-up">
           <div class="project-list__detail">
             <p class="sub-title">MOBILE APP 퍼블리싱</p>
             <p class="title">핑글 인슈어테크 플랫폼 구축</p>
@@ -117,7 +135,7 @@
             <div><img src="./images/img_fingle03.png" alt="삼성 더헬스 이미지 3"></div>
           </div>
         </div>
-        <div class="project-list">
+        <div class="project-list"  data-aos="fade-up">
           <div class="project-list__detail">
             <p class="sub-title">MOBILE APP 퍼블리싱</p>
             <p class="title">HUG 안심전세 APP 구축</p>
@@ -132,7 +150,7 @@
             <div><img src="./images/img_hug02.png" alt="허그 이미지 2"></div>
           </div>
         </div>
-        <div class="project-list">
+        <div class="project-list"  data-aos="fade-up">
           <div class="project-list__detail">
             <p class="sub-title">PC/MOBILE 반응형 퍼블리싱</p>
             <p class="title">GOMPAY 홈페이지 구축</p>
@@ -152,7 +170,7 @@
             <div><img src="./images/img_gompay03.png" alt="지오엠페이 이미지 3"></div>
           </div>
         </div>
-        <div class="project-list">
+        <div class="project-list"  data-aos="fade-up">
           <div class="project-list__detail">
             <p class="sub-title">PC/MOBILE 반응형 퍼블리싱</p>
             <p class="title">dndmobile 홈페이지 구축</p>
@@ -171,7 +189,7 @@
             <div style="max-width:100%;"><img src="./images/img_dndmobile02.png" alt="dndmobile 이미지 2"></div>
           </div>
         </div>
-        <div class="project-list">
+        <div class="project-list"  data-aos="fade-up">
           <div class="project-list__detail">
             <p class="sub-title">PC/MOBILE 퍼블리싱</p>
             <p class="title">굿네이버스 이벤트</p>
@@ -191,7 +209,7 @@
             <div style="max-width:100%;"><img src="./images/img_good02.png" alt="굿네이버스 이미지 2"></div>
           </div>
         </div>
-        <div class="project-list">
+        <div class="project-list"  data-aos="fade-up">
           <div class="project-list__detail">
             <p class="sub-title">PC/MOBILE 반응형 퍼블리싱</p>
             <p class="title">브랜드엑스코퍼레이션 홈페이지 구축</p>
@@ -208,7 +226,7 @@
             <div style="max-width:80%;"><img src="./images/img_brandx.png" alt="브랜드엑스코퍼레이션 이미지 1"></div>
           </div>
         </div>
-        <div class="project-list">
+        <div class="project-list"  data-aos="fade-up">
           <div class="project-list__detail">
             <p class="sub-title">PC 퍼블리싱</p>
             <p class="title">젝시믹스 홈페이지 구축</p>
@@ -227,7 +245,7 @@
             <div style="max-width:100%;"><img src="./images/img_xexybrand01.png" alt="브랜드엑스코퍼레이션 이미지 2"></div>
           </div>
         </div>
-        <div class="project-list">
+        <div class="project-list"  data-aos="fade-up">
           <div class="project-list__detail">
             <p class="sub-title">MOBILE 퍼블리싱</p>
             <p class="title">health 문진서비스 구축</p>
@@ -246,7 +264,7 @@
             <div><img src="./images/img_health03.png" alt="문진 이미지 3"></div>
           </div>
         </div>
-        <div class="project-list">
+        <div class="project-list"  data-aos="fade-up">
           <div class="project-list__detail">
             <p class="sub-title">MOBILE 퍼블리싱</p>
             <p class="title">KB저축은행 모바일웹 구축</p>
@@ -265,7 +283,7 @@
             <div><img src="./images/img_kbsavings03.png" alt="KB저축은행 이미지 3"></div>
           </div>
         </div>
-        <div class="project-list">
+        <div class="project-list"  data-aos="fade-up">
           <div class="project-list__detail">
             <p class="sub-title">PC/MOBILE 반응형 퍼블리싱</p>
             <p class="title">SK건설 웹진 SKEYES</p>
@@ -285,7 +303,7 @@
             <div style="max-width:100%;"><img src="./images/img_sky02.png" alt="SK건설 이미지 2"></div>
           </div>
         </div>
-        <div class="project-list">
+        <div class="project-list"  data-aos="fade-up">
           <div class="project-list__detail">
             <p class="sub-title">PC 퍼블리싱</p>
             <p class="title">동서식품 홈페이지 구축</p>
@@ -304,7 +322,7 @@
             <div style="max-width:100%;"><img src="./images/img_dongsuh02.png" alt="동서식품 이미지 2"></div>
           </div>
         </div>
-        <div class="project-list">
+        <div class="project-list"  data-aos="fade-up">
           <div class="project-list__detail">
             <p class="sub-title">PC/MOBILE 반응형 퍼블리싱</p>
             <p class="title">제네르떼 홈페이지 구축</p>
@@ -325,7 +343,103 @@
         </div>
 
         <div class="btn__wrap">
-          <a href="/index.html" class="btn btn-11">Home</a>
+          <a href="/portfolio/index.html" class="btn btn-11">Home</a>
+        </div>
+      </section>
+
+      <section class="about__wrap" id="about">
+        <p class="title" data-aos="fade-up">Resume</p>
+
+        <div class="about__left" data-aos="fade-up">
+          <div class="about__list">
+            <p class="sub-title">EDUCATION</p>
+            <ul>
+              <li>
+                <strong>2013.03 ~ 2017.02</strong>
+                <p>강원대학교(춘천)(4년제) 컴퓨터정보통신공학과</p>
+              </li>
+            </ul>
+          </div>
+  
+          <div class="about__list">
+            <p class="sub-title">CERTIFICATE</p>
+            <ul>
+              <li>
+                <strong>2016.08</strong>
+                <p>정보처리기사</p>
+              </li>
+            </ul>
+          </div>
+  
+          <div class="about__list">
+            <p class="sub-title">CAREER</p>
+            <ul>
+              <li>
+                <strong>2022.10 ~ 2024.06</strong>
+                <p>디앤디모바일</p>
+              </li>
+              <li>
+                <strong>2022.03 ~ 2022.07</strong>
+                <p>하나금융파인드</p>
+              </li>
+              <li>
+                <strong>2020.02 ~ 2022.03</strong>
+                <p>브랜드엑스코퍼레이션</p>
+              </li>
+              <li>
+                <strong>2018.02 ~ 2020.02</strong>
+                <p>예스바이크</p>
+              </li>
+              <li>
+                <strong>2017.03 ~ 2017.12</strong>
+                <p>인스팟</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="about__right" data-aos="fade-up" data-aos-delay="500">
+          <div class="about__list">
+            <p class="sub-title">SKILLS</p>
+            <div class="skill__list">
+              <div><img src="./images/img_html5.svg" alt=""></div>
+              <div><img src="./images/img_css3.svg" alt=""></div>
+              <div><img src="./images/img_scss.svg" alt=""></div>
+              <div><img src="./images/img_javascript.svg" alt=""></div>
+              <div><img src="./images/img_jquery.svg" alt=""></div>
+              <div><img src="./images/img_vue.svg" alt=""></div>
+              <div><img src="https://img.shields.io/badge/git-f05033?style=flat&logo=git&logoColor=white" alt=""></div>
+            </div>
+          </div>
+
+          <div class="about__list">
+            <p class="sub-title">STUDYING</p>
+            <div class="skill__list">
+              <div><img src="./images/img_react.svg" alt=""></div>
+            </div>
+          </div>
+
+          <div class="about__list">
+            <p class="sub-title">TOOLS</p>
+            <div class="skill__list">
+              <div><img src="./images/img_figma.svg" alt=""></div>
+              <div><img src="https://img.shields.io/badge/Adobe%20Xd-ff41c8?style=flat&logo=adobexd&logoColor=white" alt=""></div>
+              <div><img src="./images/img_vscode.svg" alt=""></div>
+            </div>
+          </div>
+
+          <div class="about__list">
+            <p class="sub-title">SOLUTIONS</p>
+            <div class="skill__list">
+              <div><img src="./images/img_cafe24.svg" alt="" style="height:1.6rem;"></div>
+              <div><img src="./images/img_makeshop.png" alt="" style="height:1.6rem;"></div>
+            </div>
+          </div>
+
+          <div class="about__list">
+            <p class="sub-title">CONTACT</p>
+            <a href="mailto:dahae5919@naver.com" class="btn-mail">dahae5919@naver.com</a>
+          </div>
         </div>
       </section>
     </div>

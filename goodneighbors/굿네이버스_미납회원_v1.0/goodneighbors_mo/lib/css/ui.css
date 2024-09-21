@@ -222,7 +222,6 @@ p, span, strong, em {
   color: #000;
   line-height: 1.42;
 }
-/* 20240611 css 추가 start */
 .unpaid-section.sec02 .txt-wrap .desc .highlight {
   position: relative;
   z-index: 3;
@@ -256,7 +255,6 @@ p, span, strong, em {
     opacity: 1;
   }
 }
-/* 20240611 css 추가 end */
 .unpaid-section.sec03 {
   position: relative;
   background: url(../images/bg_sec03.jpg) left top no-repeat;
