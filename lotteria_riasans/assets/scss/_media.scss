@@ -1,0 +1,44 @@
+	// Break Point
+	$mobile: 768px;
+	$laptop: 1028px;
+	$fulllaptop: 1600px;
+	$desktop: 1920px;
+	$fulldesktop: 1921px;
+
+
+	// Mixins
+	@mixin mobile {
+	  @media (max-width: #{$mobile}) {
+	    @content;
+	  }
+	}
+
+	@mixin laptop {
+	  @media (max-width: #{$laptop}) {
+	    @content;
+	  }
+	}
+
+	@mixin fulllaptop {
+		@media (max-width: #{$fulllaptop}) {
+			@content;
+		}
+	}
+
+	@mixin desktop {
+	  @media (max-width: #{$desktop}) {
+	    @content;
+	  }
+	}
+
+	@mixin fulldesktop {
+		@media (min-width: #{$fulldesktop}) {
+			@content;
+		}
+	}
+
+	@mixin canHover {
+		@at-root .can-hover & {
+			@content;
+		}
+	}

@@ -1,0 +1,505 @@
+@import 'media';
+
+#wrap {
+  &:has(.main__wrap) {
+    .header__inner {
+      border-bottom: 0;
+    }
+  }
+}
+.header {
+  &__wrap {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+  }
+  &__inner {
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    padding: 3rem 5rem;
+    border-bottom: 1px solid #F0F0F0;
+    @include mobile {
+      padding: .5rem 1rem;
+    }
+  }
+  &__logo {
+    display: flex;
+    align-items: center;
+    a {
+      width: 100%;
+      height: 100%;
+    }
+    .logo-lotteria {
+      margin-right: 14rem;
+      @include mobile {
+        margin-right: 2rem;
+      }
+    }
+  }
+  &__insta {
+    a {
+      background: url(../images/common/ic_instagram.svg) center no-repeat;
+      background-size: 100% 100%;
+      width: 32px;
+      height: 32px;
+      vertical-align: middle;
+      @include mobile {
+        background-size: 60% 60%;
+      }
+    }
+  }
+}
+.progress {
+  &__bar {
+    background-color: #000;
+    width: 100%;
+    height: 4px;
+    @include mobile {
+      display: none;
+    }
+  }
+  &__inner {
+    background-color: #f00;
+    width: 0;
+    height: 100%;
+    transition: width .3s;
+  }
+}
+.footer {
+  &__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #000;
+    padding: 3rem 5rem;
+    @include mobile {
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 4rem 1rem;
+    }
+  }
+  &__logo {
+    display: flex;
+    align-items: center;
+    .logo-lotteria,
+    .logo-riasans {
+      filter: invert(100%);
+      margin-right: 14rem;
+      @include mobile {
+        margin-right: 2rem;
+      }
+    }
+  }
+  &__copy {
+    color: #fff;
+    font-size: 2rem;
+    font-weight: 300;
+    letter-spacing: -0.2px;
+    @include mobile {
+      font-size: .8rem;
+      letter-spacing: -0.08px;
+      padding-top: 1rem;
+    }
+  }
+}
+
+.main {
+  &__wrap {
+    padding-top: 9.2rem;
+    height: 100vh;
+  }
+  &__inner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+  }
+  &-btn {
+    width: 50%;
+    height: 100%;
+    object-fit: cover;
+    transition: all 1s;
+    // &:hover {
+    //   background-size: auto 110%;
+    // }
+    &__riasans {
+      background: url(../images/contents/bg_riasans.jpg) left center no-repeat;
+      background-size: auto 100%;
+      a {
+        font-family: 'RiaSans';
+        font-size: 12.8rem;
+        line-height: 1.3;
+        letter-spacing: -1.28px;
+      }
+    }
+    &__chabddag {
+      background: url(../images/contents/bg_chabddag.jpg) right center no-repeat;
+      background-size: auto 100%;
+      a {
+        font-size: 13.5rem;
+        line-height: 1.2;
+        letter-spacing: -1.35px;
+      }
+    }
+    a {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      flex-direction: column;
+      color: #fff;
+    }
+  }
+}
+.logo {
+  &-lotteria {
+    background: url(../images/common/logo_lotteria.svg) center no-repeat;
+    background-size: 100% 100%;
+    width: 163px;
+    height: 23px;
+    @include mobile {
+      width: 85px;
+    }
+  }
+  &-riasans {
+    background: url(../images/common/logo_riasans.svg) center no-repeat;
+    background-size: 100% 100%;
+    width: 233px;
+    height: 30px;
+    @include mobile {
+      width: 116px;
+    }
+  }
+  &-lottegrs {
+    background: url(../images/common/logo_lottegrs.svg) center no-repeat;
+    background-size: 100% 100%;
+    width: 188px;
+    height: 40px;
+    @include mobile {
+      width: 94px;
+      height: 20px;
+    }
+  }
+  &-lotte {
+    background: url(../images/common/logo_lotte.svg) center no-repeat;
+    background-size: 100% 100%;
+    width: 130px;
+    height: 40px;
+    @include mobile {
+      width: 65px;
+      height: 20px;
+    }
+  }
+  &-chab {
+    background: url(../images/contents/logo_chab.svg) center no-repeat;
+    background-size: 100% 100%;
+    width: 176px;
+    height: 37px;
+    @include mobile {
+      width:80px;
+      height: 20px;
+    }
+  }
+}
+
+.layout {
+  &__wrap {
+    &.concept {
+      padding-top: 23.6rem;
+      @include mobile {
+        padding-top: 12.2rem;
+      }
+      .title-wrap {
+        padding-bottom: 6rem;
+        @include mobile {
+          padding-bottom: 4rem;
+        }
+      }
+      .desc-wrap {
+        padding-bottom: 2.7rem;
+        @include mobile {
+          padding-bottom: 4rem;
+        }
+      }
+    }
+    &.intro {
+      @include mobile {
+        padding-top: 7rem;
+      }
+      .title-wrap {
+        padding-bottom: 12rem;
+        @include mobile {
+          padding-bottom: 4rem;
+        }
+      }
+      .desc-wrap {
+        padding-bottom: 45rem;
+        @include mobile {
+          padding-bottom: 6rem;
+        }
+      }
+    }
+    &.comments {
+      @include mobile {
+        padding-top: 5.7rem;
+      }
+    }
+    &.essential {
+      .title-wrap {
+        padding-top: 20rem;
+        @include mobile {
+          padding-top: 7.7rem;
+        }
+      }
+      .img-wrap {
+        padding-top: 12rem;
+        @include mobile {
+          padding-top: 4rem;
+        }
+        & > div {
+          @include mobile {
+            margin-bottom: 0;
+            margin-left: -2rem;
+            margin-right: -2rem;
+          }
+        }
+      }
+    }
+    &.opinion {
+      .title-wrap {
+        padding-top: 10rem;
+        padding-bottom: 12rem;
+        @include mobile {
+          padding-top: 8rem;
+          padding-bottom: 4rem;
+        }
+      }
+      .desc-wrap {
+        padding-bottom: 20rem;
+        @include mobile {
+          padding-top: 6rem;
+          padding-bottom: 8rem;
+        }
+      }
+    }
+    &.download {
+      background-color: #000;
+      padding: 32rem 0;
+      @include mobile {
+        padding: 6rem 0;
+      }
+      .layout__inner {
+        margin: 0 -1rem;
+      }
+    }
+  }
+  &__inner {
+    padding: 0 5rem;
+    @include mobile {
+      padding: 0 2rem;
+    }
+  }
+}
+
+.title-wrap {
+  display: flex;
+  @include mobile {
+    flex-direction: column;
+  }
+  .sub-title {
+    width: 16.8%;
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1.4;
+    @include mobile {
+      width: 100%;
+      padding-bottom: 2rem;
+    }
+  }
+  .title {
+    font-size: 4.8rem;
+    font-weight: 500;
+    line-height: 1.4;
+    letter-spacing: -0.48px;
+    word-break: keep-all;
+    @include mobile {
+      font-size: 2.6rem;
+      letter-spacing: -0.26px;
+    }
+    span {
+      display: block;
+      padding-top: 6rem;
+      font-size: 1.4rem;
+      font-weight: 400;
+      @include mobile {
+        padding-top: 4rem;
+        font-size: 1.5rem;
+        line-height: 1.5;
+      }
+    }
+  }
+}
+.desc-wrap {
+  max-width: 105.3rem;
+  &.flex {
+    display: flex;
+    max-width: 100%;
+    @include mobile {
+      flex-direction: column-reverse;
+    }
+  }
+  .btn-wrap {
+    width: 16.8%;
+    @include mobile {
+      width: auto;
+      padding-top: 2rem;
+    }
+  }
+  .desc {
+    font-size: 2.4rem;
+    line-height: 1.5;
+    letter-spacing: -0.24px;
+    font-weight: 400;
+    word-break: keep-all;
+    @include mobile {
+      font-size: 1.5rem;
+    }
+    &.small {
+      font-size: 1.4rem;
+      @include mobile {
+        font-size: 1.5rem;
+      }
+    }
+    & + .desc {
+      padding-top: 16rem;
+      @include mobile {
+        padding-top: 0;
+      }
+    }
+  }
+}
+.img-wrap {
+  & > div {
+    margin-bottom: 10rem;
+    padding: 0 8.4%;
+    @include mobile {
+      margin-bottom: 2rem;
+      padding: 0;
+    }
+    &.no-padding {
+      padding: 0;
+      @include mobile {
+        margin: 0 -2rem 2rem;
+      }
+    }
+  }
+}
+.btn-normal {
+  padding: .4rem 0;
+  border-bottom: 1px solid #000;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 1.4;
+}
+.riasans-detail {
+  &__wrap {
+    padding-top: 20rem;
+    @include mobile {
+      padding-top: 6rem;
+    }
+    &.type-white {
+      padding-top: 0;
+      .riasans-detail {
+        &__star {
+          i {
+            filter: invert(100%);
+          }
+        }
+        &__txt {
+          border-color: #fff;
+          p {
+            color: #fff;
+            border-color: #fff;
+          }
+        }
+      }
+    }
+  }
+  &__star {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    i {
+      width: 5rem;
+      height: 5rem;
+      background: url(../images/common/ic_star.svg) center no-repeat;
+      background-size: contain;
+      margin: 0 5.25rem;
+      @include mobile {
+        width: 2rem;
+        height: 2rem;
+        margin: 0 2.1rem;
+      }
+    }
+  }
+  &__txt {
+    margin: 6rem 0;
+    border-bottom: 2px solid #000;
+    @include mobile {
+      margin: 3rem 0;
+    }
+    p {
+      padding: 3.6rem 0 3.6rem 16.8%;
+      border-top: 2px solid #000;
+      font-family: 'RiaSans', sans-serif;
+      font-size: 6.4rem;
+      line-height: 1.45;
+      letter-spacing: -0.64px;
+      @include mobile {
+        padding: 2rem 0;
+        font-size: 2.4rem;
+        letter-spacing: -0.24px;
+      }
+      a {
+        display: block;
+      }
+    }
+  }
+  &__logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .logo-lottegrs {
+      margin: 0 28.9rem;
+      @include mobile {
+        margin: 0 4rem;
+      }
+    }
+  }
+}
+.arrow-line {
+  width: 100%;
+  height: 3.8rem;
+  margin-top: 18rem;
+  margin-bottom: 13rem;
+  background: url(../images/contents/img_line.svg) center no-repeat;
+  background-size: 100% auto;
+  @include mobile {
+    background: url(../images/contents/img_line_mo.svg) center no-repeat;
+    background-size: 100% auto;
+    height: 4rem;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+  }
+}
+.swiper-riasans {
+  padding: 14.5rem 7.8rem;
+  background-color: #000;
+  @include mobile {
+    padding: 19rem 2rem;
+  }
+}

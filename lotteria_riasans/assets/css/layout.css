@@ -1,0 +1,561 @@
+#wrap:has(.main__wrap) .header__inner {
+  border-bottom: 0;
+}
+
+.header__wrap {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+}
+.header__inner {
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+  padding: 3rem 5rem;
+  border-bottom: 1px solid #F0F0F0;
+}
+@media (max-width: 768px) {
+  .header__inner {
+    padding: 0.5rem 1rem;
+  }
+}
+.header__logo {
+  display: flex;
+  align-items: center;
+}
+.header__logo a {
+  width: 100%;
+  height: 100%;
+}
+.header__logo .logo-lotteria {
+  margin-right: 14rem;
+}
+@media (max-width: 768px) {
+  .header__logo .logo-lotteria {
+    margin-right: 2rem;
+  }
+}
+.header__insta a {
+  background: url(../images/common/ic_instagram.svg) center no-repeat;
+  background-size: 100% 100%;
+  width: 32px;
+  height: 32px;
+  vertical-align: middle;
+}
+@media (max-width: 768px) {
+  .header__insta a {
+    background-size: 60% 60%;
+  }
+}
+
+.progress__bar {
+  background-color: #000;
+  width: 100%;
+  height: 4px;
+}
+@media (max-width: 768px) {
+  .progress__bar {
+    display: none;
+  }
+}
+.progress__inner {
+  background-color: #f00;
+  width: 0;
+  height: 100%;
+  transition: width 0.3s;
+}
+
+.footer__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #000;
+  padding: 3rem 5rem;
+}
+@media (max-width: 768px) {
+  .footer__inner {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 4rem 1rem;
+  }
+}
+.footer__logo {
+  display: flex;
+  align-items: center;
+}
+.footer__logo .logo-lotteria,
+.footer__logo .logo-riasans {
+  filter: invert(100%);
+  margin-right: 14rem;
+}
+@media (max-width: 768px) {
+  .footer__logo .logo-lotteria,
+  .footer__logo .logo-riasans {
+    margin-right: 2rem;
+  }
+}
+.footer__copy {
+  color: #fff;
+  font-size: 2rem;
+  font-weight: 300;
+  letter-spacing: -0.2px;
+}
+@media (max-width: 768px) {
+  .footer__copy {
+    font-size: 0.8rem;
+    letter-spacing: -0.08px;
+    padding-top: 1rem;
+  }
+}
+
+.main__wrap {
+  padding-top: 9.2rem;
+  height: 100vh;
+}
+.main__inner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+.main-btn {
+  width: 50%;
+  height: 100%;
+  object-fit: cover;
+  transition: all 1s;
+}
+.main-btn__riasans {
+  background: url(../images/contents/bg_riasans.jpg) left center no-repeat;
+  background-size: auto 100%;
+}
+.main-btn__riasans a {
+  font-family: "RiaSans";
+  font-size: 12.8rem;
+  line-height: 1.3;
+  letter-spacing: -1.28px;
+}
+.main-btn__chabddag {
+  background: url(../images/contents/bg_chabddag.jpg) right center no-repeat;
+  background-size: auto 100%;
+}
+.main-btn__chabddag a {
+  font-size: 13.5rem;
+  line-height: 1.2;
+  letter-spacing: -1.35px;
+}
+.main-btn a {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  color: #fff;
+}
+
+.logo-lotteria {
+  background: url(../images/common/logo_lotteria.svg) center no-repeat;
+  background-size: 100% 100%;
+  width: 163px;
+  height: 23px;
+}
+@media (max-width: 768px) {
+  .logo-lotteria {
+    width: 85px;
+  }
+}
+.logo-riasans {
+  background: url(../images/common/logo_riasans.svg) center no-repeat;
+  background-size: 100% 100%;
+  width: 233px;
+  height: 30px;
+}
+@media (max-width: 768px) {
+  .logo-riasans {
+    width: 116px;
+  }
+}
+.logo-lottegrs {
+  background: url(../images/common/logo_lottegrs.svg) center no-repeat;
+  background-size: 100% 100%;
+  width: 188px;
+  height: 40px;
+}
+@media (max-width: 768px) {
+  .logo-lottegrs {
+    width: 94px;
+    height: 20px;
+  }
+}
+.logo-lotte {
+  background: url(../images/common/logo_lotte.svg) center no-repeat;
+  background-size: 100% 100%;
+  width: 130px;
+  height: 40px;
+}
+@media (max-width: 768px) {
+  .logo-lotte {
+    width: 65px;
+    height: 20px;
+  }
+}
+.logo-chab {
+  background: url(../images/contents/logo_chab.svg) center no-repeat;
+  background-size: 100% 100%;
+  width: 176px;
+  height: 37px;
+}
+@media (max-width: 768px) {
+  .logo-chab {
+    width: 80px;
+    height: 20px;
+  }
+}
+
+.layout__wrap.concept {
+  padding-top: 23.6rem;
+}
+@media (max-width: 768px) {
+  .layout__wrap.concept {
+    padding-top: 12.2rem;
+  }
+}
+.layout__wrap.concept .title-wrap {
+  padding-bottom: 6rem;
+}
+@media (max-width: 768px) {
+  .layout__wrap.concept .title-wrap {
+    padding-bottom: 4rem;
+  }
+}
+.layout__wrap.concept .desc-wrap {
+  padding-bottom: 2.7rem;
+}
+@media (max-width: 768px) {
+  .layout__wrap.concept .desc-wrap {
+    padding-bottom: 4rem;
+  }
+}
+@media (max-width: 768px) {
+  .layout__wrap.intro {
+    padding-top: 7rem;
+  }
+}
+.layout__wrap.intro .title-wrap {
+  padding-bottom: 12rem;
+}
+@media (max-width: 768px) {
+  .layout__wrap.intro .title-wrap {
+    padding-bottom: 4rem;
+  }
+}
+.layout__wrap.intro .desc-wrap {
+  padding-bottom: 45rem;
+}
+@media (max-width: 768px) {
+  .layout__wrap.intro .desc-wrap {
+    padding-bottom: 6rem;
+  }
+}
+@media (max-width: 768px) {
+  .layout__wrap.comments {
+    padding-top: 5.7rem;
+  }
+}
+.layout__wrap.essential .title-wrap {
+  padding-top: 20rem;
+}
+@media (max-width: 768px) {
+  .layout__wrap.essential .title-wrap {
+    padding-top: 7.7rem;
+  }
+}
+.layout__wrap.essential .img-wrap {
+  padding-top: 12rem;
+}
+@media (max-width: 768px) {
+  .layout__wrap.essential .img-wrap {
+    padding-top: 4rem;
+  }
+}
+@media (max-width: 768px) {
+  .layout__wrap.essential .img-wrap > div {
+    margin-bottom: 0;
+    margin-left: -2rem;
+    margin-right: -2rem;
+  }
+}
+.layout__wrap.opinion .title-wrap {
+  padding-top: 10rem;
+  padding-bottom: 12rem;
+}
+@media (max-width: 768px) {
+  .layout__wrap.opinion .title-wrap {
+    padding-top: 8rem;
+    padding-bottom: 4rem;
+  }
+}
+.layout__wrap.opinion .desc-wrap {
+  padding-bottom: 20rem;
+}
+@media (max-width: 768px) {
+  .layout__wrap.opinion .desc-wrap {
+    padding-top: 6rem;
+    padding-bottom: 8rem;
+  }
+}
+.layout__wrap.download {
+  background-color: #000;
+  padding: 32rem 0;
+}
+@media (max-width: 768px) {
+  .layout__wrap.download {
+    padding: 6rem 0;
+  }
+}
+.layout__wrap.download .layout__inner {
+  margin: 0 -1rem;
+}
+.layout__inner {
+  padding: 0 5rem;
+}
+@media (max-width: 768px) {
+  .layout__inner {
+    padding: 0 2rem;
+  }
+}
+
+.title-wrap {
+  display: flex;
+}
+@media (max-width: 768px) {
+  .title-wrap {
+    flex-direction: column;
+  }
+}
+.title-wrap .sub-title {
+  width: 16.8%;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 1.4;
+}
+@media (max-width: 768px) {
+  .title-wrap .sub-title {
+    width: 100%;
+    padding-bottom: 2rem;
+  }
+}
+.title-wrap .title {
+  font-size: 4.8rem;
+  font-weight: 500;
+  line-height: 1.4;
+  letter-spacing: -0.48px;
+  word-break: keep-all;
+}
+@media (max-width: 768px) {
+  .title-wrap .title {
+    font-size: 2.6rem;
+    letter-spacing: -0.26px;
+  }
+}
+.title-wrap .title span {
+  display: block;
+  padding-top: 6rem;
+  font-size: 1.4rem;
+  font-weight: 400;
+}
+@media (max-width: 768px) {
+  .title-wrap .title span {
+    padding-top: 4rem;
+    font-size: 1.5rem;
+    line-height: 1.5;
+  }
+}
+
+.desc-wrap {
+  max-width: 105.3rem;
+}
+.desc-wrap.flex {
+  display: flex;
+  max-width: 100%;
+}
+@media (max-width: 768px) {
+  .desc-wrap.flex {
+    flex-direction: column-reverse;
+  }
+}
+.desc-wrap .btn-wrap {
+  width: 16.8%;
+}
+@media (max-width: 768px) {
+  .desc-wrap .btn-wrap {
+    width: auto;
+    padding-top: 2rem;
+  }
+}
+.desc-wrap .desc {
+  font-size: 2.4rem;
+  line-height: 1.5;
+  letter-spacing: -0.24px;
+  font-weight: 400;
+  word-break: keep-all;
+}
+@media (max-width: 768px) {
+  .desc-wrap .desc {
+    font-size: 1.5rem;
+  }
+}
+.desc-wrap .desc.small {
+  font-size: 1.4rem;
+}
+@media (max-width: 768px) {
+  .desc-wrap .desc.small {
+    font-size: 1.5rem;
+  }
+}
+.desc-wrap .desc + .desc {
+  padding-top: 16rem;
+}
+@media (max-width: 768px) {
+  .desc-wrap .desc + .desc {
+    padding-top: 0;
+  }
+}
+
+.img-wrap > div {
+  margin-bottom: 10rem;
+  padding: 0 8.4%;
+}
+@media (max-width: 768px) {
+  .img-wrap > div {
+    margin-bottom: 2rem;
+    padding: 0;
+  }
+}
+.img-wrap > div.no-padding {
+  padding: 0;
+}
+@media (max-width: 768px) {
+  .img-wrap > div.no-padding {
+    margin: 0 -2rem 2rem;
+  }
+}
+
+.btn-normal {
+  padding: 0.4rem 0;
+  border-bottom: 1px solid #000;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 1.4;
+}
+
+.riasans-detail__wrap {
+  padding-top: 20rem;
+}
+@media (max-width: 768px) {
+  .riasans-detail__wrap {
+    padding-top: 6rem;
+  }
+}
+.riasans-detail__wrap.type-white {
+  padding-top: 0;
+}
+.riasans-detail__wrap.type-white .riasans-detail__star i {
+  filter: invert(100%);
+}
+.riasans-detail__wrap.type-white .riasans-detail__txt {
+  border-color: #fff;
+}
+.riasans-detail__wrap.type-white .riasans-detail__txt p {
+  color: #fff;
+  border-color: #fff;
+}
+.riasans-detail__star {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.riasans-detail__star i {
+  width: 5rem;
+  height: 5rem;
+  background: url(../images/common/ic_star.svg) center no-repeat;
+  background-size: contain;
+  margin: 0 5.25rem;
+}
+@media (max-width: 768px) {
+  .riasans-detail__star i {
+    width: 2rem;
+    height: 2rem;
+    margin: 0 2.1rem;
+  }
+}
+.riasans-detail__txt {
+  margin: 6rem 0;
+  border-bottom: 2px solid #000;
+}
+@media (max-width: 768px) {
+  .riasans-detail__txt {
+    margin: 3rem 0;
+  }
+}
+.riasans-detail__txt p {
+  padding: 3.6rem 0 3.6rem 16.8%;
+  border-top: 2px solid #000;
+  font-family: "RiaSans", sans-serif;
+  font-size: 6.4rem;
+  line-height: 1.45;
+  letter-spacing: -0.64px;
+}
+@media (max-width: 768px) {
+  .riasans-detail__txt p {
+    padding: 2rem 0;
+    font-size: 2.4rem;
+    letter-spacing: -0.24px;
+  }
+}
+.riasans-detail__txt p a {
+  display: block;
+}
+.riasans-detail__logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.riasans-detail__logo .logo-lottegrs {
+  margin: 0 28.9rem;
+}
+@media (max-width: 768px) {
+  .riasans-detail__logo .logo-lottegrs {
+    margin: 0 4rem;
+  }
+}
+
+.arrow-line {
+  width: 100%;
+  height: 3.8rem;
+  margin-top: 18rem;
+  margin-bottom: 13rem;
+  background: url(../images/contents/img_line.svg) center no-repeat;
+  background-size: 100% auto;
+}
+@media (max-width: 768px) {
+  .arrow-line {
+    background: url(../images/contents/img_line_mo.svg) center no-repeat;
+    background-size: 100% auto;
+    height: 4rem;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+  }
+}
+
+.swiper-riasans {
+  padding: 14.5rem 7.8rem;
+  background-color: #000;
+}
+@media (max-width: 768px) {
+  .swiper-riasans {
+    padding: 19rem 2rem;
+  }
+}/*# sourceMappingURL=layout.css.map */
