@@ -1,0 +1,1212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="Content-Script-Type" content="text/javascript">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <meta http-equiv="content-type" content="text/html; charset=kr">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport"
+    content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1, user-scalable=no, viewport-fit=cover">
+  <!-- <meta name="viewport" content="width=컨텐츠 가로사이즈"> -->
+  <meta name="naver-site-verification" content="89671d69a6b0067cf343dcb62b038a44300e88f2" />
+  <meta name="google-site-verification" content="GNmiK81VvWWbH2eKxKiVdDhIroVuLunKEzaehC7zWzI" />
+  <meta name="robots" content="index, follow">
+  <link rel="shortcut icon" href="https://cdn.gni.kr/assets/static/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="https://cdn.gni.kr/assets/static/favicon.ico" type="image/x-icon">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="./lib/images/img_meta.jpg" />
+  <meta property="og:image:width" content="800" />
+  <meta property="og:image:height" content="400" />
+  <meta property="og:title" content="[굿네이버스]아이들의 Good Neighbors가 되어주세요!" />
+  <meta property="og:site_name" content="굿네이버스" />
+  <meta property="og:description" content="후원금 결제정보 확인하고, 이벤트 참여하기!" />
+  <meta property="og:keywords" content="굿네이버스, 온라인 이벤트" />
+  <meta name="description" content="후원금 결제정보 확인하고, 이벤트 참여하기!" />
+  <meta name="keywords" content="굿네이버스, 온라인 이벤트" />
+  <title>[굿네이버스]아이들의 Good Neighbors가 되어주세요!</title>
+
+  <!-- <link rel="stylesheet" type="text/css" href="https://www.goodneighbors.kr/assets/web/css/common.css"> -->
+  <link rel="stylesheet" type="text/css" href="https://m.goodneighbors.kr/assets/mobile/css/common.css?v=202204151531">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+  
+  <link rel="stylesheet" href="https://m.goodneighbors.kr/assets/mobile/css/form.css?v=202405181457">
+  <link rel="stylesheet" href="https://www.goodneighbors.kr/assets/web/css/member/login.css">
+  <link rel="stylesheet" href="./lib/css/ui.css">
+
+  <script>
+    (function (w, d, s, l, i) {
+      w[l] = w[l] || []; w[l].push({
+        'gtm.start':
+          new Date().getTime(), event: 'gtm.js'
+      }); var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+          'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-WW44JQM');
+  </script>
+</head>
+
+<body>
+
+  <div class="unpaid__wrap">
+    
+    <section class="unpaid-section sec01">
+      <div class="logo">
+        <a href="https://www.goodneighbors.kr/" target="_blank" class="logo-img"><img src="./lib/images/logo.png" alt="굿네이버스"></a>
+      </div>
+      <div class="unpaid-inner">
+        <div class="toptit-wrap">
+          <p class="top-subtitle"><span>#{회원명}</span> 회원님의 후원금을 통해</p>
+          <p class="top-title type1">
+            <em class="txt-green">아</em>
+            <em class="txt-green">이</em>
+            <em class="txt-green">들</em>
+            <em class="txt-green">의</em>&nbsp;
+            <em class="txt-green">삶</em>
+            <em>이</em>&nbsp;
+            <em>행</em>
+            <em>복</em>
+            <em>하</em>
+            <em>게</em>
+          </p>
+          <p class="top-title type2">
+            <em class="txt-orange">변</em>
+            <em class="txt-orange">화</em>&nbsp;
+            <em>될</em>&nbsp;<em>수</em>&nbsp;<em>있</em>
+            <em>어</em><em>요!</em>
+          </p>
+        </div>
+        <div class="desc-wrap">
+          <p class="desc">
+            아픈 아빠와 함께 살며 힘들었던 <br>
+            고은이의 삶이<br>
+            <strong>좋은 이웃 회원님들의 손길로</strong><br>
+            걱정없이 든든하게 채워졌어요.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="unpaid-section sec02">
+      <div class="unpaid-inner">
+        <div class="cartoon-wrap">
+          <div class="cartoon-con" data-aos="fade-up">
+            <div class="cartoon-img">
+              <img src="./lib/images/img_cartoon01.jpg" alt="우리 고은이 먹고 싶은 거, 갖고 싶은 거 많을 텐데... 아빠가 다 해주지 못해서 미안해 뭐가 미안해 아빠, 난 괜찮아 얼른 건강해져서 나랑 떡볶이 먹으러 가자! 알겠지? 굿네이버스 오늘">
+            </div>
+            <p class="cartoon-txt">
+              <span class="highlight">고은이의 아버지는 몇번의 큰 수술과 합병증으로</span> <br>
+              <span class="highlight delay">매일 셀 수 없는 약을 먹고 있어요.</span><br>
+              몸이 아파서 일을 할 수 없는 아버지는 항상<br>
+              ‘고은아, 미안해.’인데요.
+            </p>
+          </div>
+          <div class="cartoon-con" data-aos="fade-up">
+            <div class="cartoon-img">
+              <img src="./lib/images/img_cartoon02.jpg" alt="제 소원은요...">
+            </div>
+            <p class="cartoon-txt">
+              <span class="highlight">집에 먹을 게 라면 뿐이더라도, 덥고 습한 날씨에</span><br>
+              <span class="highlight delay">오래된 선풍기 하나로 버텨야 하더라도,</span> <br>
+              고은이는 참고 지내면 되니<br>
+              문제 될 게 없다고 생각했어요.
+            </p>
+          </div>
+        </div>
+      </div>
+      
+    </section>
+
+    <section class="unpaid-section sec03">
+      <div class="unpaid-inner">
+        <div class="tit-wrap">
+          <p class="title ani-title">
+            <em>고</em>
+            <em>은</em>
+            <em>이</em>
+            <em>에</em>
+            <em>게</em>
+            <em>도</em>
+          </p>
+          <p class="title ani-title clover">
+            <em class="txt-green">희</em>
+            <em class="txt-green">망</em>
+            <em class="txt-green">이</em>&nbsp;
+            <em class="txt-green">생</em>
+            <em class="txt-green">겼</em>
+            <em class="txt-green">어</em>
+            <em class="txt-green">요.</em>
+          </p>
+          <p class="desc" data-aos="fade-right">굿네이버스 좋은 이웃 회원님을 만나게 되면서, </p>
+        </div>
+        <div class="cartoon-wrap">
+          <div class="cartoon-con" data-aos="fade-up">
+            <div class="cartoon-img">
+              <img src="./lib/images/img_cartoon03.jpg" alt="아빠 맛있어? 응~ 우리 고은이가 싸주니까 더 맛있네. 고은이도 많이 먹어">
+            </div>
+            <p class="cartoon-txt">
+              아버지와 고은이는 매 끼니 <br>
+              <span class="highlight type2">따뜻한 밥과 풍성한 반찬을 먹게 되었어요.</span>
+            </p>
+          </div>
+          <div class="cartoon-con">
+            <div class="cartoon-img" data-aos="fade-up">
+              <img src="./lib/images/img_cartoon04.jpg" alt="선풍기, 에어컨 쐬고 있는 고은이">
+            </div>
+            <p class="cartoon-txt" data-aos="fade-up">
+              새 에어컨과 선풍기가 생겨서 <br>
+              <span class="highlight type2">깊은 잠도 자게 될 수 있게 되었어요.</span>
+            </p>
+          </div>
+          <div class="cartoon-con">
+            <div class="cartoon-img" data-aos="fade-up">
+              <img src="./lib/images/img_cartoon05.jpg" alt="책상과 의자에 앉아 공부하는 고은이">
+            </div>
+            <p class="cartoon-txt" data-aos="fade-up">
+              또한 튼튼한 책상과 의자가 생겨서<br>
+              <span class="highlight type2">공부할 때도 허리 아플 일이 없어졌어요.</span>
+            </p>
+          </div>
+          <div class="cartoon-con">
+            <div class="cartoon-img" data-aos="fade-up">
+              <img src="./lib/images/img_cartoon06.png" alt="좋은 이웃 회원님의 손길로 고은이는 아버지와 살아갈 힘을 얻었어요">
+            </div>
+            <div class="cartoon-img" data-aos="fade-left" style="margin-top:-8%">
+              <img src="./lib/images/img_cartoon06_txt.png" alt="좋은 이웃 회원님의 손길로 고은이는 아버지와 살아갈 힘을 얻었어요">
+            </div>
+          </div>
+        </div>
+      </div>
+      
+    </section>
+
+    <section class="unpaid-section sec04">
+      <div class="unpaid-inner">
+        <div class="tit-wrap">
+          <p class="title">
+            현재 회원님의 소중한 후원금이 <br>
+            확인되지 않고 있어요. 
+          </p>
+          <p class="desc">
+            아이들이 고은이와 같이 새 힘을 얻을 수 있도록 <br>
+            회원님의 후원금 결제정보를 변경해 주세요!
+          </p>
+        </div>
+        <div class="member-wrap write_form">
+          <p class="title">후원회원정보</p>
+          <div class="input-wrap">
+            <label for="">후원회원명*</label>
+            <input type="text" class="input-default readonly" readonly required value="후원회원명">
+          </div>
+          <div class="input-wrap">
+            <label for="">연락처*</label>
+            <div class="input_box phone_box outline_box">
+              <select name="paymember1-1_mobile1" id="paymember1-1_mobile1" title="연락처 제일 첫자리 번호를 선택해 주세요">
+                <option value="010"> 010 </option>
+                <option value="011"> 011 </option>
+                <option value="016"> 016 </option>
+                <option value="017"> 017 </option>
+                <option value="018"> 018 </option>
+                <option value="019"> 019 </option>
+              </select>
+              <input type="tel" class="maxLengthNext onlyNumber" pattern="\d*" max="4" maxlength="4" title="연락처 가운데자리 번호를 입력해 주세요">
+              <span>-</span>
+              <input type="tel" class="maxLengthNext onlyNumber" pattern="\d*" max="4" maxlength="4" title="연락처 뒷 번호를 입력해 주세요">
+            </div>
+          </div>
+          <button type="button" class="btn-primary">납부방법 변경하기</button>
+        </div>
+      </div>
+      
+    </section>
+
+    <section class="unpaid-section sec05">
+      <div class="unpaid-inner">
+        <p class="title" data-aos="fade-up">
+          회원님의 새로운 <span style="color: #8aa230;">결제 정보</span>를<br> 
+          입력해 주세요!
+        </p>
+        <div class="linebox__wrap" data-aos="fade-up">
+          <div class="linebox-inner">
+            <p class="form-tit">후원금 결제 정보 확인/변경</p>
+            <!-- s:결제정보 form -->
+            <div class="accordion-wrap">
+              <div class="accordion-container">
+                <div class="accordion-tit">
+                  <span>나의 결제 정보</span>
+                </div>
+                <div class="accordion-con">
+                  <table class="tb-wrap type1">
+                    <colgroup>
+                      <col width="50%">
+                      <col width="50%">
+                    </colgroup>
+                    <tbody>
+                      <tr>
+                        <th>납부방법</th>
+                        <td>네이버페이</td>
+                      </tr>
+                      <tr>
+                        <th>결제자</th>
+                        <td>김현진</td>
+                      </tr>
+                      <tr>
+                        <th>출금일</th>
+                        <td>1일</td>
+                      </tr>
+                      <tr>
+                        <th>오류</th>
+                        <td>없음</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+              <div class="accordion-container">
+                <div class="accordion-tit">
+                  <span>결제일 안내</span>
+                </div>
+                <div class="accordion-con">
+                  <table class="tb-wrap type1">
+                    <colgroup>
+                      <col width="25%">
+                      <col width="30%">
+                      <col width="*">
+                    </colgroup>
+                    <thead>
+                      <tr>
+                        <th>납입방식</th>
+                        <th>출금일</th>
+                        <th>비고</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>자동이체</td>
+                        <td>10일, 20일 중 지정일</td>
+                        <td>미 출금 시 20일 또는 25일 재 출금</td>
+                      </tr>
+                      <tr>
+                        <td>신용카드</td>
+                        <td>5일, 15일 중 지정일</td>
+                        <td>미 출금 시 15일 또는 25일 재 출금</td>
+                      </tr>
+                      <tr>
+                        <td>네이버페이</td>
+                        <td>1일, 10일 중 지정일</td>
+                        <td>미 출금 시 10일 또는 25일 재 출금</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+              <div class="accordion-container">
+                <div class="accordion-tit">
+                  <span>결제 정보 변경</span>
+                </div>
+                <div class="accordion-con">
+                  <div class="write_form">
+                    <div class="pay_box">
+                      <div class="pay">
+                        <input type="radio" name="payment" id="card" checked>
+                        <label for="card">신용카드</label>
+                      </div>
+                      <div class="pay">
+                        <input type="radio" name="payment" id="npay">
+                        <label for="npay"><i class="icon icon_npay"></i> PAY</label>
+                      </div>
+                      <div class="pay">
+                        <input type="radio" name="payment" id="account">
+                        <label for="account">자동이체</label>
+                      </div>
+                    </div>
+
+                    <!-- D: active class가 활성화 -->
+                    <!-- 신용카드 -->
+                    <div class="write_form_table card active">
+                      <div class="pay_sinfo_box">
+                        <p class="info_tit">※ 신용카드 안내사항</p>
+                        <ul>
+                          <li>승인 시 신용카드사별 별도 정책에 따라 결제명 안내가 다를 수 있습니다.</li>
+                          <li>실제 출금일은 회원님의 카드 결제일입니다.</li>
+                        </ul>
+                      </div>
+                      <div>
+                        <table>
+                          <caption class="sr-only">카드 - 구분폼</caption>
+                          <colgroup>
+                            <col width="200px">
+                            <col width="*">
+                          </colgroup>
+                          <tbody>
+                            <tr>
+                              <th class="pt0">구분 *</th>
+                              <td>
+                                <div class="radio_box paymember_type w33 w20">
+                                  <div class="radio">
+                                    <input type="radio" name="paymember1" id="paymember1-1" checked="">
+                                    <label for="paymember1-1">개인</label>
+                                  </div>
+                                  <div class="radio">
+                                    <input type="radio" name="paymember1" id="paymember1-2">
+                                    <label for="paymember1-2">법인</label>
+                                  </div>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div class="paymember1 paymember1-1">
+                        <table>
+                          <caption class="sr-only">카드 - 개인선택폼</caption>
+                          <colgroup>
+                            <col width="200px">
+                            <col width="*">
+                          </colgroup>
+                          <tbody>
+                            <tr>
+                              <th>카드주명 *</th>
+                              <td>
+                                <div class="payername_wrap">
+                                  <!-- D: input_box class input_error 추가하면 밑에 에러메세지 뜹니다. -->
+                                  <div class="payername_box input_box outline_box typeB input_error" style="width:70%;">
+                                    <input type="text" id="paymember1-1_payman" name="paymember1-1_payman" title="결제자명을 입력해주세요."
+                                      placeholder="카드주명을 입력해주세요.">
+                                    <select name="paymember1-1_payrelcd" id="paymember1-1_payrelcd" title="결제자와의 관계를 선택해주세요.">
+                                      <option value="" title="개인_관계_선택">관계</option>
+                                      <option value="1" title="개인_관계_본인">본인</option>
+                                      <option value="2" title="개인_관계_배우자">배우자</option>
+                                      <option value="3" title="개인_관계_부모">부모</option>
+                                      <option value="4" title="개인_관계_자녀">자녀</option>
+                                      <option value="5" title="개인_관계_조부모">조부모</option>
+                                      <option value="6" title="개인_관계_손자">손자</option>
+                                      <option value="7" title="개인_관계_형제">형제</option>
+                                      <option value="8" title="개인_관계_친구">친구</option>
+                                      <option value="9" title="개인_관계_동료">동료</option>
+                                      <option value="10" title="개인_관계_친척">친척</option>
+                                      <option value="11" title="개인_관계_대표자">대표자</option>
+                                      <option value="12" title="개인_관계_기타">기타</option>
+                                      <option value="13" title="개인_관계_기업담당자">기업담당자</option>
+                                    </select>
+                                  </div>
+                                  <div class="check_box" style="width:28%;">
+                                    <div class="check">
+                                      <input type="checkbox" class="payer" name="paymember1-1_payer" id="paymember1-1_payer">
+                                      <label for="paymember1-1_payer">후원자와 같음</label>
+                                    </div>
+                                  </div>
+                                  <small class="error paymember1-1_payman_error">카드주명을 입력해 주세요.</small>
+                                  <small class="error paymember1-1_payrelcd_error">후원자와의 관계를 선택해 주세요.</small>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <th>카드번호 *</th>
+                              <td>
+                                <!-- D: input_box class input_error 추가하면 밑에 에러메세지 뜹니다. -->
+                                <div class="input_box cardnum_box outline_box typeB input_error">
+                                  <!-- 20241031 placeholder 문구 변경 -->
+                                  <input type="text" pattern="\d*" max="16" maxlength="16" class="onlyNumber" name="paymember1-1_card1"
+                                    id="paymember1-1_card1" title="카드번호를 입력하세요." placeholder="- 없이 숫자만 입력.">
+                                </div>
+                                <small class="error paymember1-1_card_error">카드번호를 입력해 주세요.</small>
+                              </td>
+                            </tr>
+                            <tr>
+                              <th>유효기간 *</th>
+                              <td>
+                                <!-- D: input_box class input_error 추가하면 밑에 에러메세지 뜹니다. -->
+                                <div class="input_box exp_box outline_box typeB input_error">
+                                  <select class="card_month" id="paymember1-1_month" name="paymember1-1_month" title="유효기간 월을 선택해 주세요.">
+                                    <option class="step2Month" value="">월</option>
+                                    <option class="step2Month" value="01">1월</option>
+                                    <option class="step2Month" value="02">2월</option>
+                                    <option class="step2Month" value="03">3월</option>
+                                    <option class="step2Month" value="04">4월</option>
+                                    <option class="step2Month" value="05">5월</option>
+                                    <option class="step2Month" value="06">6월</option>
+                                    <option class="step2Month" value="07">7월</option>
+                                    <option class="step2Month" value="08">8월</option>
+                                    <option class="step2Month" value="09">9월</option>
+                                    <option class="step2Month" value="10">10월</option>
+                                    <option class="step2Month" value="11">11월</option>
+                                    <option class="step2Month" value="12">12월</option>
+                                  </select>
+                                  <select class="card_year" id="paymember1-1_year" name="paymember1-1_year" title="유효기간 년도를 선택해주세요.">
+                                    <option class="step2Year" value="">년</option>
+                                    <option class="step2Year" value="24">24년</option>
+                                    <option class="step2Year" value="25">25년</option>
+                                    <option class="step2Year" value="26">26년</option>
+                                    <option class="step2Year" value="27">27년</option>
+                                    <option class="step2Year" value="28">28년</option>
+                                    <option class="step2Year" value="29">29년</option>
+                                    <option class="step2Year" value="30">30년</option>
+                                    <option class="step2Year" value="31">31년</option>
+                                    <option class="step2Year" value="32">32년</option>
+                                    <option class="step2Year" value="33">33년</option>
+                                    <option class="step2Year" value="34">34년</option>
+                                  </select>
+                                </div>
+                                <small class="error paymember1-1_expire_error">카드 유효기간을 입력해 주세요.</small>
+                              </td>
+                            </tr>
+                            <tr>
+                              <th>카드주 생년월일 *</th>
+                              <td>
+                                <!-- D: input_box class input_error 추가하면 밑에 에러메세지 뜹니다. -->
+                                <div class="input_box input_error">
+                                  <input type="text" name="paymember1-1_jumin1" id="paymember1-1_jumin1" class="maxLengthNext onlyNumber" pattern="\d*" max="6" maxlength="6" title="주민번호 앞자리를 입력해주세요."
+                                    placeholder="주민번호 앞 6자리">
+                                </div>
+                                <small class="error paymember1-1_jumin1_error">카드주 생년월일 6자리를 입력해 주세요.</small>
+                              </td>
+                            </tr>
+                            <tr>
+                              <th>카드주 연락처 *</th>
+                              <td>
+                                <!-- D: input_box class input_error 추가하면 밑에 에러메세지 뜹니다. -->
+                                <div class="input_box phone_box outline_box typeB input_error">
+                                  <select name="paymember1-1_mobile1" id="paymember1-1_mobile1" title="연락처 제일 첫자리 번호를 선택해 주세요">
+                                    <option value="010"> 010 </option>
+                                    <option value="011"> 011 </option>
+                                    <option value="016"> 016 </option>
+                                    <option value="017"> 017 </option>
+                                    <option value="018"> 018 </option>
+                                    <option value="019"> 019 </option>
+                                  </select>
+                                  <!-- 20241031 placeholder 문구 변경 -->
+                                  <input type="tel" class="maxLengthNext onlyNumber" pattern="\d*" max="8" maxlength="8"
+                                    name="paymember1-1_mobile2" id="paymember1-1_mobile2" title="연락처 가운데자리 번호를 입력해 주세요"
+                                    placeholder="‘-’ 없이 숫자만 입력.">
+                                </div>
+                                <small class="error">연락처를 입력해 주세요</small>
+                              </td>
+                            </tr>
+                            <tr>
+                              <th>카드 출금일 *</th>
+                              <td>
+                                <!-- D: radio_box class input_error 추가하면 밑에 에러메세지 뜹니다. -->
+                                <div class="radio_box w33 input_error">
+                                  <div class="radio">
+                                    <input type="radio" id="paymember1-1_paydegreeA" name="paymember1-1_paydegree" value="1" checked="">
+                                    <label for="paymember1-1_paydegreeA">5일</label>
+                                  </div>
+                                  <div class="radio">
+                                    <input type="radio" id="paymember1-1_paydegreeB" name="paymember1-1_paydegree" value="2">
+                                    <label for="paymember1-1_paydegreeB">15일</label>
+                                  </div>
+                                </div>
+                                <small class="error">출금일을 선택해 주세요</small>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div class="paymember1 paymember1-2">
+                        <table>
+                          <caption class="sr-only">카드 - 법인선택폼</caption>
+                          <colgroup>
+                            <col width="200px">
+                            <col width="*">
+                          </colgroup>
+                          <tbody>
+                            <tr>
+                              <th>법인명 *</th>
+                              <td>
+                                <div class="payername_wrap">
+                                  <!-- D: input_box class input_error 추가하면 밑에 에러메세지 뜹니다. -->
+                                  <div class="payername_box input_box outline_box typeB input_error" style="width:70%;">
+                                    <input type="text" id="paymember1-2_payman" name="paymember1-2_payman" title="법인명을 입력해주세요."
+                                      placeholder="법인명을 입력해주세요.">
+                                    <select name="paymember1-2_payrelcd" id="paymember1-2_payrelcd" title="결제자와의 관계를 선택해주세요.">
+                                      <option value="" title="개인_관계_선택">관계</option>
+                                      <option value="1" title="개인_관계_본인">본인</option>
+                                      <option value="2" title="개인_관계_배우자">배우자</option>
+                                      <option value="3" title="개인_관계_부모">부모</option>
+                                      <option value="4" title="개인_관계_자녀">자녀</option>
+                                      <option value="5" title="개인_관계_조부모">조부모</option>
+                                      <option value="6" title="개인_관계_손자">손자</option>
+                                      <option value="7" title="개인_관계_형제">형제</option>
+                                      <option value="8" title="개인_관계_친구">친구</option>
+                                      <option value="9" title="개인_관계_동료">동료</option>
+                                      <option value="10" title="개인_관계_친척">친척</option>
+                                      <option value="11" title="개인_관계_대표자">대표자</option>
+                                      <option value="12" title="개인_관계_기타">기타</option>
+                                      <option value="13" title="개인_관계_기업담당자">기업담당자</option>
+                                    </select>
+                                  </div>
+                                  <div class="check_box" style="width:28%;">
+                                    <div class="check">
+                                      <input type="checkbox" class="payer" name="paymember1-2_payer" id="paymember1-2_payer">
+                                      <label for="paymember1-2_payer">후원자와 같음</label>
+                                    </div>
+                                  </div>
+                                  <small class="error paymember1-2_payman_error">법인명을 입력해 주세요.</small>
+                                  <small class="error paymember1-2_payrelcd_error">법인과의 관계를 선택해 주세요.</small>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <th>카드번호 *</th>
+                              <td>
+                                <!-- D: input_box class input_error 추가하면 밑에 에러메세지 뜹니다. -->
+                                <div class="input_box cardnum_box outline_box typeB input_error">
+                                  <!-- 20241031 placeholder 문구 변경 -->
+                                  <input type="text" pattern="\d*" max="16" maxlength="16" class="onlyNumber" name="paymember1-2_card1"
+                                    id="paymember1-2_card1" title="카드번호를 입력하세요." placeholder="- 없이 숫자만 입력.">
+                                </div>
+                                <small class="error paymember1-1_card_error">카드번호를 입력해 주세요.</small>
+                              </td>
+                            </tr>
+                            <tr>
+                              <th>유효기간 *</th>
+                              <td>
+                                <!-- D: input_box class input_error 추가하면 밑에 에러메세지 뜹니다. -->
+                                <div class="input_box exp_box outline_box typeB input_error">
+                                  <select class="card_month" id="paymember1-2_month" name="paymember1-2_month" title="유효기간 월을 선택해 주세요.">
+                                    <option class="step2Month" value="">월</option>
+                                    <option class="step2Month" value="01">1월</option>
+                                    <option class="step2Month" value="02">2월</option>
+                                    <option class="step2Month" value="03">3월</option>
+                                    <option class="step2Month" value="04">4월</option>
+                                    <option class="step2Month" value="05">5월</option>
+                                    <option class="step2Month" value="06">6월</option>
+                                    <option class="step2Month" value="07">7월</option>
+                                    <option class="step2Month" value="08">8월</option>
+                                    <option class="step2Month" value="09">9월</option>
+                                    <option class="step2Month" value="10">10월</option>
+                                    <option class="step2Month" value="11">11월</option>
+                                    <option class="step2Month" value="12">12월</option>
+                                  </select>
+                                  <select class="card_year" id="paymember1-2_year" name="paymember1-2_year" title="유효기간 년도를 선택해주세요.">
+                                    <option class="step2Year" value="">년</option>
+                                    <option class="step2Year" value="24">24년</option>
+                                    <option class="step2Year" value="25">25년</option>
+                                    <option class="step2Year" value="26">26년</option>
+                                    <option class="step2Year" value="27">27년</option>
+                                    <option class="step2Year" value="28">28년</option>
+                                    <option class="step2Year" value="29">29년</option>
+                                    <option class="step2Year" value="30">30년</option>
+                                    <option class="step2Year" value="31">31년</option>
+                                    <option class="step2Year" value="32">32년</option>
+                                    <option class="step2Year" value="33">33년</option>
+                                    <option class="step2Year" value="34">34년</option>
+                                  </select>
+                                </div>
+                                <small class="error paymember1-2_expire_error">카드 유효기간을 입력해 주세요.</small>
+                              </td>
+                            </tr>
+                            <tr>
+                              <th>사업자등록번호 *</th>
+                              <td>
+                                <!-- D: input_box class input_error 추가하면 밑에 에러메세지 뜹니다. -->
+                                <div class="input_box input_error">
+                                  <input type="text" name="paymember1-2_biznum" id="paymember1-2_biznum" class="maxLengthNext onlyNumber"
+                                    pattern="\d*" max="10" maxlength="10" title="사업자등록번호를 ‘-’ 제외하고 숫자만 입력해주세요."
+                                    placeholder="‘-’ 제외하고 숫자만 입력">
+                                </div>
+                                <small class="error paymember1-2_biznum_error">사업자등록번호 10자리를 입력해 주세요.</small>
+                              </td>
+                            </tr>
+                            <tr>
+                              <th>카드주 연락처 *</th>
+                              <td>
+                                <!-- D: input_box class input_error 추가하면 밑에 에러메세지 뜹니다. -->
+                                <div class="input_box phone_box outline_box typeB cf input_error">
+                                  <select name="paymember1-2_mobile1" id="paymember1-2_mobile1" title="연락처 제일 첫자리 번호를 선택해 주세요">
+                                    <option value="010"> 010 </option>
+                                    <option value="011"> 011 </option>
+                                    <option value="016"> 016 </option>
+                                    <option value="017"> 017 </option>
+                                    <option value="018"> 018 </option>
+                                    <option value="019"> 019 </option>
+                                  </select>
+                                  <!-- 20241031 placeholder 문구 변경 -->
+                                  <input type="tel" class="maxLengthNext onlyNumber" pattern="\d*" max="8" maxlength="8"
+                                    name="paymember1-2_mobile2" id="paymember1-2_mobile2" title="연락처 가운데자리 번호를 입력해 주세요"
+                                    placeholder="‘-’ 없이 숫자만 입력.">
+                                </div>
+                                <small class="error paymember1-1_card_error">연락처를 입력해 주세요.</small>
+                              </td>
+                            </tr>
+                            <tr>
+                              <th>카드 출금일 *</th>
+                              <td>
+                                <!-- D: radio_box class input_error 추가하면 밑에 에러메세지 뜹니다. -->
+                                <div class="radio_box w33 w20 input_error">
+                                  <div class="radio">
+                                    <input type="radio" id="paymember1-2_paydegreeA" name="paymember1-2_paydegree" value="1" checked="">
+                                    <label for="paymember1-2_paydegreeA">5일</label>
+                                  </div>
+                                  <div class="radio">
+                                    <input type="radio" id="paymember1-2_paydegreeB" name="paymember1-2_paydegree" value="2">
+                                    <label for="paymember1-2_paydegreeB">15일</label>
+                                  </div>
+                                </div>
+                                <small class="error paymember1-1_card_error">출금일을 선택해 주세요.</small>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                    <!-- //신용카드 -->
+                    <!-- 네이버 페이 -->
+                    <div class="write_form_table npay">
+                      <div>
+                        <table class="bd">
+                          <colgroup>
+                            <col width="200px">
+                            <col width="*">
+                          </colgroup>
+                          <tbody>
+                            <tr>
+                              <th class="pt0">네이버페이 출금일 *</th>
+                              <td>
+                                <!-- D: radio_box class input_error 추가하면 밑에 에러메세지 뜹니다. -->
+                                <div class="radio_box w33 input_error">
+                                  <div class="radio">
+                                    <input type="radio" id="paymember3-1_paydegreeA" name="paymember3-1_paydegree" value="1" checked="">
+                                    <label for="paymember3-1_paydegreeA">1일</label>
+                                  </div>
+                                  <div class="radio">
+                                    <input type="radio" id="paymember3-1_paydegreeB" name="paymember3-1_paydegree" value="2">
+                                    <label for="paymember3-1_paydegreeB">10일</label>
+                                  </div>
+                                </div>
+                                <small class="error paymember1-1_card_error">출금일을 선택해 주세요.</small>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div class="pay_sinfo_box npay">
+                        <p class="info_tit">※ 네이버페이 안내사항</p>
+                        <ul>
+                          <li>네이버페이는 네이버ID로 별도 앱 설치 없이 신용카드 또는 은행계좌 정보를 등록하여 네이버페이 비밀번호로 결제할 수 있는 간편결제 서비스입니다. </li>
+                          <li>2020년 1월부터 후원사업에 따라 사단법인 굿네이버스 인터내셔날, 사회복지법인 굿네이버스 법인별로 각각 출금이 이루어집니다.</li>
+                          <li>신용카드사, 은행 별도 정책에 따라 결제명 안내가 다를 수 있으며, 자세한 결제내역은 네이버앱&gt;네이버페이&gt;결제내역에서 확인 가능합니다.</li>
+                          <li>네이버페이 납입방식은 웹 인증 방식으로 굿네이버스 회원상담센터를 통해 네이버페이로 변경은 불가합니다.(타 납입방식으로 변경은 가능)</li>
+                          <li>결제 가능한 신용카드: 신한, 삼성, 현대, BC, 국민, 하나, 롯데, NH농협, 씨티, 카카오뱅크</li>
+                          <li>결제 가능한 은행: NH농협, 국민, 신한, 우리, 기업, SC제일, 부산, 경남, 수협, 우체국, 미래에셋대우, 광주, 대구, 전북, 새마을금고, 제주은행, 신협,
+                            하나은행 , 케이뱅크,
+                            카카오뱅크, 삼성증권</li>
+                        </ul>
+                      </div>
+                    </div>
+                    <!-- //네이버 페이 -->
+                    <!-- 자동이체 -->
+                    <div class="write_form_table account">
+                      <div class="pay_sinfo_box">
+                        <p class="info_tit">※ 자동이체 안내사항</p>
+                        <ul>
+                          <li>출금 시 사회복지법인 굿네이버스는 [굿네이버스]로 표시됩니다.</li>
+                          <li>자동이체 신청 및 변경 승인은 최대 일주일 소요됩니다.</li>
+                          <li>자동이체 선택 시 ‘출금동의 증빙자료’ 제출 과정이 진행되며, 제출 완료 시 후원신청이 완료됩니다.</li>
+                        </ul>
+                      </div>
+                      <div>
+                        <table>
+                          <caption class="sr-only">자동이체 - 구분폼</caption>
+                          <colgroup>
+                            <col width="200px">
+                            <col width="*">
+                          </colgroup>
+                          <tbody>
+                            <tr>
+                              <th class="pt0">구분 *</th>
+                              <td>
+                                <div class="radio_box paymember_type w33 w20">
+                                  <div class="radio">
+                                    <input type="radio" name="paymember2" id="paymember2-1" checked="">
+                                    <label for="paymember2-1">개인</label>
+                                  </div>
+                                  <div class="radio">
+                                    <input type="radio" name="paymember2" id="paymember2-2">
+                                    <label for="paymember2-2">법인</label>
+                                  </div>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div class="paymember2 paymember2-1">
+                        <table>
+                          <caption class="sr-only">자동이체 - 개인선택폼</caption>
+                          <colgroup>
+                            <col width="200px">
+                            <col width="*">
+                          </colgroup>
+                          <tbody>
+                            <tr>
+                              <th>예금주명 *</th>
+                              <td>
+                                <div class="payername_wrap">
+                                  <!-- D: input_box class input_error 추가하면 밑에 에러메세지 뜹니다. -->
+                                  <div class="payername_box input_box outline_box typeB input_error" style="width:70%;">
+                                    <input type="text" id="paymember2-1_payman" name="paymember2-1_payman" title="예금주명을 입력해주세요."
+                                      placeholder="예금주명을 입력해주세요.">
+                                    <select name="paymember2-1_payrelcd" id="paymember2-1_payrelcd" title="예금주와의 관계를 선택해주세요.">
+                                      <option value="" title="개인_관계_선택">관계</option>
+                                      <option value="1" title="개인_관계_본인">본인</option>
+                                      <option value="2" title="개인_관계_배우자">배우자</option>
+                                      <option value="3" title="개인_관계_부모">부모</option>
+                                      <option value="4" title="개인_관계_자녀">자녀</option>
+                                      <option value="5" title="개인_관계_조부모">조부모</option>
+                                      <option value="6" title="개인_관계_손자">손자</option>
+                                      <option value="7" title="개인_관계_형제">형제</option>
+                                      <option value="8" title="개인_관계_친구">친구</option>
+                                      <option value="9" title="개인_관계_동료">동료</option>
+                                      <option value="10" title="개인_관계_친척">친척</option>
+                                      <option value="11" title="개인_관계_대표자">대표자</option>
+                                      <option value="12" title="개인_관계_기타">기타</option>
+                                      <option value="13" title="개인_관계_기업담당자">기업담당자</option>
+                                    </select>
+                                  </div>
+                                  <div class="check_box" style="width:28%;">
+                                    <div class="check">
+                                      <input type="checkbox" class="payer" name="paymember2-1_payer" id="paymember2-1_payer">
+                                      <label for="paymember2-1_payer">후원자와 같음</label>
+                                    </div>
+                                  </div>
+                                  <small class="error paymember2-1_payman_error">예금주명을 입력해 주세요.</small>
+                                  <small class="error paymember2-1_payrelcd_error">후원자와의 관계를 선택해 주세요.</small>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <th>예금주 생년월일 *</th>
+                              <td>
+                                <!-- D: input_box class input_error 추가하면 밑에 에러메세지 뜹니다. -->
+                                <div class="input_box input_error">
+                                  <input type="text" name="paymember2-1_jumin1" id="paymember2-1_jumin1"
+                                    class="maxLengthNext onlyNumber" pattern="\d*" max="6" maxlength="6" title="주민번호 앞자리를 입력해주세요."
+                                    placeholder="주민번호 앞 6자리">
+                                </div>
+                                <small class="error paymember2-1_jumin1_error">예금주 생년월일 6자리를 입력해 주세요.</small>
+                              </td>
+                            </tr>
+                            <tr>
+                              <th>은행 *</th>
+                              <td>
+                                <!-- D: input_box class input_error 추가하면 밑에 에러메세지 뜹니다. -->
+                                <div class="input_box bankcode_box input_error" >
+                                  <select id="paymember2-1_strBankCode" name="paymember2-1_strBankCode" title="납입은행을 선택해주세요.">
+                                    <option value="" title="납입_은행_선택">선택</option>
+                                    <option value="02">산업</option>
+                                    <option value="03">기업</option>
+                                    <option value="04">국민</option>
+                                    <option value="07">수협</option>
+                                    <option value="11">농협중앙회</option>
+                                    <option value="12">지역농협</option>
+                                    <option value="20">우리</option>
+                                    <option value="21">신한</option>
+                                    <option value="23">SC제일</option>
+                                    <option value="27">한국씨티</option>
+                                    <option value="31">대구</option>
+                                    <option value="32">부산</option>
+                                    <option value="34">광주</option>
+                                    <option value="35">제주</option>
+                                    <option value="37">전북</option>
+                                    <option value="39">경남</option>
+                                    <option value="45">새마을금고</option>
+                                    <option value="48">신협</option>
+                                    <option value="50">상호저축은행</option>
+                                    <option value="71">우체국</option>
+                                    <option value="89">케이뱅크</option>
+                                    <option value="90">카카오뱅크</option>
+                                    <option value="64">산림조합중앙회</option>
+                                    <option value="81">KEB하나</option>
+                                    <option value="92">토스뱅크</option>
+                                    <option value="60">B.O.A</option>
+                                  </select>
+                                </div>
+                                <small class="error paymember2-1_strBankCode_error">은행명을 선택해 주세요.</small>
+                              </td>
+                            </tr>
+                            <tr>
+                              <th>계좌번호 *</th>
+                              <td>
+                                <!-- D: input_box class input_error 추가하면 밑에 에러메세지 뜹니다. -->
+                                <div class="input_box accountnum_box input_error">
+                                  <input type="text" class="onlyNumber" name="paymember2-1_strAccountNo" id="paymember2-1_strAccountNo"
+                                    title="‘-’ 제외한 계좌번호 숫자만 입력해주세요." placeholder="‘-’ 제외하고 숫자만 입력">
+                                  <a href="javascript:void(0);" id="paymember2-1_bankCheck" class="bold accountCheck"
+                                    name="paymember2-1_confirm">계좌 인증</a>
+                                </div>
+                                <small class="red">* 휴대폰번호인 계좌, 가상계좌, 적금, 해외계좌는 자동이체 불가합니다.</small>
+                                <small class="error paymember2-1_strAccountNo_error">계좌번호를 입력해 주세요.</small>
+                              </td>
+                            </tr>
+                            <tr>
+                              <th>예금주 연락처 *</th>
+                              <td>
+                                <!-- D: input_box class input_error 추가하면 밑에 에러메세지 뜹니다. -->
+                                <div class="input_box phone_box outline_box typeB cf input_error">
+                                  <select name="paymember2-1_mobile1" id="paymember2-1_mobile1" title="연락처 제일 첫자리 번호를 선택해 주세요">
+                                    <option value="010"> 010 </option>
+                                    <option value="011"> 011 </option>
+                                    <option value="016"> 016 </option>
+                                    <option value="017"> 017 </option>
+                                    <option value="018"> 018 </option>
+                                    <option value="019"> 019 </option>
+                                  </select>
+                                  <!-- 20241031 placeholder 문구 변경 -->
+                                  <input type="tel" class="maxLengthNext onlyNumber" pattern="\d*" max="8" maxlength="8"
+                                    name="paymember2-1_mobile2" id="paymember2-1_mobile2" title="연락처 8자리를 입력해 주세요"
+                                    placeholder="‘-’ 없이 숫자만 입력.">
+                                </div>
+                                <small class="error">연락처를 입력해 주세요.</small>
+                              </td>
+                            </tr>
+                            <tr>
+                              <th>자동이체 출금일 *</th>
+                              <td>
+                                <!-- D: radio_box class input_error 추가하면 밑에 에러메세지 뜹니다. -->
+                                <div class="radio_box w33 input_error" style="margin-bottom: 14px;">
+                                  <div class="radio">
+                                    <input type="radio" id="paymember2-1_paydegreeA" name="paymember2-1_paydegree" value="1" checked="">
+                                    <label for="paymember2-1_paydegreeA">10일</label>
+                                  </div>
+                                  <div class="radio">
+                                    <input type="radio" id="paymember2-1_paydegreeB" name="paymember2-1_paydegree" value="2">
+                                    <label for="paymember2-1_paydegreeB">20일</label>
+                                  </div>
+                                </div>
+                                <small class="red">
+                                  * 출금일 변경 시, 변경 일자에 따라 당월 회비가 납부되지 않은 경우 25일에 출금될 수 있으며 다음 월 부터는 변경한 출금일에 정상 출금됩니다.
+                                </small>
+                                <small class="red">
+                                  * 매 월 선택하신 출금 일에(은행영업일 기준) 통장에서 자동으로 후원금이 전달되며, 전달되지 않은 경우 1회에 한해 재 출금이 진행될 수 있습니다.
+                                </small>
+                                <small class="error">출금일을 선택해 주세요.</small>
+                              </td>
+                            </tr>
+                            <tr>
+                              <th>인증선택*</th>
+                              <td>
+                                <!-- D: radio_box class input_error 추가하면 밑에 에러메세지 뜹니다. -->
+                                <div class="radio_box w33 input_error">
+                                  <div class="radio">
+                                    <input type="radio" id="chk_ars" name="ars2-1" checked="">
+                                    <label for="chk_ars">ARS</label>
+                                  </div>
+                                  <div class="radio kakao_le">
+                                    <input type="radio" id="chk_kakao" name="ars2-1">
+                                    <label for="chk_kakao">카카오 인증</label>
+                                  </div>
+                                </div>
+                                <small class="red chk_kakao" style="display:none; margin-top: 14px;">
+                                  * 카카오페이 인증은 예금주 소유 휴대폰으로만 인증이 가능합니다. 예금주가 법인/단체인 경우 ARS 인증을 이용해 주세요.
+                                </small>
+                                <small class="red chk_kakao" style="display:none;">
+                                  * 카카오페이 채널 차단 시 인증 메시지 수신이 불가합니다. 채널 차단 해제 후 재시도해 주세요.
+                                  <div class="radio_box w20 chk_kakao">
+                                    <div class="input_box">
+                                      <!-- 20241031 input style width:300px 삭제 -->
+                                      <input type="text" style="margin-top:20px;" name="kakao_birth" id="kakao_birth"
+                                        class="maxLengthNext onlyNumber" pattern="\d*" max="8" maxlength="8" title="생년월일을 입력해주세요."
+                                        placeholder="생년월일을 입력해주세요."><span class="write_form_sinfo">
+                                        * 인증자 생년월일을 확인해주세요.</span>
+                                    </div>
+                                    <small class="error kakao_birth_error">카카오 인증 생년월일을 입력해주세요.</small>
+                                  </div>
+                                </small>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div class="paymember2 paymember2-2">
+                        <table>
+                          <caption class="sr-only">자동이체 - 법인선택폼</caption>
+                          <colgroup>
+                            <col width="200px">
+                            <col width="*">
+                          </colgroup>
+                          <tbody>
+                            <tr>
+                              <th>예금주명 *</th>
+                              <td>
+                                <div class="payername_wrap">
+                                  <!-- D: input_box class input_error 추가하면 밑에 에러메세지 뜹니다. -->
+                                  <div class="payername_box input_box outline_box typeB input_error" style="width:70%;">
+                                    <input type="text" id="paymember2-2_payman" name="paymember2-2_payman" title="예금주명을 입력해주세요."
+                                      placeholder="예금주명을 입력해주세요.">
+                                    <select name="paymember2-2_payrelcd" id="paymember2-2_payrelcd" title="결제자와의 관계를 선택해주세요.">
+                                      <option value="" title="개인_관계_선택">관계</option>
+                                      <option value="1" title="개인_관계_본인">본인</option>
+                                      <option value="2" title="개인_관계_배우자">배우자</option>
+                                      <option value="3" title="개인_관계_부모">부모</option>
+                                      <option value="4" title="개인_관계_자녀">자녀</option>
+                                      <option value="5" title="개인_관계_조부모">조부모</option>
+                                      <option value="6" title="개인_관계_손자">손자</option>
+                                      <option value="7" title="개인_관계_형제">형제</option>
+                                      <option value="8" title="개인_관계_친구">친구</option>
+                                      <option value="9" title="개인_관계_동료">동료</option>
+                                      <option value="10" title="개인_관계_친척">친척</option>
+                                      <option value="11" title="개인_관계_대표자">대표자</option>
+                                      <option value="12" title="개인_관계_기타">기타</option>
+                                      <option value="13" title="개인_관계_기업담당자">기업담당자</option>
+                                    </select>
+                                  </div>
+                                  <div class="check_box" style="width:28%;">
+                                    <div class="check">
+                                      <input type="checkbox" class="payer" name="paymember2-2_payer" id="paymember2-2_payer">
+                                      <label for="paymember2-2_payer">후원자와 같음</label>
+                                    </div>
+                                  </div>
+                                  <small class="error paymember2-2_payman_error">예금주명을 입력해 주세요.</small>
+                                  <small class="error paymember2-2_payrelcd_error">예금주와의 관계를 선택해 주세요.</small>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <th>사업자등록번호 *</th>
+                              <td>
+                                <!-- D: input_box class input_error 추가하면 밑에 에러메세지 뜹니다. -->
+                                <div class="input_box input_error">
+                                  <input type="text" name="paymember2-2_biznum" id="paymember2-2_biznum" class="maxLengthNext onlyNumber"
+                                    pattern="\d*" max="10" maxlength="10" title="사업자등록번호를 ‘-’ 제외하고 숫자만 입력해주세요."
+                                    placeholder="‘-’ 제외하고 숫자만 입력">
+                                </div>
+                                <small class="error paymember2-2_biznum_error">사업자등록번호 10자리를 입력해 주세요.</small>
+                              </td>
+                            </tr>
+                            <tr>
+                              <th>은행 *</th>
+                              <td>
+                                <!-- D: input_box class input_error 추가하면 밑에 에러메세지 뜹니다. -->
+                                <div class="input_box bankcode_box input_error" >
+                                  <select id="paymember2-2_strBankCode" name="paymember2-2_strBankCode" title="납입은행을 선택해주세요.">
+                                    <option value="" title="납입_은행_선택">선택</option>
+                  
+                                    <option value="02">산업</option>
+                  
+                                    <option value="03">기업</option>
+                  
+                                    <option value="04">국민</option>
+                  
+                                    <option value="07">수협</option>
+                  
+                                    <option value="11">농협중앙회</option>
+                  
+                                    <option value="12">지역농협</option>
+                  
+                                    <option value="20">우리</option>
+                  
+                                    <option value="21">신한</option>
+                  
+                                    <option value="23">SC제일</option>
+                  
+                                    <option value="27">한국씨티</option>
+                  
+                                    <option value="31">대구</option>
+                  
+                                    <option value="32">부산</option>
+                  
+                                    <option value="34">광주</option>
+                  
+                                    <option value="35">제주</option>
+                  
+                                    <option value="37">전북</option>
+                  
+                                    <option value="39">경남</option>
+                  
+                                    <option value="45">새마을금고</option>
+                  
+                                    <option value="48">신협</option>
+                  
+                                    <option value="50">상호저축은행</option>
+                  
+                                    <option value="71">우체국</option>
+                  
+                                    <option value="89">케이뱅크</option>
+                  
+                                    <option value="90">카카오뱅크</option>
+                  
+                                    <option value="64">산림조합중앙회</option>
+                  
+                                    <option value="81">KEB하나</option>
+                  
+                                    <option value="92">토스뱅크</option>
+                  
+                                    <option value="60">B.O.A</option>
+                  
+                  
+                                  </select>
+                                </div>
+                                <small class="error paymember2-2_strBankCode_error">은행명을 선택해 주세요.</small>
+                              </td>
+                            </tr>
+                            <tr>
+                              <th>계좌번호 *</th>
+                              <td>
+                                <!-- D: input_box class input_error 추가하면 밑에 에러메세지 뜹니다. -->
+                                <div class="input_box accountnum_box input_error">
+                                  <input type="text" class="onlyNumber" name="paymember2-2_strAccountNo" id="paymember2-2_strAccountNo"
+                                    title="‘-’ 제외한 계좌번호 숫자만 입력해주세요." placeholder="‘-’ 제외하고 숫자만 입력">
+                                  <a href="javascript:void(0);" id="paymember2-2_bankCheck" class="bold accountCheck" name="paymember2-2_confirm">계좌 인증</a>
+                                </div>
+                                <small class="red">* 휴대폰번호인 계좌, 가상계좌, 적금, 해외계좌는 자동이체 불가합니다.</small>
+                                <small class="error">계좌번호를 입력해 주세요.</small>
+                              </td>
+                            </tr>
+                            <tr>
+                              <th>예금주 연락처 *</th>
+                              <td>
+                                <!-- D: input_box class input_error 추가하면 밑에 에러메세지 뜹니다. -->
+                                <div class="input_box phone_box outline_box typeB cf input_error">
+                                  <select name="paymember2-2_mobile1" id="paymember2-2_mobile1" title="연락처 제일 첫자리 번호를 선택해 주세요">
+                                    <option value="010"> 010 </option>
+                                    <option value="011"> 011 </option>
+                                    <option value="016"> 016 </option>
+                                    <option value="017"> 017 </option>
+                                    <option value="018"> 018 </option>
+                                    <option value="019"> 019 </option>
+                                  </select>
+                                  <!-- 20241031 placeholder 문구 변경 -->
+                                  <input type="tel" class="maxLengthNext onlyNumber" pattern="\d*" max="8" maxlength="8"
+                                    name="paymember2-2_mobile2" id="paymember2-2_mobile2" title="연락처 8자리를 입력해 주세요"
+                                    placeholder="‘-’ 없이 숫자만 입력.">
+                                </div>
+                                <small class="error">연락처를 입력해 주세요.</small>
+                              </td>
+                            </tr>
+                            <tr>
+                              <th>자동이체 출금일 *</th>
+                              <td>
+                                <div class="radio_box w33" style="margin-bottom: 14px;">
+                                  <div class="radio">
+                                    <input type="radio" id="paymember2-2_paydegreeA" name="paymember2-2_paydegree" value="1" checked="">
+                                    <label for="paymember2-2_paydegreeA">10일</label>
+                                  </div>
+                                  <div class="radio">
+                                    <input type="radio" id="paymember2-2_paydegreeB" name="paymember2-2_paydegree" value="2">
+                                    <label for="paymember2-2_paydegreeB">20일</label>
+                                  </div>
+                                </div>
+                                <small class="red">* 출금일 변경 시, 변경 일자에 따라 당월 회비가 납부되지 않은 경우 25일에 출금될 수 있으며 다음 월 부터는 변경한 출금일에 정상 출금됩니다.</small>
+                                <small class="red">* 매 월 선택하신 출금 일에(은행영업일 기준) 통장에서 자동으로 후원금이 전달되며, 전달되지 않은 경우 1회에 한해 재 출금이 진행될 수 있습니다.</small>
+                              </td>
+                            </tr>
+                            <tr>
+                              <th>인증선택*</th>
+                              <td>
+                                <div class="radio_box w20">
+                                  <div class="radio">
+                                    <input type="radio" id="ars2-2" name="ars2-2" checked="">
+                                    <label for="ars2-2">ARS</label>
+                                  </div>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                    <!-- //자동이체 -->
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- e:결제정보 form -->
+          </div>
+        </div>
+
+        <div class="btn-wrap">
+          <a href="javascript:void(0);" class="btn-normal type2 btn-modal" data-target="success_popup">결제정보 변경하기 ></a>
+        </div>
+      </div>
+      <!-- [S] 결제정보 변경 성공 팝업 -->
+      <div class="modal-wrap success-popup" data-modal="success_popup">
+        <div class="modal-inner">
+          <div class="modal-container">
+            <div class="success-wrap">
+              <p class="tit">결제정보 변경에 성공하였습니다.</p>
+              <a href="#none" class="btn-orange btn-scroll">확인</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- [E] 결제정보 변경 성공 팝업 -->
+    </section>
+
+    <section class="unpaid-section sec06">
+      <div class="unpaid-inner">
+        <div class="tit-wrap" data-aos="fade-up">
+          <p class="title">
+            아이들의 좋은 이웃이 되어주셔서
+            감사합니다!
+          </p>
+          <p class="desc">
+            앞으로도 회원님과 함께 <br>
+            <strong>아이들의 좋은 변화</strong>들을 만들어 가겠습니다.
+          </p>
+        </div>
+        <div class="swiper-container swiper-unpaid" data-aos="fade-up">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="white-box">
+                <p class="title">
+                  550g 초미숙아로 태어나 <br>
+                  출생신고조차 안되었던 ‘지온이’
+                </p>
+                <p class="img"><img src="./lib/images/img_jion.png" alt="지온이 사진"></p>
+                <p class="desc">
+                  온몸에 발달 지연이 있었는데요.<br>
+                  정기 검사와 재활치료를 꾸준히 받게 되어<br>
+                  또래 평균 성장 범위에 들게 되었어요.
+                </p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="white-box">
+                <p class="title">
+                  평소 생리대 가격이 비싸서<br>
+                  생리대를 아껴 써야했던 여아
+                </p>
+                <p class="img"><img src="./lib/images/img_girl.png" alt="여아 사진"></p>
+                <p class="desc">
+                  마음 편히 생리대를 사용하고,<br>
+                  심리정서적으로 도움이 필요한 소녀들에게도<br>
+                  심리치료를 지원하여 감정을 건강하게 
+                  표현하는 방법을 배웠어요.
+                </p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="white-box">
+                <p class="title">
+                  삶의 큰 위기와 고난 속에서<br>
+                  방황할 수 밖에 없었던 자립준비청년
+                </p>
+                <p class="img"><img src="./lib/images/img_boy.png" alt="청년 사진"></p>
+                <p class="desc">
+                  어려운 환경 속에서도 꿈을 향해<br>
+                  도전하여 한의과대학에 진학하였으며,<br>
+                  굿네이버스를 만나 안정된 일상을 되찾고,<br>
+                  나눔 활동에도 열심히 참여하고 있어요
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-pagination swiper-pagination-unpaid"></div>
+        </div>
+        <a href="https://m.goodneighbors.kr/story/feedback/1/index.gn" class="btn-green" data-aos="fade-up">더 많은 좋은 변화들 보러가기</a>
+      </div>
+    </section>
+
+    
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="./lib/js/ui.js"></script>
+</body>
+
+</html>
