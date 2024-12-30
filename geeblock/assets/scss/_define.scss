@@ -1,0 +1,77 @@
+$flex-map: (
+  // 배열 key : 값 형태
+  start: flex-start,
+  end: flex-end,
+  between: space-between,
+  around: space-around,
+  stretch: stretch,
+  center: center,
+);
+
+@function _get-flex-value($key) {
+  @return map-get($flex-map, $key);
+}
+
+@mixin flexbox($js: center, $ai: center) {
+  display: flex;
+  align-items: _get-flex-value($ai);
+  justify-content: _get-flex-value($js);
+}
+
+@mixin inline-flexbox($js: center, $ai: center) {
+  display: inline-flex;
+  align-items: _get-flex-value($ai);
+  justify-content: _get-flex-value($js);
+}
+
+@mixin column-flexbox($js: center) {
+  display: flex;
+  flex-direction: column;
+  justify-content: _get-flex-value($js);
+}
+
+@mixin bgimage($url:'', $size:100% auto, $repeat:no-repeat, $pos:center center) {
+  background-image: url($url);
+  background-size: $size;
+  background-repeat: $repeat;
+  background-position: $pos
+}
+
+// Break Point
+$mobile: 768px;
+$tablet: 1200px;
+
+// Mixins
+@mixin mobile {
+  @media (max-width: #{$mobile}) {
+    @content;
+  }
+}
+@mixin tablet {
+  @media (max-width: #{$tablet}) {
+    @content;
+  }
+}
+
+@function space($size) {
+  @return round($size/1200*100%);
+}
+@mixin size($css:'', $size) {
+  @if($css == 'font') {
+    font-size: calc(#{$size}px + $size * (100vw - 1440px) / 1440);
+  }
+  @if($css == 'width') {
+    width: calc(#{$size}px + $size * (100vw - 1440px) / 1440);
+  }
+  @if($css == 'height') {
+    height: calc(#{$size}px + $size * (100vw - 1440px) / 1440);
+  }
+}
+
+$txt_primary: #ff811b;
+$primary_color: #ff811b;
+$black: #000;
+$white: #fff;
+$secondary_color: #8D92A3;
+
+$image_root: '../images/';
