@@ -1220,15 +1220,23 @@
     width: 100%;
   }
 }
+.section__media .media__con a {
+  transition: all 0.5s;
+}
+.section__media .media__con a:hover .img img {
+  transform: scale(1.1);
+}
 .section__media .media__con .img {
   background: #151522;
   width: 100%;
   height: 26rem;
+  overflow: hidden;
 }
 .section__media .media__con .img img {
   width: 100%;
   height: 100%;
-  object-fit: fill;
+  object-fit: contain;
+  transition: all 0.5s;
 }
 .section__media .media__con .desc {
   padding-top: 3.2rem;
